@@ -1,0 +1,4 @@
+# Java classpath entries for 3p/fop
+$matlabroot/java/jarext/fop.jar
+$matlabroot/java/jarext/avalon-framework-api.jar
+$matlabroot/java/jarext/avalon-framework-impl.jar

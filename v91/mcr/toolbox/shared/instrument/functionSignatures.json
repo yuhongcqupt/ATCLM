@@ -1,0 +1,487 @@
+{
+  "binblockread": {
+    "inputs":
+    [
+      {"name": "obj","kind": "required","type": [["gpib"],["serial"],["tcpip"],["udp"],["visa"],["Bluetooth"],["i2c"]]},
+      {"name": "precision","kind": "optional","type": "choices={'uchar','char','schar','int8','int16','short','int32','int','long','uint8','uint16','ushort','uint32','uint','ulong','single','float32','float','double','float64'}"}
+    ],
+    "outputs":
+    [
+      {"name":"A","type":"double"},
+      {"name":"count","type":"double"},
+      {"name":"msg","type":"char"}
+    ]
+  },
+  "binblockwrite": {
+    "inputs":
+    [
+      {"name": "obj","kind": "required","type": [["gpib"],["serial"],["tcpip"],["udp"],["visa"],["Bluetooth"],["i2c"]]},
+      {"name": "A","kind": "required","type": "double"},
+      {"name": "precision","kind": "optional","type": "choices={'uchar','char','schar','int8','int16','short','int32','int','long','uint8','uint16','ushort','uint32','uint','ulong','single','float32','float','double','float64'}"},
+      {"name": "header","kind": "optional","type": "char"},
+      {"name": "headerformat","kind": "optional","type": "char"}
+    ]
+  },
+  "delete": {
+    "inputs":
+    [
+      {"name": "obj","kind": "required","type": [["icdevice"],["gpib"],["serial"],["tcpip"],["udp"],["visa"],["Bluetooth"],["i2c"],["instrument.interface.spi.aardvark.Spi"],["instrument.interface.spi.ni845x.Spi"]]}
+    ]
+  },
+  "disp": {
+    "inputs":
+    [
+      {"name": "obj","kind": "required","type": [["icdevice"],["gpib"],["serial"],["tcpip"],["udp"],["visa"],["Bluetooth"],["i2c"],["instrument.interface.spi.aardvark.Spi"],["instrument.interface.spi.ni845x.Spi"]]}
+    ]
+  },
+  "fclose": {
+    "inputs":
+    [
+      {"name": "obj","kind": "required","type": [["gpib"],["serial"],["tcpip"],["udp"],["visa"],["Bluetooth"],["i2c"]]}
+    ]
+  },
+  "fgetl": {
+    "inputs":
+    [
+      {"name": "obj","kind": "required","type": [["gpib"],["serial"],["tcpip"],["udp"],["visa"],["Bluetooth"],["i2c"]]}
+    ],
+    "outputs":
+    [
+      {"name":"tline","type":"char"},
+      {"name":"count","type":"double"},
+      {"name":"msg","type":"char"},
+      {"name":"datagramaddress","type":"char"},
+      {"name":"datagramport","type":"double"}
+    ]
+  },
+  "fgets": {
+    "inputs":
+    [
+      {"name": "obj","kind": "required","type": [["gpib"],["serial"],["tcpip"],["udp"],["visa"],["Bluetooth"],["i2c"]]}
+    ],
+    "outputs":
+    [
+      {"name":"tline","type":"char"},
+      {"name":"count","type":"double"},
+      {"name":"msg","type":"char"},
+      {"name":"datagramaddress","type":"char"},
+      {"name":"datagramport","type":"double"}
+    ]
+  },
+  "flushinput": {
+    "inputs":
+    [
+      {"name": "obj","kind": "required","type": [["gpib"],["serial"],["tcpip"],["udp"],["visa"],["Bluetooth"],["i2c"]]}
+    ]
+  },
+  "flushoutput": {
+    "inputs":
+    [
+      {"name": "obj","kind": "required","type": [["gpib"],["serial"],["tcpip"],["udp"],["visa"],["Bluetooth"],["i2c"]]}
+    ]
+  },
+  "fopen": {
+    "inputs":
+    [
+      {"name": "obj","kind": "required","type": [["gpib"],["serial"],["tcpip"],["udp"],["visa"],["Bluetooth"],["i2c"]]}
+    ]
+  },
+  "fprintf": {
+    "inputs":
+    [
+      {"name": "obj","kind": "required","type": [["gpib"],["serial"],["tcpip"],["udp"],["visa"],["Bluetooth"],["i2c"]]},
+      {"name": "format","kind": "optional","type": "char"},
+      {"name": "cmd","kind": "required","type": "char"},
+      {"name": "mode","kind": "optional","type": "choices={'sync','async'}"}
+    ]
+  },
+  "instrcallback": {
+    "inputs":
+    [
+      {"name":"obj","kind": "required","type":[["icdevice"],["gpib"],["serial"],["tcpip"],["udp"],["visa"],["Bluetooth"],["i2c"]]},
+      {"name":"event","kind": "required","type": "char"}
+    ]
+  },
+  "instrfindall": {
+    "inputs":
+    [
+      {"name": "S","kind": "optional","type": "struct"}
+    ],
+    "outputs":
+    [
+      {"name":"out","type":[["icdevice"],["gpib"],["serial"],["tcpip"],["udp"],["visa"],["Bluetooth"],["i2c"]]}
+    ]
+  },
+  "instrfindall": {
+    "inputs":
+    [
+      {"name": "obj","kind": "optional","type": "icdevice"},
+      {"name": "DriverName","kind": "namevalue","type": "char"},
+      {"name": "DriverType","kind": "namevalue","type": "choices={'MATLAB interface object'}"},
+      {"name": "InstrumentModel","kind": "namevalue","type": "char"},
+      {"name": "Interface","kind": "namevalue","type": [["gpib"],["serial"],["tcpip"],["udp"],["visa"],["Bluetooth"],["i2c"]]},
+      {"name": "LogicalName","kind": "namevalue","type": "char"},
+      {"name": "Name","kind": "namevalue","type": "char"},
+      {"name": "ObjectVisibility","kind": "namevalue","type": "choices={'on','off'}"},
+      {"name": "RsrcName","kind": "namevalue","type": "char"},
+      {"name": "Status","kind": "namevalue","type": "choices={'open','closed'}"},
+      {"name": "Tag","kind": "namevalue","type": "char"},
+      {"name": "Timeout","kind": "namevalue","type": ["numeric","<2147483647",">=0"]},
+      {"name": "Type","kind": "namevalue","type": "char"},
+      {"name": "UserData","kind": "namevalue"}
+    ],
+    "outputs":
+    [
+      {"name":"out","type":"icdevice"}
+    ]
+  },
+  "instrfindall": {
+    "inputs":
+    [
+      {"name": "obj","kind": "optional","type": "serial"},
+      {"name": "BaudRate","kind": "namevalue","type": "double"},
+      {"name": "ByteOrder","kind": "namevalue","type": "choices={'littleEndian','bigEndian'}"},
+      {"name": "BytesAvailable","kind": "namevalue","type": "double"},
+      {"name": "BytesAvailableFcn","kind": "namevalue","type": "char"},
+      {"name": "BytesAvailableFcnCount","kind": "namevalue","type": "double"},
+      {"name": "BytesAvailableFcnMode","kind": "namevalue","type": "choices={'terminator','byte'}"},
+      {"name": "BytesToOutput","kind": "namevalue","type": "double"},
+      {"name": "DataBits","kind": "namevalue","type": "double"},
+      {"name": "DataTerminalReady","kind": "namevalue","type": "choices={'on','off'}"},
+      {"name": "ErrorFcn","kind": "namevalue","type": "char"},
+      {"name": "FlowControl","kind": "namevalue","type": "choices={'none','hardware','software'}"},
+      {"name": "InputBufferSize","kind": "namevalue","type": "double"},
+      {"name": "Name","kind": "namevalue","type": "char"},
+      {"name": "ObjectVisibility","kind": "namevalue","type": "choices={'on','off'}"},
+      {"name": "OutputBufferSize","kind": "namevalue","type": "double"},
+      {"name": "OutputEmptyFcn","kind": "namevalue","type": "char"},
+      {"name": "Parity","kind": "namevalue","type": "choices={'none','odd','even','mark','space'}"},
+      {"name": "PinStatus","kind": "namevalue","type": "struct"},
+      {"name": "PinStatusFcn","kind": "namevalue","type": "char"},
+      {"name": "Port","kind": "namevalue","type": "char"},
+      {"name": "ReadAsyncMode","kind": "namevalue","type": "choices={'continuous','manual'}"},
+      {"name": "RecordDetail","kind": "namevalue","type": "choices={'compact','verbose'}"},
+      {"name": "RecordMode","kind": "namevalue","type": "choices={'overwrite','append','index'}"},
+      {"name": "RecordName","kind": "namevalue","type": "char"},
+      {"name": "RecordStatus","kind": "namevalue","type": "choices={'on','off'}"},
+      {"name": "RequestToSend","kind": "namevalue","type": "choices={'on','off'}"},
+      {"name": "Status","kind": "namevalue","type": "choices={'open','closed'}"},
+      {"name": "StopBits","kind": "namevalue","type": "double"},
+      {"name": "Tag","kind": "namevalue","type": "char"},
+      {"name": "Terminator","kind": "namevalue","type": [["char"],["numeric","<=127",">=0"],["choices={'LF','LF/CR','CR','CR/LF'}"]]},
+      {"name": "Timeout","kind": "namevalue","type": "double"},
+      {"name": "TimerFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "TimerPeriod","kind": "namevalue","type": "double"},
+      {"name": "TransferStatus","kind": "namevalue","type": "choices={'idle','read','write','read&write'}"},
+      {"name": "Type","kind": "namevalue","type": "choices={'serial'}"},
+      {"name": "UserData","kind": "namevalue","type": "double"},
+      {"name": "ValuesReceived","kind": "namevalue","type": "double"},
+      {"name": "ValuesSent","kind": "namevalue","type": "double"}
+    ],
+    "outputs":
+    [
+      {"name":"out","type":"serial"}
+    ]
+  },
+  "instrfindall": {
+    "inputs":
+    [
+      {"name": "obj","kind": "optional","type": "gpib"},
+      {"name": "BoardIndex","kind": "namevalue","type": "double"},
+      {"name": "BusManagementStatus","kind": "namevalue","type": "struct"},
+      {"name": "ByteOrder","kind": "namevalue","type": "choices={'littleEndian','bigEndian'}"},
+      {"name": "BytesAvailable","kind": "namevalue","type": "double"},
+      {"name": "BytesAvailableFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "BytesAvailableFcnCount","kind": "namevalue","type": "double"},
+      {"name": "BytesAvailableFcnMode","kind": "namevalue","type": "choices={'eosCharCode','byte'}"},
+      {"name": "BytesToOutput","kind": "namevalue","type": "double"},
+      {"name": "CompareBits","kind": "namevalue","type": ["double",">=7","<=8"]},
+      {"name": "EOIMode","kind": "namevalue","type": "choices={'on','off'}"},
+      {"name": "EOSCharCode","kind": "namevalue","type": [["double","<=255",">=0"],["char"]]},
+      {"name": "EOSMode","kind": "namevalue","type": "choices={'none','read','write','read&write'}"},
+      {"name": "ErrorFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "HandshakeStatus","kind": "namevalue","type": "struct"},
+      {"name": "InputBufferSize","kind": "namevalue","type": "double"},
+      {"name": "Name","kind": "namevalue","type": "char"},
+      {"name": "ObjectVisibility","kind": "namevalue","type": "choices={'on','off'}"},
+      {"name": "OutputBufferSize","kind": "namevalue","type": "double"},
+      {"name": "OutputEmptyFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "PrimaryAddress","kind": "namevalue","type": ["double","<=30",">=0"]},
+      {"name": "RecordDetail","kind": "namevalue","type": "choices={'compact','verbose'}"},
+      {"name": "RecordMode","kind": "namevalue","type": "choices={'append','index','overwrite'}"},
+      {"name": "RecordName","kind": "namevalue","type": "char"},
+      {"name": "RecordStatus","kind": "namevalue","type": "choices={'on','off'}"},
+      {"name": "SecondaryAddress","kind": "namevalue","type": [["double","<=0",">=0"],["double","<=126",">=96"]]},
+      {"name": "Status","kind": "namevalue","type": "choices={'open','closed'}"},
+      {"name": "Tag","kind": "namevalue","type": "char"},
+      {"name": "Timeout","kind": "namevalue","type": ["numeric","<2147483647",">=0"]},
+      {"name": "TimerFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "TimerPeriod","kind": "namevalue","type": ["double",">=0.01"]},
+      {"name": "TransferStatus","kind": "namevalue","type": "choices={'idle','read','write'}"},
+      {"name": "Type","kind": "namevalue","type": "choices={'gpib'}"},
+      {"name": "UserData","kind": "namevalue"},
+      {"name": "ValuesReceived","kind": "namevalue","type": "double"},
+      {"name": "ValuesSent","kind": "namevalue","type": "double"}
+    ],
+    "outputs":
+    [
+      {"name":"out","type":"gpib"}
+    ]
+  },
+  "instrfindall": {
+    "inputs":
+    [
+      {"name": "obj","kind": "optional","type": "tcpip"},
+      {"name": "ByteOrder","kind": "namevalue","type": "choices={'littleEndian','bigEndian'}"},
+      {"name": "BytesAvailable","kind": "namevalue","type": "double"},
+      {"name": "BytesAvailableFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "BytesAvailableFcnCount","kind": "namevalue","type": "double"},
+      {"name": "BytesAvailableFcnMode","kind": "namevalue","type": "choices={'terminator','byte'}"},
+      {"name": "BytesToOutput","kind": "namevalue","type": "double"},
+      {"name": "ErrorFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "InputBufferSize","kind": "namevalue","type": "double"},
+      {"name": "LocalHost","kind": "namevalue","type": "char"},
+      {"name": "LocalPort","kind": "namevalue","type": ["double","<=65535",">=1"]},
+      {"name": "LocalPortMode","kind": "namevalue","type": "choices={'auto','manual'}"},
+      {"name": "Name","kind": "namevalue","type": "char"},
+      {"name": "NetworkRole","kind": "namevalue","type": "choices={'client','server'}"},
+      {"name": "ObjectVisibility","kind": "namevalue","type": "choices={'on','off'}"},
+      {"name": "OutputBufferSize","kind": "namevalue","type": "double"},
+      {"name": "OutputEmptyFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "ReadAsyncMode","kind": "namevalue","type": "choices={'continuous','manual'}"},
+      {"name": "RecordDetail","kind": "namevalue","type": "choices={'compact','verbose'}"},
+      {"name": "RecordMode","kind": "namevalue","type": "choices={'append','index','overwrite'}"},
+      {"name": "RecordName","kind": "namevalue","type": "char"},
+      {"name": "RecordStatus","kind": "namevalue","type": "choices={'on','off'}"},
+      {"name": "RemoteHost","kind": "namevalue","type": "char"},
+      {"name": "RemotePort","kind": "namevalue","type": ["double","<=65535",">=1"]},
+      {"name": "Status","kind": "namevalue","type": "choices={'open','closed'}"},
+      {"name": "Tag","kind": "namevalue","type": "char"},
+      {"name": "Terminator","kind": "namevalue","type": [["double","<=127",">=0"],["choices={'CR/LF','LF/CR'}"]]},
+      {"name": "Timeout","kind": "namevalue","type": ["numeric","<2147483647",">=0"]},
+      {"name": "TimerFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "TimerPeriod","kind": "namevalue","type": ["double",">=0.01"]},
+      {"name": "TransferDelay","kind":  "namevalue","type":"choices={'on','off'}"},
+      {"name": "TransferStatus","kind": "namevalue","type": "choices={'idle','read','write'}"},
+      {"name": "Type","kind": "namevalue","type": "choices={'tcpip'}"},
+      {"name": "UserData","kind": "namevalue"},
+      {"name": "ValuesReceived","kind": "namevalue","type": "double"},
+      {"name": "ValuesSent","kind": "namevalue","type": "double"}
+    ],
+    "outputs":
+    [
+      {"name":"out","type":"tcpip"}
+    ]
+  },
+  "instrfindall": {
+    "inputs":
+    [
+      {"name": "obj","kind": "optional","type": "udp"},
+      {"name": "ByteOrder","kind": "namevalue","type": "choices={'littleEndian','bigEndian'}"},
+      {"name": "BytesAvailable","kind": "namevalue","type": "double"},
+      {"name": "BytesAvailableFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "BytesAvailableFcnCount","kind": "namevalue","type": "double"},
+      {"name": "BytesAvailableFcnMode","kind": "namevalue","type": "choices={'terminator','byte'}"},
+      {"name": "BytesToOutput","kind": "namevalue","type": "double"},
+      {"name": "DatagramAddress","kind": "namevalue","type": "char"},
+      {"name": "DatagramPort","kind": "namevalue","type": ["double","<=65535",">=1"]},
+      {"name": "DatagramReceivedFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "DatagramTerminateMode","kind": "namevalue","type": "choices={'on','off'}"},
+      {"name": "EnablePortSharing","kind": "namevalue","type": "choices={'on','off'}"},
+      {"name": "ErrorFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "InputBufferSize","kind": "namevalue","type": "double"},
+      {"name": "InputDatagramPacketSize","kind": "namevalue","type": ["double","<=65535",">=1"]},
+      {"name": "LocalHost","kind": "namevalue","type": "char"},
+      {"name": "LocalPort","kind": "namevalue","type": ["double","<=65535",">=1"]},
+      {"name": "LocalPortMode","kind": "namevalue","type": "choices={'auto','manual'}"},
+      {"name": "Name","kind": "namevalue","type": "char"},
+      {"name": "ObjectVisibility","kind": "namevalue","type": "choices={'on','off'}"},
+      {"name": "OutputBufferSize","kind": "namevalue","type": "double"},
+      {"name": "OutputDatagramPacketSize","kind": "namevalue","type": ["double","<=65535",">=1"]},
+      {"name": "OutputEmptyFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "ReadAsyncMode","kind": "namevalue","type": "choices={'continuous','manual'}"},
+      {"name": "RecordDetail","kind": "namevalue","type": "choices={'compact','verbose'}"},
+      {"name": "RecordMode","kind": "namevalue","type": "choices={'append','index','overwrite'}"},
+      {"name": "RecordName","kind": "namevalue","type": "char"},
+      {"name": "RecordStatus","kind": "namevalue","type": "choices={'on','off'}"},
+      {"name": "RemoteHost","kind": "namevalue","type": "char"},
+      {"name": "RemotePort","kind": "namevalue","type": ["double","<=65535",">=1"]},
+      {"name": "Status","kind": "namevalue","type": "choices={'open','closed'}"},
+      {"name": "Tag","kind": "namevalue","type": "char"},
+      {"name": "Terminator","kind": "namevalue","type": [["double","<=127",">=0"],["choices={'CR/LF','LF/CR'}"]]},
+      {"name": "Timeout","kind": "namevalue","type": ["numeric","<2147483647",">=0"]},
+      {"name": "TimerFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "TimerPeriod","kind": "namevalue","type": ["double",">=0.01"]},
+      {"name": "TransferStatus","kind": "namevalue","type": "choices={'idle','read','write'}"},
+      {"name": "Type","kind": "namevalue","type": "choices={'udp'}"},
+      {"name": "UserData","kind": "namevalue"},
+      {"name": "ValuesReceived","kind": "namevalue","type": "double"},
+      {"name": "ValuesSent","kind": "namevalue","type": "double"}
+    ],
+    "outputs":
+    [
+      {"name":"out","type":"udp"}
+    ]
+  },
+  "instrfindall": {
+    "inputs":
+    [
+      {"name": "obj","kind": "optional","type": "visa"},
+      {"name": "Alias","kind": "namevalue","type": "char"},
+      {"name": "BaudRate","kind": "namevalue","type": "double"},
+      {"name": "ByteOrder","kind": "namevalue","type": "choices={'littleEndian','bigEndian'}"},
+      {"name": "BytesAvailable","kind": "namevalue","type": "double"},
+      {"name": "BytesAvailableFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "BytesAvailableFcnCount","kind": "namevalue","type": "double"},
+      {"name": "BytesAvailableFcnMode","kind": "namevalue","type": "choices={'terminator','byte'}"},
+      {"name": "BytesToOutput","kind": "namevalue","type": "double"},
+      {"name": "DataBits","kind": "namevalue","type": ["double",">=5","<=8"]},
+      {"name": "DataTerminalReady","kind": "namevalue","type": "choices={'on','off'}"},
+      {"name": "ErrorFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "FlowControl","kind": "namevalue","type": "choices={'hardware','none','software'}"},
+      {"name": "InputBufferSize","kind": "namevalue","type": "double"},
+      {"name": "Name","kind": "namevalue","type": "char"},
+      {"name": "ObjectVisibility","kind": "namevalue","type": "choices={'on','off'}"},
+      {"name": "OutputBufferSize","kind": "namevalue","type": "double"},
+      {"name": "OutputEmptyFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "Parity","kind": "namevalue","type": "choices={'none','odd','even','mark','space'}"},
+      {"name": "PinStatus","kind": "namevalue","type": "struct"},
+      {"name": "Port","kind": "namevalue","type": "char"},
+      {"name": "ReadAsyncMode","kind": "namevalue","type": "choices={'continuous','manual'}"},
+      {"name": "RecordDetail","kind": "namevalue","type": "choices={'compact','verbose'}"},
+      {"name": "RecordMode","kind": "namevalue","type": "choices={'append','index','overwrite'}"},
+      {"name": "RecordName","kind": "namevalue","type": "char"},
+      {"name": "RecordStatus","kind": "namevalue","type": "choices={'on','off'}"},
+      {"name": "RequestToSend","kind": "namevalue","type": "choices={'on','off'}"},
+      {"name": "RsrcName","kind": "namevalue","type": "char"},
+      {"name": "Status","kind": "namevalue","type": "choices={'open','closed'}"},
+      {"name": "StopBits","kind": "namevalue","type": ["double",">=1","<=2"]},
+      {"name": "Tag","kind": "namevalue","type": "char"},
+      {"name": "Terminator","kind": "namevalue","type": ["double","<=127",">=0"]},
+      {"name": "Timeout","kind": "namevalue","type": ["numeric","<2147483647",">=0"]},
+      {"name": "TimerFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "TimerPeriod","kind": "namevalue","type": ["double",">=0.01"]},
+      {"name": "TransferStatus","kind":"namevalue","type": "choices={'idle','read','write'}"},
+      {"name": "Type","kind": "namevalue","type": "choices={'visa-gpib','visa-vxi','visa-gpib-vxi','visa-serial'}"},
+      {"name": "UserData","kind": "namevalue"},
+      {"name": "ValuesReceived","kind": "namevalue","type": "double"},
+      {"name": "ValuesSent","kind": "namevalue","type": "double"}
+    ],
+    "outputs":
+    [
+      {"name":"out","type":"visa"}
+    ]
+  },
+  "instrfindall": {
+    "inputs":
+    [
+      {"name": "obj","kind": "optional","type": "Bluetooth"},
+      {"name": "ByteOrder","kind": "namevalue","type": "choices={'littleEndian','bigEndian'}"},
+      {"name": "BytesAvailable","kind": "namevalue","type": "double"},
+      {"name": "BytesAvailableFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "BytesAvailableFcnCount","kind": "namevalue","type": "double"},
+      {"name": "BytesAvailableFcnMode","kind": "namevalue","type": "choices={'terminator','byte'}"},
+      {"name": "BytesToOutput","kind": "namevalue","type": "double"},
+      {"name": "Channel","kind": "namevalue","type": ["double",">=1","<=65535"]},
+      {"name": "ErrorFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "InputBufferSize","kind": "namevalue","type": "double"},
+      {"name": "Name","kind": "namevalue","type": "char"},
+      {"name": "ObjectVisibility","kind": "namevalue","type": "choices={'on','off'}"},
+      {"name": "OutputBufferSize","kind": "namevalue","type": "double"},
+      {"name": "OutputEmptyFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "Profile","kind": "namevalue","type": "choices={'SPP'}"},
+      {"name": "ReadAsyncMode","kind": "namevalue","type": "choices={'continuous','manual'}"},
+      {"name": "RecordDetail","kind": "namevalue","type": "choices={'compact','verbose'}"},
+      {"name": "RecordMode","kind": "namevalue","type": "choices={'append','index','overwrite'}"},
+      {"name": "RecordName","kind": "namevalue","type": "char"},
+      {"name": "RecordStatus","kind": "namevalue","type": "choices={'on','off'}"},
+      {"name": "RemoteID","kind": "namevalue","type": "char"},
+      {"name": "RemoteName","kind": "namevalue","type": "char"},
+      {"name": "Status","kind": "namevalue","type": "choices={'open','closed'}"},
+      {"name": "Tag","kind": "namevalue","type": "char"},
+      {"name": "Terminator","kind": "namevalue","type": [["double",">=0","<=127"],["choices={'CR/LF','LF/CR'}"]]},
+      {"name": "Timeout","kind": "namevalue","type": ["numeric","<2147483647",">=0"]},
+      {"name": "TimerFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "TimerPeriod","kind": "namevalue","type": ["double",">=0.01"]},
+      {"name": "TransferStatus","kind":"namevalue","type": "choices={'idle','read','write'}"},
+      {"name": "Type","kind": "namevalue","type": "choices={'bluetooth'}"},
+      {"name": "UserData","kind": "namevalue"},
+      {"name": "ValuesReceived","kind": "namevalue","type": "double"},
+      {"name": "ValuesSent","kind": "namevalue","type": "double"}
+    ],
+    "outputs":
+    [
+      {"name":"out","type":"Bluetooth"}
+    ]
+  },
+  "instrfindall": {
+    "inputs":
+    [
+      {"name": "obj","kind": "optional","type": "i2c"},
+      {"name": "BitRate","kind": "namevalue","type": ["double",">=0"]},
+      {"name": "BoardIndex","kind": "namevalue","type": ["double",">=0"]},
+      {"name": "BoardSerial","kind": "namevalue","type": "char"},
+      {"name": "ByteOrder","kind": "namevalue","type": "choices={'littleEndian','bigEndian'}"},
+      {"name": "InputBufferSize","kind": "namevalue","type": "double"},
+      {"name": "Name","kind": "namevalue","type": "char"},
+      {"name": "ObjectVisibility","kind": "namevalue","type": "choices={'on','off'}"},
+      {"name": "OutputBufferSize","kind": "namevalue","type": "double"},
+      {"name": "PullupResistors","kind": "namevalue","type": "choices={'both','none'}"},
+      {"name": "RecordDetail","kind": "namevalue","type": "choices={'compact','verbose'}"},
+      {"name": "RecordMode","kind": "namevalue","type": "choices={'overwrite','append','index'}"},
+      {"name": "RecordName","kind": "namevalue","type": "char"},
+      {"name": "RecordStatus","kind": "namevalue","type": "choices={'on','off'}"},
+      {"name": "RemoteAddress","kind": "namevalue","type": [["char"],["double",">=0"]]},
+      {"name": "Status","kind": "namevalue","type": "choices={'open','closed'}"},
+      {"name": "Tag","kind": "namevalue","type": "char"},
+      {"name": "TargetPower","kind": "namevalue","type": "choices={'both','none'}"},
+      {"name": "Timeout","kind": "namevalue","type": ["double",">=0"]},
+      {"name": "TimerFcn","kind": "namevalue","type": [["cell"],["char"],["function_handle"]]},
+      {"name": "TimerPeriod","kind": "namevalue","type": ["double",">=0.01"]},
+      {"name": "TransferStatus","kind": "namevalue","type": "choices={'idle','read','write'}"},
+      {"name": "Type","kind": "namevalue","type": "choices={'i2c'}"},
+      {"name": "UserData","kind": "namevalue"},
+      {"name": "ValuesReceived","kind": "namevalue","type": "double"},
+      {"name": "ValuesSent","kind": "namevalue","type": "double"},
+      {"name": "Vendor","kind": "namevalue","type": "char"}
+    ],
+    "outputs":
+    [
+      {"name":"out","type":"i2c"}
+    ]
+  },
+  "readasync": {
+    "inputs":
+    [
+      {"name": "obj","kind": "required","type": [["gpib"],["serial"],["tcpip"],["udp"],["visa"],["Bluetooth"],["i2c"]]},
+      {"name": "size","kind": "optional","type": "double"}
+    ]
+  },
+  "record": {
+    "inputs":
+    [
+      {"name": "obj","kind": "required","type": [["icdevice"],["gpib"],["serial"],["tcpip"],["udp"],["visa"],["Bluetooth"],["i2c"]]},
+      {"name": "switch","kind": "optional","type": "choices={'on','off'}"}
+    ]
+  },
+  "scanstr": {
+    "inputs":
+    [
+      {"name": "obj","kind": "required","type": [["gpib"],["serial"],["tcpip"],["udp"],["visa"],["Bluetooth"],["i2c"]]},
+      {"name": "delimiter","kind": "optional","type": "char"},
+      {"name": "format","kind": "optional","type": "char"}
+    ],
+    "outputs":
+    [
+      {"name":"A","type":"char"},
+      {"name":"count","type":"double"},
+      {"name":"msg","type":"char"}
+    ]
+  },
+  "stopasync": {
+    "inputs":
+    [
+      {"name": "obj","kind": "required","type": [["gpib"],["serial"],["tcpip"],["udp"],["visa"],["Bluetooth"],["i2c"]]}
+    ]
+  }
+}

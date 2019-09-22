@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="FieldsMismatch">Structures contain different fields.</entry>
+    <entry key="MissingFields">Missing fields in Actual:</entry>
+    <entry key="ExtraFields">Extra fields in Actual:</entry>
+    <entry key="FieldsToIgnore">Specified fields to ignore during comparison:</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  rsccat
+-->

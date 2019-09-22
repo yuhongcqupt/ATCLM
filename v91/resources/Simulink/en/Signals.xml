@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="HiliteToDstEncountersReference">Highlight to destination was terminated in ''{0}'' at the boundary of one or more library blocks that are not fully loaded. To facilitate prompt edit-time response, loading of library blocks is deferred until operations such as graphical open or model compile are carried out</entry>
+    <entry key="HiliteToSrcEncountersReference">Highlight to source was terminated in ''{0}'' at the boundary of one or more library blocks that are not fully loaded. To facilitate prompt edit-time response, loading of library blocks is deferred until operations such as graphical open or model compile are carried out</entry>
+    <entry key="InputPortTsNotSetCorrectly">The sample time of the input port {0,number,integer} of the block ''{1}'' was not set correctly. The engine requested that the sample time be set to {2} but the block set it to {3}.</entry>
+    <entry key="InvalidInputLoggingName">Invalid logging name for input port {0,number,integer} of ''{1}''</entry>
+    <entry key="InvalidNumberOfPorts">Invalid number of ports specified for block ''{0}''</entry>
+    <entry key="InvalidOutputLoggingName">Invalid logging name for output port {0,number,integer} of ''{1}''. The name must be between 1 and 63 characters long. </entry>
+    <entry key="NoPropSigLabOnFloatingPort">Unconnected ports do not support signal label propagation</entry>
+    <entry key="NoPropSigLabWithAll">The 'Show propagated signals' option in the Signal Properties dialog box is set to 'all' for one or more signals in the model ''{0}''. The 'all' option is no longer available and the "on" option is set for these signals.\n Save your model to suppress this warning.\nFor more information, see the signal label propagation section in the documentation.</entry>
+    <entry key="NoPropSigLabThroughBlock">''{0}'', output port ''{1,number,integer}'', does not support signal label propagation</entry>
+    <entry key="OutputPortTsNotSetCorrectly">The sample time of the output port {0,number,integer} of the block ''{1}'' was not set correctly. The engine requested that the sample time be set to {2} but the block set it to {3}.</entry>
+    <entry key="PortAttributeConflictErr1a">Can not select MustResolveToSignalObject when signal name is empty</entry>
+    <entry key="PortAttributeConflictErr1b">Can not select MustResolveToSignalObject unless RTWStorageClass is ''Auto''</entry>
+    <entry key="PortAttributeConflictErr1c">Can not select MustResolveToSignalObject unless package is ''--- None ---'' and storage class is ''Auto''</entry>
+    <entry key="PortAttributeConflictErr2a">Can not set RTWStorageClass to ''{0}'' when signal name is empty</entry>
+    <entry key="PortAttributeConflictErr2b">Can not set RTWStorageClass to ''{0}'' when MustResolveToSignalObject is selected</entry>
+    <entry key="PortAttributeConflictErr2c">Can not set RTWStorageClass to ''Auto'' if RTWStorageTypeQualifier is specified</entry>
+    <entry key="PortAttributeConflictErr2d">Can not set RTWStorageClass to ''{0}'' if SignalObject is specified</entry>
+    <entry key="PortAttributeConflictErr3">Can not specify RTWStorageTypeQualifier when RTWStorageClass is ''Auto''</entry>
+    <entry key="PortAttributeConflictErr4a">Can not set SignalObject for output port {0,number,integer} of ''{1}'' when signal name is empty</entry>
+    <entry key="PortAttributeConflictErr4b">Can not set SignalObject for output port {0,number,integer} of ''{1}'' because the signal name ''{2}'' is not a valid identifier.  Valid identifiers start with an alphabetic or ''_'' character, followed by alphanumeric or ''_'' characters</entry>
+    <entry key="PortAttributeConflictErr4c">Can not set SignalObject for output port {0,number,integer} of ''{1}'' unless RTWStorageClass is ''Auto''</entry>
+    <entry key="PortAttributeConflictErr4d">Can not set SignalObject for output port {0,number,integer} of ''{1}'' when MustResolveToSignalObject is selected</entry>
+    <entry key="PortInvalidPackage">The package ''{0}'' cannot be found</entry>
+    <entry key="PortInvalidSignalIdentifier">Cannot select MustResolveToSignalObject for output port {0,number,integer} of ''{1}'' because the signal name ''{2}'' is not a valid identifier.  Valid identifiers start with an alphabetic character, followed by at most {3,number,integer} alphanumeric or ''_'' characters</entry>
+    <entry key="PortInvalidSignalIdentifier1">Cannot set storage class of output port {0,number,integer} of ''{1}'' to ''{2}'' because the signal name ''{3}'' is not a valid identifier.  Valid identifiers start with an alphabetic or ''_'' character, followed by alphanumeric or ''_'' characters</entry>
+    <entry key="PortInvalidSignalIdentifier2">The signal name ''{0}'' is not a valid identifier but this signal has MustResolveToSignalObject selected.  Valid identifiers start with an alphabetic character, followed by at most {1,number,integer} alphanumeric or ''_'' characters</entry>
+    <entry key="PortInvalidSignalIdentifier3">The signal name ''{0}'' is not a valid identifier but this signal''s storage class is ''{1}''.  Valid identifiers start with an alphabetic or ''_'' character, followed by alphanumeric or ''_'' characters. The signal name can only be set to an invalid identifier if the storage class is ''Auto''</entry>
+    <entry key="PortInvalidSignalIdentifier4">The signal name ''{0}'' is not a valid identifier. Valid identifiers start with an alphabetic or ''_'' character, followed by alphanumeric or ''_'' characters. The signal name can only be set to an invalid identifier if the package is ''--- None ---''</entry>
+    <entry key="PortPackageDoesNotDefineSigObj">The package ''{0}'' does not contain a ''{1}'' class that is derived from ''{2}''</entry>
+    <entry key="PortSigObjCreationErr">Unable to create a ''{0}'' object</entry>
+    <entry key="Port_InvalidObjectForOrientation">Invalid object type in gp_orientation</entry>
+    <entry key="Port_InvalidOrientation">Invalid block orientation in gp_orientation</entry>
+    <entry key="SigAttribPropErr2">The name ''{0}'' specified for the signal from output port {1,number,integer} of {2} is not a valid identifier.  Valid identifiers start with an alphabetic or ''_'' character, followed by alpha numeric or ''_'' characters. Identifiers starting with ''rt'' are reserved, but can be allowed by opening the Configuration Parameters dialog and setting the ''rt prefix for identifiers'' setting to ''warning'' or ''none''</entry>
+    <entry key="SigAttribPropErr3">The signal attribute '{'StorageClass = ''{0}'''}' specified on the line originating from the output port {1,number,integer} of {2} is invalid because the individual signals contained in this line are mapped to different memory locations. The StorageClass for this line must be set to ''Auto''</entry>
+    <entry key="SigAttribPropErr4">Conflicting signal specifications: The attributes '{'Name = ''{0}'', StorageClass = ''{1}'', StorageTypeQualifier = ''{2}'''}' specified on output port {3,number,integer} of {4}, and the attributes '{'Name = ''{5}'', StorageClass = ''{6}'', StorageTypeQualifier = ''{7}'''}' specified on output port {8,number,integer} of {9} are inconsistent but they correspond to the same signal.</entry>
+    <entry key="SigAttribPropErr4Merge">Conflicting signal specifications: The attributes '{'Name = ''{0}'', StorageClass = ''{1}'', StorageTypeQualifier = ''{2}'''}' specified on output port {3,number,integer} of {4}, and the attributes '{'Name = ''{5}'', StorageClass = ''{6}'', StorageTypeQualifier = ''{7}'''}' specified on output port {8,number,integer} of {9} are inconsistent but they feed the Merge block {10} and therefore share the same memory. Signals entering the Merge block must have the same attributes. A common technique is to use Signal Conversion blocks upstream of the Merge block to isolate the signal specifications.</entry>
+    <entry key="SigAttribPropErr5">Signal label mismatch: {0} output port {1,number,integer} label ''{2}'', should match {3} output port {4,number,integer} label ''{5}''</entry>
+    <entry key="SigAttribPropErrFcnCallOrAction">The signal attribute '{'StorageClass = ''{0}'''}' specified on the line originating from the output port {1,number,integer} of ''{2}'' is invalid because this is a function-call or action signal.  The StorageClass for this line must be set to ''Auto''</entry>
+    <entry key="SigAttribPropErrMerge1">The signal attribute '{'StorageClass = ''{0}'''}' specified on the line originating from the output port {1,number,integer} of ''{2}'' is invalid because this signal maps to a partial memory location after being merged at input port {3,number,integer} of a merge block ''{4}''.  The StorageClass for this line must be set to ''Auto''</entry>
+    <entry key="SigAttribPropErrMerge2">The signal attribute '{'StorageClass = ''{0}'''}' specified on the line originating from the output port {1,number,integer} of ''{2}'' is invalid because this signal is driving input port {3,number,integer} of a merge block ''{4}'' which allows unequal port widths.  The StorageClass for this line must be set to ''Auto''</entry>
+    <entry key="SigLabelPropEncountersReference">Signal label propagation was terminated in ''{0}'' at the boundary of one or more library blocks that are not fully loaded. To facilitate prompt edit-time response, loading of library blocks is deferred until operations such as graphical open or model compile are carried out</entry>
+    <entry key="SigobjInitialValueInvalidComplexityPort">Signal object ''{0}'' cannot specify a complex initial value.  The signal object is used by block ''{1}'' output port {2,number,integer}, where complex value is not expected.</entry>
+    <entry key="SigobjInitialValueInvalidConvert">Error converting initial value specified on signal object ''{0}'' to the datatype ''{1}'' (the signal object is used by block ''{2}'').</entry>
+    <entry key="SigobjInitialValueInvalidDataType">Signal object ''{0}'' cannot specify an initial value of invalid datatype (the signal object is used by block ''{1}'').  The initial value is of invalid datatype ''{2}''.</entry>
+    <entry key="SigobjInitialValueInvalidDimsPort">Signal object ''{0}'' cannot specify an initial value of invalid dimensions (the signal object is used by block ''{1}'' output port {2,number,integer}).  The initial value has dimensions ''{3}'' while the block is expecting dimensions ''{4}''.</entry>
+    <entry key="SigobjInitialValueMismatchParamValueDWork">Initial value consistency check error.  Initial value of signal object ''{0}'' (used by block ''{1}'' DWork {2,number,integer}) does not match ''{3}'' parameter setting for block ''{4}''.  Make the two values match or specify one value as empty.</entry>
+    <entry key="SigobjInitialValueMismatchParamValuePort">Initial value consistency check error.  Initial value of signal object ''{0}'' (used by block ''{1}'' output port {2,number,integer}) does not match ''{3}'' parameter setting for block ''{4}''.  Make the two values match or specify one value as empty.</entry>
+    <entry key="SigobjInitialValueMismatchParamValueState">Initial value consistency check error.  Initial value of signal object ''{0}'' (used by state of block ''{1}'') does not match ''{2}'' parameter setting for block ''{3}''.  Make the two values match or specify one value as empty.</entry>
+    <entry key="SigobjInitialValueOnBus">Signal object ''{0}'' currently cannot support initial value on bus signal (the signal object is used by block ''{1}'').</entry>
+    <entry key="SigobjInitialValueOnConstSignal">Cannot specify initial value for signal of constant sample time.  Signal object ''{0}'' resolves to signal of constant sample time on output port {1,number,integer} of block ''{2}''.  Signals of constant sample time are initialized to the actual invariant value.</entry>
+    <entry key="SigobjInitialValueOnDTFEtc">Signal object ''{0}'' cannot specify an initial value when resolved to a state on block ''{1}''.  This block always initializes its state to zero and currently does not provide user control.</entry>
+    <entry key="SigobjInitialValueOnFcnCallOrActionSignal">Signal object ''{0}'' cannot specify an initial value when the object resolves to a function-call or action signal.  The signal object is used by block ''{1}''.</entry>
+    <entry key="SigobjInitialValueOnGround">Signal object ''{0}'' cannot specify an initial value when used by a ground block (''{1}'').</entry>
+    <entry key="SigobjInitialValueOnGround2">Signal object ''{0}'' cannot specify an initial value when used by output port {1,number,integer} of ''{2}'' because this signal is driven by a ground block.</entry>
+    <entry key="SigobjInitialValueOnVarDimsSignal">Cannot specify initial value for variable-size signal.  Signal object ''{0}'' resolves to variable-size signal on output port {1,number,integer} of block ''{2}''.</entry>
+    <entry key="TipAlert_TraceLineDescription">The line trace command returned multiple destination blocks. Because multiple destination blocks were found these blocks are not brought into focus.  Please navigate through the highlighted paths to bring the desired destination blocks into focus.</entry>
+    <entry key="TipAlert_TraceLinePrefsKey">SimulinkTipAlertTraceLineTip</entry>
+    <entry key="TipAlert_TraceLineTitle">Trace Line Tip</entry>
+    <entry key="UnableToPropSigLabel">Unable to propagate signal label to output port {0,number,integer} of ''{1}'' because this output port contains signal slice(s). You can turn off this warning message by changing the "Show propagated signals" option to "off" in the Signal Properties dialog box of this output port</entry>
+    <entry key="FailDueToAUTOSARAccessFcnAlignment">Variable associated with ''{0}'' is using AUTOSAR access function and cannot be aligned on {1,number,integer}-byte boundary.</entry>
+    <entry key="FailDueToAlignment">Signal ''{0}'' is not aligned on {1,number,integer}-byte boundary.</entry>
+    <entry key="SigPropPrmsEmptyName">The value of parameter ''{0}'' is empty</entry>
+    <entry key="SigPropPrmsInvalidMatlabName">The value ''{0}'' of parameter ''{1}'' is not a valid MATLAB identifier. Valid identifiers start with an alphabetic character, followed by at most {2,number,integer} alphanumeric or ''_'' characters</entry>
+    <entry key="SigPropPrmsMustResolveError">Cannot set parameter ''{0}'' to ''true'' because: \n{1}</entry>
+    <entry key="SigPropPrmsStorageClassError">Cannot set parameter ''{0}'' to a value other than ''Auto'' because: \n{1}</entry>
+    <entry key="SigPropPrmsTypeQualifierError" note="stringDatatypeUpdate">Cannot set parameter ''{0}'' to a non-empty text value because: \n{1}</entry>
+    <entry key="SigPropPrmsSignalObjectError">Cannot set parameter ''{0}'' to a non-empty object because: \n{1}</entry>
+    <entry key="SigPropPrmsErrorCause1">The value of parameter ''{0}'' is ''true''</entry>
+    <entry key="SigPropPrmsErrorCause2">The value of parameter ''{0}'' is not empty</entry>
+    <entry key="SigPropPrmsErrorCause3">The value of parameter ''{0}'' is ''Auto''</entry>
+    <entry key="SigPropPrmsErrorCause4">Parameter ''{0}'' has been promoted to mask</entry>
+    <entry key="UnableToSetPromotedParam">The promoted parameter ''{0}'' of the block ''{1}'' cannot be set because: \n{2}</entry>
+    <entry key="SetSignalNameOnInputPortError">Cannot set signal name for the specified port. The specified port must be an output port or a connection port</entry>
+    <entry key="SetSignalNameOnSubsystemOutportError">Cannot set signal name on an outport block within a subsystem.</entry> 
+    <entry key="SIMULINK_OBJECT_LIST_CUSTOMIZE_MENU_ITEM">--- Customize class lists ---</entry>
+  </message>
+</rsccat>

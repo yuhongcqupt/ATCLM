@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Copyright 2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="GeneratingReport">Generating report. Please wait.</entry>
+    <entry key="PreparingContent">Preparing content for the report.</entry>
+    <entry key="AddingContent">Adding content to the report.</entry>
+    <entry key="WritingFile">Writing report to file.</entry>
+    <entry key="ReportSaved">Report has been saved to: {0}</entry>
+  </message>
+</rsccat>

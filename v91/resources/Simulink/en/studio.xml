@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2009-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="normalSimulationModeOnly">Port value displays are only possible using the normal simulation mode</entry>
+
+    <!-- FileMenu -->
+    <entry key="FileMenu">&amp;File</entry>
+    <entry key="NewMenu">&amp;New</entry>
+    <entry key="NewModel">&amp;Model</entry>
+    <entry key="StartPageNewModel">&amp;Model...</entry>
+    <entry key="NewModelTooltip">New Model</entry>
+    <entry key="NewChart">&amp;Chart</entry>
+    <entry key="StartPageNewChart">&amp;Chart...</entry>
+    <entry key="NewChartTooltip">New Chart</entry>
+    <entry key="NewLibrary">&amp;Library</entry>
+    <entry key="StartPageNewLibrary">&amp;Library...</entry>
+    <entry key="NewLibraryTooltip">New Library</entry>
+    <entry key="NewFromTemplateGallery">&amp;From Template...</entry>
+    <entry key="NewFromTemplateGalleryTooltip">New From Template Gallery</entry>
+    <entry key="NewProject">&amp;Simulink Project...</entry>
+    <entry key="StartPageNewProject">&amp;Project...</entry>
+    <entry key="NewProjectTooltip">New Project</entry>
+    <entry key="NewParallelMenu">Para&amp;llel</entry>
+    <entry key="NewParallelTooltip">New Parallel</entry>
+    <entry key="NewParallelSMP">&amp;Deployment Diagram</entry>
+    <entry key="NewParallelSMPTooltip">New DeploymentDiagram</entry>
+    <entry key="Open">&amp;Open...</entry>
+    <entry key="OpenRecentMenu">Open &amp;Recent</entry>
+    <entry key="CloseMenu">&amp;Close</entry>
+    <entry key="CloseTab">Close &amp;Tab</entry>
+    <entry key="CloseOtherTabs">Close &amp;Other Tabs</entry>
+    <entry key="CloseModel">Close &amp;Model</entry>
+    <entry key="CloseModelAndReferences">Close Model &amp;&amp; &amp;References</entry>
+    <entry key="CloseWindow">Close &amp;Window</entry>
+    <entry key="CloseAllWindows">Close &amp;All Simulink Windows</entry>
+    <entry key="ExportModel">&amp;Export Model to</entry>
+    <entry key="ExportLibrary">&amp;Export Library to</entry>
+    <entry key="Save">&amp;Save</entry>
+    <entry key="SaveModelReference">Save Model Reference</entry>
+    <entry key="SaveAs">Save &amp;As...</entry>
+    <entry key="SaveAll">Sa&amp;ve All</entry>
+    <entry key="SourceControlMenu">So&amp;urce Control</entry>
+    <entry key="SourceControlGetLatestVersion">Get &amp;Latest Version</entry>
+    <entry key="SourceControlCheckOut">Check &amp;Out</entry>
+    <entry key="SourceControlCheckIn">Check &amp;In</entry>
+    <entry key="SourceControlUndoCheckOut">&amp;Undo Check Out</entry>
+    <entry key="SourceControlAdd">&amp;Add</entry>
+    <entry key="SourceControlRemove">&amp;Remove</entry>
+    <entry key="SourceControlHistory">&amp;History</entry>
+    <entry key="SourceControlProperties">&amp;Properties</entry>
+    <entry key="SourceControlLaunch">&amp;Launch</entry>
+    <entry key="ModelPropertiesMenu">Mode&amp;l Properties</entry>
+    <entry key="ModelProperties">&amp;Model Properties</entry>
+    <entry key="LibraryPropertiesMenu">Librar&amp;y Properties</entry>
+    <entry key="LibraryProperties">&amp;Library Properties</entry>
+    <entry key="ExportToWeb">&amp;Web...</entry>
+    <entry key="ExportToPreviousVersion">&amp;Previous Version...</entry>
+    <entry key="ExportToTemplate">&amp;Template...</entry>
+    <entry key="ExportToProtectedModel">P&amp;rotected Model...</entry>
+    <entry key="ExportToPackagedModel">P&amp;ackaged Model...</entry>
+    <entry key="ExportMenu">Export &amp;&amp; Send</entry>
+<!-- Remove this key after final port -->
+    <entry key="ReportsMenu">Repor&amp;ts</entry>
+    <entry key="sddReport">System &amp;Design Description</entry>
+    <entry key="ReqTraceReport">System &amp;Requirements Traceability</entry>
+    <entry key="SimulinkPreferences">Simulink Pre&amp;ferences</entry>
+    <entry key="PrintMenu">&amp;Print</entry>
+    <entry key="Print">&amp;Print</entry>
+    <entry key="PrintToFileMenu">Print To &amp;File</entry>
+    <entry key="PrintToPDF">.&amp;PDF</entry>
+    <entry key="PrintToJpeg">.&amp;JPEG</entry>
+    <entry key="PrintToPng">.P&amp;NG</entry>
+    <entry key="PrintToTiff">.&amp;TIFF</entry>
+    <entry key="PrintDetails">Print &amp;Details...</entry>
+    <entry key="PrinterSetup">Page &amp;Setup...</entry>
+    <entry key="EnableTiledPrinting">Enable &amp;Tiled Printing</entry>
+    <entry key="ShowPageBoundaries">Show Page &amp;Boundaries</entry>
+    <entry key="ExitMatlab">E&amp;xit MATLAB</entry>
+	
+    <!-- EditMenu -->
+    <entry key="EditMenu">&amp;Edit</entry>
+    <entry key="Undo">&amp;Undo {0}</entry>
+    <entry key="CantUndo">Can''t &amp;Undo</entry>
+    <entry key="Redo">&amp;Redo {0}</entry>
+    <entry key="CantRedo">Can''t &amp;Redo</entry>
+    <entry key="Cut">Cu&amp;t</entry>
+    <entry key="Copy">&amp;Copy</entry>
+    <entry key="Paste">&amp;Paste</entry>
+    <entry key="CopyModelToClipboard">C&amp;opy Current View to Clipboard</entry>
+    <entry key="CopyModelToClipboardToolTip">Copy a picture of the model clipboard.</entry>
+    <entry key="CopyModelToClipboardStatusTip">Copy a picture of the model clipboard.</entry>
+    <entry key="CopyViewToClipboard">Copy Current View to C&amp;lipboard</entry>
+    <entry key="CopyViewToClipboardMenu">Copy Current View to Clipboard</entry>
+    <entry key="CopyBitmapViewToClipboard">Bitmap</entry>
+    <entry key="CopyBitmapViewToClipboardToolTip">Copy current view of the model to the clipboard as a bitmap.</entry>
+    <entry key="CopyBitmapViewToClipboardStatusTip">Copy current view of the model to the clipboard as a bitmap.</entry>
+    <entry key="CopyMetaViewToClipboard">Metafile</entry>
+    <entry key="CopyMetaViewToClipboardToolTip">Copy current view of the model to the clipboard as a Windows metafile.</entry>
+    <entry key="CopyMetaViewToClipboardStatusTip">Copy current view of the model to the clipboard as a Windows metafile.</entry>
+    <entry key="SelectAll">&amp;Select All</entry>
+    <entry key="Delete">&amp;Delete</entry>
+    <entry key="Find">&amp;Find...</entry>
+    <entry key="FindReferencedVariables">Find Referenced &amp;Variables</entry>
+    <entry key="FindReferencedVariablesInRefMdl">Find Referenced Variables in Referenced Model</entry>
+    <entry key="CanvasColorMenu">C&amp;anvas Color</entry>
+    <entry key="ColorCustom">C&amp;ustom</entry>
+    <entry key="ColorBlack">&amp;Black</entry>
+    <entry key="ColorWhite">&amp;White</entry>
+    <entry key="ColorRed">&amp;Red</entry>
+    <entry key="ColorGreen">&amp;Green</entry>
+    <entry key="ColorBlue">B&amp;lue</entry>
+    <entry key="ColorCyan">Cya&amp;n</entry>
+    <entry key="ColorMagenta">&amp;Magenta</entry>
+    <entry key="ColorViolet">&amp;Violet</entry>
+    <entry key="ColorYellow">&amp;Yellow</entry>
+    <entry key="ColorGray">Gr&amp;ay</entry>
+    <entry key="ColorLightBlue">Lig&amp;ht Blue</entry>
+    <entry key="ColorOrange">&amp;Orange</entry>
+    <entry key="ColorDarkGreen">&amp;Dark Green</entry>
+    <entry key="ColorBrown">Brown</entry>
+    <entry key="ColorAutomatic">Au&amp;tomatic</entry>
+    <entry key="BusEditor">&amp;Bus Editor</entry>
+    <entry key="LUTEditor">&amp;Lookup Table Editor</entry>
+    <entry key="CommentThru">Comment Through</entry>
+    <entry key="Comment">Comment Out</entry>
+    <entry key="Uncomment">Uncomment</entry>
+    <entry key="CommentThruNotSupported">Commenting through is supported for blocks that have the same number of inputs and outputs and no control or connection ports. Hence the following block(s) cannot be commented through:</entry>
+    <entry key="CommentNotSupported">Commenting out of the following block(s) is not supported:</entry>
+    <entry key="UncommentNotSupported">Uncommenting of the following block(s) is not supported:</entry>
+    <entry key="BlockCommenting">Block Commenting</entry>
+	<entry key="DropShadowUnsupported">The parameter Shadow is not supported.</entry>
+	
+	<!-- ViewMenu -->
+    <entry key="ViewMenu">&amp;View</entry>
+    <entry key="ShowLibraryBrowser">&amp;Library Browser</entry>
+    <entry key="ModelExplorer">Model E&amp;xplorer</entry>
+     <entry key="VariantManager">&amp;Variant Manager</entry>
+    <entry key="ModelExplorerToolTip">Model Explorer</entry>
+    <entry key="ModelExplorerBaseWorkspace">&amp;Base Workspace</entry>
+    <entry key="ModelExplorerModelWorkspace">&amp;Model Workspace</entry>
+    <entry key="ModelExplorerDataDictionary">&amp;Data Dictionary</entry>
+    <entry key="ModelExplorerAssignDictionary">&amp;Link to Data Dictionary...</entry>
+    <entry key="DependencyViewerMenu">Model Dependency &amp;Viewer</entry>
+    <entry key="DependencyIncludingLibraries">Models &amp;&amp; &amp;Libraries</entry>
+    <entry key="DependencyExcludingLibraries">&amp;Models Only</entry>
+    <entry key="DependencyReferenced">&amp;Referenced Model Instances</entry>
+    <entry key="OpenMessageViewer">Diagnostic Viewer</entry>	
+    <entry key="SysRequirementsMenu">&amp;Requirements Traceability at This Level</entry>
+    <entry key="ModelBrowserMenu">Model &amp;Browser</entry>
+    <entry key="ShowModelBrowser">&amp;Show Model Browser</entry>
+    <entry key="HideModelBrowser">Hide Model Browser</entry>
+    <entry key="ShowLibLinks">Include &amp;Library Links</entry>
+    <entry key="ShowLibLinksInModelBrowser">Library Links</entry>
+    <entry key="LookUnderMasks">Include Systems with &amp;Mask Parameters</entry>
+    <entry key="LookUnderMasksInModelBrowser">Systems with Mask Parameters</entry>
+    <entry key="ShowReferenced">Include Referenced Models</entry>
+    <entry key="ShowReferencedInModelBrowser">Referenced Models</entry>
+    <entry key="ShowTestHarnesses">View Harnesses</entry>
+    <entry key="ShowTestHarnessesInModelBrowser">View Harnesses</entry>
+    <entry key="Toolbars">&amp;Toolbars</entry>
+    <entry key="StatusBar">&amp;Status Bar</entry>
+    <entry key="ExplorerBar">E&amp;xplorer Bar</entry>
+    <entry key="ConfigureToolbars">&amp;Configure Toolbars</entry>
+    <entry key="ToolbarSwitchesMenu">&amp;Toolbars</entry>
+    <entry key="ToolbarSwitchBrowse">Bro&amp;wse Back/Forward/Up</entry>
+    <entry key="ToolbarSwitchNew">&amp;New/Save</entry>
+    <entry key="ToolbarSwitchOpen">New/&amp;Open/Save</entry>
+    <entry key="ToolbarSwitchCut">&amp;Cut/Copy/Paste</entry>
+    <entry key="ToolbarSwitchUndo">&amp;Undo/Redo</entry>
+    <entry key="ToolbarSwitchPrint">&amp;Print</entry>
+    <entry key="ToolbarSwitchLibraryBrowser">Library Browser/Model Configuration Parameters / Model E&amp;xplorer</entry>
+    <entry key="ToolbarSwitchModelBrowser">&amp;Model Browser</entry>
+    <entry key="ToolbarSwitchUpdateDiagram">Update &amp;Diagram</entry>
+    <entry key="ToolbarSwitchRefresh">&amp;Refresh Blocks</entry>
+    <entry key="ToolbarSwitchSimulation">&amp;Simulation Start/Stop</entry>
+    <entry key="ToolbarSwitchAdvisor">Model &amp;Advisor</entry>
+    <entry key="ToolbarSwitchDebug">Debu&amp;gger</entry>
+    <entry key="ToolbarSwitchBuild">&amp;Build</entry>
+    <entry key="ToolbarSwitchFind">&amp;Find</entry>
+    <entry key="NavigateMenu">&amp;Navigate</entry>
+    <entry key="NavigateBack">&amp;Back</entry>
+    <entry key="NavigateForward">&amp;Forward</entry>
+    <entry key="NavigateUpToParent">&amp;Up to Parent</entry>
+    <entry key="NavigateToNextTab">&amp;Next Tab</entry>
+    <entry key="NavigateToPreviousTab">&amp;Previous Tab</entry>
+    <entry key="ZoomMenu">&amp;Zoom</entry>
+    <entry key="ZoomIn">Zoom &amp;In</entry>
+    <entry key="ZoomOut">Zoom &amp;Out</entry>
+    <entry key="ZoomFitToView">&amp;Fit to View</entry>
+    <entry key="ZoomNormalView">&amp;Normal View (100%)</entry>
+    <entry key="ShowHideSmartGuides">Smart &amp;Guides</entry>
+    <entry key="Desktop">MATLAB &amp;Desktop</entry>
+    <entry key="HiliteOptionsMenu">Highlight Options</entry>
+    <entry key="LibViewFixedPoint">Blocks that support &amp;Fixed Point</entry>
+    <entry key="LibViewBaseInt">Blocks that support Base &amp;Integer Data Type</entry>
+    <entry key="LibViewBoolean">Blocks that support &amp;Boolean Data Type</entry>
+    <entry key="LibViewSingle">Blocks that support &amp;Single Data Type</entry>
+    <entry key="LibViewProduction">Blocks Recommended for &amp;Production Code</entry>
+	
+    <entry key="ShowPropertyInspector">Property Inspector</entry>
+    <entry key="Signals">Signals</entry>
+    
+    <entry key="DataViewMenu">Model Data</entry>
+    
+	<!-- Display Menu -->
+    <entry key="DisplayMenu">&amp;Display</entry>
+    <entry key="LibraryLinkDisplayMenu">&amp;Library Links</entry>
+    <entry key="LibraryLinkDisplayMenuContext">&amp;Library Links Display</entry>
+    <entry key="LibraryLinksNone">&amp;None</entry>
+    <entry key="LibraryLinksDisabled">&amp;Disabled</entry>
+    <entry key="LibraryLinksUser">&amp;User Defined</entry>
+    <entry key="LibraryLinksAll">&amp;All</entry>
+    <entry key="SampleTimeDisplayMenu">Sample &amp;Time</entry>
+    <entry key="SampleTimeDisplayMenuContext">Sample &amp;Time Display</entry>
+    <entry key="SampleTimeDisplayAll">&amp;All</entry>
+    <entry key="SampleTimeDisplayAnnotations">A&amp;nnotations</entry>
+    <entry key="SampleTimeDisplayColor">&amp;Colors</entry>
+    <entry key="SampleTimeDisplayNone">&amp;Off</entry>
+    <entry key="SampleTimeLegend">Sample Time &amp;Legend</entry>
+    <entry key="BlockDisplayMenu">&amp;Blocks</entry>
+    <entry key="SortedOrder">&amp;Sorted Execution Order</entry>
+    <entry key="ModelRefShowVersion">&amp;Block Version for Referenced Models</entry>
+    <entry key="MaskWithParameters">&amp;Parameterized Mask Indicator</entry>
+    <entry key="VariantCondition">&amp;Variant Conditions</entry>
+    <entry key="VarCondLegend">Variant Condition &amp;Legend</entry>
+    <entry key="ModelReferenceVariants">&amp;Variants Indicator</entry>
+    <entry key="RequirementLinks">&amp;Requirement Links</entry>
+    <entry key="BlockDataTipsMenu">Tool Tip &amp;Options</entry>
+    <entry key="BlockDataTipsBlockName">Block &amp;Name</entry>
+    <entry key="BlockDataTipsParamNamesAndValues">&amp;Parameter Names &amp;&amp; Values</entry>
+    <entry key="BlockDataTipsDescriptionString">&amp;Description</entry>
+    <entry key="PortUnits">Port &amp;Units</entry>
+    <entry key="PortDataTypes">Port &amp;Data Types</entry>
+    <entry key="PortDataTypeDisplayFormat">Port &amp;Data Type Display Format</entry>
+    <entry key="PortDataTypeDisplayFormatAlias">&amp;Alias Type</entry>
+    <entry key="PortDataTypeDisplayFormatBase">&amp;Base Type</entry>
+    <entry key="PortDataTypeDisplayFormatBaseAndAlias">Base &amp;and Alias Types</entry>
+    <entry key="PortValuePlot">Port &amp;Value Plots</entry>
+    <entry key="DesignRanges">Design &amp;Ranges</entry>
+    <entry key="ExecutionContextIcon">Execution &amp;Context Indicator</entry>
+    <entry key="ModelRefShowIO">Block I/O &amp;Mismatch for Referenced Models</entry>
+    <entry key="PortSignalDisplayMenu">&amp;Signals &amp;&amp; Ports</entry>
+    <entry key="LinearizationAnnotations">&amp;Linearization Indicators</entry>
+    <entry key="LineDimensions">Signal &amp;Dimensions</entry>
+    <entry key="StorageClass">&amp;Storage Class</entry>
+    <entry key="TestpointIcons">&amp;Testpoint &amp;&amp; Logging Indicators</entry>
+    <entry key="SignalResolutionIcons">Signal to Object &amp;Resolution Indicator</entry>
+    <entry key="ViewerIcons">Viewer &amp;Indicator</entry>
+    <entry key="WideLines">&amp;Wide Nonscalar Lines</entry>
+    <entry key="DesignRange">&amp;Design Range</entry>
+    <entry key="HideMarkup">Hide Markup</entry>
+    <entry key="ShowMarkup">Show Markup</entry>
+    <entry key="VisualizeInsertedRTB">&amp;Hidden Rate Transition Block Indicators</entry>
+    
+    <entry key="EditTimeNotificationsDisplayMenu">&amp;Warnings and Errors</entry>
+    <entry key="EditTimeErrors">&amp;Errors</entry>
+    <entry key="EditTimeWarnings">&amp;Warnings</entry>
+    <entry key="EditTimeCheckingPreference">Errors &amp;&amp; Warnings </entry>
+    <entry key="AdvisorEditTimeCheckingForAnalysisMenu">&amp;Display Advisor Checks in Editor</entry>    
+    
+    <entry key="SimulationDataDisplayMenu">Data Di&amp;splay</entry>
+    <entry key="DisplayDataDisplayMenu">Data Di&amp;splay in Simulation</entry>
+    <entry key="RemoveAllValueLabels">Remove All &amp;Value Labels</entry>
+    <entry key="ShowValueLabelForSelectedPort">Show Value Label of Selected &amp;Port</entry>
+    <entry key="ShowValueLabelsWhenHovering">Show Value Labels When &amp;Hovering</entry>
+    <entry key="ToggleValueLabelsWhenClicked">Toggle Value Labels When &amp;Clicked</entry>
+    <entry key="ValueLabelDisplayOptions">&amp;Options...</entry>
+    
+    <entry key="PortsFromModel">Ports From &amp;Model</entry>
+    <entry key="ChartPortLabels">Port &amp;Labels</entry>
+    <entry key="DataEventIcons">Port &amp;Icons</entry>
+    <entry key="ShowSystemTransparency">Co&amp;ntents of System Below</entry>
+    <entry key="HighlightSignalToSource">&amp;Highlight Signal to Source</entry>
+    <entry key="HighlightSignalToDestination">Highlight Signal to &amp;Destination</entry>
+    <entry key="HighlightConnections">&amp;Highlight Connections</entry>
+    <entry key="SSA_HighlightSignalToSource">Highlight Signal to Source</entry>
+    <entry key="SSA_HighlightSignalToDestination">Highlight Signal to Destination</entry>
+    <entry key="SSA_HighlightConnections">Highlight Connections</entry>
+    <entry key="RemoveHighlighting">&amp;Remove Highlighting</entry>
+
+    <entry key="FunctionConnectors">Function Connectors</entry>
+
+    <!-- Message Animation Menu -->
+    <entry key="MessageAnimationDisplayMenu">&amp;SimEvents Animation</entry>
+    <entry key="MessageAnimationDisplayMenuContext">&amp;SimEvents Animation Display</entry>
+    <entry key="MessageAnimationFast">&amp;Fast</entry>
+    <entry key="MessageAnimationMedium">&amp;Medium</entry>
+    <entry key="MessageAnimationSlow">&amp;Slow</entry>
+    <entry key="MessageAnimationNone">&amp;None</entry>
+	
+	<!-- Diagram Menu -->
+    <entry key="DiagramMenu">Diag&amp;ram</entry>
+    <entry key="SubsystemAndModelRefMenu">S&amp;ubsystem &amp;&amp; Model Reference</entry>
+    <entry key="NavigateToStateOwnerBlock">Go to State Owner Block</entry>
+    <entry key="NavigateToStateReaderBlocks">Go to State Reader Blocks</entry>
+    <entry key="NavigateToStateWriterBlocks">Go to State Writer Blocks</entry>
+    <entry key="CreateSubsystemFromSelection">&amp;Create Subsystem from Selection</entry>
+    <entry key="CreateSubsystemFromArea">&amp;Create Subsystem from Area</entry>
+    <entry key="CreateProtectedModel">Create &amp;Protected Model for Selected Model Block...</entry>
+    <entry key="PackageModelBlockArtifacts">Create Packaged Model &amp;Artifacts...</entry>
+    <entry key="DeletePackagedModelArtifacts">&amp;Delete Packaged Model Artifacts</entry>
+    <entry key="UnpackAndDeletePackagedModelArtifacts">&amp;Unpack and Delete Packaged Model Artifacts...</entry>
+    <entry key="RepackageModelArtifacts">&amp;Repackage model Artifacts...</entry>
+    <entry key="ShowReportForPackagedModel">&amp;Show Report For Packaged Model</entry>
+    <entry key="ExpandSubsystem">&amp;Expand Subsystem</entry>
+    <entry key="AutoLayoutDiagram">&amp;Auto Layout</entry>
+    <entry key="AutoLayoutDiagramMarqeeToolbar">Auto Layout</entry>
+    <entry key="DisplayProtectedModel">&amp;Protected Model</entry>
+    <entry key="UnlockProtectedModel">&amp;Authorize...</entry>
+    <entry key="DisplayProtectedModelWebview">&amp;Show Web view</entry>
+    <entry key="DisplayProtectedModelReport">&amp;Display Report</entry>
+    <entry key="ModelBlockNormalModeVisibility">Model Block &amp;Normal Mode Visibility...</entry>
+    <entry key="ConvertTo">&amp;Convert Subsystem to</entry>
+    <entry key="ConvertSubsystemToReferencedModel">Referenced &amp;Model...</entry>
+    <entry key='ConvertSubsysToVSS'>&amp;Variant Subsystem</entry>
+    <entry key='ConvertCSSToVSS'>&amp;Variant Subsystem...</entry>
+    <entry key="FormatMenu">&amp;Format</entry>
+    <entry key="AnnotationMenu">&amp;Annotation</entry>
+    <!-- Remove this key after final port -->
+    <entry key="AnnotationFormatMenu">&amp;Format</entry>
+    <!-- Remove this key after final port -->
+    <entry key="SignalFormatMenu">&amp;Format</entry>
+    <!-- Remove this key after final port -->
+    <entry key="ModelFont">Font &amp;Styles for Model...</entry>
+    <entry key="LibraryFont">Font &amp;Styles for Library...</entry>
+    <entry key="SelectionFont">Font &amp;Style for Selection...</entry>
+    <entry key="ForegroundColor">&amp;Foreground Color</entry>
+    <entry key="BackgroundColor">&amp;Background Color</entry>
+    <entry key="TextAlignmentMenu">&amp;Text Alignment</entry>
+    <entry key="TextAlignLeft">&amp;Left</entry>
+    <entry key="TextAlignCenter">&amp;Center</entry>
+    <entry key="TextAlignRight">&amp;Right</entry>
+    <entry key="Border">&amp;Annotation Border</entry>
+    <entry key="ShowHideDropShadow">Show Drop Shadow &amp;&amp; &amp;Border</entry>
+    <entry key="LatexMode">Enable Te&amp;X Commands</entry>
+    <entry key="MathMLMode">Interpret as &amp;MathML</entry>
+    <entry key="EditText">&amp;Edit Text</entry>
+    <entry key="SignalsMenu">&amp;Signals &amp;&amp; Ports</entry>
+    <entry key="SignalHierarchy">Signal Hierarchy</entry>
+    <entry key="ViewersMenu">&amp;Viewers</entry>
+    <entry key="OpenViewerMenu">&amp;Open Viewer</entry>
+    <entry key="CreateAndConnectViewerMenu">&amp;Create &amp;&amp; Connect Viewer</entry>
+    <entry key="InspectSignal">Visualize and Record Signal</entry>
+    <entry key="StopInspectSignal">Stop Visualizing Signal</entry>
+    <entry key="ConnectToViewerMenu">Co&amp;nnect To Viewer</entry>
+    <entry key="DisconnectViewerMenu">Di&amp;sconnect Viewer</entry>
+    <entry key="DeleteViewerMenu">&amp;Delete Viewer</entry>
+    <entry key="BlockFormatMenu">&amp;Block Format</entry>
+    <!-- Remove this key after final port -->
+    <entry key="ShowBlockName">Show Block &amp;Name</entry>
+    <entry key="ContentPreview">Content Preview</entry>
+    <!-- Remove this key after final port -->
+    <entry key="DropShadow">S&amp;hadow</entry>
+    <entry key="PortLabelsMenu">&amp;Port Labels</entry>
+    <entry key="ShowPortLabelsNone">&amp;None</entry>
+    <entry key="ShowPortLabelsPortIcon">From Port &amp;Icon</entry>
+    <entry key="ShowPortLabelsPortBlockName">From Port &amp;Block Name</entry>
+    <entry key="ShowPortLabelsSignalName">From &amp;Signal Name</entry>
+    <entry key="RotateAndFlipMenu">&amp;Rotate &amp;&amp; Flip</entry>
+    <entry key="RotateClockwise">&amp;Clockwise</entry>
+    <entry key="RotateCounterClockwise">C&amp;ounterclockwise</entry>
+    <entry key="FlipBlock">F&amp;lip Block</entry>
+    <entry key="FlipBlockPhysicalMenu">F&amp;lip Block</entry>
+    <entry key="FlipBlockPhysicalLR">&amp;Left-Right</entry>
+    <entry key="FlipBlockPhysicalUD">&amp;Up-Down</entry>
+    <entry key="FlipBlockName">Flip Block &amp;Name</entry>
+    <entry key="AlignLeftEdges">Align &amp;Left</entry>
+    <entry key="AlignCentersVertically">Align &amp;Center</entry>
+    <entry key="AlignRightEdges">Align &amp;Right</entry>
+    <entry key="AlignTopEdges">Align &amp;Top</entry>
+    <entry key="AlignCentersHorizontally">Align &amp;Middle</entry>
+    <entry key="AlignBottomEdges">Align &amp;Bottom</entry>
+    <entry key="DistributeItemsHorizontally">Distribute &amp;Horizontally</entry>
+    <entry key="DistributeItemsVertically">Distribute &amp;Vertically</entry>
+    <entry key="MakeHorizontalGapsEven">Even Hori&amp;zontal Gaps</entry>
+    <entry key="MakeVerticalGapsEven">Even Vert&amp;ical Gaps</entry>
+    <entry key="MakeItemsSameWidth">Match &amp;Width</entry>
+    <entry key="MakeItemsSameHeight">Match H&amp;eight</entry>
+    <entry key="MakeItemsSameSize">Match &amp;Size</entry>
+    <entry key="ArrangeMenu">&amp;Arrange</entry>
+    <entry key="BringToFront">Bring to &amp;Front</entry>
+    <entry key="SendToBack">Send to B&amp;ack</entry>
+    <entry key="MaskMenu">&amp;Mask</entry>
+    <entry key="ViewBaseMask">View &amp;Base Mask...</entry>
+    <entry key="CreateMask">Create &amp;Mask...</entry>
+    <entry key="CreateModelMask">Create &amp;Model Mask...</entry>
+    <entry key="AddIconImage">Add Icon Image...</entry>
+    <entry key="EditIconImage">Edit Icon Image...</entry>
+    <entry key="EditMask">Edit &amp;Mask...</entry>
+    <entry key="EditModelMask">Edit &amp;Model Mask...</entry>
+    <entry key="ViewMask">View &amp;Mask...</entry>
+    <entry key="MaskParameters">Mask &amp;Parameters...</entry>
+    <entry key="ModelMaskParameters">Model Mask &amp;Parameters...</entry>
+    <entry key="AddIconImageDialogTitle">Add mask icon image</entry>
+    <entry key="LookUnderMask">&amp;Look Under Mask</entry>
+    <entry key="LibraryLinkMenu">&amp;Library Link</entry>
+    <entry key="LibraryLinkMenu_Text">Library Link</entry> <!--Should be in sync with LibraryLinkMenu key. Used at places where we explicitly refer the menu item-->
+    <entry key="LockedLibraryLinkMenu">Locked &amp;Library Link</entry>
+    <entry key="GoToLibraryBlock">&amp;Go To Library Block</entry>
+    <entry key="DisableLibraryLink">&amp;Disable Link</entry>
+    <entry key="DisableLockedLibraryLink">&amp;Disable Locked Link</entry>
+    <entry key="BreakLibraryLink">&amp;Break Link</entry>
+    <entry key="RestoreLibraryLink">&amp;Resolve Link...</entry>
+    <entry key="RestoreLibraryLink_Text">Resolve Link</entry> <!--Should be in sync with RestoreLibraryLink key. Used at places where we explicitly refer the menu item-->
+    <entry key="ViewLibraryLinkChanges">&amp;View Changes...</entry>
+    <entry key="UnlockLibrary">&amp;Unlock Library</entry>
+    <entry key="LibraryUnlocked">Library Unlocked</entry>
+    <entry key="LockLinksToLibrary">&amp;Lock Links To Library</entry>
+    <entry key="UnlockLinksToLibrary">Un&amp;lock Links To Library</entry>
+    <entry key="BlockParameters">Block &amp;Parameters {0}</entry>
+    <entry key="ConfigurableSubSystem">Block Choice</entry>
+    <entry key="Variant">&amp;Variant</entry>
+    <entry key="VariantOpen">&amp;Open</entry>
+    <entry key="VariantOverride">Override &amp;using</entry>
+    <entry key="OpenInVariantManager">Open in &amp;Variant Manager</entry>
+    <entry key="ObjectProperties">Proper&amp;ties...</entry>
+    <entry key="RenameAll">Rename All...</entry>
+    <entry key="RefreshBlocks">Refresh &amp;Blocks</entry>
+    <entry key="RefreshModelReference">Re&amp;fresh Selected Model Block</entry>
+    <entry key="UpdateDiagram">&amp;Update Diagram</entry>
+    <entry key="UpdateModelReferenceDiagram">Update Model Reference Diagram</entry>
+    <entry key="ConnectorWidthMenu">Connector Width</entry>
+    <entry key="ConnectorWidth1px">1 px</entry>
+    <entry key="ConnectorWidth2px">2 px</entry>
+    <entry key="ConnectorWidth3px">3 px</entry>
+    <entry key="ConnectorWidth4px">4 px</entry>
+    <entry key="ConnectorWidth5px">5 px</entry>
+    <entry key="ConnectorWidth6px">6 px</entry>
+
+    <!-- PartitioningMenu -->
+    <entry key="PartitioningMenu">&amp;Partitions</entry>
+    <entry key="PartitionsPartitionTransferType">Transfer Type</entry>
+    <entry key="PartitionsDependency">Dependency</entry>
+    <entry key="PartitionsDelay">Delay</entry>
+    <entry key="PartitionsProtected">Protected</entry>
+    <entry key="PartitionsUnprotected">Unprotected</entry>
+    <entry key="PartitionsGlobalDefault">Global default</entry>
+
+    <!-- SimulationMenu -->
+    <entry key="SimulationMenu">&amp;Simulation</entry>
+    <entry key="StartPauseContinueStart">&amp;Run</entry>
+    <entry key="StartPauseContinuePause">&amp;Pause</entry>
+    <entry key="StartPauseContinueContinue">&amp;Continue</entry>
+    <entry key="Stop">S&amp;top</entry>
+    <entry key="SimulationForward">Step &amp;Forward</entry>
+    <entry key="SimulationForwardToStop">Step to terminate</entry>
+    <entry key="SimulationRollBack">Step &amp;Back</entry>
+    <entry key="SimulationRollBackToStart">Restart</entry>
+    <entry key="SimulationInteractiveMultiRun">Fast Restart</entry>
+    <entry key="SimulationInteractiveMultiRunEnabled">Fast Restart (Enabled)</entry>
+    <entry key="SimulationInteractiveMultiRunDisabled">Fast Restart (Disabled)</entry>
+    <entry key="SimulationEnableInteractiveMultiRun">Enable Fast Restart</entry>
+    <entry key="SimulationDisableInteractiveMultiRun">Disable Fast Restart</entry>
+    <entry key="SimulationRollBackEnd">End of Back Steps</entry>
+    <entry key="SimulationStepperConfiguration">St&amp;epping Options</entry>
+    <entry key="SimulationStepperNoncompliantConfiguration">St&amp;epping Options\nStepping back is unavailable</entry>
+    <entry key="SimulationStepperNoncompliantRollBack">Step back (unavailable)</entry>
+    <entry key="SimulationStepperUninitializedRollBack">Step back (uninitialized)</entry>
+    <entry key="AddConditionalPause">Add Conditional Breakpoint</entry>
+    <entry key="ConditionalPauseList">Conditional Breakpoints List</entry>
+    <entry key="ConditionalPauseListForModel">Conditional Breakpoints List: {0}</entry> 
+    <entry key="ConditionalPauseBlockPort">{0}: Outport {1}</entry>
+    <entry key="ConditionalPauseListIsEmpty">There are no conditional breakpoints in this model.</entry>
+    <entry key="ConditionalPauseListIsEmptyPort">There are no conditional breakpoints for this signal.</entry>
+    <entry key="ConditionalPauseInvalidValueDlgTitle">Error: Modify Conditional Breakpoint</entry>
+    <entry key="ConditionalPauseInvalidValue">The values for conditional breakpoints must be real and scalar. The value "{0}" is not valid.</entry>
+    <entry key="SimulationPacingConfiguration">Simulation Pacing &amp;Options</entry>
+    <entry key="SimulationRecord">&amp;Record &amp;&amp; Inspect Simulation Output</entry>
+    <entry key="StreamStateflowChartActivity">&amp;Stream &amp;&amp; Chart Activity</entry>
+    <entry key="StreamStateflowStateActivity">&amp;Stream &amp;&amp; State Activity</entry>
+    <entry key="StreamStateflowChartActivityForBlock">&amp;Stream &amp;&amp; Chart Activity for block</entry>
+    <entry key="SDI2_SimulationRecord">&amp;Record Simulation Output</entry>
+    <entry key="SimulationVisualize">&amp;Visualize Simulation Output </entry>
+    <entry key="LogSelectedSignals">L&amp;og/Unlog Selected Signals</entry>
+    <entry key="InspectSelectedSignals">Mark Selected Signals for Visualization</entry>
+    <entry key="StopInspectSelectedSignals">Stop Visualizing Selected Signals</entry>
+    <entry key="SimulationRecordTip">Record and inspect simulation output</entry>
+    <entry key="SDI2_SimulationRecordTip">Record simulation output</entry>
+    <entry key="SimulationVisualizationTip">Visualize simulation output</entry>
+    <entry key="SimulationRecordMenu">&amp;Output</entry>
+    <entry key="ConfigureSignalLogging">Configure &amp;Data Logging...</entry>
+    <entry key="SelectSignalsToLog">Configure &amp;Signals to Log...</entry>
+    <entry key="LogReferencedSignals">&amp;Log Model Reference Signals...</entry>
+    <entry key="AboutSignalLogging">&amp;Help on Logging &amp;&amp; Recording...</entry>
+    <entry key="OpenSDI">Simulation Data &amp;Inspector...</entry>
+    
+    <entry key="SimulationModeMenu">&amp;Mode</entry>
+    <entry key="SimModeNormal">&amp;Normal</entry>
+    <entry key="SimModeAccelerated">&amp;Accelerator</entry>
+    <entry key="SimModeRapidAccelerator">&amp;Rapid Accelerator</entry>
+    <entry key="SimModeRapid">&amp;Rapid</entry>
+    <entry key="SimModePIL">&amp;Processor-in-the-Loop (PIL)</entry>
+    <entry key="SimModeSIL">&amp;Software-in-the-Loop (SIL)</entry>
+    <entry key="SimModeExternal">&amp;External</entry>
+    <entry key="ConfigurationParameters">Model Con&amp;figuration Parameters</entry>
+    <entry key="ModelReferenceConfigurationParameters">Model Reference Configuration Parameters</entry>
+    <entry key="ExtModeCtrlPanel">E&amp;xternal Mode Control Panel</entry>
+    <entry key="ShowSimulationTarget">Simulation &amp;Target For MATLAB &amp;&amp; Stateflow</entry>
+    <entry key="SelectionIsInvalid">Selection is invalid!</entry>
+
+    <entry key="ConnectToTarget">Connect To &amp;Target</entry>
+    <entry key="DisconnectFromTarget">Disconnect from &amp;Target</entry>
+
+    <entry key="Input">Input</entry>
+
+	<!-- Analysis Menu -->
+    <entry key="AnalysisMenu">&amp;Analysis</entry>
+    <entry key="ModelAdvisor">Model &amp;Advisor</entry>
+    <entry key="ModelAdvisorDashboard">Model Advisor Dashboard</entry>
+    <entry key="ModelAdvisorUI">Model Advisor</entry>
+    <entry key="ModelAdvisorStartup">Starting Model Advisor...</entry>
+    <entry key="ModelAdvisorOptions">Options</entry>
+    <entry key="ModelAdvisorPreferences">Preferences</entry>
+    <entry key="ConfigureAdvisorEditTimeChecks">Configure Advisor Edit-Time Checks</entry>    
+    <entry key="PerformanceAdvisor">P&amp;erformance Advisor</entry>    
+    <entry key="PerformanceToolsMenu">&amp;Performance Tools</entry>
+    <entry key="UpgradeAdvisor">&amp;Upgrade Advisor</entry>
+    <entry key="UpgradeAdvisorStartup">Starting Upgrade Advisor...</entry>
+    <entry key="Debugger">Debug &amp;Model...</entry>
+    <entry key="SimulinkProfiler">Show &amp;Profiler Report</entry>
+    <entry key="ModelDependenciesMenu">&amp;Model Dependencies</entry>
+    <entry key="ManifestGenerate">&amp;Generate Manifest...</entry>
+    <entry key="ManifestEdit">&amp;Edit Manifest Contents...</entry>
+    <entry key="ManifestCompare">&amp;Compare Manifests...</entry>
+    <entry key="ManifestExport">E&amp;xport Files in Manifest...</entry>	
+    <entry key="CoverageSettings">Model Coverage &amp;Settings</entry>
+    <entry key="BlockRequirementsMenu">Re&amp;quirements Traceability</entry>
+    <entry key="VectorRequirementsMenu">Re&amp;quirements Traceability</entry>
+    <entry key="AnalysisRequirementsMenu">Re&amp;quirements Traceability</entry>
+    <entry key="SelectedObjectRequirementsMenu">Re&amp;quirements Traceability for Selected Object</entry>    
+    <entry key="DesignVerifierMenu">Design &amp;Verifier</entry>
+    <entry key="DesignVerifierCompatibilityMenu">&amp;Check Compatibility</entry>
+    <entry key="DesignVerifierDetectErrorsMenu">&amp;Detect Design Errors</entry>
+    <entry key="DesignVerifierGenerateTestsMenu">&amp;Generate Tests</entry>
+    <entry key="DesignVerifierProvePropertiesMenu">&amp;Prove Properties</entry>
+    <entry key="DesignVerifierResultsMenu">&amp;Results</entry>
+    <entry key="DesignVerifierOptionsMenu">&amp;Options</entry>
+    <entry key="DesignVerifierModel">Model</entry>
+    <entry key="DesignVerifierSubsystem">Selected Subsystem</entry>
+    <entry key="DVsettings">&amp;Options...</entry>
+    <entry key="DVMakeSubsystemAtomic">Enable 'Treat as &amp;Atomic Unit' to Analyze...</entry>
+    <entry key="DVcompatibilitySubsys">&amp;Check Subsystem Compatibility</entry>
+    <entry key="DVtestgenSubsys">&amp;Generate Tests for Subsystem</entry>
+    <entry key="DVdetectsubsys">&amp;Detect Design Errors in Subsystem</entry>
+    <entry key="DVproveSubsys">&amp;Prove Subsystem Properties</entry>
+    <entry key="DVsettingsSubsys">&amp;Options...</entry>
+    <entry key="SimulinkTestMenu">&amp;Simulink Test</entry>
+    <entry key="SimulationAndTestManagerMenu">Test Manager...</entry>
+    <entry key="SimulationHarnessMenu">Test &amp;Harness</entry>
+    <entry key="CreateSimulationHarness">&amp;Create Test Harness for</entry>
+    <entry key="CreateSimulationHarnessForBlock">&amp;Create for {0}...</entry>
+    <entry key="CreateSimulationHarnessForBD">Create for &amp;Model...</entry>
+    <entry key="ImportSimulationHarnessForBlock">&amp;Import for {0}...</entry>
+    <entry key="ImportSimulationHarnessForBD">Import for &amp;Model...</entry>
+    <entry key="ListSimulationHarness">&amp;List Test Harnesses...</entry>
+    <entry key="PushSimulationHarness">P&amp;ush Parameters to Main Model</entry>
+    <entry key="RebuildSimulationHarness">&amp;Rebuild Harness from Main Model</entry>
+    <entry key="ConvertEmbeddedHarnesses">&amp;Convert To External Harnesses...</entry>
+    <entry key="ConvertExternalHarnesses">&amp;Convert To Internal Harnesses...</entry>
+    <entry key="ExportHarnessesToIndependent">&amp;Detach and Export Harnesses...</entry>
+    <entry key="ExportHarnessToIndependent">&amp;Detach and Export Harness...</entry>
+    <entry key="CompareSimulationHarness">C&amp;ompare Checksums</entry>
+    <entry key="UpdateSimulationHarness">&amp;Properties...</entry>
+    <entry key="SimulationHarnessDuplicate">D&amp;uplicate</entry>
+    <entry key="SimulationHarnessMerge">&amp;Merge...</entry>
+    <entry key="SimulationHarnessMove">&amp;Move to Library...</entry>
+    <entry key="SimulationHarnessDelete">&amp;Delete...</entry>
+    <entry key="SimulationHarnessProperties">&amp;Properties...</entry>
+    <entry key="ObserverMenu">&amp;Observers</entry>
+    <entry key="AddObserverHere">&amp;Add Observer here...</entry>
+    <entry key="AddObserverForSelected">&amp;Add Observer for {0}...</entry>
+    <entry key="EnableObserver">&amp;Enable Observer</entry>
+    <entry key="DisableObserver">D&amp;isable Observer</entry>
+    <entry key="HighlightObserverPortBlockToSource">&amp;Highlight to Source</entry>
+    <entry key="DesignVerifierLoadResultsFile">Load...</entry>
+    <entry key="DesignVerifierLoadActiveResults">Active</entry>
+    <entry key="MdlXformer">Model Transformer</entry>
+
+	<!-- Code Menu -->
+    <entry key="CodeMenu">&amp;Code</entry>
+    <entry key="SimulinkCoderOptions">Code Generation &amp;Options...</entry>
+    <entry key="RTWOptions">Code Generation &amp;Options...</entry>
+    <entry key="AutosarConfig">Configure Model as A&amp;UTOSAR Component...</entry>
+    <entry key="SimulinkCoderMenu">&amp;C/C++ Code</entry>
+    <entry key="M2MtransformMenu">&amp;Transformed Block</entry>
+    <entry key="BuildModel">&amp;Build Model</entry>
+    <entry key="RTWBuild">&amp;Build Model</entry>
+    <entry key="GenerateCode">Generate Code</entry>
+    <entry key="ProdCodeApp">Production Code App</entry>
+    <entry key="RTWDeploy">&amp;Deploy to Hardware</entry>
+    <entry key="CodeGenerationReport">&amp;Code Generation Report</entry>
+    <entry key="ViewCode">&amp;View Code</entry>
+    <entry key="ViewModelCode">View &amp;Model Code</entry>
+    <entry key="ModelCode">&amp;Model Code</entry>
+    <entry key="ViewSubsystemCode">View &amp;Subsystem Code</entry>
+    <entry key="SubsystemCode">&amp;Subsystem Code</entry>
+    <entry key="PublishCode">&amp;Publish Code</entry>
+    <entry key="OpenCGReport">&amp;Open Model Report</entry>
+    <entry key="OpenCGReportSubsystem">Open &amp;Subsystem Report</entry>
+    <entry key="PublishSubsystemCode">Publish &amp;Subsystem Code</entry>
+    <entry key="Options">O&amp;ptions</entry>
+    <entry key="DataObjectsMenu">&amp;Data Objects</entry>
+    <entry key="SRAutosarConfigAndBuild">AUTOSAR &amp;Single-Runnable Component</entry>
+    <entry key="MRAutosarConfigAndBuild">AUTOSAR &amp;Multi-Runnable Component</entry>
+    <!-- TODO: Remove this key after final port -->
+    <entry key="BuildSelectedSubsystem">Build Selected &amp;Subsystem</entry> 
+    <entry key="GenerateCodeSelectedSubsystem">Generate Code for Selected &amp;Subsystem</entry> 
+    <entry key="BuildThisSubsystem">&amp;Build This Subsystem</entry> <!-- context menu -->
+    <entry key="GenerateCodeThisSubsystem">Generate Code for This Subsystem</entry> <!-- context menu -->
+    <entry key="DeploySelectedSubsystem">Deploy selected &amp;Subsystem to Hardware</entry> 
+    <entry key="DeployThisSubsystem">&amp;Deploy this Subsystem to Hardware</entry> <!-- context menu -->    
+    <entry key="GenerateSFunctions">&amp;Generate S-Function</entry>
+    <entry key="ExportFunctions">Export &amp;Functions</entry>
+    <entry key="ExportTasks">Export &amp;Tasks</entry>
+    <entry key="HighlightCode">&amp;Navigate To C/C++ Code</entry>
+    <entry key="PLCMenu">&amp;PLC Code</entry>
+    <entry key="PLCCheckSubsystemCompatibility">&amp;Check Subsystem Compatibility</entry>
+    <entry key="PLCGenerateCodeSubsystem">&amp;Generate Code for Subsystem</entry>
+    <entry key="PLCGenerateAndImportCodeSubsystem">Generate and &amp;Import Code for Subsystem</entry>
+    <entry key="PLCGenerateAndImportAndExecuteCodeSubsystem">Generate, Import, and &amp;Verify Code for Subsystem</entry>
+    <entry key="PLCGenerateLD">Generate Ladder Logic for Chart</entry>
+    <entry key="PLCGenerateAndImportDisabled">Automatic Import &amp;not supported for the selected Target IDE</entry>
+    <entry key="PLCHighlightCode">Navigate &amp;to Code</entry>
+    <entry key="PLCOptionsSubsystem">&amp;Options...</entry>
+    <entry key="PLCMakeSubsystemAtomic">&amp;Enable "Treat as atomic unit" to generate code ...</entry>
+    <entry key="CheckSolver">Check Sol&amp;ver</entry>
+    <entry key="AutosarConfigSSSR">Configure...</entry>
+    <entry key="AutosarConfigSSMR">Configure Subsystem as A&amp;UTOSAR Component...</entry>
+	
+	<!-- Tools Menu -->
+    <entry key="ToolsMenu">&amp;Tools</entry>
+    <entry key="ReportGenerator">&amp;Report Generator...</entry>
+    <entry key="FixedPointMenu">&amp;Fixed Point</entry>
+    <entry key="DataTypeDesignMenu">Data Type Design</entry>
+    <entry key="FixedPointInterface">Fixed-Point &amp;Tool...</entry>
+    <entry key="SingleConversionTool">Single Precision Converter...</entry>
+    <entry key="ModelMetrics">Model Metrics</entry>
+    <entry key="ResultInFixedPointTool">Fixed-Point Tool Result</entry>
+    <entry key="SimulinkControlDesignerMenu">Control &amp;Design</entry>
+    <entry key="CompensatorDesign">&amp;Compensator Design...</entry>
+    <entry key="ModelDiscretizer">Model &amp;Discretizer...</entry>
+    <entry key="SimulinkParameterEstimator">Parameter &amp;Estimation</entry>
+    <entry key="DataClassDesigner">Design Data &amp;Classes...</entry>
+    <entry key="CustomStorageClassDesigner">Custom Storage Class &amp;Designer...</entry>
+    <entry key="InspectLoggedSignals">&amp;Inspect Logged Signals...</entry>
+    <entry key="SignalAndScopeManager">Signal &amp;&amp; Scope &amp;Manager...</entry>
+
+	<!-- Help Menu -->
+    <entry key="HelpMenu">&amp;Help</entry>
+    <entry key="HelpSimulinkMenu">&amp;Simulink</entry>
+    <entry key="SimulinkHelp">Simulink &amp;Help</entry>
+    <entry key="SimulinkKeyboardShortcuts">&amp;Keyboard Shortcuts</entry>
+    <entry key="BlocksAndBlocksets">&amp;Blocks &amp;&amp; Blocksets Reference</entry>
+    <entry key="BlocksAndBlocksetsHelp">&amp;Help</entry>
+    <entry key="BlockSupportTableMenuItem">Block Data &amp;Types &amp;&amp; Code Generation Support</entry>
+    <entry key="BlockSupportTableSLMenuItem">&amp;Simulink</entry>
+    <entry key="BlockSupportTableAllMenuItem">&amp;All Tables</entry>
+    <entry key="SFunctions">S-&amp;Functions</entry>
+    <entry key="Demos">&amp;Examples</entry>
+    <entry key="HelpWebResourcesMenu">Web &amp;Resources</entry>
+    <entry key="MathWorksWebsite">MathWorks &amp;Website</entry>
+    <entry key="ProductsAndServices">&amp;Products &amp;&amp; Services</entry>
+    <entry key="WebSupport">&amp;Support</entry>
+    <entry key="WebTraining">&amp;Training</entry>
+    <entry key="MathWorksAccount">MathWorks &amp;Account</entry>
+    <entry key="MATLABCentral">MATLAB &amp;Central</entry>
+    <entry key="MATLABFileExchange">MATLAB &amp;File Exchange</entry>
+    <entry key="MATLABNewsGroupAccess">MATLAB News &amp;Group Access</entry>
+    <entry key="MATLABNewsLetters">MATLAB News &amp;Letters</entry>
+    <entry key="Terms">&amp;Terms Of Use</entry>
+    <entry key="Patents">&amp;Patents</entry>
+    <entry key="HelpAboutMenu">&amp;About</entry>
+    <entry key="About">&amp;About Simulink</entry>
+    <entry key="BlockSupportTableAllBlockMsg">Creating Block Support Table...</entry>
+	
+    <entry key="ToolBarNew">New</entry>
+    <entry key="ToolBarDebugMenu">Debug</entry>
+    <entry key="ToolBarParametersMenu">Parameters</entry>
+    <entry key="ForegroundColorMenu">&amp;Foreground Color</entry>
+    <entry key="BackgroundColorMenu">&amp;Background Color</entry>
+    <entry key="AreaColorMenu">&amp;Area Color</entry>
+    <entry key="DebugMenu">&amp;Debug</entry>
+	
+    <entry key="CheckConsistency">Check Consistency...</entry>
+    <entry key="GenerateReport">Generate Report</entry>
+    <entry key="SystemTest">System Test</entry>
+    <entry key="MPlayVideoViewer">MPla&amp;y Video Viewer</entry>
+    <entry key="BlockOpen">Op&amp;en</entry>
+    <entry key="BlockOpenStatusTip">Execute open function for the selected block.</entry>
+    <entry key="BlockOpenToolTip">Run open function</entry>
+    <entry key="BlockOpenInNewWindowStatusTip">Execute open function for the selected block to be opened in a new window, regardless of Window Reuse parameter.</entry>
+    <entry key="BlockOpenInNewWindowToolTip">Run open function (new window)</entry>
+    <entry key="BlockOpenInNewWindow">Open In &amp;New Window</entry>
+    <entry key="BlockOpenInNewTabStatusTip">Execute open function for the selected block to be opened in a new tab, regardless of Window Reuse parameter.</entry>
+    <entry key="ModelBlockOpenModelReferenceStatusTip">Execute open function for the selected model block to be opened in a new window, regardless of Window Reuse parameter.</entry>
+    <entry key="BlockOpenInNewTabToolTip">Run open function (new tab)</entry>
+    <entry key="ModelBlockOpenModelReferenceToolTip">Run open function (new window)</entry>
+    <entry key="BlockOpenInNewTab">Open In New &amp;Tab</entry>
+    <entry key="ModelBlockOpenModelReference">Open</entry>
+    <entry key="BlockExploreStatusTip">Explore the selected block in the Model Explorer.</entry>
+    <entry key="BlockExploreToolTip">Run Model Explorer</entry>
+    <entry key="BlockExplore">E&amp;xplore</entry>
+    <entry key="StopTimeToolTip">Simulation stop time</entry>
+    <entry key="StopTime">Stop Time</entry>
+    <entry key="SimulationTimeInitialConditions" translate="false"> </entry>
+    <entry key="SimulationTimeAheadOfCurrentStep" translate="false">*</entry>
+    <entry key="SimulationTimeLastStep">*Simulation time of last completed step</entry>
+    <entry key="SimulationTimeCurrentStep">Simulation time at current step</entry>
+    <entry key="SimulationModeToolTip">Simulation mode</entry>
+    <entry key="SimulationMode">Mode</entry>
+    
+    <entry key="SLNavigateToolBar" translate="false">SLNavigateToolBar</entry>
+    <entry key="SLNewOpenSaveToolBar" translate="false">SLNewOpenSaveToolBar</entry>
+    <entry key="SLNewSaveToolBar" translate="false">SLNewSaveToolBar</entry>
+    <entry key="SLCutCopyPasteToolBar" translate="false">SLCutCopyPasteToolBar</entry>
+    <entry key="SLUndoRedoToolBar" translate="false">SLUndoRedoToolBar</entry>
+    <entry key="SLPrintToolBar" translate="false">SLPrintToolBar</entry>
+    <entry key="SLLibraryExplorerToolBar" translate="false">SLLibraryExplorerToolBar</entry>
+    <entry key="SLModelBrowserToolBar" translate="false">SLModelBrowserToolBar</entry>
+    <entry key="SLUpdateDiagramToolBar" translate="false">SLUpdateDiagramToolBar</entry>
+    <entry key="SLRefreshBlocksToolBar" translate="false">SLRefreshBlocksToolBar</entry>
+    <entry key="SLInputToolBar" translate="false">SLInputToolBar</entry>
+    <entry key="SLSimulationToolBar" translate="false">SLSimulationToolBar</entry>
+    <entry key="SLConfigurationPropertyToolBar" translate="false">SLConfigurationPropertyToolBar</entry>
+    <entry key="SLModelAdvisorToolBar" translate="false">SLModelAdvisorToolBar</entry>
+    <entry key="SLAdvisorToolsToolBar" translate="false">SLAdvisorToolsToolBar</entry>   
+    <entry key="SLDebugModelToolBar" translate="false">SLDebugModelToolBar</entry>
+    <entry key="SLBuildToolBar" translate="false">SLBuildToolBar</entry>
+    <entry key="SLFindToolBar" translate="false">SLFindToolBar</entry>
+    
+
+
+    <entry key="InsertAnnotation">Insert Annotation</entry>
+    <entry key="EditAnnotation">Edit Annotation</entry>
+    <entry key="PasteDuplicate">Paste Duplicate &amp;Inport</entry>
+
+    <entry key="InsertImage">Insert Image...</entry>
+    <entry key="CopyImage">Copy Image</entry>
+    <entry key="PasteImage">Paste Image</entry>
+    <entry key="RestoreImageSize">Restore Size</entry>
+    <entry key="RotateImageRight90">Rotate Right 90&#176;</entry>
+    <entry key="RotateImageLeft90">Rotate Left 90&#176;</entry>
+    <entry key="RotateImage180">Rotate 180&#176;</entry>
+    <entry key="FlipImageVertical">Flip Vertical</entry>
+    <entry key="FlipImageHorizontal">Flip Horizontal</entry>
+
+    <entry key="ConnectBlocks">Connect Blocks</entry>
+    
+    <entry key="MixedFormatMenu">Format</entry>
+
+    <entry key="BlockOpenMenu">Open</entry>
+    <entry key="BlockEditMenu">Edit</entry>
+    <entry key="BlockPortsMenu">Signals &amp;&amp; Ports</entry>
+    <entry key="BlockInportsMenu">&amp;Input Port Signal Properties</entry>
+    <entry key="BlockOutportsMenu">&amp;Output Port Signal Properties</entry>
+    <entry key="BlockCodeMenu">C/C++ Code</entry>
+    <entry key="RecentlyUsedMenu">Recently Added</entry>
+    <entry key="BlockDiagramDisplayMenu">Other Displays</entry>
+	
+    <entry key="CreateAndConnectGeneratorMenu">Create And Connect Generator</entry>
+    <entry key="ConnectToExistingGeneratorMenu">Connect To Generator</entry>
+    <entry key="SwitchGeneratorConnectionMenu">Switch Generator Connection</entry>
+    <entry key="SignalProperties">Properties</entry>
+    <entry key="GeneratorParameters">Generator Parameters</entry>
+    <entry key="EditGeneratorName">Edit Generator Name</entry>
+    <entry key="DisconnectGenerator">Disconnect Generator</entry>
+    <entry key="DisconnectAndDeleteGenerator">Disconnect &amp;&amp; Delete Generator</entry>
+    <entry key="DisplayGenerator">Display Generator</entry>
+  
+    <entry key="GeneratorConnections">Generator Connections Warning</entry>
+    <entry key="ViewerConnections">Viewer Connections Warning</entry>
+    <entry key="DisconnectDeleteGenerator">Disconnect and delete generator?</entry>
+    <entry key="DisconnectDeleteViewer">Disconnect and delete viewer?</entry>
+    <entry key="GeneratorMultipleConnections">Generator "{0}" is connected to multiple signals including:</entry>
+    <entry key="ViewerMultipleConnections">Viewer "{0}" is connected to multiple signals including:</entry>
+  
+    <!-- Segment Label Context Menu -->
+    <entry key="DeleteSegmentLabel">Delete Label</entry>
+    <entry key="CopySegmentLabel">Copy Label</entry>
+    
+     <!-- InspectSignal Badge Context Menu -->
+    <entry key="HighlightInSDI">&amp;Open Data Inspector</entry>
+    <entry key="SDISignalSettings">&amp;Properties</entry>
+
+     <!-- Rate Transition Badge Context Menu -->
+    <entry key="InsertHiddenRTB">&amp;Insert Rate Transition Block</entry>
+
+     <!-- Unit Conversion Badge Context Menu -->
+    <entry key="InsertUnitConversionBlock">&amp;Insert Unit Conversion Block</entry>
+
+    <!-- Annotation Context Menu -->
+    <entry key="ConvertToMarkup">Convert to Markup</entry>
+    <entry key="ConvertToHiddenMarkup">Convert to Markup (Markup is hidden)</entry>
+    <entry key="ConvertToModel">Convert to Annotation</entry>
+    <entry key="ShowInLibBrowser">Show in Library Browser</entry>
+
+    <!-- Model Transformer Context Menu -->
+    <entry key="ToOriginalBlk">Traceability to original block</entry>
+    <entry key="ToXformedBlk">Traceability to transformed block</entry>
+    <entry key="NotFoundInMap">No traceability for this block</entry>
+    
+    <!-- ToolBar Items -->
+    <entry key="SimModeNormalToolBar">Normal</entry>
+    <entry key="SimModeAcceleratedToolBar">Accelerator</entry>
+    <entry key="SimModeRapidAcceleratorToolBar">Rapid Accelerator</entry>
+    <entry key="SimModeRapidToolBar">Rapid</entry>
+    <entry key="SimModePILToolBar">Processor-in-the-Loop (PIL)</entry>
+    <entry key="SimModeSILToolBar">Software-in-the-Loop (SIL)</entry>
+    <entry key="SimModeExternalToolBar">External</entry>
+
+    <entry key="SLClipboardAdapterPaste">Paste</entry>
+    <entry key="SLClipboardAdapterPasteWithModel">Paste in {0}</entry>
+    <entry key="SLSegmentGlyphAddLabel">Add Label</entry>
+    <entry key="SLSegmentLabelGlyphRemoveLabels">Remove Labels</entry>
+    <entry key="SLSegmentLabelGlyphEditLineLabel">Edit Line Label</entry>
+    <entry key="SLSegmentCreationToolCreateSegment">Create Segment</entry>
+    <entry key="SLDeleteToolDelete">Delete</entry>
+    <entry key="SLDeleteToolAddModel">: from {0}</entry>
+    <entry key="SLEditorArrangeBlocks">Arrange blocks</entry>
+    <entry key="SLClipboardAdapterCut">Cut</entry>
+    <entry key="SLQuickInsert">Add Block</entry>
+    <entry key="SLDragUtilsCopy">Copy</entry>
+    <entry key="SLDragUtilsCopyAddModel">Copy in {0}</entry>
+    <entry key="SLAnnotationGlyphEditAnnotation">Edit Annotation</entry>
+    <entry key="SLBlockGlyphRenameBlock">Rename Block</entry>
+    <entry key="SLFunctionBlockGlyphChangePrototype">Change prototype</entry>
+    <entry key="SLResetSubsystemGlyphChangeResetID">Change reset identifier</entry>
+    <entry key="SLAnnotationCreationToolCreateAnnotation">Create Annotation</entry>
+    <entry key="SLAreaCreationToolCreateArea">Create Area</entry>
+    <entry key="SLImageCreationToolCreateImage">Create Image</entry>
+    <entry key="SLAutoConnectToolAutoConnect">Connect Blocks</entry>
+    <entry key="SLLineMoveToolEditLine">Edit Line</entry>
+    <entry key="SLMoveToolMove">Move</entry>
+    <entry key="SLResizeToolResize">Resize</entry>
+    <entry key="SLSegmentDisconnectionToolDisconnectLine">Disconnect Line</entry>    
+    <entry key="SAMSTudioCreateConnection">Create Connection</entry>
+    <entry key="SLDeleteAnnotation">Delete Annotation</entry>
+    <entry key="SLInsertHiddenRTBOnPort">Insert Rate Transition Block</entry>
+    <entry key="InsertUserVisibleUnitConversionBlockOnPort">Insert Unit Conversion Block</entry>
+
+    <entry key="ToolBarSaveMenu">Save</entry>
+	
+    <entry key="DropMenuCopy">&amp;Paste</entry>
+    <entry key="DropMenuDuplicateInport">&amp;Duplicate</entry>
+    <entry key="DropMenuCreateNewPort">Create a &amp;New Port</entry>
+    <entry key="DropMenuUseSamePort">Use the &amp;Same Port</entry>
+    <entry key="DropMenuCopyAndBreakLinks">Paste and &amp;Break Links</entry>
+    <entry key="DropMenuCreateViewersAndGenerators">&amp;Create and Connect &amp;Viewers / Generators</entry>
+    <entry key="DropMenuCreateStateReaderBlock">Create State &amp;Reader Block</entry>
+    <entry key="DropMenuCreateStateWriterBlock">Create State &amp;Writer Block</entry>
+    <entry key="DropMenuCancel">&amp;Cancel</entry>
+	
+    <!-- Status Bar Strings -->
+    <entry key="BuildingStatusString">Building</entry>
+    <entry key="Busy">Busy</entry>
+    
+	<!-- Port signal generator name -->
+    <entry key="SLPortGlyphEditSigGenName">Edit Signal Generator Name</entry>
+    
+	<!-- Command names -->
+    <entry key="SetFont">Set Font</entry>
+    <entry key="SLMoveSegmentLabel">Move Segment Label</entry>
+    <entry key="SLCopySegmentLabel">Copy Segment Label</entry>
+    <entry key="SLDeleteSegmentLabelCommand">Delete Segment Label</entry>
+    <entry key="SLMoveBlockName">Move Block Name</entry>
+    <entry key="SLCreateSubsystem">Create Subsystem</entry>
+    <entry key="SLExpandSubsystem">Expand Subsystem</entry>
+    <entry key="SLMakeSpace">Make Space</entry>
+    <entry key="SLChangeMarkupCategory">Change Category</entry>
+    <entry key="SLCreateConnector">Create Connector</entry>
+    <entry key="SLChangeAlignment">Change Alignment</entry>
+    <entry key="SLRenameArea">Edit Area Label</entry>
+    <entry key="SLMagneticConnect">Magnetic Connect</entry>
+	
+    <!-- Palette Items -->
+    <entry key="PaletteAlignEdges">Align Edges</entry>
+    <entry key="PaletteSampleTime">Sample Time</entry>
+    <entry key="PaletteAnnotation">Annotation</entry>
+    <entry key="PaletteArea">Area</entry>
+    <entry key="PaletteImage">Image</entry>
+    <entry key="PaletteInterfaceEditorView">Interface View</entry>
+
+    <!-- Errors in ViewerLibraryCache -->
+    <entry key="LibraryInfoMustBeStruct">ValidateLibrary: Library information must be a struct.</entry>
+    <entry key="ViewerLibraryAlreadyExists">AddLibrary: Viewer library named "{0}" already exists.</entry>
+    <entry key="SigGenLibraryAlreadyExists">AddLibrary: SigGen library named "{0}" already exists.</entry>
+    <entry key="LibraryMissingNameFieldError">ValidateLibrary: Library is missing the name field.</entry>
+    <entry key="LibraryInvalidNameFieldError">ValidateLibrary: Library name field must be a non-empty string.</entry>
+    <entry key="NamedLibraryMissingFieldError">ValidateLibrary: Library "{0}" is missing the field "{1}".</entry>
+    <entry key="NamedLibraryInvalidFieldError">ValidateLibrary: Library "{0}" field "{1}" must be a non-empty string.</entry>
+    <entry key="InvalidLibraryIOType">ValidateLibrary: Library "{0}" has invalid iotype "{1}". Value must be either "siggen" or "viewer".</entry>
+    <entry key="BlockInfoMustBeStruct">ValidateLibrary: Library "{0}"; Block {1,number,integer} information must be a struct.</entry>
+    <entry key="BlockMissingFieldError">ValidateLibrary: Library "{0}"; Block {1,number,integer} is missing the "{2}" field.</entry>
+    <entry key="BlockInvalidFieldError">ValidateLibrary: Library "{0}"; Block {1,number,integer}, "{2}" field must be a non-empty string.</entry>
+    <entry key="ViewerLibraryCacheInvalidLibraryEntries">Library "{0}"; Block names and paths don't match.</entry>
+	
+<!-- Simulation Stepper Configuration Dialog -->
+    <entry key="NumberOfSteps">Move back/forward by</entry>
+    <entry key="RollbackStepperConfigure">Previous stepping options</entry>
+    <entry key="SnapshotEnable">Enable stepping back</entry>
+    <entry key="SnapshotBufferSize">Maximum number of saved back steps</entry>
+    <entry key="SnapshotInterval">Interval between stored back steps</entry>
+    <entry key="SteppingOptions">Simulation Stepping Options: {0} </entry>
+    <entry key="EnablePauseTimes">Enable time pause</entry>
+    <entry key="StepperPauseConditions">Conditional Breakpoints</entry>
+    <entry key="SimulationStepperWarn">Simulation Stepper Warning</entry>
+    <entry key="CaptureSnapshot">Save snapshot</entry>
+    <entry key="PauseTimeValues">Pause simulation when time reaches </entry>
+    <entry key="RecordSimulation">Record Simulation</entry>
+    <entry key="StepperDialogInvalidInput">The input value ''{0}'' specified for ''{1}'' is not valid</entry>
+    <entry key="Steps">steps</entry>
+
+<!-- Simulation Pacing Configuration Dialog -->
+    <entry key="SimulationPacingOptions">Simulation Pacing Options: {0}</entry>
+    <entry key="PacingRate">Pace at rate (sim sec/ clock sec)</entry>
+    <entry key="PacingMode">Pacing Mode </entry>
+    <entry key="SavePaceError">Save pace error </entry>
+    <entry key="PacingDialogInvalidInput">The input value {0} specified for {1} is not valid</entry>
+
+
+<!-- Add Conditional Pause Dialog -->
+<!--
+    <entry key="Greater">greater than</entry>
+    <entry key="GreaterEqual">greater than or equal to</entry>
+    <entry key="Equal">equal to</entry>
+    <entry key="NotEqual">not equal to</entry>
+    <entry key="LessEqual">less than or equal to</entry>
+    <entry key="Less">less than</entry>
+    <entry key="ConditionValue"> value of condition</entry>
+-->
+    <entry key="Greater" translate="false"><![CDATA[>]]></entry>
+    <entry key="GreaterEqual" translate="false"><![CDATA[>=]]></entry>
+    <entry key="Equal" translate="false"><![CDATA[=]]></entry>
+    <entry key="NotEqual" translate="false"><![CDATA[~=]]></entry>
+    <entry key="LessEqual" translate="false"><![CDATA[<=]]></entry>
+    <entry key="Less" translate="false"><![CDATA[<]]></entry>
+
+    <entry key="ConditionValue"> value of condition</entry>
+    <entry key="AddConditionalPauseInvalidInput">The input value "{0}" specified for "{1}" is not valid</entry>
+    <entry key="AddConditionalPauseDescription">Pause simulation if the signal value is: </entry>
+
+<!-- Block Diagram Conditional Pause List Dialog -->
+    <entry key="NameDelete">delete</entry>
+    <entry key="NameSignal">Signal: </entry>
+    <entry key="NameOutport">Outport</entry>
+    <entry key="NameCondition">Condition</entry>
+    <entry key="NameConditions">Conditions</entry>
+    <entry key="NameEnabled">Enabled</entry>
+    <entry key="NameHits">Hits</entry>
+
+<!-- Rename All dialogs -->
+    <entry key="RenameAllTitle">Rename All</entry>
+    <entry key="UpdateAllBlocks">Update all blocks that refer to this data store.</entry>
+    <entry key="UpdateAllBlocksGotoTag">Update all blocks that refer to this Goto tag.</entry>
+    <entry key="UpdateAllBlocksVariable">Update all references to this variable.</entry>
+    <entry key="DataStoreResolvesToSignal">This data store resolves to an existing signal object.  You must rename the signal object in Model Explorer.</entry>
+    <entry key="OldName">Old name:</entry>
+    <entry key="NewName">New name:</entry>
+    <entry key="VarUsedInReferencedModels">At least one referenced model uses the variable ''{0}''.  To continue with renaming, Simulink must search in referenced models.</entry>
+
+<!-- Undoable menu items -->
+    <entry key="SetForegroundColorCommand">Foreground Color</entry>
+    <entry key="SetBackgroundColorCommand">Background Color</entry>
+    <entry key="SetAreaColorCommand">Area Color</entry>
+    <entry key="SetCanvasColorCommand">Canvas Color</entry>
+    <entry key="RotateBlocksCommand">Rotate Blocks</entry>
+    <entry key="FlipBlocksCommand">Flip Blocks</entry>
+    <entry key="FlipBlockNameCommand">Flip Block Name</entry>
+    <entry key="SetConnectorWidthCommand">Change Connector Width</entry>
+    
+    <entry key="LatexModeCommand">Latex Mode</entry>
+    <entry key="MathMLModeCommand">Interpret as MathML</entry>
+    <entry key="DropShadowCommand">Shadow</entry>
+    <entry key="InsertImageCommand">Insert Image</entry>
+    <entry key="PasteImageCommand">Paste Image</entry>
+    <entry key="RestoreImageSizeCommand">Restore Image Size</entry>
+    <entry key="RotateImageCommand">Rotate Image</entry>
+    <entry key="ParameterChanges">Parameter Changes</entry>
+    <entry key="ParamChangesCommandFailed">Undo/redo of ''{0}'' failed.</entry>
+
+    <entry key="ParamChangesMessagePart_dots">...</entry>
+    <entry key="ParamChangesMessagePart_and">and</entry>
+    <entry key="ParamChangesMessagePart_more">more</entry>
+    <entry key="ParamChangesMessagePart_comma">,</entry>
+
+    <!-- Errors in Help Menu -->
+    <entry key="TermsOfUseError">Error displaying terms...license file not found.</entry>
+    <entry key="PatentsError">Error displaying patent information...patents file not found.</entry>
+    
+    <entry key="badAnnotationParent">Parameter must be a model, subsystem, or chart</entry>
+    
+    <entry key="unknownMethod">Unknown Method</entry>
+    <entry key="insufficientInputs">Not enough input arguments.</entry>
+    <entry key="bgColorLongerThanFg">Length of Foreground color should not be less than Background color</entry>
+    <entry key="WindowsResourcesExhausted">Windows system resources exhausted. Windows may crash! You can reclaim system resources by closing any open applications. Additionally, we recommend that you save your data and restart MATLAB. For more information, please see 'Known Software and Documentation Problems'</entry>
+
+
+    <entry key="MenuQueryWarning">Query action is not supported for this menu item!\n</entry>
+    
+<!-- Notification Bar -->
+    <entry key="FirstTimeScrollZoomNotification"><![CDATA[Did you mean to scroll? To scroll/pan, press the middle mouse wheel and drag.<a href="matlab:helpview([docroot,''/toolbox/simulink/ug/simulink_ug.map''], ''zooming'', ''CSHelpWindow'');"> More information.</a>]]></entry>
+    <entry key="SuggestQuickInsertNotification"><![CDATA[Quickly insert blocks by clicking in the diagram and typing part of the block name.<a href="matlab:helpview([docroot, ''/toolbox/simulink/helptargets.map''], ''quick_insert'', ''CSHelpWindow'');"> More information.</a>]]></entry>
+
+<!-- Port Value Plot -->
+    <entry key="PortValuePlotNotAvailable">NA</entry>
+    <entry key="PortValuePlotNoData">No Data</entry>
+    <entry key="PortValuePlotSelectVariables">Select variables</entry>
+    <entry key="PortValuePlotSelectAllClearAll">Select/clear all</entry>
+    <entry key="PortValuePlotConfigurationButtonMoreLabel">more</entry>
+    <entry key="PortValuePlotConfigurationButtonNoVariables">No data</entry>
+    <entry key="PortValuePlotNotASimscapeBlock">Not a Simscape block</entry>
+    <entry key="PortValuePlotLastLabel">Last</entry>
+    <entry key="PortValuePlotInstallNotification">To see Sparklines (plots), click on Simscape blocks after simulation has stopped.</entry>
+    
+<!-- Marquee and single selection actions -->
+    <entry key="MAMustBeEditor">Editor must be a GLUE2.Editor</entry>
+    <entry key="MACreateSubsystem">Create Subsystem</entry>
+    <entry key="MACreateEnabledSubsystem">Create Enabled Subsystem</entry>
+    <entry key="MACreateTriggeredSubsystem">Create Triggered Subsystem</entry>
+    <entry key="MACreateFunctionCallSubsystem">Create Function-call Subsystem</entry>
+    <entry key="MACreateBus">Create Bus</entry>
+    <entry key="MACommentUncomment">Comment/Uncomment</entry>
+    <entry key="MAComment">Comment Out</entry>
+    <entry key="MAUncomment">Uncomment</entry>
+    <entry key="MAWarnEditTime">EditTime:Warning</entry>
+    <entry key="MAErrorEditTime">EditTime:Error</entry>
+    <entry key="MADisableObserver">Disable Observer</entry>
+    <entry key="MAEnableObserver">Enable Observer</entry>
+    <entry key="MACreateStateReaderBlock">Create State Reader Block</entry>
+    <entry key="MACreateStateWriterBlock">Create State Writer Block</entry>
+    <entry key="MARoute">Autoroute Line</entry>
+    <entry key="MAEnableLogging">Enable Data Logging</entry>
+    <entry key="MAEnableLoggingNotSupported">Enabling data logging for the signal is not supported</entry>
+    <entry key="MADisableLogging">Disable Data Logging</entry>
+    <entry key="MADisableLoggingNotSupported">Disabling data logging for the signal is not supported</entry>
+    <entry key="MAShowBlockName">Show Block Name</entry>
+    <entry key="MAShowBlockNameNotSupported">Showing name for the following block is not supported:</entry>
+    <entry key="MAHideBlockName">Hide Block Name</entry>
+    <entry key="MAHideBlockNameNotSupported">Hiding name for the following block is not supported:</entry>
+    <entry key="MAStreamSignals">Stream Signals</entry>
+    <entry key="MAStopStreamingSignals">Stop Streaming Signals</entry>
+    <entry key="MAShowPortDialog">Port Dialog</entry>
+    <entry key="MAShowExpandedNotation">Expanded Notation</entry>
+    <entry key="MAShowCompactNotation">Compact Notation</entry>
+
+   <!-- Viewmark menu items -->
+    <entry key="viewmarks">Viewmarks</entry>
+    <entry key="takeViewmark">Viewmark This View</entry>
+    <entry key="showViewmarks">Show Viewmarks</entry>
+
+<!-- Segment Label Glyph Debugging -->
+    <entry key="DebugPropagationString">Debug Propagation</entry>
+    
+    <!-- View Model Data -->
+    <entry key="DataViewInports">Inports</entry>
+    <entry key="DataViewOutports">Outports</entry>
+    <entry key="DataViewInportOutport">Inports/Outports</entry>
+    <entry key="DataViewParameters">Parameters</entry>
+    <entry key="DataViewSignals">Signals</entry>
+    <entry key="DataViewDataStores">Data Stores</entry>
+    <entry key="DataViewVariables">Variables</entry>
+    <entry key="DataViewPerspective_Design">Design</entry>
+    <entry key="DataViewPerspective_CodeGen">Code</entry>
+    <entry key="DataViewPerspective_Logging">Instrumentation</entry>
+    <entry key="DataView_mws_tooltip">Open Model Workspace</entry>
+    <entry key="DataView_scope_tooltip">Change Scope</entry>
+    <entry key="DataView_perspective_tooltip">Change View</entry>
+    <entry key="DataView_default_filter">Filter Contents</entry>
+
+   </message>
+</rsccat>
+
+<!-- LocalWords:  Unlog
+-->

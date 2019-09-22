@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="generateSFuncModelRefParamMismatch">Generation of an S-function
+    for a subsystem that contains one or more Model blocks has detected a
+    configuration parameters mismatch.
+ 
+    \n\nThe mismatch is due to one of these causes:
+
+    \nA) Before S-function generation, there was a configuration parameter
+    mismatch in the model reference hierarchy of model ''{0}''.
+    
+    \nB) S-function generation setup changed configuration parameter settings.
+ 
+    \n\nTo determine which is the cause in this case, try building the model
+    ''{1}''.
+    
+    \n- If the build fails because of a configuration parameter mismatch, then
+    cause "A" applies.
+
+    \n- If the build succeeds, cause "B" applies.
+ 
+    \n\nTo address cause "A", make the configuration parameters listed below match
+    throughout the model hierarchy and try rebuilding model ''{2}'' until it
+    builds successfully.  Once the model builds successfully, try generating the
+    S-Function again. If the S-Function generation fails, then you will need to
+    address cause "B".
+ 
+    \n\nTo address cause "B", adjust the parameters of your model hierarchy based on
+    the mismatches described below, so that your hierarchy matches the settings
+    of ''{3}''.</entry>
+
+    <entry key="invalidTargetType">{0} should not be called for {1} target.</entry>
+    <entry key="invalidCS">''{0}'' is not a valid Simulink.ConfigSet or Simulink.ConfigComponent object.</entry>
+    <entry key="incompatibleComponents">Configuration component ''{0}'' of model ''{1}'' and configuration component ''{2}'' of model ''{3}'' are not compatible. The error message returned by the comparison function is:\n{4}</entry>
+    <entry key="invalidMdlRefStatus">Invalid status in configure_model_reference_target_status</entry>
+    <entry key="invalidModelName">Model name parameter of one of the Model blocks in Model ''{0}'' is ''{1}''. Model name must be a valid Matlab identifier</entry>
+    <entry key="mdlRefLoopDetected">Detected model reference loop ''{0}''</entry>
+    <entry key="propertyMapping">{0} is mapped to ''{1}''</entry>
+    <entry key="paramNotInDataModel">Model Reference parent-child match behavior for the parameter {0} is not defined in the data model.</entry>
+    <entry key="invalidReporterType" translate="false">''{0}'' is not a valid Simulink.ModelReference.internal.configset.ParentChildMismatchReporter object.</entry> 
+    
+    <entry key="reportStateLoggingErr">The state logging option ({0} != {1})
+    which is computed as: (SaveState or SaveFinalState) and
+    MatFileLogging\n
+
+    - SaveState is mapped to ''{2}'' on ''{3}''\n
+
+    - SaveFinalState is mapped to ''{4}'' on ''{5}''\n
+
+    - MatFileLogging is mapped to ''{6}'' on ''{7}''\n
+    </entry>
+
+    <entry key="reportStateLoggingErrMatFileLoggingAlwaysOn">The state logging option ({0} != {1})
+    which is computed as: (SaveState or SaveFinalState) and
+    MatFileLogging\n
+
+    - SaveState is mapped to ''{2}'' on ''{3}''\n
+
+    - SaveFinalState is mapped to ''{4}'' on ''{5}''\n
+
+    - MatFileLogging is always ''on'' for this target\n
+    </entry>
+
+    <entry key="topChildMdlParamMismatchMsgUI"><![CDATA[\n\t{0} ({1}):\n
+    \t\t<a href="matlab:configset.internal.open(''{2}'',''{3}'');">Parent setting</a>: {4}\n
+    \t\t<a href="matlab:configset.internal.open(''{5}'',''{6}'');">Child setting</a>: {7}\n]]></entry>
+    <entry key="topChildMdlParamMismatchMsgNonUI"><![CDATA[\n\t{0} [Use set_param to change settings]:\n
+    \t\tParent setting: {1}\n
+    \t\tChild setting: {2}\n]]></entry>
+    <entry key="topChildMdlParamMismatch"><![CDATA[The following Configuration parameter option(s) do not match between the models ''{0} (Parent)'' and ''{1} (Child)''. 
+    <a href="matlab:helpview([docroot,''/toolbox/simulink/ug/simulink_ug.map''],
+    ''about_configuration_references'');">Configuration references</a> can help avoid parameter mismatches.\n]]></entry>
+
+    <entry key="unmatchedComponent">The component ''{0} ({1})'' of the model ''{2}'' does not exist for the model ''{3}''</entry>
+    <entry key="unsavedWorkspace">Can not update the model reference target of ''{0}'' because its model workspace has unsaved changes</entry>
+    <entry key="unsavedChanges">Can not update the model reference target of ''{0}'' because it has unsaved changes</entry>
+    <entry key="unsavedMdlRefsBase">Cannot update the model reference target of ''{0}''</entry>
+    <entry key="unsavedMdlRefs">Cannot update the model reference target of ''{0}'' used in ''{1}'' because it has unsaved changes.
+      <![CDATA[
+      <actions exclusiveFixIts="yes">
+        <action cmd="matlab:Simulink.internal.fixUnsavedModel(''{0}'')" type="fixit">Save ''{0}''</action>
+      </actions>]]>
+    </entry>
+    <entry key="unsavedMdlRefsWorkspc">Cannot update the model reference target of ''{0}'' used in ''{1}'' because its workspace has unsaved changes
+      <![CDATA[
+      <actions exclusiveFixIts="yes">
+        <action cmd="matlab:Simulink.internal.fixUnsavedModel(''{0}'')" type="fixit">Save ''{0}'' and its workspace</action>
+      </actions>]]>
+    </entry>
+    <entry key="unsavedSimprmChanges">Cannot update the model reference target of ''{0}'' used in ''{1}'' because its Configuration Parameters dialog has unsaved changes
+      <![CDATA[
+      <actions exclusiveFixIts="yes">
+        <action cmd="matlab:Simulink.internal.fixUnsavedModel(''{0}'')" type="fixit">Save ''{0}'' and its configuration parameters</action>
+      </actions>]]>
+    </entry>
+    <entry key="unsavedMdlRefsSaved">''{0}'' has been saved.</entry>
+    <entry key="unsavedMdlLib">Can not update the model reference target of ''{0}'' because it has links to library ''{1}'' that has unsaved changes</entry>
+    <entry key="rebuildSetToNever">Model reference Rebuild option is set to ''Never''.  Assuming all model references are up-to-date.</entry>
+    <entry key="allTargetsUpToDate">All model reference {0} targets are up-to-date</entry>
+    <entry key="checkingStatusOfModel">Checking the status of model reference {0} target for model ''{1}'' used in ''{2}''</entry>
+    <entry key="checkingStatusOfTopModel">Checking the status of model reference {0} target for model ''{1}''</entry>
+    <entry key="modelReferenceChecksumChanged">The checksum for the referenced model ''{0}'' has changed.  The model reference target must be regenerated.</entry>
+    <entry key="pilModelNotDerivedFromERT">System target file for model ''{0}'' is not derived from ERT. SIL or PIL simulation requires the system target file be derived from ERT.</entry>
+    <entry key="skipPartOfRebuildManager">Skipping rebuild check for model ''{0}'' because it is part of the Rebuild Manager Skiplist</entry>
+    
+    <entry key="rebuildSetToAlways">Rebuild option is set to ''Always''</entry>
+
+    <entry key="modelReferenceTargetUpToDate">Model reference {0} target for {1}
+    is up-to-date.</entry>
+
+    <entry key="checkingForStructuralChanges">Checking for structural changes in
+    {0} because the model reference rebuild option is set to ''If any changes
+    detected''. Structural changes will cause the model reference {1} target to
+    be rebuilt.</entry>
+
+    <entry key="targetDoesNotExist">Model reference {0} target ({1}) for model
+    {2} is out of date because {3} does not exist.</entry>
+
+    <entry key="binfoNotHaveNecessaryInformation">Model reference {0} target
+    ({1}) for model {2} is out of date because the binary information cache does
+    not contain necessary information.  This may be caused by the slprj
+    directory having been removed or by a previous build of this model not
+    succeeding.</entry>
+
+    <entry key="userDependencyUpdatedSinceLastBuild">Model reference {0} target
+    ({1}) for model {2} is out of date because {3} (dependency of model {4}) has
+    changed since the last build.</entry>
+
+    <entry key="internalDependencyUpdatedSinceLastBuild">Model reference {0} target
+    ({1}) for model {2} is out of date because {3} (internal dependency of model
+    {4}) has changed since the last build.</entry>
+
+    <entry key="referencedModelTargetDoesNotExist">Model reference {0} target
+    ({1}) for model {2} is out of date because the target for the referenced
+    model {3} ({4}) does not exist.</entry>
+
+    <entry key="targetFunctionLibraryChanged">Model reference {0} target ({1})
+    for model {2} is out of date because the code replacement library used in
+    model {3} has changed since the last build.</entry>
+
+    <entry key="previousBuildProtectedUnprotectedMismatch">Model reference {0}
+    target ({1}) for model {2} is out of date because the previous build was for
+    a protected model and this build is for an unprotected model, or vice
+    versa.</entry>
+
+    <entry key="stateflowExternalFileChanged">Model reference {0} target ({1})
+    for model {2} is out of date because a MATLAB file used by a Stateflow block
+    or a MATLAB Function block has changed.</entry>
+
+    <entry key="matlabSystemExternalFileChanged">Model reference {0} target ({1})
+    for model {2} is out of date because a MATLAB file used by a MATLAB System block
+    has changed.</entry>
+
+    <entry key="debugSILBuildMismatch">Model reference {0} target ({1})
+    for model {2} is out of date because the "Enable source level debugging during
+    SIL simulations" setting has changed.</entry>
+    
+    <entry key="genCodeOnlyChanged">Model reference {0} target ({1}) for model {2} needs to be recompiled because the genCodeOnly setting has changed.</entry>
+
+    <entry key="ModelReferenceRTWTargetNeedsCompiling">Model reference {0} target ({1}) for model {2} needs to be recompiled because either {3} has changed since the last build, or it has never been compiled.</entry>
+
+    <entry key="modelInformationCacheUpdated">Model reference {0} target ({1})
+    for model {2} may be out of date because the model information cache has
+    been updated.  The model or library files may have been resaved or a
+    referenced configuration set may have been modified.</entry>
+
+    <entry key="referencedModelOutOfDate">Model reference {0} target ({1}) for
+    model {2} may be out of date because the referenced model {3} was out of
+    date.</entry>
+
+    <entry key="referencedModelTargetUpdated">Model reference {0} target ({1})
+    for model {2} may be out of date because the target for the referenced model
+    {3} ({4}) has changed since the last build.</entry>
+
+    <entry key="resolveSignalsForAllNamed">Model reference {0} target ({1}) for
+    model {2} may be out of date because the model is configured to resolve
+    signal objects for all named signal and states. To speed up code generation
+    and eliminate this message, set Configuration Parameters > Diagnostics/Data
+    Validity > Signal resolution to "Explicit only".</entry>
+
+    <entry key="incompatibleGlobalVariables">Model reference {0} target ({1})
+    for model {2} may be out of date because global variables used by this model are
+    incompatible with the variables that existed when the
+    target was generated.  This model uses global variable(s): ''{3}''.</entry>
+
+    <entry key="customStorageClassChanged">Model reference {0} target ({1}) for
+    model {2} is out of date because custom storage class definitions have
+    changed since the model was previously compiled.  This model uses global
+    variable(s): ''{3}''.</entry>
+
+    <entry key="PackageModelNoLongerExists">Model reference {0} target ({1}) for
+    model {2} is out of date because it was from a packaged model file which no
+    longer exists.</entry>
+
+    <entry key="sfunctionDoesNotExist">Model reference {0} target ({1}) for
+    model {2} is out of date because the S-function {3} (used in ''{4}'') could
+    not be found.</entry>
+
+    <entry key="sfunctionFileUpdated">Model reference {0} target ({1}) for model
+    {2} is out of date because the file {3} associated with S-function ''{4}''
+    (used in ''{5}'') has changed since the last build.</entry>
+
+    <entry key="recompilingModelRefTarget">Recompiling {0} target for model {1} because a referenced model was recompiled.</entry>
+
+    <entry key="recompilingCodeInstrChanged">Recompiling {0} target for model {1}  because code instrumentation settings have changed.</entry>
+
+    <entry key="modelRefTargetNoCodeGenNeeded">The code for the model reference
+    {0} target for model {1} is up to date because no functional changes were found
+    in the referenced model.</entry>
+
+    <entry key="sfunctionFileDoesNotExist">File {0} associated with S-Function ''{1}'' (used in ''{2}'') does not exist</entry>
+    <entry key="ignoringUnfoundDependency">Ignoring dependency ''{0}'' for model {1} because it could not be found</entry>
+    <entry key="checkingDependency">Checking dependency ''{0}'' for model {1}</entry>
+    <entry key="ignoringDirectoryDependency">Ignoring directory dependency ''{0}'' for model {1} because it has no files</entry>
+    <entry key="parBuildInit">Initializing parallel workers for parallel model reference build.</entry>
+    <entry key="parBuildInitFailed">Parallel worker initialization failed.</entry>
+    <entry key="parBuildLoadTopModel">Loading ''{0}'' on parallel workers.</entry>
+    <entry key="parBuildInitComplete">Parallel worker initialization complete.</entry>
+    <entry key="unknownAction">Unknown action ''{0}''</entry>
+    <entry key="parBuildCleanup">Cleaning up parallel workers.</entry>
+    <entry key="parBuildStart">Starting parallel model reference {0} build for ''{1}''</entry>
+    <entry key="parBuildFinish">Finished parallel model reference {0} build for ''{1}''\nThe build log has been stored in ''{2}''</entry>
+    <entry key="parBuildError">The following error occurred during the parallel model reference {0} build for ''{1}'':\n\n{2}\nThe build log has been stored in ''{3}''</entry>
+    <entry key="parBuildVerifyManifestError">The following files are listed in the manifest but are missing in {0}:\n\n{1}\n</entry>
+    <entry key="parBuildCopySharedUtilsTimeout">Time out while copying down the shared utils folder from the client to workers.</entry>
+    <entry key="parBuildCreateManifestError">Failed to create the manifest. Temporary "*.dmr-journal" files exist in the following directory:\n{0}</entry>
+    <entry key="poolNotOpen">The model is configured for parallel model reference builds, however the MATLAB pool is not open.  Please see the documentation on matlabpool for information on opening a MATLAB pool.\n</entry>
+    <entry key="poolNotSpmdCompatible">The current pool does not have SPMD enabled.  In order to build the model reference hierarchy in parallel, close the parallel pool and open a new one that has SPMD enabled.  Refer to the documentation on parallel.Pool for more information on how to create a pool with SPMD enabled.\n</entry>
+    <entry key="poolArchInconsistent">The MATLAB pool must have the same architecture for all workers and must be the same as the client MATLAB session in order to perform parallel model reference builds.\n</entry>
+    <entry key="MDCSNotSupported">One or more workers could not get a Simulink Coder license.  Please check the consistency of the parallel pool of workers.</entry>
+    <entry key="CoverageParallelBuild">The model {0} is configured to collect code coverage measurements. However, code coverage is not supported for parallel model reference build.</entry>
+    <entry key="NoCommonCompiler">A common compiler is needed in order to link the final executable together.\nHowever, a common compiler does not exist across all workers in the MATLAB\nDistributed Computing Server pool.</entry>
+    <entry key="parallelFileSystemInaccessible">The current root build folder "{0}" is not accessible by one or more of the parallel workers.  Please verify that all workers can write to this location.</entry>
+    <entry key="parWorkerConfigError">The following error occurred when trying to configure the parallel workers for the target.\n{0}</entry>
+    <entry key="advisorWarning">The Code Generation Advisor has detected potential issues with the model settings, and the "Check model before code generation"  parameter is set to "On (stop for warnings)".  Address the issues in the Code Generation Advisor or set the "Check model before generating code"  parameter to "Off".  The "Check model before generating code" parameter is located on the Code Generation pane of the Configuration Parameters dialog  box.</entry>
+    <entry key="advisorWarning2">The value of the ''ObjectivePriorities'' parameter in the active configuration set has been changed to ''Unspecified''.\nThe previous value ''{0}'' is only available when using ERT-based targets.</entry>
+   <entry key="AccelTargetFileNotAllowedForModelRefTarget">Cannot build the model reference code generation target for the model ''{0}'', because its ''System target file'' is set to ''accel.tlc''.  Change the ''System target file'' parameter, which is located on the Code Generation pane of the Configuration Parameters dialog, to a value different than ''accel.tlc''.</entry>
+    <entry key="BuildFolderDoesNotExist">The path for ''{0}'' must exist, however the path specified (''{1}'') does not exist.  Either enter a valid folder or use the browse button to select the desired folder.</entry>
+    <entry key="CacheFolderLbl">Simulation cache folder:</entry>
+    <entry key="CacheFolderToolTip">Root folder where build artifacts used for simulation are placed.</entry>
+    <entry key="CodeGenFolderLbl">Code generation folder:</entry>
+    <entry key="CodeGenFolderToolTip">Root folder where code generation files are placed.</entry>
+    <entry key="FileGenFolderOptions">Folders for Generated Files</entry>
+    <entry key="CacheFolderBrowseTitle">Select a root folder for the Simulink cache</entry>
+    <entry key="CodeGenFolderBrowseTitle">Select a root folder for code generation</entry>
+    <entry key="ForceBuildOnModelRefTarget">''{0}'' can only be used with top model or standalone model builds.</entry>
+	<entry key="BrowseButtonText">Browse...</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  xml UTF SIL slprj resaved Bullseye utils
+-->
+
+<!-- Copyright 2009-2016 The MathWorks, Inc. -->

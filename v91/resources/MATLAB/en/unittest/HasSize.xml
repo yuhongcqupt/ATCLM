@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="MustHaveExpectedSize">The value had an incorrect size.</entry>
+    <entry key="ActualSize">Actual Size:</entry>
+    <entry key="ExpectedSize">Expected Size:</entry>
+    <entry key="ExpectedNonScalar">Expected input number 2, size, to be nonscalar.</entry>
+    <entry key="MustNotHaveProhibitedSize">The value must not have the size specified.</entry>
+    <entry key="ProhibitedSize">Prohibited Size:</entry>
+    <entry key="DidNotHaveProhibitedSize">The value did not have the prohibited size.</entry>
+  </message>
+</rsccat>

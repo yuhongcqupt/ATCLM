@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- Copyright 2013 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="DefaultDescription">Diagnostic logged</entry>
+    <entry key="StackInformation">Stack Information:</entry>
+  </message>
+</rsccat>
+<!-- LocalWords:  rsccat
+-->

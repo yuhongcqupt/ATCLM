@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="PausedAtUncaughtError">Test execution paused due to uncaught error in {0}.</entry>
+    <entry key="PausedAtFailure">Test execution paused due to failure. Execute DBUP to shift context to its source: line {0,number,integer} of "{1}".</entry>
+    <entry key="PausedAtFailureNoStack">Test execution paused due to failure.</entry>
+    <entry note="The hole is filled with the translation of HereHyperlinkText (the English word 'here') which is displayed as a clickable hyperlink" key="PausedAtFailureWithHyperlink">Test execution paused due to failure. Either click {0} or execute DBUP to shift context to its source: line {1,number,integer} of "{2}".</entry>
+    <entry note="This message, a clickable hyperlink, fills the hole in PausedAtFailureWithHyperlink (the English sentence 'Either click {0} or...')" key="HereHyperlinkText">here</entry>
+  </message>
+</rsccat>
+<!-- LocalWords:  rsccat
+-->

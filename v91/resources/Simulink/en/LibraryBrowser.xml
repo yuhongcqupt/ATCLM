@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsccat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" locale="en_US" product="Simulink" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="MostFreqBlocksMenu">Most Frequently Used Blocks</entry>
+    <entry key="NoBlocksLabel">No Blocks</entry>
+
+  <!--Resource entries for toolbox/simulink-->
+    <entry key="DeprecationWarning">{0} is deprecated and will be removed in a future release</entry>
+
+    <entry key="applyOrderExpectsTuples">applyOrder expects a cell array of tuples (productName, priority)</entry>
+    <entry key="applyFilterExpectsTuples">applyFilter expects a cell array of tuples (blockPath, filterType)</entry>
+    <entry key="applyFilterExpectsStrings">applyFilter expects a cell array of strings</entry>
+    <entry key="applyNodePreferenceExpectsTuples">applyNodePreference expects a cell array of tuples (blockPath, isExpanded)</entry>
+    <entry key="applyNodePreferenceExpectsStringLogicalPairs">applyNodePreference expects a cell array of string logical pairs</entry>
+    <entry key="unknownFilterType">Unknown filter type {0} for block {1}. applyFilter expected ''Enabled'', ''Disabled'' or ''Hidden''</entry>
+    <entry key="lbNotOpen">Error: Simulink Library Browser is not open</entry>
+    <entry key="invalidArgToSimulink">Error: Invalid argument provided to ''simulink''</entry>
+    <entry key="lbInitFailed">Error: The Simulink Library Browser failed to initialize.</entry>
+    <entry key="invalidArgumentCount">Incorrect number of input arguments</entry>
+    <entry key="cannotOpenFile">Error while opening the Simulink Library Browser.  The file ''{0}'' could not be opened.</entry>
+    <entry key="cannotEvaluateBlock">Error evaluating ''{0}''. Error Message: {1}</entry>
+    <entry key="missingLibrary">Library ''{0}'' not found or not available</entry>
+    <entry key="SimulinkCoderNotInstalled">''{0}'' library requires the Simulink Coder product. This product is not installed on your system.</entry>
+  </message>
+</rsccat>

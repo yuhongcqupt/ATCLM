@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="ExpectedMinimum">Minimum Value (Exclusive):</entry>
+    <entry key="ExpectedNonEmptyMinimum">Minimum value must be non-empty.</entry>
+    <entry key="FailingEmptyActual">The actual value must be non-empty.</entry>
+    <entry key="FailingScalarActScalarExp">The value must be greater than the minimum value.</entry>
+    <entry key="FailingScalarActNonscalarExp">The value must be greater than all elements of the minimum value array.</entry>
+    <entry key="FailingNonscalarActScalarExp">Each element must be greater than the minimum value.</entry>
+    <entry key="FailingNonscalarActNonscalarExp">Each element must be greater than each corresponding element of the minimum value array.</entry>
+    <entry key="FailingIndices">Failing Indices:</entry> 
+  </message>
+</rsccat>

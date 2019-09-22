@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- Copyright 2014 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="invalidOptionType" note="stringDatatypeUpdate">The option argument must be a character vector.</entry>
+	<entry key="invalidHadoopVersion">Unknown Hadoop major version number {0, number, integer}, defaulting to version 2.</entry>
+    <entry key="invalidOption">The option {0} is unrecognized.</entry>
+    <entry key="jarFileNotFound">Could not find the required JAR file ''{0}'' for loading Hadoop.</entry>
+    <entry key="indeterminateHadoopClasspath">Cannot determine the Hadoop classpath. Verify that the HADOOP_PREFIX, HADOOP_HOME, or the MATLAB_HADOOP_INSTALL environment variable is set to the root of your Hadoop installation folder.</entry>
+    <entry key="indeterminateHadoopVer">Cannot determine the Hadoop version. Verify that the HADOOP_PREFIX, HADOOP_HOME, or the MATLAB_HADOOP_INSTALL environment variable is set to the root of your Hadoop installation folder.</entry>
+    <entry key="hadoopNotFound">Cannot find Hadoop. Set the HADOOP_PREFIX, HADOOP_HOME, or MATLAB_HADOOP_INSTALL environment variable to a valid Hadoop installation folder and try again.</entry>
+  </message>
+</rsccat>

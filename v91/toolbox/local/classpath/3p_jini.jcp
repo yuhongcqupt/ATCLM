@@ -1,0 +1,27 @@
+# Java classpath entries for 3p/jini
+$matlabroot/java/jarext/distcomp/jini2/lib/fiddler-dl.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/phoenix-dl.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/mahalo.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/destroy.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/jsk-platform.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/jini-ext.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/jini-core.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/reggie-dl.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/norm-dl.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/browser-dl.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/sdm-dl.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/norm.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/mahalo-dl.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/group.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/phoenix-init.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/browser.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/reggie.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/fiddler.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/phoenix-group.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/sun-util.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/jsk-policy.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/group-dl.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/sharedvm.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/start.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/jsk-resources.jar
+$matlabroot/java/jarext/distcomp/jini2/lib/phoenix.jar

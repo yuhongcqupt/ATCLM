@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<!-- Copyright 2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <!-- Entries used by multiple parts -->
+    <entry key="DetailsLinkText">Details</entry>
+    <entry key="ScopeLabel">Scope:</entry>
+    <entry key="StackLabel">Stack:</entry>
+    <entry key="TimestampLabel">Timestamp:</entry>
+    <entry key="TimeInSeconds">{0} seconds</entry>
+    
+    
+    <!-- Entries used by CoverPageSummaryPart -->
+    <entry key="ReportTitle">{0} Test Report</entry>
+    <entry key="HostLabel">Host:</entry>
+    <entry key="PlatformLabel">Platform:</entry>
+    <entry key="MATLABVersionLabel">MATLAB Version:</entry>
+    <entry key="NumberOfTestsLabel">Number of Tests:</entry>
+    <entry key="TestingTimeLabel">Testing Time:</entry>
+    <entry key="OverallResultLabel">Overall Result:</entry>
+    <entry key="Passed">Passed</entry>
+    <entry key="Failed">Failed</entry>
+    <entry key="NoTestsCompleted">No tests completed</entry>
+    
+    
+    <!-- Entries used by PieChartSummaryPart and PieChartSummaryAlternativePart -->
+    <entry key="NumTestsPassed">{0,number,integer} passed</entry>
+    <entry key="NumTestsFiltered">{0,number,integer} filtered</entry>
+    <entry key="NumTestsFailed">{0,number,integer} failed</entry>
+    <entry key="NumTestsUnreached">{0,number,integer} unreached</entry>
+    
+    
+    <!-- Entries used by PieChartSummaryAlternativePart -->
+    <entry key="SummaryLabel">Summary:</entry>
+    
+    
+    <!-- Entries used by FailureSummaryPart -->
+    <entry key="FailureSummaryHeading">Failure Summary</entry>
+    <entry key="FailureSummaryText">{0,number,integer} tests failed.</entry>
+    <entry key="SingleFailureSummaryText">1 test failed.</entry>
+    <entry key="FatalAssertionCausedAbort">A fatal assertion failure in {0} caused the test run to abort and {1,number,integer} tests to be unreached.</entry>
+    <entry key="FatalAssertionCausedAbortSingleUnreached">A fatal assertion failure in {0} caused the test run to abort and 1 test to be unreached.</entry>
+    <entry key="FailingTestNameColumnLabel">Name of Failing Test</entry>
+    <entry key="FailureReasonsColumnLabel">Failure Reasons</entry>
+    
+    
+    <!-- Entries used by FailureTableRowPart -->
+    <entry key="FailedByAssertion">Failed by assertion.</entry>
+    <entry key="FailedByError">Errored.</entry>
+    <entry key="FailedByFatalAssertion">Failed by fatal assertion.</entry>
+    <entry key="FailedByVerification">Failed by verification.</entry>
+    
+    
+    <!-- Entries used by FilterSummaryPart -->
+    <entry key="FilterSummaryHeading">Filter Summary</entry>
+    <entry key="FilterSummaryText">{0,number,integer} tests were filtered.</entry>
+    <entry key="SingleFilterSummaryText">1 test was filtered.</entry>
+    <entry key="FilteredTestNameColumnLabel">Name of Filtered Test</entry>
+    
+    
+    <!-- Entries used by SuiteOverviewPart -->
+    <entry key="SuiteOverviewHeading">Overview</entry>
+    
+    
+    <!-- Entries used by SuiteDetailsPart -->
+    <entry key="SuiteDetailsHeading">Details</entry>
+    
+    
+    <!-- Entries used by TestDetailsPart -->
+    <entry key="TheTestPassed">The test passed.</entry>
+    <entry key="TheTestFailedByFatalAssertion">The test failed by fatal assertion and did not run to completion.</entry>
+    <entry key="TheTestFailedAndWasIncomplete">The test failed and did not run to completion.</entry>
+    <entry key="TheTestFailed">The test failed.</entry>
+    <entry key="TheTestWasFiltered">The test was filtered.</entry>
+    <entry key="TheTestWasUnreached">The test was unreached because the test run was aborted.</entry>
+    <entry key="DurationLabel">Duration:</entry>
+    <entry key="ClassSetupParametersLabel">Class Setup Parameters:</entry>
+    <entry key="MethodSetupParametersLabel">Method Setup Parameters:</entry>
+    <entry key="TestParametersLabel">Test Parameters:</entry>
+    <entry key="OverviewLinkText">Overview</entry>
+    
+    
+    <!-- Entries used by EventListPart -->
+    <entry key="EventLabel">Event:</entry>
+    <entry key="EventsLabel">Events:</entry>
+    
+    
+    <!-- Entries used by LoggedDiagnosticPart -->
+    <entry key="SharedTestFixtureDiagnosticLoggedSummary">Diagnostic logged in a shared test fixture.</entry>
+    <entry key="SharedTestFixtureDiagnosticsLoggedSummary">Diagnostics logged in a shared test fixture.</entry>
+    <entry key="TestClassDiagnosticLoggedSummary">Diagnostic logged while setting up or tearing down the test.</entry>
+    <entry key="TestClassDiagnosticsLoggedSummary">Diagnostics logged while setting up or tearing down the test.</entry>
+    <entry key="TestMethodDiagnosticLoggedSummary">Diagnostic logged.</entry>
+    <entry key="TestMethodDiagnosticsLoggedSummary">Diagnostics logged.</entry>
+    <entry key="VerbosityLabel">Verbosity:</entry>
+    <entry key="LoggedDiagnosticLabel">Logged Diagnostic:</entry>
+    <entry key="LoggedDiagnosticKLabel">Logged Diagnostic {0,number,integer}:</entry>
+    
+    
+    <!-- Entries used by QualificationDiagnosticPart -->  
+    <entry key="SharedTestFixtureAssertionPassedSummary">Assertion passed in a shared test fixture.</entry>
+    <entry key="SharedTestFixtureAssumptionPassedSummary">Assumption was met in a shared test fixture.</entry>
+    <entry key="SharedTestFixtureFatalAssertionPassedSummary">Fatal assertion passed in a shared test fixture.</entry>
+    <entry key="SharedTestFixtureAssertionFailedSummary">Assertion failed in a shared test fixture. As a result, all tests using this fixture failed and did not run to completion.</entry>
+    <entry key="SharedTestFixtureAssumptionFailedSummary">Assumption was not met in a shared test fixture. As a result, all tests using this fixture were filtered.</entry>
+    <entry key="SharedTestFixtureFatalAssertionFailedSummary">Fatal assertion failed in a shared test fixture. Test run aborted.</entry>
+    <entry key="TestClassAssertionPassedSummary">Assertion passed while setting up or tearing down the test.</entry>
+    <entry key="TestClassAssumptionPassedSummary">Assumption was met while setting up or tearing down the test.</entry>
+    <entry key="TestClassFatalAssertionPassedSummary">Fatal assertion passed while setting up or tearing down the test.</entry>
+    <entry key="TestClassVerificationPassedSummary">Verification passed while setting up or tearing down the test.</entry>
+    <entry key="TestClassAssertionFailedSummary">Assertion failed while setting up or tearing down the test. As a result, all tests using this setup or teardown code failed and did not run to completion.</entry>
+    <entry key="TestClassAssumptionFailedSummary">Assumption was not met while setting up or tearing down the test. As a result, all tests using this setup or teardown were filtered.</entry>
+    <entry key="TestClassFatalAssertionFailedSummary">Fatal assertion failed while setting up or tearing down the test. Test run aborted.</entry>
+    <entry key="TestClassVerificationFailedSummary">Verification failed while setting up or tearing down the test. As a result, all tests using this setup or teardown code failed.</entry>
+    <entry key="TestMethodAssertionPassedSummary">Assertion passed.</entry>
+    <entry key="TestMethodAssumptionPassedSummary">Assumption was met.</entry>
+    <entry key="TestMethodFatalAssertionPassedSummary">Fatal assertion passed.</entry>
+    <entry key="TestMethodVerificationPassedSummary">Verification passed.</entry>
+    <entry key="TestMethodAssertionFailedSummary">Assertion failed. As a result, the test did not run to completion.</entry>
+    <entry key="TestMethodAssumptionFailedSummary">Assumption was not met. As a result, the remainder of the test was filtered.</entry>
+    <entry key="TestMethodFatalAssertionFailedSummary">Fatal assertion failed. Test run aborted.</entry>
+    <entry key="TestMethodVerificationFailedSummary">Verification failed.</entry>
+    <entry key="TestDiagnosticLabel">Test Diagnostic:</entry>
+    <entry key="TestDiagnosticKLabel">Test Diagnostic {0,number,integer}:</entry>
+    <entry key="FrameworkDiagnosticLabel">Framework Diagnostic:</entry>
+    <entry key="FrameworkDiagnosticKLabel">Framework Diagnostic {0,number,integer}:</entry>
+    
+    
+    <!-- Entries used by ExceptionDiagnosticPart -->
+    <entry key="SharedTestFixtureExceptionThrownSummary">Error occured in a shared test fixture. As a result, all tests using this fixture failed and did not run to completion.</entry>
+    <entry key="TestClassExceptionThrownSummary">Error occurred while setting up or tearing down the test. As a result, all tests using this setup or teardown code failed and did not run to completion.</entry>
+    <entry key="TestMethodExceptionThrownSummary">Error occurred. As a result, the test did not run to completion.</entry>
+    <entry key="ErrorIdentifierLabel">Error Identifier:</entry>
+    <entry key="ErrorReportLabel">Error Report:</entry>
+    
+    
+    <!-- Entries used by CommandWindowTextPart -->
+    <entry key="CommandWindowTextHeading">Command Window Text</entry>
+  </message>
+</rsccat>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- Copyright 2014 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="MustBeScalar">The value must be a scalar.</entry>
+    <entry key="ActualSize">The value has a size of [{0}].</entry>
+    <entry key="MustNotBeScalar">The value must not be a scalar.</entry>
+  </message>
+</rsccat>

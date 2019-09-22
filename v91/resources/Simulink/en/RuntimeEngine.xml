@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2011-2013 The MathWorks, Inc. -->
+<rsccat version="1.0"
+        locale="en_US"
+        product="Simulink"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../schema/.xsd">
+
+  <message>
+
+    <entry key="FeatureOff">
+      Feature ''UseSlexecRuntimeEngine'' OFF for simulation ''{0}'' of model ''{1}''.\n 
+    </entry>
+    
+    <entry key="FeatureNotSupported">
+      Feature ''UseSlexecRuntimeEngine'' OFF for simulation ''{0}'' of model ''{1}''.\n 
+      Due to some of following assumptions being false (noted 0):\n
+      + supported simulation type: {2,number,integer}\n
+      + supported simulation mode: {3,number,integer}\n
+      + supported semantic domains: {4,number,integer}\n
+      + supported execspec sample-times: {5,number,integer}\n
+      + supported other-features configuration: {6,number,integer}.\n
+    </entry>
+
+    <entry key="FeatureOn">
+      Feature ''UseSlexecRuntimeEngine'' ON for simulation ''{0}'' of model ''{1}''.\n
+      + uses verbose mode: {2,number,integer}.\n
+      + using execution mode ''{3}''.\n
+    </entry>
+    
+    <entry key="WarningFeatureOnRequiresOtherFeatures">
+      Feature ''UseSlexecRuntimeEngine'' ON.\n
+      + using execution-mode ''{0}''.\n
+      Warning: this mode requires extra features that are not set as expected.\n
+      (we still proceed for enabling experiments and debug);\n 
+      + Expected extra features: ''{1}''.\n
+    </entry>
+    
+    <entry key="InternalBuildError">
+      Internal build error: {0}.
+    </entry>
+    
+    <entry key="InternalExecutionError">
+      Internal execution error: {0}.
+    </entry>    
+    
+    <entry key="ExecutionErrorRaiseEvent">
+      Error occurs when raising an event on clock ''{0}'' at time ''{1}''.
+    </entry>
+    
+    <entry key="ExecutionErrorBlockTriggersStarvation">
+      Execution of Block ''{0}'' triggers a starvation error. Please make sure that 
+      this block never raises same asynchronous event more than once per execution
+      of its output function.{1}\n
+    </entry>
+    
+    <entry key="InformationTaskPrioritySetting">
+      Simulated model has ''{0,number,integer}'' tasks with ''{1,number,integer}'' 
+      having undefined priorities, of which ''{2,number,integer}'' are automatically assigned.\n 
+    </entry>
+    
+    <entry key="InformationTaskPrioritySettingCanBeSimulatedInClassic">
+      Simulated model's task priority settings ''{0}'' expected to yield 
+      same results in classic-simulink (always preempt).\n  
+    </entry>
+    
+    <entry key="InformationResolveUndefinedTaskPriority">
+      Task ''{0}'' has undefined priority which is automatically resolved to 
+      priority ''{1,number,integer}''.\n
+    </entry>
+    
+    <entry key="InformationCannotResolveUndefinedTaskPriority">
+      Task ''{0}'' has undefined priority which cannot be automatically resolved.\n 
+    </entry>
+    
+    <entry key="ExecutionErrorTaskPriority">
+      Scheduling Error: Cannot resolve task priorities.
+    </entry>
+    
+    <entry key="ExecutionErrorTaskPriorityMustBeDefined">
+      Scheduling Error: task ''{0}'' has undefined priority. 
+      This can lead to non-deterministic behavior and is therefore forbidden. 
+      Please assign a unique priority to each task in your design.
+    </entry>
+    
+    <entry key="ExecutionErrorTaskPriorityCannotBeResolved">
+      Cannot arbitrate between tasks ''{0}'' and ''{1}'' (which compete for execution time) \n
+      because they have same specified priority ''{2, number, integer}'', 
+      and are ready (requested to execute) at the same time-instant.\n
+      Consider assigning a different priority to each of these two tasks in your design.
+      For now, we arbitrarily selects tasks ''{3}'' for simulation.
+    </entry>
+    
+    <entry key="ExecutionErrorCannotGetTimeOfInactiveTask">
+      Querying current time via a sample-time ''{0}'' which does not belong to the
+      currently executing task. This can lead to non-deterministic 
+      behavior or data corruption in actual implementation. When dealing with
+      multi-rate blocks, please make sure that you query the current task's time 
+      via a sample-time which has a hit.
+    </entry>
+    
+  </message>
+
+</rsccat>
+
+<!-- LocalWords:  UseSlexecRuntimeEngine execspec
+-->

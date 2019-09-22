@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="InternalRateTransitionExist">Block has internal rate transition.</entry>
+    <entry key="InternalBlockCodeGenNotSupported">No Code gen support for this block.</entry>
+  </message>
+</rsccat>

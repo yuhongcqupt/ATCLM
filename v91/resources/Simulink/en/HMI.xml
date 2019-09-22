@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <!-- Visible strings -->
+    <entry key="SDIVariableDescription">model streamed signals (see Configuration Parameters)</entry>
+    
+    <!-- Simulink Engine Errors -->
+    <entry key="SignalObserversSetFailure">Unable to set the ''SignalObservers'' parameter for the 
+    model ''{0}''.</entry> <!-- Inludes CAUSE -->
+    <entry key="SignalObserverRegisterFailed">The signal ''{0}'' cannot be observed.  This signal is either of
+    an unsupported type, complexity or dimension or is within an inactive subsystem or model reference variant.</entry>
+    <entry key="SignalObserversCreateFailure">Unable to create the signal observer ''{0}'' for the model 
+    ''{1}''.</entry> <!-- Inludes CAUSE -->
+    <entry key="ModelObsSignalNotInMdl">The ''SignalObservers'' property for model ''{0}'' contains a signal at index
+    {1,number,integer} that cannot be observed.  Signal observing is not currently support in model reference and
+    all signals must be in the same top-level model.  Save this model to avoid this warning when simulating the model 
+    in the future.</entry>
+    <entry key="ObserveBusSignal">The signal at port {0,number,integer} of block ''{1}'' is marked for observing.
+    Bus signals cannot be observed.</entry>
+    <entry key="TAQAppSvcNoMultiInstMRSupport"><![CDATA[''Configuration Parameters > Model Referencing > Total number of instances 
+    allowed per top model'' is set to ''Multiple'' for model ''{0}''.  Instrumentation points in a model configured to be 
+    referenced multiple times are not supported.  Consider setting the configuration parameter ''Total number of instances 
+    allowed per top model'' to ''One''.]]></entry>
+    
+    <entry key="InstrSignalsParamType">The ''InstrumentedSignals'' parameter must be a scalar Simulink.HMI.InstrumentedSignals object.</entry>
+    <entry key="StreamClientsParamType">The ''StreamingClients'' parameter must be a scalar Simulink.HMI.StreamingClients object.</entry>
+    
+    <entry key="StreamingAccelMode">The model ''{0}'' is configured to stream signals to the Simulation Data Inspector.  Streaming signals to the Simulation Data Inspector is not currently supported in this simulation mode.  To see signals in the Simulation Data Inspector, change the simulation mode or use signal logging and select "Send Logged Workspace Data to Data Inspector" from the Simulation Output menu.</entry>
+    
+    <!-- MCOS Errors -->
+    <entry key="ModelObserversInvalidModelName">The ''Model'' property must be a string corresponding to 
+    the model name.</entry>
+    <entry key="ModelObserversInvalidSignals">The ''Signals'' property must be a vector of Simulink.HMI.SignalObserver 
+    objects.</entry>
+    <entry key="SignalObsInvalidType">The ''ObserverType'' property must be a string representing the type of
+    signal observer.</entry>
+    <entry key="SignalObsInvalidParams">The ''ObserverParams'' property must be a struct with the parameters for the
+    signal observer.</entry>
+    <entry key="SignalObsInvalidRate">The ''UpdateRate'' property must be a scalar integer greater than zero.</entry>
+    <entry key="SFSignalNotLogged">The Stateflow signal ''{0}'' in chart ''{1}'' is marked for observing in model ''{2}''. To 
+    observer Stateflow chart signals, this signal must first be marked for data logging.  To turn on logging for this signal, 
+    go to the properties of this signal in the Stateflow chart and check the ''Data logging'' checkbox.</entry>
+	
+	<!-- Test Text File Observer errors -->
+	<entry key="TEST_NoFileName">The ''hmitest_text_file'' observer requires that you specify an output file name. For example,
+	obs.Signals(1).ObserverParams.filename=''output.txt'';</entry>
+	<entry key="TEST_CannotOpenFile">Unable to open the specified output file ''{0}''.</entry>
+	<entry key="TEST_DoublesOnly">Only signals of ''double'' data type can currently be observed.</entry>
+	<entry key="TEST_RealDataOnly">Complex signals cannot currently be observed.</entry>
+	<entry key="TEST_ScalarsOnly">Non-scalar signals cannot currently be observed.</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  hmitest
+-->

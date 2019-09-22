@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="FirstConditionHeader"> + [First Condition]:</entry>
+    <entry key="SecondConditionHeader"> + [Second Condition]:</entry>
+    <entry translate="false" key="ConditionFooter">-+---------------------</entry>
+    <entry translate="false" key="BooleanAnd">AND</entry>
+    <entry translate="false" key="BooleanOr">OR</entry>
+  </message>
+</rsccat>

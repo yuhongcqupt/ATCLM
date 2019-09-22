@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+    <message>        
+        <entry key="FeatureNotOn">Feature not available.</entry>               
+        <entry key="ObserverPortBlockOnlyAllowedInObserver">''{0}'' is not an Observer. Observer Port Block can only exist inside an Observer.</entry>
+        <entry key="ObserverPortBlockNotAllowedInRoot">Cannot add Observer Port Block at the root level of a block diagram. Observer Port Block can only exist inside an Observer.</entry>       
+        <entry key="ObserverPortBlockNotConfigured">Observer Port Block ''{0}'' is not configured correctly. Please correct it or delete it.</entry>
+    </message>
+</rsccat>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>  
+    <entry key="ParamEvalError">Error evaluating expression ''{0}'' for ''{1}'' in block diagram ''{2}'': {3}</entry>
+    <entry key="InvalidInputValue">The input value ''{0}'' specified for ''{1}'' is not valid </entry>
+    <entry key="BlockNoSimStateSupport">Block ''{0}'' does not support SimState.</entry> 
+    <entry key="BlockNoStepperCompliance">Block ''{0}'' does not support stepping back.</entry>
+    <entry key="BlockNoMultiRunCompliance">Block ''{0}'' does not support Fast Restart mode.</entry>
+    <entry key="BlockNoMultiRunNoStepperCompliance">Block ''{0}'' does not support Fast Restart mode or stepping back.</entry>
+    <entry key="ModelNoStepperCompliance">Stepping back cannot be enabled for model ''{0}'' for the following reasons:</entry> 
+    <entry key="ModelNoMultiRunCompliance">Fast Restart mode cannot be enabled for model ''{0}'' for the following reasons:</entry> 
+    <entry key="ModelNoMultiRunNoStepperCompliance">Neither Fast Restart mode nor stepping back can be enabled for the model ''{0}'' for the following reasons:</entry> 
+    <entry key="RollbackAndProfilingNotCompliant">Stepping back can not be enabled as profiling is turned on.</entry> 
+    <entry key="FastRestartAndProfilingNotCompliant">Fast Restart can not be enabled as profiling is turned on.</entry> 
+    <entry key="BothFastRestartAndRollbackAndProfilingNotCompliant">Neither Fast Restart nor Stepping back can be enabled as profiling is turned on.</entry> 
+    <entry key="ReferToStepperWarningOnDiagnosticViewer">Stepping back cannot be enabled for model ''{0}''. Please refer to the Diagnostic Viewer for details.</entry>
+    <entry key="ReferToMultiRunWarningOnDiagnosticViewer">Fast Restart mode cannot be enabled for model ''{0}''. Please refer to the Diagnostic Viewer for details.</entry>
+    <entry key="UnableToOverrideModelStepperCompliance">Unable to override the compliance level for model ''{0}''.</entry> 
+    <entry key="SimStateSaveErrorForMultiRun">Fast Restart mode relies on the ability to save the model''s SimState. However, the following error occurred when an attempt was made to save the SimState:</entry>  
+    <entry key="SimStateSaveErrorForMultiRunAndStepper">Fast Restart mode and the option of stepping back both rely on the ability to save the model''s SimState. However, the following error occurred when an attempt was made to save the SimState:</entry> 
+    <entry key="SimStateSaveErrorForStepper">Stepping back relies on the ability to save the model''s SimState. However, the following error occurred when an attempt was made to save the SimState:</entry> 
+    <entry key="BlockStepperNeutralCompliance">Block ''{0}'' does not support stepping back. Its output will be incorrect upon stepping back or after simulation restarts in Fast Restart mode.</entry>
+    <entry key="ModelStepperNeutralCompliance">Some of the blocks, which are not critical for correct simulation result, do not support stepping back.</entry>
+    <entry key="StepperToolTipNumberOfSteps">Specify the number of steps by which simulation will step forward or back</entry>
+    <entry key="StepperToolTipEnableRollback">Toggle the ability to step back the simulation</entry>
+    <entry key="StepperToolTipDialogRollback" translate="false"></entry>
+    <entry key="StepperToolTipSnapshotBufferSize">Specify the number of simulation steps to save for stepping back (impacts memory usage)</entry>
+    <entry key="StepperToolTipSnapshotInterval">Specify the frequency of saving simulation steps for stepping back (impacts speed of simulation)</entry>
+    <entry key="StepperToolTipEnablePauseTimes">Toggle the ability to pause the simulation based on simulation time</entry>
+    <entry key="StepperToolTipPauseTimes">Specify the times after which simulation should pause</entry>
+    <entry key="StepperObjectBdNotLoaded">Model associated with the SimulationStepper object was closed</entry>
+    <entry key="SimEventsBlockDetectedStepper">Model ''{0}'' contains SimEvents blocks from an older release (prior to R2016a). These blocks do not support stepping back with the Simulation Stepper. Consider replacing these blocks with SimEvents blocks from later releases (R2016a and later).</entry> 
+    <entry key="SimEventsBlockDetectedMultiRun">Model ''{0}'' contains SimEvents blocks from an older release (prior to R2016a). These blocks do not support Fast Restart. Consider replacing these blocks with SimEvents blocks from later releases (R2016a and later).</entry>
+    <entry key="FastRestartDisabled">Fast Restart is disabled</entry>
+    <entry key="FastRestartDisabledForModel">Fast Restart is disabled for model ''{0}''</entry>
+    <entry key="SteppingBackwardError">The following error occurred while stepping backward in the model ''{0}''. The state of some of the blocks may not be consistent with the simulation time. Click &lt;a href=\"matlab:set_param(bdroot,'SimulationCommand','stop')\"&gt;here&lt;/a&gt; to stop the simulation.</entry>
+    <entry key="FastRestartAndModelDataLogNotCompliant"><![CDATA[Fast Restart is incompatible with the signal logging format ''ModelDataLogs''. Please set ''Configuration Parameters > All Parameters > Signal logging format'' to ''Dataset'' to make use of Fast Restart.]]> </entry>
+    <entry key="ModelIsNotCompiledForSimState">Block diagram ''{0}'' must be compiled in order to save its SimState</entry>
+    <entry key="ModelIsNotPausedForSimState">Simulation of ''{0}'' must be paused in order to save its SimState</entry>
+    <entry key="StepperAndLoggingToFileNotCompliant">Simulation Stepper is incompatible with logging to file. To enable stepping backward, turn off ''Log Dataset data to file'' in ''Configuration Parameters'' > ''Data Import/Export'' panel.</entry>
+    <entry key="StepperAndFastRestartLoggingToFileNotCompliant">Simulation Stepper and Fast Restart are incompatible with logging to file. To enable these capabilities, turn off ''Log Dataset data to file'' in ''Configuration Parameters'' > ''Data Import/Export'' panel.</entry>
+
+ </message>
+</rsccat>

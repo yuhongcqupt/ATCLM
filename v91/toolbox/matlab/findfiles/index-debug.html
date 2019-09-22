@@ -1,0 +1,74 @@
+<!--Copyright 2015 MathWorks, Inc.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Find Files</title>
+    <link rel="stylesheet" href="findfiles-ui/css/main.css"  type="text/css" />
+    <link rel="stylesheet" href="/ui/webwidgets/src/css/webwidget.dojo.css">
+    <link rel="stylesheet" href="/ui/webwidgets/src/css/webwidget.css">
+    <script src="/ui/webwidgets/src/js/dojoConfigs/dojoConfig-debug-global.js"></script>
+    <script type="text/javascript">
+        dojoConfig.packages = dojoConfig.packages.concat([
+            {name: "findfiles-ui", location: "/toolbox/matlab/findfiles/findfiles-ui"}
+        ]);
+    </script>
+    <script type="text/javascript" src="/ui/webwidgets/src/js/dojo/dojo/dojo.js"></script>
+    <script type="text/javascript">
+        // Require browser compatability check lib
+        require(["MW/utils/BrowserCheck!"], function () {
+            // If the browser compatability check passes, require in the web widget lib
+            require([
+                "findfiles-ui/FindFilesUi",
+                "dojo/domReady!"
+            ], function (FindFilesUi) {
+            });
+        });
+    </script>
+</head>
+<body class="tundra">
+<div id="loadingMask"></div>
+<table id="findFilesView">
+    <tr>
+        <td id="leftPanel">
+            <div class="searchOption">
+                Find files named:<br>
+                <div id="filesNamed"></div><br>
+            </div>
+            <div class="searchOption">
+                Find files containing text:<br>
+                <div id="filesContainingText"></div><br>
+            </div>
+            <div class="searchOption">
+                <div id="matchCase"></div><br>
+            </div>
+            <div class="searchOption">
+                <div id="matchWholeWord"></div><br>
+            </div>
+            <div class="searchOption">
+                Include only file type(s):<br>
+                <div id="includeFileTypes"></div><br>
+            </div>
+            <div class="searchOption">
+                Look in:<br>
+                <div id="lookIn"></div><br>
+            </div>
+            <div class="searchOption">
+                <div id="includeSubfolders"></div><br>
+            </div>
+            <div class="searchOption">
+                <div id="findButton"></div>
+            </div>
+        </td>
+        <td id="rightPanel">
+            <div id="searchResultsPanel"></div>
+            <label id="searchResultsLabel">&nbsp;</label><br>
+            <div id="showFullPathNames"></div>
+            <div id="closeButton"></div>
+            <div id="helpButton"></div>
+        </td>
+    </tr>
+</table>
+<div id="messageDisplay"></div>
+</body>
+</html>

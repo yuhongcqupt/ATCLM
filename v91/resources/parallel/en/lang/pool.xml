@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!-- Copyright 2013-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+    <entry key="AttachedFilesLink" note="Period excluded deliberately">List files</entry>
+    <entry key="AttachedFilesList" note="Period excluded deliberately">Attached files for parallel pool:</entry>
+    <entry key="AutoAttachedFiles">Files automatically added to the parallel pool:\n{0}</entry>
+    <entry key="CannotSetAttachedFilesProperty">To attach files to a parallel pool use addAttachedFiles(pool, files), where files is a cell array of filenames.</entry>
+    <entry key="DeletedObject">Deleted object.</entry>
+    <entry key="DoneDependencyAnalysis" note="This is preceded by the PerformingDependencyAnalysis message">done.</entry>
+    <entry key="EmptyClusterValue">Need to provide a ''parallel.Cluster'' object returned by the function ''parcluster'' in a name-value pair, where name is ''Cluster''.</entry>
+    <entry key="FailedToInitializeInteractiveSession">Parallel pool failed to start.</entry>
+    <entry key="FailedToRestart">Failed to restart parallel pool.  Reason: {0}</entry>
+    <entry key="FevalQueueManyRequests">{0,number,integer} outstanding futures.</entry>
+    <entry key="FevalQueueOneRequest">1 outstanding future.</entry>
+    <entry key="FileTransferError">Error detected while transferring files to workers; try again.</entry>
+    <entry key="IdleTimeoutFiniteManyMinutes" note="Period excluded deliberately">{0,number,integer} minutes</entry>
+    <entry key="IdleTimeoutInfinite" note="Period excluded deliberately">Inf (no automatic shut down)</entry>
+    <entry key="IdleTimeoutOneMinute" note="Period excluded deliberately">1 minute</entry>
+    <entry key="IgnoringAlreadyAttachedFiles">Files that have already been attached are being ignored. To see which files are attached see the ''AttachedFiles'' property of the parallel pool.</entry>
+    <entry key="InternalRuntime">An internal runtime error occurred.</entry>
+    <entry key="InternalRuntimeWithCause">An internal runtime error occurred.\nThis was caused by: {0}.</entry>
+    <entry key="InvalidAttachFilesArgument">Files must be specified as a character vector or a cell array of character vectors.</entry>
+    <entry key="InvalidDeleteSyntax">Invalid parallel pool deletion syntax. Use delete(pool) instead.</entry>
+    <entry key="InvalidDependency">{0} is not a valid file or directory.</entry>
+    <entry key="InvalidGcpArgument">Argument to ''gcp'' is invalid. Valid argument is ''nocreate''</entry>
+    <entry key="InvalidGuiMode">Need to specify either 'nogui' or 'opengui' in a name-value pair, where name is 'GuiMode'.</entry>
+    <entry key="InvalidIdleTimeout">The IdleTimeout parameter must be a scalar integer greater than zero.</entry>
+    <entry key="InvalidInputParameter">''{0}'' is not a valid parameter name for parpool.</entry>
+    <entry key="InvalidPool">The parallel pool has shut down. Use parpool to start a new pool.</entry>
+    <entry key="InvalidPoolType">Need to specify either 'pmode' or 'pool' in a name-value pair, where name is ''PoolType''.</entry>
+    <entry key="InvalidRecreatePoolCause">''{0}'' is not a valid first argument. A valid fist argument is either ''{1}'' or ''{2}''</entry>
+    <entry key="InvalidRestartOnClusterChange">The RestartOnClusterChange parameter must have a value ''true'' or ''false''.</entry>
+    <entry key="InvalidRestartOnPreferredNumWorkersChange">The RestartOnPreferredNumWorkersChange parameter must have a value ''true'' or ''false''.</entry>
+    <entry key="InvalidSerializedPool">The parallel pool object is invalid because it has either been sent to a worker or loaded from a MAT file. To access a pool from the client, use GCP, or PARPOOL to start a new pool.</entry>
+    <entry key="InvalidSingleInput">Invalid input for parpool. Allowed arguments are a profile name, a cluster object, or an integer specifying the pool size.</entry>
+    <entry key="InvalidSpmdEnabled">The SpmdEnabled parameter must have a logical value ''true'' or ''false''.</entry>
+    <entry key="InvalidSpmdSetting">SpmdEnabled cannot be set to ''false'' using the scheduler-based API.</entry>
+    <entry key="InvalidTwoInputFirstArgument">Invalid input for parpool. Allowed value for the first argument is a profile name or a cluster object.</entry>
+    <entry key="InvalidTwoInputSecondArgument">Invalid input for parpool. Allowed value for the second argument is an integer specifying the pool size.</entry>
+    <entry key="LostAnUnknownWorker">The client lost connection to an unknown worker. This might be due to network problems, or the interactive communicating job might have errored.</entry>
+    <entry key="LostAnUnknownWorkerWithCause">The client lost connection to an unknown worker. This might be due to network problems, or the interactive communicating job might have errored.\nThis was caused by {0}.</entry>
+    <entry key="LostClient">The worker lost connection to the client. This might be due to network problems, or the interactive communicating job might have errored.</entry>
+    <entry key="LostClientWithCause">The worker lost connection to the client. This might be due to network problems, or the interactive communicating job might have errored.\nThis was caused by {0}.</entry>
+    <entry key="LostWorker">The client lost connection to worker {0}. This might be due to network problems, or the interactive communicating job might have errored.</entry>
+    <entry key="LostWorkerWithCause">The client lost connection to worker {0}. This might be due to network problems, or the interactive communicating job might have errored.\nThis was caused by {1}.</entry>
+    <entry key="NoAutoAttachedFiles">No files automatically added to the parallel pool.</entry>
+    <entry key="NoPoolNoPmode">No running parallel pool and not in pmode.</entry>
+    <entry key="OperationTerminatedByUser">Operation terminated by user while parallel pool was starting. Pool is not active.</entry>
+    <entry key="PerformingDependencyAnalysis" note="This is immediately followed by the DoneDependencyAnalysis message">Analyzing and transferring files to the workers ... </entry>
+    <entry key="PoolArrayInvalidArgument">Invalid operation on PoolArrayManager.</entry>
+    <entry key="PoolNotRunning">A parallel pool is not currently running. Use ''parpool'' to start a pool.</entry>
+    <entry key="PoolShutDownNoProfile">Parallel pool is shutting down.</entry>
+    <entry key="PoolShutDownWithProfile">Parallel pool using the ''{0}'' profile is shutting down.</entry>
+    <entry key="PoolShutdown">This parallel pool has been shut down.</entry>
+    <entry key="PoolTimeout">IdleTimeout has been reached.</entry>
+    <entry key="PoolUnusable">Parallel pool is unusable. Call ''delete(gcp)'' followed by ''parpool'' to start a new pool with default settings.</entry>
+    <entry key="ReadFromClientError">A read error occurred while reading from the client.</entry>
+    <entry key="ReadFromClientErrorWithCause">A read error occurred while reading from the client.\nThis was caused by: {0}.</entry>
+    <entry key="ReadFromWorkerError">A read error occurred while reading from worker {0}.</entry>
+    <entry key="ReadFromWorkerErrorWithCause">A read error occurred while reading from worker {0}.\nThis was caused by: {1}.</entry>
+    <entry key="RestartOnClusterChangeNotAllowed">Changing RestartOnClusterChange to true is not allowed for this parallel pool.</entry>
+    <entry key="RestartOnPreferredNumWorkersChangeNotAllowed">Changing RestartOnPreferredNumWorkersChange to true is not allowed for this parallel pool.</entry>
+    <entry key="RunOnLabs">A parallel pool cannot be started from a worker, only from a client MATLAB.</entry>
+    <entry key="ScalarPoolRequired">A scalar parallel pool is required as the first argument to ''{0}''. Use gcp to access the current pool, or parpool to start a new pool.</entry>
+    <entry key="SerializedPool">Parallel pool cannot be accessed on the workers.</entry>
+    <entry key="ShutdownPool">Shutdown parallel pool.</entry>
+    <entry key="StartupFailed">Worker failed to establish communication with the client.</entry>
+    <entry key="TicBytesNotCalled">ticBytes must be called without an output argument before calling tocBytes with only a single input argument.</entry>
+    <entry key="TicBytesDifferentPool">tocBytes must be called with the same connected pool object that was used for ticBytes.</entry>
+    <entry key="TicBytesResultRequired">Argument to tocBytes must be the argument returned from ticBytes.</entry>    
+    <entry key="TimeToTimeoutManyMinutes" note="Period excluded deliberately">{0,number,integer} minute(s) ({1,number,integer} minutes remaining)</entry>
+    <entry key="TimeToTimeoutOneMinute" note="Period excluded deliberately">{0,number,integer} minute(s) (less than 1 minute remaining)</entry>
+    <entry key="TimeoutFromPrevious">No workers from the parallel pool were available for remote execution after waiting {0} seconds. This could be because a previous SPMD block or PARFOR loop failed to complete correctly and was interrupted. If this problem persists, you may need to restart the parallel pool.</entry>
+    <entry key="TimeoutSettingUpSession">A timeout occurred setting up the parallel pool communication.</entry>
+    <entry key="UnableToCompleteTransfer">Unable to complete transfer for local file {0}.\nRemote error message is:{1}.</entry>
+    <entry key="UnableToCompleteUpdate">Unable to complete update for local file {0}\nRemote error message is:{1}</entry>
+    <entry key="UnableToConnectToRequiredLabs">Number of workers available using ''{0}'' profile is fewer than the minimum number requested.</entry>
+    <entry key="UnexpectedParforFailure">An unexpected error occurred during PARFOR: {0}</entry>
+    <entry key="UseDelete">''close'' does not work on parallel pool objects. Use ''delete'' instead.</entry>
+    <entry key="WorkerAborted">A worker has stopped responding. Delete and restart the parallel pool using parpool.</entry>
+    <entry key="WriteToClientError">A write error occurred while sending to the client.</entry>
+    <entry key="WriteToClientErrorWithCause">A write error occurred while sending to the client.\nThis was caused by: {0}.</entry>
+    <entry key="WriteToWorkerError">A write error occurred while sending to worker {0}.</entry>
+    <entry key="WriteToWorkerErrorWithCause">A write error occurred while sending to worker {0}.\nThis was caused by: {1}.</entry>
+  </message>
+</rsccat>

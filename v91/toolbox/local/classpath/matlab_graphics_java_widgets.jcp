@@ -1,0 +1,4 @@
+# Java classpath entries for matlab_graphics_java_widgets
+$matlabroot/java/jar/ide.jar
+$matlabroot/java/jar/toolbox/matlab/guide.jar
+$matlabroot/java/jar/page.jar

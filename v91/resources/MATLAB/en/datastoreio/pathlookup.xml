@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- Copyright 2014-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="invalidFilesInput" note="stringDatatypeUpdate">Files input must be a character vector or a cell array of non empty character vectors.</entry>
+    <entry key="invalidIncludeSubfolders">The IncludeSubfolders option must be a logical 1 (true) or logical 0 (false).</entry>	
+    <entry key="invalidIRI">Error while parsing the IRI: ''{0}''.</entry>
+    <entry key="unsupportedIRIScheme">IRI scheme for path: ''{0}'' is unsupported.</entry>
+    <entry key="emptyFolder">Folder ''{0}'' does not have any files or is empty.\n\nUse ''IncludeSubfolders'' to include files in all subfolders.</entry>
+    <entry key="emptyFolderNoSuggestion" note="DoNotSuggestIncludeSubfolders">Folder ''{0}'' does not have any files or is empty.</entry>
+    <entry key="fileNotFound">Cannot find files or folders matching: ''{0}''.</entry>
+    <entry key="filesystemError">Failure occurred while trying to resolve path ''{0}''.</entry>
+    <entry key="invalidStrOrCellStr" note="stringDatatypeUpdate">{0} must be a character vector or a cell array of character vectors.</entry>
+    <entry key="cellWithEmptyStr" note="stringDatatypeUpdate">{0} cannot contain an empty character vector.</entry>
+    <entry key="wildCardWithIncludeSubfolders">Wildcard ''*'' characters must not be used with IncludeSubfolders:''{0}''\n\nRemove wildcard ''*'' characters or do not set ''IncludeSubfolders'' option.</entry>
+  </message>
+</rsccat>

@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<!-- Copyright 2011-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+    <entry key="BatchErrorSettingCurrentDirectory">Unable to change to requested folder: ''{0}''. Current folder is: ''{1}''.\nReason: {2}</entry>
+    <entry key="BatchFunctionDescription">Batch job running function: {0}.</entry>
+    <entry key="BatchInconsistentNumberOfOutputArguments">{0,number,integer} output arguments were requested from {1}, but {2,number,integer} were requested from {3}.</entry>
+    <entry key="BatchInvalidNumOutputs">NumOutputArguments must be a numeric value.</entry>
+    <entry key="BatchJobFailed">The job failed to run correctly but no error message was returned. This could be because the scheduler failed to start MATLAB correctly on the cluster, or because the files needed to run the batch job were unavailable to the MATLAB on the cluster. You may find more information in the debug log for this job. To find out more about debug logs look at the getDebugLog function in the documentation.</entry>
+    <entry key="BatchLoadInvalidArgument">All inputs to load must be character vectors.</entry>
+    <entry key="BatchLoadInvalidJobState">The job is in state {0}. To load data from a job it must be finished.</entry>
+    <entry key="BatchLoadNotSupported">Load supports only batch jobs that run a script. When batch runs a function, use fetchOutputs to get a cell array containing the outputs.</entry>
+    <entry key="BatchMethodScalarJob">Batch commands are not supported on multiple jobs.</entry>
+    <entry key="BatchProfileString">The {0} argument must be a character vector.</entry>
+    <entry key="BatchScriptDescription">Batch job running script: {0}.</entry>
+    <entry key="CallerWorkspaceMustBeStruct">The caller workspace for batch must be a structure.</entry>
+    <entry key="CallerWorkspaceNotSupported">The batch tasks do not require a caller workspace to be set.</entry>
+    <entry key="CannotAppendToFile">Unable to open filename {0} for appending.\nReason: {1}.</entry>
+    <entry key="CannotExecutePmodeNotRunning">Cannot execute pmode {0} when pmode is not running.</entry>
+    <entry key="CellstrRequired">The ''{0}'' argument to batch must be a cell array of character vectors.</entry>
+    <entry key="ClientToLabNoSuchVariable">Variable {0} is undefined.</entry>
+    <entry key="CommunicatingJobDebugLog">Communicating job debug log:</entry>
+    <entry key="ConnectedToWorkers">connected to {0,number,integer} workers.</entry>
+    <entry key="ConnectionOpen">Found an interactive session. You cannot have multiple interactive sessions open simultaneously. To terminate the existing session, use ''delete(gcp('nocreate'))''.</entry>
+    <entry key="ConnectionTimeoutExceeded">The workers did not connect to the client within the allowed time of {0,number,integer} seconds.</entry>
+    <entry key="CouldNotAccessTaskErrorMessage">Could not retrieve the task error messages.</entry>
+    <entry key="CouldNotGetJobState">Could not retrieve job state.</entry>
+    <entry key="CouldNotRetrieveDebugLog">Could not retrieve the debug log.</entry>
+    <entry key="DeprecatedBatchArgument">The argument ''{0}'' is deprecated. The argument ''{1}'' should be used instead.</entry>
+    <entry key="DestroyingInteractiveJobs">Destroying {0,number,integer} pre-existing communicating jobs created by {1}.</entry>
+    <entry key="ErrorMessageForTask">Error message for task ID {0,number,integer}: {1}</entry>
+    <entry key="ErrorRunningBatchJob">Error encountered while running the batch job. The error was:\n{0}</entry>
+    <entry key="ErrorRunningBatchJobWithAutoAttach" note="{0} - The error message from the worker, {1} - The name of the missing file, {2} - The name of the task function, {3} same as {1}, {4} - A hyperlink with the text 'batch' to the batch help">
+        Error encountered while running the batch job. The error was:\n{0}\nIf ''{1}'' is a file that is required by ''{2}'', add the full path name for ''{3}'' to the batch job''s AttachedFiles property. See the documentation for {4} for more details.
+    </entry>
+    <entry key="ErrorRunningBatchJobWithoutAutoAttach" note="{0} - The error message from the worker, {1} - The name of the missing file, {2} - The name of the task function, {3} same as {1}, {4} - A hyperlink with the text 'batch' to the batch help">
+        Error encountered while running the batch job. The error was:\n{0}\nIf ''{1}'' is a file that is required by ''{2}'', rerun the job with AutoAttachFiles set to true, or add the full path name for ''{3}'' to the batch job''s AttachedFiles property. See the documentation for {4} for more details.
+    </entry>
+    <entry key="FailedToDeleteOldJobs">Failed to locate and destroy old interactive jobs.</entry>
+    <entry key="FailedToInitializeInteractiveSession">Failed to initialize the interactive session.</entry>
+    <entry key="FailedToSerializeVariable">Could not serialize the variable {0}.</entry>
+    <entry key="FailedToStartInteractiveSession">Failed to start {0}.</entry>
+    <entry key="InputFunctionsIncorrectSize">Cell array of input functions must be the same size as the cell array of input arguments.</entry>
+    <entry key="InputsMustBeCellOrVector">Input arguments parameter to batch must be a cell array of vector cell arrays, or a vector cell array.</entry>
+    <entry key="InteractiveJobFailedNoMessage">The interactive communicating job failed with no message.</entry>
+    <entry key="InteractiveJobFailedWithMessage">The interactive communicating job errored with the following message: {0}</entry>
+    <entry key="InteractiveJobFinishedNoMessage">The interactive communicating job finished with no message.</entry>
+    <entry key="InteractiveJobUnavailable">The interactive communicating job is unavailable. It is likely that the communicating job has been deleted.</entry>
+    <entry key="InteractiveJobWasDeleted">The interactive communicating job has been deleted.</entry>
+    <entry key="InteractiveSessionInterrupted">Interactive session startup was interrupted.</entry>
+    <entry key="InteractiveSessionNotRunning">{0} is not currently active. Use ''{1} open'' to start an interactive session.</entry>
+    <entry key="InvalidCallState">A parallel pool is already running. Use ''delete(gcp)'' to shut down the existing pool.</entry>
+    <entry key="InvalidPoolForVectorizedBatch">The pool argument to batch must be 0 or unspecified when running vectorized scripts/functions.</entry>
+    <entry key="InvalidScalarBatchFunction">The script or function that will be called on the worker must be a single character vector or function handle.</entry>
+    <entry key="InvalidVectorizedBatchFunction">The script or function that will be called on the worker must be a single character vector or function handle, or an array of character vectors or function handles.</entry>
+    <entry key="JobInState">Job state is ''{0}''.</entry>
+    <entry key="JobStartTimeoutExceeded">The communicating job did not start within the allowed time of {0,number,integer} seconds.</entry>
+    <entry key="LogicalScalarRequired">The ''{0}'' argument to batch must be a scalar logical.</entry>
+    <entry key="NoDebugLogAvailable">No debug log with this {0}.</entry>
+    <entry key="NoExtantInteractiveJobs">Did not find any pre-existing communicating jobs created by {0}.</entry>
+    <entry key="NoSuchConfiguration">''{0}'' is not a valid configuration name. Use [conf, allConf] = defaultParallelConfig to see all your configurations.</entry>
+    <entry key="NoTaskErrorMessages">No task error messages.</entry>
+    <entry key="NotBatchJob">Batch commands are only supported on jobs created with the ''batch'' command.</entry>
+    <entry key="NumOutputArgumentsIncorrectSize">NumberOfOutputArguments must be the same size as the cell array of input arguments.</entry>
+    <entry key="NumOutputsRequiredForFunction">Number of output arguments must be specified when calling batch with a function.</entry>
+    <entry key="PendingJobsExist">Found {0,number,integer} pre-existing communicating job(s) created by {1} that are pending or queued. {2}</entry>
+    <entry key="PmodeActionNotString">The action parameter must be a character vector. {0}</entry>
+    <entry key="PmodeCleanup">You can use ''pmode cleanup {0}'' to remove all jobs created by pmode.</entry>
+    <entry key="PmodeInvalidAction">Invalid action: ''{0}''. {1}</entry>
+    <entry key="PmodeInvalidCleanupArguments">pmode cleanup takes 0 or 1 argument.</entry>
+    <entry key="PmodeInvalidDestinationLab">The destination lab(s) must be integer(s) between 1 and {0,number,integer}.</entry>
+    <entry key="PmodeInvalidNumLabs">The number of labs must be a finite, positive, integer.</entry>
+    <entry key="PmodeInvalidNumberOfArguments">pmode {0} requires 2 or 3 arguments.</entry>
+    <entry key="PmodeInvalidSourceLab">The source lab must be an integer between 1 and {0,number,integer}.</entry>
+    <entry key="PmodeInvalidSourceVariable">Invalid name of source variable.</entry>
+    <entry key="PmodeInvalidStartArguments">pmode start takes 0 to 2 arguments.</entry>
+    <entry key="PmodeInvalidTargetVariable">Invalid name of target variable.</entry>
+    <entry key="PmodeNoAction">No action specified. {0}</entry>
+    <entry key="PmodeNoArguments">pmode {0} takes no arguments.</entry>
+    <entry key="PmodeNotRunning">Pmode is currently not running.</entry>
+    <entry key="PmodeRunOnLabs">Cannot execute    pmode {0}    on the labs.</entry>
+    <entry key="PmodeValidActions">Valid actions are: {0}</entry>
+    <entry key="PoolNoProfileCleanup">You can call ''delete(myCluster.Jobs)'' to remove all jobs created by parallel pool on the cluster, myCluster.</entry>
+    <entry key="PoolNonnegIntegerScalar">The ''{0}'' argument to batch must be a nonnegative scalar integer.</entry>
+    <entry key="PoolProfileCleanup">You can use ''delete(myCluster.Jobs)'' to remove all jobs created with profile {0}. To create ''myCluster'' use ''myCluster = parcluster(''{1}'')''.</entry>
+    <entry key="RunOnAllInvalidInput">Command input to pctRunOnAll must be all character vectors.</entry>
+    <entry key="RunOnAllNotOnClient">pctRunOnAll must be run either from the client, or the leading task in a communicating job of type pool.</entry>
+    <entry key="RunOnAllPoolNotRunning">Cannot execute pctRunOnAll {0} when a parallel pool does not exist.</entry>
+    <entry key="RunOnAllPoolShutdown">The parallel pool on which the command was run has been shut down.</entry>
+    <entry key="RunningJobsExist">Found {0,number,integer} pre-existing communicating job(s) created by {1} that are running. {2}</entry>
+    <entry key="RunningPendingJobsExist">Found {0,number,integer} pre-existing communicating job(s) created by {1} that are running, and {2,number,integer} communicating job(s) that are pending or queued. {3}</entry>
+    <entry key="StartingNoProfile" note="{0} - 'matlabpool' or 'pmode' "><!-- This message is used for both profiles and configurations, as their names do not appear in the message -->
+        Starting {0} ...
+    </entry>
+    <entry key="StartingParallelPoolNoProfile">Starting parallel pool (parpool) ...</entry>
+    <entry key="StartingParallelPoolWithProfile">Starting parallel pool (parpool) using the ''{0}'' profile ...</entry>
+    <entry key="StartingWithConfiguration" note="{0} - 'matlabpool' or 'pmode', {1} - The configuration name">
+        Starting {0} using the ''{1}'' configuration ...
+    </entry>
+    <entry key="StartingWithProfile" note="{0} - 'matlabpool' or 'pmode', {1} - The profile name">
+        Starting {0} using the ''{1}'' profile ...
+    </entry>
+    <entry key="StringInputRequired">The ''{0}'' argument to batch must be a character vector.</entry>
+    <entry key="StringOrCellstrRequired">The ''{0}'' argument to batch must be a space delimited character vector or a cell array of character vectors.</entry>
+    <entry key="TransferFailed">Failed to store the variable {0} on the client.</entry>
+    <entry key="TransferFailedOnLab">Failed to store the variable {0} on lab {1,number,integer}.</entry>
+    <entry key="VariablePatternNotFound">Variable matching ''{0}'' not found.</entry>
+    <entry key="VariableUndefinedInClient">Variable {0} is undefined in the MATLAB client.</entry>
+    <entry key="VariableUndefinedInLab">Variable {0} is undefined on lab {1,number,integer}.</entry>
+    <entry key="VectorizedBatchNotAllowed">Batch cannot be used to run multiple scripts or functions.</entry>
+    <entry key="WarningsDuringBatchJob" note="{0} - a list of the warning messages">The batch job issued the following warnings:\n{0}</entry>
+    <entry key="WarningsListItem">Warning: {0}</entry>
+    <entry key="WorkspacePropertyValueRequired">The ''Workspace'' property must have a value.</entry>
+    <entry key="WorkspaceStructIncorrectSize">The workspace argument to batch must be the same size as the array of script names.</entry>
+  </message>
+</rsccat>

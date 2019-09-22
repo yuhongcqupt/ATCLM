@@ -1,0 +1,8 @@
+# Java classpath entries for 3p/lucene
+$matlabroot/java/jarext/lucene-analyzers-common.jar
+$matlabroot/java/jarext/lucene-core.jar
+$matlabroot/java/jarext/lucene-queryparser.jar
+$matlabroot/java/jarext/lucene-highlighter.jar
+$matlabroot/java/jarext/lucene-queries.jar
+$matlabroot/java/jarext/lucene-memory.jar
+$matlabroot/java/jarext/lucene-sandbox.jar

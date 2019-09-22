@@ -1,0 +1,3 @@
+# Java classpath entries for 3p/xml-commons
+$matlabroot/java/jarext/xml-apis.jar
+$matlabroot/java/jarext/xml-apis-ext.jar

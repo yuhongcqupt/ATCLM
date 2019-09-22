@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+         http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+   <session-config>
+       <session-timeout>-1</session-timeout>
+       <cookie-config>
+         <path>/</path>
+      </cookie-config>
+   </session-config>
+
+    <listener>
+        <listener-class>com.mathworks.matlabserver.internalconnector.servlet.ContextListenerImpl</listener-class>
+    </listener>
+    <listener>
+        <listener-class>com.mathworks.matlabserver.connector.servlet.ContextAttributeListenerImpl</listener-class>
+    </listener>
+
+    <filter>
+        <filter-name>GzipFilter</filter-name>
+        <filter-class>org.eclipse.jetty.servlets.GzipFilter</filter-class>
+        <init-param>
+            <param-name>mimeTypes</param-name>
+            <param-value>text/html,text/plain,text/xml,application/xhtml+xml,text/css,application/javascript,image/svg+xml</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>GzipFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>NetworkChaosFilter</filter-name>
+        <filter-class>com.mathworks.matlabserver.webappcommon.utils.NetworkChaosFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>NetworkChaosFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+	<!-- Restrict all servlet access to localhost except paths in the white list. -->
+    <filter>
+        <filter-name>LocalhostFilter</filter-name>
+        <filter-class>com.mathworks.matlabserver.connector.filter.LocalhostFilter</filter-class>
+        <init-param>
+            <param-name>whiteList</param-name>
+            <param-value>^/messageservice/json/pairingkey*,^/messageservice/async*,^/serviceregistrylookup/*,^/$</param-value>
+        </init-param>
+    </filter>
+	<filter-mapping>
+		<filter-name>LocalhostFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+    <!-- Enforce SSL for all requests. -->
+    <filter>
+        <filter-name>SslFilter</filter-name>
+        <filter-class>com.mathworks.matlabserver.connectorcommon.filter.SslFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SslFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+	<!-- Enforce session nonce for json servlet. -->
+	<filter>
+		<filter-name>SessionNonceFilter</filter-name>
+		<filter-class>com.mathworks.matlabserver.connectorcommon.filter.SessionNonceFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>SessionNonceFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+    <!--JSP -->
+    <!--overriding content of webdefault.xml to stop JSP initialization
+     by providing pseudo servlet class
+     -->
+    <servlet id="jsp">
+        <servlet-name>jsp</servlet-name>
+        <servlet-class>com.mathworks.matlabserver.connector.servlet.PseudoJSPClass</servlet-class>
+    </servlet>
+
+    <!-- AddOns Servlet -->
+    <servlet>
+        <servlet-name>addOnsServlet</servlet-name>
+        <servlet-class>com.mathworks.matlabserver.connector.servlet.AddOnsServlet</servlet-class>
+        <load-on-startup>4</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addOnsServlet</servlet-name>
+        <url-pattern>/addons/*</url-pattern>
+    </servlet-mapping>
+
+    <!-- NonceGenerator Servlet -->
+    <servlet>
+		<servlet-name>nonceGeneratorServlet</servlet-name>
+		<servlet-class>com.mathworks.matlabserver.connector.servlet.NonceGeneratorServlet</servlet-class>
+		<load-on-startup>4</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+		<servlet-name>nonceGeneratorServlet</servlet-name>
+		<url-pattern>/nonceservice</url-pattern>
+    </servlet-mapping>
+
+	<!-- Engine Servlet -->
+    <servlet>
+        <servlet-name>engineServlet</servlet-name>
+        <servlet-class>com.mathworks.matlabserver.connectorcommon.servlet.EngineServlet</servlet-class>
+        <load-on-startup>4</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>engineServlet</servlet-name>
+        <url-pattern>/engine/*</url-pattern>
+    </servlet-mapping>
+
+    <!-- JSON service -->
+    <servlet>
+        <servlet-name>pairingKeyJsonServlet</servlet-name>
+        <servlet-class>com.mathworks.matlabserver.webappcommon.transport.json.PairingKeyJsonServlet</servlet-class>
+        <init-param>
+            <!--
+               Setting to true will display JSON schema information when
+               doing an HTTP GET
+            -->
+            <param-name>displayJsonSchema</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>pairingKeyJsonServlet</servlet-name>
+        <url-pattern>/messageservice/json/pairingkey/*</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>jsonServlet</servlet-name>
+        <servlet-class>com.mathworks.matlabserver.webappcommon.transport.json.ConnectorJsonServlet</servlet-class>
+        <init-param>
+            <!--
+               Setting to true will display JSON schema information when
+               doing an HTTP GET
+            -->
+            <param-name>displayJsonSchema</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>jsonServlet</servlet-name>
+        <url-pattern>/messageservice/json/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>matlabServlet</servlet-name>
+        <servlet-class>com.mathworks.matlabserver.connector.servlet.MatlabServlet</servlet-class>
+        <load-on-startup>3</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>matlabServlet</servlet-name>
+        <url-pattern>/matlab/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>uploadServlet</servlet-name>
+        <servlet-class>com.mathworks.matlabserver.connectorcommon.servlet.UploadServlet</servlet-class>
+        <load-on-startup>3</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>uploadServlet</servlet-name>
+        <url-pattern>/users/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>cometd</servlet-name>
+        <servlet-class>com.mathworks.matlabserver.webappcommon.comet.CometdServletHack</servlet-class>
+        <init-param>
+            <param-name>timeout</param-name>
+            <param-value>30000</param-value>
+        </init-param>
+        <init-param>
+            <param-name>maxInterval</param-name>
+            <param-value>120000</param-value>
+        </init-param>
+        <init-param>
+            <param-name>maxLazyTimeout</param-name>
+            <param-value>100</param-value>
+        </init-param>
+        <init-param>
+            <param-name>logLevel</param-name>
+            <param-value>0</param-value>
+        </init-param>
+        <init-param>
+            <param-name>maxSessionsPerBrowser</param-name>
+            <param-value>4</param-value>
+        </init-param>
+        <init-param>
+            <param-name>metaConnectDeliverOnly</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <init-param>
+            <param-name>long-polling.json.metaConnectDeliverOnly</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <init-param>
+            <param-name>long-polling.multiSessionInterval</param-name>
+            <param-value>200</param-value>
+        </init-param>
+        <init-param>
+            <param-name>transports</param-name>
+            <param-value>com.mathworks.matlabserver.connectorcommon.transport.PairingKeyWebSocketTransport,org.cometd.websocket.server.WebSocketTransport</param-value>
+        </init-param>
+        <init-param>
+            <param-name>ws.timeout</param-name>
+            <param-value>600000</param-value>
+        </init-param>
+        <init-param>
+            <param-name>ws.interval</param-name>
+            <param-value>0</param-value>
+        </init-param>
+        <init-param>
+            <param-name>ws.maxInterval</param-name>
+            <param-value>120000</param-value>
+        </init-param>
+        <init-param>
+            <param-name>ws.bufferSize</param-name>
+            <param-value>4000000</param-value>
+        </init-param>
+        <init-param>
+            <param-name>ws.maxMessageSize</param-name>
+            <param-value>2000000</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cometd</servlet-name>
+        <url-pattern>/messageservice/async/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>cometd</servlet-name>
+        <url-pattern>/messageservice/comet/*</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+    <error-page>
+        <error-code>400</error-code>
+        <location>/error.html</location>
+    </error-page>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/pagenotfound.html</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/error.html</location>
+    </error-page>
+    <error-page>
+        <error-code>503</error-code>
+        <location>/error.html</location>
+    </error-page>
+    <error-page>
+        <error-code>599</error-code>
+        <location>/error.html</location>
+    </error-page>
+
+</web-app>

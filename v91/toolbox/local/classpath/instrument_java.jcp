@@ -1,0 +1,2 @@
+# Java classpath entries for instrument_java
+$matlabroot/java/jar/toolbox/instrument.jar

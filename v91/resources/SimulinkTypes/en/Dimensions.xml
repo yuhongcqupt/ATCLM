@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2013-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="SimulinkTypes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/.xsd">
+  <message>
+    <entry key="InconsistentSymbolicDimensionNotEqual"> The symbolic dimension ''{0}'' can''t be equal to ''{1}'', since it has been previously registered to be greater than ''{2}''.</entry>
+    <entry key="InvalidSymbolicDimensionNotEqual"> The numeric dimensions ''{0}'' can''t be registered to be equal to ''{1}''.</entry>
+    <entry key="InconsistentSymbolicDimensionGreaterThan"> The symbolic dimension ''{0}'' can''t be greater than ''{1}'', since it has previously been registered to be less than ''{2}''.</entry>
+    <entry key="InvalidSymbolicDimensionGreaterThan"> The numeric dimensions ''{0}'' can''t be registered to be greater than ''{1}''.</entry>
+    <entry key="InconsistentSymbolicDimensionLessThan"> The symbolic dimension ''{0}'' can''t be less than ''{1}'', since it has previously been registered to be greater than ''{2}''.</entry>
+    <entry key="InconsistentSymbolicDimensionEqual"> The symbolic dimension ''{0}'' can''t be greater than ''{1}'', since it has previously been registered to be equal to ''{2}''.</entry>
+    <entry key="InvalidSymbolicDimensionSpec"> The specified symbolic dimension is invalid.</entry>
+  </message>
+</rsccat>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="SL_SERVICES">
+  <message>
+    <entry key="AddGroupingError" translate="false">{0} has already been added with children.</entry>
+    <entry key="AddGroupingExpectedString" translate="false">Sub group name must be a string.</entry>
+    <entry key="DataWriteFail" translate="false">Error writing {0} to file {1}.</entry>
+    <entry key="ExpectedEvenNumberOfParameters" translate="false">Expected even number of parameters for name/value pairs.</entry>
+    <entry key="ExpectedNames" translate="false">Expected names: {0}.</entry>
+    <entry key="InvalidMetric" translate="false">Invalid metric name used in name/value pair. Expected {0}, {1}, or {2}.</entry>
+    <entry key="InvalidNames" translate="false">Invalid name(s) used in name/value pair(s).</entry>
+    <entry key="MaxParamsExceeded" translate="false">Expected a maximum of {0} parameters.</entry>
+    <entry key="MinParamsNotReached" translate="false">Expected a minimum of {0} parameter(s).</entry>
+    <entry key="MissingMatExt" translate="false">Filename must have .mat extension.</entry>
+    <entry key="NoRawTracerData" translate="false">No raw data found. PerformanceTracer may not be enabled.</entry>
+    <entry key="NoRawTracerDataLoaded" translate="false">No raw data in file: {0}.</entry>
+    <entry key="OpenFileFailed" translate="false">Error loading file: {0}.</entry>
+    <entry key="ParameterMismatchBoolean" translate="false">Value for {0} must be a boolean.</entry>
+    <entry key="ParameterMismatchString" translate="false">Value for {0} must be a string.</entry>
+    <entry key="RemoveGroupingError" translate="false">Grouping with name {0} is not registered.</entry>
+    <entry key="UnexpectedValue" translate="false">Unexpected value for {0}.</entry>
+    <entry key="UpdateGroupingError" translate="false">Expected name/value pairs for group and items.</entry>
+    <entry key="WindowsOnlyFeature" translate="false">{0} is only available on Windows.</entry>
+    <entry key="WriteFileFailed" translate="false">Error creating file: {0}.</entry>
+  </message>
+</rsccat>

@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+
+    <entry key="InvSolverProfileInfoSaveName">
+      Invalid variable name for saving solver profile information is
+      specified. Please specify a valid MATLAB variable name\n
+    </entry>
+
+    <entry key="ProfilerDataInvalidCallToGetField">
+      Invalid call to Simulink.ProfilerData.getField(). Valid calls take an
+      object and a fieldName and have a return value.
+    </entry>
+
+    <entry key="ProfilerDataInvalidConstructCall">
+      Invalid call to constructor for Simulink.ProfilerData
+    </entry>
+
+    <entry key="AlgLoopDebugTraceMsg1">
+      [{0}] Solving algebraic loop involving block ''{1}'' using the {2}
+      algorithm\n
+    </entry>
+
+    <entry key="AlgLoopDebugTraceMsg1a">
+      ...                             Running output methods to initialize
+      modes\n
+    </entry>
+
+    <entry key="AlgLoopDebugTraceMsg2">
+      ...                             Modes will be frozen during non-linear
+      solver iterations\n
+    </entry>
+
+    <entry key="AlgLoopDebugTraceMsg2a">
+      ...                             Running output methods to update
+      outputs at the converged solution\n
+    </entry>
+
+    <entry key="AlgLoopDebugTraceMsg3">
+      ...                             Running output methods to update modes
+      at the converged solution\n
+    </entry>
+
+    <entry key="AlgLoopDebugTraceMsg4">
+      ...                             Modes have not changed\n
+    </entry>
+
+    <entry key="AlgLoopDebugTraceMsg5">
+      ...                             Modes have changed, need to re-solve\n
+    </entry>
+
+    <entry key="AlgLoopDebugTraceMsg6">
+      ...                             Re-solving algebraic loop\n
+    </entry>
+
+    <entry key="Action">
+      action
+    </entry>
+
+    <entry key="Message">
+      message
+    </entry>
+
+    <entry key="ActiveTask">
+      Active task                                : {0} ({1}{2})\n
+    </entry>
+
+    <entry key="AddCallback">
+      Added callback ''{0}''.\n
+    </entry>
+
+    <entry key="AlgLoopDoesNotExist">
+      Algebraic loop {0,number,integer} doesn''t exist in system {1,number,integer}.\n
+    </entry>
+
+    <entry key="AlgLoopTraceLevel">
+      Algebraic loop tracing level               : {0,number,integer}\n
+    </entry>
+
+    <entry key="AnimationAdvanceDelay">
+      Animation Delay                            : {0}\n
+    </entry>
+
+    <entry key="AnimationCannotUpdateJavaGUI">
+      Simulink cannot update Simulation Loop Display. \n
+    </entry>
+
+    <entry key="AnimationState">
+      Animation Mode                             : {0}\n
+    </entry>
+
+    <entry key="AsyncNotAllowedTid">
+      The specified tid:{0,number,integer}  is for an asynchronous sample time. Methods of blocks and systems with asynchronous sample times execute when called by another method and not in a certain task.\n
+    </entry>
+
+    <entry key="AtBlkBreakPoint">
+      At break point:{0,number,integer} {1} {2,number,integer}:{3,number,integer} {4} ''{5}'' {6}\n
+    </entry>
+
+    <entry key="AtMdlBreakPoint">
+      At break point:{0,number,integer} {1} {2} {3}\n
+    </entry>
+
+    <entry key="AtNodeBreakPoint">
+      At break point:{0,number,integer} {1} m:{2,number,integer}\n
+    </entry>
+
+    <entry key="AtSysBreakPoint">
+      At break point:{0,number,integer} {1} {2} ''{3}'' {4}\n
+    </entry>
+
+    <entry key="BlkBreakAlreadyInstalled">
+      Already break point:{0,number,integer} is installed {1} {2,number,integer}:{3,number,integer} {4} ''{5}'' {6}\n
+    </entry>
+
+    <entry key="BlkBreakInstalled">
+      Installed break point:{0,number,integer} {1} {2,number,integer}:{3,number,integer} {4} ''{5}'' {6}\n
+    </entry>
+
+    <entry key="BlkBreakStatus">
+          {0,number,* #0}. {1}{2} {3,number,integer}:{4,number,integer} {5} ''{6}'' {7}\n
+    </entry>
+
+    <entry key="BlkIsNotInAlgLoop">
+      Block {0} isn''t in an algebraic loop.\n
+    </entry>
+
+    <entry key="BlkProbeMode">
+      Entering block probe mode. Click on any block to see its data.\n Type any command to leave probe mode.\n
+    </entry>
+
+    <entry key="BlockDoesNotExist">
+      Specified block does not exist in the model being debugged.\n
+    </entry>
+
+    <entry key="BlockInAlgLoop">
+      - {0}\n
+    </entry>
+
+    <entry key="BlockInAlgLoopWithAlgVar">
+      - {0} (algebraic variable)\n
+    </entry>
+
+    <entry key="BreakAtZcDisabled">
+      Break at zero crossing events              : disabled\n
+    </entry>
+
+    <entry key="BreakAtZcEnabled">
+      Break at zero crossing events              : enabled\n
+    </entry>
+
+    <entry key="BreakNoPoints">
+      Currently no break point is installed.\n
+    </entry>
+
+    <entry key="BreakPointDoesNotExist">
+      Specified break point doesn''t exist.\n
+    </entry>
+
+    <entry key="BreakPoints">
+      Break points                               :
+    </entry>
+
+    <entry key="BreakTempDisabled">
+      Break point {0,number,integer}: Temporarily disabled. Only model level
+      break points are enabled in accelerator execution mode.\n
+    </entry>
+
+    <entry key="BreakWhenStepLimitedByStateDisabled">
+      Break on failed integration step           : disabled\n
+    </entry>
+
+    <entry key="BreakWhenStepLimitedByStateEnabled">
+      Break on failed integration step           : enabled\n
+    </entry>
+
+    <entry key="CallBackError">
+      Error executing callback ''{0}''. Simulation is aborted.\n
+    </entry>
+
+    <entry key="CannotDispSignalWithDType">
+      Cannot display signals with data type {0}.\n The data type must have a
+      type conversion function, or\n it must be a MATLAB data type.\n
+    </entry>
+
+    <entry key="CannotTBreakInPast">
+      Error cannot break at a time point in the past.\n
+    </entry>
+
+    <entry key="CannotUseMatlabDispCommand">
+      Cannot display data using Matlab DISP command.\n
+    </entry>
+
+    <entry key="CurrSimTime">
+      Current simulation time                    : {0} ({1}{2})\n
+    </entry>
+
+    <entry key="DW">
+      DWORK{0,number,#0* }
+    </entry>
+
+    <entry key="DX">
+      Deriv
+    </entry>
+
+    <entry key="DefaultCmdOnRet">
+      Default command to execute on return/enter : \"{0}\"\n
+    </entry>
+
+    <entry key="DispBusSignalAsFlatVect">
+      {0}Bus signal. Displaying the signal as a flat vector ... \n{1}
+    </entry>
+
+    <entry key="DispOfBlkAlreadyInstalled">
+      Already installed data display of {0,number,integer}:{1,number,integer}
+      {2} block ''{3}''.\n
+    </entry>
+
+    <entry key="DispOfBlkInstalled">
+      Installed data display of {0,number,integer}:{1,number,integer} {2} block
+      ''{3}''.\n
+    </entry>
+
+    <entry key="DispOfVirtBlkAlreadyInstalled">
+      Already installed data display of {0} block (virtual) ''{1}''.\n
+    </entry>
+
+    <entry key="DispOfVirtBlkInstalled">
+      Installed data display of {0} block (virtual) ''{1}''.\n
+    </entry>
+
+    <entry key="DispPointDoesNotExist">
+      Specified display point does not exist.\n
+    </entry>
+
+    <entry key="DispPointRemoved">
+      Removed display point for block ''{0}''.\n
+    </entry>
+
+    <entry key="EBreakDisabled">
+      Break on solver error                      : disabled\n
+    </entry>
+
+    <entry key="EBreakEnabled">
+      Break on solver error                      : enabled\n
+    </entry>
+
+    <entry key="ETraceLevel">
+      Display level for etrace                   : {0,number,integer}{1}\n
+    </entry>
+
+    <entry key="ElistForSystem">
+      \n{0}.{1} ''{2}'':\n
+    </entry>
+
+    <entry key="ElistForSystemWithTid">
+      \n{0}.{1} ''{2}'' [{3}] :\n
+    </entry>
+
+    <entry key="ElistNotFoundForSystem">
+      \n{0}.{1} ''{2}'' is empty\n
+    </entry>
+
+    <entry key="ElistNotFoundForSystemWithTid">
+      \n{0}.{1} ''{2}'' [{3}] is empty\n
+    </entry>
+
+    <entry key="ElistTooManyArguments">
+      Too many argument specified for the elist command\n
+    </entry>
+
+    <entry key="ExecutionModeAcc">
+      Execution Mode                             : Accelerator\n
+    </entry>
+
+    <entry key="ExecutionModeNormal">
+      Execution Mode                             : Normal\n
+    </entry>
+
+    <entry key="FcnCall">
+      {0}fcn-call
+    </entry>
+
+    <entry key="HelpAnimate">
+      animate                  Enable  Animation Mode  with advance delay of one second.\n animate #                Enable  Animation Mode  with the specified advance delay time (# is in seconds)\n animate stop             Disable Animation Mode  and  reset the display.\n
+    </entry>
+
+    <entry key="HelpAshow">
+      <![CDATA[ashow                    Show list of algebraic loops.\n ashow <gcb | sysIdx:blkIdx> \n                          Show algebraic loop involving block.\n ashow sysIdx#n           Show algebraic loop, n, in system, sysIdx.\n ashow clear              Remove any algebraic loop colorings.\n]]>
+    </entry>
+
+    <entry key="HelpAtrace">
+      atrace level             Set algebraic loop trace level (0=none, 4=everything).\n
+    </entry>
+
+    <entry key="HelpBafter">
+      <![CDATA[bafter                   Break after current method invocation.\n bafter  m:mid            Break after method identified by (mid).\n bafter <sysIdx:blkIdx | gcb> \n                     Break after each method of block(sysIdx:blkIdx) has executed.\n bafter <sysIdx:blkIdx | gcb>  [mth] [tid:TID] \n                          Break after the  method [mth] at tid (TID) of block (sysIdx:blkIdx) has executed.\n bafter <s:sysIdx | gcs>  Break after each method of system(sysIdx) has executed.\n bafter <s:sysIdx | gcs>  [mth] [tid:TID] \n                          Break after the  method [mth] at tid (TID)  of system (sysIdx) has executed.\n bafter mdl               Break after each method of model (mdl) has executed.\n bafter mdl [mth] [tid:TID] \n                          Break after the  method [mth] at tid (TID)  of model (mdl) has executed.\n]]>
+    </entry>
+
+    <entry key="HelpBreak">
+      <![CDATA[break                    Break at current method invocation.\n break  m:mid             Break at method identified by (mid).\n break  <sysIdx:blkIdx | gcb> \n                          Break at each method of block(sysIdx:blkIdx).\n break  <sysIdx:blkIdx | gcb>  [mth] [tid:TID] \n                          Break at the  method [mth] at tid (TID) of block (sysIdx:blkIdx).\n break  <s:sysIdx | gcs>  Break at each method of system(sysIdx).\n break  <s:sysIdx | gcs>  [mth] [tid:TID] \n                          Break at the  method [mth] at tid (TID)  of system (sysIdx).\n break  mdl               Break at each method of model (mdl).\n break  mdl [mth] [tid:TID] \n                          Break at the  method [mth] at tid (TID)  of model (mdl).\n]]>
+    </entry>
+
+    <entry key="HelpBshow">
+      bshow sysIdx:blkIdx      Show block in system, sysIdx, with sorted list index, blkIdx.\n
+    </entry>
+
+    <entry key="HelpClear">
+      <![CDATA[clear                    Clear all break points.\n clear m:mid              Clear break point set at method invocation with id:(mid).\n clear id                 Clear break point with identifier (id).\n clear <sysIdx:blkIdx | gcb> \n                          Clear all break points at block (sysIdx:blkIdx) .\n]]>
+    </entry>
+
+    <entry key="HelpCommand">
+      Commands:\n
+    </entry>
+
+    <entry key="HelpContinue">
+      continue                 Continue to the next break point.\n
+    </entry>
+
+    <entry key="HelpDisp">
+      disp [sysIdx:blkIdx | gcb] \n                          Display data of block at every stopping point.\n
+    </entry>
+
+    <entry key="HelpEBreak">
+      ebreak                   Toggle break on solver errors.\n
+    </entry>
+
+    <entry key="HelpElist">
+      <![CDATA[elist m:mid [tid:TID]    Display the system execution list(s) identified by the system method (mid) and tid (TID).\n elist <gcs | s:sysIdx> [mth] [tid:TID] \n                          Display the system execution list(s) identified by the system (sysIdx), method (mth) and tid (TID).\n elist <gcb | sysIdx:blkIdx> [mth] [tid:TID] \n                          Display the system execution list(s) identified by the subsystem block (sysIdx:blkIdx), method (mth) and tid (TID).\n]]>
+    </entry>
+
+    <entry key="HelpEmode">
+      emode                    Toggle execution between Normal and Accelerator modes.\n
+    </entry>
+
+    <entry key="HelpEtrace">
+      etrace level             Set the execution trace level (0=none, 3=everything).\n
+    </entry>
+
+    <entry key="HelpHelp">
+      help                     Display help on all sldebug commands.\n help cmd                 Display help for cmd.\n help time                Display info on simulation time format.\n
+    </entry>
+
+    <entry key="HelpIShow">
+      ishow                    Set strace level to 4 (deprecated, use strace).\n
+    </entry>
+
+    <entry key="HelpNanBreak">
+      nanbreak                 Toggle break on non-finite (NaN,Inf) values.\n
+    </entry>
+
+    <entry key="HelpNext">
+      next                     Step over the current simulation point.\n
+    </entry>
+
+    <entry key="HelpProbe">
+      probe                    Enters probe mode to display data for the current block.\n probe [gcb | sysIdx:blkIdx] \n                          Probe data of block (sysIdx:blkIdx).\n probe level #            Set verbosity level for probe, trace, disp commands.\n
+    </entry>
+
+    <entry key="HelpQuest">
+      ?                        Display help on all sldebug commands.\n
+    </entry>
+
+    <entry key="HelpQuit">
+      quit                     Abort the simulation.\n
+    </entry>
+
+    <entry key="HelpRBreak">
+      rbreak                   Toggle break on solver reset requests.\n
+    </entry>
+
+    <entry key="HelpRun">
+      run                      Stop debugging and finish the simulation.\n
+    </entry>
+
+    <entry key="HelpSTrace">
+      strace level             Set solver trace level (0=none, 4=everything).\n
+    </entry>
+
+    <entry key="HelpSlist">
+      slist                    Display the sorted list(s).\n
+    </entry>
+
+    <entry key="HelpStates">
+      states                   Display current state values.\n
+    </entry>
+
+    <entry key="HelpStatus">
+      status [all]             Display debugging actions in effect.\n
+    </entry>
+
+    <entry key="HelpStep">
+      step [in | into]         Go to the next simulation point.\n step over                Step over the current simulation point.\n step out                 Go to the end of the current simulation point hierarchy.\n step top                 Go to the top of the next time step.\n step blockmth            Go to the next block method.\n
+    </entry>
+
+    <entry key="HelpStimes">
+      stimes                   Display the sample time table of the model.\n
+    </entry>
+
+    <entry key="HelpStop">
+      stop                     Stop execution.\n
+    </entry>
+
+    <entry key="HelpSystems">
+      systems                  Display a list of the model systems.\n
+    </entry>
+
+    <entry key="HelpTbreak">
+      tbreak                   Clear time break point.\n tbreak t                 Break when the simulation time exceeds t.\n
+    </entry>
+
+    <entry key="HelpTime">
+      <![CDATA[Time is displayed as: \n TM = <time while in Major step> \n Tm = <time while in minor step> \n Tr = <time while in solver reset> \n Tz = <time at or just after zero crossing> \n TzL= <time while in major step just before (at left post of) zero crossing> \n TzR= <time while in major step at or just after (at right post of) zero crossing> \n Ts = <time of successful integration step> \n Tf = <time of failed integration step> \n Tn = <time while in Newton iteration> (when using implicit solvers) \n Tj = <time during Jacobian evaluation> (when using implicit solvers) \nStep size is displayed as: \n Hm = <step size at the start of solver phase> \n Hs = <successful integration step size> \n Hf = <failed integration step size> \n Hn = <step size during Newton iteration> (when using implicit solvers) \n Hz = <value of 'TM - TzL' during zero crossing search> \n Iz = <value of 'Tz - TzL' during zero crossing search> \n]]>
+    </entry>
+
+    <entry key="HelpTrace">
+      <![CDATA[trace <gcb | sysIdx:blkIdx> \n                          Add a trace point to display data of block as it is executed.\n]]>
+    </entry>
+
+    <entry key="HelpUndisp">
+      <![CDATA[undisp <gcb | sysIdx:blkIdx> \n                          Remove a display point.\n]]>
+    </entry>
+
+    <entry key="HelpUntrace">
+      <![CDATA[untrace <gcb | sysIdx:blkIdx> \n                          Remove a trace point.\n]]>
+    </entry>
+
+    <entry key="HelpWhere">
+      <![CDATA[where [detail]           Display the current location in the simulation loop (detail=0 => minimum details).\n]]>
+    </entry>
+
+    <entry key="HelpXbreak">
+      xbreak                   Toggle break on failed integration step.\n
+    </entry>
+
+    <entry key="HelpZcbreak">
+      zcbreak                  Toggle break when zero crossing events are detected.\n
+    </entry>
+
+    <entry key="HelpZclist">
+      zclist                   Display the list of zero crossings signals.\n
+    </entry>
+
+    <entry key="IdxName">
+      {0}{1,number,##0* } ''{2}''\n
+    </entry>
+
+    <entry key="InvalidBlockName">
+      Invalid block name.\n
+    </entry>
+
+    <entry key="InvalidBlockTid">
+      Invalid ''tid:{0}'' is specified for block  ''{1}'' for method {2}.\n
+    </entry>
+
+    <entry key="InvalidNodeNumber">
+      The specified method invocation id ''m:{0,number,integer}'' is invalid. It
+      has to be nonnegative and less than {1,number,integer}\n
+    </entry>
+
+    <entry key="InvalidPhaseName">
+      Invalid method ''{0}'' is specified.\n
+    </entry>
+
+    <entry key="InvalidSimulinkObject">
+      ''{0}'' does not specify a valid Simulink block, system or model.\n
+    </entry>
+
+    <entry key="InvalidSubsystemTid">
+      Invalid ''tid:{0}'' is specified for system ''{1}'' for method {2}.\n
+    </entry>
+
+    <entry key="InvalidSysNum">
+      Invalid system number specified.\n
+    </entry>
+
+    <entry key="InvalidSystemId">
+      The command argument ''{0}'' does not refer to a system.\n
+    </entry>
+
+    <entry key="InvalidSystemIndex">
+      The system s:{0,number,integer} could not be found. Use the systems
+      command to list the valid system id''s \n
+    </entry>
+
+    <entry key="InvalidTidString">
+      Invalid tid identifier ''{0}'' is specified.\n
+    </entry>
+
+    <entry key="Invalidtid">
+      Invalid ''tid:{0,number,integer}'' is specified.\nThe tid has to be a
+      nonnegative number less than {1,number,integer}, CONSTANT or TRIGGERED for
+      this model\n
+    </entry>
+
+    <entry key="Invalidtideq01">
+      Invalid ''tid:{0,number,integer}'' is specified.\nThe tid has to be a
+      positive number less than {1,number,integer}, CONSTANT or TRIGGERED for
+      this model\n
+    </entry>
+
+    <entry key="MdlBreakAlreadyInstalled">
+      Already break point:{0,number,integer} is installed {1} {2} {3}\n
+    </entry>
+
+    <entry key="MdlBreakInstalled">
+      Installed break point:{0,number,integer} {1} {2} {3}\n
+    </entry>
+
+    <entry key="MdlBreakStatus">
+          {0,number,* #0}. {1}{2} {3} {4}\n
+    </entry>
+
+    <entry key="MemLayoutBreakPoints">
+      Additional break points are installed on blocks connected to {0} port(s)
+      of {1} block ''{2}''\n
+    </entry>
+
+    <entry key="CannotDisplayFullState">
+      Continuous states displayed only for blocks that are outside For Each subsystems in model ''{0}''.
+    </entry>
+
+    <entry key="ModelHasNoStates">
+      Model ''{0}'' has no states.\n
+    </entry>
+
+    <entry key="MultiBlkSelected">
+      Multiple blocks are selected, using current block.\n
+    </entry>
+
+    <entry key="NanBreakDisabled">
+      Break on non-finite (NaN,Inf) values       : disabled\n
+    </entry>
+
+    <entry key="NanBreakEnabled">
+      Break on non-finite (NaN,Inf) values       : enabled\n
+    </entry>
+
+    <entry key="NanBreakTempDisabled">
+      Break on non-finite (NaN,Inf) values       : temporarily disabled\n
+    </entry>
+
+    <entry key="NewLine">
+      \n
+    </entry>
+
+    <entry key="NoContStates">
+      There are no continuous states.\n
+    </entry>
+
+    <entry key="NoCurrentBlockInModel">
+      Unable to find the block corresponding to gcb in ''{0}'', the model being
+      debugged. This may be because the block corresponding to gcb is not in
+      this model.\n
+    </entry>
+
+    <entry key="NoDebugOpForSynthesizedBlk">
+      Specified block is a hidden (synthesized) block. Debugger operations are
+      not allowed on this type of block.\n
+    </entry>
+
+    <entry key="NoDispPoints">
+      Display points                             : none installed\n
+    </entry>
+
+    <entry key="NoDispPointsRegistered">
+      There are currently no display points registered.\n
+    </entry>
+
+    <entry key="NoNonSampledZC">
+      There are no zero crossings signals.\n
+    </entry>
+
+    <entry key="NoTracePoints">
+      Trace points                               : none installed\n
+    </entry>
+
+    <entry key="NodeBreakAlreadyInstalled">
+      Already break point:{0,number,integer} installed {1} m:{2,number,integer}\n
+    </entry>
+
+    <entry key="NodeBreakInstalled">
+      Installed break point:{0,number,integer} {1} m:{2,number,integer}\n
+    </entry>
+
+    <entry key="NodeBreakStatus">
+          {0,number,* #0}. {1}{2} m:{3,number,integer} ({4} {5}{6}{7})\n
+    </entry>
+
+    <entry key="NonMdlBreakDisabled">
+      Accelerator execution mode. Only model level break points are enabled.\n
+    </entry>
+
+    <entry key="NonMdlBreakEnabled">
+      Normal execution mode. All break points are enabled.\n
+    </entry>
+
+    <entry key="NonVirtualBlockData">
+      {0}Data of {1,number,integer}:{2,number,integer} {3} block ''{4}'':\n
+    </entry>
+
+    <entry key="ProbeLevel">
+      Display level for disp, trace, probe       : {0,number,integer}{1}\n
+    </entry>
+
+    <entry key="RBreakDisabled">
+      Break on solver reset request              : disabled\n
+    </entry>
+
+    <entry key="RBreakEnabled">
+      Break on solver reset request              : enabled\n
+    </entry>
+
+    <entry key="ReducedBlockSelected">
+      Selected block ''{0}'' does not execute because it has been
+      optimized. Hence, the Simulink Debugger is unable to display the block''s
+      data. . To prevent this block from being optimized, consider disabling the
+      ''Block reduction'' option in the ''All Parameters'' tab of the
+      Configuration Parameters dialog.\n
+    </entry>
+
+    <entry key="RemoveBreakPoint">
+      Break point ''{0,number,integer}'' has been removed.\n
+    </entry>
+
+    <entry key="RemoveCallback">
+      Removed callback ''{0}''.\n
+    </entry>
+
+    <entry key="ScopeCannotBeOpened">
+      During debugging scopes can only be opened in the Simulation Loop. You can
+      either open the scopes before debugging or after the Simulation Loop
+      begins.\n
+    </entry>
+
+    <entry key="ShowAlgLoopInfo">
+      - {0,number,integer}#{1,number,integer}, {2,number,integer} block(s) in
+      loop\n
+    </entry>
+
+    <entry key="ShowAlgLoopInfoTitle">
+      \nFound {0,number,integer} Algebraic loop(s): \nSystem number#Algebraic
+      loop id, number of blocks in loop\n
+    </entry>
+
+    <entry key="ShowNoAlgLoopInfoTitle">
+      \nNo Algebraic loop found\n
+    </entry>
+
+    <entry key="SolverTraceLevel">
+      Solver trace level                         : {0,number,integer}\n
+    </entry>
+
+    <entry key="StatusDXCacheReset">
+      Solver derivatives cache needs reset       : {0}\n
+    </entry>
+
+    <entry key="StatusSolverReset">
+      Solver needs reset                         : {0}\n
+    </entry>
+
+    <entry key="StatusZCCacheReset">
+      Zero crossing signals cache needs reset    : {0}\n
+    </entry>
+
+    <entry key="String">
+      {0}
+    </entry>
+
+    <entry key="StringNewLine">
+      {0}\n
+    </entry>
+
+    <entry key="SyntaxError">
+      Command syntax error. Usage:\n
+    </entry>
+
+    <entry key="SysBreakAlreadyInstalled">
+      Already break point:{0,number,integer} is installed {1} {2} ''{3}'' {4}\n
+    </entry>
+
+    <entry key="SysBreakInstalled">
+      Installed break point:{0,number,integer} {1} {2} ''{3}'' {4}\n
+    </entry>
+
+    <entry key="SysBreakStatus">
+          {0,number,* #0}. {1}{2} {3} ''{4}'' {5}\n
+    </entry>
+
+    <entry key="TaskTime">
+      Task times                                 : {0}\n
+    </entry>
+
+    <entry key="TidForOutandUpdate">
+      The tid option can only be specified with the Outputs or Update methods.\n
+    </entry>
+
+    <entry key="TimeBreakEnabled">
+      <![CDATA[Time break point                           : enabled (t>={0})\n]]>
+    </entry>
+
+    <entry key="TimebreakDisabled">
+      Time break point                           : disabled\n
+    </entry>
+
+    <entry key="ToggleExecMode">
+      To toggle execution mode, restart sldebug with Accelerator selected.\n
+    </entry>
+
+    <entry key="TooManyArgumentsForBreak">
+      Too many arguments are specified to set a break point. \n
+    </entry>
+
+    <entry key="TraceOfBlockAlreadyInstalled">
+      Already installed trace point for data of
+      {0,number,integer}:{1,number,integer} {2} block ''{3}''.\n
+    </entry>
+
+    <entry key="TraceOfBlockDisabledInAccelMode">
+      Trace points are not available when in accelerator mode. When you switch
+      to normal mode, the trace points will be enabled. See the sldebug emode
+      command.\n
+    </entry>
+
+    <entry key="TraceOfBlockInstalled">
+      Installed trace point for data of {0,number,integer}:{1,number,integer}
+      {2} block ''{3}''.\n
+    </entry>
+
+    <entry key="TracePointDoesNotExist">
+      Specified trace point does not exist.\n
+    </entry>
+
+    <entry key="TracePointRemoved">
+      Removed trace point for block ''{0}''.\n
+    </entry>
+
+    <entry key="TwoStrings">
+      {0}{1}
+    </entry>
+
+    <entry key="Ui">
+      U{0,number,####0* }
+    </entry>
+
+    <entry key="UnsuccessFullConvert">
+      The signal is not being successfully converted from data type {0} to
+      double.\n
+    </entry>
+
+    <entry key="VirtualBlockData">
+      {0}Data of {1} block (virtual) ''{2}'':\n
+    </entry>
+
+    <entry key="VirtualBlockSelected">
+      Selected block is virtual, i.e., provided for graphical purposes only. You
+      must select a block that generates a signal.\n
+    </entry>
+
+    <entry key="VirtualSystemSelected">
+      Selected system is virtual, i.e., provided for graphical purposes
+      only. You must select a non-virtual system.\n
+    </entry>
+
+    <entry key="XC">
+      CSTATE
+    </entry>
+
+    <entry key="Yi">
+      Y{0,number,####0* }
+    </entry>
+
+    <entry key="ZcEvent">
+      ZcEvnt
+    </entry>
+
+    <entry key="ZcSignal">
+      ZcSgnl
+    </entry>
+
+    <entry key="Aborted">
+      Debugger simulation aborted\n
+    </entry>
+
+    <entry key="InvSimWhileDebugging">
+      SET_PARAM(''{0}'',''SimulationCommand'',''{1}'') will not work while
+      running model ''{2}'' in the debugger\n
+    </entry>
+
+    <entry key="InvModelCloseWhileDebugging">
+      Cannot close the model ''{0}'' when it is being debugged. Please stop the
+      debugger and try again
+    </entry>
+
+    <entry key="WarnBlockReduction">
+      ''Block reduction optimization'' is enabled for this model. Some
+      non-virtual blocks may not execute due to optimization.\n To be able to
+      execute all non-virtual blocks consider disabling the ''Block reduction
+      optimization'' option in the ''All Parameters'' tab of the Configuration
+      Parameters dialog\n
+    </entry>
+
+    <entry key="WarnOptimizedBlockIO">
+      ''Signal storage reuse'' is enabled for this model. Block I/O values
+      displayed in the debugger may not be correct.\n In order to preserve block
+      output signal values, consider disabling the ''Signal storage reuse''
+      option in the ''All Parameters'' tab of the Configuration Parameters dialog\n
+    </entry>
+
+    <entry key="CannotDebugInPILMode">
+      Can not debug model ''{0}'' because it is configured in SIL or PIL
+      simulation mode
+    </entry>
+
+    <entry key="CannotDebugInRapidAccelMode">
+      Can not debug model ''{0}'' because it is configured in the
+      Rapid-Accelerator simulation mode
+    </entry>
+
+    <entry key="BlockPathAndSignalNameScalarEl" translate="false">
+      ({0}).({1})
+    </entry>
+
+   <entry key="BlockPathAndSignalNameVectorEl" translate="false">
+      ({0}).({1})[{2,number,integer}]
+    </entry>
+
+    <entry key="CatBlockPathsAcrossMdlRef" translate="false">
+      {0}|{1}
+    </entry>
+
+    <entry key="DebuggerBehaviorChangedInR2012b">
+      The behavior of the Simulink Debugger has been modified in R2012b. See release notes for details.
+    </entry>
+
+    <entry key="RootLocationFormat" translate="false">
+      {0}({1})
+    </entry>
+
+    <entry key="ModelLocationFormat" translate="false">
+      {0}.{1}
+    </entry>
+
+    <entry key="ModelLocationWithAttrFormat" translate="false">
+      {0}.{1}({2,number,integer})
+    </entry>
+
+    <entry key="BlockLocationFormat" translate="false">
+      {0}.{1}
+    </entry>
+    <entry key="SortedListSubsystem" translate="false">Sorted list for ''{0}'' &#91;{1} nonvirtual block(s), directFeed={2}&#93;</entry>
+    <entry key="SortedListSubsystemNumBlks" translate="false">Sorted list for ''{0}'' &#91;{1} block(s), {2} nonvirtual block(s), directFeed={3}&#93;</entry>
+    <entry key="mth_Start" translate="false">Start</entry>
+    <entry key="mth_ConstInit" translate="false">Initialize.InvariantConstants</entry>
+    <entry key="mth_SetupRuntimeResources" translate="false">SetupRuntimeResources</entry>
+    <entry key="mth_Init" translate="false">Initialize</entry>
+    <entry key="mth_SystemInit" translate="false">SystemInitialize</entry>
+    <entry key="mth_ConstEnable" translate="false">Enable.InvariantConstants</entry>
+    <entry key="mth_Enable" translate="false">Enable</entry>
+    <entry key="mth_Disable" translate="false">Disable</entry>
+    <entry key="mth_SystemReset" translate="false">SystemReset</entry>
+    <entry key="mth_ConstOutput" translate="false">Output.InvariantConstants</entry>
+    <entry key="mth_Outputs" translate="false">Outputs</entry>
+    <entry key="mth_Update" translate="false">Update</entry>
+    <entry key="mth_MassMatrix" translate="false">MassMatrix</entry> 
+    <entry key="mth_ForcingFunction" translate="false">ForcingFunction</entry>
+    <entry key="mth_Derivatives" translate="false">Derivatives</entry>
+    <entry key="mth_Projection" translate="false">Projection</entry>
+    <entry key="mth_ZeroCrossings" translate="false">ZeroCrossings</entry>
+    <entry key="mth_Terminate" translate="false">Terminate</entry>
+    <entry key="mth_CleanupRuntimeResources" translate="false">CleanupRuntimeResources</entry>
+  </message>
+</rsccat>
+
+<!--
+LocalWords: Deriv etrace elist ashow sysIdx atrace bafter mth bshow ebreak
+LocalWords: emode ishow strace nanbreak rbreak slist blockmth stimes Tj undisp
+LocalWords: tbreak Tz Hs Izc xbreak zcbreak zclist CSTATE Zc Evnt Sgnl untrace
+LocalWords: SIL
+-->

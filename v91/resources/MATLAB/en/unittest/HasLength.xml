@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="MustHaveLength">The array has an incorrect length.</entry>
+    <entry key="ActualLength">Actual Length:</entry>
+    <entry key="ExpectedLength">Expected Length:</entry>
+    <entry key="MustNotHaveProhibitedLength">The array must not have the specified length.</entry>
+    <entry key="ProhibitedLength">Prohibited Length:</entry>
+    <entry key="DidNotHaveProhibitedLength">The array did not have the prohibited length.</entry>
+  </message>
+</rsccat>

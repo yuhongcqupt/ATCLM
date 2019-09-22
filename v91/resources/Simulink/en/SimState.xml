@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2012-2014 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="InvalidSetModelSimStateNArgs">SetModelSimState must be called with two arguments - model name and SimState object.</entry>
+    <entry key="SimStateObjectInvalid">SimState objects must be scalar, non-empty and of type Simulink.SimState.ModelSimState.</entry>
+    <entry key="BDNotCompiled">Model ''{0}'' is not is a compiled state.</entry>
+    <entry key="BDIsLibrary">Cannot set the SimState of ''{0}'' because it is a library.</entry>
+    <entry key="SetStateMDLAPIWarning"> Model API ''set state'' is not finalized and should only be used by SCD. SimState restore will ignore model-level checksums.</entry>
+    <entry key="ArrayOfObjects">array of {0} objects</entry>
+    <entry key="SimStateExtraBlockAdded">State for block ''{0}'' was not saved in the given SimState object.</entry>
+    <entry key="BlockSimStateObjectExpected">Expected block SimState object</entry>
+    <entry key="BlockSimStateCannotSetUsingMethod">Cannot set the SimState of block ''{0}'' because it is read-only.</entry>
+    <entry key="BlockStructuralChangeDetected">Simulink has detected that block ''{0}'' has changed structurally from the time when the SimState was saved.</entry>
+    <entry key="CannotFindBlockUsingSID">Simulink cannot find the block ''{0}'' for SimState using SID ''{1}''.</entry>
+    <entry key="CannotFindSimStateForBlock">The SimState for block ''{0}'' is not accessible. If the block is a Simulink built-in block, try accessing the SimState in the loggedStates. Otherwise, check the following:\n 1. The block path is valid.\n 2. The SimState compliance setting of the block is ''custom''.\n 3. The SimState visibility setting has visibility turned on.</entry>
+    <entry key="NumberOfBlockSimStatesMismatch">The new SimState for block ''{0}'' does not match the number of iterations in subsystem ''{1}''. SimStates are provided for {2,number,integer} iterations, while the number of iterations in subsystem ''{3}'' is {4,number,integer}.</entry>
+    <entry key="EmptyBlockSimStates">Cannot set SimState for block ''{0}'' to empty.</entry>
+    <entry key="CannotSaveOrRestoreSimStateForModelRefAccel">Cannot save or restore the SimState of the block ''{0}''. Model block supports SimState only when it is referenced in normal mode.</entry>
+    <entry key="CannotSaveSimStateForBlockWithPWork">Unable to save the simulation state for {0} block in ''{1}'' because it uses pointer work (PWork) vector.</entry>
+    <entry key="CannotSaveSimStateForModelWithPWork">Cannot save or restore the SimState of the Accelerator-mode Model block ''{0}'' because the {1} block at ''{2}'' stores pointers in its work vectors. To enable SimState, configure the Model block to use Normal mode.</entry>
+    <entry key="CannotSaveSimStateForModelWithDisallowedSimState">Cannot save or restore the SimState of the Accelerator-mode Model block ''{0}'' because the {1} block at ''{2}'' sets its SimState compliance to DISALLOW_SIM_STATE.</entry>
+    <entry key="CannotSaveSimStateForModelWithCustomSimState">Cannot save or restore the SimState of the Accelerator-mode Model block ''{0}'' because the {1} block at ''{2}'' sets its SimState compliance to USE_CUSTOM_SIM_STATE. To enable SimState, configure the Model block to use Normal mode.</entry>
+    <entry key="CannotSetSimStateUsingLoggedStateStruct">Simulink cannot set the logged states. The logged states must be a structure array with the following fields: ''{0}'', ''{1}'', ''{2}'', ''{3}'', and ''{4}'' or a Simulink.SimulationData.Dataset object with matching number of Simulink.SimulationData.State elements.</entry>
+    <entry key="CannotSaveSimStateForModelWithFcnCallSSSrcInsideContext">Simulink cannot save the SimState for this model because the model contains function-call blocks whose inputs originate from their own function-call contexts. To see the details about this issue, use the command set_param(''{0}'',''FcnCallInpInsideContextMsg'',''error'') and restart the simulation.</entry>
+    <entry key="DescriptionFieldMustBeString" note="stringDatatypeUpdate">The description field of a SLModelSimState object must be a character vector.</entry>
+    <entry key="InvalidAlgLoopSimState">The specified simulation state for the algebraic loop starting at block ''{0}'' is invalid</entry>  
+    <entry key="InvalidSimLoopSimState">The specified SimState object is invalid. Simulink is unable to use it to restore the simulation state.</entry>
+    <entry key="LoadSimStateNotSupported2">Specifying initial SimState is only supported for models in Normal or Accelerator mode, and for Model blocks in Normal or Accelerator mode.</entry>
+    <entry key="LoadSimStateNotSupported">Specifying initial SimState is only supported for models in Normal or Accelerator mode, and for Model blocks in Normal mode.</entry>
+    <entry key="ModelSimStateDefaultDescription">SimState snapshot of the model ''{0}'' at time {1}.</entry>
+    <entry key="ModelSimStateStoppedDescription">SimState snapshot of the model ''{0}'' at the time of simulation stop.</entry>
+    <entry key="MoreThanOneBlockSimStateGiven">More than one block SimState object is found.</entry>
+    <entry key="SaveSimStateNotSupported2">Saving the SimState is only supported for models in Normal or Accelerator mode, and for Model blocks in Normal or Accelerator mode.</entry>
+    <entry key="SaveSimStateNotSupported">Saving the SimState is only supported for models in Normal or Accelerator mode, and for Model blocks in Normal mode.</entry>
+    <entry key="SimStateContentsChecksumMisMatch">Simulink cannot load the initial SimState because the model, ''{0}'', was changed after the SimState was saved. Run the simulation again and resave the SimState.</entry>
+    <entry key="SimStateContentsChecksumMisMatchWarn">The model, ''{0}'', was changed after the SimState was saved. The SimState of some of the blocks in the model may not be restored.</entry>
+    <entry key="SimStateContentsWithMdlRefChecksumMisMatch">Simulink cannot load the initial SimState because the model, ''{0}'', or any of its referenced models, was changed after the SimState was saved. Run the simulation again and resave the SimState.</entry>
+    <entry key="CannotSetSimStateContentsChecksumMisMatch">Unable to modify the setting for contents checksum mismatch.</entry>
+    <entry key="SimStateErrorEval">Error evaluating the initial state ''{0}'' for model ''{1}''.</entry>
+    <entry key="SimStateFixedStepSizeHeuristicWarn">The fixed step size of the model ''{0}'' is automatically selected by the solver. The SimState saved at the end of simulation may not be able to be restored to the model.</entry>
+    <entry key="SimStateInterfaceChecksumMisMatch">Simulink cannot load the initial SimState because the configuration settings of the model, ''{0}'', were changed after the SimState was saved. You can allow interface checksum mismatch by setting ''SimStateInterfaceChecksumMismatchMsg'' to ''none'' or ''warning''.</entry>
+    <entry key="SimStateInterfaceChecksumMisMatchWarn">The configuration settings of the model, ''{0}'', were changed after the SimState was saved. Hence the results of the current simulation using this original SimState may deviate from the simulation results of the original simulation. You can disable this warning by setting ''SimStateInterfaceChecksumMismatchMsg'' to ''none'', or you can disallow interface checksum mismatches by setting ''SimStateInterfaceChecksumMismatchMsg'' to ''error''.</entry>
+    <entry key="SimStateInvalidBlockPath">Cannot find the block ''{0}'' for SimState restore.</entry>
+    <entry key="SimStateInvalidCallToBlockSimState">Invalid call to BlockSimState constructor.</entry>
+    <entry key="SimStateInvalidCallToModelSimState">Invalid call to ModelSimState constructor.</entry>
+    <entry key="SimStateInvalidContState">Invalid continuous state data found in SimState.</entry>
+    <entry key="SimStateInvalidContentCS">The content checksum detail stored in the base workspace has changed from the content checksum computed for SimState.</entry>
+    <entry key="SimStateInvalidDWorkData">Invalid work vector data found in SimState.</entry>
+    <entry key="SimStateInvalidDiscreteDerivatives">Invalid discrete derivative signals found.</entry>
+    <entry key="SimStateInvalidFieldInMiscData">Invalid field found in misc data of SimState.</entry>
+    <entry key="SimStateInvalidFieldInSimLoopData">Invalid field found in SimLoop data of SimState.</entry>
+    <entry key="SimStateInvalidMiscData">Invalid misc data found in SimState.</entry>
+    <entry key="SimStateInvalidSimLoopData">Invalid simLoop data found in SimState.</entry>
+    <entry key="SimStateInvalidZCData">Invalid zero-crossing data found in SimState.</entry>
+    <entry key="SimStateIsEmptyDesc">SimState snapshot is empty.</entry>
+    <entry key="SimStateLoggedStateNotFound">Cannot find state {0,number,integer} in the given variable.</entry>
+    <entry key="SimStateNotSupportedInAccel">Cannot use SimState feature in rapid accelerator mode.</entry>
+    <entry key="SimStateOverrideTStartWarn">The start time of model ''{0}'' is different from the start time saved in the initial SimState. The start time has therefore been reset to {1}.</entry>
+    <entry key="SimStateParameterChecksumMisMatch">Some parameters of the model, ''{0}'', were changed after the SimState was saved. The first time step of this simulation will use the new parameters and hence the results may not match those of the original last step.</entry>
+    <entry key="SimStateStopTimeWarn">The simulation of model ''{0}'' stopped because the stop time is less than or equal to the simulation time stored in the initial SimState. Increase the stop time if you want to continue the simulation from the specified SimState.</entry>
+    <entry key="SimStateTooSoonToSaveWarn">The simulation state of the model ''{0}'' is empty because simulation has not yet completed the first step.</entry>    
+    <entry key="SimStateUnableToSaveDiscreteDerivatives">Unable to save discrete derivative signals.</entry>
+    <entry key="SimStateUsedChecksumSettingChanged">The model structural checksum, which is required for SimState restore, is missing from the given SimState object.</entry>
+    <entry key="SimStateVersionIncompatible"><![CDATA[The SimState object provided was saved in an earlier version of Simulink. If you want to restore the SimState of the model, then consider changing the option <sldiag objui="configset" objparam="SimStateOlderReleaseMsg">SimState object from earlier release</sldiag> to 'warning'.]]></entry>
+    <entry key="SimStateVersionIncompatibleWarning">The SimState object provided was saved in a earlier version of Simulink. Simulink will try to restore as much as possible of the model SimState.</entry>
+    <entry key="StoppedSimStateCannotBeUsedInAccel">Simulink cannot load the SimState of model ''{0}'' because the model is running in Accelerator mode and the SimState was saved at a simulation stop other than the final stop time.</entry>
+    <entry key="StoppedSimStateCannotBeUsedInMdlAPI">Simulink cannot load the SimState of model ''{0}'' because the model is compiled for model function and the SimState was saved at a simulation stop other than the final stop time.</entry>
+    <entry key="WrongBlockIdentifiedUsingSID">Simulink found block ''{0}'' using SID ''{1}'', but the block path stored in the SimState is actually ''{2}'', using the block path to find the block instead.</entry>
+    <entry key="SimStepperSimStateNotAvailable">SimState of the model is not available in the current stage.</entry>
+    <entry key="OverridingSolverMaxStepSizeAuto">SimState restore is overriding the solver setting for max step size from ''auto'' to ''{0}''. Explicitly specify the solver max step size before saving SimState in order to avoid this. You can disable this diagnostic by setting ''Automatic solver parameter selection'' diagnostic to ''none'' in the Diagnostics page of the configuration parameters dialog.</entry>
+    <entry key="OverridingSolverFixedStepSizeAuto">SimState restore is overriding the solver setting for the fixed- step size from ''auto'' to ''{0}''. Explicitly specify the solver fixed-step size before saving SimState in order to avoid this.</entry>
+    <entry key="StoppedDueToSimStateContentsChecksumMisMatch">The compilation of model ''{0}'' failed because the model has been structurally modified since the specified SimState was saved but the SimState object was used to set the fixed-step size of the simulation.</entry>     
+    <entry key="InvalidSimStateCompliance">The S-function ''{0}'' declares SimState compliance as HAS_NO_SIM_STATE but registers continuous and\/or discrete states and\/or zero-crossing signals. Simulink cannot honor this configuration. Consider removing registration of states and\/or zero-crossings signals or changing SimState compliance to the default.</entry>
+    <entry key="InvalidSimStateCompliancePWork">The S-function ''{0}'' declares SimState compliance as HAS_NO_SIM_STATE but registers continuous and\/or discrete states and\/or zero-crossing signals. Simulink cannot honor this configuration. Consider removing registration of states and\/or zero-crossings signals or changing SimState compliance to custom and implementing SimState get\/set methods.</entry>
+  </message>
+</rsccat>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="MustBeLogical">The value must be logical. It is of type "{0}".</entry>
+    <entry key="MustBeScalar">The value must be scalar. It has a size of [{0}].</entry>
+    <entry key="MustBeFalse">The value must evaluate to "false".</entry>
+  </message>
+</rsccat>

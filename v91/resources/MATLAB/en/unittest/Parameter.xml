@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- Copyright 2013 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="InvalidMethodInputArgument">Parameter input argument names for method {0} in class {1} are not valid.</entry>
+    <entry key="ParameterDoesNotExist" note="Example: The MyTest class must define a TestParameter property named Param1 for the test1 method.">The {0} class must define a {1} property named {2} for the {3} method.</entry>
+    <entry key="PropertyNotFound" note="Example: The MyTest class does not define a TestParameter property named Param1.">The {0} class does not define a {1} property named {2}.</entry>
+    <entry key="IncompatibleParameterSizes">The parameters for method {0} in class {1} cannot be combined sequentially because they have a different number of values.</entry>
+    <entry key="IncompatibleParameterSizesSetupMethods">The parameters for the {0} methods in class {1} cannot be combined sequentially because they have a different number of values.</entry>
+    <entry key="ConflictingParameterCombinationAttribute" note="Example: The TestClassSetup methods in class MyTest have conflicting values for the ParameterCombination attribute.">The {0} methods in class {1} have conflicting values for the ParameterCombination attribute.</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  rsccat
+-->

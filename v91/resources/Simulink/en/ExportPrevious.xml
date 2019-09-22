@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2009-2014 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+    <message>
+        <entry key="StatusBarProgress">Exporting to {0} format ({1,number,integer}%)</entry>
+        <entry key="StageName">Export to {0}</entry>
+        <entry key="CompletionNotification"><![CDATA[<a href="matlab:slexportprevious.internal.GUIHelper.openExportedModel(''{0}'')">{1}</a> created for use in Simulink {2}]]></entry>
+        <entry key="SuccessMessage">Export successful: ''{0}'' created for use in Simulink {1}.</entry>
+        <entry key="FailureMessage">''{0}'' created for use in Simulink {1}, but the conversion was only partially successful. Examine this model for changes to original behavior.</entry>
+        <entry key="AbortMessage">Error while exporting model ''{0}'' for use in Simulink {1}.</entry>
+        <entry key="NotFullyConverted">Unable to convert model fully: {0}</entry>
+
+        <entry key="FindReplacedBlocks">During this operation, {0,number,integer} blocks were replaced with empty subsystems.\nTo find these blocks, open model {1} and run:\n  {2}</entry>
+        <entry key="BadConfigSetRef">Non existent Reference to Configset.</entry>
+        <entry key="BadExtension">Invalid file extension "{0}" when exporting to the format: {1}.  Specify "{2}" or no file extension.</entry>
+        <entry key="BadVersion">Version ''{0}'' is not supported by the "Export To Previous Version" feature.</entry>
+        <entry key="NoModelFile">''{0}'' is a new model that has not yet been saved.  You must save the model using the current version of Simulink.  Then export the model for use in an older version of Simulink.</entry>
+        <entry key="NoTranslatorObj">Unable to create the Simulink Translator object</entry>
+        <entry key="NumArgError">Unexpected number of arguments to {0}</entry>
+
+        <entry key="ReplacedBlockTypeMessage">Block of type "{0}" uses functionality that is not available in Simulink {1} and has been replaced with an empty subsystem.</entry>
+        <entry key="ReplacedBlock">This block has been replaced with an empty subsystem because it used functionality that is unavailable in Simulink {0}.</entry>
+        <entry key="ReplacedSBBlock">A  Signal Builder block was replaced with a subsystem containing a Signal Builder without the new functionality.</entry>
+        <entry key="ReplacedDelayBlock">Cannot automatically convert ''{0}'', because the parameter DelayLength is not a positive integer of type double, which is required by the parameter NumDelays of Integer Delay block. Please manually update the number of delays in the exported model.</entry>
+        <entry key="ReplacedBlockMaskFormat" translate="false">Replaced: %s</entry>
+        <entry key="SaveDataToMATLABFile">The model workspace contains data that cannot be loaded in Simulink {0}.  The workspace's data source has been changed to ''{1}''</entry>
+        <entry key="PILBlockCompatibility">You are saving a model (with configuration set "{0}"), configured for PIL, for use in an older release. You may see errors if you try to build this model in an older release.\n\nTo work around this issue,\n\n1) Open the model in the current release.\n2) Remove the PIL block configuration from the model (see your IDE Link component documentation for details).\n3) Use Save As to save the model for the earlier release.\n4) Open the model in the earlier release.\n5) Add the PIL block configuration to the model (see your IDE Link component documentation for details). </entry>
+        <entry key="PILBlockNotCreated">You are saving a model (with configuration set "{0}"), configured for PIL, for use in an older release. A PIL block will not be created when you build this model in an older release.\n\nTo work around this issue, open the model in the earlier release and add the PIL block configuration to the model before building it (see your IDE Link component documentation for details).</entry>
+
+        <entry key="AssertModelNameEmpty" translate="false">The model name should be empty, not "{0}".</entry>
+        <entry key="AssertTempModelEmpty" translate="false" note="stringDatatypeUpdate">The temporary model file name should be empty, not "{0}"</entry>
+        <entry key="AssertSnapshotCreation" translate="false">Failed to create model snapshot "{0}".</entry>
+        <entry key="ModelNotLoaded" translate="false">The model or library "{0}" is not loaded. </entry>   
+        <entry key="AssertModelNotLoaded1" translate="false">Model is loaded (1).</entry>
+        <entry key="AssertModelNotLoaded2" translate="false">Model is loaded (2).</entry>            
+        <entry key="AssertCharModelName" translate="false">The model name must have data type char</entry>
+        <entry key="AssertCharSaveAsFile" translate="false">The file path must have data type char</entry>
+        <entry key="AssertCharVersion" translate="false">The Simulink version must have data type char</entry>
+        <entry key="AssertModelFileExists" translate="false">The model file must exist: {0}</entry>
+        
+        <entry key="NoTargetFileName">No destination file was specified.</entry>
+        <entry key="TargetFileNameMustBeString" note="stringDatatypeUpdate">The destination file must be a character vector.</entry>
+   </message>
+</rsccat>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright 2011-2015 The MathWorks, Inc.-->
+<rsccat locale="en_US" product="Simulink" version="1.0">
+   <message>
+       <entry key="Tool_startpage_new_model_Label">Simulink Model</entry>
+       <entry key="Tool_startpage_new_model_Description">Creates a Simulink Model</entry>
+       <entry key="Tool_startpage_new_project_Label">Simulink Project</entry>
+       <entry key="Tool_startpage_new_project_Description">Options for creating new Simulink Project</entry>
+       <entry key="Tool_new_model_Label">Simulink Model</entry>
+       <entry key="Tool_new_model_Description">Creates a Simulink Model</entry>
+       <entry key="Tool_library_Label">Library Browser</entry>
+       <entry key="Tool_library_Description">Browse the library of available Simulink model elements</entry>
+       <entry key="Tool_project_Label">Simulink Project</entry>
+       <entry key="Tool_project_Description">Options for creating new Simulink Project</entry>
+       <entry key="Tool_project_group_Label">Simulink Project</entry>
+       <entry key="Tool_project_group_Description">Options for creating new Simulink Project</entry>
+       <entry key="Tool_new_project_Label">Templates</entry>
+       <entry key="Tool_new_project_Description">Create a Simulink Project from a template</entry>
+       <entry key="Tool_blank_project_Label">Blank Project</entry>
+       <entry key="Tool_blank_project_Description">Create empty project</entry>
+       <entry key="Tool_choose_template_Label">Choose Template...</entry>
+       <entry key="Tool_choose_template_Description">Choose a template to create a Simulink Project from</entry>
+       <entry key="Tool_external_sources_Label">External Sources</entry>
+       <entry key="Tool_external_sources_Description">Options for creating a new Simulink Project from external sources</entry>
+       <entry key="Tool_from_archive_Label">From Archive</entry>
+       <entry key="Tool_from_archive_Description">Create project from archive file</entry>
+       <entry key="Tool_from_source_control_Label">From Source Control</entry>
+       <entry key="Tool_from_source_control_Description">Create from source control</entry>
+       <entry key="RecentFiles_simulink_project_Label">Recent Simulink Projects</entry>
+   </message>
+</rsccat>

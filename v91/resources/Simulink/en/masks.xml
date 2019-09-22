@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2009-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+   <message>
+      <entry key="StateMatrixA_MP">State Matrix A:</entry>
+      <entry key="InputMatrixB_MP">Input Matrix B:</entry>
+      <entry key="OutputMatrixC_MP">Output Matrix C:</entry>
+      <entry key="DirectFeedthroughMatrixD_MP">Direct Feedthrough Matrix D:</entry>
+      <entry key="InitialConditionForState_MP">Initial condition for state:</entry>
+      <entry key="DataTypeForInternalCalculations_MP">Data type for internal calculations (e.g. fixdt(1, 16), fixdt(''single'')):</entry>
+      <entry key="ScalingForStateEquationAXBU_MP">Scaling for State Equation AX+BU (Slope, e.g. 2^-9):</entry>
+      <entry key="ScalingForOutputEquationCXDU_MP">Scaling for Output Equation CX+DU (Slope, e.g. 2^-9):</entry>
+      <entry key="LockOutputDataTypeAgainstFxpTools_MP">Lock output data type setting against changes by the fixed-point tools</entry>
+      <entry key="IntegerRoundingMode_MP">Integer rounding mode:</entry>
+      <entry key="SaturateToMaxOrMinWhenOverflowsOccur_MP">Saturate to max or min when overflows occur</entry>
+      <entry key="FixedPointStateSpace_MD">Discrete-time State-Space Realization</entry>
+      <entry key="NumeratorCoefficients_MP">Numerator coefficients:</entry>
+      <entry key="DenominatorCoefficientsExcludingLead_MP">Denominator coefficients excluding lead (which must be 1.0):</entry>
+      <entry key="InitialCondition_MP">Initial condition:</entry>
+      <entry key="TransferFcnDirectFormII_MD">A Direct Form II realization of the specified transfer function is used.  Only single input multiple output transfer functions are supported.  \n\nThe data types and scalings of the output, the coefficients, and any temporary variables are automatically selected.  The automatic choices will be acceptable in many situations.  In situations where the automatic choices give unacceptable results, manual layout of the filter is necessary.  For manual layout, it is suggested that the blocks under this mask be used as a starting point.\n\nNote 1:\nThe full denominator should have a leading coefficient of +1.0, but this leading coefficient should be excluded when entering the parameter.  For example, if the denominator is\n  den = \n            1         -1.7         0.72\njust enter\n  den(2:end)  =\n         -1.7         0.72\n\nNote 2:\nThe numerator must be the same size as the full denominator.</entry>
+      <entry key="TransferFcnDirectFormIITimeVarying_MD">A Direct Form II realization of the specified transfer function is used.  Only single input single output transfer functions are supported.  \n\nThe data types and scalings of the output, the coefficients, and any temporary variables are automatically selected.  The automatic choices will be acceptable in many situations.  In situations where the automatic choices give unacceptable results, manual layout of the filter is necessary.  For manual layout, it is suggested that the blocks under this mask be used as a starting point.\n\nNote 1:\nThe full denominator should have a leading coefficient of +1.0, but this leading coefficient should be excluded when entering the parameter.  For example, if the denominator is\n  den = \n            1         -1.7         0.72\njust enter\n  den(2:end)  =\n         -1.7         0.72\n\nNote 2:\nThe numerator must be the same size as the full denominator.</entry>
+      <entry key="SampleTime_MP">Sample time:</entry>
+      <entry key="UnitDelayEnabled_MD">Normally, the output is the signal u delayed by one sample period.\nWhen the enable signal is false, the block is disabled, and the state and output values do not change.  The enable action is vectorized and supports scalar expansion.</entry>
+      <entry key="UnitDelayEnabledExternalInitialCondition_MD">Normally, the output is the signal u delayed by one sample period.\nThe initial condition is given by the signal IC.\nWhen the enable signal is false, the block is disabled, and the state and output values do not change except for resets.  The enable action is vectorized and supports scalar expansion.</entry>
+      <entry key="UnitDelayEnabledResettable_MD">Normally, the output is the signal u delayed by one sample period.\nWhen the reset signal R is true, the state and the output are always set equal to the initial condition parameter.  This reset action is vectorized and supports scalar expansion.\nWhen the enable signal is false, the block is disabled, and the state and output values do not change except for resets.  The enable action is vectorized and supports scalar expansion.</entry>
+      <entry key="UnitDelayEnabledResettableExternalInitialCondition_MD">Normally, the output is the signal u delayed by one sample period.\nWhen the reset signal R is true, the state and the output are always set equal to the initial condition signal IC.  This reset action is vectorized and supports scalar expansion.\nWhen the enable signal is false, the block is disabled, and the state and output values do not change except for resets.  The enable action is vectorized and supports scalar expansion.</entry>
+      <entry key="UnitDelayExternalInitialCondition_MD">Normally, the output is the signal u delayed by one sample period.\nThe initial condition is given by the signal IC.</entry>
+      <entry key="UnitDelayResettable_MD">Normally, the output is the signal u delayed by one sample period.\nWhen the reset signal R is true, the state and the output are always set equal to the initial condition parameter.  This reset action is vectorized and supports scalar expansion.</entry>
+      <entry key="UnitDelayResettableExternalInitialCondition_MD">Normally, the output is the signal u delayed by one sample period.\nWhen the reset signal R is true, the state and the output are always set equal to the initial condition signal IC.  This reset action is vectorized and supports scalar expansion.</entry>
+      <entry key="UnitDelayWithPreviewEnabled_MD">The Unit Delay With Preview Enabled normally has one output equal to the signal u, and a second output which is a unit-delayed version of the first output.\n\nWhen the enable signal is false, the block is disabled, and the state and output values do not change except during resets.</entry>
+      <entry key="UnitDelayWithPreviewEnabledResettable_MD">The Unit Delay With Preview Enabled Resettable normally has one output equal to the signal u, and a second output which is a unit-delayed version of the first output.\n\nWhen the external reset signal R is true, the first output signal is forced to equal the initial condition. The second output signal is not affected until one time step later. The internal initial condition is also used to initialize the state when the model starts or when a parent enabled subsystem is reset.\n\nWhen the enable signal is false, the block is disabled, and the state and output values do not change except during resets.</entry>
+      <entry key="UnitDelayWithPreviewEnabledResettableExternalRV_MD">The Unit Delay With Preview Enabled Resettable External RV has both an external reset value RV and an internal initial condition. Normally, this block has one output equal to the signal u, and a second output which is a unit-delayed version of the first output.\n\nWhen the reset signal R is true, the first output signal is forced to equal RV. The second output signal is not affected until one time step later. The internal initial condition has a direct effect on the second output only when the model starts or when a parent enabled subsystem is reset.\n\nWhen the enable signal is false, the block is disabled, and the state and output values do not change except during resets.</entry>
+      <entry key="UnitDelayWithPreviewResettable_MD">The Unit Delay With Preview Resettable normally has one output equal to the signal u, and a second output which is a unit-delayed version of the first output.\n\nWhen the reset signal R is true, the first output signal is forced to equal the initial condition.  The second output signal is not affected until one time step later.  The internal initial condition is also used to initialize the state when the model starts or when a parent enabled subsystem is reset.</entry>
+      <entry key="UnitDelayWithPreviewResettableExternalRV_MD">The Unit Delay With Preview Resettable External RV has both an external reset value RV and an internal initial condition.  This block normally has one output equal to the signal u, and a second output which is a unit-delayed version of the first output.\n\nWhen the reset signal R is true, the first output signal is forced to equal RV. The second output signal is not affected until one time step later. The internal initial condition has a direct effect on the second output only when the model starts or when a parent enabled subsystem is reset.</entry>
+      <entry key="RealWorldValueDecrement_MD">Decrease the Real World Value of Signal by 1.0\nOverflows will always wrap.</entry>
+      <entry key="StoredIntegerValueDecrement_MD">Decrease the Stored Value of Signal by 1\nFloating Point signals are decreased by 1.0\nOverflows will always wrap.</entry>
+      <entry key="DecrementToZero_MD">Decrease the Real World Value of Signal by 1.0,\nbut never go below zero.</entry>
+      <entry key="DecrementTimeToZero_MD">Decrease the Real World Value of Signal by the Sample Time Ts,\nbut never go below zero.\n\nThis block only works with fixed sample rates, so it will not work inside a triggered subsystem.</entry>
+      <entry key="RealWorldValueIncrement_MD">Increase the Real World Value of Signal by 1.0\nOverflows will always wrap.</entry>
+      <entry key="StoredIntegerValueIncrement_MD">Increase the Stored Value of Signal by 1\nFloating Point signals are increased by 1.0\nOverflows will always wrap.</entry>
+      <!-- PID Mask Prompt and Dialog text -->
+      <entry key="Controller_MP">Controller:</entry>
+      <entry key="TimeDomain_MP">Time domain:</entry>
+      <entry key="ContinuousTime_MP">Continuous-time</entry>
+      <entry key="DiscreteTime_MP">Discrete-time</entry>
+      <entry key="SampleTime1ForInherited_MP">Sample time (-1 for inherited):</entry>
+      <entry key="DiscreteTimeSettings_GT">Discrete-time settings</entry>
+      <entry key="IntegratorMethod_MP">Integrator method:</entry>
+      <entry key="FilterMethod_MP">Filter method:</entry>
+      <entry key="Form_MP">Form:</entry>
+      <entry key="ControllerParameters_GT">Controller parameters</entry>
+      <entry key="ProportionalP_MP">Proportional (P):</entry>
+      <entry key="IntegralI_MP">Integral (I):</entry>
+      <entry key="DerivativeD_MP">Derivative (D):</entry>
+      <entry key="UseFilter_MP">Use filtered derivative</entry>
+      <entry key="FilterCoefficientN_MP">Filter coefficient (N):</entry>
+      <entry key="PIDTune">Tune...</entry>
+      <entry key="InitialConditions_GT">Initial conditions</entry>
+      <entry key="Source_MP">Source:</entry>
+      <entry key="Integrator_MP">Integrator:</entry>
+      <entry key="Filter_MP">Filter:</entry>
+      <entry key="ExternalReset_MP">External reset:</entry>
+      <entry key="IgnoreResetWhenLinearizing_MP">Ignore reset when linearizing</entry>
+      <entry key="EnableZerocrossingDetection_MP">Enable zero-crossing detection</entry>
+      <entry key="PIDAdvanced_TAB">PID Advanced</entry>
+      <entry key="OutputSaturation_GT">Output saturation</entry>
+      <entry key="LimitOutput_MP">Limit output</entry>
+      <entry key="UpperSaturationLimit_MP">Upper saturation limit:</entry>
+      <entry key="LowerSaturationLimit_MP">Lower saturation limit:</entry>
+      <entry key="IgnoreSaturationWhenLinearizing_MP">Ignore saturation when linearizing</entry>
+      <entry key="AntiwindupMethod_MP">Anti-windup method:</entry>
+      <entry key="BackcalculationCoefficientKb_MP">Back-calculation coefficient (Kb):</entry>
+      <entry key="TrackingMode_GT">Tracking mode</entry>
+      <entry key="EnableTrackingMode_MP">Enable tracking mode</entry>
+      <entry key="TrackingCoefficientKt_MP">Tracking coefficient (Kt):</entry>
+      <entry key="SaturateOnIntegerOverflow_MP">Saturate on integer overflow</entry>
+      <entry key="LockDataTypeAgainstFxpTools_MP">Lock data type settings against changes by the fixed-point tools</entry>
+      <entry key="PParameterMinimum_MP">P parameter minimum:</entry>
+      <entry key="PParameterMaximum_MP">P parameter maximum:</entry>
+      <entry key="PParameter_MP">P parameter:</entry>
+      <entry key="IParameterMinimum_MP">I parameter minimum:</entry>
+      <entry key="IParameterMaximum_MP">I parameter maximum:</entry>
+      <entry key="IParameter_MP">I parameter:</entry>
+      <entry key="DParameterMinimum_MP">D parameter minimum:</entry>
+      <entry key="DParameterMaximum_MP">D parameter maximum:</entry>
+      <entry key="DParameter_MP">D parameter:</entry>
+      <entry key="NParameterMinimum_MP">N parameter minimum:</entry>
+      <entry key="NParameterMaximum_MP">N parameter maximum:</entry>
+      <entry key="NParameter_MP">N parameter:</entry>
+      <entry key="KbParameterMinimum_MP">Kb parameter minimum:</entry>
+      <entry key="KbParameterMaximum_MP">Kb parameter maximum:</entry>
+      <entry key="KbParameter_MP">Kb parameter:</entry>
+      <entry key="KtParameterMinimum_MP">Kt parameter minimum:</entry>
+      <entry key="KtParameterMaximum_MP">Kt parameter maximum:</entry>
+      <entry key="KtParameter_MP">Kt parameter:</entry>
+      <entry key="PProductOutputMinimum_MP">P product output minimum:</entry>
+      <entry key="PProductOutputMaximum_MP">P product output maximum:</entry>
+      <entry key="PProductOutput_MP">P product output:</entry>
+      <entry key="IProductOutputMinimum_MP">I product output minimum:</entry>
+      <entry key="IProductOutputMaximum_MP">I product output maximum:</entry>
+      <entry key="IProductOutput_MP">I product output:</entry>
+      <entry key="DProductOutputMinimum_MP">D product output minimum:</entry>
+      <entry key="DProductOutputMaximum_MP">D product output maximum:</entry>
+      <entry key="DProductOutput_MP">D product output:</entry>
+      <entry key="NProductOutputMinimum_MP">N product output minimum:</entry>
+      <entry key="NProductOutputMaximum_MP">N product output maximum:</entry>
+      <entry key="NProductOutput_MP">N product output:</entry>
+      <entry key="KbProductOutputMinimum_MP">Kb product output minimum:</entry>
+      <entry key="KbProductOutputMaximum_MP">Kb product output maximum:</entry>
+      <entry key="KbProductOutput_MP">Kb product output:</entry>
+      <entry key="KtProductOutputMinimum_MP">Kt product output minimum:</entry>
+      <entry key="KtProductOutputMaximum_MP">Kt product output maximum:</entry>
+      <entry key="KtProductOutput_MP">Kt product output:</entry>
+      <entry key="IntegratorOutputMinimum_MP">Integrator output minimum:</entry>
+      <entry key="IntegratorOutputMaximum_MP">Integrator output maximum:</entry>
+      <entry key="IntegratorOutput_MP">Integrator output:</entry>
+      <entry key="FilterOutputMinimum_MP">Filter output minimum:</entry>
+      <entry key="FilterOutputMaximum_MP">Filter output maximum:</entry>
+      <entry key="FilterOutput_MP">Filter output:</entry>
+      <entry key="DifferentiatorOutputMinimum_MP">Differentiator output minimum:</entry>
+      <entry key="DifferentiatorOutputMaximum_MP">Differentiator output maximum:</entry>
+      <entry key="DifferentiatorOutput_MP">Differentiator output:</entry>
+      <entry key="SumOutputMinimum_MP">Sum output minimum:</entry>
+      <entry key="SumOutputMaximum_MP">Sum output maximum:</entry>
+      <entry key="SumOutput_MP">Sum output:</entry>
+      <entry key="SumI1OutputMinimum_MP">SumI1 output minimum:</entry>
+      <entry key="SumI1OutputMaximum_MP">SumI1 output maximum:</entry>
+      <entry key="SumI1Output_MP">SumI1 output:</entry>
+      <entry key="SumI2OutputMinimum_MP">SumI2 output minimum:</entry>
+      <entry key="SumI2OutputMaximum_MP">SumI2 output maximum:</entry>
+      <entry key="SumI2Output_MP">SumI2 output:</entry>
+      <entry key="SumI3OutputMinimum_MP">SumI3 output minimum:</entry>
+      <entry key="SumI3OutputMaximum_MP">SumI3 output maximum:</entry>
+      <entry key="SumI3Output_MP">SumI3 output:</entry>
+      <entry key="SumDOutputMinimum_MP">SumD output minimum:</entry>
+      <entry key="SumDOutputMaximum_MP">SumD output maximum:</entry>
+      <entry key="SumDOutput_MP">SumD output:</entry>
+      <entry key="AccumulatorOfSum_MP">Accumulator of Sum:</entry>
+      <entry key="AccumulatorOfSumI1_MP">Accumulator of SumI1:</entry>
+      <entry key="AccumulatorOfSumI2_MP">Accumulator of SumI2:</entry>
+      <entry key="AccumulatorOfSumI3_MP">Accumulator of SumI3:</entry>
+      <entry key="AccumulatorOfSumD_MP">Accumulator of SumD:</entry>
+      <entry key="SaturationOutputMinimum_MP">Saturation output minimum:</entry>
+      <entry key="SaturationOutputMaximum_MP">Saturation output maximum:</entry>
+      <entry key="SaturationOutput_MP">Saturation output:</entry>
+      <entry key="IntegratorState_GT">Integrator State</entry>
+      <entry key="FilterState_GT">Filter State</entry>
+      <entry key="StateNameegposition_MP">State name: (e.g., ''position'')</entry>
+      <entry key="StateName_MP">State name:</entry>
+      <entry key="StateNameMustResolveToSimulinkSignalObject_MP">State name must resolve to Simulink signal object</entry>
+      <entry key="CodeGenerationStorageClass_MP">Code generation storage class:</entry>
+      <entry key="CodeGenerationStorageTypeQualifier_MP">Code generation storage type qualifier:</entry>
+      <entry key="PID1dof_MD">This block implements continuous- and discrete-time PID control algorithms and includes advanced features such as anti-windup, external reset, and signal tracking. You can tune the PID gains automatically using the ''Tune...'' button (requires Simulink Control Design).</entry>
+      <entry key="SetpointWeightb_MP">Setpoint weight (b):</entry>
+      <entry key="SetpointWeightc_MP">Setpoint weight (c):</entry>
+      <entry key="bParameterMinimum_MP">b parameter minimum:</entry>
+      <entry key="bParameterMaximum_MP">b parameter maximum:</entry>
+      <entry key="bParameter_MP">b parameter:</entry>
+      <entry key="cParameterMinimum_MP">c parameter minimum:</entry>
+      <entry key="cParameterMaximum_MP">c parameter maximum:</entry>
+      <entry key="cParameter_MP">c parameter:</entry>
+      <entry key="bProductOutputMinimum_MP">b product output minimum:</entry>
+      <entry key="bProductOutputMaximum_MP">b product output maximum:</entry>
+      <entry key="bProductOutput_MP">b product output:</entry>
+      <entry key="cProductOutputMinimum_MP">c product output minimum:</entry>
+      <entry key="cProductOutputMaximum_MP">c product output maximum:</entry>
+      <entry key="cProductOutput_MP">c product output:</entry>
+      <entry key="Sum1OutputMinimum_MP">Sum1 output minimum:</entry>
+      <entry key="Sum1OutputMaximum_MP">Sum1 output maximum:</entry>
+      <entry key="Sum1Output_MP">Sum1 output:</entry>
+      <entry key="Sum2OutputMinimum_MP">Sum2 output minimum:</entry>
+      <entry key="Sum2OutputMaximum_MP">Sum2 output maximum:</entry>
+      <entry key="Sum2Output_MP">Sum2 output:</entry>
+      <entry key="Sum3OutputMinimum_MP">Sum3 output minimum:</entry>
+      <entry key="Sum3OutputMaximum_MP">Sum3 output maximum:</entry>
+      <entry key="Sum3Output_MP">Sum3 output:</entry>
+      <entry key="AccumulatorOfSum1_MP">Accumulator of Sum1:</entry>
+      <entry key="AccumulatorOfSum2_MP">Accumulator of Sum2:</entry>
+      <entry key="AccumulatorOfSum3_MP">Accumulator of Sum3:</entry>
+      <entry key="PID2dof_MD">This block implements continuous- and discrete-time PID control algorithms with setpoint weighting and includes advanced features such as anti-windup, external reset, and signal tracking. You can tune the PID gains automatically using the ''Tune...'' button (requires Simulink Control Design).</entry>
+      <entry key="discretePIDToolTip">Discretization methods other than ''Forward Euler'' currently do not support code generation, and fixed-point simulations.</entry>
+      <entry key="PIDCompensatorFormula">Compensator formula</entry>
+      <entry key="UnknownMaskType">Unknown mask type: {0}</entry>
+      <entry key="UnknownMaskTypeMfile">Unknown mask type in PIDMasks {0}</entry>
+      <entry key="CreateDialogError">Error occurred when trying to create dialog:</entry>
+      <entry key="Differentiator_MP">Differentiator:</entry>
+      <!-- End of PID Mask Prompt and Dialog text -->
+      <entry key="CoulombFrictionValueOffset_MP">Coulomb friction value (Offset):</entry>
+      <entry key="CoefficientOfViscousFrictionGain_MP">Coefficient of viscous friction (Gain):</entry>
+      <entry key="CoulombicAndViscousFriction_MD">A discontinuity offset at zero models coulomb friction.  Linear gain models viscous friction.\ny = sign(x) * (Gain * abs(x) + Offset)</entry>
+      <entry key="DeadZoneDynamic_MD">Output zero for inputs within a dead zone.  Offset input signals by either the Start or End value when outside of the dead zone.</entry>
+      <entry key="RateLimiterDynamic_MD">Limit rising and falling rates of the signals at the second input by using the first input (upper limit) and the third input (lower limit).</entry>
+      <entry key="OutputMinimum_MP">Output minimum:</entry>
+      <entry key="OutputMaximum_MP">Output maximum:</entry>
+      <entry key="OutputDataType_MP">Output data type:</entry>
+      <entry key="OutputDataTypeMode_MP">Output data type mode:</entry>
+      <entry key="OutputDataTypeegFixdt116Fixdtsingle_MP">Output data type (e.g. fixdt(1, 16), fixdt(''single'')):</entry>
+      <entry key="OutputScalingSlopeEg29OrSlopeBias_MP">Output scaling (Slope, e.g. 2^-9 or [Slope Bias], e.g. [1.25 3]):</entry>
+      <entry key="SaturationDynamic_MD">Bound the range of the second input by using the first input (upper limit) and the third input (lower limit).</entry>
+      <entry key="Threshold_MP">Threshold:</entry>
+      <entry key="WrapToZero_MD">If the input is above the threshold, the output is zero, otherwise the output equals the input.</entry>
+      <entry key="InitialConditionForPreviousInput_MP">Initial condition for previous input:</entry>
+      <entry key="Difference_MD">Output the current input value minus the previous input value.</entry>
+      <entry key="GainValue_MP">Gain value:</entry>
+      <entry key="InitialConditionForPreviousWeightedInputKuTs_MP">Initial condition for previous weighted input K*u/Ts:</entry>
+      <entry key="DiscreteDerivative_MD">Discrete-time derivative of the input.\n\nThis block only works with fixed sample rates. Do not use this block in subsystems with a non-periodic trigger.</entry>
+      <entry key="FirstOrderHold_MD">First-order hold.</entry>
+      <entry key="NumberOfDelays_MP">Number of delays:</entry>
+      <entry key="InputProcessing_MP">Input processing:</entry>
+      <entry key="IntegerDelay_MD">Delay a signal N sample periods.</entry>
+      <entry key="OrderOutputVectorStartingWith_MP">Order output vector starting with:</entry>
+      <entry key="IncludeCurrentInputInOutputVector_MP">Include current input in output vector</entry>
+      <entry key="TappedDelayLine_MD">Delay a signal N sample periods and output all the delay versions.</entry>
+      <entry key="PoleinZPlane_MP">Pole (in Z plane):</entry>
+      <entry key="InitialConditionForPreviousOutput_MP">Initial condition for previous output:</entry>
+      <entry key="FirstOrderTransferFcn_MD">Discrete-time first order transfer function.  The transfer function has a unity DC gain.</entry>
+      <entry key="PoleOfCompensatorinZPlane_MP">Pole of compensator (in Z plane):</entry>
+      <entry key="ZeroOfCompensatorinZPlane_MP">Zero of compensator (in Z plane):</entry>
+      <entry key="LeadOrLagCompensator_MD">Discrete-time lead or lag compensator.  The compensator has a unity instantaneous gain, the DC gain equals (1-Zero)/(1-Pole).\n\nLead compensation is obtained when 0 &lt; Pole &lt; Zero &lt; 1.\nLag compensation is obtained when 0 &lt; Zero &lt; Pole &lt; 1.</entry>
+      <entry key="ZeroinZPlane_MP">Zero (in Z plane):</entry>
+      <entry key="TransferFcnRealZero_MD">Discrete-time transfer function that has a real zero and (effectively) has no pole.</entry>
+      <entry key="IndexOfBit0IsLeastSignificant_MP">Index of bit (0 is least significant):</entry>
+      <entry key="BitClear_MD">Clear ith bit of the stored integer to 0.  Scaling is ignored.</entry>
+      <entry key="BitSet_MD">Set ith bit of the stored integer to 1.  Scaling is ignored.</entry>
+      <entry key="Operator_MP">Operator:</entry>
+      <entry key="UseBitMask_MP">Use bit mask ...</entry>
+      <entry key="NumberOfInputPorts_MP">Number of input ports:</entry>
+      <entry key="BitMask_MP">Bit Mask</entry>
+      <entry key="TreatMaskAs_MP">Treat mask as:</entry>
+      <entry key="BitwiseOperator_MD">Perform the specified bitwise operation on the inputs. The output data type should represent zero exactly.</entry>
+      <entry key="ConstantValue_MP">Constant value:</entry>
+      <entry key="CompareToConstant_MD">Determine how a signal compares to a constant.</entry>
+      <entry key="CompareToZero_MD">Determine how a signal compares to zero.</entry>
+      <entry key="DetectChange_MD">If the input does not equal its previous value, then output TRUE, otherwise output FALSE.  The initial condition determines the initial value of the previous input U/z.</entry>
+      <entry key="DetectDecrease_MD">If the input is strictly less than its previous value, then output TRUE, otherwise output FALSE.  The initial condition determines the initial value of the previous input U/z.</entry>
+      <entry key="DetectIncrease_MD">If the input is strictly greater than its previous value, then output TRUE, otherwise output FALSE.  The initial condition determines the initial value of the previous input U/z.</entry>
+      <entry key="DetectFallNegative_MD">If the input is strictly negative and its previous value was nonnegative, then output TRUE, otherwise output FALSE.  The initial condition determines the initial value of the boolean expression (U/z &lt; 0).</entry>
+      <entry key="DetectFallNonpositive_MD">If the input is nonpositive and its previous value was strictly positive, then output TRUE, otherwise output FALSE.  The initial condition determines the initial value of the boolean expression (U/z &lt;= 0).</entry>
+      <entry key="DetectRiseNonnegative_MD">If the input is nonnegative and its previous value was strictly negative, then output TRUE, otherwise output FALSE.  The initial condition determines the initial value of the boolean expression (U/z &gt;= 0).</entry>
+      <entry key="DetectRisePositive_MD">If the input is strictly positive and its previous value was nonpositive, then output TRUE, otherwise output FALSE.  The initial condition determines the initial value of the boolean expression (U/z &gt; 0).</entry>
+      <entry key="BitsToExtract_MP">Bits to extract:</entry>
+      <entry key="NumberOfBits_MP">Number of bits:</entry>
+      <entry key="BitIndicesstartEnd0basedRelativeToLSB_MP">Bit indices ([start end], 0-based relative to LSB):</entry>
+      <entry key="OutputScalingMode_MP">Output scaling mode:</entry>
+      <entry key="ExtractBits_MD">Output selected bits from each of the fixed-point input samples. Selecting "Upper half" or "Lower half" results in a positive number of bits in the output word length, according to the equation numOutputBits = ceil(numInputBits / 2).</entry>
+      <entry key="IntervalClosedOnRight_MP">Interval closed on right</entry>
+      <entry key="UpperLimit_MP">Upper limit:</entry>
+      <entry key="IntervalClosedOnLeft_MP">Interval closed on left</entry>
+      <entry key="LowerLimit_MP">Lower limit:</entry>
+      <entry key="IntervalTest_MD">If the input is in the interval between the lower limit and the upper limit, then the output is TRUE, otherwise it is FALSE.</entry>
+      <entry key="IntervalTestDynamic_MD">If the input is in the interval between the lower limit and the upper limit, then the output is TRUE, otherwise it is FALSE.</entry>
+      <entry key="OutputFormula_MP">Output formula</entry>
+      <entry key="NumberOfDataPointsForLookupTable_MP">Number of data points for lookup table:</entry>
+      <entry key="OutputWordLength_MP">Output word length:</entry>
+      <entry key="InternalRulePriorityForLookupTable_MP">Internal rule priority for lookup table:</entry>
+      <entry key="SineAndCosine_MD">Implement sine and cosine functions in fixed point using a lookup table approach that exploits quarter wave symmetry. The output fraction length equals the output word length minus 2.\n\nThe most efficient implementation is obtained when the number of data points is (2^n)+1 where n is an integer.</entry>
+      <entry key="LookupMethod_MP">Lookup Method:</entry>
+      <entry key="LookupTableDynamic_MD">Approximate a one-dimensional function using a selected lookup method.</entry>
+      <entry key="InitialGuess_MP">Initial guess:</entry>
+      <entry key="AlgebraicConstraint_MD">Constrains input signal f(z) to zero and outputs an algebraic state z. This block outputs the value necessary to produce a zero at the input. The output must affect the input through some feedback path. Provide an initial guess of the output to improve algebraic loop solver efficiency.</entry>
+      <entry key="Function_MP">Function:</entry>
+      <entry key="MinMaxRunningResettable_MD">Output the max or min of all past inputs u.  The output is reset to the initial condition when the Reset input signal R is TRUE.  This reset action is vectorized and supports scalar expansion.</entry>
+      <entry key="Low_MP">Low</entry>
+      <entry key="Gain_MP">Gain</entry>
+      <entry key="High_MP">High</entry>
+      <entry key="MaximumGradient_MP">Maximum gradient:</entry>
+      <entry key="EnableAssertion_MP">Enable assertion</entry>
+      <entry key="SimulationCallbackWhenAssertionFails_MP">Simulation callback when assertion fails (optional):</entry>
+      <entry key="StopSimulationWhenAssertionFails_MP">Stop simulation when assertion fails</entry>
+      <entry key="OutputAssertionSignal_MP">Output assertion signal</entry>
+      <entry key="SelectIconType_MP">Select icon type:</entry>
+      <entry key="Checks_Gradient_MD">Assert that the absolute value of the difference between successive samples of a discrete signal is less than an upper bound.</entry>
+      <entry key="Checks_DGap_MD">Assert that the input signal ''sig'' is always less than the lower bound ''min'' or greater than the upper bound ''max''.  The first input is the upper-bound of the gap; the second input, the lower-bound; the third input, the test signal.</entry>
+      <entry key="Checks_DRange_MD">Assert that one signal always lies between two other signals.  The first input is the upper-bound signal; the second input, the lower-bound; the third input, the test signal.</entry>
+      <entry key="UpperBound_MP">Upper bound:</entry>
+      <entry key="InclusiveUpperBound_MP">Inclusive upper bound</entry>
+      <entry key="LowerBound_MP">Lower bound:</entry>
+      <entry key="InclusiveLowerBound_MP">Inclusive lower bound</entry>
+      <entry key="Checks_SGap_MD">Assert that the input signal is less than (or optionally equal to) a static lower bound or greater than (or optionally equal to) a static upper bound.</entry>
+      <entry key="Checks_SRange_MD">Assert that the input signal lies between a static lower and upper bound or optionally equals either bound. </entry>
+      <entry key="Checks_DMin_MD">Assert that one signal is always less than another signal.  The first input is the lower-bound signal.  The second input is the test signal.</entry>
+      <entry key="Checks_DMax_MD">Assert that one signal is always greater than another signal.  The first input is the upper-bound signal.  The second input is the test signal.</entry>
+      <entry key="Resolution_MP">Resolution:</entry>
+      <entry key="Checks_Resolution_MD">Assert that the input signal has a specified resolution.  If the resolution is a scalar, the input signal must be a multiple of the resolution within a 10e-3 tolerance.  If the resolution is a vector, the input signal must equal an element of the resolution vector.</entry>
+      <entry key="InclusiveBoundary_MP">Inclusive boundary</entry>
+      <entry key="Checks_SMin_MD">Assert that the input signal is greater than (or optionally equal to) a static lower bound.</entry>
+      <entry key="Checks_SMax_MD">Assert that the input signal is less than (or optionally equal to) a static upper bound.\n</entry>
+      <entry key="BlockSupportTable_MD">Double-clicking the block will launch the Simulink Block Data Type Support Table.</entry>
+      <entry key="DocBlockEmbeddedCoderFlagLabel_MP">Code generation template symbol</entry>
+      <entry key="DocBlockDocTypeLabel_MP">Document type</entry>
+      <entry key="DocBlock_MD">Use this block to save long descriptive text with the model.  Double-clicking the block will open an editor.</entry>
+      <entry key="InitialSaveTempField_MP" translate="false">InitialSaveTempField</entry>
+      <entry key="InitialBlockCM_MP" translate="false">InitialBlockCM</entry>
+      <entry key="BlockCM_MP" translate="false">BlockCM</entry>
+      <entry key="Frame_MP">Frame</entry>
+      <entry key="SaveTempField_MP" translate="false">SaveTempField</entry>
+      <entry key="DisplayStringWithTags_MP" translate="false">DisplayStringWithTags</entry>
+      <entry key="MaskDisplayString_MP" translate="false">MaskDisplayString</entry>
+      <entry key="HorizontalTextAlignment_MP" translate="false">HorizontalTextAlignment</entry>
+      <entry key="LeftAlignmentValue_MP" translate="false">LeftAlignmentValue</entry>
+      <entry key="SourceBlockDiagram_MP" translate="false">SourceBlockDiagram</entry>
+      <entry key="TagMaxNumber_MP" translate="false">TagMaxNumber</entry>
+      <entry key="CMTag1_MP" translate="false">CMTag1</entry>
+      <entry key="CMTag2_MP" translate="false">CMTag2</entry>
+      <entry key="CMTag3_MP" translate="false">CMTag3</entry>
+      <entry key="CMTag4_MP" translate="false">CMTag4</entry>
+      <entry key="CMTag5_MP" translate="false">CMTag5</entry>
+      <entry key="CMTag6_MP" translate="false">CMTag6</entry>
+      <entry key="CMTag7_MP" translate="false">CMTag7</entry>
+      <entry key="CMTag8_MP" translate="false">CMTag8</entry>
+      <entry key="CMTag9_MP" translate="false">CMTag9</entry>
+      <entry key="CMTag10_MP" translate="false">CMTag10</entry>
+      <entry key="CMTag11_MP" translate="false">CMTag11</entry>
+      <entry key="CMTag12_MP" translate="false">CMTag12</entry>
+      <entry key="CMTag13_MP" translate="false">CMTag13</entry>
+      <entry key="CMTag14_MP" translate="false">CMTag14</entry>
+      <entry key="CMTag15_MP" translate="false">CMTag15</entry>
+      <entry key="CMTag16_MP" translate="false">CMTag16</entry>
+      <entry key="CMTag17_MP" translate="false">CMTag17</entry>
+      <entry key="CMTag18_MP" translate="false">CMTag18</entry>
+      <entry key="CMTag19_MP" translate="false">CMTag19</entry>
+      <entry key="CMTag20_MP" translate="false">CMTag20</entry>
+      <entry key="CMBlock_MD">This block allows revision control information to be displayed within the model.</entry>
+      <entry key="LinearizationTime_MP">Linearization time:</entry>
+      <entry key="SampleTimeofLinearizedModel_MP">Sample time (of linearized model):</entry>
+      <entry key="TimedLinearization_MD">Generate linear models in the base workspace at specific times.\n</entry>
+      <entry key="TriggerType_MP">Trigger type:</entry>
+      <entry key="TriggeredLinearization_MD">Generates linear models in the base workspace when triggered.</entry>
+      <entry key="IOPortSubsystem_MD">A subsystem block template containing an inport and outport block.</entry>
+      <entry key="EnabledSubsystem_MD">A subsystem block template containing an enable port, inport and outport block.</entry>
+      <entry key="ResettableSubsystem_MD">A subsystem block template containing a reset port, inport and outport block.</entry>
+      <entry key="EnabledAndTriggeredSubsystem_MD">A subsystem block template containing an enable port, trigger port, inport and outport block.</entry>
+      <entry key="ForEachSubsystem_MD">A subsystem block template containing a for each, inport and outport block.</entry>
+      <entry key="ObserverSubsystem_MD">A subsystem block template containing a Observer Port Block.</entry>
+      <entry key="ForIteratorSubsystem_MD">A subsystem block template containing a for iterator, inport and outport block.</entry>
+      <entry key="SynchronousSubsystem_MP">A subsystem block template containing a state control, inport, and outport block.</entry>
+      <entry key="EnabledSynchronousSubsystem_MP">A subsystem block template containing an enable port, state control, inport, and outport block.</entry>
+      <entry key="ResettableSynchronousSubsystem_MP">A subsystem block template containing a reset port, state control, inport, and outport block.</entry>
+      <entry key="NumberOfIterations_MP">Number of iterations:</entry>
+      <entry key="FunctionCallGenerator_MD">Execute function-call subsystems, models, or Stateflow charts that are connected to this block at a specified rate. To execute multiple function-call blocks in prescribed order, use this block in conjunction with a Function-Call Split block. \n\nThe ''Sample time'' parameter specifies the rate at which this block executes each function-call block connected to it. To iteratively execute each function-call block connected to this block multiple times at each time step,  use the ''Number of iterations'' parameter.</entry>
+      <entry key="FunctionCallSubsystem_MD">A subsystem block template containing a function-call trigger port, inport and outport block.</entry>
+      <entry key="SimulinkFunction_MD">A subsystem block template containing a function-call trigger port, input and output argument blocks.</entry>
+      <entry key="InitializeFunction_MD">A subsystem block template containing an event-listener block set to 'Initialize' Event, a ground block and a state writer block.</entry>
+      <entry key="TerminateFunction_MD">A subsystem block template containing an event-listener block set to 'Terminate' Event, a state reader and terminator blocks.</entry>
+      <entry key="ActionSubsystem_MD">A subsystem block template containing an action port, inport and outport block.</entry>
+      <entry key="SubsystemExamples_MD">These are examples of how to use the different types of subsystems.</entry>
+      <entry key="TriggeredSubsystem_MD">A subsystem block template containing a trigger port, inport and outport block.</entry>
+      <entry key="VariantSubsystem_MD">A Variant Subsystem template containing an inport and outport block</entry>
+      <entry key="WhileIteratorSubsystem_MD">A subsystem block template containing a while iterator, inport and outport block.</entry>
+      <entry key="InputAndOutputToHaveEqual_MP">Input and Output to have equal:</entry>
+      <entry key="ConversionInherited_MD">Convert the second input to the data type and scaling of the first input.  \n\nThe conversion has two possible goals.  One goal is to have the Real World Values of the input and the output be equal.  The other goal is to have the Stored Integer Values of the input and the output be equal.  Overflows and quantization errors can prevent the goal from being fully achieved.</entry>
+      <entry key="x1PropagatedDataType_MP">1. Propagated data type:</entry>
+      <entry key="x11PropagatedDataTypeegFixdt116Fixdtsingle_MP">1.1. Propagated data type (e.g. fixdt(1, 16), fixdt(''single'')):</entry>
+      <entry key="x11IfAnyReferenceInputIsDoubleOutputIs_MP">1.1. If any reference input is double, output is:</entry>
+      <entry key="x12IfAnyReferenceInputIsSingleOutputIs_MP">1.2. If any reference input is single, output is:</entry>
+      <entry key="x13IsSigned_MP">1.3. Is-Signed:</entry>
+      <entry key="x141NumberofBitsBase_MP">1.4.1. Number-of-Bits: Base</entry>
+      <entry key="x142NumberofBitsMultiplicativeAdjustment_MP">1.4.2. Number-of-Bits: Multiplicative adjustment</entry>
+      <entry key="x143NumberofBitsAdditiveAdjustment_MP">1.4.3. Number-of-Bits: Additive adjustment</entry>
+      <entry key="x144NumberofBitsAllowableFinalValues_MP">1.4.4. Number-of-Bits: Allowable final values</entry>
+      <entry key="x2PropagatedScaling_MP">2. Propagated scaling:</entry>
+      <entry key="x21PropagatedScalingSlopeEg29OrSlopeBiasEg1253_MP">2.1. Propagated scaling (Slope, e.g. 2^-9 or [Slope Bias], e.g. [1.25 3]):</entry>
+      <entry key="x21ValuesUsedToDetermineBestPrecisionScaling_MP">2.1. Values used to determine best precision scaling.</entry>
+      <entry key="x211SlopeBase_MP">2.1.1. Slope: Base</entry>
+      <entry key="x212SlopeMultiplicativeAdjustment_MP">2.1.2. Slope: Multiplicative adjustment</entry>
+      <entry key="x213SlopeAdditiveAdjustment_MP">2.1.3. Slope: Additive adjustment</entry>
+      <entry key="x221BiasBase_MP">2.2.1. Bias: Base</entry>
+      <entry key="x222BiasMultiplicativeAdjustment_MP">2.2.2. Bias: Multiplicative adjustment:</entry>
+      <entry key="x223BiasAdditiveAdjustment_MP">2.2.3. Bias: Additive adjustment:</entry>
+      <entry key="DataTypePropagation_MD">Set the Data Type and Scaling of the propagated signal based on information from the reference signals.\nNotes:\n1) Items closer to the top of the dialog have higher priority/precedence.\na) Reference inputs of type double have priority over all others.\nb) Singles have priority over integer and fixed point data types.\nc) Multiplicative adjustments are carried out before additive adjustments.\nd) Number-of-Bits is determined before the precision or positive-range is inherited from the reference signals.\n2) PosRange is one bit higher than the exact maximum positive range of the signal.\n3) The computed Number-of-Bits is promoted to the smallest allowable value that is greater than or equal.  If none exists, then error.</entry>
+      <entry key="DataTypePropagationExamples_MD">Opens a model containing data type propagation examples.</entry>
+      <entry key="ScalingStrip_MD">This block strips the scaling off a fixed point signal.  It maps the input data type to the smallest built-in data type that has sufficient bits to hold the input.  The stored Integer Value of the input will be the value of the output.  The output always has nominal scaling (slope = 1.0 and bias = 0.0), so the output does not have a distinction between Real World Value and Stored Integer Value.</entry>
+      <entry key="EnvironmentController_MD">Output the simulation (Sim) or code generation (Coder) port depending on the current environment.  With optimizations enabled, unnecessary blocks leading to the unused port are not executed.  Both input signals must be the same width.</entry>
+      <entry key="xmin_MP">X-min:</entry>
+      <entry key="xmax_MP">X-max:</entry>
+      <entry key="ymin_MP">Y-min:</entry>
+      <entry key="ymax_MP">Y-max:</entry>
+      <entry key="XYScope_MD">Plots second input (Y) against first input (X) at each time step to  create an X-Y plot. Ignores data outside the ranges specified by x-min, x-max, y-min, y-max.</entry>
+      <entry key="NoisePower_MP">Noise power:</entry>
+      <entry key="Seed_MP">Seed:</entry>
+      <entry key="InterpretVectorParametersAs1D_MP">Interpret vector parameters as 1-D</entry>
+      <entry key="BandLimitedWhiteNoise_MD">The Band-Limited White Noise block generates normally distributed random numbers that are suitable for use in continuous or hybrid systems.</entry>
+      <entry key="InitialFrequencyHz_MP">Initial frequency (Hz):</entry>
+      <entry key="TargetTimesecs_MP">Target time (secs):</entry>
+      <entry key="FrequencyAtTargetTimeHz_MP">Frequency at target time (Hz):</entry>
+      <entry key="chirp_MD">Output a linear chirp signal (sine wave  whose frequency varies linearly with time).</entry>
+      <entry key="CounterFreeRunning_MD">This block is a free-running counter that overflows back to zero after it has reached the maximum value possible for the specified number of bits. The counter is always initialized to zero.  The output is normally an unsigned integer with the specified number of bits.</entry>
+      <entry key="CounterLimited_MD">This block is a counter that wraps back to zero after it has output the specified upper limit.  The counter is always initialized to zero.  The output is normally an unsigned integer of 8, 16, or 32 bits.  The smallest number of bits needed to represent the upper limit is used.</entry>
+      <entry key="Value_MP">Value:</entry>
+      <entry key="Slope_MP">Slope:</entry>
+      <entry key="StartTime_MP">Start time:</entry>
+      <entry key="InitialOutput_MP">Initial output:</entry>
+      <entry key="Ramp_MD">Output a ramp signal starting at the specified time.</entry>
+      <entry key="TimeValues_MP">Time values:</entry>
+      <entry key="OutputValues_MP">Output values:</entry>
+      <entry key="RepeatingTable_MD">Output a repeating sequence of numbers specified in a table of time-value pairs. Values of time should be monotonically increasing.</entry>
+      <entry key="VectorOfOutputValues_MP">Vector of output values:</entry>
+      <entry key="VectorOfTimeValues_MP">Vector of time values:</entry>
+      <entry key="RepeatingSequenceInterpolated_MD">Discrete time sequence is output, then repeated.  Between data points, the specified lookup method is used to determine the output.</entry>
+      <entry key="RepeatingSequenceStair_MD">Discrete time sequence is output, then repeated.</entry>
+      <entry key="SigbuilderBlock_MD">Create and generate interchangeable groups of signals whose waveforms are piecewise linear.</entry>
+      <entry key="Stateflow_MD">Embedded MATLAB block</entry>
+      <entry key="SFunctionBuilder_MD">The S-Function Builder block creates a wrapper C-MEX S-function from your supplied C code with multiple input ports, output ports, and a variable number of scalar, vector, or matrix parameters.  The input and output ports can propagate Simulink built-in data types, fixed-point datatypes, complex, frame, 1-D, and 2-D signals.  This block also supports discrete and continuous states of type real.  You can optionally have the block generate a TLC file to be used for code generation.</entry>
+      <entry key="SFunctionExamples_MD">These are examples of how to use the different types of S-Functions.</entry>
+      <entry key="LookupTableBreakpoints_MP">Lookup table breakpoints</entry>
+      <entry key="AllowedSpacingpow2evenOrunrestricteddefault_MP">Allowed spacing 'pow2','even', or 'unrestricted'(default) </entry>
+      <entry key="MaximumNumberOfBreakpoints_MP">Maximum number of breakpoints</entry>
+      <entry key="MaximumWorstCaseApproximationError_MP">Maximum worst case approximation error</entry>
+      <entry key="RoundingMethodfloordefaultceilnearOrzero_MP">Rounding method 'floor'(default),'ceil','near' or 'zero'</entry>
+      <entry key="OutputScaling_MP">Output Scaling</entry>
+      <entry key="InputScaling_MP">Input Scaling</entry>
+      <entry key="OutputDatatype_MP">Output Datatype</entry>
+      <entry key="InputDatatype_MP">Input Datatype</entry>
+      <entry key="MaximumInputValueOfInterest_MP">Maximum input value of interest</entry>
+      <entry key="MinimumInputValueOfInterest_MP">Minimum input value of interest</entry>
+      <entry key="MEGMAFixedPointCosine_MD">MEGMA Cosine</entry>
+      <entry key="MEGMAFixedPointExponent_MD">MEGMA Exponent</entry>
+      <entry key="MEGMAFixedPointSine_MD">MEGMA Sine</entry>
+      <entry key="MEGMAFixedPointSqrt_MD">MEGMA Sqrt</entry>
+      <entry key="MEGMAFixedPointTangent_MD">MEGMA Tangent</entry>
+      <entry key="ComputeAlways">Compute Always</entry>
+      <entry key="CacheForASpecificMATLABSession">Cache for a specific MATLAB session</entry>
+      <entry key="CacheAcrossDifferentMATLABSessions">Cache across different MATLAB sessions</entry>
+      <entry key="Main">Main</entry>
+      <entry key="SignalAttributes">Signal Attributes</entry>
+      <entry key="Propagatedtype">Propagated type</entry>
+      <entry key="Propagatedscaling">Propagated scaling</entry>
+       <!-- Mask Popup menu text -->
+      <entry key="Ceiling">Ceiling</entry>
+      <entry key="Convergent">Convergent</entry>
+      <entry key="Floor">Floor</entry>
+      <entry key="Nearest">Nearest</entry>
+      <entry key="Round">Round</entry>
+      <entry key="Simplest">Simplest</entry>
+      <entry key="Zero">Zero</entry>
+      <entry key="PID" translate="false">PID</entry>
+      <entry key="PI" translate="false">PI</entry>
+      <entry key="PD" translate="false">PD</entry>
+      <entry key="P" translate="false">P</entry>
+      <entry key="I" translate="false">I</entry>
+      <entry key="ContinuousTime">Continuous-time</entry>
+      <entry key="DiscreteTime">Discrete-time</entry>
+      <entry key="ForwardEuler">Forward Euler</entry>
+      <entry key="BackwardEuler">Backward Euler</entry>
+      <entry key="Trapezoidal">Trapezoidal</entry>
+      <entry key="Ideal">Ideal</entry>
+      <entry key="Parallel">Parallel</entry>
+      <entry key="internal">internal</entry>
+      <entry key="external">external</entry>
+      <entry key="none">none</entry>
+      <entry key="rising">rising</entry>
+      <entry key="falling">falling</entry>
+      <entry key="either">either</entry>
+      <entry key="level">level</entry>
+      <entry key="backCalculation">back-calculation</entry>
+      <entry key="clamping">clamping</entry>
+      <entry key="Auto">Auto</entry>
+      <entry key="ExportedGlobal" translate="false">ExportedGlobal</entry>
+      <entry key="ImportedExtern" translate="false">ImportedExtern</entry>
+      <entry key="ImportedExternPointer" translate="false">ImportedExternPointer</entry>
+      <entry key="double" translate="false">double</entry>
+      <entry key="single" translate="false">single</entry>
+      <entry key="int8" translate="false">int8</entry>
+      <entry key="uint8" translate="false">uint8</entry>
+      <entry key="int16" translate="false">int16</entry>
+      <entry key="uint16" translate="false">uint16</entry>
+      <entry key="int32" translate="false">int32</entry>
+      <entry key="uint32" translate="false">uint32</entry>
+      <entry key="SpecifyViaDialog">Specify via dialog</entry>
+      <entry key="SameAsSecondInput">Same as second input</entry>
+      <entry key="ColumnsAsChannelsFrameBased">Columns as channels (frame based)</entry>
+      <entry key="InheritViaInternalRule">Inherit via internal rule</entry>
+      <entry key="InheritViaBackPropagation">Inherit via back propagation</entry>
+      <entry key="Oldest">Oldest</entry>
+      <entry key="Newest">Newest</entry>
+      <entry key="AND" translate="false">AND</entry>
+      <entry key="OR" translate="false">OR</entry>
+      <entry key="NAND" translate="false">NAND</entry>
+      <entry key="NOR" translate="false">NOR</entry>
+      <entry key="XOR" translate="false">XOR</entry>
+      <entry key="NOT" translate="false">NOT</entry>
+      <entry key="RealWorldValue">Real World Value</entry>
+      <entry key="StoredInteger">Stored Integer</entry>
+      <entry key="boolean" translate="false">boolean</entry>
+      <entry key="UpperHalf">Upper half</entry>
+      <entry key="LowerHalf">Lower half</entry>
+      <entry key="RangeStartingWithMostSignificantBit">Range starting with most significant bit</entry>
+      <entry key="RangeEndingWithLeastSignificantBit">Range ending with least significant bit</entry>
+      <entry key="RangeOfBits">Range of bits</entry>
+      <entry key="PreserveFixedPointScaling">Preserve fixed-point scaling</entry>
+      <entry key="TreatBitFieldAsAnInteger">Treat bit field as an integer</entry>
+      <entry key="sin2PiU" translate="false">sin(2*pi*u)</entry>
+      <entry key="cos2PiU" translate="false">cos(2*pi*u)</entry>
+      <entry key="expj2PiU" translate="false">exp(j*2*pi*u)</entry>
+      <entry key="sincos2PiU" translate="false">sin(2*pi*u) and cos(2*pi*u)</entry>
+      <entry key="InterpolationExtrapolation">Interpolation-Extrapolation</entry>
+      <entry key="InterpolationUseEndValues">Interpolation-Use End Values</entry>
+      <entry key="InternalRulePrioritySpeed">Speed</entry>
+      <entry key="InternalRulePriorityPrecision">Precision</entry>
+      <entry key="UseInputNearest">Use Input Nearest</entry>
+      <entry key="UseInputBelow">Use Input Below</entry>
+      <entry key="UseInputAbove">Use Input Above</entry>
+      <entry key="min">min</entry>
+      <entry key="max">max</entry>
+      <entry key="graphic">graphic</entry>
+      <entry key="text">text</entry>
+      <entry key="Text">Text</entry>
+      <entry key="RTF" translate="false">RTF</entry>
+      <entry key="HTML" translate="false">HTML</entry>
+      <entry key="functionCall">function-call</entry>
+      <entry key="InheritViaPropagationRule">Inherit via propagation rule</entry>
+      <entry key="IsSigned1" translate="false">IsSigned1</entry>
+      <entry key="IsSigned2" translate="false">IsSigned2</entry>
+      <entry key="IsSigned1OrIsSigned2">IsSigned1 or IsSigned2</entry>
+      <entry key="TRUE" translate="false">TRUE</entry>
+      <entry key="FALSE" translate="false">FALSE</entry>
+      <entry key="NumBits1" translate="false">NumBits1</entry>
+      <entry key="NumBits2" translate="false">NumBits2</entry>
+      <entry key="maxNumBits1NumBits2" translate="false">max([NumBits1 NumBits2])</entry>
+      <entry key="ObtainViaBestPrecision">Obtain via best precision</entry>
+      <entry key="Slope1" translate="false">Slope1</entry>
+      <entry key="Slope2" translate="false">Slope2</entry>
+      <entry key="maxSlope1Slope2" translate="false">max([Slope1 Slope2])</entry>
+      <entry key="Bias1" translate="false">Bias1</entry>
+      <entry key="Bias2" translate="false">Bias2</entry>
+      <entry key="maxBias1Bias2" translate="false">max([Bias1 Bias2])</entry>
+      <entry key="UseSpecifiedScaling">Use specified scaling</entry>
+      <entry key="BestPrecisionVectorWise">Best Precision: Vector-wise</entry>
+      <entry key="ElementsAsChannelsSampleBased">Elements as channels (sample based)</entry>
+      <entry key="Inherited">Inherited</entry> 
+      <!-- End of Mask Popup menu text -->
+
+      <!-- Start of Mask for Generated S-Function -->
+      <entry key="GenSFuncName_MP">Generated S-function name (model_sf):</entry>
+      <entry key="GenSFuncShowModuleList_MP">Show module list</entry>
+      <entry key="GenSFuncListOfModules_IC">\nList of Modules:\n{0}</entry> 
+      <entry key="GenSFuncNotLicensed_IC">Not licensed\n</entry> 
+      <entry key="GenSFuncNone_IC">none</entry> 
+      <entry key="GenSFuncDesc_MD">Simulink Coder generated S-function.</entry> 
+      <!-- End of Mask for Generated S-Function -->
+
+      <!-- Start of Mask for Custom Code Library -->
+      <entry key="CustCodeQuickHelp_ID">Quick Help</entry>
+      <entry key="CustCodeMaskParam1_MP">Mask Parameter 1:</entry>
+      <!-- End of Mask for Custom Code Library -->
+
+   </message>
+</rsccat>

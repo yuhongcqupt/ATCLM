@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- Copyright 2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+     <entry key="InvalidSampleRange">MaxSamples ({0}) must be greater than or equal to MinSamples ({1}).</entry>
+     <entry key="InvalidSampleSize">Variable sample sizes must be 2 or greater.</entry>
+     <entry key="NonConvergentSample">Target Relative Margin of Error not met after running the MaxSamples for {0}.</entry>
+     <entry key="OutOfRangeConfidenceLevel">ConfidenceLevel must be in the range [0 1].</entry>
+  </message>
+</rsccat>

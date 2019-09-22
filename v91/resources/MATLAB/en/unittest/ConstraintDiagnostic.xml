@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- Copyright 2014-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="ActualValue">Actual Value:</entry>
+    <entry key="ExpectedValue">Expected Value:</entry>
+    <entry key="NoDisplayedOutput">&lt;Value has no displayed output&gt;\n\tType: {0}\n\tSize: [{1}]\n</entry>
+    <entry key="TruncatedString">&lt;SNIP... Output has been truncated due to excessive length&gt;</entry>
+    <entry key="TruncatedArray">Array size ([{0}]) exceeds the maximum number of displayable elements ({1,number,integer}). Displaying the first {2,number,integer} elements:</entry>
+    <entry key="TruncatedTableRows">Table with {0,number,integer} rows exceeds the maximum number of displayable rows. Displaying the first {1,number,integer} rows:</entry>
+  </message>
+</rsccat>

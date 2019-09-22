@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- Copyright 2014 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+    <message>
+        <entry key="InvalidMapReducer">Invalid input for the mapreduce execution environment. Please look at the documentation for mapreducer to see a list of allowed arguments.</entry>
+        <entry key="InvalidParallelEnvironment">Could not create a mapreduce execution environment from the default parallel cluster.</entry>
+    </message>
+</rsccat>

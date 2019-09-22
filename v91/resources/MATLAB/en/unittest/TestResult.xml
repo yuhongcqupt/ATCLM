@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="Totals">Totals:</entry>
+    <entry key="PassedFailedIncomplete" translate="false">{0,number,integer} Passed, {1,number,integer} Failed, {2,number,integer} Incomplete.</entry>
+    <entry key="Duration">{0} seconds testing time.</entry>
+  </message>
+</rsccat>

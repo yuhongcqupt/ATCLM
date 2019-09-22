@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0"
+        locale="en_US"
+        product="Simulink"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="Ground">ground</entry>
+    <entry key="Removed">removed</entry>
+    <entry key="NotUsed">not used</entry>
+    <entry key="FcnCall">fcn-call</entry>
+    <entry key="Message">message</entry>
+    <entry key="Action">action</entry>
+    <entry key="Optimized">optimized</entry>
+    <entry key="Truncated">...</entry>
+    <entry key="Inaccessible">inaccessible</entry>
+    <entry key="Unavailable">unavailable</entry>
+    <entry key="NotDataSignal">not a data signal</entry>
+    <entry key="NoData">no data yet</entry>
+    <entry key="ClickToAddSignals">click to add signals</entry>
+
+    <entry key="NotValidDataSignal">The data signal of the output port {0,number,integer} of {1} is not valid to show data</entry>
+
+    <entry key="SignalDataDisabled">The data display and conditional breakpoints are not available for this simulation</entry>
+
+    <entry key="NotValidConditionSignal">The data signal of the output port {0,number,integer} of {1} is not valid to assign conditions</entry>
+    <entry key="InvalidCondPause">Conditional pause must be a struct with fields: relation and value</entry>
+    <entry key="InvalidCondRelation">Conditional pause relation must be an integer in the range 0-{0, number, integer}</entry>
+    <entry key="InvalidCondValue">Conditional pause value must be a scalar number</entry>
+    <entry key="ApproximateRefreshInterval">Approximate refresh interval: {0} secs</entry>
+    <entry key="FontSize">Font size: {0} pts</entry>
+    <entry key="MaximumNumberOfElementsPerLabel">Maximum number of elements per label: {0}</entry>
+    <entry key="PlotTimeRangeLabel">Time range of the plot: {0}</entry>
+    <entry key="DisplayWindowTitle">{0} - Value Label Display Options</entry>
+    <entry key="DisplayOptionsGroupTitle">Display options</entry>
+    <entry key="FontSizeSliderName">fontSize</entry>
+    <entry key="RefreshIntervalSliderName">refreshInterval</entry>
+    <entry key="MaxNumElementsSliderName">maxNumElements</entry>
+    <entry key="PlotTimeRangeSliderName">plotTimeRange</entry>
+    <entry key="DisplayValuesGroupTitle">Display values</entry>
+    <entry key="ShowWhenHoveringCheckbox">Show When Hovering</entry>
+    <entry key="ToggleWhenClickedCheckbox">Toggle When Clicked</entry>
+    <entry key="EnableDuringSim">Enable by default during simulation</entry>
+    <entry key="RemoveAllButton">Remove All</entry>
+    <entry key="DisplayFormatGroupTitle">Display Format</entry>
+    <entry key="FloatingPointFormatLabel">Floating point:</entry>
+    <entry key="FloatingPointFormatComboBox">floatFormat</entry>
+    <entry key="FixPointFormatLabel">Fixed point:</entry>
+    <entry key="FixPointFormatComboBox">fixFormat</entry>
+    <entry key="Format5_3Option" translate="false">%5.3g</entry>
+    <entry key="ShortFormatOption">short</entry>
+    <entry key="LongFormatOption">long</entry>
+    <entry key="Short_eFormatOption">short_e</entry>
+    <entry key="Long_eFormatOption">long_e</entry>
+    <entry key="BankFormatOption">bank</entry>
+    <entry key="HexFormatOption">hex (Stored Integer)</entry>
+    <entry key="BinaryFormatOption">binary (Stored Integer)</entry>
+    <entry key="DecimalFormatOption">decimal (Stored Integer)</entry>
+    <entry key="OctalFormatOption">octal (Stored Integer)</entry>
+    <entry key="OKButton">OK</entry>
+    <entry key="CancelButton">Cancel</entry>
+    <entry key="HelpButton">Help</entry>
+    <entry key="ApplyButton">Apply</entry>
+    <entry key="SignalNotFound">Could not find signal ''{0}'' selected for value label display on port ''{1}''</entry>
+    <entry key="InvalidBusSignalName">Signal name must be a valid string</entry>
+    <entry key="InvalidSpecification">The parameter ''{0}'' when set to a string must be equal to ''{1}''</entry>
+    <entry key="NoDataTooltip">Run simulation or step forward to show values</entry>
+    <entry key="CannotEnableOnInport">Port value labels cannot be enabled on block inports</entry>
+    <entry key="CondBreakCannotEnableOnInport">Conditional breakpoints cannot be enabled on block inports</entry>
+  </message>
+</rsccat>

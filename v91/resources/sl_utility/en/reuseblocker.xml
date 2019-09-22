@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2014-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="sl_utility" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="CPPEModelBlockForceAutoSubsys">The Subsystem is forced to be Non-reused because it contains a model block that has C++ class configuration and its ''Function packaging'' setting is ''Auto'.</entry>
+    <entry key="MarkedFunction">The following block was marked as ''Function''.</entry>
+    <entry key="HasWideFcnCall">The following block is a function-call system with a function-call port that has a width greater than 1.</entry>
+    <entry key="ForcedNonInline">The following block was forced to be non-inlined function.</entry>
+    <entry key="CallerGroundBlock">The function-call port of the following block is driven either by a ground block or is unconnected, which marks the block to be non-inlined.</entry>
+    <entry key="HasUnsuppSFcn">The following block contains an S-Function that does not conform to Code Reuse restrictions. The S-Function block (a) should have a TLC implementation and (b) should set the option ''SS_OPTION_WORKS_WITH_CODE_REUSE''.</entry>
+    <entry key="MakesWideFcnCall">The following block is calling a function-call system that has a function-call port of width greater than 1.</entry>
+    <entry key="StateflowNonConformant">The following block is a Stateflow block that does not conform to Code Reuse restrictions. The Stateflow block (a) should be a library block, (b) should not have an output function-call event, and (c) should not initialize variables from the MATLAB workspace.</entry>
+    <entry key="CallerNonInlineSFcn">The function-call port of the following block is being driven either by an S-Function with no TLC implementation or an S-Function that sets the option ''SS_OPTION_FORCE_NONINLINED_FCNCALL''.</entry>
+    <entry key="StatePortCrossBoundary">The state port of the following block is read by a block outside of this system.</entry>
+    <entry key="AccelCallInEngine">The following block does not generate code in Accelerator Mode.</entry>
+    <entry key="DataStoreReadOrWrite">The following block is a data store read or write block and needs the full block path in Accelerator Mode and Model Reference Simulation Target.</entry>
+    <entry key="DebugDisableReuse">The feature DebugDisableCodeReuse is enabled.</entry>
+    <entry key="CollapsedSubExpr">The parameter ''{0}'' for the following block contains a partially-tunable expression, but part of the expression is a non-tunable sub-expression.</entry>
+    <entry key="ParamNotPooled">The parameter ''{0}'' used by the following block is not pooled.</entry>
+    <entry key="NonAddressableCanonicalOutput">The following block is connected through a subsystem outport to a merge block whose output port has a non-addressable storage class.</entry>
+    <entry key="NonAddressableCanonicalInput">The following block has an output port that has a non-addressable storage class and is connected to that subsystem's inport.</entry>
+    <entry key="NonAddressableCanonicalParameter">The following block has a mask parameter that has a non-addressable storage class.</entry> 
+    <entry key="HasParallelForEachSS">The following block requested for parallel execution in Rapid Accelerator simulation.</entry> 
+    <entry key="ContainsToFileBlock">The following block is a To File block.</entry> 
+    <entry key="ContainsFromFileBlock">The following block is a From File block.</entry>
+    <entry key="ReuseBlockerSimulinkFunction">The following block is a Simulink Function.</entry>
+    <entry key="ReuseBlockerSimulinkFunctionCaller">The following block invokes a Simulink Function.</entry>
+    <entry key="FcnCallSubsystemHasMaskPrm">The following block is a function-call system with mask parameters. To achieve reuse of this block, create an atomic subsystem from this block and move the Trigger block to the newly created subsystem.</entry>
+    <entry key="ReusableCSC">The following block uses a reusable CSC at its output port or state.</entry>
+  </message>
+</rsccat>

@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!-- Copyright 2011-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+    <entry key="CannotChangeNumWorkersWhenRunning" note="{0} the name of the profile used to create the cluster, {3} a link to shutdown the cluster">You cannot change the NumWorkers property when the {0} cluster is online. Requested number of workers: {1}, actual number of workers: {2}. {3}</entry>
+    <entry key="CloudClusterFailedToStart">MATLAB Parallel Cloud failed to start. Contact MathWorks technical support.</entry>
+    <entry key="CloudRequirementsError">Use of MATLAB Parallel Cloud requires Java UI components.</entry>
+    <entry key="CloudVersionNotCompatible">Unable to connect to this cluster because it is running release {0} and you are running release {1}.</entry>
+    <entry key="ClusterUnusable">Cluster ''{0}'' is in state ''{1}''. If the cluster is not brought online, the wait could be indefinite.</entry>
+    <entry key="ConnectivityTesterCancelLabel">Cancel</entry>
+    <entry key="ConnectivityTesterCancelled">Cancelled</entry>
+    <entry key="ConnectivityTesterCancelledDescription">Verification was cancelled by user.</entry>
+    <entry key="ConnectivityTesterCloseLabel">Close</entry>
+    <entry key="ConnectivityTesterCloudCenter">Connection to Cloud Center Web Services</entry>
+    <entry key="ConnectivityTesterConnectionBlocked">Error downloading URL. A firewall on your local machine might be blocking this connection attempt. Check your firewall settings and ensure that port {0,number,integer} is open for outbound connections.</entry>
+    <entry key="ConnectivityTesterConnectionBlockedWorkers">Error downloading URL. A firewall on your local machine might be blocking this connection attempt. Check your firewall settings and ensure that ports [{0,number,integer} - {1,number,integer}] are open for outbound connections.</entry>
+    <entry key="ConnectivityTesterConnectionFailed">Error downloading URL. Your network connection may be down or your proxy settings improperly configured. Go to MATLAB Settings -> Web and enter your proxy server information.\n</entry>
+    <entry key="ConnectivityTesterDeletedObject">The application was closed because an object that was still being used was deleted prematurely.\n</entry>
+    <entry key="ConnectivityTesterDescription">Description</entry>
+    <entry key="ConnectivityTesterDetails">Details</entry>
+    <entry key="ConnectivityTesterDetailsFrameTitle">Verification Details</entry>
+    <entry key="ConnectivityTesterDetailsLabel">VERIFICATION DETAILS:</entry>
+    <entry key="ConnectivityTesterErrorReport">Error Report</entry>
+    <entry key="ConnectivityTesterFailed">Failed</entry>
+    <entry key="ConnectivityTesterFailedDescription">Verification encountered an exception.</entry>
+    <entry key="ConnectivityTesterFinishedDescription">Verification process is finished.</entry>
+    <entry key="ConnectivityTesterFrameTitle">Cloud Connection Tester</entry>
+    <entry key="ConnectivityTesterIO">An unknown error has occurred. Restart MATLAB and try again.\n</entry>
+    <entry key="ConnectivityTesterInternet">Connection to the Internet</entry>
+    <entry key="ConnectivityTesterMJS">Connection to Cloud Cluster</entry>
+    <entry key="ConnectivityTesterMatlabException">{0} If this issue is not resolved, please try again later or contact MathWorks Technical Support.\n</entry>
+    <entry key="ConnectivityTesterNone">(none)</entry>
+    <entry key="ConnectivityTesterNotRun">Not Run</entry>
+    <entry key="ConnectivityTesterNotStarted">Not Started</entry>
+    <entry key="ConnectivityTesterPassed">Passed</entry>
+    <entry key="ConnectivityTesterRequiresJava">This application requires Java to run. Please restart MATLAB without the -nojvm flag.\n</entry>
+    <entry key="ConnectivityTesterRunning">Running</entry>
+    <entry key="ConnectivityTesterSaveSuccessful">The output was successfully saved to ''{0}''.</entry>
+    <entry key="ConnectivityTesterSaveToLabel">Save to file</entry>
+    <entry key="ConnectivityTesterSessionNotFound">Connectivity session with ID ''{0}'' not found.</entry>
+    <entry key="ConnectivityTesterShowDetails">Show Details</entry>
+    <entry key="ConnectivityTesterSkipped">Skipped</entry>
+    <entry key="ConnectivityTesterSkippedDescription">Verification skipped due to a previous failure.</entry>
+    <entry key="ConnectivityTesterStage">Stage</entry>
+    <entry key="ConnectivityTesterStartLabel">Start</entry>
+    <entry key="ConnectivityTesterStatus">Status</entry>
+    <entry key="ConnectivityTesterTimeoutExceeded">Could not connect to the server within {0,number,integer} seconds. This might be due to a low system time-out or incorrect proxy settings.\n</entry>
+    <entry key="ConnectivityTesterUnknownHost">{0}. Your proxy settings may be improperly configured. Go to MATLAB Settings -> Web and enter your proxy server information.\n</entry>
+    <entry key="ConnectivityTesterUnsupportedML">Your MATLAB version is not supported for this application. Please use MATLAB R2012a or a later release.\n</entry>
+    <entry key="ConnectivityTesterVerificationError">Verification Error</entry>
+    <entry key="ConnectivityTesterVerificationLabel">Verification Status</entry>
+    <entry key="ConnectivityTesterWebServices">Connection to MathWorks Account</entry>
+    <entry key="ConnectivityTesterWorkerFailed">Connection to worker port {0} was unsuccessful.\n \n A firewall on your local machine might be blocking this connection attempt. Check your firewall settings and ensure that this port is open for outbound connections.</entry>
+    <entry key="ConnectivityTesterWorkers">Connection to Cloud Parallel Pool</entry>
+    <entry key="ConnectivityTesterWorkersFailed">Connection to the following worker ports was unsuccessful: \n {0}.\n \n A firewall on your local machine might be blocking this connection attempt. Check your firewall settings and ensure that ports [{1,number,integer} - {2,number,integer}] are open for outbound connections.</entry>
+    <entry key="CreateBatchModeNotPermitted">This cluster is restricted to interactive use only. Type ''help parpool'' for more information about interactive use.</entry>
+    <entry key="DialogTitleForLogin">MathWorks Account Log In</entry>
+    <entry key="DialogTitleForSignUp">Set up MATLAB Parallel Cloud</entry>
+    <entry key="FailedToCreatePoolDueToError">Could not create a pool on this cluster because it has errored. Original error: {0}</entry>
+    <entry key="ForcefullyStopped">Cluster was terminated while parallel pool was starting. Pool is not active.</entry>
+    <entry key="InvalidNumWorkers">Invalid number of workers ({0}). Choose from the following valid values: {1}</entry>
+    <entry key="InvalidShutdownArgument">''{0}'' is not a valid state to shut down after. Valid states are:\n{1}</entry>
+    <entry key="InvalidWaitArgument">Invalid argument to wait. Valid arguments are:\n{0}</entry>
+    <entry key="InvalidWaitState">''{0}'' is not a valid state to wait for. Valid states are:\n{1}</entry>
+    <entry key="CloudMaxWorkers">For MATLAB Parallel Cloud, the maximum size of a parallel pool is {0,number,integer} workers.</entry>
+    <entry key="CloudOnePoolOnly">A parallel pool is already running on MATLAB Parallel Cloud, you must delete that pool before creating a new one.</entry>
+    <entry key="NoCloudLicense">Your MathWorks account is not associated with a valid license to use this cluster. To get a license, click {0}.</entry>
+    <entry key="NoCloudLicenseNoLinks">Your MathWorks account is not associated with a valid license to use this cluster. To get a license, run parcluster(''MATLAB Parallel Cloud'').</entry>
+    <entry key="PostShutdownText">Cluster shut down</entry>
+    <entry key="RegisterWithClusterFailed">Unable to configure the cluster to communicate with the MATLAB client. This might be a temporary problem. If the problem persists contact MathWorks technical support. Error returned:\n{0}</entry>
+    <entry key="ReleaseNotSupported">MATLAB Parallel Cloud is not supported in MATLAB R{0}.</entry>
+    <entry key="ShutdownClusterLinkText" note="Period omitted deliberately">Shut down the cluster</entry>
+    <entry key="ShutdownClusterNoLinkText">Use the MATLAB desktop to set NumWorkers in your ''{0}'' profile to {1}. Then use {2} to shut down the cluster.</entry>
+    <entry key="SignUp" note="This is used to fill hole {0} in the NoCloudLicense message.  It will normally be a hyperlink.">here</entry>
+    <entry key="SupportEmptyCommCheck">Could not perform a communication check with MJS, because the connection to the head node was not successful.</entry>
+  </message>
+</rsccat>

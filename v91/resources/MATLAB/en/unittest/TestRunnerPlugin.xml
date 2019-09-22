@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- Copyright 2014-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="QualificationFailureInPlugin">Plugin "{0}" produced a qualification failure in method "{1}". Qualifications are only allowed in plugins that derive from matlab.unittest.plugins.QualifyingPlugin.</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  rsccat
+-->

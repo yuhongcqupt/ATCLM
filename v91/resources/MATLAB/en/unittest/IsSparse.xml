@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="MustBeSparse">The value must be sparse.</entry>
+    <entry key="MustNotBeSparse">The value must not be sparse.</entry>
+  </message>
+</rsccat>

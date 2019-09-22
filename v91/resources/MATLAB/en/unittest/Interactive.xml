@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2013 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="VerificationPassed">Interactive verification passed.</entry>
+    <entry key="AssertionPassed">Interactive assertion passed.</entry>
+    <entry key="AssumptionPassed">Interactive assumption passed.</entry>
+    <entry key="FatalAssertionPassed">Interactive fatal assertion passed.</entry>
+    <entry key="VerificationFailed">Interactive verification failed.</entry>
+    <entry key="AssertionFailed">Interactive assertion failed.</entry>
+    <entry key="AssumptionFailed">Interactive assumption failed.</entry>
+    <entry key="FatalAssertionFailed">Interactive fatal assertion failed.</entry>
+    <entry key="DiagnosticLogged">Interactive diagnostic logged.</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  rsccat
+-->

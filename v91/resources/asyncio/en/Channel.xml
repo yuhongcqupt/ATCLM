@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<rsccat version="1.0" locale="en_US" product="asyncio">
+  <message>
+    <entry key="invalidStreamLimits" translate="false">STREAMLIMITS must be a vector of two non-negative doubles.</entry>
+    <entry key="stillOpenDuringDelete" translate="false">Channel is being deleted while still open.</entry>
+    <entry key="couldNotInitializeThreadServices" translate="false">The thread transition services could not be initialized.</entry>
+    <entry key="couldNotLoadDevice" translate="false">Failure to load the device plug-in.</entry>
+    <entry key="couldNotLoadConverter" translate="false">Failure to load the converter plug-in.</entry>
+    <entry key="couldNotCreateDevice" translate="false">Failure to create the device object.</entry>
+    <entry key="couldNotCreateConverter" translate="false">Failure to create the converter object.</entry>
+    <entry key="unexpectedException" translate="false">Unexpected exception in plug-in: ''{0}''</entry>
+  </message>
+</rsccat>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="DidNotHaveLogicalOutput">The function handle did not return a logical value. The return value was of type "{0}".</entry>
+    <entry key="DidNotHaveScalarOutput">The function handle did not return a scalar. The return value had a size of [{0}].</entry>
+    <entry key="DidNotEvaluateToTrue">The function handle did not evaluate to "true".</entry>
+    <entry key="ActualReturnValue">Returned value:\n{0}</entry>
+    <entry key="ActValIsFunctionHandleThatReturnsTrue">The value is a function handle that returned a scalar logical value of true.</entry>
+    <entry key="ActValIsNotFunctionHandle">The value is not a function handle. It is of type "{0}".</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  rsccat
+-->

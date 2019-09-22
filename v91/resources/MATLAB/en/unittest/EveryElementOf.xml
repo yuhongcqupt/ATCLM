@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry note="Example: All elements passed matlab.unittest.constraints.IsEqualTo." key="AllSatisfied">All elements passed {0}.</entry>
+    <entry key="NotAllSatisfied">At least one element failed.\n\nFailing indices:\n{0}\nThe first failing element failed because:</entry>
+    <entry key="ExpectedNonEmpty">The array cannot be empty.</entry>
+    <entry key="ActualValueArray">Actual Value Array:</entry>
+  </message>
+</rsccat>

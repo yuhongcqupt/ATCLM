@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2009-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <!--
+       Simulink.SoftwareTarget.concurrentExecution diangostics
+       -->
+    <entry key="InvalidArg1_concurrentExecution">The first argument must be a model.</entry>
+    <entry key="InvalidArg2_concurrentExecution">The second argument to Simulink.SoftwareTarget.concurrentExecution must be one of ''ConvertForConcurrentExecution'', ''AddConfigurationForConcurrentExecution'' or ''OpenDialog''.</entry>
+    <entry key="TooManyArgs_concurrentExecution">Too many arguments passed to Simulink.SoftwareTarget.concurrentExecution.</entry>
+    <entry key="InvalidArg3_concurrentExecution">The third argument to Simulink.SoftwareTarget.concurrentExecution must be the name of a configuration in the given model.</entry>
+    <entry key="NotConfiguredForConcurrentExecution">The specified configuration object ''{0}/{1}'' is not configured for concurrent execution.</entry>
+    <entry key="CannotLocateConfigSet">There is no configuration named ''{0}'' in model {1}''.</entry>
+    <!--
+       General 
+      -->
+    <entry key="InvalidBlockTypeInModel">Block ''{0}'' of type ''{1}'' is not supported for the selected model architecture. The supported block types are Model, MATLAB System, Ground, Terminator, Goto, From and Virtual Subsystems.</entry>
+    <entry key="LibCannotSetModelingArchitecture">Cannot set the Modeling Architecture of ''{0}'' because this parameter is read-only for libraries.</entry>
+    <entry key="SetParamNotValidForModelType">Invalid parameter ''{0}''</entry>
+    <entry key="GetParamNotValidForModelType">Invalid parameter ''{0}''</entry>
+    <entry key="SameTaskTransitionMustBeDeterministic">Invalid task-transition type specified at output port {0,number,integer} of block ''{1}''.  This task-transition must be set to 'Inherit' or to 'Ensure Determinism' because the writer and reader are in the same task</entry>
+    <entry key="TaskColorsOnlyForDeploymentDiagram">The ''TaskColors'' parameter may only be set for a Deployment Diagram</entry>
+    <entry key="MustCloseModel">Cannot set Modeling Architecture of ''{0}'' to Deployment because the model was already loaded when the feature was enabled.  The model must first be closed and re-opened.</entry>
+    <!--
+       Configuration handling
+      -->
+    <entry key="CannotConvertToConcurrentExecution">Configuration reference may not be converted for concurrent execution.  To use configuration reference with concurrent execution, the reference must resolve to a Configuration Set object which specifies concurrent execution.</entry>
+    <entry key="TaskConfigurationSaveAsErr">Configuration for concurrent execution cannot be saved in a MATLAB file.  The object may be saved only in the model file of the parent model.</entry>
+    <entry key="TaskConfigurationCopyErr">Configuration for concurrent execution cannot be copied as a standalone object. Consider using ''attachConfigSetCopy'' method to copy the configuration to another model.</entry>
+    <entry key="ConfigComponentName">Concurrent Execution</entry>
+    <entry key="ConfigComponentButton">Configure Tasks and Map Blocks To Tasks</entry>
+    <entry key="ConfigComponentMainGroup">Concurrent Execution</entry>
+    <!-- 
+      Signal Properties Dialog 
+      -->
+    <entry key="DataTransferDlgTab">Data Transfer</entry>
+    <entry key="DataTransferDlgSpec">Specify data transfer settings</entry>
+    <entry key="DataTransferDlgType">Data transfer handling option:</entry>
+    <entry key="DataTransferDlgIC">Initial condition:</entry>
+    <entry key="DataTransferDlgExtrp">Extrapolation method (continuous-time signals):</entry>
+    <!-- 
+      Root I/O 
+      -->
+    <entry key="RootInputStorageClass">This model is configured for concurrent execution and has modeling constraints. The signal originating at root Inport block ''{0}'' must resolve to an exported storage class.</entry>
+    <entry key="RootOutputStorageClass">This model is configured for concurrent execution and has modeling constraints. The signal at root Outport block ''{0}'' must resolve to an exported storage class.</entry>
+    <!-- 
+      Data transfer dialog diagnostics 
+      -->
+    <entry key="PortDoesNotSpecifySetting">Cannot set task transition setting at output port {0,number,integer} of block ''{1}'' because the port has not enabled task transition settings to be specified.</entry>
+    <entry key="TaskTransTypeInconsistent">The task transition type ''{0}'' specified on port ({1,number,integer}) of block ''{2}'' does not match with the task transition type ''{3}'' specified on port ({4,number,integer}) of block ''{5}''.</entry>
+    <entry key="TaskTransICInconsistent">The task transition initial condition specified on port ({0,number,integer}) of block ''{1}'' does not match with the initial condition specified on port ({2,number,integer}) of block ''{3}''.</entry>
+    <entry key="TaskTransExtrpInconsistent">The task transition extrapolation method ''{0}'' specified on port ({1,number,integer}) of block ''{2}'' does not match with the task transition extrapolation method ''{3}'' specified on port ({4,number,integer}) of block ''{5}''.</entry>
+    <!--
+      API Infrastructure
+      -->
+    <entry key="BlockDiagramCompiledErr">Cannot modify the specified object while block diagram is updating or simulating.</entry>
+    <entry key="InvalidTesterArgs">Tester error: {0}.</entry>
+    <entry key="CannotConstructDefaultTaskGroup">Simulink cannot construct a default element because no default value exists for the ''EventHandler'' class. This error typically occurs when you concatenate arrays.</entry>
+    <entry key="CannotConstructDefaultBlockMapping">Simulink cannot construct a default element because no default value exists for the ''BlockMapping'' class. This error typically occurs when you concatenate arrays.</entry>
+    <!-- 
+      Universal API
+      -->
+    <entry key="InvalidObjectIdentifier">Invalid object name: ''{0}''.</entry>
+    <entry key="NoSpecifiedProperty">The specified object ''{0}'' does not have a property named ''{1}''.</entry>
+    <entry key="CannotSetCompiledProperty">Property ''{1}'' of ''{0}'' is read-only.</entry>
+    <entry key="NoAddMethod">Cannot add any object to objects of type ''{0}''.</entry>
+    <entry key="AddRoot">The specified object name refers to a top model. To add an object, provide a valid new object name.</entry>
+    <entry key="NoDeleteMethod">Cannot delete the specified object.</entry>
+    <entry key="DeleteRoot">Cannot delete the top model.</entry>
+    <entry key="ArchUnavailable">Cannot import architecture. The specified architecture ''{0}'' does not exist.</entry>
+    <entry key="InvalidArg2_config">The second argument must be one of ''Convert'', ''Add'' or ''OpenDialog''.</entry>
+    <!-- 
+      Task Configuration API
+      -->
+    <entry key="CannotRemoveTaskConfigNotFound">Simulink cannot locate the specified task configuration and therefore cannot remove it.</entry>
+  <entry key="CannotRemoveTaskConfigActive">Simulink cannot remove Configuration ''{0}'' because it is ''Active''.  You must activate another configuration before removing this one.</entry>
+    <entry key="MultipleTaskConfigsNotSupported">A Configuration for concurrent execution already exists.  A model may contain only one configuration for concurrent execution.</entry>
+    <entry key="InvalidConfigSet">The specified object is not a valid Configuration Set for model ''{0}''.</entry>
+    <entry key="InvalidConfigSet2">The specified object is not a valid Configuration Set.</entry>
+    <entry key="InvalidTaskConfigurationName">The specified task configuration name ''{0}'' must be a valid MATLAB variable name.</entry>
+    <entry key="NoTargetCustomizationClassName">The specified Target Customization Class ''{0}'' could not be found. Please make sure if the class is correctly referred to.</entry>
+    <!--
+      Trigger API
+      -->
+    <entry key="InvalidTaskGroupName">The specified trigger name ''{0}'' must be a valid MATLAB variable name.</entry>
+    <entry key="TaskGroupNameExists">A trigger with the specified name ''{0}'' already exists.</entry>
+    <entry key="TaskGroupDoesNotExist">The specified trigger ''{0}'' does not exist.</entry>
+    <entry key="EmptyTaskGroup">Method was invoked with an empty or deleted trigger.</entry>
+    <entry key="EmptyTask">Method was invoked with an empty or deleted task.</entry>
+    <entry key="UnmappedNameReserved">Cannot add a trigger named ''Unmapped'' to configuration ''{0}''. This name is reserved for use by Simulink.</entry>
+    <entry key="CannotDeletePeriodicTaskGroup">Cannot delete trigger ''{0}'' because the architecture must contain at least one periodic trigger.</entry>
+    <entry key="NoTasksInAperiodicTaskGroup">Cannot add task ''{0}'' to trigger ''{1}'' because adding tasks to aperiodic triggers is not permitted.</entry>
+    <!--
+      Task API
+      -->
+    <entry key="InvalidTaskName">The specified task name ''{0}'' must be a valid MATLAB variable name.</entry>
+    <entry key="TaskDoesNotExist">The specified task ''{0}'' does not exist.</entry>
+    <entry key="TaskNotInTaskConfiguration">Simulink did not find specified task ''{0}'' in task configuration ''{1}''.</entry>
+    <entry key="InvalidIntegerTaskProp">Invalid setting ''{0}'' for property ''{1}'' of task ''{3}:{2}''.  The specified value must be an integer.</entry>
+    <entry key="InvalidIntVectorTaskProp">Invalid setting ''{0}'' for property ''{1}'' of task ''{3}:{2}''.  The specified value must be a nonnegative integer (i.e., zero or greater) or a vector of nonnegative integers.</entry>
+    <entry key="InvalidPositiveRealTaskProp">Invalid setting ''{0}'' for property ''{1}'' of task ''{3}:{2}''.  The specified value must be in the form of a positive real or a ratio.</entry>
+    <entry key="InvalidPositiveRealTriggerProp">Invalid setting ''{0}'' for property ''{1}'' of trigger ''{2}''.  The specified value must be in the form of a positive real or a ratio.</entry>
+    <entry key="ValueNotRealScalar">The specified value must be a positive real or ratio.</entry>
+    <entry key="InvalidPositiveRealNodeProp">Invalid setting ''{0}'' for property ''{1}'' of node ''{2}''.  The specified value must be in the form of a positive real or a ratio.</entry>
+    <entry key="InvalidColorSpec">The specified value must be a vector of three doubles [R G B] where each element is a double in the range [0 1].</entry>
+    <!--
+       TFL
+      -->
+    <entry key="TFLMutexEntryNotFound">The code replacement library must provide entries for semaphore/mutex creation.</entry>
+    <entry key="CRLAtomicCheckAndSetEntryNotFound">Code Replacement Library registers keyword AtomicCheckAndSet, however, a replacement is not found in this Code Replacement Library for the given input type. Run RTW.viewTfl(get_param(bdroot,'TargetFcnLibHandle')) to identify the possible replacements that did not occur in MissCache. Code Replacement Library table must have an entry that have an input that is a pointer of {0}, or switch to use the default Code Replacement Library</entry>
+    <!--
+      Block mapping API
+      -->
+    <entry key="NotMappedToTask">The specified block ''{0}'' does not map to specified task ''{1}''.</entry>
+    <entry key="BlockNotAComponent">The specified block handle ''{0}'' must be a Model or MATLAB System block.</entry>
+    <entry key="BlockNotAsyncMappable">Block ''{0}'' cannot be mapped to an aperiodic trigger.  You can only map an Inport block to aperiodic triggers if its ''Output function call'' parameter is selected ('on').</entry>
+    <entry key="BlockNotInParentBd">Simulink did not find specified block ''{0}'' in block diagram ''{1}'' for task configuration ''{2}''.</entry>
+    <!--
+      Sample Time Diagnostics
+      -->
+    <entry key="ComponentTsOffsetNotAllowed">This model is configured for concurrent execution and has modeling constraints. Block ''{0}'' specifies sample time ({1}), which has a nonzero offset.  All discrete sample times must specify a zero offset.</entry>
+    <entry key="ComponentTsConstNotAllowed">This model is configured for concurrent execution and has modeling constraints. The referenced model in ''{0}'' contains only virtual blocks or blocks with constant sample time.</entry>
+    <entry key="ComponentTsConstInputPortNotAllowed">This model is configured for concurrent execution and has modeling constraints. Input port {0,number,integer} of block ''{1}'' specifies a constant sample time.  Input and output ports of blocks cannot be constant.</entry>
+    <entry key="ComponentTsConstOutputPortNotAllowed">This model is configured for concurrent execution and has modeling constraints. Output port {0,number,integer} of block ''{1}'' specifies a constant sample time.  Input and output ports of blocks cannot be constant.</entry>
+    <!--
+      General Diagnostics
+      -->
+    <entry key="OutputPortIndexOutOfRange">Output port index {0,number,integer} is not valid.  The specified index must be within the range of [{1,number,integer},{2,number,integer}].</entry>
+    <entry key="OutputPortIndexOutOfRange_NoOuptutPorts">Port index {0,number,integer} is not valid since the specified block has no output ports.</entry>
+    <entry key="InvalidPortInSetBlockParam">Cannot set parameter ''{0}'' because the specified port is not a block port.</entry>
+    <entry key="InvalidInputPortSetting">Cannot access specified property on input port {0,number,integer} of block ''{1}''.  The specified port must be an output port.</entry>    
+    <entry key="NotABlockDiagram">The specified object must be a block diagram.</entry>
+    <entry key="InvalidPortHandleForLineColor">Invalid Port Handle for line color</entry>
+    <entry key="InvalidBlockHandle">Block handle ({0}) is not valid.</entry>     
+    <!--
+      Modeling Constraints
+      -->
+    <entry key="DataTransferLinearization">Simulink cannot honor the linearization point at output port {0,number,integer} of block ''{1}'' because the signal originating at this port is configured for data transfer between two tasks.</entry>
+    <entry key="BlockNotSupported">This model is configured for concurrent execution and has modeling constraints. Block ''{0}'' of type ''{1}'' must be contained in a referenced model.</entry>
+    <entry key="SigGenNotSupported">This model is configured for concurrent execution and has modeling constraints. The signal generators connected to block ''{0}'' must be contained in a referenced model.</entry>
+    <entry key="TriggeredComponentNotSupported">This model is configured for concurrent execution and has modeling constraints. The Model block ''{0}'' may not contain a trigger or enable port.</entry>
+    <entry key="FoundUnsupportedBlocks">This model is configured for concurrent execution and has modeling constraints. All blocks must be contained in referenced models or you must disable task customization by activating a different Configuration Set from Model Explorer. See additional diagnostics.</entry>
+    <entry key="MultirateSingleTaskingComponentNotSupported">This model is configured for concurrent execution and has modeling constraints. Model block ''{0}'' must not reference a multi-rate model with the 'Configuration Parameters' > 'Solver' > 'Treat each discrete rate as a separate task' option cleared. Consider selecting this option for the referenced model.</entry>
+    <entry key="InvalidPeriodicTasksMapping">Invalid mapping specified for block ''{0}''. The block must be mapped to {1,number,integer} periodic tasks or triggers which specify the periods [{2}].</entry>
+    <entry key="InvalidContinuousTriggerMapping">Invalid mapping specified for block ''{0}'': Block has continuous sample time and is mapped to trigger ''{1}''. Map this block to a periodic task that specifies the period [{2}].</entry> 
+    <entry key="InvalidContinuousTaskMapping">Invalid mapping specified for block ''{0}'': Multiple blocks have continuous sample time and are mapped to periodic tasks, with period {1}, that belong to different triggers. Map these blocks to periodic tasks that specify period {2} and that belong to the same periodic trigger.</entry>
+    <entry key="TaskEditorFeature">Invalid command.</entry>
+    <entry key="ConfigSetRequirement">This model is configured for concurrent execution and has modeling constraints.  The block diagram parameter ''{0}'' must be set to ''{1}''.</entry>
+    <entry key="VirtualBusOutputNotSupported">This model is configured for concurrent execution and has modeling constraints.  Output port {0,number,integer} of block ''{1}'' must not specify a virtual bus.  Consider selecting the ''Output as nonvirtual bus in parent model'' setting of the corresponding Outport block in the referenced model.</entry>
+    <entry key="VirtualBusInputNotSupported">This model is configured for concurrent execution and has modeling constraints.  Input port {0,number,integer} of block ''{1}'' must not specify a virtual bus.  Consider selecting the ''Output as nonvirtual bus'' setting of the corresponding Inport block in the referenced model.</entry>
+    <entry key="AtomicSubsystemNotSupported">This model is configured for concurrent execution and has modeling constraints.  The Subsystem block ''{0}'' is being treated as atomic and must be contained in a referenced model.  Note that virtual subsystems can contain Model, MATLAB System, Inport, Outport and virtual connectivity blocks.</entry>
+    <entry key="ModelSILPILNotSupported">This model is configured for concurrent execution and has modeling constraints. For concurrent execution, configure the model ''{0}'' to simulate in ''Normal'', ''Accelerator'' or ''Rapid Accelerator'' mode.  To change this option, select the Simulation menu > Mode option.</entry>
+    <entry key="ModelVariantsNotSupported">This model is configured for concurrent execution and has modeling constraints. The Model block ''{0}'' cannot generate code configured with preprocessor conditionals. To use this model for concurrent execution, clear the Generate preprocessor conditionals check box of the Model block. </entry>
+    <!--
+      Data Transfer Constraints
+      -->
+    <entry key="NoContinuousUnprotectedTaskTransitionLine">The signal at output port {0,number,integer} of block ''{1}'' specifies a continuous sample time and is configured for ''Unprotected'' data transfer.  Simulink does not currently support this scenario.  Consider changing the data transfer setting to a different value.</entry>
+    <entry key="InvalidExtrapolationOnTaskTransitionLine">The signal at output port {0,number,integer} of block ''{1}'' specifies its extrapolation method as ''None''.  This setting is permitted only when the data transfer setting is set to ''Ensure Determinism (Minimum Delay)''.  Consider changing the extrapolation method or the data transfer setting for this signal.</entry>
+    <entry key="InvalidDataTransferSettingAndExtrapolation">The signal at output port {0,number,integer} of block ''{1}'' specifies a continuous sample time, and the signal has the data transfer type set to ''Ensure Determinism (Minimum Delay)'' and extrapolation method set to ''None''.  Due to modeling constraints, this combination of data transfer settings is not allowed between these two tasks. Change the extrapolation method and/or the data transfer type setting.</entry>
+    <entry key="IllegalTaskTransition">This model is configured for concurrent execution and has modeling constraints.  The rate transition from sample time {0} of ''{1}'' at {2} to sample time {3} of ''{4}'' at output port {5,number,integer} must be contained in a referenced model.  Consider inserting a Rate Transition block in the referenced models to ensure that the two ports specify the same sample time.</entry>
+    <entry key="InvalidDataTransferBetweenPeriodicTriggers"> Simulink cannot handle the data transfer for the signal at output port {0,number,integer} of block ''{1}''. The data transfer setting for signals transferred between periodic triggers must resolve to ''Ensure Data Integrity Only''.</entry>  
+    <entry key="NoContinuousDataTransferBetweenTriggers">Simulink cannot handle the data transfer for the signal at output port {0,number,integer} of block ''{1}''.  Consider changing the mapping such that continuous partitions of all blocks are mapped to periodic tasks within the same trigger.</entry>
+    <!--
+        Target Customization
+    -->
+    <entry key="InvalidEventSource">Source ''{0}'' of trigger ''{1}'' is not supported by the current target. Valid options are ''{2}''.</entry>
+    <entry key="TaskGroup_PropNotSame">Two triggers ''{0}'' and ''{1}'' specify the same value ({3}) for property ''{2}''.  The two triggers must not specify the same value.</entry>
+    <entry key="TaskGroup_PropSame">triggers ''{0}'' and ''{1}'' must specify the same value for property ''{2}''.  Currently, they specify different values ({3}) and ({4}).</entry>
+    <entry key="NonPrimitiveTargetObjectProperty">Property ''{0}'' of aperiodic trigger ''{1}'' defined in class ''{2}'' is not a primitive type or vector of a primitive type.  Non-primitive properties are currently disallowed in target-defined trigger customization objects.</entry>
+    <entry key="TargetObject_InvalidRange">Value ''{2}'' for property ''{1}'' of ''{0}'' is not within the allowed range of ''{3}''.</entry>
+    <entry key="TargetObject_InvalidValue">Value ''{2}'' for Property ''{1}'' of ''{0}'' is not valid.</entry>
+    <entry key="TargetObject_NonNumericScalarInput">Value ''{2}'' for property ''{1}'' of ''{0}'' must be a numeric constant.</entry>
+    <entry key="TargetObject_InvalidWindowsEventName" note="stringDatatypeUpdate">Value ''{2}'' for property ''{1}'' of ''{0}'' must be a character vector which does not contain the ''\\'' characters.</entry>
+    <entry key="InvalidTargetCustomization">Invalid target customization class ''{0}''.  The currently selected target does not support Task Customization components.</entry>
+    <!--
+      Aperiodic Modeling Constraints
+      -->
+    <entry key="AperiodicMappedToTwoPartitions">Two function-call initiator blocks ''{0}'' and ''{1}'' are mapped to the same trigger ''{2}''.  Simulink does not currently support this scenario.</entry>
+    <entry key="FcnCallMappedToMoreThanOneAperiodicGroups">The function-call initiator block ''{0}'' is mapped to {1} triggers {2}.  Simulink does not currently support this scenario.  Consider mapping the initiator block to one trigger.</entry>
+    <entry key="UnmappedAsyncInitiator">The function-call initiator ''{0}'' must be mapped to an aperiodic trigger but the model does not contain a Software node.</entry>
+    <entry key="PeriodicTaskGroupMappingNotAllowed">Cannot map to the periodic trigger ''{0}''.  Blocks must be mapped to periodic tasks or to aperiodic triggers and tasks.</entry>
+    <entry key="InvTimePointsSpec">The specified value ''{0}'' for parameter ''{1}'' of block ''{2}'' is not valid. Specify the simulation time points as a vector of doubles.</entry>
+    <entry key="TimepointNotBaseMultiple">Time point ''{0}'' for property ''{1}''  of ''{3}'' is not a multiple of the base rate ''{2}'' and thus will not be hit during simulation.</entry>
+    <entry key="TimepointsNotBaseMultiple">Time points ''{0}'' for property ''{1}'' of ''{3}'' are not multiples of the base rate ''{2}'' and thus will not be hit during simulation.</entry>    
+    <entry key="TimepointsNotValid">Time points ''{0}'' for property ''{1}'' are not valid. They must be positive numbers.</entry>
+    <entry key="TimepointsNonDecreasing">Time points ''{0}'' for property ''{1}'' should be a series for which values do not decrease.</entry>
+    <entry key="InvalidAperiodicTaskGroupCombination">Aperiodic trigger source type ''{0}'' of aperiodic trigger ''{1}'' differs from aperiodic trigger source type ''{2}'' of aperiodic trigger ''{3}''.  All aperiodic triggers in a model must have the same aperiodic source type.  To change the aperiodic trigger source type, in the Concurrent Execution dialog, change the aperiodic trigger source parameter on the aperiodic trigger pane for ''{4}'' or ''{5}''</entry>
+    <entry key="TaskNotMappable">Block ''{0}'' cannot be mapped to aperiodic task ''{1}'' since the task belongs to an aperiodic trigger ''{2}'' of type ''{3}'' which disallows tasks to be mapped.</entry>
+    <entry key="TaskAndHandlerNotMappable">Blocks may not be mapped to both aperiodic trigger ''{0}'' of type ''{1}'' and its aperiodic task ''{2}'' simultaneously.  Consider mapping blocks to either the trigger or the child task but not both.</entry>    
+    <entry key="PeriodicTaskAndTriggerNotMappable">Blocks may not be mapped to both periodic trigger ''{0}''and its periodic task ''{1}'' simultaneously.  Consider mapping blocks to either the trigger or the child task but not both.</entry>
+    <entry key="MultipleTasksNotMappable">Block may not be mapped to multiple child tasks within the same aperiodic trigger ''{0}'' of type ''{1}''.  Consider mapping blocks to only one task within this trigger.</entry>
+    <entry key="MultipleAperiodicTasksNotAllowed">Creating multiple aperiodic tasks belonging to the same aperiodic trigger ''{0}'' is not allowed.</entry>
+    <entry key="IncompatibleAperiodicTrigger">Code generation for aperiodic trigger ''{0}'' of type ''{1}'' is not supported on the ''{2}'' platform.  Change the aperiodic trigger type of ''{3}'' to ''{4}''. </entry>
+    <!-- 
+      Algebraic Loops
+      -->
+    <entry key="AlgLoopsDisabled">Block ''{0}'' is in an algebraic loop.  This algebraic loop can not be solved because this model is configured for Concurrent Execution.  Note that this algebraic loop is commonly avoided by selecting the ''Minimize algebraic loop occurrences'' checkbox in the ''Model Referencing'' pane of the Configuration Parameters dialog of models which may be referenced from within the loop.</entry>
+    <entry key="AlgLoopMsgIgnored">Note that the Algebraic loop option in the Diagnostics page of the Configuration Parameters Dialog is being ignored because the block diagram ''{0}'' is configured for concurrent execution.</entry>
+    <!--
+      Configuration Set Constraints
+      -->
+    <entry key="ErtBuildWithNativeThreadsExample">This model is configured for concurrent execution and has modeling constraints. To generate code, the ''Generate an example main program'' option must be selected and the ''Target operating system'' must be set to ''NativeThreadsExample'' from the ''Template'' section of the ''Code Generation'' pane of the Configuration Parameters dialog.</entry>
+    <entry key="MatFileLoggingNotSupported"><![CDATA[This model is configured for concurrent execution and has modeling constraints. To generate code, <sldiag objui="configset" objparam="MatFileLogging">MAT-file logging</sldiag> may not be selected.]]></entry>
+    <entry key="cannotGenNativeThreadsExample">This model specifies the ''Target operating system'' as ''NativeThreadsExample'' from the ''Template'' section of the ''Code Generation'' pane of the Configuration parameters dialog.  This example target is currently supported only when the model is configured for concurrent execution.</entry>
+    <entry key="CannotParticipateInModelReference">The model ''{0}'' cannot be referenced because the ''Enable explicit model partitioning for concurrent behavior'' check box is selected in the Concurrent Execution dialog.</entry>
+    <entry key="DataExchangeInterfaceNotSupported">The selected Data-exchange interface in the Interface tab for Code generation settings is not currently supported for concurrent execution. The only valid setting is ''None''.</entry>
+    <entry key="FunctionPrototypeControlNotSupported">Model function prototype control cannot be used for this model because the ''Enable explicit model partitioning for concurrent behavior'' check box is selected in the Concurrent Execution dialog'.</entry>
+    <!--
+      Modeling Constraints for Referenced Model (Concurrent Tasks)
+      -->
+    <entry key="BlkNotSupportTaskConfiguration">The block ''{0}'' of type ''{1}'' is a multi-rate block. Currently Simulink supports only single-rate blocks of this type when the model is configured for concurrent execution. </entry>
+    <entry key="DataMemBlkNotSupportTaskConfiguration">In the model, the blocks ''{0}'' and ''{1}'' are in different rates, and are both accessing a Data Store Memory block ''{2}''. Currently Simulink only allows a Data Store Memory block to be accessed by blocks with the same rate when the model is configured for concurrent execution. Consider adjusting all the read/write blocks to have the same sample time. </entry>
+    <entry key="HiddenDataMemBlkNotSupportTaskConfiguration">In the model, the blocks ''{0}'' and ''{1}'' are in different rates, and are both accessing a Data Store Memory block defined by the global Simulink.Signal object ''{2}''. Currently Simulink only allows a Data Store Memory block to be accessed by blocks with the same rate when the model is configured for concurrent execution. Consider adjusting all the read/write blocks to have the same sample time. </entry>
+    <entry key="TaskConfigurationNotSupportAsyncSfcnRTB">This model is configured for concurrent execution and has modeling constraints.  You cannot use the S-Function block ''{0}'' as an asynchronous rate transition block. You must use the Simulink Rate Transition block to handle rate transitions.</entry>
+    <entry key="TaskConfigurationNotSupportAsyncSysRTB">This model is configured for concurrent execution and has modeling constraints.  You cannot use the Masked Subsystem block ''{0}'' as an asynchronous rate transition block. You must use a Simulink Rate Transition block to handle rate transitions.</entry>
+    <entry key="MT_DSMMsgMustBeErrorForTaskConfiguration"><![CDATA[The model ''{0}'' is configured for concurrent execution and has modeling constraints.  You must <a href="matlab:{1}">set the diagnostic option ''Multitask data store'' to ''error''</a> on the Diagnostics>Data Validity pane of the Configuration Parameters dialog.]]></entry>
+    <entry key="MT_CondExeSysMustBeErrorForTaskConfiguration"><![CDATA[The model ''{0}'' is configured for concurrent execution and has modeling constraints.  You must <a href="matlab:{1}">set the diagnostic option ''Multitask conditionally executed subsystem''to ''error''</a> on the Diagnostics>Sample time pane of the Configuration Parameters dialog.]]></entry>
+    <entry key="MT_RateTransMustBeErrorForTaskConfiguration"><![CDATA[The model ''{0}'' is configured for concurrent execution and has modeling constraints.  You must set <a href="matlab:{1}">the diagnostic option ''Multitask rate transition'' to ''error''</a> on the Diagnostics>Sample time pane of the Configuration Parameters dialog.]]></entry>  
+    <entry key="NoRTWForEmptyTaskConfiguration">The model ''{0}'' is configured for concurrent execution and has modeling constraints.  Stand-alone code generation requires you to select the ''Enable explicit model partitioning for concurrent behavior'' check box in the Concurrent Execution dialog.</entry>
+    <entry key="CannotSaveObject">Unable to save objects of class ''{0}'' to a MAT-file.</entry>
+    <entry key="CannotCallMethodInDetachedState">To invoke ''{0}'', the task configuration must be attached to a model.</entry>
+    <entry key="UnsupportedCodeGenForImplicitODE">Model ''{0}'' is configured for concurrent execution and contains one or more blocks which requires implicit ODE solver.  This mode is currently not supported. If this model has ModelReference blocks which contain a Simscape Solver Configuration block, consider selecting 'Use local solver' option on the Simscape Solver Configuration block.</entry>  
+    <entry key="BlockAlreadyMappedToTask">The Block ''{0}'' is already mapped to task ''{1}''</entry>
+    <entry key="MappingLabel">Map blocks to tasks</entry>
+    <entry key="MappingErrorDlg1">Error</entry>
+    <entry key="MappingErrorDlg2">OK</entry>
+    <entry key="CannotConstructDefaultObject">Simulink cannot construct a default element because no default value exists for the ''UserDataBase'' class. This error typically occurs when you concatenate arrays.</entry>
+    <entry key="ExplicitMappingActive">Tasks and Mapping</entry>
+    <entry key="ExplicitMappingInactive">(Ignored) Tasks and Mapping</entry>
+    <!--
+      Multiple mappings
+      -->
+    <entry key="InvalidModelMappingName">The specified mapping name ''{0}'' must be a valid MATLAB variable name.</entry> 
+    <entry key="ModelMappingDoesNotExist">The specified mapping ''{0}'' does not exist.</entry>
+    <entry key="InvalidMappingType">The specified mapping type ''{0}'' does not exist.</entry> 
+    <!--
+       Distributed Targets 
+     -->
+    <entry key="NodeDoesNotExist">The specified node ''{0}'' does not exist.</entry> 
+    <entry key="InvalidNodeName">The specified node name ''{0}'' must be a valid MATLAB variable name.</entry>
+    <entry key="BlockNotInParentBdForDistrTarget">Simulink did not find block ''{0}'' in block diagram ''{1}'' for distributed target mapping ''{2}''.</entry>
+    <entry key="MappingEntityNotInArchitecture">Simulink did not find the specified mapping object ''{0}'' in the architecture of model ''{1}''.</entry>
+    <entry key="NotMappedToMappingEntity">The specified block ''{0}'' does not map to specified mapping entity.</entry>
+    <entry key="CannotMapToTaskForHardwareNode">Cannot map the specified component to task ''{0}'' because the node ''{1}'' is hardware.</entry>  
+    <entry key="CannotUnmapFromTaskForHardwareNode">Cannot unmap the specified component from task ''{0}'' because the node ''{1}'' is hardware.</entry>  
+    <entry key="SoftwareNodeMappingNotAllowed">Cannot map to the software node ''{0}''.  Blocks must be mapped to periodic tasks, aperiodic triggers and tasks, or hardware nodes.</entry> 
+    <entry key="InvalidNodeMapping">Invalid mapping specified for block ''{0}''. The block must be mapped to {1,number,integer} periodic tasks or triggers that specify the periods [{2}], or to exactly one hardware node.</entry>   
+    <entry key="AsyncBlockMappedToHardwareNode">The block ''{0}'' connected to the  function-call initiator block ''{1}'' is mapped to a hardware node. Simulink does not support this scenario. Consider mapping the block to periodic tasks.</entry>
+    <entry key="RateTransitionAtHardwareNodeInput">Simulink cannot handle the data transfer for the signal at input port {0,number,integer} of block ''{1}'' mapped to hardware node ''{2}''. A rate-transition cannot occur between blocks when either block is mapped to a hardware node.</entry> 
+    <entry key="RateTransitionAtHardwareNodeOutput">Simulink cannot handle the data transfer for the signal at output port {0,number,integer} of block ''{1}'' mapped to hardware node ''{2}''. A rate-transition cannot occur between blocks when either block is mapped to a hardware node.</entry>
+    <entry key="CannotMapToHardwareNode">Cannot map the specified block ''{0}'' to a hardware node. You can only map model reference blocks to hardware nodes.</entry>
+    <entry key="HardwareNodeMappedToTwoBlocks"> Multiple blocks are mapped to the same hardware node ''{0}''.  Simulink does not support this scenario.</entry>
+    <entry key="HardwareNodeSelectedForCodeGen"> The node ''{0}'' is a hardware node and cannot be selected for C code generation.</entry>
+    <entry key="CannotGenerateCodeForZeroSoftwareNodes"> This model is configured for concurrent execution and has mapping constraints. Simulink cannot generate code when none of the blocks are mapped to a software node.</entry>  
+    <entry key="CannotFindCodeGenerationClassForChannelInterface"> Simulink cannot generate code because it cannot find the code generation customization class ''{0}'' for channel interface ''{1}''.</entry>    
+     <entry key="CannotGenerateCodeForSoftwareNodeAtInputPort">The signal at input port {0,number,integer} of block ''{1}'' is a data transfer between different nodes.  Simulink cannot generate code because the device driver corresponding to this signal is not registered correctly in the ''{2}'' class. The function getDeviceDriverBlockAndProperties must return a cell array with three elements: S-function block name, S-function parameters, and S-function module.</entry>    
+     <entry key="CannotGenerateCodeForSoftwareNodeAtOutputPort">The signal at output port {0,number,integer} of block ''{1}'' is a data transfer between different nodes.  Simulink cannot generate code because the device driver corresponding to this signal is not registered correctly in the ''{2}'' class. The function getDeviceDriverBlockAndProperties must return a cell array with three elements: S-function block name, S-function parameters, and S-function module.</entry>    
+   <entry key="CannotGenerateCodeForCoprocessorNode"> This model is configured for concurrent execution and has mapping constraints. Cannot generate code for node ''{0}'' when execution mode is Coprocessing - blocking or Coprocessing - nonblocking with delay. Consider changing the execution mode to Free running. </entry>
+    <entry key="NoParentDistTargetMapping">To enable mapping block ''{0}'', click on ''Add distributed target mapping'' button in the task editor. </entry>
+    <entry key="ArchXMLValidationFailed">Failed to validate architecture XML file "{0}": {1}</entry>
+    <entry key="MappingManagerName">Mapping Manager</entry>
+    <entry key="TaskConfigurationNodeLabel">Task Configuration</entry>
+    <entry key="DistTargetMappingActive">Distributed Target Mapping</entry>
+    <entry key="DistTargetMappingInactive">(Ignored) Distributed Target Mapping</entry>
+    <entry key="LineBranchingNotSupportedBetweenNodes">Simulink cannot handle the data transfer for the signal at output port {0,number,integer} of block ''{1}''. Signals transferred between nodes cannot contain branches.</entry>
+    <entry key="SignalBetweenNodesNotSupported">The signal at output port {0,number,integer} of block ''{1}'' requires data transfer between two nodes. The architecture does not allow this connection.</entry> 
+    <entry key="UnsupportedDataTypeForInterface"> The signal at output port {0,number,integer} of block ''{1}'' requires data transfer between different nodes and has data type "{2}". Simulink cannot generate code when blocks mapped to different nodes transfer data with this data type. Consider changing the signal data type to int8, uint8, int16, uint16, int32, or uint32. </entry>
+    <entry key="UnsupportedBusSignalForInterface"> The signal at output port {0,number,integer} of block ''{1}'' requires data transfer between different nodes and is a bus signal. Simulink cannot generate code when blocks mapped to different nodes transfer bus signals. Consider changing the data type of this signal. </entry> 
+    <entry key="UnsupportedComplexSignalForInterface"> The signal at output port {0,number,integer} of block ''{1}'' requires data transfer between different nodes and is a complex signal. Simulink cannot generate code when blocks mapped to different nodes transfer complex signals. Consider changing the numeric type of this signal. </entry>
+    <entry key="UnsupportedMatrixSignalForInterface"> The signal at output port {0,number,integer} of block ''{1}'' requires data transfer between different nodes and is a matrix signal. Simulink cannot generate code when blocks mapped to different nodes transfer matrix signals. Consider changing the signal into vector. </entry>
+    <entry key="UnsupportedDataTransferBetweenNodes">Simulink cannot handle the data transfer for the signal at output port {0,number,integer} of block ''{1}''. The data transfer setting for signals transferred between nodes must resolve to ''Ensure Data Integrity Only''.</entry>
+    <entry key="MultirateBlockMapToHardwareNodeUnsupported"> Invalid mapping specified for block ''{0}'': Block contains multiple sample times, and references a model with the ''Allow tasks to execute concurrently on target'' check box on the Configuration Parameters > Solver pane selected and is mapped to hardware node ''{1}''. Map this block to periodic tasks or uncheck the ''Allow tasks to execute concurrently on target'' option. </entry>
+    <entry key="ContinuousBlockMapToHardwareNodeUnsupported"> Invalid mapping specified for block ''{0}'': Block contains continuous sample time and is mapped to hardware node ''{1}''. Map this block to periodic tasks. </entry>
+    <entry key="MultiInstanceMapToHardwareUnsupported"> Blocks ''{0}'' and  ''{1}'' refer to model ''{2}'' and both are mapped to hardware nodes. Cannot map multiple blocks that reference the same model to hardware nodes. Consider mapping one of them to periodic tasks. </entry>
+    <entry key="TargetSpecificPropertyAlreadyExist"> The target specific property ''{0}'' exists in the node ''{1}''. The node cannot have two properties with the same name. Consider changing the name of the property. </entry> 
+    <entry key="TargetSpecificPropertyDoesNotExist"> Target specific property ''{0}'' does not exist. </entry>
+    <entry key="InvalidPropertyName">The specified property name ''{0}'' must be a valid MATLAB variable name.</entry>
+    <entry key="CannotMapToNodeWithCoprocessorMode"> Block ''{0}'' cannot be mapped to hardware node ''{1}'' because the hardware node specifies a Coprocessing - blocking or Coprocessing - nonblocking with delay execution mode. Blocks mapped to a hardware node with these modes must have all the blocks connected at the input ports and output ports mapped to the same task. </entry>
+    <entry key="InvalidArchitectureInModel">The model has an architecture that contains multiple nodes. Consider turning on the hidden feature for this support.</entry> 
+    <entry key="ConnectionAlreadyExist"> The architecture ''{0}'' has a connection ''{1}'' between nodes ''{2}'' and ''{3}''.</entry>  
+    <entry key="ChannelInterfaceAlreadyExist"> The channel interface ''{0}'' exists in the architecture.</entry> 
+    <entry key="ChannelInterfaceDoesNotExist"> The channel interface ''{0}'' does not exist in the architecture.</entry> 
+    <entry key="ConfigSetRequirementForArch">The model is mapped to an architecture which has constraints on the configuration set parameters. The block diagram parameter ''{0}'' must be set to ''{1}''.</entry>  
+    <entry key="ConfigSetParamNameDoesNotExist">The architecture does not have a constraint on the configuration set parameter ''{0}''.</entry>
+    <entry key="ConfigSetParamValueAlreadyExist">The architecture has a constraint on the configuration set parameter ''{0}'' with value ''{1}''.</entry>
+    <entry key="TemplateDoesNotExist">Cannot locate template ''{0}'' within architecture ''{1}''.</entry>
+    <entry key="TemplateAlreadyExists">Cannot add template ''{0}'' to architecture ''{1}'' because a template with the same name was previously added to the architecture.</entry>
+    <entry key="ParameterEvalError">Error while evaluating property ''{0}'' of ''{1}''.</entry>
+    <entry key="InvalidParameterValue" note="stringDatatypeUpdate">Property must evaluate to a character vector, logical or numeric array.</entry>
+    <entry key="HDLCoderLicenseUnavailable">Cannot generate code for ''{0}'' because HDL Coder is not licensed or installed. Make sure HDL Coder is licensed and installed.</entry> 
+    <entry key="TargetConnectionFailed">Cannot connect to target computer.</entry>
+    <!--
+        Distributed Targets Dialog
+     -->
+    <entry key="BlockIsMappedToHardwareNode"> The referenced model ''{0}'' is mapped to a hardware node.  No need to generate the model reference target.</entry>
+    <entry key="DistTargetMappingLabel">Distributed Target Mapping</entry>
+    <!--
+        Partial mapping
+    -->
+    <entry key="CannotGenerateCodeForAutogeneratedAperiodicTrigger">Cannot generate code for model ''{0}''. Simulink cannot automatically map function-call initiator blocks during code generation.Currently this scenario is only supported for simulation. In order to generate code for a model containing these blocks, each function-call initiator block must be mapped to a unique aperiodic trigger. You can do this either by explicitly adding an aperiodic trigger or convert an auto-generated trigger. </entry>
+    <entry key="CodeGenWarningForAutogeneratedTasks">Model ''{0}'' contains blocks that are mapped to periodic tasks generated by Simulink, which are not editable. To customize these tasks, consider converting them to editable tasks.</entry>
+    <entry key="UnmappedBlocksWithNoSoftwareNode">Model ''{0}'' has unmapped blocks which cannot be automatically handled because the architecture does not contain at least one software node.</entry>  
+    <entry key="SystemTasksText">System tasks</entry>
+    <!-- 
+         Profiling
+    -->
+    <entry key="ProfileReportDialogTitle">Profile report</entry> 
+    <entry key="InvalidNumberForProfilingSamples"> Invalid value ''{0}'' for Number of time steps parameter. The specified value must be a positive integer between 1 and 1000, inclusive.</entry>
+    <entry key="InvalidArgs_SetupProfileReport">Invalid number of arguments passed to Simulink.SoftwareTarget.profile</entry> 
+    <entry key="CannotGenProfilingReportWithGenCodeOnly">Model ''{0}'' is configured with  ''Configuration Parameters > Code Generation > Generate code only'' selected. Profile report generation requires ''Generate code only'' to be cleared.</entry> 
+    <!--
+        Rate transition block
+    -->
+    <entry key="LineBranchingNotSupportedAtRateTransOutput">This model is configured for concurrent execution and has modeling constraints. The signal at output port {0,number,integer} of block ''{1}'' is a rate transition and is branched to different tasks with the same period ''{2}''. Consider removing the branch or mapping the destination blocks to one task with period ''{3}''.</entry>   
+     <!--
+         Data store block
+     -->
+    <entry key="NoDSMDataTransferBetweenNodes">Simulink cannot transfer data using the global data store memory ''{0}'' because the block ''{1}'' is mapped to hardware node ''{2}''. Consider changing the mapping of the block.</entry>
+    <!--
+        Non-concurrent scheduling
+    -->
+    <entry key="InvalidAffinityForNonConcurrentBlock">One or more tasks belonging to the trigger ''{0}'' have specified an inconsistent core affinity.  The scheduling constraints for this trigger require that all tasks specify the same scalar valued affinity.</entry>
+    <entry key="InvalidMappingForNonConcurrentBlock">Invalid mapping specified for block ''{0}''. The block must be mapped to {1,number,integer} periodic tasks which specify the periods [{2}] and belong to the same periodic trigger.</entry>   
+    <entry key="NotLockFreeDataIntegrityDataTransfer">Simulink cannot generate code for the signal at output port {0,number,integer} of block ''{1}'' because the signal requires data transfer that generates lock-free code for a rate monotonically scheduled task.</entry>
+    <entry key="NoContinuousDataTransferForRateMonotonicTask">Simulink cannot generate code for the signal at output port {0,number,integer} of block ''{1}'' because the signal is continuous for a rate monotonically scheduled task. Consider changing the mapping of the block.</entry>  
+    <entry key="UnsupportedDataTransferBetweenRMSTasks">The signal at output port {0,number,integer} of block ''{1}'' requires data transfer between rate monotonically scheduled tasks. Consider changing the data transfer setting to ''Ensure Determinism (Maximum Delay)'' 
+or ''Ensure Data Integrity Only''.</entry>
+    <entry key="NotDataIntegrityDataTransferForRMSTask">The signal at output port {0,number,integer} of block ''{1}'' requires data transfer for a rate monotonically scheduled task. Consider changing the data transfer setting to ''Ensure Data Integrity Only''.</entry> 
+    <entry key="InvalidMappingForRMSTask"> The block ''{0}'' is a multirate block mapped to the rate monotonically scheduled task ''{1}'', which requires lock-free code.  Consider checking the ''Allow tasks to execute concurrently on target'' check box on the Configuration Parameters > Solver pane of the model referenced by the block.</entry> 
+    <entry key="NoDataTransferBetweenRMSTaskAndHardwareNode">The signal at output port {0,number,integer} of block ''{1}'' requires data transfer between the hardware node ''{2}'' and the rate monotonically scheduled task ''{3}''. Consider changing the mapping of the block.</entry>
+    <entry key="NonConcurrentGlobalDSM"> Simulink cannot transfer data using the global data store memory ''{0}'' because the model block ''{1}'' references a model that is not configured for concurrent tasks. Consider checking the ''Allow tasks to execute concurrently on target'' check box on the Configuration Parameters > Solver pane of the model referenced by the block.</entry>
+  </message>  
+ </rsccat>
+
+<!-- LocalWords:  Coprocessing
+-->

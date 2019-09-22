@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- Copyright 2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel" string_type_for_hole="fl_ustring">
+  <message>
+      <entry key="ParallelPoolWithProfileName">Parallel Pool ''{0}''</entry>
+      <entry key="ParallelPoolName">Parallel Pool</entry>
+      <entry key="UnsupportedDatastore">Datastore of type ''{0}'' is not supported by the {1}. Use MAPREDUCER(0) to change the environment to the local MATLAB session.</entry>
+  </message>
+</rsccat>

@@ -1,0 +1,2 @@
+# Locale-specific Java classpath entries for install_core with locale ja_JP
+$matlabroot/java/jar/ja_JP/install_core_res.jar

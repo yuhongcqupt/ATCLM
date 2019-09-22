@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- Copyright 2014-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+      <!-- Please keep entries in sorted order -->
+      <entry key="ConstantBuildFailed">An error occurred building a parallel.pool.Constant.</entry>
+      <entry key="ConstantBuildOnClient">parallel.pool.Constant objects must be built on the client.</entry>
+      <entry key="ConstantClientDisp">Value of Constant is available only on workers.</entry>
+      <entry key="ConstantErrorsDuringCleanup">Errors occurred deleting the values of a parallel.pool.Constant: {0}.</entry>
+      <entry key="ConstantInvalidComposite">A parallel.pool.Constant requires a Composite that has a value defined on every worker.</entry>
+      <entry key="ConstantPoolRequired">An open parallel pool is required to use parallel.pool.Constant.</entry>
+      <entry key="ConstantTwoFunctions">The two-argument parallel.pool.Constant constructor requires two function handles.</entry>
+      <entry key="ConstantUnexpectedCleanup">An unexpected error occurred deleting a parallel.pool.Constant.</entry>
+      <entry key="ConstantValueOnWorkers">The value of a parallel.pool.Constant is only available on the workers.</entry>
+      <entry key="DirectoryManagementOnClient">Folders can only be created and manipulated from the client.</entry>
+      <entry key="DirectoryOnlyOnWorkers">The folder is only available on the workers.</entry>
+      <entry key="FileTransferError">An error occurred transferring files.</entry>
+      <entry key="InvalidConstant">The parallel.pool.Constant is invalid.</entry>
+      <entry key="InvalidConstantValue">The 'Value' field cannot be retrieved because the parallel.pool.Constant is invalid.</entry>
+      <entry key="InvalidFolderName">Folder names must be valid MATLAB variable names.</entry>
+      <entry key="InvalidFuturePassed">Valid futures must be created by calls to either parallel.pool.getDataFromPerHostFolder or parallel.pool.getDataFromPerWorkerFolder.</entry> 
+      <entry key="NoSuchDirectory">The folder {0} was not found.</entry>
+      <entry key="ValidPoolRequired">A connected parallel pool is required.</entry>
+  </message>
+</rsccat>

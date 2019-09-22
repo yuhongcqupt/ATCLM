@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rsccat locale="en_US" product="MATLAB" version="1.0">
+   <message>
+      <entry key="TooManyInputs">Too many input arguments.</entry>
+      <entry key="NotEnoughInputs">LSQNONNEG requires at least two input arguments.</entry>
+      <entry key="ComplexCorD">C and d must be real.</entry>
+      <entry key="NonDoubleInput">LSQNONNEG only accepts inputs of data type double.</entry>
+      <entry key="OptTolXNotPosScalar">Option ''TolX'' must be an positive scalar if not the default.</entry>
+      <entry key="InvalidDisplayValueIter">''iter'' value not valid for ''Display'' parameter for LSQNONNEG.</entry>
+      <entry key="InvalidOptParamDisplay">Bad value for options parameter: ''Display''.</entry>
+      <entry key="InputArg">The input should be either a structure with valid fields or at least two arguments to LSQNONNEG.</entry>
+      <entry key="ignoringX0">Ignoring input argument X0. The input for X0 will be removed in a future release. See the help for valid syntax.</entry>
+      <entry key="IterationCountExceeded">Exiting: Iteration count is exceeded, exiting LSQNONNEG.\nTry raising the tolerance (OPTIONS.TolX).</entry>
+      <entry key="OptimizationTerminated">Optimization terminated.</entry>
+   </message>
+</rsccat>

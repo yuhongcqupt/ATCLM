@@ -1,0 +1,3 @@
+# Java classpath entries for install_core
+$matlabroot/java/jar/installwizard.jar
+$matlabroot/java/jar/wizard.jar

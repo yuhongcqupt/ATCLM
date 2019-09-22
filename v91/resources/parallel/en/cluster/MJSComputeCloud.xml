@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- Copyright 2011-2014 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+    <entry key="ClusterNotReady">Cluster ''{0}'' is not ready to use. Visit http://www.mathworks.com/cloudcenter to check its status.</entry>
+    <entry key="ClusterNotRunning">Cluster ''{0}'' is defined but has not been started. Visit http://www.mathworks.com/cloudcenter and start it before attempting to use it.</entry>
+    <entry key="ClusterRestarted">Cluster ''{0}'' has been restarted since it was last accessed.</entry>
+    <entry key="ConnectionToClusterFailed">There was a problem connecting to cluster ''{0}''. Visit http://www.mathworks.com/cloudcenter and verify that this computer''s public IP address is included on the Cluster Access page.</entry>
+    <entry key="DiscoveryWarning">There was a problem connecting to cluster ''{0}''. Visit http://www.mathworks.com/cloudcenter and verify that this computer''s public IP address is included on the Cluster Access page.</entry>
+    <entry key="FailedToBuildSupport">Failed to establish a connection to cluster ''{0}''.</entry>
+    <entry key="FailedToBuildSupportNoJmName">Failed to access Job information.</entry>
+    <entry key="FailedToGetLogs">Could not get the logs from cluster ''{0}'', because: ''{1}''</entry>
+    <entry key="InvalidStateName">Invalid state name {0}.</entry>
+    <entry key="MissingClusterCertificate">The cluster certificate was not specified. Supply it or check that you are using the correct profile.</entry>
+    <entry key="MissingIdentifier">The cluster identifier was not specified. Supply it or check that you are using the correct profile.</entry>
+    <entry key="SupportBuildFailedDiscoveryWarning">Cluster ''{0}'' is online but a connection to it could not be created.\n{1}</entry>
+  </message>
+</rsccat>

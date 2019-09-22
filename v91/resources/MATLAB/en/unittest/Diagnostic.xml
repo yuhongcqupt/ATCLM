@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+    <message>
+        
+        <!-- Diagnostic Headers -->
+        <entry key="TestDiagnosticHeader">
+            Test Diagnostic:
+        </entry>
+        <entry key="FrameworkDiagnosticHeader">       
+            Framework Diagnostic:
+        </entry>
+        <entry key="StackInformationHeader">       
+            Stack Information:
+        </entry>
+        
+        <entry key="TestDiagnostic">Test Diagnostic: {0}</entry>
+        
+        <entry key="NotYetPopulated">&lt;Not yet populated&gt;</entry>
+        <entry key="ErrorCapturingDiagnostics">Error occurred while capturing diagnostics:\n{0}</entry>
+        <entry key="ErrorEvaluatingDiagnostic">Error occurred while evaluating getDiagnosticFor:\n{0}</entry>
+        
+        <!-- Verification Failures -->
+        <entry key="TestClassVerificationFailed">
+            Verification failed while setting up or tearing down {0}.\nAs a result, all {0} tests failed.
+        </entry>
+        <entry key="TestMethodVerificationFailed">
+            Verification failed in {0}.
+        </entry>
+        
+        <!-- Assertion Failures -->
+        <entry key="SharedTestFixtureAssertionFailed">
+            Assertion failed in {0}.\nAs a result, all tests using this fixture failed and did not run to completion.
+        </entry>
+        <entry key="TestClassAssertionFailed">
+            Assertion failed while setting up or tearing down {0}.\nAs a result, all {0} tests failed and did not run to completion.
+        </entry>
+        <entry key="TestMethodAssertionFailed">
+            Assertion failed in {0} and it did not run to completion.
+        </entry>
+        
+        <!-- Fatal Assertion Failures -->
+        <entry key="SharedTestFixtureFatalAssertionFailed">
+            Fatal assertion failed in {0}.\nTest run aborted.
+        </entry>
+        <entry key="TestClassFatalAssertionFailed">
+            Fatal assertion failed while setting up or tearing down {0}.\nTest run aborted.
+        </entry>
+        <entry key="TestMethodFatalAssertionFailed">
+            Fatal assertion failed in {0}.\nTest run aborted.
+        </entry>
+        
+        <!-- Assumption Failures -->
+        <entry key="SharedTestFixtureAssumptionFailureDetails">
+            An assumption in {0} was not met.\nAs a result, all tests using this fixture were filtered.
+        </entry>
+        <entry key="TestClassAssumptionFailureDetails">
+            An assumption was not met while setting up or tearing down {0}.\nAs a result, all {0} tests were filtered.
+        </entry>
+        <entry key="TestMethodAssumptionFailureDetails">
+            An assumption in {0} was not met and it filtered the remainder of the test.
+        </entry>
+        
+        <entry key="SharedTestFixtureAssumptionFailureSummary">
+            All tests using {0} were filtered.
+        </entry>
+        <entry key="TestClassAssumptionFailureSummary">
+            All tests in {0} were filtered.
+        </entry>
+        <entry note="Example: TestFoo/MyTestMethod was filtered." key="TestMethodAssumptionFailureSummary">
+            {0} was filtered.
+        </entry>
+        <entry note="The text displayed for a hyperlink to show the user more information." key="AssumptionFailureDetails">
+            Details
+        </entry>
+        
+        <!-- Exceptions -->
+        <entry key="ErrorIDHeader">
+            Error ID:
+        </entry>   
+        <entry key="ErrorHeader">
+            Error Details:
+        </entry>        
+        <entry key="SharedTestFixtureUncaughtException">
+            Error occurred in {0}.\nAs a result, all tests using this fixture failed and did not run to completion.
+        </entry>
+        <entry key="TestClassUncaughtException">
+            Error occurred while setting up or tearing down {0}.\nAs a result, all {0} tests failed and did not run to completion.
+        </entry>
+        <entry key="TestMethodUncaughtException">
+            Error occurred in {0} and it did not run to completion.
+        </entry>
+        
+        <!-- Stack display -->
+        <entry note="Used in stack display. Example: In C:\TestFoo.m (TestFoo.MyTestMethod) at 4" key="In">
+            In
+        </entry>
+        <entry note="Used in stack display. Example: In C:\TestFoo.m (TestFoo.MyTestMethod) at 4" key="At">
+            at
+        </entry>
+        
+        <!-- Table display -->
+        <entry key="FailureSummary">
+            Failure Summary:
+        </entry>
+        <entry key="Name" translate="false">
+            Name
+        </entry>
+        <entry key="Failed" translate="false">
+            Failed
+        </entry>
+        <entry key="Incomplete" translate="false">
+            Incomplete
+        </entry>
+        <entry key="Reasons">
+            Reason(s)
+        </entry>
+        <entry key="VerificationFailed">
+            Failed by verification.
+        </entry>
+        <entry key="AssumptionFailed">
+            Filtered by assumption.
+        </entry>
+        <entry key="AssertionFailed">
+            Failed by assertion.
+        </entry>
+        <entry key="Errored">
+            Errored.
+        </entry>
+        
+        <!-- Verification Passed -->
+        <entry key="TestClassVerificationPassed">
+            Verification passed while setting up or tearing down {0}.
+        </entry>
+        <entry key="TestMethodVerificationPassed">
+            Verification passed in {0}.
+        </entry>
+        
+        <!-- Assertion Passed -->
+        <entry key="SharedTestFixtureAssertionPassed">
+            Assertion passed in {0}.
+        </entry>
+        <entry key="TestClassAssertionPassed">
+            Assertion passed while setting up or tearing down {0}.
+        </entry>
+        <entry key="TestMethodAssertionPassed">
+            Assertion passed in {0}.
+        </entry>
+        
+        <!-- Fatal Assertion Passed -->
+        <entry key="SharedTestFixtureFatalAssertionPassed">
+            Fatal assertion passed in {0}.
+        </entry>
+        <entry key="TestClassFatalAssertionPassed">
+            Fatal assertion passed while setting up or tearing down {0}.
+        </entry>
+        <entry key="TestMethodFatalAssertionPassed">
+            Fatal assertion passed in {0}.\n
+        </entry>
+        
+        <!-- Assumption Passed -->
+        <entry key="SharedTestFixtureAssumptionPassed">
+            Assumption passed in {0}.
+        </entry>
+        <entry key="TestClassAssumptionPassed">
+            Assumption passed while setting up or tearing down {0}.
+        </entry>
+        <entry key="TestMethodAssumptionPassed">
+            Assumption passed in {0}.
+        </entry>
+    </message>
+</rsccat>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2010-2016 The MathWorks, Inc. -->
+<rsccat locale="en_US" product="MATLAB" version="1.0">
+   <message>
+      <entry key="AmbiguousParamName">Ambiguous parameter name ''{0}'' {1}.</entry>
+      <entry key="FcnNotFoundOnPath">No default options available: the function ''{0}'' does not exist on the path.</entry>
+      <entry key="NoDefaultsForFcn">No default options available for the function ''{0}''.</entry>
+      <entry key="ArgNameValueMismatch">Arguments must occur in name-value pairs.</entry>
+      <entry key="ParamNotString" note="stringDatatypeUpdate">Expected argument {0,number,integer} to be a character vector parameter name.</entry>
+      <entry key="InvalidParamName">Unrecognized parameter name ''{0}''.</entry>
+      <entry key="InvalidParamNameWithLink">Unrecognized parameter name ''{0}''.  Please see the optimset reference page in the documentation for a list of acceptable option parameters. {1}</entry>
+      <entry key="InvalidParamTryOptimoptions">Unrecognized parameter name ''{0}''.  Please see the options table in the documentation for a list of acceptable option parameters. Note that some parameters are only supported by OPTIMOPTIONS. {1}</entry>
+      <entry key="NoValueForParam">Expected value for parameter ''{0}''.</entry>
+      <entry key="NoParamNameOrStruct" note="stringDatatypeUpdate">Expected argument {0,number,integer} to be a character vector parameter name or an options structure created with OPTIMSET.</entry>
+      <entry key="notADisplayType">Invalid value for OPTIONS parameter {0}: must be ''off'', ''on'', ''iter'', ''iter-detailed'', ''notify'', ''notify-detailed'', ''final'', or ''final-detailed''.</entry>
+      <entry key="notOnOffType">Invalid value for OPTIONS parameter {0}: must be ''off'' or ''on''.</entry>
+      <entry key="notAFunctionOrCellArray">Invalid value for OPTIONS parameter {0}: must be a function handle or a cell array of function handles.</entry>
+      <entry key="LStypeInvalid">The LineSearchType option is no longer valid. It was only used by the Gauss-Newton algorithm, which is no longer used in Optimization toolbox solvers.</entry>
+      <entry key="LinkToReferencePage">Link to reference page</entry>
+      <entry key="LinkToOptimOptionsTable">Link to options table</entry>
+      <entry key="OptimOptionsFirstInput">Cannot use OPTIMSET to alter options created using OPTIMOPTIONS.\nUse OPTIMOPTIONS instead.</entry>
+      <entry key="OptimOptionsSecondInput">Cannot update an options structure with options created using OPTIMOPTIONS.\nUse OPTIMOPTIONS to convert and update your options structure.</entry>
+      <entry key="PropertyRemoved" context="error">{0} has been removed. Use other {1} options instead.</entry>
+   </message>
+</rsccat>

@@ -1,0 +1,2 @@
+# Locale-specific Java classpath entries for install_api with locale zh_CN
+$matlabroot/java/jar/zh_CN/install_api_res.jar

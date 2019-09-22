@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2015-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <!-- Protected model basic error messages -->          
+    <entry key="unableToFindProtectedModelFile">Unable to find the protected
+    model {0}.</entry>
+    <entry key="cannotUseProtectedModel">The protected model ''{0}'' cannot be
+    used because of the following error:  ''{1}''</entry>
+    <entry key="cannotProtectProtectedModels">The Model block ''{0}'' references
+    the model {1}, which is already protected.  If you need to update the
+    protected model, you will need to perform this operation again on the
+    original, unprotected model.</entry>
+    <entry key="cannotWriteProtectedModel">There was a problem writing the
+    protected model {0}.  This can be caused if there is not enough free space 
+    on the file system.</entry>
+    <entry key="cannotWriteProtectedModelPermissionDenied">There was a problem 
+    writing the protected model {0}. You do not have write permission for the 
+    file.</entry>
+    <entry key="canOnlyProtectModelsOrModelBlocks">{0} is not a model or a Model
+    block.  Only models and Model blocks can be protected.</entry>
+    <entry key="protectModelIncorrectNumberOfInputArguments">This function
+    requires zero or more name/value argument pairs.</entry>
+    <entry key="protectedModelUnsavedChanges">The model ''{0}'' cannot be
+    protected because it has unsaved changes.</entry>
+    <entry key="protectedModelCannotReferenceProtectedModel">The model ''{0}''
+    cannot be protected because it directly or indirectly references a protected
+    model. </entry>
+    <entry key="protectModelFirstArgStringOrHandle">The first input to this
+    function must be a handle to a model or Model block, or be the name of a
+    model or Model block.</entry>
+    <entry key="protectedModelCannotHaveNonInlinedSFunctions">The model ''{0}''
+    cannot be protected because it or a model that it directly or indirectly
+    references contains a non-inlined S-Function. </entry>
+    <entry key="protectedModelNotInNormalMode">Model ''{0}'' cannot run in 
+    Accelerator mode because the protected model ''{1}'' does not support 
+    Accelerator mode. To use the protected model ''{2}'', configure ''{3}'' 
+    to run in Normal mode. To run model ''{4}'' in Accelerator mode, contact 
+    the creator of the protected model to recreate the protected model ''{5}''
+    to support Accelerator mode.</entry>
+    <entry key="protectedModelNotSupportedInRTW">Code generation support
+    for the protected model(s) {0} is not enabled.</entry>
+    <entry key="protectedModelCodeInterfaceNotSupportedForRTW">The protected model
+    ''{0}'' was created with the "Top model" code interface. Generating code from
+    a parent model that references this protected model is not supported. To resolve
+    this error, contact the creator of the protected model to recreate the protected
+    model with the "Model reference" code interface. Alternatively, you can 
+    simulate the Model block referencing this protected model in Accelerator, SIL, 
+    or PIL mode.</entry>
+    <entry key="protectedModelFromPreviousReleaseNotSupportedForRTW">The protected model
+    ''{0}'' was created in a previous MATLAB release. Generating code from
+    a parent model that references this protected model is not supported. This
+    protected model can only be used in the context of a Model block SIL or 
+    PIL simulation. To allow this protected model to be used in the context 
+    of a parent model which is generating code, you need to contact the creator
+    of the protected model to recreate the protected model in the same 
+    MATLAB release you are using.</entry>
+    <entry key="protectedModelSimulinkVersionMismatchForSlUpdate">Protected
+    models can only be used in the version of Simulink in which they were
+    created.  Use Simulink.ModelReference.protect in the currently running
+    version of Simulink to update the protected models referenced by the
+    following blocks</entry>
+    <entry key="protectedModelSimulinkVersionMismatch">The protected model {0}
+    was created with version {1} of Simulink, which is different than the
+    Simulink version currently running.  To update the protected model {2} to
+    run in the currently running version of Simulink, it is necessary to use
+    Simulink.ModelReference.protect on the original model file to create an
+    updated protected model using the current version of Simulink.</entry>
+    <entry key="protectedModelSimulinkVersionMismatchForMDLP">The protected
+    model {0} was created with an older version of Simulink.  To update the
+    protected model {1} to run in the currently running version of Simulink, use
+    Simulink.ModelReference.protect on the original model file to create an
+    updated protected model using the current version of Simulink.</entry>
+    <entry key="protectedModelSlprjVersionMismatch">The protected model {0} was
+    created with an incompatible version of slprj.  Recreate this protected
+    model with the version of Simulink that you are currently using and try
+    again.</entry>
+    <entry key="protectedModelRenamed">The protected model {0} was renamed after
+    it was created, which is not supported.  Rename it to {1}, which was its
+    original name.</entry>
+    <entry key="protectedModelChangedOrCorrupted">The protected model {0} has
+    been changed since it was created, or the file has been corrupted.  To use
+    this protected model, you need to recreate it.</entry>
+    <entry key="protectedModelChangedOrCorruptedDetailed">The protected model {0} has
+    been changed since it was created, or the file has been corrupted. The following
+    may provide further information: {1}</entry>
+    <entry key="protectOnNeverRebuildModel">An error occurred while protecting
+    the model ''{0}''.  This error may have occurred because this model has
+    Rebuild options set to Never on the Model Referencing pane of the
+    Configuration Parameters dialog.  Change the setting of Rebuild options to
+    something other than Never and try again.</entry>
+    <entry key="protectedModelMexWrongPlatformSim">The protected model {0} was made
+    for the platform {1}, which is different than the platform you are currently 
+    using. To use this protected model for simulation, please switch to the 
+    platform {2}.</entry>
+    <entry key="protectedModelMexWrongPlatformSimCodeGen">The protected model {0} was made
+    for the platform {1}, which is different than the platform you are currently 
+    using. To use this protected model for simulation and code generation, please switch to
+    the platform {2}.</entry>
+    <entry key="protectedModelMexWrongPlatformSimWithWebview">The protected model {0} was made
+    for the platform {1}, which is different than the platform you are currently 
+    using. To use this protected model for simulation, please switch to the platform {2}. 
+    The Web view for this protected model is available on any platform.</entry>
+    <entry key="protectedModelMexWrongPlatformSimCodeGenWithWebview">The protected model {0} was made
+    for the platform {1}, which is different than the platform you are currently 
+    using. To use this protected model for simulation and code generation, please switch to the platform {2}. 
+    The Web view for this protected model is available on any platform.</entry>
+    <entry key="protectedModelNoExtensionButLoadedError">Model block ''{0}'' is
+    referencing the model {1}.  The first model found on the path is {2}, a
+    protected model, but a model with the same name is loaded.  This is not
+    supported.  To prevent this error, specify an extension (e.g., MDL or SLX
+    for models, SLXP for protected models) as part of the ''ModelName''
+    parameter of this block.</entry>
+    <entry key="protectedModelGlobalVariablesChanged">One or more global
+    variables used by protected model {0} are incompatible with the variables
+    that existed when the protected model was created.  This
+    protected model uses global variable(s): ''{1}''.</entry>
+    <entry key="ProtectedModelParameterAlreadySpecified">The parameter ''{0}'' has already been specified.</entry>
+
+    <entry key="LicenseSLXPNotAllowedAndSLXFallback">The model ''{0}'' references a protected model. This license does not support the use of protected models. The software will use an unprotected version instead if one is found on the path.</entry>
+
+    <entry key="CouldNotReadFile">The file {0} could not be opened for reading.</entry>
+    
+    <entry key="CannotLoadProtectedModel">The file {0} is a protected model file
+    and cannot be loaded.  To use this protected model, you must reference it
+    from a Model block.</entry>
+    <entry key="CannotOpenProtectedModelMessage">The Model block
+    ''{0}'' references a protected model ''{1}''.  This model was not created with
+    either the View option or the Report option enabled and cannot be
+    opened.</entry>
+    <entry key="CannotOpenProtectedModelFileMessage">The protected model ''{0}''
+    cannot be opened since it was created with both the View option and the
+    Report option disabled.</entry>
+    <entry key="CannotOpenProtectedModelWebviewFileMessage">The webview for
+    protected model ''{0}'' cannot be opened since it was created with the View 
+    option disabled.</entry>
+    <entry key="CannotOpenProtectedModelReportFileMessage">The report for
+    protected model ''{0}'' cannot be opened since it was created with the
+    Report option disabled.</entry>    
+    <entry key="ProtectedModelOpenUnrecognizedOption">The argument {0} is 
+    invalid for Simulink.ProtectedModel.open. Valid options are
+    ''webview'' or ''report''.</entry>
+    <entry key="ProtectedModelGetParamModelName">The Model block ''{0}''
+    references the protected model ''{1}''.  Because no model file exists for
+    this model, you cannot obtain the value of the model''s ''ModelName''
+    parameter.  Use the Model block''s ''ProtectedModel'' parameter to determine
+    whether the block references a protected model.  Use the Model block''s
+    ''ModelFile'' parameter to get the name of the file referenced by the
+    block.</entry>
+    <entry key="CodeCoverageNotSupportedForProtectedModel">The top
+    model ''{0}'' has the parameter Configuration Parameters > Code Generation > 
+    Verification > Code coverage for referenced models enabled and the
+    Model block ''{1}'' references a protected model and is running in SIL 
+    or PIL mode. This is not supported. To workaround this error, turn off 
+    the parameter Configuration Parameters > Code Generation > 
+    Verification > Code coverage for referenced models in the top model ''{2}'' and 
+    re-run the simulation. Alternatively, use a non-protected model.</entry>
+    <entry key="SILDebuggingNotSupportedForProtectedModel">The top
+    model ''{0}'' has the parameter Configuration Parameters > Code Generation > 
+    Verification > Enable source-level debugging for SIL enabled and the
+    Model block ''{1}'' references a protected model and is running in SIL 
+    or PIL mode. This is not supported. To workaround this error, turn off 
+    the parameter Configuration Parameters > Code Generation > 
+    Verification > Enable source-level debugging for SIL in the top model ''{2}'' and 
+    re-run the simulation. Alternatively, use a non-protected model.</entry>    
+    <entry key="UnsupportedSimulationModeForThisProtectedModel">{0} simulation mode
+    is not supported for Model block ''{1}'' because it references the protected
+    model ''{2}''.\nFor Model blocks referencing protected models, the 
+    Model block simulation mode(s): \n1) Normal is not supported.
+    \n2) Accelerator, Software-in-the-loop (SIL) and Processor-in-the-loop (PIL) 
+    are supported only if the creator of the protected model included support for them.</entry>
+    <entry key="ProtectedModelNonMatchingCodeInterface">The CodeInterface value 
+    is not supported for Model block ''{0}'' because it references the protected
+    model ''{1}'' which was created with a different code interface.</entry>    
+    
+    <entry key="IncompatibleArgumentsViewOnlyWebview">The parameter Webview cannot be false if the ''''Mode'''' is set to ''ViewOnly''.</entry>
+    <entry key="IncompatibleArgumentsChangePasswords">The parameter Encrypt must be true if attempting to change a password using ChangeSimulationPassword, ChangeCodeGenerationPassword or ChangeViewPassword.</entry>
+    <entry key="IncompatibleArgumentsCodeInterface">The parameter ''''CodeInterface'''' requires that the parameter ''''Mode'''' to be specified and set to ''''CodeGeneration''''.</entry>
+    
+    <!-- License error messages -->    
+    <entry key="SimulinkReportGenLicenseRequired">Web view generation for a protected model requires a Simulink Report Generator license.</entry>
+    <entry key="SimulinkReportGenNotInstalled">Web view generation for a protected model requires Simulink Report Generator, which is not installed</entry>
+    <entry key="SimulinkCoderLicenseRequired">Code generation for a protected model requires a Simulink Coder license.</entry>
+    <entry key="EmbeddedCoderLicenseRequiredCodeInterface">The parameter ''''CodeInterface'''' is only supported for ERT-based models and when an Embedded Coder license is available.</entry>
+    
+    <!-- Protected model UI messages -->    
+    <entry key="lblProtectedDlgDescription">Create a protected model(.slxp) that allows read-only view, simulation, and code generation of the model with optional password protection.</entry>
+    <entry key="grpDescription">Description</entry>
+    <entry key="chkCodeGenToolTip">Enable code generation support</entry>
+    <entry key="lblCodeGen">Include generated code</entry>
+    <entry key="chkCodeGenReportToolTip">Enable creating a protected model report</entry>
+    <entry key="lblPackagedCodeInterface">Code interface:</entry>
+    <entry key="lblPackagedArtifactType">Content type:</entry>
+    <entry key="chkCodeGenObfuscationToolTip">Enable obfuscation for the protected model</entry>
+    <entry key="chkProtectedModelWebviewToolTip">Enable Web view for the protected model</entry>
+    <entry key="chkAddSupportForCodeGenToolTip">Enable code generation support for the protected model. Note that simulation must be enabled if this is enabled.</entry>
+    <entry key="chkSimulationOnlyToolTip">Enable simulation support for the protected model. Note that this must be enabled if code generation is also enabled.</entry>
+    <entry key="grpCapabilities">Allow user of protected model to</entry>
+    <entry key="grpProtectedModelContents">Contents</entry>
+    <entry key="chkCreateHarnessToolTip">Automatically create a harness model for the protected model</entry>
+    <entry key="lblCreateHarness">Create harness model for protected model</entry>
+    <entry key="lblPackagePath">Create protected model in:</entry>
+    <entry key="edtPackagePathToolTip">Location where the protected model file will be written</entry>
+    <entry key="btnBrowse">Browse...</entry>
+    <entry key="btnBrowseToolTip">Click here to browse for a folder</entry>
+    <entry key="grpFunctionality">Package contents:</entry>
+    <entry key="dropdownProtectedModelFunctionalityTooltip">Support either simulation only or simulation and code generation</entry>
+    <entry key="lblAddCodeGenSupport">Add support for code generation</entry>
+    <entry key="ProtectedModelViewOnly">Model View Only</entry>
+    <entry key="ProtectedModelSimulation">Simulation Only</entry>
+    <entry key="ProtectedModelSimulationAndCodeGeneration">Simulation and Code Generation</entry>
+    <entry key="ProtectedModelViewLbl">Open read-only view of model</entry>
+    <entry key="ProtectedModelSimulationLbl">Simulate</entry>
+    <entry key="ProtectedModelCodeGenerationLbl">Use generated code</entry>
+    <entry key="ProtectedModelCustomPackage">Customize Protected Model</entry>
+    <entry key="ProtectedModelContentsBinaries">Binaries</entry>
+    <entry key="ProtectedModelContentsSourceCode">Readable source code</entry>
+    <entry key="ProtectedModelContentsObfuscatedSourceCode">Obfuscated source code</entry>
+    <entry key="dropdownProtectedModelContentsTooltip">Select the contents of the protected model. This controls what is visible to users of the protected model</entry>
+    <entry key="dropdownProtectedModelCodeInterfaceTooltip">Specify interface for generated code.</entry>
+    <entry key="ProtectedMdlOptsDlgTitle">Create Protected Model: {0}</entry>
+    <entry key="ProtectedMdlRptTitle" translate="false">Summary for {0}</entry>
+    <entry key="ProtectedModelReportSim" translate="false">Simulation support</entry>
+    <entry key="ProtectedModelReportCodeGen" translate="false">Code generation support</entry>
+    <entry key="ProtectedModelReportCodeInterface" translate="false">Code interface</entry>
+    <entry key="ProtectedModelReportView" translate="false">Read-only view support</entry>
+    <entry key="ProtectedModelObfuscate" translate="false">Obfuscation</entry>
+    <entry key="ProtectedModelReport" translate="false">Report</entry>
+    <entry key="ProtectedModelTarget" translate="false">Target</entry>
+    <entry key="ProtectedModelCodeContent" translate="false">Generated code content type</entry>
+    <entry key="ProtectedModelReportTitle">{0} Protected Model report</entry>
+    <entry key="ProtectedModelCreateBtn">Create</entry>
+    <entry key="ProtectedModelHelpBtn">Help</entry>
+    <entry key="ProtectedModelCancelBtn">Cancel</entry>
+    <entry key="invalidProtectedModelOptions">{0} does not have a valid protected model option set</entry>
+    <entry key="creatingProtectedModel">Creating Protected Model {0}</entry>
+    <entry key="ProtectedModelBrowseDlgTitle">Find Directory</entry>
+    <entry key="ViewForModel">Protected model read-only view for model: {0}</entry>
+
+    <!-- Protected model error messages -->    
+    <entry key="ModelRefAndProtectedModelNameClash">The following protected models and unprotected models have the same name: ''{0}''. Please rename one of them.</entry>
+    <entry key="ExternalModeAndProtectedModel">Protected models do not work in External mode or rapid accelerator simulations.</entry>
+    <entry key="SILPILProtectedModel">Software-in-the-Loop and Processor-in-the-Loop simulations are not supported with protected models.</entry>
+    <entry key="ProtectedModelWebviewExtractionUnsuccessful">Unable to extract the view for protected model ''{0}''. Try again or recreate the protected model.</entry>
+    <entry key="ProtectedMdlNoCodeGen">The protected model ''{0}'' was generated without code generation support. Only simulation can be performed.</entry>
+    <entry key="invalidProtectingMode">The protected model parameter can only be set to ''on'' or ''off''.</entry>
+    <entry key="obfuscateString">Error obfuscating string ''{0}''.</entry>
+    <entry key="ProtectedMdlNoRpt">Protected model report not found in ''{0}''.</entry>
+    <entry key="protectedModelAndProfilingIncompatible">CodeProfilingInstrumentation is enabled in model ''{0}''. This instrumentation is disabled in the protected model.</entry>
+    <entry key="ProtectedModelMDSUnsupported">Concurrent execution of tasks is not supported with Protected Models.</entry>
+    <entry key="ProtectedModelCallbackLostWarning"><![CDATA[The model ''{0}'' defines model callbacks. The model protection process does not preserve these callbacks. For information on creating callbacks for use with a protected model see <a href="matlab:helpview([docroot,''/rtw/helptargets.map''],''protected_model_callbacks'');">Protected model callbacks.</a>]]></entry>
+    <entry key="ProtectedModelErrorDlgTitle">Error in protected model {0}</entry>
+    <entry key="CannotWriteToDir">Cannot write to folder ''{0}''</entry>
+    <entry key="CannotFindBuildInfo">Cannot locate buildInfo. Invalid usage of getBuildInfo.</entry>
+    <entry key="InvalidProtectedModelMode">The mode value {0} that is specified is invalid. Use either ''Normal'', ''Accelerator'', ''CodeGeneration'', or ''ViewOnly''.</entry>
+    <entry key="InvalidProtectedModelSource">The value ''{0}'' that is specified for the ''OutputFormat'' argument is invalid. Use either ''CompiledBinaries'', ''MinimalCode'', or ''AllReferencedHeaders''.</entry>
+    <entry key="InvalidProtectedModelCodeInterface">The value ''{0}'' that is specified for the ''CodeInterface'' argument is invalid. Use either ''Model reference'', or ''Top model''.</entry>    
+    <entry key="ProtectedModelNotOnPath">The directory where you created the protected model is not on the MATLAB path. As a result, the harness model cannot find the protected model. Put the protected model in a directory located on the MATLAB path.</entry>
+    <entry key="DeprecatedAddGeneratedCode">The parameter ''AddGeneratedCode'' will be removed in a future release. Currently, it sets the parameter ''''Mode'''' to ''CodeGeneration'' and the parameter ''OutputFormat'' to ''MinimalCode''.</entry>    
+    <entry key="ProtectedModelUnsupportedModeRTW">Cannot complete code generation. Code Generation is not available for the protected model ''''{0}''''.</entry>
+    <entry key="ProtectedModelUnsupportedModeAccel">Cannot complete accelerator simulation. Simulation is not available for the protected model ''''{0}''''.</entry>
+    <entry key="ProtectedModelUnsupportedModeNormal">Cannot complete simulation. Simulation is not available for the protected model ''''{0}''''.</entry>
+    <entry key="DirectorySpecifiedInsteadOfFile">A directory name ''{0}'' was provided when a file name was expected.</entry>
+    <entry key="FileDoesNotExist">The file ''{0}'' specified could not be found.</entry>
+    <entry key="destinationNotSpecified">The destination directory was not specified.</entry>
+    <entry key="RelationshipNameNotSpecified">A relationship name was expected but not provided.</entry>
+    <entry key="ProtectedModelEmptyFileList">The list of files to include as part of the relationship is empty.</entry>
+    <entry key="ProtectedMdlCustomRelNoRelativePaths">The destination path ''{0}'' specified for a custom relationship has a relative path (i.e. it includes ''..''). Remove it to continue.</entry>
+    <entry key="NotProtectingModel">Adding custom files to a protected model is not possible outside of a model protection session.</entry>
+    <entry key="ProtectedModelCustomRelRTWOnly">Adding custom files to an SLXP package is supported for code generation only.</entry>
+    <entry key="ProtectedModelCustomRelInvalidArgument">Argument {0} passed into ''Simulink.ModelReference.ProtectedModel.addCustomCodeGenFiles'' is invalid.</entry>
+    <entry key="ProtectedModelBuildInfoMissingVariables">The RTW.BuildInfo object generated by the protected model is missing necessary information for a protected model build. Try regenerating the protected model or specifying a different ''OutputFormat'' value.</entry>
+    <entry key="ProtectedModelNoOptionsSelectedError">Please enable support for at least one of the Viewing, Simulation, or Code Generation options before clicking ''Create''.</entry>
+
+    <!-- Protected model encryption messages -->    
+    <entry key="EncryptSHAIncorrectInputArguments">Incorrect number of input arguments.  Required input arguments for the {0} command are the algorithm name and the string to hash.</entry>
+    <entry key="EncryptSHAIncorrectOutputArguments">Incorrect number of output arguments. Required output argument for the {0} command  is a hashed string.</entry>
+    <entry key="EncryptAESIncorrectInputArguments">Incorrect number of input arguments. Required input arguments for AES encryption are the algorithm name, filename, boolean indicating encryption/decryption, and key.  For AES decryption the initialization vector string is also required.</entry>
+    <entry key="EncryptAESIncorrectOutputArguments">Incorrect number of output arguments. Required output argument for AES encryption is the initialization vector.</entry>
+    <entry key="DecryptAESIncorrectOutputArguments">No required output arguments for AES decryption.</entry>
+    <entry key="EncryptInvalidAlgorithm">An implementation for the specified encryption algorithm does not exist.</entry>
+    <entry key="EncryptCannotOpenFileForInput">File ''{0}'' cannot be opened for input.</entry>
+    <entry key="EncryptCannotOpenFileForOutput">File ''{0}'' cannot be opened for output.</entry>
+    <entry key="EncryptCannotCloseFile">An error occurred while trying to close file: ''{0}''</entry>
+    <entry key="EncryptCannotRemoveInputFile">An error occurred while trying to remove file ''{0}''. \n {1}.</entry>
+    <entry key="EncryptCannotMoveOutputFile">An error occurred while trying to move the output file ''{0}''. \n {1}.</entry>
+    <entry key="EncryptGeneralError">An error occurred during the encryption process.</entry>
+    <entry key="EncryptPasswordMismatchError">Passwords for the following are mismatched: {0}</entry>
+    <entry key="EncryptPasswordTooShort">Provided password for model ''''{0}'''' is too short. The password should have a minimum length of 4.</entry>
+    <entry key="EncryptPasswordTooLong">Provided password for model ''''{0}'''' is too long. The password should have a maximum length of 4096.</entry>
+    <entry key="EncryptOnNoPasswordForCategory">Encryption is enabled for the protected model ''''{0}'''', but the following could not be encrypted because no encryption password has been added: {1} \nTo encrypt, please add the required passwords and recreate the protected model.</entry>
+    <entry key="ProtectedModelInvalidRelationship">The relationship {0} is not recognized as belonging to any encryption category.</entry>
+    <entry key="ProtectedModelInvalidEncryptionCategory">The encryption category {0} is not recognized.</entry>
+    <entry key="ProtectedModelUnlockWrongPassword"><![CDATA[The supplied passwords for model ''''{0}'''' are incorrect for the following: \n{1}\n\nAuthorize the protected model for use by clicking on the following link: {2}.]]></entry>
+    <entry key="ProtectedModelWrongPassword">The supplied password for {0} is incorrect or has not been provided.</entry>
+    <entry key="ProtectedModelWrongPasswordTryAgain">The supplied password is incorrect!\nPlease try again.</entry>
+    <entry key="ProtectedModelPasswordNotProvided">The password for {0} has not been provided.</entry>
+    <entry key="ProtectedModelWrongPasswordDetailedView"><![CDATA[The supplied password for model ''''{0}'''' and functionality ''''View'''' is incorrect or has not been provided. Authorize the protected model for use by clicking on the following link: {1}.]]></entry>
+    <entry key="ProtectedModelWrongPasswordDetailedSim"><![CDATA[The supplied password for model ''''{0}'''' and functionality ''''Simulation'''' is incorrect or has not been provided. Authorize the protected model for use by clicking on the following link: {1}.]]></entry>
+    <entry key="ProtectedModelWrongPasswordDetailedCodeGen"><![CDATA[The supplied password for model ''''{0}'''' and functionality ''''Code generation'''' is incorrect or has not been provided. Authorize the protected model for use by clicking on the following link: {1}.]]></entry>
+    <entry key="ProtectedModelEmptyOutputDirectory">An empty destination folder for the protected model file was specified. Please provide a valid path.</entry>
+    <entry key="ProtectedModelCustomHookCodegenOnly">The parameter ''CustomPostProcessingHook'' was specified but ''Mode'' was not set to ''CodeGeneration''. Custom post-processing hooks for protected models are only supported for code generation. </entry>
+    <entry key="ProtectedModelAlreadyExists">An existing protected model ''{0}'' of the same name exists on the MATLAB path. This is incompatible with the model protection process. Delete the file before proceeding.</entry>
+    
+    <!-- Protected model encryption UI messages -->   
+    <entry key="grpEncryptPassword">Password entry</entry>
+    <entry key="EncryptPasswordEditBoxText">Enter password (optional)</entry>
+    <entry key="EncryptPasswordEditBoxToolTipText">Enter a password to enable password protection of the {0} functionality</entry>
+    <entry key="EncryptPasswordEntryEditBoxText">Enter password</entry>
+    <entry key="EncryptPasswordEditBoxAuthorized">Authorized</entry>
+    <entry key="EncryptPasswordVerifyEditBoxText">Verify password</entry>
+    <entry key="EncryptPasswordVerifyEditBoxToolTipText">Verify the password entered previously</entry>
+    <entry key="ProtectedModelPasswordEntryDlgTitle">Password entry for model: ''{0}''</entry>
+    <entry key="ProtectedModelPasswordEntryDialogDesc">A password protected model ''{0}'' is used in the current model reference hierarchy.\nAuthorization is needed to proceed with the requested actions</entry>
+    <entry key="ProtectedModelPasswordEntryDialogDescWithCategory">A password protected model ''{0}'' is used in the current model reference hierarchy.\nAuthorization is needed to proceed with ''{1}'':</entry>
+    <entry key="ProtectedModelPasswordEntryDialogDescProtecting">Enter a password for each action requiring encryption \nfor model ''{0}''. Users of the \nprotected model must provide this password before \nperforming the action.</entry>
+    <entry key="chkEncryptPasswordSim">Simulation</entry>
+    <entry key="chkEncryptPasswordSimToolTip">Password protect simulation functionality</entry>
+    <entry key="chkEncryptPasswordCodeGeneration">Code generation</entry>
+    <entry key="chkEncryptPasswordCodeGenerationToolTip">Password protect code generation functionality</entry>
+    <entry key="chkEncryptPasswordView">Model view</entry>
+    <entry key="chkEncryptPasswordViewToolTip">Password protect view functionality</entry>
+    <entry key="chkEncryptPasswordEdit">Modify</entry>
+    <entry key="chkEncryptPasswordEditToolTip">Password protect modify functionality</entry>        
+
+    <!-- Message Viewer stage names -->
+    <entry key="ProtectedModelCreationMessageViewerStageName">Protected Model Creation</entry>
+    <entry key="ProtectedModelModificationMessageViewerStageName">Protected Model Modification</entry>
+    <entry key="ProtectedModelReportMessageViewerStageName">Protected Model Report Display</entry>
+    <entry key="ProtectedModelViewMessageViewerStageName">Protected Model Web View</entry>
+    <entry key="ProtectedModelLoadMessageViewerStageName">Protected Model Load</entry>
+
+    <!-- Errors related to modifying existing protected models -->
+    <entry key="ProtectedModelEditBuildCanceledError">Rebuild for model ''{0}'' was canceled. Adding to or changing the functionality of a protected model requires a rebuild.</entry>
+    <entry key="ProtectedModelNoUnprotectedFileError">Unable to find unprotected model ''{0}''. The unprotected model is necessary for adding new functionality or for changing encryption passwords for protected model ''{1}''. Please ensure that it is on the MATLAB path.</entry>
+    <entry key="protectedModelNoModifyPermission">The ''Modify'' password is incorrect. Please reenter password required to modify protected model ''{0}''.</entry>
+    <entry key="ProtectedModelNoModifySupport">The protected model ''{0}'' was created without modification support and cannot be changed.</entry>
+    <entry key="cannotChangePasswordToSamePassword">The old and new passwords specified for model ''{0}'' and functionality ''{1}'' are identical. Please provide a different password.</entry>
+    <entry key="ModifySupportRequiresPassword">A password is required to enable support for modification of a protected model.</entry>
+    <entry key="ModelFileNotFound">The model file ''{0}'' was not found. Please ensure that the file is on the MATLAB path.</entry>
+    <entry key="ModelIsNotProtected">The model ''{0}'' is not protected. Editing of an unprotected model using the protected model interface is not supported.</entry>
+    <entry key="ProtectedModelPasswordNotProvidedAbortCreation">Encryption support for ''{0}'' was enabled but no password was provided. A protected model was not created.</entry>
+    
+    <!-- Errors related to multiple targets -->
+    <entry key="TargetNotFoundInPackage">Target {0} is unsupported by protected model ''{1}''.</entry>
+    <entry key="NotModfiableCannotSwitch"> The protected model ''{0}'' cannot be switched to target {1} since it is not modifiable and thus only supports a single target.</entry>
+    <entry key="TargetAlreadyExistsInPackage">Cannot add support for target {0}. Support for target already exists in protected model ''{1}''.</entry>
+    <entry key="ProtectedModelCannotFindSTFConfigset">The supported target ''{0}'' for model ''{1}'' cannot be found. Some configuration parameters may be missing from the configuration set dialog and the model will not be buildable without installing a supported target.</entry>
+    <entry key="InvalidModeForConfigSet">Cannot get the configuration set for model ''{0}''. To get the configuration set, you must set the simulation mode to Accelerator or enable the protected model report.</entry>
+    <entry key="ModelDoesNotSupportCodeGeneration">Cannot remove support for target {0} from model ''{1}'' since it does not support code generation.</entry>
+    <entry key="InvalidTargetName">An invalid target identifier was specified. This target identifier must be a string and must correspond to one of the values returned by Simulink.ProtectedModel.getSupportedTargets.</entry>
+    <entry key="ModifyRebuildMultiTargetIncompatible">Changes requiring the rebuild of a protected model with multiple targets are not supported.</entry>
+    <entry key="ProtectedModelXILTopModelNeedsERT">The top model ''{0}'' must have "Code Generation > System target file" set to an ERT-derived target supported by ''{1}'' to run a Model block SIL/PIL simulation.</entry>
+    <entry key="ProtectedModelCannotRemoveNonCodegenTargets">The 'Simulink.ProtectedModel.removeTarget()' function can only be used to remove code generation targets. To remove simulation functionality from the protected model, use the 'Simulink.ModelReference.modifyProtectedModel()' function to set the 'Mode' option to 'ViewOnly'.</entry>
+    <entry key="ProtectedModelDisableReportForViewOnly">The ''Report'' option for model ''{0}'' is being disabled since the ''Mode'' parameter has been set to ''ViewOnly''.</entry>
+
+    <!-- Errors related to callback support -->
+    <entry key="protectedModelInvalidCallbackEvent">Callback event must be 'PreAccess' or 'Build'.</entry>
+    <entry key="protectedModelInvalidCallbackAppliesTo">Callback functionality must be 'AUTO', 'SIM', 'CODEGEN' or 'VIEW'.</entry>
+    <entry key="protectedModelInvalidCallback">Callback for event ''{0}'' and functionality ''{1}'' must be a file name or a MATLAB script.</entry>
+    <entry key="protectedModelInvalidCallbackIncompatibleEventAppliesTo">The event ''{0}'' and functionality ''{1}'' are incompatible.</entry>
+    <entry key="protectedModelInvalidCallbackType">Callback must be a Simulink.ProtectedModel.Callback object.</entry>
+    <entry key="protectedModelDuplicateCallback">Callback for event ''{0}'' and functionality ''{1}'' has already been specified.</entry>
+    <entry key="protectedModelInvalidEventForOverrideBuild">Invalid callback event. Event must be 'Build' to override protected model build.</entry>
+    <entry key="protectedModelCallbackErrorWrapper">Callback for event ''{0}'' and functionality ''{1}'' for model ''{2}'' failed to execute: ''{3}''.</entry>
+    <entry key="protectedModelCallbackUnsupportedConfigurationForBuildCodeGen">Invalid callback event and functionality for protected model ''{0}''. Protected model must be configured to package source code.</entry>
+    <entry key="protectedModelCallbackInfoInvalidModelName">Unable to open model ''{0}''.</entry>
+    <entry key="protectedModelCallbackMLXNotSupported">Protected model callback must be a MATLAB file (*.m).</entry>
+
+    <!-- Warnings related to callback support -->
+    <entry key="protectedModelFunctionalityNotPresent">Protected model callback specified for unsupported functionality ''{0}''. Callback is ignored. </entry> 
+
+    <!-- Errors related to protecting parameters -->
+    <entry key="UnsupportedParameterCSC">Parameter {0} must use the ''ImportFromFile'' custom storage class."</entry>
+
+    <!-- These messages are the text in the dialog asking the user if they want to rebuild -->
+    <entry key="ProtectedModelEditQueryRebuildMsg">The changes that you made to protected model ''{0}''\nrequire rebuilding the model. Do you want to proceed?</entry>
+    <entry key="ProtectedModelEditQueryRebuildTitle">Rebuild Model</entry>
+    <entry key="ProtectedModelEditQueryRebuildOKButton">Build</entry>
+    <entry key="ProtectedModelEditQueryRebuildCancelButton">Cancel</entry>
+
+    <!-- These messages are the text in the dialog that queries users if they want to overwrite an existing file -->
+    <entry key="ProtectedModelSLXPOverwriteDlgTitle">Existing protected model found! ''{0}''</entry>
+    <entry key="ProtectedModelSLXPOverwriteDlgDescription">An existing protected model ''{0}'' has been found in the current directory.\n
+                                                           Overwrite?</entry>
+
+    <entry key="ProtectedModelWaitBarTitle">Building protected model {0}</entry>    
+
+    <!-- These messages describe phases of protected model creation -->
+    <entry key="ProtectedModelPhaseInit">Initializing</entry>
+    <entry key="ProtectedModelPhaseCheck">Running checks</entry>
+    <entry key="ProtectedModelPhaseConfig">Configuring model for protection</entry>
+    <entry key="ProtectedModelPhaseSimBuild">Starting simulation build</entry>
+    <entry key="ProtectedModelPhaseReport">Generating simulation report</entry>
+    <entry key="ProtectedModelPhaseCodeGen">Starting code generation build</entry>
+    <entry key="ProtectedModelPhaseObfuscating">Obfuscating code</entry>
+    <entry key="ProtectedModelPhaseView">Generating Webview</entry>
+    <entry key="ProtectedModelPhasePackage">Packaging artifacts</entry>
+    <entry key="ProtectedModelPhaseHarness">Creating harness</entry>
+    <entry key="ProtectedModelPhaseDone">Completed</entry>
+    
+  </message>
+</rsccat>
+
+<!-- LocalWords:  SLXP webview slxp AES buildable mlx
+-->

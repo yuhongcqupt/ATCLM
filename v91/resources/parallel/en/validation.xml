@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!-- Copyright 2011-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+    <entry key="CommandWindowOutputLabel">Command Line Output: {0}</entry>
+    <entry key="DebugLogLabel">Debug Log: {0}</entry>
+    <entry key="DescriptionLabel">Description: {0}</entry>
+    <entry key="ErrorLabel">Error Report: {0}</entry>
+    <entry key="FailedToGetDebugLog">Failed to retrieve debug log for job.  Reason:\n{0}</entry>
+    <entry key="FinishedValidation">Finished validation for ''{0}''</entry>
+    <entry key="JobErrorOrNotFinished">Job errored or did not reach the state 'finished'.</entry>
+    <entry key="JobFinishedEmptyOutputs">Job reached the state 'finished' but returned empty output arguments.</entry>
+    <entry key="JobPassedMultipleWorkers">Job ran with {0} workers.</entry>
+    <entry key="JobPassedOneWorker">Job ran with 1 worker.</entry>
+    <entry key="ParclusterWarning">The parcluster operation returned a warning message.  The cluster may not be fully operational.  The warning message was: {0}</entry>
+    <entry key="ParpoolAlreadyOpen">A parallel pool is already running and may interfere with the validation.  Try closing the pool by executing the command ''delete(gcp)'' before the next validation.</entry>
+    <entry key="ParpoolPassedMultipleWorkers">Parallel pool ran with {0} workers.</entry>
+    <entry key="ParpoolPassedOneWorker">Parallel pool ran with 1 worker.</entry>
+    <entry key="RerunValidation">Rerun validation for ''{0}''</entry>
+    <entry key="RunningStageLabel">Running Stage: {0}</entry>
+    <entry key="StageHadMException">A MATLAB exception occurred.</entry>
+    <entry key="StageLabel">Stage: {0}</entry>
+    <entry key="StageSkippedNotSupported">Cluster does not support this stage.</entry>
+    <entry key="StageSkippedPreviousFailure">Validation skipped due to previous failure.</entry>
+    <entry key="StageStoppedUserCancelled">Validation stopped manually.</entry>
+    <entry key="StartingValidation">Starting validation for ''{0}''</entry>
+    <entry key="StartTimeLabel">Start Time: {0}</entry>
+    <entry key="StatusLabel">Status: {0}</entry>
+    <entry key="ValidationStatus">Validation {0}</entry>
+  </message>
+</rsccat>

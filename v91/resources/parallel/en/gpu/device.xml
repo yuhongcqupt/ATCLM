@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!-- Copyright 2011-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+    <!-- Please keep entries in sorted order -->
+    <entry key="CUDADeviceStaticMethod">This method must be called using 'parallel.gpu.GPUDevice.{0}'.</entry>
+    <entry key="CouldNotLoadDriver">The CUDA driver could not be loaded. The library name used was ''{0}''. The error was:\n{1}</entry>
+    <entry key="DeviceCapability">The selected GPU device only has Compute Capability {0,number,integer}.{1,number,integer} and is therefore not supported. To learn more about supported GPU devices, see &lt;a href="matlab:web('http://www.mathworks.com/gpudevice','-browser')"&gt;www.mathworks.com/gpudevice&lt;/a&gt;.</entry>
+    <entry key="DeviceDeprecated">Support for GPU devices with Compute Capability {0,number,integer}.{1,number,integer} will be removed in a future MATLAB release. To learn more about supported GPU devices, see &lt;a href="matlab:web('http://www.mathworks.com/gpudevice','-browser')"&gt;www.mathworks.com/gpudevice&lt;/a&gt;.</entry>
+    <entry key="DeviceInvalidated">Execution on the GPU has been interrupted. To continue, reset the GPU by running 'gpuDevice({0,number,integer})', or restart MATLAB.</entry>
+    <entry key="DeviceMismatch">An internal error has occurred on the selected GPU device. To continue, reset the GPU by running 'gpuDevice({0,number,integer})', or restart MATLAB.</entry>
+    <entry key="DeviceObjectLoaded">A CUDADevice object has been loaded. This object might not indicate properties of the CUDA devices on this computer and cannot be used to reset the state of a CUDA device. Use the gpuDevice function to access CUDA devices on this computer.</entry>
+    <entry key="DeviceProperties">The input argument must be a positive integer.</entry>
+    <entry key="DriverLoadFailed">The CUDA driver was not loaded correctly on your system. The library name used was ''{0}''.</entry>
+    <entry key="DriverMissingEntryPoints">Not all CUDA functions were found in the CUDA driver.</entry>
+    <entry key="DriverRedirect">There is a problem with the CUDA driver or with this GPU device. Be sure that you have a &lt;a href="matlab:web('http://www.mathworks.com/gpudevice','-browser')"&gt;supported GPU&lt;/a&gt; and that the &lt;a href="matlab:web('http://www.mathworks.com/gpudriver','-browser')"&gt;latest driver&lt;/a&gt; is installed.</entry>
+    <entry key="DriverVersionInvalidVersionFile">Could not extract version information from ''{0}''.</entry>
+    <entry key="DriverVersionNoDriver">Could not find the CUDA driver named ''{0}''.</entry>
+    <entry key="DriverVersionNoVersionFile">Could not read version information from ''{0}''.</entry>
+    <entry key="DriverVersionUnknownComputer">Could not calculate driver version for computer type {0}.</entry>
+    <entry key="DriverVersionXMLReadFailed">Could not read version information from ''{0}''.</entry>
+    <entry key="FailedToQueryVersion">The CUDA driver was found, but the function ''cuDriverGetVersion'' returned an error. The error returned was:\n{0}</entry>
+    <entry key="ForciblyInvalidated">Execution on the GPU has been interrupted. MATLAB must be restarted before it can be used again.</entry>
+    <entry key="InitDevProps">An unexpected error occurred trying to retrieve CUDA device properties. The CUDA error was:\n{0}</entry>
+    <entry key="InvalidDeviceID">Invalid CUDA device id: {0}. Select a device id from the range 1:{1}.</entry>
+    <entry key="IsAvailableNonIndexInput">Input indices must be positive integers.</entry>
+    <entry key="LazyEvaluationBadCap">Invalid value for the lazy evaluation cap.</entry>
+    <entry key="LazyEvaluationBadPolicy">Lazy evaluation policy ''{0}'' was not recognized.</entry>
+    <entry key="NoCUDADevice">No supported GPU device was found on this computer. To learn more about supported GPU devices, see &lt;a href="matlab:web('http://www.mathworks.com/gpudevice','-browser')"&gt;www.mathworks.com/gpudevice&lt;/a&gt;.</entry>
+    <entry key="NoDriver">The CUDA driver could not be loaded.</entry>
+    <entry key="NoLongerCurrent">The device being used is no longer current.</entry>
+    <entry key="OldDriver">The CUDA driver was found, but it is too old. The CUDA driver on your system supports CUDA version {0}. The required CUDA version is {1} or greater.</entry>
+    <entry key="ResetCurrent">Only the current CUDADevice can be reset</entry>
+    <entry key="RuntimeInitFailed">The CUDA runtime failed to initialize correctly. This can occur with some older CUDA drivers.</entry>
+    <entry key="SelectDevice">The input argument must be a positive integer or [].</entry>
+    <entry key="SelectedUnavailable">MATLAB tried to use GPU device {0}, but the device is busy or unavailable.</entry>
+    <entry key="SelectedUnsupported">The selected GPU device is not supported. To learn more about supported GPU devices, see &lt;a href="matlab:web('http://www.mathworks.com/gpudevice','-browser')"&gt;www.mathworks.com/gpudevice&lt;/a&gt;.</entry>
+    <entry key="UnavailableDevice">MATLAB was unable to find an available GPU device. All supported devices are in exclusive use or in prohibited compute mode.</entry>
+    <entry key="UnknownCUDAError">An unexpected error occurred during CUDA execution. The CUDA error was:\n{0}</entry>
+    <entry key="UnknownOldDriver">The CUDA driver was found, but the function ''cuDriverGetVersion'' was not found. This can occur with old versions of the CUDA drivers. The library name used was ''{0}''.</entry>
+    <entry key="WorkerUnavailableDevice">Worker {0} tried to use GPU device {1}, but the device is already in use.</entry>
+  </message>
+</rsccat>

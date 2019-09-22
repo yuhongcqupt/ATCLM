@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rsccat locale="en_US" product="MATLAB" version="1.0">
+   <message>
+      <entry key="InputArg">The input to FMINBND should be either a structure with valid fields or consist of at least three arguments.</entry>
+      <entry key="NotEnoughInputs">FMINBND requires three input arguments.</entry>
+      <entry key="NonDoubleInput">FMINBND only accepts inputs of data type double.</entry>
+      <entry key="CharMaxFunEvals" note="stringDatatypeUpdate">Invalid value for OPTIONS parameter MaxFunEvals. FMINBND requires MaxFunEvals to be a real non-negative integer (not a character vector).</entry>
+      <entry key="CharMaxIter" note="stringDatatypeUpdate">Invalid value for OPTIONS parameter MaxIter. FMINBND requires MaxIter to be a real non-negative integer (not a character vector).</entry>
+      <entry key="InvalidExitflag">Invalid exitflag value in TERMINATE.</entry>
+      <entry key="InvalidState">Unknown state in CALLOUTPUTANDPLOTFCNS.</entry>
+      <entry key="ExitingLowerBoundExceedsUpperBound">Exiting due to infeasibility: the lower bound exceeds the upper bound.</entry>
+      <entry key="OptimizationTerminatedXSatisfiesCriteria">Optimization terminated:\n the current x satisfies the termination criteria using OPTIONS.TolX of {0} \n</entry>
+      <entry key="ExitingMaxFunctionEvals">Exiting: Maximum number of function evaluations has been exceeded\n         - increase MaxFunEvals option.\n         Current function value: {0} \n</entry>
+      <entry key="ExitingMaxIterations">Exiting: Maximum number of iterations has been exceeded\n         - increase MaxIter option.\n         Current function value: {0} \n</entry>
+      <entry key="GoldenSectionSearchParabolicInterpolation">golden section search, parabolic interpolation</entry>
+      <entry key="OptimizationTerminatedPrematurelyByUser">Optimization terminated prematurely by user.</entry>
+      <entry key="NameNotPrintable">(name not printable)</entry>
+      <entry key="NonScalarObj">User supplied objective function must return a scalar value.</entry>
+   </message>
+</rsccat>

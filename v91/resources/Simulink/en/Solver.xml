@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2009-2012 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="Error">
+      Solver encountered an error while simulating model ''{0}'' at time {1} and cannot
+      continue. Please check the model for errors.
+    </entry>
+
+    <entry key="Warning">
+      Solver is encountering difficulty in simulating model ''{0}'' at time {1}. Simulink will
+      continue to simulate with warnings. Please check the model for errors.
+    </entry>
+
+    <entry key="StateNotFinite">  
+      Continuous state ''{0}'' of ''{1}'' at time {2} is not finite.
+      Simulink will terminate the simulation.  There may be a singularity in the
+      solution. Check the model ''{3}'' for errors. Try reducing the fixed step size
+      or tighten the error tolerances for variable-step solvers.
+    </entry>
+
+    <entry key="InvSrcBlkOutBeingMergedAndUsedToComputeDeriv">
+      It is invalid to merge the non-continuous signal from block ''{0}'' output
+      port {1,number,integer} with other continuous signals because the merged
+      signal is driving an input port used to compute the derivative of a
+      continuous state.
+    </entry>
+
+  </message>
+</rsccat>

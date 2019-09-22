@@ -1,0 +1,429 @@
+<?xml version="1.0"?>
+<!-- Copyright 2013-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+    <entry key="AddAdminUser">You are creating user {0} for jobmanager {1} on host {2}. Running at elevated security levels automatically creates this user which enables an administrator to access and manipulate all users' jobs and tasks. Creating this user requires a password.</entry>
+    <entry key="AddAdminUserConfirmNew">Confirm the password</entry>
+    <entry key="AddAdminUserNewPassword">Password of admin user</entry>
+    <entry key="AddNewUserConfirmNew">Confirm Password</entry>
+    <entry key="AddNewUserNewPassword">New Password</entry>
+    <entry key="AddNewUserRemember">Remember my password</entry>
+    <entry key="AddNewUserSecurityLevel2">This is the first time you are using {0} on {1} as user {2} so you must create a new password.</entry>
+    <entry key="AddNewUserSecurityLevel3">Security Level 3:\nThis is the first time you are using {0} on {1}  as user {2} so you must enter your password. This must be the same as your network or system password.</entry>
+    <entry key="AppendDataError">Unable to append to data in the job manager database.</entry>
+    <entry key="AppendInMemoryDataError">Unable to append to data in the in-memory storage.</entry>
+    <entry key="AuthenticateCurrentPassword">Password</entry>
+    <entry key="AuthenticateRemember">Remember my password</entry>
+    <entry key="AuthenticateRememberChoice">Remember this choice</entry>
+    <entry key="AuthenticateSecurityLevel1">The job or task you are trying to access belongs to user {0}. Do you want to continue?</entry>
+    <entry key="AuthenticateSecurityLevel2">Enter {0}'s password.</entry>
+    <entry key="AuthenticateSecurityLevel3">Enter {0}'s password.</entry>
+    <entry key="AuthenticationToken">Reading authentication token from file failed: {0}</entry>
+    <entry key="AuthenticationTokenError">Reading authentication token from file failed: {0}</entry>
+    <entry key="BadLookupServiceURI">The lookup service URL ''{0}'' is invalid. The URL should have the form 'peerlookup://hostname:port'.</entry>
+    <entry key="BasePortNotInteger">baseport must be an integer, not {0}. Check the command flags and the mdce_def file.</entry>
+    <entry key="BasePortOutOfBounds">baseport must be between 1 and 65530, not {0}. Check the command flags and the mdce_def file.</entry>
+    <entry key="BlobFileAllocationError">Error trying to create new blob file.</entry>
+    <entry key="BlobFileExistsError">File: {0} already exists.</entry>
+    <entry key="BlobFileNotFoundError">Could not find blob file.</entry>
+    <entry key="Busy">Busy</entry>
+    <entry key="CannotConnectToLookupService">Cannot connect to the lookup service on ''{0}''. 
+    This might be because the service is not running or because a firewall is blocking communication between this computer and {1}.</entry>
+    <entry key="CannotDispatchWithoutTaskInfo">TaskInfo has not yet been set.</entry>
+    <entry key="CannotExportActivatableService">Cannot export an activatable service.</entry>
+    <entry key="CannotParseLogLevel">Cannot parse log level from ''{0}''.</entry>
+    <entry key="CannotParsePortNumber">Cannot parse port number from ''{0}''.</entry>
+    <entry key="CannotStartPeerSession">Failed to connect to the lookup service on ''{0}''.</entry>
+    <entry key="CannotVerifyCredentialSignature">Credential signature could not be verified.</entry>
+    <entry key="CausedByMessage">\n\nwhich is caused by:\n</entry>
+    <entry key="CertificateNotFound">Certificate ''{0}'' cannot be found.</entry>
+    <entry key="CertificateNotValid">Certificate ''{0}'' is not valid.</entry>
+    <entry key="CheckSignatureFailed">Error during checkSignature.</entry>
+    <entry key="CleanLogdirFailed">Failed to clean MATLAB_LOG_DIR directory.</entry>
+    <entry key="CleanPrefdirFailed">Failed to clean MATLAB_PREFDIR directory.</entry>
+    <entry key="CleanedCheckpointData">Deleted checkpoint data in {0}</entry>
+    <entry key="CloseConnectionError">Unable to close connection to database.</entry>
+    <entry key="ClusterLogEntryCommand">for {0} on {1} with log level {2}</entry>
+    <entry note="{5}={4}={3}={2}={1}" key="CommFromJMMessage">\n
+    The MJS is unable to open a TCP connection back to this computer.\n\n
+    You will not be able to transfer data of size greater than {0} bytes between this computer and {1}. Callback functions also will not work.\n\n
+    ======================================================\n
+    Possible reasons for this problem are:\n\n\t1. {2} cannot resolve the short hostname of this computer.\n\t2. 
+    This computer has multiple hostnames and Parallel Computing Toolbox is using one that is unresolvable on {3}.\n\t3. 
+    A firewall is blocking communication between {4} and this computer.\n\t4. 
+    Network routers are unable to route traffic from {5} to this computer.\n\n
+    Refer to the Troubleshooting section of the documentation for detailed debugging instructions.\n{6}\n{7}\n
+    ======================================================\n</entry>
+    <entry note="{3}={1}={0}" key="CommToJMMessage">\n
+    This computer is unable to open a TCP connection to MJS.\n\nYou will not be able to interact with this MJS.\n\n
+    ======================================================\n
+    Possible reasons for this problem are:\n\n\t1. 
+    MJS has crashed or shut down.\n\t2. 
+    A firewall is blocking communication between this computer and {0}.\n\t3. 
+    Network routers are unable to route traffic from this computer to {1}.\n\t4. 
+    This computer cannot resolve the short hostname of {2}.\n\t5. 
+    {3} has multiple hostnames and is using one which is unresolvable on this computer.\n\n{4}\n{5}\n
+    ======================================================\n</entry>
+    <entry key="ComputerHostnameMalformed">The hostname of this computer is malformed: {0}</entry>
+    <entry key="ConfigFileReadError">Error reading from configuration file.</entry>
+    <entry key="ConnectionFailed">Failed</entry>
+    <entry key="ConnectionOk">Connected</entry>
+    <entry key="ControlConfigurationProblem">Cannot create the command for {0}.</entry>
+    <entry key="CopyBlobFileDataError">Unable to copy data between blob files.</entry>
+    <entry key="CopyBlobFileError">Unable to copy blob file.</entry>
+    <entry key="CopyBlobFileInfoError">Unable to copy data.</entry>
+    <entry key="CopyDataError">Unable to copy data.</entry>
+    <entry key="CouldNotFindJobManager">Could not find the jobmanager {0} on host {1}.</entry>
+    <entry key="CouldNotGenerateKeyPair">Could not generate keypair.\n{0}</entry>
+    <entry key="CouldNotGetJMProxies">Unable to get job manager proxies.</entry>
+    <entry key="CouldNotRetrieveCredentials">Could not retrieve credentials for {0}.</entry>
+    <entry key="CountTasksError">Unable to count the tasks in the job manager database.</entry>
+    <entry key="CreateBlobFileError">Unable to create new blob file.</entry>
+    <entry key="CreateDirectoryFail">Unable to create the directory: {0}</entry>
+    <entry key="CreateRandomAccessFileError">Unable to create a new RandomAccessFile: {0}</entry>
+    <entry key="CredentialCheckFailure">Credential check failed because the work unit with ID {0} did not exist in storage.</entry>
+    <entry key="CredentialTransfer">Failed to retrieve the password for user {0}. This was caused by:\n{1}</entry>
+    <entry key="CurrentLogLevel">Current log level: {0}</entry>
+    <entry key="CurrentLogLocation">Current log location: {0}</entry>
+    <entry key="DatabaseCacheSize">Database item cache size</entry>
+    <entry key="DatabaseConnectionFailed">Unable to connect to database.</entry>
+    <entry key="DatabaseNotFound">Database not found.</entry>
+    <entry key="DatabaseSize">Database size in bytes</entry>
+    <entry key="DatabaseTableCreationFailed">Unable to create database tables.</entry>
+    <entry key="DataNotFound">Could not find data in storage.</entry>
+    <entry key="DecryptFailed">Could not decrypt credentials.</entry>
+    <entry key="DecryptionFailed">Failed to initialize decryption.\n{0}</entry>
+    <entry key="DeserializeClassNotFound">Unable to deserialize public key.</entry>
+    <entry key="DeserializeIO">Problem while deserializing public key.</entry>
+    <entry key="DialogUnavailable">Credentials dialog is unavailable.</entry>
+    <entry key="DirectoryCreationFailed">Unable to make parent directory for file {0}</entry>
+    <entry key="EmptyEntry">Entry for {0} is empty.</entry>
+    <entry key="EncryptFailed">Could not encrypt credentials.</entry>
+    <entry key="EncryptionFailed">Failed to initialize encryption.\n{0}</entry>
+    <entry key="ErrorCauseTemplate">The cause of the problem is:\n\n
+    ============================================================================\n
+    {0}\n============================================================================</entry>
+    <entry key="ErrorWhileClosingSocket">An error occurred while closing a socket.</entry>
+    <entry key="ErrorWhileReceivingCommand">An error occurred while receiving a command.</entry>
+    <entry key="ErrorWhileSending">An error occurred while sending an object. The socket on the client side might have been closed due to a timeout.</entry>
+    <entry key="ExceptionFromRemoteLookupService">The remote lookup service on ''{0}'' reported the error: {1}</entry>
+    <entry key="ExportObjectFailed">Failed to export Activatable object on port.</entry>
+    <entry key="FailedToChangeStorage" translate="false">Failed to change the job manager storage.</entry>
+    <entry key="FailedToDeleteDirectory">"Failed to delete {0} before task execution.</entry>
+    <entry key="FailedToEvaluateTaskAsUser">Failed to evaluate task as {0}. The user name or password you entered does not match the system credentials on the cluster machines. To correct this, you can update the Username property of the job manager, or use changePassword to change the password to the correct system password. For information on this method, type help parallel.cluster.MJS/changePassword</entry>
+    <entry key="FailedToExportObjectOnPort">Failed to export object on port {0,number,integer}.</entry>
+    <entry key="FailedToFindPortToExportObject">Failed to find a free port between {0,number,integer} and {1,number,integer} to export the object on.</entry>
+    <entry key="FailedToGenerateAESKey" translate="false">Failed to generate AES key.\n{0}</entry>
+    <entry key="FailedToGetJobCredentials">Failed to get credentials for job. Try re-submitting the job.</entry>
+    <entry key="FailedToGetJobManagerInfo">Could not get status information about the job manager process.</entry>
+    <entry key="FailedToGetLookupInfo">Could not get status information about the job manager lookup process.</entry>
+    <entry key="FailedToGetNodeInfo">Could not get status information about the {0} process.</entry>
+    <entry key="FailedToGetWorkerInfo">Could not get status information about the MATLAB worker.</entry>
+    <entry key="FailedToInitializeDecryption">Failed to initialize decryption.\n{0}</entry>
+    <entry key="FailedToInitializeDigestHashAlgorithm" translate="false">Failed to initialize digest/hash algorithm.\n{0}</entry>
+    <entry key="FailedToInitializeEncryption">Failed to initialize encryption.\n{0}</entry>
+    <entry key="FailedToInitializeKeyPairAlgorithm">Failed to initialize keypair algorithm.\n{0}</entry>
+    <entry key="FailedToInitializeKeyPairCipherAlgorithm" translate="false">Failed to initialize key pair cipher algorithm.\n{0}</entry>
+    <entry key="FailedToInitializeRandomAlgorithm" translate="false">Failed to initialize random algorithm.\n{0}</entry>
+    <entry key="FailedToInitializeSigningAlgorithm" translate="false">Failed to initialize signing algorithm.\n{0}</entry>
+    <entry key="FailedToInitializeSymmetricCipherAlgorithm" translate="false">Failed to initialize symmetric cipher algorithm.\n{0}</entry>
+    <entry key="FailedToSignData">Failed to sign data.\n{0}</entry>
+    <entry key="FailedToStartLicenseError">MATLAB failed to start due to a license error.</entry>
+    <entry key="FailedToVerifySignatureData">Failed to verify signature data.\n{0}</entry>
+    <entry key="FewerTasksThanMinWorkers">The {0} was cancelled because only {1} of its tasks were started successfully
+    whereas the minimum number of MATLAB workers required to start running this job was {2}.</entry>
+    <entry key="FileDependDir">AttachedFiles folder</entry>
+    <entry key="FindJobError">Exception occurred when finding job in job manager database.</entry>
+    <entry key="FindTaskError">Failed to write task to the job manager database.</entry>
+    <entry key="FullyQualifiedHostNameMessage">This resolves to the fully qualified hostname: {0}</entry>
+    <entry key="FullyQualifiedHostNameUnknown">Unable to determine the fully qualified hostname of this computer, the problem was: {0}</entry>
+    <entry key="GDSAuthenticationError">Failed to authenticate with GDS.</entry>
+    <entry key="GDSAuthenticationErrorOnRetry">Failed to re-authenticate with GDS after a session failure. Contact MathWorks technical support. The original session failure was: {0}</entry>
+    <entry key="GDSCloneDataError">Failed to clone data in storage, the problem was: {0}</entry>
+    <entry key="GDSContentTooLarge">Failed to put data in storage, the problem was: {0}</entry>
+    <entry key="GDSCreateDataError">Failed to create data in storage, the problem was: {0}</entry>
+    <entry key="GDSJobAlreadyExists">Failed to create job because the job already exists in storage.</entry>
+    <entry key="GDSJobWriteError">Failed to create job.</entry>
+    <entry key="GDSPutTaskError">Failed to create task in storage, the problem was: {0}</entry>
+    <entry key="GDSQuotaExceeded">You have exceeded your storage quota for MathWorks Hosted Cloud. Delete old jobs to free up space.</entry>
+    <entry key="GDSReadJobStateError">Failed to read the job state from storage.</entry>
+    <entry key="GDSSessionFailure">Failed to create a valid GDS session. Contact MathWorks technical support.</entry>
+    <entry key="GDSUpdateJobError">Failed to update job in storage, the problem was: {0}</entry>
+    <entry key="GDSUpdateTaskError">Failed to update task in storage, the problem was: {0}</entry>
+    <entry key="GetAllBlobFilesError">Unable to get all blob files for job.</entry>
+    <entry key="GetBlobFileError">Unable to get blob file.</entry>
+    <entry key="H2DataNotFoundError">Data not found in database.</entry>
+    <entry key="H2GetCredentialsError">Unable to retrieve credentials from the job manager database.</entry>
+    <entry key="H2RemoveCredentialsError">Unable to remove credentials from the job manager database.</entry>
+    <entry key="H2UpdateCredentialsError">Failed to update credentials in the job manager database.</entry>
+    <entry key="H2UpdateMultipleCredentialsError">Failed to update multiple credentials in the job manager database. Stored credentials in a potentially inconsistent state.</entry>
+    <entry key="H2WriteCredentialsError">Unable to write credentials to the job manager database.</entry>
+    <entry key="H2WriteMultipleCredentialsError">Failed to put multiple credentials in the job manager database. Stored credentials in a potentially inconsistent state.</entry>
+    <entry key="Headless">Could not create GraphicalCredentialConsumer because the current session is headless.</entry>
+    <entry key="IOExceptionAtMATLABStart">IOException during MATLAB start.</entry>
+    <entry key="IPAddressMessage">The IP addresses of this computer are:\n{0}</entry>
+    <entry key="IPAddressUnknown">The IP addresses of this computer are unknown.</entry>
+    <entry key="Idle">Idle</entry>
+    <entry key="InMemoryDataNotFoundError">Data requested did not exist in the in-memory data storage.</entry>
+    <entry key="IncorrectPermissionOnKeyFile">The private key file  {0} was writable. Its security may have been compromised. The private key should be readable only.</entry>
+    <entry key="IncorrectStateToCreateTask">A task cannot be created because the job has finished.</entry>
+    <entry key="IncorrectStateToSetProperty">{0} property of a {1} cannot be set in the running or finished state.</entry>
+    <entry key="IncorrectTaskState">The task object is not in a state for this operation to be performed.</entry>
+    <entry key="IncorrectTaskStateForDispatch">Only tasks that are in the pending state may be run.</entry>
+    <entry key="IncorrectWorkUnitState">The job or task is not in a state for this operation to be performed.</entry>
+    <entry key="InstanceCreationFailed">Unable to create an instance of {0}.</entry>
+    <entry key="InvalidActionSpecified">Invalid action specified in configuration file. The action should either be start or stop.</entry>
+    <entry key="InvalidAdminPassword">The password you entered does not match the administrator password.</entry>
+    <entry key="InvalidClusterLogCommand">Invalid action for clusterlogs: {0}</entry>
+    <entry key="InvalidCredentials">MATLAB failed to start due to invalid user credentials.</entry>
+    <entry key="InvalidLookupServiceURI">The lookup service URL ''{0}'' is invalid. The URL should have the form 'peerlookup://hostname:port'.</entry>
+    <entry key="InvalidPassword">The password you entered does not match the password previously entered for user {0} on this MJS. 
+    To correct this, you can update the Username property of this MJS, or use changePassword to change the password to the correct one. 
+    For information on this method, type help parallel.cluster.MJS/changePassword. 
+    If you have forgotten your password, ask your Administrator to reset your password.</entry>
+    <entry key="InvalidWorkerConfig">Invalid worker configuration. Check the mdce_def file and the command line flags.</entry>
+    <entry key="JobCancelFailed">Cannot rerun job ({0}).\nOriginal cancel message:\n{1}</entry>
+    <entry key="JobDataRemoveError">Failed to remove data for job.</entry>
+    <entry key="JobDestroyed">The job with ID {0} was deleted.</entry>
+    <entry key="JobIncorrectStateToRerun">Cannot rerun job because it is in a wrong state ({0}).\nOriginal cancel message:\n{1}</entry>
+    <entry key="JobManager">Job manager</entry>
+    <entry key="JobManagerPreStartDescription">Contacting the mdce service on the host {0}\nto start a job manager process.</entry>
+    <entry key="JobManagerPreStopDescription">Contacting the mdce service on the host {0}\nto stop a job manager process.</entry>
+    <entry key="JobManagerStartNotNeededDescription">Did not have to start the job manager {0} on the host\n{1}.</entry>
+    <entry key="JobManagerStartSuccessDescription">Started the job manager {0} on the host\n{1}.</entry>
+    <entry key="JobManagerStopNotNeededDescription">Did not have to stop the job manager {0} on the host\n{1}.</entry>
+    <entry key="JobManagerStopSuccessDescription">Stopped the job manager {0} on the host\n{1}.</entry>
+    <entry key="JobManagers">Job managers</entry>
+    <entry key="JobNoRerunsLeft">Cannot rerun job because at least one of its tasks has no rerun attempts left ({0}).\nOriginal cancel message:\n{1}</entry>
+    <entry key="JobRerunFailed">One of the tasks failed to rerun ({0}).</entry>
+    <entry key="LifecycleReporterCastFailed">Failed to cast lifecycle reporter {0}</entry>
+    <entry key="LifecycleReporterInstantiationFailed">Failed to instantiate lifecycle reporter {0}</entry>
+    <entry key="ListeningOnPort">Listening for remote commands on port {0}</entry>
+    <entry key="LocalHostNameMessage">The hostname used by Parallel Computing Toolbox on this computer is: {0}</entry>
+    <entry key="LocalHostNameUnknown">Unable to determine the hostname of this computer, the problem was: {0}</entry>
+    <entry key="LookupInConfig">Requested job manager lookup processes</entry>
+    <entry key="LookupPreStartDescription">Contacting the mdce service on the host {0}\nto start the job manager lookup process.</entry>
+    <entry key="LookupPreStopDescription">Contacting the mdce service on the host {0}\nto stop the job manager lookup process.</entry>
+    <entry key="LookupProcess">Job manager lookup process</entry>
+    <entry key="LookupProcesses">Job manager lookup processes</entry>
+    <entry key="LookupServiceDiscoveryNotStarted">Unable to begin lookup service discovery.</entry>
+    <entry key="LookupStartNotNeededDescription">Did not have to start the job manager lookup process on the host\n{0}, because it was already running.</entry>
+    <entry key="LookupStartSuccessDescription">Started the job manager lookup process on the host {0}.</entry>
+    <entry key="LookupStopNotNeededDescription">Did not have to stop the job manager lookup process on the host\n{0}, because it was still in use by a job manager process.</entry>
+    <entry key="LookupStopSuccessDescription">Stopped the job manager lookup process on the host {0}.</entry>
+    <entry key="LookupTimedOut">The lookup service on ''{0}'' has not responded within the expected time.</entry>
+    <entry key="LostConnection">Lost connection to</entry>
+    <entry key="LostConnectionTo">Was {0} until connection was lost</entry>
+    <entry key="MATLABExitAtStartup">MATLAB exited during startup.</entry>
+    <entry key="MATLABFailedToStart">MATLAB failed to start.</entry>
+    <entry key="MATLABLicenseError">The task failed to start due to a licensing error.</entry>
+    <entry key="MDCE">MDCE service</entry>
+    <entry key="MDCEDefFile">mdce_def File</entry>
+    <entry key="MDCEMatlabRoot">MATLAB</entry>
+    <entry key="MDCEPlatform">Platform</entry>
+    <entry key="MDCESecurityLevel">Security level</entry>
+    <entry key="MDCEServiceVersion">mdce service using MATLAB Distributed Computing Server version {0}.</entry>
+    <entry key="MDCESummary">Summary:\nThe mdce service on {0} manages the following processes</entry>
+    <entry key="MDCEVersion">Version</entry>
+    <entry key="MDCSCommandArrayPreStartDescription">Running {0} commands.</entry>
+    <entry key="MDCSNotFound">Could not locate the mdce service at host: {0} and port: {1}.</entry>
+    <entry key="MDCSNotFoundCause">Most likely, the mdce service is not running.</entry>
+    <entry key="MJSFullyQualifiedHostNameUnknown">Unable to determine the fully qualified hostname of this MJS, the problem was: {0}</entry>
+    <entry key="MJSHostNameMessage">The MJS hostname is: {0}</entry>
+    <entry key="MJSIPAddressMessage">The IP addresses of this MJS are:\n{0}</entry>
+    <entry key="MJSNameMessage">The MJS name is: {0}</entry>
+    <entry key="MalformedHostname">Provided job manager host names are malformed.</entry>
+    <entry key="MaxLessThanMin">The job was cancelled because its MinimumNumberOfWorkers property was set to {0}, which was smaller than the value of the MaximumNumberOfWorkers property {1}.</entry>
+    <entry key="MaxWorkersNil">The job was cancelled because its MaximumNumberOfWorkers property was set to 0.</entry>
+    <entry note="This message is only used in test code" key="MessageIDForTest" translate="false">An error.</entry>
+    <entry key="MisMatchedSecurityLevel" note="{0} - worker name, {1} and {2} - a number from 0 to 3">Worker {0} can not register with the job manager as it has the wrong security level.\nJob manager security level = {1}\nWorker security level = {2}</entry>
+    <entry key="MisMatchedSupportedReleases" note="{0} - worker name, {1} and {2} - A list of MATLAB release strings e.g. 'R2016a, R2016b'">Worker {0} can not register with the job manager as it supports a different set of MATLAB releases to the other workers already registered with this job manager. All workers must support the same set of MATLAB releases.\nExpected supported releases = {1}\nWorker supported releases = {2}</entry>
+    <entry key="MissingJDBCDriver">Necessary JDBC driver not available on classpath.</entry>
+    <entry key="MultiUserPersistentCredentialStoreNoCredDir">Could not create directory {0}.</entry>
+    <entry key="MultiUserPersistentCredentialStoreNoPrefDir">The Matlab prefs dir {0} does not exist.</entry>
+    <entry key="MulticastLookupFailed">Multicast lookup discovery failed.</entry>
+    <entry key="MulticastServiceNotFound">Could not contact any MJS lookup service. You may not have started MJS, or multicast protocols may be failing on your network. If you are certain that MJS is running, specify the host in your profile.</entry>
+    <entry key="Name">Name</entry>
+    <entry key="NetworkAddresses">Network addresses of host</entry>
+    <entry key="NoAuthorisedUserFound">Failed to get valid credentials for any of the authorized users.</entry>
+    <entry key="NoConsumerFactory">Consumer factory has not been set.</entry>
+    <entry key="NoCredentials">There is no password stored for this user {0}.</entry>
+    <entry key="NoCredentialsEntered">Operation aborted because no credentials were entered for user {0}.</entry>
+    <entry key="NoCredentialsEnteredNoUser">Operation aborted because no credentials were entered.</entry>
+    <entry key="NoCredentialsForUser">No credentials found for {0}.</entry>
+    <entry key="NoDialogs">Graphical dialogs not available.</entry>
+    <entry key="NoEntryFound">Problem reading configuration file. No entry found for {0}.</entry>
+    <entry key="NoHostnameSpecified">No hostname specified in system properties distcomp.rmi.server.hostname and java.rmi.server.hostname but is required since property {0} is set to true.</entry>
+    <entry key="NoJobFound">Cannot rerun task because there is no job associated with it ({0}), thus cancelling it.\nOriginal cancel message:\n{1}</entry>
+    <entry key="NoJobManagerFound">No job managers called {0} were found on this machine.</entry>
+    <entry key="NoLifecycleReporter">Failed to find lifecycle reporter class {0}</entry>
+    <entry key="NoMatlabRef">Could not get the MatlabRef.</entry>
+    <entry key="NoRerunAttemptsLeft">The task has no rerun attempts left.</entry>
+    <entry key="NoSecureCommunication">Job scheduler services can only establish trust among themselves if they can communicate securely. Currently, secure communication is not enabled.\nYou need to switch it on in the mdce_def file.  </entry>
+    <entry key="NoServiceFound">No job managers called {0} or any workers were found on this machine.</entry>
+    <entry key="NoTasks">The job was cancelled because it has no tasks.</entry>
+    <entry key="NoValidMDCSHostname">No valid MATLAB Distributed Computing Server hostname for this service.</entry>
+    <entry key="NonSignedPlainCredentials">Credentials were not signed.</entry>
+    <entry key="NotAdminUser">Only the admin user can perform this operation.</entry>
+    <entry key="NotEnoughWorkers">The job was cancelled because the cluster does not have enough workers to meet the minimum of the job''s NumWorkersRange property ([{0} {1}]).</entry>
+    <entry key="NotRunning">Not running</entry>
+    <entry key="NotWorldReadable">Failed to make {0} world readable.</entry>
+    <entry key="NotWorldWritable">Failed to make {0} world writable.</entry>
+    <entry key="NullRemoteInputStreamFactory">Client not configured correctly.</entry>
+    <entry key="NullWorkUnitID">WorkUnit ID was null.</entry>
+    <entry key="NumTasksNotOne">The {0} was cancelled because the number of tasks in the job, {1}, was not equal to 1.</entry>
+    <entry key="NumWorkers">Number of workers</entry>
+    <entry key="OnlyAuthenticationToken">No valid credentials for user {0}: worker requires only an AuthenticationToken.</entry>
+    <entry key="ParallelClusterJobmanagerCausedByMessage">\n\nwhich is caused by:\n</entry>
+    <entry key="ParallelClusterJobmanagerErrorCauseTemplate">The cause of the problem is:\n\n\============================================================================\n\{0}\n\============================================================================</entry>
+    <entry key="ParallelClusterJobmanagerReverseCauseMessage">\nThis is causing:\n\n</entry>
+    <entry key="ParallelJobRerun">The {0} is being rerun because the task with ID {1} terminated abnormally for the following reason: {2}</entry>
+    <entry key="PersistenceDirDoesNotExist">The directory \n{0} \ndoes not exist. \nWill not be able to resume the process state when you start it again.</entry>
+    <entry key="PersistenceDirExists">A stopped service with the name {0} already exists\nand has now been resumed.\nAll other command line arguments have been ignored.\nIf this was not intended, stop the current service\nand start it again using the -clean flag.</entry>
+    <entry key="PersistenceDirProblem">Problem encountered with persistence directory during startup.</entry>
+    <entry key="Port">Port</entry>
+    <entry key="PortUnavailable">Insufficient number of ports available. Check pctconfig if you are running the Parallel Computing Toolbox. If you are running the MATLAB Distributed Computing Server, check your mdce_def file or the -baseport input to your scripts.</entry>
+    <entry key="Pre2013aVersion">An older version of MATLAB Distributed Computing Server is attempting to communicate with MATLAB Distributed Computing Server version {0}. MATLAB Distributed Computing Server parts are not compatible between versions.</entry>
+    <entry key="ProblemReadingConfigFile">Problem reading configuration file.</entry>
+    <entry key="ProblemWithProtocolAndVersion">A problem was detected while checking protocol and version.</entry>
+    <entry key="PutBlobFileInfoError">Unable to update database with blob file information.</entry>
+    <entry key="PutDataError">Unable to write data to the job manager database.</entry>
+    <entry key="PutInMemoryDataError">Unable to put data in the in-memory storage.</entry>
+    <entry key="ReadBlobFileDataError">Unable to read data from blob file.</entry>
+    <entry key="ReadDataError">Error reading data from database.</entry>
+    <entry key="ReadFilesFailure">Unable to read files from the directory: {0}</entry>
+    <entry key="ReadInMemoryDataError">Unable to read data from in-memory storage.</entry>
+    <entry key="ReadJobsError">Unable to read job IDs from the job manager database.</entry>
+    <entry key="ReadTasksError">Unable to read task IDs from the job manager database.</entry>
+    <entry key="RecreateBlobFileError">Error recreating blob file, file does not exist on disk at {0}</entry>
+    <entry key="RegisteredWithLookup">Registered with job manager lookup processes on hosts</entry>
+    <entry key="ReleaseNotSupported">This MATLAB Job Scheduler does not support running jobs for MATLAB release ''{0}''. Contact your cluster administrator to install MATLAB Distributed Computing Server for your release. Supported releases: {1}</entry>
+    <entry key="RemoveAllBlobFileDataError">Failed to delete all data for job.</entry>
+    <entry key="RemoveBlobFileError">Unable to delete blob file.</entry>
+    <entry key="RemoveBlobFileInfoError">Unable to remove blob file information from database.</entry>
+    <entry key="RemoveJobError">Failed to remove job from the job manager database.</entry>
+    <entry key="RemoveTaskError">Failed to remove task from the job manager database.</entry>
+    <entry key="RequiredCertificateNotProvided">Cannot contact the lookup service on ''{0}'' because the wrong certificate was provided.</entry>
+    <entry key="RetrievedMDCEStatus">Retrieved the node status on the host {0}.</entry>
+    <entry key="RetrievingNodeStatus">Retrieving the node status.</entry>
+    <entry key="RetrievingNodeStatusOnHost">Retrieving the node status on the host {0}.</entry>
+    <entry key="ReverseCauseMessage">\nThis is causing:\n\n</entry>
+    <entry key="RunAsUserError">No valid credentials for user {0}: RunAsUser requires PlainCredentials (security level {1,number,integer}).</entry>
+    <entry key="Running">Running</entry>
+    <entry key="RunningClusterLogLevelCommand">Running the cluster log level command on {0}.</entry>
+    <entry key="RunningClusterLogLevelCommandOnLocalhost">Running the cluster log level command.</entry>
+    <entry key="RunningOnHost">Running on host</entry>    
+    <entry key="RunningProvisionCommand" translate="false">Running the provision command on {0}.</entry>
+    <entry key="RunningProvisionCommandOnLocalHost" translate="false">Running the provision command.</entry>
+    <entry key="RunningRegisterCommand">Running the register command on {0}.</entry>
+    <entry key="RunningRegisterCommandOnLocalHost">Running the register command.</entry>    
+    <entry key="SaltMismatchError">Salt mismatch.</entry>
+    <entry key="SecurityLevelInfo0">0 (No security)</entry>
+    <entry key="SecurityLevelInfo1">1 (Jobs are identified with submitting user; access by other users allowed, but generates warning)</entry>
+    <entry key="SecurityLevelInfo2">2 (Jobs are password protected)</entry>
+    <entry key="SecurityLevelInfo3">3 (Jobs are password protected; passwords must match credentials on worker machines because tasks are executed as user on the worker)</entry>
+    <entry key="SequenceNumberError">Unable to obtain a unique job number from the database.</entry>
+    <entry key="SetCurrentUserSecurityLevel1">Enter the username for your jobs on {0} on {1}. This username identifies your jobs so that others know who owns them.</entry>
+    <entry key="SetCurrentUserSecurityLevel2">Enter the username for your jobs on {0} on {1}. This username identifies your jobs so that others know who owns them.</entry>
+    <entry key="SetCurrentUserSecurityLevel3">Security Level 3: Enter your network (system) username to log in to {0} on {1}. </entry>
+    <entry key="SetCurrentUserUserName">Username</entry>
+    <entry key="SignCredentialsFailed">Unable to sign credentials.</entry>
+    <entry key="StartTime">Start time</entry>
+    <entry key="StarterCleanedCheckpointData">Deleted checkpoint data in {0}.</entry>
+    <entry key="StartupTimeout">Time out while waiting for MATLAB to start up.</entry>
+    <entry key="Status">Status</entry>
+    <entry key="Stopped">Stopped services</entry>
+    <entry key="SupportedReleases">Supported releases</entry>
+    <entry key="SwitchUserSecurityLevel1">The job or task you are trying to access belongs to user {0}. Do you want to continue anyway?</entry>
+    <entry key="SwitchUserSecurityLevel2">The job or task you are trying to access belongs to user {0}. To continue enter admin's (or another authorized user's) password.</entry>
+    <entry key="SwitchUserSecurityLevel3">The job or task you are trying to access belongs to user {0}. To continue enter admin user's (or another authorized user's) password.</entry>
+    <entry key="TaskAlreadyRerunning">The task is already (or still) pending.</entry>
+    <entry key="TaskCanceledDueToClusterRestart">The task was canceled because the cluster was restarted.</entry>
+    <entry key="TaskDestroyed">The task state cannot be set because it has been deleted.</entry>
+    <entry key="TaskDispatchFailedOnWorker">Dispatching the task failed due to an exception thrown on the worker:\n{0}</entry>
+    <entry key="TaskDispatchInProgress">The task''s ''{0}'' property cannot be modified because MJS is currently trying to send the task to a worker.</entry>
+    <entry key="TaskEvaluatorBusy">TaskEvaluator is already evaluating a task.</entry>
+    <entry key="TaskExecutionFailed">Task execution failed.</entry>
+    <entry key="TaskIncorrectStateToRerun">Cannot rerun task because it is in a wrong state ({0}).\nOriginal cancel message:\n{1}</entry>
+    <entry key="TaskNoRerunsLeft">Cannot rerun task because there are no rerun attempts left ({0}).\nOriginal cancel message:\n{1}</entry>
+    <entry key="TaskOfParallelJobAbortedAbnormally">The parallel job was cancelled because the task with ID {0} terminated abnormally for the following reason:\n{1}</entry>
+    <entry key="TaskRerunFailed">Cannot rerun task ({0}).\nOriginal cancel message:\n{1}</entry>
+    <entry key="TimeoutDuringProcessStartup">Timeout while waiting for process startup to complete.</entry>
+    <entry key="UnableToCreateJMProxy">Unable to create a proxy to the job manager.</entry>
+    <entry key="UnableToCreateSecurityDirectory">Unable to create security directory: {0}.</entry>
+    <entry key="UnableToCreateTrustModule">Unable to create trust module.\n{0}</entry>
+    <entry key="UnableToCreateWorkerProxy">Unable to create a proxy to the worker.</entry>
+    <entry key="UnableToDeserializeProxy">Unable to deserialize proxy to remote object from byte array.</entry>
+    <entry key="UnableToExportProxies">Unable to export proxies to the access objects on the job manager.</entry>
+    <entry key="UnableToExportWorkerPool">Unable to export a Worker Pool.</entry>
+    <entry key="UnableToSerializeJMProxy">Unable to serialize the job manager proxy.</entry>
+    <entry key="UnableToSerializeProxy">Unable to serialize proxy to remote object to byte array.</entry>
+    <entry key="UnableToSerializePublicKeyToString">Unable to serialize public key.\n{0}</entry>
+    <entry key="UnableToSerializeWorkerProxy">Unable to serialize the worker proxy.</entry>
+    <entry key="UnableToTransferJVMLimitation">Could not transfer data from MATLAB into java because of JVM memory limitations.</entry>
+    <entry key="UnableToWriteKeyInformationToPath">Unable to write key information to {0}.\n{1}</entry>
+    <entry key="UnauthorisedUser">User {0} is not authorized.</entry>
+    <entry note="{4}={3}={2}={1}={0}" key="UnicastServiceNotFound">Could not contact an MJS lookup service on host ''{0}''. Possible reasons for this problem are:\n\n1. MJS has not been started, has crashed, or has been shut down.\n2. A firewall is blocking communication between this computer and ''{1}''.\n3. This computer cannot resolve the hostname of ''{2}'', it resolves it to an incorrect IP address.\n4. ''{3}'' resolves its own hostname to an incorrect IP address.\n5. Network routers are unable to route traffic from this computer to ''{4}''.\n\nThe hostname, {5}, corresponds to the fully qualified hostname {6}.\nThis computer resolves it to the IP address {7}.\n</entry>
+    <entry key="Unknown">Unknown</entry>
+    <entry key="UnknownModuleCreationError" translate="false">{0}</entry>
+    <entry key="UnknownProtocol">Something using protocol id={0} and version id={1} is attempting to communicate with MATLAB Distributed Computing Server version {2}. This is most likely some other service.</entry>
+    <entry key="UnknownUser">User {0} does not exist.</entry>
+    <entry key="UnknownVersion">An unknown version (id={0}) of MATLAB Distributed Computing Server is attempting to communicate with MATLAB Distributed Computing Server version {1}.</entry>
+    <entry key="UnobtainableHostname">Unable to obtain the hostname of this computer.</entry>
+    <entry key="UnreachableHostname">Cannot reach host: {0}</entry>
+    <entry key="UnresolvableLookupURL">Could not contact an MJS lookup service using the host ''{0}''.\nThe hostname, {1}, could not be resolved.\n</entry>
+    <entry key="UnresolvedHostnameOrPort">Cannot resolve a hostname or port.</entry>
+    <entry key="UpdateBlobFileDataError">Unable to stream data to blob file.</entry>
+    <entry key="UpdateDataError">Unable to update data in the job manager database.</entry>
+    <entry key="UpdateInMemoryDataError">Unable to update data in the in-memory storage.</entry>
+    <entry key="UpdateJobError">Failed to update job in the job manager database.</entry>
+    <entry key="UpdateTaskError">Failed to update task in the job manager database.</entry>
+    <entry key="UserCreation">The user {0} could not be created. Regular users may only be created if they are listed in ALLOWED_USERS in the mdce_def script.  The admin user should have been created during MJS startup. If not, stopping and restarting MJS will attempt to add the admin user properly.</entry>
+    <entry key="UserDefined">{0}</entry>
+    <entry key="UsingCertificate">Using certificate from {0}.</entry>
+    <entry key="UsingMulticast">Using multicast</entry>
+    <entry key="VMHeapSize">VM heap size in bytes</entry>
+    <entry key="VersionMismatch">The lookup service on ''{0}'' is running an incompatible version of MATLAB Distributed Computing Server.\nThe local version is {1} and the remote version is {2}.</entry>
+    <entry key="WebLicensingRequired">No valid credentials for user {0}: worker requires web licensing.</entry>
+    <entry key="WorkUnitDataRemoveError">Failed to remove data for work unit from the job manager database.</entry>
+    <entry key="WorkUnitNotFound">Job or task does not exist in storage.</entry>
+    <entry key="WorkUnitNotInDatabase">WorkUnit not found in the job manager database.</entry>
+    <entry key="WorkUnitNotRunning">{0} is not in the running state.</entry>
+    <entry key="WorkUnitTimeout">The {0} was cancelled because it failed to finish within the specified {1} timeout of {2} seconds.</entry>
+    <entry key="Worker">Worker</entry>
+    <entry key="WorkerAlreadyRegistered">Worker called {0} is already registered with the job manager called {1}.</entry>
+    <entry key="WorkerCannotSaveInfo">This worker cannot save information to the directory:\n\t {0}.</entry>
+    <entry key="WorkerFailedToConnect">Worker has not been able to contact job manager</entry>
+    <entry key="WorkerFullyQualifiedHostNameUnknown">The fully qualified hostname of the worker computer is unknown.</entry>
+    <entry key="WorkerHostNameMessage">The hostname of the worker computer is: {0}</entry>
+    <entry key="WorkerIPAddressMessage">The IP addresses of the worker computer are:\n{0}</entry>
+    <entry key="WorkerInterrupted">Worker was interrupted while waiting for MATLAB to start.</entry>
+    <entry key="WorkerJMConnectionStatus">Connection with job manager</entry>
+    <entry key="WorkerJMHostname">Job manager hostname</entry>
+    <entry key="WorkerLeaseTimeout">Worker lease timeout in milliseconds</entry>
+    <entry key="WorkerNameMessage">The worker name is: {0}</entry>  
+    <entry key="WorkerNamesHostNames">Worker names and host names</entry>
+    <entry key="WorkerNoLookupSpecifiedFallbackOnMulticast">Using multicast to locate the job manager because neither the command\nline arguments nor the mdce_def file specifies the job manager hostname. \nThis warning will not appear if you use the -jobmanagerhost flag.\nFor more information, run the startworker command with the -help flag.</entry>
+    <entry key="WorkerNotReady">Worker not ready.</entry>
+    <entry key="WorkerNotTrusted">Worker {0} is not trusted.</entry>
+    <entry key="WorkerPreStartDescription">Contacting the mdce service on the host {0}\nto start a MATLAB worker.</entry>
+    <entry key="WorkerPreStopDescription">Contacting the mdce service on the host {0}\nto stop a MATLAB worker.</entry>
+    <entry key="WorkerRegistering">Running the worker registration command.</entry>
+    <entry key="WorkerRegistrationConnectionFailed">Failed to register worker due to connection problems.</entry>
+    <entry key="WorkerRegistrationFailed">Failed to register worker.</entry>
+    <entry key="WorkerStartNotNeededDescription">Did not have to start the worker {0} on the host\n{1}.</entry>
+    <entry key="WorkerStartSuccessDescription">Started the MATLAB worker {0} on the host\n{1}. This worker is configured to register with the job manager\n{2}.</entry>
+    <entry key="WorkerStartupDir">Worker startup directory</entry>
+    <entry key="WorkerStopNotNeededDescription">Did not have to stop the worker {0} on the host\n{1}.</entry>
+    <entry key="WorkerStopSuccessDescription">Stopped the MATLAB worker {0} on the host\n{1}.</entry>
+    <entry key="Workers">Workers</entry>
+    <entry key="WriteBlobFileDataError">Unable to write data to blob file.</entry>
+    <entry key="WriteBlobFileError">Unable to write blob file.</entry>
+    <entry key="WriteBlobFileInfoError">Unable to write blob file information to database.</entry>
+    <entry key="WriteFilesFailure">Unable to write files to the directory: {0}</entry>
+    <entry key="WriteJobError">Unable to write a job object to the job manager database.</entry>
+    <entry key="WriteTaskError">Unable to write a task object to the job manager database.</entry>
+    <entry key="WrongNumberOfArguments">Requires two arguments, not found in ''{0}''.</entry>
+    <entry key="WrongVersion">Version {0} of MATLAB Distributed Computing Server, is attempting to communicate with MATLAB Distributed Computing Server version {1}. MATLAB Distributed Computing Server parts are not compatible between versions.</entry>
+  </message>
+</rsccat>

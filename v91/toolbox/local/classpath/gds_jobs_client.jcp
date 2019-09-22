@@ -1,0 +1,2 @@
+# Java classpath entries for gds_jobs_client
+$matlabroot/java/jarext/webservices/gds_jobs_client/gds-jobs-client.jar

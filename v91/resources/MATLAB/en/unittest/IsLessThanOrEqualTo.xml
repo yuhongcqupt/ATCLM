@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="ExpectedMaximum">Maximum Value (Inclusive):</entry>
+    <entry key="ExpectedNonEmptyMaximum">Maximum value must be non-empty.</entry>
+    <entry key="FailingEmptyActual">The actual value must be non-empty.</entry>
+    <entry key="FailingScalarActScalarExp">The value must be less than or equal to the maximum value.</entry>
+    <entry key="FailingScalarActNonscalarExp">The value must be less than or equal to all elements of the maximum value array.</entry>
+    <entry key="FailingNonscalarActScalarExp">Each element must be less than or equal to the maximum value.</entry>
+    <entry key="FailingNonscalarActNonscalarExp">Each element must be less than or equal to each corresponding element of the maximum array.</entry>
+    <entry key="FailingIndices">Failing Indices:</entry>
+  </message>
+</rsccat>

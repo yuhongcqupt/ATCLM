@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="WrongWarningSet">The function handle did not issue the correct warnings.</entry>
+    <entry key="MissingWarnings">Missing Warnings:</entry>
+    <entry key="ExtraWarnings">Extra Warnings:</entry>
+    <entry key="WrongWarningCount">The function handle did not issue the correct warning counts.</entry>
+    <entry key="Warning">Warning: {0}</entry>
+    <entry key="ActualCount">Actual Count:</entry>
+    <entry key="ExpectedCount">Expected Count:</entry>
+    <entry key="WrongWarningOrder">The function handle did not issue the warnings in the correct order.</entry>
+    <entry key="ActualOrder">Actual Warning Order:</entry>
+    <entry key="ExpectedOrder">Expected Warning Order:</entry>
+    <entry key="NotExactProfile">The function handle did not issue the exact warning profile expected.</entry>
+    <entry key="NoWarningsIssued">The function handle did not issue any warnings.</entry>
+    <entry key="WrongWarningProfile">The function handle did not issue a correct warning profile.</entry>
+    <entry key="CorrectWarningProfile">The function handle issued a correct warning profile.</entry>
+    <entry key="ActualProfile">Actual Warning Profile:</entry>
+    <entry key="ExpectedProfile">Expected Warning Profile:</entry>
+    <entry key="MustMatchExactly">The expected warning profile must match exactly.</entry>
+    <entry key="ProfileRespects">The expected warning profile respects:</entry>
+    <entry key="ProfileIgnores">The expected warning profile ignores:</entry>
+    <entry key="Set">Set</entry>
+    <entry key="Count">Count</entry>
+    <entry key="Order">Order</entry>
+    <entry key="ExpectedWarning">Expected Warning:</entry>
+    <entry key="ActualWarnings">Actual Warnings:</entry>
+    <entry key="UnexpectedWarning">The function handle did not issue the expected warning.</entry>
+    <entry key="NoID">&lt;No Message Identifier&gt;</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  rsccat
+-->

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- Copyright 2014 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+    <message>
+        <entry key="invalidMapNargin">The map function must have at least 3 input arguments.</entry>
+        <entry key="invalidRedNargin">The reduce function must have at least 3 input arguments.</entry>
+        <entry key="invalidDatastore">First argument must be a datastore.</entry>
+        <entry key="invalidMapHandle">Second argument must be a function handle.</entry>
+        <entry key="invalidReduceHandle">Third argument must be a function handle.</entry>
+        <entry key="noFolder">The folder does not exist.</entry>
+        <entry key="displayHeader">MAPREDUCE PROGRESS</entry>
+        <entry key="displayPhase">Map {0}% Reduce {1}%</entry>
+    </message>
+</rsccat>

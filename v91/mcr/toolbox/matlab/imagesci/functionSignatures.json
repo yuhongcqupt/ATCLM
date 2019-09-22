@@ -1,0 +1,286 @@
+{
+"fitsread":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":"filepath"},
+		{"name":"varargin", "kind":"optional", "multiplicity":"append"}
+	]
+},
+"fitsinfo":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":"filepath"},
+		{"name":"varargin", "kind":"optional", "multiplicity":"append"}
+	]
+},
+"h5create":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":"filepath"},
+		{"name":"varargin", "kind":"optional", "multiplicity":"append"}
+	]
+},
+"h5disp":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":"filepath"},
+		{"name":"varargin", "kind":"optional", "multiplicity":"append"}
+	]
+},
+"h5info":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":"filepath"},
+		{"name":"varargin", "kind":"optional", "multiplicity":"append"}
+	]
+},
+"h5read":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":"filepath"},
+		{"name":"varargin", "kind":"optional", "multiplicity":"append"}
+	]
+},
+"h5readatt":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":"filepath"},
+		{"name":"varargin", "kind":"optional", "multiplicity":"append"}
+	]
+},
+"h5write":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":"filepath"},
+		{"name":"varargin", "kind":"optional", "multiplicity":"append"}
+	]
+},
+"h5writeatt":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":"filepath"},
+		{"name":"varargin", "kind":"optional", "multiplicity":"append"}
+	]
+},
+"imread":
+{
+	"inputs":
+	[
+		{"mutuallyExclusiveGroup":
+			[
+				{"name":"filename", "kind":"required", "type":[["filepath=*.cur,*.ico,*.gif,*.hdf"], ["matlabpath=*.cur,*.ico,*.gif,*.hdf"]]},
+				[
+					{"name":"filename", "kind":"required", "type":[["char"], ["filepath"]]},
+					{"name":"fmt", "kind":"required", "type":["char", "choices={'cur','ico','gif','hdf'}"]}
+				]
+			]
+		},
+		{"name":"idx", "kind":"optional", "type":["numeric", "vector", ">=1"]}
+	],
+	"outputs":
+	[
+		{"name":"A", "type":[["numeric", "2d"], ["numeric", "3d"]]}
+	]
+},
+"imread":
+{
+	"inputs":
+	[
+		{"mutuallyExclusiveGroup":
+			[
+				{"name":"filename", "kind":"required", "type":[["filepath=*.gif"], ["matlabpath=*.gif"]]},
+				[
+					{"name":"filename", "kind":"required", "type":[["char"], ["filepath"]]},
+					{"name":"fmt", "kind":"required", "type":["char", "choices={'gif'}"]}
+				]
+			]
+		},
+		{"name":"Frames", "kind":"namevalue", "type":[["numeric", "vector", ">=1"], ["char", "choices={'all'}"]]}
+	],
+	"outputs":
+	[
+		{"name":"A", "type":[["numeric", "2d"], ["numeric", "3d"]]}
+	]
+},
+"imread":
+{
+	"inputs":
+	[
+		{"mutuallyExclusiveGroup":
+			[
+				{"name":"filename", "kind":"required", "type":[["filepath=*.jpg"], ["matlabpath=*.jpg"]]},
+				[
+					{"name":"filename", "kind":"required", "type":[["char"], ["filepath"]]},
+					{"name":"fmt", "kind":"required", "type":["char", "choices={'jpg'}"]}
+				]
+			]
+		}
+	],
+	"outputs":
+	[
+		{"name":"A", "type":[["numeric", "2d"], ["numeric", "3d"]]}
+	]
+},
+"imread":
+{
+	"inputs":
+	[
+		{"mutuallyExclusiveGroup":
+			[
+				{"name":"filename", "kind":"required", "type":[["filepath=*.j2c,*.j2k"], ["matlabpath=*.j2c,*.j2k"]]},
+				[
+					{"name":"filename", "kind":"required", "type":[["char"], ["filepath"]]},
+					{"name":"fmt", "kind":"required", "type":["char", "choices={'j2c','j2k'}"]}
+				]
+			]
+		},
+		{"name":"ReductionLevel", "kind":"namevalue", "type":["numeric", "scalar", ">=0"], "default":"0"},
+		{"name":"PixelRegion", "kind":"namevalue", "type":["cell", "numel=2"]},
+		{"name":"V79Compatible", "kind":"namevalue", "type":["logical", "scalar"], "default":"false"}
+	],
+	"outputs":
+	[
+		{"name":"A", "type":[["numeric", "2d"], ["numeric", "3d"]]}
+	]
+},
+"imread":
+{
+	"inputs":
+	[
+		{"mutuallyExclusiveGroup":
+			[
+				{"name":"filename", "kind":"required", "type":[["filepath=*.png"], ["matlabpath=*.png"]]},
+				[
+					{"name":"filename", "kind":"required", "type":[["char"], ["filepath"]]},
+					{"name":"fmt", "kind":"required", "type":["char", "choices={'png'}"]}
+				]
+			]
+		},
+		{"name":"BackgroundColor", "kind":"namevalue", "type":[["numeric", "scalar", ">=1"], ["numeric", "numel=3", ">=0", "<=1"], ["char", "choices={'none'}"]]}
+	],
+	"outputs":
+	[
+		{"name":"A", "type":[["numeric", "2d"], ["numeric", "3d"]]}
+	]
+},
+"imread":
+{
+	"inputs":
+	[
+		{"mutuallyExclusiveGroup":
+			[
+				{"name":"filename", "kind":"required", "type":[["filepath=*.tif,*.tiff"], ["matlabpath=*.tif,*.tiff"]]},
+				[
+					{"name":"filename", "kind":"required", "type":[["char"], ["filepath"]]},
+					{"name":"fmt", "kind":"required", "type":["char", "choices={'tif','tiff'}"]}
+				]
+			]
+		},
+		{"name":"Index", "kind":"namevalue", "type":["numeric", "scalar", ">=1"]},
+		{"name":"Info", "kind":"namevalue", "type":["struct"]},
+		{"name":"PixelRegion", "kind":"namevalue", "type":["cell", "numel=2"]}
+	],
+	"outputs":
+	[
+		{"name":"A", "type":[["numeric", "2d"], ["numeric", "3d"]]}
+	]
+},
+"imwrite":
+{
+	"inputs":
+	[
+		{"name":"A", "kind":"required"},
+		{"name":"filename", "kind":"required", "type":"filepath"},
+		{"name":"varargin", "kind":"optional", "multiplicity":"append"}
+	]
+},
+"imfinfo":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":"filepath"},
+		{"name":"varargin", "kind":"optional", "multiplicity":"append"}
+	]
+},
+"nccreate":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":[["filepath"], ["char"]]},
+		{"name":"varargin", "kind":"optional", "multiplicity":"append"}
+	]
+},
+"ncdisp":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":[["filepath"], ["char"]]},
+		{"name":"varargin", "kind":"optional", "multiplicity":"append"}
+	]
+},
+"ncinfo":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":[["filepath"], ["char"]]},
+		{"name":"varargin", "kind":"optional", "multiplicity":"append"}
+	]
+},
+"ncread":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":[["filepath"], ["char"]]},
+		{"name":"varargin", "kind":"optional", "multiplicity":"append"}
+	]
+},
+"ncreadatt":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":[["filepath"], ["char"]]},
+		{"name":"varargin", "kind":"optional", "multiplicity":"append"}
+	]
+},
+"ncwrite":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":[["filepath"], ["char"]]},
+		{"name":"varargin", "kind":"optional", "multiplicity":"append"}
+	]
+},
+"ncwriteatt":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":[["filepath"], ["char"]]},
+		{"name":"varargin", "kind":"optional", "multiplicity":"append"}
+	]
+},
+"ncwriteschema":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":[["filepath"], ["char"]]},
+		{"name":"varargin", "kind":"optional", "multiplicity":"append"}
+	]
+},
+"Tiff":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":"filepath"},
+		{"name":"varargin", "kind":"optional", "multiplicity":"append"}
+	]
+}
+}

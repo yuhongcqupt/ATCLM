@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="MustBeFloatingPoint">The value must be floating point. Instead, it is a "{0}".</entry>
+    <entry key="IsNotFloatingPoint">The value is not floating point. Instead, it is a "{0}".</entry>
+    <entry key="MustBeInfScalar">The value must be Inf or -Inf.</entry>
+    <entry key="MustBeInfNonScalar">At least one element must be Inf or -Inf.</entry>
+    <entry key="MustNotBeInfScalar">The value must not be Inf or -Inf.</entry>
+    <entry key="AllMustBeNonInf">All elements must be finite or NaN.\nFailing indices:\n{0}</entry>
+    <entry key="IndicesThatHaveInf">Indices that have Inf values:\n{0}</entry>
+  </message>
+</rsccat>

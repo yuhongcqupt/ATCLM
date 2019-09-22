@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="FileMenuLabel"><![CDATA[&File]]></entry>
+    <entry key="NewWindowLabel"><![CDATA[&New Window]]></entry>
+    <entry key="OpenLabel"><![CDATA[&Open]]></entry>
+    <entry key="SaveLabel"><![CDATA[&Save]]></entry>
+    <entry key="SaveAsLabel"><![CDATA[Save &As]]></entry>
+    <entry key="PrintLabel"><![CDATA[&Print]]></entry>
+    <entry key="CloseLabel"><![CDATA[&Close]]></entry>
+    <entry key="CloseAllModelsLabel"><![CDATA[Close All &Models]]></entry>
+    
+	<entry key="ViewMenuLabel"><![CDATA[&View]]></entry>
+	<entry key="RefreshLabel"><![CDATA[&Refresh]]></entry>
+	<entry key="OrientationLabel"><![CDATA[Orie&ntation]]></entry>
+	<entry key="ZoomInLabel"><![CDATA[Zoom &In]]></entry>
+	<entry key="ZoomOutLabel"><![CDATA[Zoom &Out]]></entry>
+	<entry key="ZoomFitLabel"><![CDATA[Zoom &Fit]]></entry>
+	<entry key="ShowLegendLabel"><![CDATA[Show Le&gend]]></entry>
+	<entry key="ShowLibrariesLabel"><![CDATA[Include &Libraries]]></entry>
+	<entry key="ShowMathworksDependenciesLabel"><![CDATA[Show MathWorks &Dependencies]]></entry>
+	<entry key="ShowFullPathLabel"><![CDATA[Show Full &Path]]></entry>
+    
+	<entry key="HelpMenuLabel"><![CDATA[&Help]]></entry>
+	<entry key="HelpLabel"><![CDATA[&Dependency Viewer Help]]></entry>
+	<entry key="AboutLabel"><![CDATA[&About]]></entry>
+
+	<entry key="FileDependencies">Model File Dependencies</entry>
+	<entry key="ReferencedModelInstances">Referenced Model Instances</entry>
+	<entry key="Vertical">Vertical</entry>
+	<entry key="Horizontal">Horizontal</entry>
+	<entry key="DependencyType">Dependency Type</entry>
+	<entry key="MainToolBar">Show Toolbar</entry>
+	
+        <entry key="ArgumentError">Expecting even number of optional arguments</entry>
+        <entry key="CreatingInstanceView">Creating Instance View</entry>
+        <entry key="FindingDependencies">Finding dependencies...</entry>
+        <entry key="SearchingModel">Searching {0}</entry>
+  </message>
+</rsccat>

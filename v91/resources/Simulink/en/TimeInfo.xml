@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="DifferingStartAndEnd">Differing start and end time length in the TimeInfo property.</entry>
+    <entry key="nosort">The time vector must have monotonically increasing values such that no two times are the same.</entry>
+  </message>
+</rsccat>

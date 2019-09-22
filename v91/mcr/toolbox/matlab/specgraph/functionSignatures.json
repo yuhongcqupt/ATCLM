@@ -1,0 +1,671 @@
+{
+"area":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"x", "kind":"optional", "type":[["numeric"],["datetime"],["duration"]]},
+		{"name":"y", "kind":"required", "type":[["numeric"],["duration"]]},
+		{"name":"basevalue", "kind":"optional", "type":"double"},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.chart.primitive.Area"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.chart.primitive.Area"}
+	]
+},
+"bar":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"x", "kind":"optional", "type":[["numeric"],["datetime"],["duration"]]},
+		{"name":"y", "kind":"required", "type":[["numeric"],["duration"]]},
+		{"name":"width", "kind":"optional", "type":["numeric","scalar"]},
+		{"name":"style", "kind":"flag", "type":"choices={'grouped','stacked'}"},
+		{"name":"color", "kind":"flag", "type":
+			[
+				["char", "choices={'yellow','y','magenta','m','cyan','c','green','g','blue','b','white','w','black','k'}"],
+				["char", "@matlab.graphics.internal.isColorSpec"]
+			]
+		},
+		{"kind":"separator"},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.chart.primitive.Bar"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.chart.primitive.Bar"}
+	]
+},
+"barh":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"x", "kind":"optional", "type":[["numeric"],["datetime"],["duration"]]},
+		{"name":"y", "kind":"required", "type":[["numeric"],["duration"]]},
+		{"name":"width", "kind":"optional", "type":["numeric","scalar"]},
+		{"name":"style", "kind":"flag", "type":"choices={'grouped','stacked'}"},
+		{"name":"color", "kind":"flag", "type":
+			[
+				["char", "choices={'yellow','y','magenta','m','cyan','c','green','g','blue','b','white','w','black','k'}"],
+				["char", "@matlab.graphics.internal.isColorSpec"]
+			]
+		},
+		{"kind":"separator"},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.chart.primitive.Bar"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.chart.primitive.Bar"}
+	]
+},
+"contour":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"x", "kind":"optional", "type":["numeric"]},
+		{"name":"y", "kind":"optional", "type":["numeric"]},
+		{"name":"z", "kind":"required", "type":["numeric"]},
+		{"mutuallyExclusiveGroup":
+			[
+				{"name":"n", "kind":"optional", "type":["numeric" "scalar"]},
+				{"name":"v", "kind":"optional", "type":["numeric" "vector"]}
+			]
+		},
+		{"name":"LineSpec", "kind":"optional", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.chart.primitive.Contour"}
+	],
+	"outputs":
+	[
+		{"name":"C", "type":"double"},
+		{"name":"h", "type":"matlab.graphics.chart.primitive.Contour"}
+	]
+},
+"errorbar":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"mutuallyExclusiveGroup":
+			[
+				[
+					{"name":"x", "kind":"optional", "type":["numeric"]},
+					{"name":"y", "kind":"required", "type":["numeric"]},
+					{"name":"delta", "kind":"required", "type":["numeric"]},
+					{"name":"orientation", "kind":"flag", "type":"choices={'vertical','horizontal','both'}"},
+					{"name":"LineSpec", "kind":"flag", "type":["char", "@matlab.graphics.internal.isLineSpec"]}
+				],
+				[
+					{"name":"x", "kind":"required", "type":["numeric"]},
+					{"name":"y", "kind":"required", "type":["numeric"]},
+					{"name":"neg", "kind":"required", "type":["numeric"]},
+					{"name":"pos", "kind":"required", "type":["numeric"]},
+					{"name":"orientation", "kind":"flag", "type":"choices={'vertical','horizontal','both'}"},
+					{"name":"LineSpec", "kind":"flag", "type":["char", "@matlab.graphics.internal.isLineSpec"]}
+				],
+				[
+					{"name":"x", "kind":"required", "type":["numeric"]},
+					{"name":"y", "kind":"required", "type":["numeric"]},
+					{"name":"yneg", "kind":"required", "type":["numeric"]},
+					{"name":"ypos", "kind":"required", "type":["numeric"]},
+					{"name":"xneg", "kind":"required", "type":["numeric"]},
+					{"name":"xpos", "kind":"required", "type":["numeric"]},
+					{"name":"LineSpec", "kind":"optional", "type":["char", "@matlab.graphics.internal.isLineSpec"]}
+				]
+			]
+		},
+		{"kind":"separator"},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.chart.primitive.ErrorBar"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.chart.primitive.ErrorBar"}
+	]
+},
+"fcontour":
+{
+	"setsAns":false,
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"f", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"range", "kind":"optional", "type":[["numeric", "numel=2"], ["numeric", "numel=4"]]},
+		{"name":"LineSpec", "kind":"optional", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.function.FunctionContour"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.function.FunctionContour"}
+	]
+},
+"fill":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":"matlab.graphics.axis.AbstractAxes"},
+		{"multiplicity":"append", "tuple":
+			[
+				{"name":"X", "kind":"required", "type":"numeric"},
+				{"name":"Y", "kind":"required", "type":"numeric"},
+				{"name":"C", "kind":"required", "type":[["numeric"],["@matlab.graphics.internal.isLineSpec"]]}
+			]
+		},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.primitive.Patch"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.primitive.Patch"}
+	]
+},
+"fimplicit":
+{
+	"setsAns":false,
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"f", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"range", "kind":"optional", "type":[["numeric", "numel=2"], ["numeric", "numel=4"]]},
+		{"name":"LineSpec", "kind":"optional", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.function.ImplicitFunctionLine"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.function.ImplicitFunctionLine"}
+	]
+},
+"fimplicit3":
+{
+	"setsAns":false,
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":"matlab.graphics.axis.Axes"},
+		{"name":"f", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"range", "kind":"optional", "type":[["numeric", "numel=2"], ["numeric", "numel=6"]]},
+		{"name":"LineSpec", "kind":"optional", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.function.ImplicitFunctionSurface"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.function.ImplicitFunctionSurface"}
+	]
+},
+"fplot":
+{
+	"setsAns":false,
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"f", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"range", "kind":"optional", "type":[["numeric", "numel=2"]]},
+		{"name":"LineSpec", "kind":"optional", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.function.FunctionLine"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.function.FunctionLine"}
+	]
+},
+"fplot":
+{
+	"setsAns":false,
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"x", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"y", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"range", "kind":"optional", "type":[["numeric", "numel=2"]]},
+		{"name":"LineSpec", "kind":"optional", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.function.ParameterizedFunctionLine"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.function.ParameterizedFunctionLine"}
+	]
+},
+"fplot3":
+{
+	"setsAns":false,
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":"matlab.graphics.axis.Axes"},
+		{"name":"x", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"y", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"z", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"range", "kind":"optional", "type":[["numeric", "numel=2"]]},
+		{"name":"LineSpec", "kind":"optional", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.function.ParameterizedFunctionLine"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.function.ParameterizedFunctionLine"}
+	]
+},
+"fsurf":
+{
+	"setsAns":false,
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":"matlab.graphics.axis.Axes"},
+		{"name":"f", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"range", "kind":"optional", "type":[["numeric", "numel=2"], ["numeric", "numel=4"]]},
+		{"name":"LineSpec", "kind":"optional", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.function.FunctionSurface"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.function.FunctionSurface"}
+	]
+},
+"fsurf":
+{
+	"setsAns":false,
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":"matlab.graphics.axis.Axes"},
+		{"name":"x", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"y", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"z", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"range", "kind":"optional", "type":[["numeric", "numel=2"], ["numeric", "numel=4"]]},
+		{"name":"LineSpec", "kind":"optional", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.function.ParameterizedFunctionSurface"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.function.ParameterizedFunctionSurface"}
+	]
+},
+"fmesh":
+{
+	"setsAns":false,
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":"matlab.graphics.axis.Axes"},
+		{"name":"f", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"range", "kind":"optional", "type":[["numeric", "numel=2"], ["numeric", "numel=4"]]},
+		{"name":"LineSpec", "kind":"optional", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.function.FunctionSurface"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.function.FunctionSurface"}
+	]
+},
+"fmesh":
+{
+	"setsAns":false,
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":"matlab.graphics.axis.Axes"},
+		{"name":"x", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"y", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"z", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"range", "kind":"optional", "type":[["numeric", "numel=2"], ["numeric", "numel=4"]]},
+		{"name":"LineSpec", "kind":"optional", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.function.ParameterizedFunctionSurface"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.function.ParameterizedFunctionSurface"}
+	]
+},
+"matlab.graphics.chart.primitive.GraphPlot.highlight":
+{
+        "inputs":
+        [
+                {"name":"h", "kind":"required", "type":"matlab.graphics.chart.primitive.GraphPlot"},
+                {"name":"id1", "kind":"required", "type":[["numeric","vector"],["cellstr","vector"],["graph"],["digraph"]]},
+                {"name":"id2", "kind":"optional", "type":[["numeric","vector"],["cellstr","vector"]]},
+	        {"name":"EdgeColor", "kind":"namevalue", "type":[["char", "choices={'yellow','y','magenta','m','cyan','c','green','g','blue','b','white','w','black','k'}"],["numeric", "vector", "ncols=3", ">=0", "<=1"]]},
+		{"name":"LineStyle", "kind":"namevalue", "type":["char", "choices={'-','--',':','-.','none'}"]},
+		{"name":"LineWidth", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+		{"name":"Marker", "kind":"namevalue", "type":["char", "choices={'o','+','*','.','x','square','s','^','>','v','<','d','diamond','p','pentagram','h','hexagram','none'}"]},
+		{"name":"MarkerSize", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+	        {"name":"NodeColor", "kind":"namevalue", "type":[["char", "choices={'yellow','y','magenta','m','cyan','c','green','g','blue','b','white','w','black','k'}"],["numeric", "vector", "ncols=3", ">=0", "<=1"]]}
+        ]
+},
+"histogram":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":[["matlab.graphics.axis.AbstractAxes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"X", "kind":"required", "type":[["numeric"],["logical"]]},
+		{"mutuallyExclusiveGroup":
+			[
+				[],
+				{"name":"nbins", "kind":"required", "type":[["numeric","scalar"],["logical","scalar"]]},
+				{"name":"edges", "kind":"required", "type":[["numeric", "vector"],["logical", "vector"]]}
+			]
+		},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.chart.primitive.Histogram"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.chart.primitive.Histogram"}
+	]
+},
+"histogram":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":[["matlab.graphics.axis.AbstractAxes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.chart.primitive.Histogram"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.chart.primitive.Histogram"}
+	]
+},
+"histogram2":
+{
+        "inputs":
+        [
+            {"name":"ax", "kind":"optional", "type":"matlab.graphics.axis.Axes"},
+            {"name":"options", "kind":"varargin", "type":"matlab.graphics.chart.primitive.Histogram2"}
+        ],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.chart.primitive.Histogram2"}
+        ]
+},
+"histogram2":
+{
+        "inputs":
+        [
+            {"name":"ax", "kind":"optional", "type":"matlab.graphics.axis.Axes"},
+            {"name":"X", "kind":"required", "type":[["numeric"],["logical"]]},
+            {"name":"Y", "kind":"required", "type":[["numeric"],["logical"]]},
+            {"name":"nbins", "kind":"optional", "type":[["numeric", "numel=2"],["numeric", "scalar"]]},
+            {"name":"options", "kind":"varargin", "type":"matlab.graphics.chart.primitive.Histogram2"}
+        ],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.chart.primitive.Histogram2"}
+        ]
+},
+"histogram2":
+{
+        "inputs":
+        [
+            {"name":"ax", "kind":"optional", "type":"matlab.graphics.axis.Axes"},
+            {"name":"X", "kind":"required", "type":[["numeric"],["logical"]]},
+            {"name":"Y", "kind":"required", "type":[["numeric"],["logical"]]},
+            {"name":"Xedges", "kind":"required", "type":[["numeric", "vector"],["logical","vector"]]},
+            {"name":"Yedges", "kind":"required", "type":[["numeric", "vector"],["logical","vector"]]},
+            {"name":"options", "kind":"varargin", "type":"matlab.graphics.chart.primitive.Histogram2"}
+        ],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.chart.primitive.Histogram2"}
+        ]
+},
+"image":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"mutuallyExclusiveGroup":
+			[
+				[],
+				{"name":"C", "kind":"required", "type":"numeric"},
+				[
+					{"name":"x", "kind":"required", "type":[["numeric", "numel=2"], ["numeric", "scalar"]]},
+					{"name":"y", "kind":"required", "type":[["numeric", "numel=2"], ["numeric", "scalar"]]},
+					{"name":"C", "kind":"required", "type":"numeric"}
+				]
+			]
+		},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.primitive.Image"}
+	],
+	"outputs":
+	[
+		{"name":"im", "type":"matlab.graphics.primitive.Image"}
+	]
+},
+"imagesc":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"mutuallyExclusiveGroup":
+			[
+				[],
+				[
+					{"name":"C", "kind":"required", "type":"numeric"},
+					{"name":"clims", "kind":"optional", "type":["numeric", "numel=2"]}
+				],
+				[
+					{"name":"x", "kind":"required", "type":[["numeric", "numel=2"], ["numeric", "scalar"]]},
+					{"name":"y", "kind":"required", "type":[["numeric", "numel=2"], ["numeric", "scalar"]]},
+					{"name":"C", "kind":"required", "type":"numeric"},
+					{"name":"clims", "kind":"optional", "type":["numeric", "numel=2"]}
+				]
+			]
+		},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.primitive.Image"}
+	],
+	"outputs":
+	[
+		{"name":"im", "type":"matlab.graphics.primitive.Image"}
+	]
+},
+"quiver":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"mutuallyExclusiveGroup":
+			[
+				[],
+				[
+					{"name":"x", "kind":"required", "type":"numeric"},
+					{"name":"y", "kind":"required", "type":"numeric"}
+				]
+			]
+		},
+		{"name":"u", "kind":"required", "type":"numeric"},
+		{"name":"v", "kind":"required", "type":"numeric"},
+		{"name":"scale", "kind":"optional", "type":["numeric","scalar"]},
+		{"name":"filled", "kind":"flag", "type":["char", "choices={'filled'}"]},
+		{"name":"LineSpec", "kind":"flag", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"kind":"separator"},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.chart.primitive.Quiver"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.chart.primitive.Quiver"}
+	]
+},
+"quiver3":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"mutuallyExclusiveGroup":
+			[
+				[],
+				[
+					{"name":"x", "kind":"required", "type":"numeric"},
+					{"name":"y", "kind":"required", "type":"numeric"}
+				]
+			]
+		},
+		{"name":"z", "kind":"required", "type":"numeric"},
+		{"name":"u", "kind":"required", "type":"numeric"},
+		{"name":"v", "kind":"required", "type":"numeric"},
+		{"name":"w", "kind":"required", "type":"numeric"},
+		{"name":"scale", "kind":"optional", "type":["numeric","scalar"]},
+		{"name":"filled", "kind":"flag", "type":["char", "choices={'filled'}"]},
+		{"name":"LineSpec", "kind":"flag", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"kind":"separator"},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.chart.primitive.Quiver"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.chart.primitive.Quiver"}
+	]
+},
+"matlab.graphics.chart.primitive.GraphPlot.layout":
+{
+        "inputs":
+        [
+                {"name":"h", "kind":"required", "type":"matlab.graphics.chart.primitive.GraphPlot"},
+                {"name":"method", "kind":"required", "type":["char", "choices={'auto','circle'}"]}
+        ]
+},
+"matlab.graphics.chart.primitive.GraphPlot.layout":
+{
+        "inputs":
+        [
+                {"name":"h", "kind":"required", "type":"matlab.graphics.chart.primitive.GraphPlot"},
+                {"name":"method", "kind":"required", "type":["char", "choices={'force'}"]},
+	        {"name":"Iterations", "kind":"namevalue", "type":["numeric", "scalar", ">=0", "integer"]},
+	        {"name":"XStart", "kind":"namevalue", "type":["numeric", "vector"]},
+	        {"name":"YStart", "kind":"namevalue", "type":["numeric", "vector"]}
+        ]
+},
+"matlab.graphics.chart.primitive.GraphPlot.layout":
+{
+        "inputs":
+        [
+                {"name":"h", "kind":"required", "type":"matlab.graphics.chart.primitive.GraphPlot"},
+                {"name":"method", "kind":"required", "type":["char", "choices={'force3'}"]},
+	        {"name":"Iterations", "kind":"namevalue", "type":["numeric", "scalar", ">=0", "integer"]},
+	        {"name":"XStart", "kind":"namevalue", "type":["numeric", "vector"]},
+	        {"name":"YStart", "kind":"namevalue", "type":["numeric", "vector"]},
+	        {"name":"ZStart", "kind":"namevalue", "type":["numeric", "vector"]}
+        ]
+},
+"matlab.graphics.chart.primitive.GraphPlot.layout":
+{
+        "inputs":
+        [
+                {"name":"h", "kind":"required", "type":"matlab.graphics.chart.primitive.GraphPlot"},
+                {"name":"method", "kind":"required", "type":["char", "choices={'layered'}"]},
+	        {"name":"AssignLayers", "kind":"namevalue", "type":["char", "choices={'auto','asap','alap'}"]},
+	        {"name":"Direction", "kind":"namevalue", "type":["char", "choices={'down','up','left','right'}"]},
+	        {"name":"Sources", "kind":"namevalue", "type":[["numeric", "vector"],["cell","vector"]]},
+	        {"name":"Sinks", "kind":"namevalue", "type":[["numeric", "vector"],["cell","vector"]]}
+        ]
+},
+"matlab.graphics.chart.primitive.GraphPlot.layout":
+{
+        "inputs":
+        [
+                {"name":"h", "kind":"required", "type":"matlab.graphics.chart.primitive.GraphPlot"},
+                {"name":"method", "kind":"required", "type":["char", "choices={'subspace','subspace3'}"]},
+	        {"name":"Dimension", "kind":"namevalue", "type":["numeric", "scalar", ">=2", "integer"]}
+        ]
+},
+"scatter":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":[["matlab.graphics.axis.AbstractAxes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"x", "kind":"required", "type":"numeric"},
+		{"name":"y", "kind":"required", "type":"numeric"},
+		{"name":"a", "kind":"optional", "type":"numeric"},
+		{"name":"c", "kind":"optional", "type":
+			[
+				["char", "choices={'yellow','y','magenta','m','cyan','c','green','g','blue','b','white','w','black','k'}"],
+				["numeric", "2d", "ncols=3", ">=0", "<=1"],
+				["numeric", "vector"],
+				["char", "@matlab.graphics.internal.isColorSpec"]
+			]
+		},
+		{"name":"filled", "kind":"flag", "type":"choices={'filled'}"},
+		{"name":"markertype", "kind":"flag", "type":["char", "choices={'o','+','*','.','x','square','s','^','>','v','<','d','diamond','p','pentagram','h','hexagram','none'}"]},
+		{"kind":"separator"},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.chart.primitive.Scatter"}
+	],
+	"outputs":
+	[
+		{"name":"s", "type":"matlab.graphics.chart.primitive.Scatter"}
+	]
+},
+"scatter3":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":"matlab.graphics.axis.AbstractAxes"},
+		{"name":"x", "kind":"required", "type":"numeric"},
+		{"name":"y", "kind":"required", "type":"numeric"},
+		{"name":"z", "kind":"required", "type":"numeric"},
+		{"name":"a", "kind":"optional", "type":"numeric"},
+		{"name":"c", "kind":"optional", "type":
+			[
+				["char", "choices={'yellow','y','magenta','m','cyan','c','green','g','blue','b','white','w','black','k'}"],
+				["numeric", "2d", "ncols=3", ">=0", "<=1"],
+				["numeric", "vector"],
+				["char", "@matlab.graphics.internal.isColorSpec"]
+			]
+		},
+		{"name":"filled", "kind":"flag", "type":"choices={'filled'}"},
+		{"name":"markertype", "kind":"flag", "type":["char", "choices={'o','+','*','.','x','square','s','^','>','v','<','d','diamond','p','pentagram','h','hexagram','none'}"]},
+		{"kind":"separator"},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.chart.primitive.Scatter"}
+	],
+	"outputs":
+	[
+		{"name":"s", "type":"matlab.graphics.chart.primitive.Scatter"}
+	]
+},
+"stairs":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"x", "kind":"optional", "type":[["numeric"],["datetime"],["duration"]]},
+		{"name":"y", "kind":"required", "type":[["numeric"],["datetime"],["duration"]]},
+		{"name":"LineSpec", "kind":"optional", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.chart.primitive.Stair"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.chart.primitive.Stair"}
+	]
+},
+"stem":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"x", "kind":"optional", "type":[["numeric"],["datetime"],["duration"]]},
+		{"name":"y", "kind":"required", "type":[["numeric"],["datetime"],["duration"]]},
+		{"name":"filled", "kind":"flag", "type":"choices={'filled'}"},
+		{"name":"LineSpec", "kind":"flag", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"kind":"separator"},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.chart.primitive.Stem"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.chart.primitive.Stem"}
+	]
+},
+"stem3":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":"matlab.graphics.axis.Axes"},
+		{"mutuallyExclusiveGroup":
+			[
+				[],
+				[
+					{"name":"x", "kind":"required", "type":[["numeric"]]},
+					{"name":"y", "kind":"required", "type":[["numeric"]]}
+				]
+			]
+		},
+		{"name":"z", "kind":"required", "type":[["numeric"]]},
+		{"name":"filled", "kind":"flag", "type":"choices={'filled'}"},
+		{"name":"LineSpec", "kind":"flag", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"kind":"separator"},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.chart.primitive.Stem"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.chart.primitive.Stem"}
+	]
+}
+}

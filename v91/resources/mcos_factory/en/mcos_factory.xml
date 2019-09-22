@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="mcos_factory">
+  <message>
+    <entry key="null_self">Attempt to call a method on an empty value</entry>
+    <entry key="null_fcn_ptr">Internal Error: property lacks either a getter or a setter function pointer</entry>
+    <entry key="must_be_string" note="stringDatatypeUpdate">Entry number {0,number,integer} must be a character vector</entry>
+    <entry key="must_be_cell_array">Parameter must be a cell array</entry>
+    <entry key="no_duplicates" note="stringDatatypeUpdate">The character vector {0} is already in this set.</entry>
+  </message>
+</rsccat>

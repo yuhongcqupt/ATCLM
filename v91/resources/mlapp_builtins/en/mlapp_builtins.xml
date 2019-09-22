@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="mlapp_builtins" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="MLAPP_BUILTINS_INVALID_ARGUMENT_ERROR">Invalid argument ''{0}''.</entry>
+    <entry key="MLAPP_BUILTINS_INVALID_ARGUMENT_ICON_INDEX">The icon index must be an integer in the range 0 to {0}.</entry>
+    <entry key="MLAPP_BUILTINS_BUILD_FAILED">Failed to build Matlab apps package : {0}</entry>   
+    <entry key="MLAPP_BUILTINS_BUILD_FAILED_INVALID_MANIFEST_FILE">Invalid Matlab app properties file.</entry>   
+    <entry key="MLAPP_BUILTINS_BUILD_FAILED_INTERNAL_ERROR">Failed to build Matlab apps file with internal errors.</entry>   
+    <entry key="MLAPP_BUILTINS_BUILD_FAILED_FILE_NOT_EXIST">Failed to build Matlab apps because file ''{0}'' does not exist.</entry>   
+    <entry key="MLAPP_BUILTINS_BUILD_FAILED_WRONG_ARGUMENT">Failed to build Matlab apps because invalid argument {0}.</entry>   
+    <entry key="MLAPP_BUILTINS_NOT_EXIST_ERROR">The Matlab apps file ''{0}'' does not exist.</entry>   
+    <entry key="MLAPP_BUILTINS_GET_APP_PROPERTIES_ERROR_VALIDATION">Failed to validate Matlab app properties XML file. </entry>   
+    <entry key="MLAPP_BUILTINS_GET_APP_PROPERTIES_INTERNAL_ERROR">Failed to get Matlab app properties with internal errors.</entry>   
+    <entry key="MLAPP_BUILTINS_NOT_ALLOW_OVERWRITE_ERROR">The installation root ''{0}'' already exists and does not allow overwrite.</entry>   
+    <entry key="MLAPP_BUILTINS_INVALID_PACKAGE_ERROR">This Matlab apps file ''{0}'' is invalid.</entry>   
+    <entry key="MLAPP_BUILTINS_EXTRACT_FAILED_ERROR">Failed to extract Matlab app file ''{0}'' to ''{1}'' with error: {2}</entry>
+    <entry key="MLAPP_BUILTINS_EXTRACT_FAILED_COPY_ERROR">Failed to copy Matlab app file ''{0}'' to ''{1}''</entry>
+    <entry key="MLAPP_BUILTINS_EXTRACT_FAILED_INTERNAL_ERROR">Failed to extract Matlab app file ''{0}'' to ''{1}'' with internal errors</entry>
+    <entry key="MLAPP_BUILTINS_FAILED_TO_VERIFY_CONFIGURATION_FILE">Failed to verify application configuration file.</entry>
+    <entry key="MLAPP_BUILTINS_XML_READ_ERROR">Failed to read application config file: {0}</entry>
+    <entry key="MLAPP_BUILTINS_XML_READ_INTERNAL_ERROR">Failed to read and parse application config file.</entry>
+    <entry key="MLAPP_BUILTINS_XML_WRITE_INTERNAL_ERROR">Failed to write application config file.</entry> 
+    <entry key="MLAPP_BUILTINS_REPACKAGE_WARNING">Please rebuild your MATLAB app file so app property XML file may be updated.</entry>
+    <entry key="MLAPP_BUILTINS_BUILD_ERROR_APP_SELF_CONTAINED">Failed to build Matlab apps file because app is self-contained.</entry>
+  </message>
+</rsccat>

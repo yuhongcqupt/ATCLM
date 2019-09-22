@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- Copyright 2011-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+    <entry key="ClusterFoundEventDataMissingRequiredProps">Required properties are missing from the supplied property names.  Required properties are:{0}</entry>
+    <entry key="DctJavaArrayNotJavaObject">The input to dctJavaArray is either a cell array of java objects or a java object.</entry>
+    <entry key="DctJavaArrayZeroDimension">All dimensions of a java array must be greater than zero.</entry>
+    <entry key="EventWaiterNegativeTimeout">Timeout cannot be negative. Defaulting to 0.</entry>
+    <entry key="EventWaiterNotListener">The first argument to eventwaiter must be a listener.</entry>
+    <entry key="FileSerializerLockOne">There must be exactly one entity to lock.</entry>
+    <entry key="InitWorkerInvalidEnvironment">Environment variable "{0}" is not defined.</entry>
+    <entry key="JVMNotPresent">Java must be initialized in order to use the Parallel Computing Toolbox.  Please launch MATLAB without the ''-nojvm'' flag.</entry>
+    <entry key="NoSuchProperty">No such property ''{0}'' for objects of type ''{1}''.</entry>
+    <entry key="ProcessNameCannotInterpretOutput">Couldn''t interpret output from psname.sh: "{0}"</entry>
+    <entry key="ProcessNameError">The following error occurred while retrieving the name of process {0,number,integer}: {1}</entry>
+    <entry key="ReorderPropertiesForSetNotUnique">Property names to be re-ordered must be unique.</entry>
+    <entry key="SetmcrappkeysFailed">Can''t set keys to non-empty values on client or local worker.</entry>
+    <entry key="StoreFunctionArrayInvalidAction">Action arguments to dctStoreFunctionArray are set or run.</entry>
+    <entry key="TypeCheckerDoNotCallConstructor">Call the static methods directly instead of calling the constructor.</entry>
+    <entry key="TypeCheckerExpectedString">Invalid input.  Expected a character vector, but received {0}.</entry>
+    <entry key="TypeCheckerMultipleMatches">Found multiple matches to the data type ''{0}''.</entry>
+    <entry key="TypeCheckerNoRecordFound">No record found for the data type ''{0}''.</entry>
+    <entry key="TypeCheckerNotRowVector">Invalid input.  Input character vector should be a row vector.</entry>
+    <entry key="TypecheckerInvalidCallback">Invalid callback of type {0}.</entry>
+    <entry key="UnknownArch">The output "{0}" from "computer" was unknown.</entry>
+    <entry key="UnknownFeature">Unknown feature ''{0}''.</entry>
+    <entry key="UnknownMPIVariant">Unknown MPI variant: {0}.</entry>
+  </message>
+</rsccat>

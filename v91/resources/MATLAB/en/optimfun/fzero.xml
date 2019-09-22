@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2010-2014 The MathWorks, Inc. -->
+<rsccat locale="en_US" product="MATLAB" version="1.0">
+   <message>
+      <entry key="InputArg">FZERO requires at least two input arguments or a structure with valid fields.</entry>
+      <entry key="NotEnoughInputs">FZERO requires at least two input arguments.</entry>
+      <entry key="NonDoubleInput">FZERO accepts inputs only of data type double.</entry>
+      <entry key="Arg2NotFinite">Second argument must be finite.</entry>
+      <entry key="InvalidFunctionSupplied">FZERO cannot continue because user-supplied {0} failed with the error below.\n\n {1}</entry>
+      <entry key="ValuesAtEndPtsComplexOrNotFinite">Function values at interval endpoints must be finite and real.</entry>
+      <entry key="ValuesAtEndPtsSameSign">The function values at the interval endpoints must differ in sign.</entry>
+      <entry key="ValueAtInitGuessComplexOrNotFinite">Function value at starting guess must be finite and real.</entry>
+      <entry key="LengthArg2">Second argument must be a scalar or vector of length 2.</entry>
+      <entry key="InvalidState">Unknown state in CALLOUTPUTANDPLOTFCNS.</entry>
+      <entry key="ZeroFindTerminated">Zero find terminated.</entry>
+      <entry key="SearchForIntervalContainingSignChange">Search for an interval around {0} containing a sign change:\n</entry>
+      <entry key="SearchForZeroInInterval">Search for a zero in the interval [{0}, {1}]:\n</entry>
+      <entry key="ZeroFoundInInterval">Zero found in the interval [{0}, {1}]</entry>
+      <entry key="CurrentPointXNearSingularPoint">Current point x may be near a singular point. The interval [{0}, {1}] \nreduced to the requested tolerance and the function changes sign in the interval,\nbut f(x) increased in magnitude as the interval reduced.</entry>
+      <entry key="ExitingNoSignChange">Exiting fzero: aborting search for an interval containing a sign change\n    because no sign change is detected during search.\nFunction may not have a root.</entry>
+      <entry key="OptimizationTerminatedPrematurelyByUser">Optimization terminated prematurely by user.</entry>
+      <entry key="NameNotPrintable">(name not printable)</entry>
+      <entry key="AbortingSearchForIntervalComplexEncountered">Exiting fzero: aborting search for an interval containing a sign change\n    because complex function value encountered during search.\n(Function value at {0} is {1}.)\nCheck function or try again with a different starting value.</entry>
+      <entry key="AbortingSearchForIntervalNaNInfEncountered">Exiting fzero: aborting search for an interval containing a sign change\n    because NaN or Inf function value encountered during search.\n(Function value at {0} is {1}.)\nCheck function or try again with a different starting value.</entry>
+   </message>
+</rsccat>

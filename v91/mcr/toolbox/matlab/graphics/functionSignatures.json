@@ -1,0 +1,106 @@
+{
+"axes":
+{
+	"inputs":
+	[
+		{"name":"h", "kind":"optional", "type":"matlab.graphics.axis.AbstractAxes"}
+	]
+},
+"axes":
+{
+	"inputs":
+	[
+		{"name":"parent", "kind":"optional", "type":"matlab.ui.container.CanvasContainer"},
+		{"name":"properties", "kind":"varargin", "type":"matlab.graphics.axis.Axes"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.axis.Axes"}
+	]
+},
+"close":
+{
+	"inputs":
+	[
+		{"mutuallyExclusiveGroup":
+			[
+				{"name":"h", "kind":"optional", "type":"matlab.ui.Figure"},
+				{"name":"all", "kind":"optional", "type":["char", "choices={'all'}"]},
+				{"name":"name", "kind":"optional", "type":["char", "@(x) ~ismember(lower(x),{'hidden','force','all'})"]}
+			]
+		},
+		{"name":"option", "kind":"optional", "type":["char", "choices={'hidden','force'}"]}
+	],
+	"outputs":
+	[
+		{"name":"status", "type":"double"}
+	]
+},
+"gca":
+{
+	"outputs":
+	[
+		{"name":"ax", "type":"matlab.graphics.axis.AbstractAxes"}
+	]
+},
+"gcf":
+{
+	"outputs":
+	[
+		{"name":"ax", "type":"matlab.ui.Figure"}
+	]
+},
+"hold":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":[["matlab.graphics.axis.AbstractAxes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"action", "kind":"optional", "type":["char", "choices={'on','off'}"]}
+	]
+},
+"openfig":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":"filepath=*.fig"},
+		{"name":"copies", "kind":"optional", "type":"choices={'new','reuse'}", "default":"'new'"},
+		{"name":"visibility", "kind":"optional", "type":"choices={'invisible','visible'}"}
+	]
+},
+"rectangle":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.primitive.Rectangle"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.primitive.Rectangle"}
+	]
+},
+"surface":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":"matlab.graphics.axis.Axes"},
+		{"name":"x", "kind":"optional", "type":["double"]},
+		{"name":"y", "kind":"optional", "type":["double"]},
+		{"name":"z", "kind":"required", "type":["double"]},
+		{"name":"c", "kind":"optional", "type":["double"]},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.primitive.Surface"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.primitive.Surface"}
+	]
+},
+"yyaxis":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"side", "kind":"optional", "type":["char", "choices={'left','right'}"]}
+	]
+}
+}

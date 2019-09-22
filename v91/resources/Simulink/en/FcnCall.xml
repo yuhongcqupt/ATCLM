@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2009-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+<!-- Misc: FcnCall Connection -->
+    <entry key="FcnCallConnMustBeSFcnOrCoreBlk">Function-call port of block ''{0}'' is connected to ''{1}'' which does not produce a function-call signal. Blocks that can produce function-call signals include Stateflow charts, root-level Inport blocks with parameter 'Output function call' selected, or S-functions.</entry>
+    <entry key="FcnCallConnMustBeRootFcnCallInportBlk">Function-call port of block ''{0}'' is connected to ''{1}'' which does not produce a function-call signal. Select 'Output function call' parameter on Inport block ''{2}'', or use a Stateflow chart or an S-function to produce a function-call signal.</entry>
+    <entry key="FcnCallConnMustBeFromPort0">Function-call port of block ''{0}'' must be connected to a block whose output port produces a function-call signal. Blocks that can produce function-call signals include Stateflow charts, root-level Inport blocks with parameter 'Output function call' selected, or S-functions (which must produce the signal out of port 1 only). ''{1}'' is not producing a function-call signal.</entry>
+    <entry key="InvFcnCallConn">Invalid "function-call" connection.</entry>
+    <entry key="InvFcnCallConnEnd_FcnCallSysEnd">Invalid connection ends with block ''{0}'' on input port {1,number,integer}, element {2,number,integer}.</entry>
+    <entry key="InvFcnCallConnStart_NonSFcnStart">Invalid connection starting from ''{0}'' (output port {1,number,integer}, element {2,number,integer}) is disallowed because it is not a valid function-call initiator. Blocks that can produce function-call signals include Stateflow charts, root-level Inport blocks, or S-functions.</entry>
+    <entry key="InvFcnCallConn_MultSys">Invalid function-call connection originating from function-call initiator ''{0}'' on output port {1,number,integer}, element {2,number,integer}. The destination function-call block ''{3}'' resides within a nonvirtual subsystem. To fix the error, place the destination function-call block at (or above) the same level in the model hierarchy as the function-call initiator.</entry>
+    <entry key="InvFcnCallConn_NonFcnCallEnd">Invalid connection ends with ''{0}'' which is illegal because it is not a function-call block.</entry>
+    <entry key="InvFcnCallConn_SFcnStart">Function-call initiator ''{0}'' is attempting to invoke a function-call block on output port {1,number,integer}, element {2,number,integer} even though this port element has not been configured to output a function-call signal.</entry>
+    <entry key="InvFcnCallConn_Async">Invalid connection starts with S-function ''{0}'', which is making a function call on output port element {1,number,integer}. An asynchronous function call generator must drive a function call port of a subsystem or a Model block. </entry>
+    <entry key="InvFcnCallInport_Dst">Invalid function-call connection from Inport block ''{0}'' to function-call block ''{1}''. This function-call block must reside at (or above) the same level in the model hierarchy as its function-call initiator ''{2}''.</entry>
+    <entry key="InvFcnCallInport_Src">Invalid function-call connection originating from function-call initiator ''{0}'' on output port {1,number,integer} element {2,number,integer}. The function-call initiator must reside at (or below) the same level in the model hierarchy as the function-call block it is attempting to trigger.</entry>
+    <entry key="InvFcnCallConn_MdlRef">Model ''{0}'' cannot generate reusable code with an invalid function-call connection from function-call initiator ''{1}'' to port {2,number,integer} of Model block ''{3}''.  The function-call initiator must reside at the same level in the model hierarchy as the Model block.  If you want to keep the function-call initiator at a different level in the model hierarchy than the Model block, consider setting the option 'Code interface packaging' to 'Nonreusable function' on the Configuration Parameters > Code Generation > Interface pane.</entry> 
+    <entry key="InvFcnCallSigToStream">Streaming the function-call signal originating from output port {0,number,integer} of ''{1}'' is not supported.</entry>
+    <entry key="InvVariantSrcInExportFcn">Variant Source block ''{0}'' with multiple input ports found in the root window of ''{1}''. Only single input port Variant Source blocks are supported in root window when the model is configured for export function.</entry>
+    <entry key="RootOutportCannotAcceptFcnCall">Root-level Outport block ''{0}'' cannot accept a function-call signal.</entry>
+    <entry key="CannotMuxFcnCallRootInportWithOtherBlock">
+      Root-level Inport block ''{0}'' is configured to output a function-call signal. Therefore, its output cannot be combined with output of ''{1}'' through block ''{2}''.
+    </entry>
+
+    <entry key="MessageCannotBeFcnCallInpArg">
+      An invalid message signal is passed to input port {0,number,integer} of ''{1}'' from output port {2,number,integer} of ''{3}''. Passing a message signal to a function-call block from its initiators is not allowed.
+    </entry>
+
+    <entry key="MessageCannotBeFcnCallRetVal">
+      An invalid message signal is passed to input port {0,number,integer} of ''{1}'' from output port {2,number,integer} of ''{3}''. Feeding back a message signal from a function-call block to its initiators is not allowed.
+    </entry>
+
+<!-- Run Time Check / Periodic FcnCall -->
+    <entry key="PeriodicFCSSMustBeCalledOnceWhenEnabled">Function-call block ''{0}'' must be executed periodically when it is activated (enabled) by its function-call initiator because it has a periodic sample time. The function-call initiator executed the function-call block multiple times on time step ''{1}''.</entry>
+    <entry key="PeriodicFCSSMustBeCalledWhenEnabled">Function-call block ''{0}'' must be executed periodically when it is activated (enabled) by its function-call initiator because it has a periodic sample time. The function-call initiator did not execute the function-call block on time step ''{1}''.</entry>
+    <entry key="PeriodicFCSSMustNotBeCalledWhenDisabled">Function-call block ''{0}'' must not be executed during the same time step that it is deactivated (disabled) by its function-call initiator because it has a periodic sample time. The function-call initiator both executed and disabled the function-call block on time step ''{1}''.</entry>
+    <entry key="RootPeriodicFcnCallMustBeCalledOnceWhenEnabled">Function-call block ''{0}'' must be executed periodically when it is activated (enabled) by its function-call initiator. This is because it is driven by the function-call root-level Inport block ''{1}'' that has specified a periodic sample time {2}. However, the function-call initiator executed the function-call block multiple times at time {3}.</entry>
+    <entry key="RootPeriodicFcnCallMustBeCalledWhenEnabled">Function-call block ''{0}'' must be executed periodically when it is activated (enabled) by its function-call initiator. This is because it is driven by the function-call root-level Inport block ''{1}'' that has specified a periodic sample time {2}. However, the function-call initiator did not execute the function-call block on time step {3}.</entry>
+
+    <entry key="AccExpFcnMdlPeriodicFcnCallMustBeCalledOnceWhenEnabled">
+      The function-call input port {0,number,integer} of the Model block ''{1}'' must be executed periodically when it is activated (enabled) by its function-call initiator ''{2}''. This is because inside the referenced model, the function-call root-level Inport block corresponding to such input port of the Model block has specified a periodic sample time. However, the function-call initiator executed the function-call multiple times at time {3}.
+    </entry>
+
+    <entry key="AccExpFcnMdlPeriodicFcnCallMustBeCalledWhenEnabled">
+      The function-call input port {0,number,integer} of the Model block ''{1}'' must be executed periodically when it is activated (enabled) by its function-call initiator ''{2}''. This is because inside the referenced model, the function-call root-level Inport block corresponding to such input port of the Model block has specified a periodic sample time. However, the function-call initiator did not execute the function-call block at time {3}.
+    </entry>
+
+    <entry key="ExpFcnMdlMustNotBeEnabledDuringSim"> The model referenced by Model block ''{0}'' is setup to export functions. The function-call initiator should enable those export functions at the start of the simulation, and should not disable or re-enable them during the simulation. However, at time {1}, the function-call signal originating from output port {2,number,integer} of ''{3}'' attempts to enable the exported function via input port {4,number,integer} of the Model block.</entry>
+
+    <entry key="ExpFcnMdlMustNotBeDisabledDuringSim"> The model referenced by Model block ''{0}'' is setup to export functions. The function-call initiator should enable those export functions at the start of the simulation, and should not disable or re-enable them during the simulation. However, at time {1}, the function-call signal originating from output port {2,number,integer} of ''{3}'' attempts to disable the exported function via input port {4,number,integer} of the Model block.</entry>
+
+    <entry key="ExplicitFCSSCalledWhenNotEnabled">Function-call initiator ''{0}'' attempted to execute function-call subsystem ''{1}'' while it was inactive (disabled) on time step ''{2}''. The function-call subsystem must be activated by a function-call initiator before execution can occur.</entry>
+    <entry key="ExplicitFCSSDisabledWhenDisabled">Function-call initiator ''{0}'' attempted to redisable function-call subsystem ''{1}'' on time step ''{2}''. The function-call subsystem cannot be redisabled by the same function-call initiator; there is a flaw in the implementation of the function-call initiator.</entry>
+    <entry key="ExplicitFCSSEnabledWhenEnabled">Function-call initiator ''{0}'' attempted to reenable function-call subsystem ''{1}'' on time step ''{2}''. The function-call subsystem cannot be reactivated by the same function-call initiator; there is a flaw in the implementation of the function-call initiator.</entry>
+    <entry key="SfcnNotAdvCallingDisable">The function-call initiator ''{0}'' may not call ssDisableSystemWithTid since it has not been configured to be capable of such via ssSetExplicitFCSSCtrl.</entry>
+    <entry key="SfcnNotAdvCallingEnable">The function-call initiator ''{0}'' may not call ssEnableSystemWithTid since it has not been configured to be capable of such via ssSetExplicitFCSSCtrl.</entry>
+
+    <entry key="PeriodicFCSSCannotBeChildOfTriggeredFCSS">
+    Function-call subsystem ''{0}'' is configured to execute periodically. Therefore, it cannot be placed inside a triggered function-call subsystem ''{1}''. Consider changing dialog parameter 'Sample time type' of ''{2}'' from 'periodic' to 'triggered'. Alternatively, consider changing this parameter of ''{3}'' to 'periodic' and making the 'Sample time' parameters of these two Trigger Port blocks to match.
+    </entry>
+
+    <entry key="PeriodicFCSSCannotBeChildOfTriggeredSS">
+    Function-call subsystem ''{0}'' is configured to execute periodically. Therefore, it cannot be placed inside a triggered subsystem ''{1}''. Consider changing dialog parameter 'Sample time type' of ''{2}'' from 'periodic' to 'triggered'.
+    </entry>
+
+    <entry key="PeriodicFCSSCallerMustHaveDiscreteTs">
+    Function-call subsystem ''{0}'' is configured to execute periodically. Therefore, it must be called by an initiator with a discrete sample time.
+    </entry>
+
+    <entry key="InvRootLvlPeriodicFcnCallPort">
+    Trigger Port block ''{0}'' has specified its dialog parameter 'Sample time type' to 'periodic'. Since this block is placed at the root level of the model, it is not allowed to set its parameter 'Sample time' to -1. Consider specifying a discrete sample time, or changing parameter 'Sample time type' to 'triggered'.
+    </entry>
+
+    <entry key="InvRootInportFcnCallMultiIteration">
+    Since the function-call root-level Inport block ''{0}'' has specified a discrete sample time ''{1}'', and none of function-call blocks it directly drives is setup to execute periodically, it is not allowed to execute the function-call multiple times at a given sample time. However, the workspace variable specified as the external input has specified the block will invoke function-call multiple times at time ''{2}''. Consider either updating the workspace variable so that at any time step the function-call will be invoked only once, or setup any function-call subsystem this root-level Inport block directly drives to execute periodically, by specifying dialog parameter 'Sample time type' to 'periodic' on the Trigger Port block inside the function-call subsystem.
+    </entry>
+
+<!-- Port-Grouped Block -->
+    <entry key="DataDepViolationInvolvingDataPortGroup">A data dependency violation is detected involving at least one function-call block driven by a root-level Inport block that outputs a function-call signal. In model ''{0}'', all blocks that are not driven by root-level Inport blocks producing function-call signals must execute either before or after the corresponding function-call invocations. Details of this data dependency violation are listed below:</entry>
+    <entry key="DataDepViolationInvolvingDataPortGroup1">Block ''{0}'' needs to execute after the function-call block ''{1}'' driven by the root-level Inport block ''{2}''.</entry>
+    <entry key="DataDepViolationInvolvingDataPortGroup1a">Block ''{0}'' needs to execute after the root-level Inport block ''{1}''.</entry>
+    <entry key="DataDepViolationInvolvingDataPortGroup2">Block ''{0}'' needs to execute before the function-call block ''{1}'' driven by the root-level Inport block ''{2}''.</entry>
+    <entry key="DataDepViolationInvolvingDataPortGroup2a">The function-call block ''{0}'' driven by the root-level Inport block ''{1}'' needs to execute before the function-call block ''{2}'' driven by another root-level Inport block ''{3}''.</entry>
+    <entry key="DataDepViolationInvolvingFcnCallPortGroups">A data dependency loop is detected involving at least two function-call blocks driven by root-level Inport blocks producing function-call signals. Details of this loop are listed below:</entry>
+    <entry key="DataDepViolationInvolvingFcnCallPortGroup">The function-call block ''{0}'' driven by root-level Inport block ''{1}'' needs to read output of function-call block''{2}'' that is driven by another root-level Inport block ''{3}''. However, the latter function-call block computes its output directly or indirectly from output of the former one.</entry>
+    <entry key="DataDepViolationInvolvingFcnCallPortGroup2">The function-call block ''{0}'' driven by root-level Inport block ''{1}'' needs to execute after another root-level Inport block ''{2}''. However, the latter invokes function-call blocks that compute their outputs directly or indirectly from output of the former one.</entry>
+    <entry key="NonInlinedSFcnCannotCallModelBlkWithFcnCallInput">Code generation is not supported for the non-inlined S-function ''{0}'' that is invoking a function-call input at input port {1,number,integer} of the Model block ''{2}''. Consider converting the non-inlined S-function ''{3}'' to an inlined S-function by providing a corresponding TLC implementation.</entry>
+
+<!-- Branched Function-Call -->
+    <entry key="BranchedFunctionCallCannotProduceRetVal">A function-call signal, originating at initiator ''{0}'', is branched incorrectly. The function-call block ''{1}'', which is part of this branched function-call network, violates the following requirement: the block output signals may not be fed back directly to the initiator. Consider inserting a block to provide a delay on this feedback signal.</entry>
+    <entry key="BranchedFunctionCallInvalidBranching">A function-call signal, originating at element {0,number,integer} of output port {1,number,integer} of initiator ''{2}'', is branched incorrectly. The function-call signal branch, connected to ''{3}'', needs to be recreated using a Function-Call Split block.</entry>
+    <entry key="BranchedFunctionCallInvalidCommonInitiatorCallingFCSS">A function-call signal, originating at output port {0,number,integer} of initiator ''{1}'', is branched incorrectly. The function-call signal is fed to element {2,number,integer} and element {3,number,integer} of input port ''{4}'' of block ''{5}''. To use multiple initiators to call a function-call block, all function-call signals invoking the block must be unique.</entry>
+    <entry key="BranchedFunctionCallInvalidCommonInitiatorCallingNonSS">A function-call signal, originating at output port {0,number,integer} of initiator ''{1}'', is branched incorrectly. The function-call signal is fed to element {2,number,integer} and element {3,number,integer} of input port {4,number,integer} of block ''{5}''. To use multiple initiators to call a function-call block, all function-call signals invoking the block must be unique.</entry>
+    <entry key="BranchedFunctionCallInvalidCompInfo">A function-call signal, originating at output port {0,number,integer} of initiator ''{1}'', is branched incorrectly. The function-call blocks ''{2}'' and ''{3}'' violate the requirement that all function-call blocks within a branched function-call network must reside at the same nonvirtual hierarchical level of the model.</entry>
+    <entry key="BranchedFunctionCallInvalidDiagnosticSetting">The block diagram ''{0}'' has a branched function-call signal originating at output port {1,number,integer} of initiator ''{2}''. In the Connectivity Diagnostics pane of the Configuration Parameters dialog box, set the ''Invalid function-call connection'' option to ''error''.</entry>
+    <entry key="BranchedFunctionCallInvalideMultipleCaller">A function-call signal, originating at output port {0,number,integer} of initiator ''{1}'', is branched incorrectly. The function-call block ''{2}'' is invoked by multiple initiators. Each function-call block within a branched function-call network must be invoked by a unique initiator.</entry>
+    <entry key="BranchedFunctionCallInvalidWideFcnCall">A function-call signal, originating at output port {0,number,integer} of initiator ''{1}'', is branched incorrectly. The function call initiator ''{2}'' emits a function-call signal with multiple elements. All function-call initiators within a branched function-call network must emit scalar function-call signals.</entry>
+    <entry key="NonInlinedSFcnCannotInvokeBranchedFcnCall">Code generation is not supported for the non-inlined S-function ''{0}'' that is invoking a branched function-call signal. Consider converting the non-inlined S-function to an inlined S-function by providing a corresponding TLC implementation.</entry>
+
+<!-- Function-Call Feedback Latch -->
+    <entry key="FcnCallLatchDisallowVarSizeInput">The input signal to the Function-Call Feedback Latch block ''{0}'' is either a variable-sized signal or a bus signal containing variable-sized signals. This block does not support variable-sized signal inputs.</entry>
+    <entry key="FcnCallLatchInvalidDiagnosticSetting">The block diagram ''{0}'' contains the Function-Call Feedback Latch block ''{1}''. To use this block, navigate to the Connectivity Diagnostics pane of the Configuration Parameters dialog box, and set the ''Invalid function-call connection'' option to ''error''.</entry>
+    <entry key="FcnCallLatchInvalidDstBlock">The output of the Function-Call Feedback Latch block ''{0}'' is connected to an invalid destination ''{1}''. The output of a Function-Call Feedback Latch block must be connected to the data input port of a function-call block.</entry>
+    <entry key="FcnCallLatchInvalidDstPort">The output of the Function-Call Feedback Latch block ''{0}'' is connected to an invalid destination port {1,number,integer} of block ''{2}''. The output of a Function-Call Feedback Latch block must be connected to a data input port of a function-call subsystem or model.</entry>
+    <entry key="FcnCallLatchInvalidDstPortOfMdlBlk">The output of the Function-Call Feedback Latch block ''{0}'' cannot be connected to input port {1,number,integer} of Model block ''{2}'' because this data input port is not associated with any function-call input port of ''{3}''.</entry>
+    <entry key="FcnCallLatchInvalidDstPortOfExpSFcnBlk">The output of the Function-Call Feedback Latch block ''{0}'' cannot be connected to input port {1,number,integer} of S-Function block ''{2}'' configured to export function calls, because this S-Function block has more than one function-call input port.</entry>
+    <entry key="FcnCallLatchInvalidDstPortOfFcnCallCoreBlk">The output of the Function-Call Feedback Latch block ''{0}'' cannot be connected to input port {1,number,integer} of block ''{2}'' configured to export function calls, because this block has more than one function-call input port.</entry>
+    <entry key="FcnCallLatchInvalidDstWithMultiCaller">Connecting the output of the Function-Call Feedback Latch block ''{0}'' to a function-call subsystem ''{1}'' with a non-scalar function-call trigger signal is not allowed. To latch the input signal, select 'Latch input for feedback signals of function-call subsystem outputs' option on the corresponding Inport block instead. </entry>
+    <entry key="FcnCallLatchInvalidMultiDsts">The output of Function-Call Feedback Latch block ''{0}'' is connected to multiple destinations. The output of a Function-Call Feedback Latch block must be connected to exactly one data input port of a function-call subsystem or model.</entry>
+    <entry key="FcnCallLatchInvalidMultiDstsDetail">Input port {0,number,integer} of block ''{1}'' is connected to the output of Function-Call Feedback Latch block ''{2}''.</entry>
+    <entry key="FcnCallLatchInvalidMultiDstsInsideMdlBlk">The output of Function-Call Feedback Latch block ''{0}'' is connected to input port {1,number,integer} of Model block ''{2}''. The corresponding root-level Inport block inside the Model block has multiple destinations. The output of a Function-Call Feedback Latch block must be connected to exactly one data input port of a function-call subsystem or model.</entry>
+    <entry key="FcnCallLatchInvalidDst">The output of the Function-Call Feedback Latch block ''{0}'' must be connected to a data input of a function-call subsystem or model.</entry>
+    <entry key="FcnCallLatchNoFeedbackSignal1a">The Function-Call Feedback Latch block ''{0}'' is not connected to a feedback signal involving function-call blocks, because its source block ''{1}'' is scheduled to execute before the destination block ''{2}'' in a branched function-call network. Consider removing the Function-Call Feedback Latch block.</entry>
+    <entry key="FcnCallLatchNoFeedbackSignal1b">The Function-Call Feedback Latch block ''{0}'' is not connected to a feedback signal involving function-call blocks, because its source block ''{1}'' is the functional parent of the destination block ''{2}'', and therefore, the source block is to execute before the destination. Consider removing the Function-Call Feedback Latch block.</entry>
+    <entry key="FcnCallLatchNoFeedbackSignal2">The Function-Call Feedback Latch block ''{0}'' is not connected to a feedback signal involving function-call blocks. Its source block ''{1}'' and destination block ''{2}'' are not driven by function-call signals from a common initiator. Consider removing the Function-Call Feedback Latch block.</entry>
+    <entry key="FcnCallLatchNoFeedbackSignal3">The Function-Call Feedback Latch block ''{0}'' is not connected to a feedback signal involving function-call blocks. Its input is not from a function-call block. Consider removing the Function-Call Feedback Latch block.</entry>
+    <entry key="FcnCallLatchRedundantSSInportLatched">The Function-Call Feedback Latch block ''{0}'' placed in front of input port {1,number,integer} of ''{2}'' is unnecessary, because the dialog parameter 'Latch input for feedback signals of function-call subsystem outputs' on ''{3}'' is also selected. Consider either removing the Function-Call Feedback Latch block or clearing the dialog parameter.</entry>
+    <entry key="FcnCallLatchRedundantSimulinkFcnLatched">The Function-Call Feedback Latch block ''{0}'' placed in front of input port {1,number,integer} of Simulink Function ''{2}'' is unnecessary, because the Simulink Function already latches all its input signals. Consider removing the Function-Call Feedback Latch block.</entry>
+    <entry key="FcnCallLatchRedundantSimulinkFcnInMdlRefLatched">The Function-Call Feedback Latch block ''{0}'' is unnecessary. The block is placed in front of input port {1,number,integer} of the Model block ''{2}'' that has Simulink Function ''{3}'' inside the referenced model and the Simulink Function already latches all its input signals. Consider removing the Function-Call Feedback Latch block.</entry>
+    <entry key="FcnCallLatchRedundantMdlRefInportLatched">The Function-Call Feedback Latch block ''{0}'', placed in front of input port {1,number,integer} of ''{2}'', is unnecessary, because the dialog parameter 'Latch input for feedback signals of function-call subsystem outputs' is also selected on the root-level Inport block of the referenced model ''{3}''. Consider either removing the Function-Call Feedback Latch block or clearing the dialog parameter.</entry>
+    <entry key="FcnCallLatchRedundantPortGroupedBlkInportLatched">The Function-Call Feedback Latch block ''{0}'', placed in front of input port {1,number,integer} of ''{2}'', is unnecessary because a root-level Inport block mapped to input port {3,number,integer} of the Model block ''{4}'' has a downstream Inport block for which the dialog parameter 'Latch input for feedback signals of function-call subsystem outputs' is selected. Consider either removing the latch block or clearing the dialog parameter.</entry>
+    <entry key="FcnCallLatchInvalidWideFcnCall">The output of the Function-Call Feedback Latch block ''{0}'' cannot be connected to a function-call block ''{1}''. This configuration is incorrect because ''{2}'' is called by the function-call initiator ''{3}'', which emits a function-call signal with multiple elements. The output of a Function-Call Feedback Latch block must be connected to a function-call block invoked by a function-call initiator that emits a scalar function-call signal.</entry>
+    <entry key="FcnCallLatchCannotWorkWithNonInlinedSFcn">Code generation is not supported for the non-inlined S-function ''{0}'' that is invoking a function-call block that is used in combination with Function-Call Feedback Latch block ''{1}''. Consider converting the non-inlined S-function ''{2}'' to an inlined S-function by providing a corresponding TLC implementation.</entry>
+
+<!-- Function-Call Split -->
+    <entry key="FcnCallSplitBlkHasInvalidSrc">The Function-Call Split block ''{0}'' must be driven by a function-call initiator. However, the input of this block comes from output port {1,number,integer} of block ''{2}'', which is not a function-call signal.</entry>
+
+<!-- Function-Call Execution -->
+    <entry key="BlockRunFcnCallError">
+      Block ''{0}'' had an error during function-call invocation:\n{1}
+    </entry>
+    <entry key="BlockDisableFcnCallError">
+      Block ''{0}'' had an error during function-call disabling:\n{1}
+    </entry>
+    <entry key="BlockEnableFcnCallError">
+      Block ''{0}'' had an error during function-call enabling:\n{1}
+    </entry>
+
+<!-- Model Entry Point Functions -->
+    <entry key="InvalidMdlInitFcnCall">Error executing function-call at the model initialize port of Model block ''{0}'' at time {1}. The model terminate port must be called before the Model block can be initialized again. You may choose to hide the model terminate port to allow Simulink to handle the model terminate event automatically.</entry>
+    <entry key="InvalidMdlResetFcnCall">Error executing function-call at the model reset port ''{0}'' of Model block ''{1}'' at time {2}. The Model block must be initialized via the model initialize port before any other function-call can be executed. You may choose to hide the model initialize port to allow Simulink to handle the model initialize event automatically.</entry>
+    <entry key="InvalidMdlTermFcnCall">Error executing function-call at the model terminate port of Model block ''{0}'' at time {1}. The Model block must be initialized via the model initialize port before any function-call can be executed. You can choose to hide the model initialize port to allow Simulink to handle the model initialize event automatically.</entry>
+    <entry key="InvalidNonMdlEventFcnCall">Error executing function-call at input port {0,number,integer} of Model block ''{1}'' at time {2}. The Model block must be initialized via the model initialize port before any function-call can be executed. Also, the Model block cannot be called by any function-call after it has been terminated via the model terminate port. You can choose to hide the model initialize and terminate ports to allow Simulink to handle the model initialize and terminate events automatically.</entry>
+    <entry key="InvalidNonMdlEventSimulinkFcn">Error executing Simulink Function ''{0}'' inside the model referenced by Model block ''{1}'' at time {2}. The Model block must be initialized via the model initialize port before any function-call can be executed. Also, the Model block cannot be called by any function-call after it has been terminated via the model terminate port. You can choose to hide the model initialize and terminate ports to allow Simulink to handle the model initialize and terminate events automatically.</entry>
+
+<!-- Model Reference -->
+    <entry key="FcnCallPortMustBeDrivenByAsyncFcnCaller">The function call input port {0,number,integer} of model block ''{1}'' must be driven by an asynchronous function call initiator.</entry>
+    <entry key="FcnCallPortCannotBeDrivenByAsyncFcnCaller">The function call input port {0,number,integer} of model block ''{1}'' cannot be driven by an asynchronous function call initiator.</entry>    
+    <entry key="NoRTWForRootFcnCallInport">Stand-alone code generation is not supported for model ''{0}'' because the model contains a root-level Inport block ''{1}'' that outputs a function-call signal.</entry>
+    <entry key="NoVarStepSolverForRootFcnCall">Variable-step solver is not supported for model ''{0}'' because the model contains a root-level Inport block ''{1}'' that outputs a function-call signal.</entry>
+    <entry key="NoVarStepSolverForSimulinkFunction">Variable-step solver is not supported for model ''{0}'' because the model exports a Simulink Function.</entry>
+    <entry key="NoModelRefMinAlgLoopForSimulinkFunction">The option 'Minimize algebraic loop occurrences' in the Model Referencing pane of the Configuration Parameters dialog box for model ''{0}'' cannot be selected because the model exports a Simulink Function.</entry>
+    <entry key="NoModelRefMinAlgLoopForRootFcnCallInport">The option 'Minimize algebraic loop occurrences' in the Model Referencing pane of the Configuration Parameters dialog box for model ''{0}'' cannot be selected because the model contains a root-level Inport block ''{1}'' that outputs a function-call signal.</entry>
+    <entry key="MultiInstanceFcnCallInport"><![CDATA[''Configuration Parameters > Model Referencing > Total number of instances allowed per top model'' is set to ''Multiple'' for model ''{0}''. Block ''{1}'' of this model is a root-level Inport block that outputs a function-call signal. A model that contains any function-call root-level Inport blocks cannot be configured to be referenced multiple times. Consider setting the configuration parameter ''Total number of instances allowed per top model'' to ''One'']]></entry>
+    <entry key="InvFcnCallerBlockInAlgLoop">Detected an algebraic loop containing a Function Caller block ''{0}''.  Function Caller blocks are not allowed in algebraic loops.</entry>
+    <entry key="InvFcnCallMdlRefInAlgLoop">Detected an algebraic loop containing a Model block ''{0}'' (referencing model ''{1}'') that has at least one function-call input signal. Such Model blocks are not allowed in algebraic loops.</entry>
+    <entry key="FcnCallModelRefInvDiagSettings">The current diagnostic settings for model ''{0}'' are not valid because the model contains Model block ''{1}'' and the referenced model ''{2}'' contains a root-level Inport block that outputs a function-call signal. See errors reported below for details.</entry>
+    <entry key="FcnCallRootInportInvDiagSettings">The current diagnostic settings for model ''{0}'' are not valid because the model contains root-level Inport block ''{1}'' that outputs a function-call signal. See errors reported below for details.</entry>
+    <entry key="FcnCallRootInvMultiTaskRateTransMsg">In the Sample Time Diagnostics pane of the Configuration Parameters dialog box for model ''{0}'', set the ''Multitask rate transition'' option to ''error''.</entry>
+    <entry key="FcnCallRootInvMultiTaskCondExecSysMsg">In the Sample Time Diagnostics pane of the Configuration Parameters dialog box for model ''{0}'', set the ''Multitask conditionally executed subsystem'' option to ''error''.</entry>
+    <entry key="FcnCallRootInvMultiTaskDSMMsg">In the Data Validity Diagnostics pane of the Configuration Parameters dialog box for model ''{0}'', set the ''Multitask data store'' option to ''error''.</entry>
+    <entry key="FcnCallRootInvInvalidFcnCallConnMsg"><![CDATA[In model ''{0}'', set ''Configuration Parameters'' > ''Diagnostics'' > ''Connectivity'' > ''Function calls'' > ''Invalid function-call connection'' option to ''error''.]]></entry>
+    <entry key="FcnCallRootInvFcnCallInpInsideContextMsg"><![CDATA[In model ''{0}'', set ''Configuration Parameters'' > ''Diagnostics'' > ''Connectivity'' > ''Function calls'' > ''Context-dependent inputs'' to ''error'' or ''warning''.]]></entry>
+    <entry key="InvFcnCallInpInsideContextMsgSetting">''{0}'' is not a valid choice for parameter ''{1}''. Only 'error' or 'warning' is allowed. </entry>
+    <entry key="FcnCallRootInvStrictBusMsg">In the Connectivity Diagnostics pane of the Configuration Parameters dialog box for model ''{0}'', set both ''Mux blocks used to create bus signals'' and ''Bus signal treated as vector'' options to ''error''.</entry>
+    <entry key="FcnCallRootNeedSimplifiedInitMode"><![CDATA[On the All Parameters tab of the Configuration Parameters dialog box for model ''{0}'', set <sldiag objui="configset" objparam="UnderspecifiedInitializationDetection">Underspecified initialization detection</sldiag> to ''Simplified''. For a large or complex model, use the Model Advisor check ''Check consistency of initialization parameters for Outport and Merge blocks'' to help with this task.]]></entry>
+
+<!-- Export Function Model -->
+    <entry key="InvalidAsyncLoggingForExportFcnMdl1">
+      <![CDATA[Inside an export function model ''{0}'', logging root-level Outport blocks or signals in Dataset format is not supported, when the Outport block or the signal is driven by function-call root-level Inport block with inherited sample time (-1). Consider either specifying a discrete sample time on ''{1}'', or changing the 'Format' parameter in 'Configuration Parameters' > 'Data Import/Export' > 'Save to workspace' to options other than 'Dataset'.]]>
+    </entry>
+    <entry key="InvalidAsyncLoggingForExportFcnMdl2">
+      <![CDATA[Inside an export function model ''{0}'', logging root-level Outport blocks or signals in Dataset format is not supported, when the Outport block or the signal is driven by Simulink Function ''{1}''. Consider changing the 'Format' parameter in 'Configuration Parameters' > 'Data Import/Export' > 'Save to workspace' to options other than 'Dataset'.]]>
+    </entry>
+
+    <entry key="InvPartialSrcForMuxInExpFcnMdl">
+      Invalid partial element selection from output port {2,number,integer} of ''{3}'' to input port {1,number,integer} of Mux block ''{0}''. Any input signal of a Mux block feeding root-level Outport blocks in the export function model must include all elements of the source output port. Consider removing any element selection block such as Selector or Demux blocks on the signal path.
+    </entry>
+
+    <entry key="InvSameSrcsForMuxInExpFcnMdl">
+      Invalid connection from output port {3,number,integer} of ''{4}'' to input ports {1,number,integer} and {2,number,integer} of Mux block ''{0}''. Input signals to a Mux block feeding root-level Outport blocks in the export function model must come from different source output ports.
+    </entry>
+
+    <entry key="InvStorageClassForMuxInExpFcnMdl">
+      Input signal to input port {1,number,integer} of Mux block ''{0}'' cannot have a non-auto storage class when the Mux block is connected to root-level Outport blocks in an export function model.
+    </entry>
+
+    <entry key="InvalidCallingSequenceForExportFcnMdl">
+      The Model block ''{0}'' requires that function-call input port ''{1}'' execute before function-call input port ''{2}''. However, this execution order was violated at time {3}. To disable this error message, uncheck the option ''Enable strict scheduling checks for referenced export-function models'' in the Model Referencing page of the Configuration Parameters dialog.</entry>
+    <entry key="DiffSampleTimeForMergedFcnCallPortGroups">
+      Inside the model referenced by Model block ''{0}'', the function-call contexts driven by function-call signals to its input ports ''{1}'' and ''{2}'' have their outputs merged. Therefore, function-call signals to these input ports must have the same sample time and must come from a common initiator block. However, the function-call signal to input port ''{3}'' of the Model block has the sample time of {4}, while the function-call signal to input port ''{5}'' of the Model block has a different sample time of {6}.
+    </entry>
+
+    <entry key="DiffSampleTimeForInputFeedingMultiFcnCallPortGroups">
+      Inside the model referenced by Model block ''{0}'', the function-call contexts driven by function-call signals to its input ports ''{1}'' and ''{2}'' both have their inputs from the same data input port {3,number,integer} of the Model block. Therefore, function-call signals to these input ports must not mix periodic and asynchronous sample times. However, the function-call signal to input port ''{4}'' of the Model block has the sample time of {5}, while the function-call signal to input port ''{6}'' of the Model block has a different sample time of {7}.
+    </entry>
+
+    <entry key="AsyncMixedWithPeriodicTsForInputFeedingMultiFcns">
+      Inside the model referenced by Model block ''{0}'', the function-call contexts driven by function-call signals to its input ports ''{1}'' and ''{2}'' both have their inputs from the same data input port ''{3}'' of the Model block. Therefore, function-call signals to these input ports must not mix periodic and asynchronous sample times. However, the function-call signal to input port ''{4}'' of the Model block has an asynchronous sample time, while the function-call signal to input port ''{5}'' of the Model block has a sample time of {6}.
+    </entry>
+
+    <entry key="AsyncMixedWithPeriodicTsForMergedOutput">
+      Inside the model referenced by Model block ''{0}'', the function-call contexts driven by function-call signals to its input ports ''{1}'' and ''{2}'' merge their outputs to data output port ''{3}'' of the Model block. Therefore, function-call signals to these input ports must not mix periodic and asynchronous sample times. However, the function-call signal to input port ''{4}'' of the Model block has  an asynchronous sample time, while the function-call signal to input port ''{5}'' of the Model block has a sample time of {6}.
+    </entry>
+
+    <entry key="DiffAsyncTsForInputFeedingMultiFcns">
+      Inside the model referenced by Model block ''{0}'', the function-call contexts driven by function-call signals to its input ports ''{1}'' and ''{2}'' both have their inputs from the same data input port ''{3}'' of the Model block. Therefore, function-call signals to these input ports must not mix different asynchronous sample times.
+    </entry>
+
+    <entry key="DiffAsyncTsForMergedOutput">
+      Inside the model referenced by Model block ''{0}'', the function-call contexts driven by function-call signals to its input ports ''{1}'' and ''{2}'' merge their outputs to data output port ''{3}'' of the Model block. Therefore, function-call signals to these input ports must not mix different asynchronous sample times.
+    </entry>
+
+    <entry key="InvalidBranchingToMultiRootOutport">
+      ''{0}'' is driven by the function-call root-level Inport block(s). Therefore, it is not allowed to branch the output signal from output port {1,number,integer} of this block to feed multiple root Outport blocks ''{2}'' and ''{3}''.
+    </entry>
+
+    <entry key="DiffTsBetweenRootAndNestedFcnCallPortGroupInExpFcnMdl">
+      The function-call signal to input port ''{0}'' of ''{1}'' is directly driven by function-call signal from root-level Inport block ''{2}''. Therefore, these function-call signals must have the same sample time. However, the block ''{3}'' has specified the sample time of {4}, while the function-call signal to input port ''{5}'' of ''{6}'' has set a sample time of {7}.
+    </entry>
+
+    <entry key="DiffTsBetweenRootInportAndPeriodicFCSSInExpFcnMdl">
+      Inside a model setup to export functions, ''{0}'' is configured to a periodic function-call subsystem with sample time {1}. However, it is driven by the function-call root-level Inport block ''{2}'' that has specified a different sample time {3}. Consider updating sample times to make them consistent, or setting 'Sample time' parameter of the Trigger Port block ''{4}'' to -1 (inherited).
+    </entry>
+
+    <entry key="IndirectConnBetweenRootAndNestedFcnCallPortGroupInExpFcnMdl">
+      Inside the model referenced by Model block ''{0}'', the root-level Inport block corresponding to input port ''{1}'' of the Model block has specified a non-inherited sample time {2}. In this case, the function-call signal to this input port of the Model block must be directly driven by the function-call root-level Inport block with the same sample time.
+    </entry>
+    <entry key="ExpFcnMdlCompAndSpecifiedSampleTimeNotEqual">
+      <![CDATA[Inside the model referenced by Model block ''{0}'', the function-call context driven by the function-call signal to its input port ''{1}'' has specified the sample time of {2} on the dialog of corresponding Inport block. However, the function-call initiator ''{3}'' has a different sample time of {4}. Consider unchecking 'Enable strict scheduling checks for referenced export-function models' parameter in 'Configuration Parameters' > 'Model Referencing', or updating the sample time of the function-call initiator.]]>
+    </entry>
+    <entry key="ExpFcnMdlCompAndSpecifiedSampleTimeMismatch">
+      Inside the model referenced by Model block ''{0}'', the function-call context driven by the function-call signal to its input port ''{1}'' has specified the sample time of {2} on the dialog of corresponding Inport block. However, the function-call initiator ''{3}'' has a sample time of {4} that can not provide enough resolution. Consider changing sample time of {5} to a value such that the sample time {6} is its integral multiple.
+    </entry>
+
+    <entry key="ExpFcnMdlCompAndSpecifiedSampleTimeMismatch2">
+      Inside the model referenced by Model block ''{0}'', the function-call context driven by the function-call signal to its input port ''{1}'' has specified a discrete sample time of {2} on the dialog of corresponding Inport block. However, the function-call initiator ''{3}'' has an asynchronous sample time.
+    </entry>
+
+    <entry key="ExpFcnMdlCompAndSpecifiedSampleTimeMismatch3">
+      Inside the model referenced by Model block ''{0}'', the function-call context driven by the function-call signal to its input port ''{1}'' has specified the sample time of {2} on the dialog box of corresponding Inport block. However, it was invoked by the function-call initiator ''{3}'' at time {4}, that is not a multiple of the specified sample time.
+    </entry>
+
+    <entry key="InvalidSampleTimeSetOnRootDataOutportInExpFcnMdl">
+      It is not allowed to set sample time of {0} on the root-level Outport block ''{1}''. When a root-level Outport block is inside a model that has been setup to export functions, the sample time of the block must be inherited (-1).
+    </entry>
+
+    <entry key="InvalidSampleTimeSetOnRootDataInportInExpFcnMdl">
+      It is not allowed to set sample time of {0} on the root-level Inport block ''{1}''. When a data root-level Inport block is inside a model that has been setup to export functions, the sample time of the block must be inherited (-1).
+    </entry>
+
+    <entry key="InvalidSampleTimeSetOnRootFcnCallInportInExpFcnMdl">
+      It is not allowed to set sample time of {0} on the root-level Inport block ''{1}''. When a root-level Inport block outputs a function-call signal and is inside a model that has been setup to export functions, the sample time of the block must be discrete or inherited (-1).
+    </entry>
+
+    <entry key="InvalidSampleTimeSetOnRootFcnCallInportInAsyncFcnCallMdl">
+      It is not allowed to set sample time of {0} on the root-level Inport block ''{1}''. When a root-level Inport block outputs an asynchronous function-call signal by connecting to an Asynchronous Task Specification block, the sample time of the Inport block must be inherited (-1).
+    </entry>
+
+    <entry key="InvalidPeriodicFCSSInExpFcnMdl">
+      Inside a model setup to export functions, to configure ''{0}'' to a periodic function-call subsystem, it must be directly driven by a function-call root-level Inport block that has specified a non-inherited sample time. Either connect the function-call input of this subsystem to a function-call root-level Inport block and specify a non-inherited sample time on the Inport block, or change parameter 'Sample time type' of the Trigger Port block ''{1}'' to 'triggered'.
+    </entry>
+
+    <entry key="PeriodicFcnCallInputMustBeScalar">
+      Inside the model referenced by Model block ''{0}'', the function-call subsystem directly driven by the function-call signal via input port ''{1}'' of the Model block is configured to a periodic function-call subsystem with sample time {2}. Therefore, the function-call signal to this input port must be a scalar signal. However, the signal to this input has a width of {3,number,integer}.
+    </entry>
+
+    <entry key="InvExpFcnMdlInFcnCallSubsystem">
+      The Model block ''{0}'' referencing model ''{1}'' has been improperly placed in the {2} subsystem ''{3}''. The referenced model must inherit a sample time in such a subsystem. However, the referenced model ''{4}'' is set up to export functions so that it cannot inherit a sample time.
+    </entry>
+
+    <entry key="RefExpCallMdlMustBeInRootOfExpFcnMdl">
+      The Model block ''{0}'' referencing an export function model ''{1}'' has been improperly placed inside the non-virtual subsystem ''{2}''. When the parent model ''{3}'' is setup to export functions, it can only reference another export function model placed in the root level.
+    </entry>
+
+    <entry key="FcnCallPortCannotResetState">
+      The Trigger Port block ''{0}'' has set its parameter 'State when enabling' to 'reset'. This block is inside function-call subsystem ''{1}'' directly driven by function-call root-level Inport block ''{2}'' in the model ''{3}'' setup to export functions. Since the function-call root-level Inport block inside an export function model doesn't enable or disable function-call blocks it directly drives, the 'reset' option will have no effect. Consider changing the parameter to 'held' to eliminate this warning.
+    </entry>
+
+    <entry key="OutportCannotResetInitVal">
+      The Outport block ''{0}'' has set its parameter 'Output when disabled' to 'reset'. This block is inside function-call subsystem ''{1}'' directly driven by function-call root-level Inport block ''{2}'' in the model ''{3}'' setup to export functions. Since the function-call root-level Inport block inside an export function model doesn't enable or disable function-call blocks it directly drives, the 'reset' option will have no effect. Consider changing the parameter to 'held' to eliminate this warning.
+    </entry>
+
+    <entry key="AsyncFcnCallPortGroupsAccessingGlobalDSM">
+      Inside the model referenced by Model block ''{0}'', the function-call contexts driven by function-call signal to its input port ''{1}'' with access to the global data store defined by the global Simulink.Signal object ''{2}'' is configured to execute in an asynchronous task. Global data stores accessed within a model must all execute in a single, periodic task.
+    </entry>
+
+    <entry key="SimulinkFunctionPortGroupsAccessingGlobalDSM">
+      Function ''{0}'' in Model block ''{1}'' is called with an asynchronous sampling time and contains a reader or writer to the global data store defined by the Simulink.Signal object ''{2}''. Global data stores accessed within a model must all execute in a single, periodic task.
+    </entry>
+
+    <entry key="MultiTsGlobalDSMAccessedByDescExpFcnMdls">
+      In model ''{0}'', the global data store defined by the global Simulink.Signal object ''{1}'' are accessed by blocks inside the models referenced by Model blocks ''{2}'' and ''{3}'', respectively. However, the accessor blocks have specified different sample times {4} and {5}, respectively. This can lead to a data integrity issue. Consider adjusting the sample times of the accessor blocks.
+    </entry>
+    <entry key="MultiTsGlobalDSMAccessedByDescExpFcnMdls2">
+      In model ''{0}'', the global data store defined by the global Simulink.Signal object ''{1}'' are accessed by blocks inside the model referenced by Model block ''{2}''. However, the accessor blocks have specified different sample times {3} and {4}, respectively. This can lead to a data integrity issue. Consider adjusting the sample times of the accessor blocks.
+    </entry>
+
+    <entry key="MultitaskRateTransitionBetweenExpFcnMdlPortGroups">
+      In the model referenced by Model block ''{0}'', the function-call blocks driven by input ports ''{1}'' and ''{2}'' have a data transfer connection between them. However, they have different sample times {3} and {4}, which can lead to a data integrity issue. Consider adjusting the sample times of function-call input signals, or changing ''Configuration Parameters'' > ''Diagnostics'' > ''Sample Time'' > ''Multitask rate transition'' to 'warning'.
+    </entry>
+
+    <entry key="MultitaskRateTransitionBetweenExpAndSLFcnPortGroups">
+      In the model referenced by Model block ''{0}'', the function-call block triggered by input port ''{1}'' and the Simulink Function ''{2}'' are connected. The two functions are invoked with different sample times {3} and {4}, which can lead to a data integrity issue. Consider adjusting the sample times of blocks which invoke these functions. You may suppress this diagnostic by changing ''Configuration Parameters'' > ''Diagnostics'' > ''Sample Time'' > ''Multitask rate transition'' to 'warning'.
+    </entry>
+
+    <entry key="MultitaskRateTransitionBetweenSLFcnPortGroups">
+      In the model referenced by Model block ''{0}'', the Simulink Functions ''{1}'' and ''{2}'' are connected. The two functions are invoked with different sample times {3} and {4}, which can lead to a data integrity issue. Consider adjusting the sample times of blocks which invoke these functions. You may suppress this diagnostic by changing ''Configuration Parameters'' > ''Diagnostics'' > ''Sample Time'' > ''Multitask rate transition'' to 'warning'.
+    </entry>
+
+
+    <entry key="InvalidSrcsForRootOutportInMultiFcnCallPortGroups">
+      The root-level Outport block ''{0}'' is driven by function-call signals from outputs of root-level Inport blocks ''{1}'' and ''{2}''. The input of the root-level Outport block driven by multiple root-level Inport blocks that output function-call signals must come from the full region of output of a Merge block.
+    </entry>
+
+    <entry key="InvalidSrcsForRootOutportInMultiServerFcnCallPortGroups">
+      The root-level Outport block ''{0}'' is driven by Simulink Functions ''{1}'' and ''{2}''. Inside a model that export functions, the input of the root-level Outport block driven by multiple Simulink Functions must come from the full region of output of a Merge block.
+    </entry>
+
+    <entry key="InvalidSrcsForRootOutportInMixedFcnCallPortGroups">
+      The root-level Outport block ''{0}'' is driven by Simulink Function ''{1}'' and function-call signals from outputs of root-level Inport block ''{2}''. Inside a model that export functions, the input of the root-level Outport block driven by Simulink Function and function-call root-level Inport block must come from the full region of output of a Merge block.
+    </entry>
+
+    <entry key="NonFcnCallBlkNotAllowedForExportFcn">
+      To setup model ''{0}'' to export functions, non-virtual block ''{1}'' cannot be placed at the root level of this model. Alternatively, to allow this block at the root level, connect each root-level Inport block that outputs a function-call signal to an Asynchronous Task Specification block, which will introduce asynchronous function-call behavior.
+    </entry>
+
+    <entry key="NonVirtualSubsysNotAllowedForExportFcn">
+      To setup model ''{0}'' to export functions, non-virtual subsystem ''{1}'' cannot be placed at the root level of this model. Alternatively, to allow this subsystem at the root level, connect each root-level Inport block that outputs a function-call signal to an Asynchronous Task Specification block, which will introduce asynchronous function-call behavior.
+    </entry>
+
+    <entry key="FcnCallSubsysMustBeDrivenByRootFcnCallInputForExportFcn">
+      To setup model ''{0}'' to export functions, function-call block ''{1}'' must be driven by a root-level Inport block that outputs a function-call signal. Alternatively, connect each root-level Inport block that outputs a function-call signal to an Asynchronous Task Specification block, which will introduce asynchronous function-call behavior.
+    </entry>
+
+    <entry key="RootInportMustConnectToFCBlkDrivenByRootFcnCallInputForExportFcn">
+      To setup model ''{0}'' to export functions, root-level Inport block ''{1}'' must be connected to a function-call block that is driven by a root-level Inport block that outputs a function-call signal. Alternatively, connect each root-level Inport block that outputs a function-call signal to an Asynchronous Task Specification block, which will introduce asynchronous function-call behavior.
+    </entry>
+
+    <entry key="RootOutportMustBeDrivenByRootFcnCallInputForExportFcn">
+      To setup model ''{0}'' to export functions, root-level Outport block ''{1}'' must be connected to a function-call block that is driven by a root-level Inport block that outputs a function-call signal, or a Merge or Mux block that is driven only by such function-call blocks. Alternatively, connect each root-level Inport block that outputs a function-call signal to an Asynchronous Task Specification block, which will introduce asynchronous function-call behavior.
+    </entry>
+     <entry key="RootOutportMustBeDrivenByRootFcnCallInputForAsync">
+      In the model ''{0}'', the root-level Outport block ''{1}'' is connected to a function-call block that is triggered by a function-call root-level Inport block as well as a block that is not triggered by a function-call root-level Inport block. This is not supported. The root-level Outport block ''{1}'' must be connected to only one of the following: \n\t1) A function-call block that is triggered by a function-call root-level Inport block. \n\t2) A Merge block that is driven only by function-call blocks such as those mentioned in 1). \n\t3) A block which is not driven by a function-call root-level Inport block. 
+    </entry>
+    <entry key="MergeBlockMustConnectToFCBlkDrivenByRootFcnCallInputForExportFcn">
+      To setup model ''{0}'' to export functions, root-level Merge block ''{1}'' must be connected to a function-call block that is driven by a root-level Inport block that outputs a function-call signal. Alternatively, connect each root-level Inport block that outputs a function-call signal to an Asynchronous Task Specification block, which will introduce asynchronous function-call behavior.
+    </entry>
+    <entry key="DSMMustBeAccessedByFCBlkDrivenByRootFcnCallInputForExportFcn">
+      To setup model ''{0}'' to export functions, root-level Data Store Memory block ''{1}'' must be accessed in a function-call block that is driven by a root-level Inport block that outputs a function-call signal. Alternatively, connect each root-level Inport block that outputs a function-call signal to an Asynchronous Task Specification block, which will introduce asynchronous function-call behavior.
+    </entry>
+    <entry key="RootInportCannotOutputVirtualBusForExportFcn">
+      To setup model ''{0}'' to export functions, the output signal of the root-level Inport block ''{1}'' cannot be a virtual bus.
+    </entry>
+
+    <entry key="RootOutportCannotAcceptVirtualBusForExportFcn">
+      To setup model ''{0}'' to export functions, the input signal to the root-level Outport block ''{1}'' cannot be a virtual bus.
+    </entry>
+
+    <entry key="RootLevelSignalLoggingNotAllowedForExportFcn">
+      To setup model ''{0}'' to export functions, logging or streaming root-level signal originating from output port {1,number,integer} of block ''{2}'' is not allowed.
+    </entry>
+
+    <entry key="DatasetOutputLoggingNotAllowedForAsyncFcnCallMdl">
+      <![CDATA[It is not allowed to set the 'Format' parameter in 'Configuration Parameters' > 'Data Import/Export' > 'Save to workspace' to 'Dataset', because model ''{0}'' contains root-level Inport blocks outputting function-call signals and connecting to Asynchronous Task Specification blocks. Consider removing Asynchronous Task Specification blocks to setup the model to export functions, or changing the 'Format' parameter to another option.]]>
+    </entry>
+
+    <entry key="DatasetOutputLoggingNotAllowedForRootIOFcnCallMdl">
+      <![CDATA[It is not allowed to set the 'Format' parameter in 'Configuration Parameters' > 'Data Import/Export' > 'Save to workspace' to 'Dataset', because model ''{0}'' contains root-level Inport block(s) with dialog parameter 'Output function call' selected.]]>
+    </entry>
+
+    <entry key="DatasetOutputLoggingNotAllowedForRootIOFcnCallMdlInSILMode">
+      <![CDATA[It is not allowed to set the 'Format' parameter in 'Configuration Parameters' > 'Data Import/Export' > 'Save to workspace' to 'Dataset', because model ''{0}'' is set to simulate in Software-in-the-Loop (SIL) or Processor-in-the-Loop (PIL) mode.]]>
+    </entry>
+
+    <entry key="InvalidExpFcnMdlRootLevelSignalToLogOrView">
+      The output signal from block ''{0}'' cannot be logged or viewed. Inside an export function model, a root-level data signal can be logged in Dataset format or viewed only if it originates from a function-call subsystem.
+    </entry>
+
+    <entry key="InvalidExpFcnMdlRootLevelScopeSaveFormat">
+      <![CDATA[To log the root-level data signal inside an export function model, ''{0}'' must set the dialog parameter 'Logging' > 'Save format' to 'Dataset'.]]>
+    </entry>
+
+    <entry key="ExportFcnModelCannotExecConcurrently"><![CDATA[To setup model ''{0}'' to export functions, it is not allowed to check 'Allow tasks to execute concurrently on target' parameter in 'Configuration Parameters' > 'Solver' > 'Concurrent execution options'. Alternatively, connect each root-level Inport block that outputs a function-call signal to an Asynchronous Task Specification block, which will introduce asynchronous function-call behavior.]]></entry>
+
+    <entry key="ExportFcnModelInvalidSampleTimeConstraint"><![CDATA[To setup model ''{0}'' to export functions, the parameter 'Periodic sample time constraint' in 'Configuration Parameters' > 'Solver' > 'Tasking and sample time options' must be set to 'Unconstrained'.
+    <actions exclusiveFixIts="no">
+    <action cmd="matlab:set_param_action(''{0}'', ''SampleTimeConstraint'', ''Unconstrained'')" type="fixit">
+    Set the ''Periodic sample time constraint'' to ''Unconstrained'' in ''{0}''.
+    </action>
+    </actions> 
+    ]]></entry>
+
+    <entry key="ExportFcnModelSolverName"><![CDATA[To setup model ''{0}'' to export functions, 'Type' and 'Solver' parameters in 'Configuration Parameters' > 'Solver' > 'Solver options' must be set to 'Fixed-step' and 'discrete (no continuous states)' respectively. 
+    <actions exclusiveFixIts="no">
+    <action cmd="matlab:set_param_action(''{0}'', ''Solver'', ''FixedStepDiscrete'')" type="fixit">
+    Set the ''Solver'' option to ''Discrete'' in ''{0}''.
+    </action>
+    </actions> 
+    ]]>
+    </entry>
+
+    <entry key="ExportFcnModelNoPriorityOrder"><![CDATA[To setup model ''{0}'' to export functions, ''Higher priority value indicates higher task priority'' cannot be selected.
+    <actions exclusiveFixIts="no">
+    <action cmd="matlab:set_param_action(''{0}'', ''PositivePriorityOrder'', ''off'')" type="fixit">
+    Uncheck ''Higher priority value indicates higher task priority'' in ''{0}''.
+    </action>
+    </actions> 
+    ]]>
+    </entry>
+
+    <entry key="ExportFcnModelDisallowAutoFundamentalTs"><![CDATA[To setup model ''{0}'' to export functions, and to specify a non-inherited sample time {1} on the root-level Inport block ''{2}'' that outputs a function-call signal, the 'Fixed-step size (fundamental sample time)' parameter in 'Configuration Parameters' > 'Solver' > 'Solver options' must be explicitly specified.]]></entry>
+
+    <entry key="ExportFcnModelDisallowPeriodicFcnCallMdl">Cannot set 'Sample time type' of the Trigger Port block to 'periodic' inside ''{0}''. To specify periodic function-call behavior inside an export function model, consider directly connecting the trigger port of a periodic function-call subsystem to a function-call root-level Inport block and specifying a periodic sample time on the Inport block.</entry>
+
+    <entry key="ContigInputConversionAtRootLevelForExportFcn">
+      Block ''{0}'' requires that the signal elements entering its input port {1,number,integer} occupy contiguous areas of memory. Consider using a Signal Conversion block to create a contiguous segment of memory to store a copy of an input signal. Note, however, that the Signal Conversion block cannot be placed at the root level since the model has been setup to export functions. Alternatively, consider modifying the block ''{2}'' to accept multiple contiguous input signals if possible.
+    </entry>
+
+    <entry key="RootFcnCallInportMustBeBuiltWithERT">The system target file must be set to ert.tlc in order to generate code because the model ''{0}'' contains a root-level Inport block ''{1}'' that outputs a function-call signal.</entry>
+
+    <entry key="RootFcnCallInportDoesNotSupportClassicCallInterface"><![CDATA[<sldiag objui="configset" objparam="GRTInterface">Classic call interface</sldiag> must be deselected in order to generate code because the model ''{0}'' contains a root-level Inportblock ''{1}'' that outputs a function-call signal.]]></entry>
+
+    <entry key="RootFcnCallInportRequiresSampleERTMain"><![CDATA[The option 'Configuration Parameters' > 'Code Generation' > 'Generate code only' must be checked because the model ''{0}'' contains a root-level Inport block ''{1}'' that outputs a function-call signal and the option 'Configuration Parameters' > 'Code Generation' > 'Templates' > 'Custom templates' > 'Generate an example main program' is unchecked.]]></entry>
+
+    <entry key="ExportFcnModelMustBeBuiltWithERT">
+      To setup the model ''{0}'' to export functions, the system target file must be set to ert.tlc to generate code.
+    </entry>
+
+    <entry key="ExportFcnModelDoesNotSupportClassicCallInterface"><![CDATA[To setup the model ''{0}'' to export functions, it is not allowed to select <sldiag objui="configset" objparam="GRTInterface">Classic call interface</sldiag>.]]></entry>
+ 	 
+    <entry key="ExportFcnModelRequiresSampleERTMain"><![CDATA[When the model ''{0}'' is setup to export functions and 'Configuration Parameters' > 'Code Generation' > 'Templates' > 'Custom templates' > 'Generate an example main program' is not checked, it is required to check 'Configuration Parameters' > 'Code Generation' > 'Generate code only'.]]></entry>
+
+    <entry key="ExportFcnCallModelInvalidExecOrderInBranchFcnCall">
+      The Model block ''{0}'' requires that function-call input port ''{1}'' execute before function-call input port ''{2}''. However, these two function-call input ports are driven by a branched function-call signal originating from output port {3,number,integer} of initiator ''{4}'', and an opposite execution order is specified by Function-Call Split block(s) connected to this branched function-call signal.
+    </entry>
+
+    <entry key="InvalidExecOrderInTopModelSameTs">
+      The function-call input ports ''{0}'' and ''{1}'' of the Model block ''{2}'' are driven by different function-call initiators, ''{3}'' and ''{4}'', respectively. Since these two initiators have the same sample time, their relative execution order could be ambiguous and lead to different simulation results. Consider using a Function-Call Split block or a common function-call initiator block such as a Stateflow chart to schedule the function-calls for these two input ports in a deterministic order.
+    </entry>
+
+    <entry key="InvalidExecOrderInTopModelSameTs2">
+      The function-call input port ''{0}'' of the Model block ''{1}'' are driven by different function-call initiators, ''{2}'' and ''{3}'', respectively. Since these two initiators have the same sample time, their relative execution order could be ambiguous and lead to different simulation results. Consider using a Function-Call Split block or a common function-call initiator block such as a Stateflow chart to schedule the function-calls for these two input ports in a deterministic order.
+    </entry>
+
+    <entry key="InvalidExecOrderInTopModelPriorityEqualOrUnknown">
+      Task priorities of the sample times for function-call input ports ''{0}'' and ''{1}'' of the Model block ''{2}'' are equal or the priority relationship is unknown. Since these two function-call input ports are driven by different function-call initiators, ''{3}'' and ''{4}'', respectively, the relative execution order of these initiators could be ambiguous and lead to different simulation results. Consider adjusting asynchronous task priority or using a Function-Call Split block or a common function-call initiator block such as a Stateflow chart to schedule function-calls for these two input ports in a deterministic order. To disable this error message, uncheck the option ''Enable strict scheduling checks for referenced export-function models'' in the Model Referencing page of the Configuration Parameters dialog.
+    </entry>
+
+    <entry key="InvalidExecOrderInTopModelReversePriority">
+      The Model block ''{0}'' requires that function-call input port ''{1}'' execute before function-call input port ''{2}''. However, this execution order cannot be honored because the task priority of the sample time for function-call input port ''{3}'' is lower than that of function-call input port ''{4}''. The two function-call input ports are driven by the function-call initiator blocks, ''{5}'' and ''{6}'', respectively. Consider using a function-call initiator with faster sample time (higher priority) or higher asynchronous task priority for function-call input port ''{7}''. Alternatively, consider using a Function-Call Split block or a common function-call initiator block such as a Stateflow chart to schedule function-calls for these two input ports in the required order. To disable this error message, uncheck the option ''Enable strict scheduling checks for referenced export-function models'' in the Model Referencing page of the Configuration Parameters dialog.
+    </entry>
+
+    <entry key="FcnCallPortMustBeDrivenByFcnCallRootInportInExportFcnModel">
+      The function call input port ''{0}'' of Model block ''{1}'' must be driven by a root-level Inport block that outputs a function-call signal since the Model block resides at the root level and the parent model ''{2}'' has been setup to export functions.
+    </entry>
+
+    <entry key="InvalidExecOrderInParentExportFcnModel">
+      The Model block ''{0}'' requires that function-call input port ''{1}'' execute before function-call input port ''{2}''. However, this execution order cannot be honored because function-call root-level Inport block ''{3}'', which drives function-call input port ''{4}'', is specified to execute after function-call root-level Inport block ''{5}'', which drives function-call input port ''{6}''. Consider adjusting the execution order of the function-call root-level Inport blocks in the parent model ''{7}'' to match that of the referenced model ''{8}''. To disable this error message, uncheck the option ''Enable strict scheduling checks for referenced export-function models'' in the Model Referencing page of the Configuration Parameters dialog.
+    </entry>
+
+    <entry key="NonExportFcnModelBlockNotAllowedInExportFcnModel">
+      The Model block ''{0}'' cannot be placed inside the parent model ''{1}'' because the parent model is setup to export functions but the referenced model ''{2}'' is not. To fix this inconsistency, in both models, consider either removing all Asynchronous Task Specification blocks, or connecting each function-call root-level Inport block to an Asynchronous Task Specification block, which will introduce asynchronous function-call behavior.
+    </entry>
+
+    <entry key="ExportFcnModelElapsedTimeNotSupported">
+      To setup model ''{0}'' to export functions, block ''{1}'' that uses elapsed time cannot be allowed inside a function-call subsystem driven by function-call root-level Inport block ''{2}'' with an inherited sample time (-1). To fix this, set sample time of root-level Inport block ''{3}'' to non-inherited, or connect each function-call root-level Inport block to an Asynchronous Task Specification block, which will introduce asynchronous function-call behavior.
+    </entry>
+
+    <entry key="ExportFcnModelElapsedTimeNotSupported2">
+      In the model ''{0}'' setup to export functions, block ''{1}'' that uses elapsed time cannot be placed in a triggered function-call subsystem ''{2}'' that is directly driven by function-call root-level Inport block ''{3}''. Consider changing the dialog parameter 'Sample time type' of ''{4}'' from 'triggered' to 'periodic'.
+    </entry>
+
+    <entry key="ExportFcnModelElapsedTimeNotSupported3">
+      In the model ''{0}'' setup to export functions, block ''{1}'' that uses elapsed time. This block cannot be placed in a function-call subsystem driven by triggered function-call subsystem ''{2}'', because ''{3}'' is directly driven by function-call root-level Inport block ''{4}''. Consider changing the dialog parameter 'Sample time type' of ''{5}'' from 'triggered' to 'periodic'.
+    </entry>
+
+    <entry key="ExportFcnModelAbsoluteTimeNotSupported">
+      To setup model ''{0}'' to export functions, block ''{1}'' that uses absolute time cannot be allowed inside a function-call subsystem driven by function-call root-level Inport block ''{2}'' with an inherited sample time (-1). To fix this, set sample time of root-level Inport block ''{3}'' to non-inherited, or connect each function-call root-level Inport block to an Asynchronous Task Specification block, which will introduce asynchronous function-call behavior.
+    </entry>
+
+    <entry key="ExportFcnModelAbsoluteTimeNotSupported2">
+      In the model ''{0}'' setup to export functions, block ''{1}'' that uses absolute time cannot be placed in a triggered function-call subsystem ''{2}'' that is directly driven by function-call root-level Inport block ''{3}''. Consider changing the dialog parameter 'Sample time type' of ''{4}'' from 'triggered' to 'periodic'.
+    </entry>
+
+    <entry key="ExportFcnModelAbsoluteTimeNotSupported3">
+      In the model ''{0}'' setup to export functions, block ''{1}'' that uses absolute time. This block cannot be placed in a function-call subsystem driven by triggered function-call subsystem ''{2}'', because ''{3}'' is directly driven by function-call root-level Inport block ''{4}''. Consider changing the dialog parameter 'Sample time type' of ''{5}'' from 'triggered' to 'periodic'.
+    </entry>
+
+    <entry key="ExportFcnModelNonInlinedSFcnsNotSupported">
+      To setup model ''{0}'' to export functions, code generation is not supported for the non-inlined S-function ''{1}'' cannot be supported. Consider converting the non-inlined S-function to an inlined S-function by providing a corresponding TLC implementation, or connecting each root-level Inport block that outputs a function-call signal to an Asynchronous Task Specification block, which will introduce asynchronous function-call behavior.
+    </entry>
+
+    <entry key="ExportFcnModelMatFileLoggingNotSupported">
+      To setup model ''{0}'' to export functions, MAT-file logging cannot be supported for code generation. 
+    </entry>
+
+    <entry key="ModelDataLogsFormatNotSupportedInExportFcnModel"><![CDATA[To setup model ''{0}'' to export functions, the signal logging save format ModelDataLogs cannot be supported. To fix this, change <sldiag objui="configset" objparam="SignalLoggingSaveFormat">Signal logging format</sldiag> to ''Dataset''.]]></entry>
+
+    <entry key="ModelDataLogsFormatNotSupportedDueToBaseRateMismatch"><![CDATA[Signal logging inside the model referenced by Model block ''{0}'' is not supported when all the following conditions are met: \n 1. The referenced model has root-level Inport blocks that output function-call signals. \n 2. The model has the ''Configuration Parameters > All Parameters > Signal logging format'' parameter set to ModelDataLogs. \n 3. The model referenced by Model block ''{1}'' has a fundamental sample time of {2}, while the root model ''{3}'' has a different sample time of {4}. \n Consider using Dataset instead of ModelDataLogs format for signal logging, or matching the fundamental sample times.]]></entry>
+
+    <entry key="MixedRootFcnCallInportToAsyncTaskSpecConnections">
+      In the model ''{0}'', root-level Inport block ''{1}'' is connected to an Asynchronous Task Specification block ''{2}'', while the other root-level Inport block ''{3}'' is not. To setup this model to export functions, remove all Asynchronous Task Specification blocks connected to root-level Inport blocks that output function-call signals. Alternatively, to introduce asynchronous function-call behavior into the model, connect each root-level Inport block that outputs a function-call signal to an Asynchronous Task Specification block.
+    </entry>
+
+    <entry key="FcnCallRootInportCannotDriveSimEventsGateway">
+      It is not allowed for a function-call root-level Inport block ''{0}'' to drive a SimEvents Gateway block ''{1}''.
+    </entry>
+
+    <entry key="MultiInstanceERTCodeNotSupportedForExpFcnMdl"><![CDATA[Model ''{0}'' cannot generate reusable code when it has been setup to export functions. Consider setting the option 'Code interface packaging' to 'Nonreusable function' in 'Configuration Parameters' > 'Code Generation' > 'Interface'.]]></entry>
+
+    <entry key="MergeConstantSampleTimeDisallowedInExpFcnMdl">To setup model ''{0}'' to export functions, all sources driving inputs to the Merge block ''{1}'' at root level must be driven by function-call root-level Inport blocks. However, the source block ''{2}'' is not driven by any function-call root-level Inport block.</entry>
+
+    <entry key="DisallowSimulinkFcnMdlRefInExpFcnMdl">Simulink Functions exist inside the model referenced by Model block ''{0}''. Therefore, this Model block cannot be placed in the model ''{1}'', which is setup to export functions.</entry>
+
+    <entry key="DisallowNonExpSimulinkFcnMdlRef"><![CDATA[Model ''{0}'' must be set up to export functions before it can be referenced by a Model block or as a code generation target since it contains a Simulink Function.]]></entry>
+
+    <entry key="DisallowNonExpFcnCallerMdlRef"><![CDATA[Model ''{0}'' must be set up to export functions before it can be referenced by a Model block or as a code generation target since it contains a Function Caller block ''{1}''.]]></entry>
+
+    <entry key="FcnCallerNotInFcnCallPortGroupInExpFcnMdl">The Function Caller block ''{0}'' is inside the model ''{1}'', which is setup to export functions. Therefore, it must be placed inside a Simulink Function or driven by a function-call root-level Inport block. However, the block is inside the subsystem ''{2}'' and violates this rule.</entry>
+
+    <entry key="FcnCallerCannotInConstTs">The Function Caller block ''{0}'' is not allowed to be placed inside a subsystem that has a constant sample time.</entry>
+
+    <entry key="SLFcnHasInputFromCaller">The connection between input port {0,number,integer} of Simulink Function ''{1}'' and output port {2,number,integer} of block ''{3}'' is invalid. Such connection might lead to unexpected behaviors because the Simulink Function could be called while ''{4}'' executes.</entry>
+
+    <entry key="SLFcnInRefMdlHasInputFromCaller">The connection between input to Simulink Function ''{0}'' via input port {1,number,integer} of the Model block ''{2}'' and output port {3,number,integer} of block ''{4}'' is invalid. Such connection might lead to unexpected behaviors because the Simulink Function could be called while ''{5}'' executes.</entry>
+
+    <entry key="FcnCallBlkShouldLatchInputFromSimulinkFcn">The connection between input port {0,number,integer} of the function-call block ''{1}'' and output port {2,number,integer} of Simulink Function ''{3}'' is invalid. Such connection might lead to unexpected behaviors because the Simulink Function could be called while ''{4}'' executes. Consider placing a Function-Call Feedback Latch block before corresponding input, or selecting 'Latch input for feedback signals of function-call subsystem outputs' parameter on the Inport block corresponding to input port {5,number,integer} of ''{6}''.</entry>
+
+    <entry key="SLFcnConstTsUncalled">Simulink Coder does not support models containing Simulink Functions that are not called. The model contains the uncalled Simulink Function ''{0}'' defined by block ''{1}''.</entry>
+
+    <entry key="SLFcnHasInvalidInputConnection">The connection between input port {0,number,integer} of scoped Simulink Function ''{1}'' and output port {2,number,integer} of block ''{3}'' is invalid. The input of a scoped Simulink Function called from outside the scoping subsystem must be connected to another Simulink Function, Merge, Constant or an Inport block. </entry>
+
+    <entry key="SLFcnHasInvalidOutputConnection">The connection between output port {0,number,integer} of scoped Simulink Function ''{1}'' and input port {2,number,integer} of block ''{3}'' is invalid. The output of a scoped Simulink Function called from outside the scoping subsystem must be connected to only one of the following blocks: Simulink Function, Outport, Terminator, Scope, Display, To Workspace, or To File. </entry>
+
+    <entry key="SLFcnPublicHasInvalidInputConnection">The input port {0,number,integer} of Simulink Function ''{1}'', defined by block ''{2}'' is invalid. Simulink Functions in a model set to export public functions (ModelFunctionsGlobalVisibility parameter is off) cannot have input ports. </entry>
+
+    <entry key="SLFcnPublicHasInvalidOutputConnection">The output port {0,number,integer} of Simulink Function ''{1}'', defined by block ''{2}'' is invalid. Simulink Functions in a model set to export public functions (ModelFunctionsGlobalVisibility parameter is off) cannot have output ports. </entry>
+
+    <entry key="SLFcnHasInvalidInputConnectionDueToCallerInIRT">The input port {0,number,integer} of Simulink Function ''{1}'', defined by block ''{2}'' is invalid. Simulink Functions which are being invoked by caller blocks which are within Initialize/Reset/Terminate Function blocks cannot have input ports. </entry>
+
+    <entry key="SLFcnHasInvalidOutputConnectionDueToCallerInIRT">The output port {0,number,integer} of Simulink Function ''{1}'', defined by block ''{2}'' is invalid. Simulink Functions which are being invoked by caller blocks which are within Initialize/Reset/Terminate Function blocks cannot have output ports. </entry>
+<!-- Stub Function-Call -->
+    <entry key="BadFcnCallStubInportNum">One or more Argument Inport blocks of Simulink Function ''{0}'' are either missing or numbered incorrectly. Argument Inport blocks must be numbered consecutively starting with 1.</entry>
+    <entry key="BadFcnCallStubOutportNum">One or more Argument Outport blocks of  Simulink Function ''{0}'' are either missing or numbered incorrectly. Argument Outport blocks must be numbered consecutively starting with 1.</entry>
+    <entry key="BadFcnCallStubStatusNum">There can be only one Function-Call Stub Status block in system ''{0}''.</entry>
+    <entry key="RootInportFcnCallUnconnectedOutput">Output of root-level Inport block ''{0}'' cannot be unconnected or connected to a Terminator block since the Inport block is configured to output a function-call signal.</entry>
+    <entry key="RootInportFcnCallNoAsyncTaskSpecBlk">An Asynchronous Task Specification block must be placed at the output port of Inport block ''{0}'' since the Inport block is configured to output a function-call signal.</entry>
+    <entry key="RootInportFcnCallWithAsyncTaskSpecBlkMultDsts">Inport block ''{0}'' has a connection that is not valid. Since an Asynchronous Task Specification block has been placed at the output port of this Inport block, the output signal of the Inport block cannot be connected to any other block (including another Asynchronous Task Specification block).</entry>
+    <entry key="AsyncTaskSpecBlkNotDrivenByRootInportFcnCall">Asynchronous Task Specification block ''{0}'' must be directly connected to the output port of a root-level Inport block that has been configured to output a function-call signal.</entry>
+    <entry key="AsyncTaskSpecBlkUnconnectedOutput">Output of Asynchronous Task Specification block ''{0}'' cannot be unconnected or connected to a Terminator block.</entry>
+    <entry key="ExpFcnSpecBlkNotDrivenByRootInportFcnCall">Export Function Specification block ''{0}'' must be directly connected to the output port of a root-level Inport block that has been configured to output a function-call signal.</entry>
+    <entry key="ExpFcnSpecBlkUnconnectedOutput">Output of Export Function Specification block ''{0}'' cannot be unconnected or connected to a Terminator block.</entry>
+    <entry key="RootInportFcnCallInvalidDst">Inport block ''{0}'' has selected its dialog parameter 'Output function call'. However, it connects to input port {1,number,integer} of ''{2}'' that cannot accept a function-call signal.</entry>
+    <entry key="RootInportFcnCallNotAllowedWithRootControlPort">Inport block ''{0}'' cannot be configured to output a function-call signal because a control port (e.g., a trigger port) already exists at the root level of the model.</entry>
+    <entry key="SimulinkFunctionNotAllowedWithForEach">Simulink Function ''{0}'' cannot be placed inside a For Each block.</entry>
+    <entry key="RootInportFcnCallDuplicateNotAllowed">Duplicate Inport block ''{0}'' is not allowed because ''Output function call'' option is selected for the original Inport block ''{1}''.</entry>
+    <entry key="InvalidAsyncBlockWithinSimulinkFunction">Asynchronous block ''{0}'' is not allowed inside a Simulink Function.</entry>
+
+    <entry key="DataRootInportDrvMultiFcnCallPortGroups">The root-level Inport block ''{0}'' is connected to input port {1,number,integer} of ''{2}'', which is driven by function-call root-level Inport block ''{3}'', and input port {4,number,integer} of ''{5}'', which is driven by another function-call root-level Inport block ''{6}''. All destinations of a root-level Inport block must be driven by the same function-call root-level Inport block. Consider splitting the root-level Inport block ''{7}'' into two Inport blocks to drive each destination separately.</entry>
+
+    <entry key="RateTransBlkDrvMultiFcnCallPortGroups">The Rate Transition block ''{0}'' is connected to input port {1,number,integer} of ''{2}'', which is driven by function-call root Inport block ''{3}'', and input port {4,number,integer} of ''{5}'', which is driven by another function-call root-level Inport block ''{6}''. All destinations of a Rate Transition block must be driven by the same function-call root-level Inport block. Consider using two Rate Transition blocks to drive each destination separately.</entry>
+
+    <entry key="RateTransBlkDrvDataAndFcnCallPortGroups">The Rate Transition block ''{0}'' is connected to input port {1,number,integer} of ''{2}'', which is driven by function-call root Inport block ''{3}'', and input port {4,number,integer} of ''{5}'', which is not driven by any function-call root-level Inport block. All destinations of a Rate Transition block must be driven by the same function-call root-level Inport block. Consider using two Rate Transition blocks to drive each destination separately.</entry>
+
+    <entry key="DataRootInportDrvFcnCallAndDataPortGroups">The root-level Inport block ''{0}'' is connected to input port {1,number,integer} of ''{2}'', which is driven by function-call root-level Inport block ''{3}'', and input port {4,number,integer} of ''{5}'', which is not driven by any function-call root-level Inport block. Either all destinations of a root-level Inport block must be driven by the same function-call root-level Inport block, or no such destinations should be driven by a function-call root-level Inport block. Consider splitting the root-level Inport block ''{6}'' into two Inport blocks to drive each destination separately.</entry>
+
+    <entry key="DataRootOutportInFcnCallAndDataPortGroups">The sources of root-level Outport block ''{0}'' are from output port {1,number,integer} of ''{2}'', which is driven by function-call root-level Inport block ''{3}'', and output port {4,number,integer} of ''{5}'', which is not driven by any function-call root-level Inport block. Either all sources of a root-level Outport block must be driven by the same function-call root-level Inport block, or no such sources should be driven by a function-call root-level Inport block. Consider splitting the root-level Outport block ''{6}'' into two Outport blocks to be driven by each source separately.</entry>
+
+    <entry key="FcNodeInMultiFcnCallPortGroups">The function-call block ''{0}'' is driven by function-call root-level Inport blocks ''{1}'' and ''{2}''. Any function-call block can only be driven by at most one function-call root-level Inport block.</entry>
+    <entry key="FcNodeInDataAndFcnCallPortGroups">The function-call block ''{0}'' is driven by a function-call root-level Inport block ''{1}'', and the initiator ''{2}'', which is not driven by any function-call root-level Inport block. Any function-call block can either be driven by one or more function-call root-level Inport blocks, or be driven by initiators that are not driven by any function-call root-level Inport blocks.</entry>
+    <entry key="FcnCallSysCalledByMultiFcnCallPorts">The function-call block ''{0}'' is driven by multiple function-call root-level Inport blocks. Any function-call block can only be directly or indirectly driven by at most one function-call root-level Inport block.</entry>
+
+    <entry key="InvFcnCallSysCalledByMultiFcnCallRootInports">
+    Inside an export function model, when a function-call block ''{0}'' is indirectly driven by multiple function-call root-level Inport blocks, all its initiators must be driven by the same set of function-call root-level Inport blocks. However, ''{1}'' is invoked by function-call signals originating from ''{2}'' and ''{3}'' that violate this rule.</entry>
+
+    <entry key="InvExpFcnMdlCalledByMultiFcnCallRootInports">
+    The model referenced by Model block ''{0}'' is setup export functions. Therefore, the function-call signal to input port {1,number,integer} is not allowed to be driven by  multiple function-call root-level Inport blocks ''{2}'' and ''{3}'' simultaneously.</entry>
+
+    <entry key="LoopCausedByNgSrcForExpFcnMdlInSingleTaskingHarness">
+      The function-call initiators invoking the export function model referenced by Model block ''{0}'' must execute in the order of their sample times or task priorities. In a model with a single task, this implies that ''{1}'' must execute before ''{2}''. However, applying this rule caused a data dependency violation. Consider clearing the 'Configuration Parameters' > 'Solver' > 'Treat each discrete rate as a separate task' option or tracing the data connections between the blocks listed below to resolve the data dependency loop.
+    </entry>
+    <entry key="LoopCausedByNgSrcForExpFcnMdlInSingleTaskingHarnessDetail">
+      Block ''{0}'' is involved in the loop.
+    </entry>
+
+    <entry key="FcnCallNumInOutArgsMismatchCallerSrcFcnDst">Function ''{2}'' defined by ''{1}'' differs in number of reusable arguments from its caller ''{0}''.</entry>
+    <entry key="FcnCallNumInOutArgsMismatchCallerSrcGenericDst">Function ''{1}'' differs in number of reusable arguments from its caller ''{0}''.</entry>
+    <entry key="FcnCallNumInOutArgsMismatchGenericSrcFcnDst">Function ''{1}'' defined by ''{0}'' differs in number of reusable arguments from its caller.</entry>
+    <entry key="FcnCallNumInOutArgsMismatchGenericSrcDst">Function ''{0}'' differs in number of reusable arguments from its caller.</entry>
+
+    <entry key="FcnCallNumInArgsMismatchCallerSrcFcnDst">Function ''{4}'', defined
+    by ''{1}'', was expecting {2,number,integer} input 
+    arguments, but was called by ''{0}'' with {3,number,integer}.</entry>
+    <entry key="FcnCallNumInArgsMismatchCallerSrcGenericDst">Function ''{3}''
+    , was expecting {1,number,integer} input arguments, but was called by 
+    ''{0}'' with {2,number,integer}.</entry>
+    <entry key="FcnCallNumInArgsMismatchGenericSrcFcnDst">Function ''{3}'', 
+    defined by ''{0}'', was expecting {1,number,integer} input 
+    arguments, but was called with {2,number,integer}.</entry>
+    <entry key="FcnCallNumInArgsMismatchGenericSrcDst">Function ''{2}'' was
+    expecting {0,number,integer} input arguments, but was called with 
+    {1,number,integer}.</entry>
+
+    <entry key="FcnCallInArgDTypeMismatchCallerSrcFcnDst">Function ''{5}'',
+    defined by ''{1}'', was expecting datatype ''{4}'' for input  
+    argument {2,number,integer}, but was called by ''{0}'' with 
+    ''{3}''.</entry>
+    <entry key="FcnCallInArgDTypeMismatchCallerSrcGenericDst">Function ''{4}''
+    , was expecting datatype ''{3}'' for input argument {1,number,integer}, 
+    but was called by ''{0}'' with ''{2}''.</entry>
+    <entry key="FcnCallInArgDTypeMismatchGenericSrcFcnDst">Function ''{4}'', 
+    defined by ''{0}'', was expecting datatype ''{3}'' for input 
+    argument {1,number,integer}, but was called with ''{2}''.</entry>
+    <entry key="FcnCallInArgDTypeMismatchGenericSrcDst">Function ''{3}'' was 
+    expecting datatype of ID {2,number,integer} for input argument {0,number,integer}, 
+    but was called with {1,number,integer}.</entry>
+
+    <entry key="FcnCallInArgCplxMismatchCallerSrcFcnDst">Function ''{5}'', 
+    defined by ''{1}'', was expecting complexity {4,number,integer} (0=real or
+    1=complex) for input argument {2,number,integer}, but was called by 
+    ''{0}'' with {3,number,integer}.</entry>
+    <entry key="FcnCallInArgCplxMismatchCallerSrcGenericDst">Function ''{4}''
+    , was expecting complexity {3,number,integer} (0=real or 1=complex) for input
+    argument {1,number,integer}, but was called by ''{0}'' with 
+    {2,number,integer}.</entry>
+    <entry key="FcnCallInArgCplxMismatchGenericSrcFcnDst">Function ''{4}'',
+    defined by ''{0}'', was expecting complexity {3,number,integer} (0=real or
+    1=complex) for input argument {1,number,integer}, but was called with 
+    {2,number,integer}.</entry>
+    <entry key="FcnCallInArgCplxMismatchGenericSrcDst">Function ''{3}'' was 
+    expecting complexity {2,number,integer} (0=real or 1=complex) for input argument 
+    {0,number,integer}, but was called with {1,number,integer}.</entry>
+
+    <entry key="FcnCallInArgDimsMismatchCallerSrcFcnDst">Function ''{5}'', 
+    defined by ''{1}'', was expecting dimensions ''{4}'' 
+    for input argument {2,number,integer}, but was called by ''{0}'' with 
+    ''{3}''.</entry>
+    <entry key="FcnCallInArgDimsMismatchCallerSrcGenericDst">Function ''{4}''
+    , was expecting dimensions ''{3}'' for input 
+    argument {1,number,integer}, but was called by ''{0}'' with
+    ''{2}''.</entry>
+    <entry key="FcnCallInArgDimsMismatchGenericSrcFcnDst">Function ''{4}'',
+    defined by ''{0}'', was expecting dimensions ''{3}''
+    for input argument {1,number,integer}, but was called with 
+    ''{2}''.</entry>
+    <entry key="FcnCallInArgDimsMismatchGenericSrcDst">Function ''{3}'' was 
+    expecting dimensions ''{2}'' for input argument 
+    {0,number,integer}, but was called with ''{1}''.</entry>
+
+    <entry key="FcnCallNumOutArgsMismatchCallerSrcFcnDst">Function ''{4}'', defined
+    by ''{1}'', was expecting {2,number,integer} output 
+    arguments, but was called by ''{0}'' with {3,number,integer}.</entry>
+    <entry key="FcnCallNumOutArgsMismatchCallerSrcGenericDst">Function ''{3}''
+    , was expecting {1,number,integer} output arguments, but was called by 
+    ''{0}'' with {2,number,integer}.</entry>
+    <entry key="FcnCallNumOutArgsMismatchGenericSrcFcnDst">Function ''{3}'', 
+    defined by ''{0}'', was expecting {1,number,integer} output 
+    arguments, but was called with {2,number,integer}.</entry>
+    <entry key="FcnCallNumOutArgsMismatchGenericSrcDst">Function ''{2}'' was
+    expecting {0,number,integer} output arguments, but was called with 
+    {1,number,integer}.</entry>
+
+    <entry key="FcnCallOutArgDTypeMismatchCallerSrcFcnDst">Function ''{5}'',
+    defined by ''{1}'', was expecting datatype ''{4}'' for output  
+    argument {2,number,integer}, but was called by ''{0}'' with 
+    ''{3}''.</entry>
+    <entry key="FcnCallOutArgDTypeMismatchCallerSrcGenericDst">Function ''{4}''
+    , was expecting datatype ''{3}'' for output argument {1,number,integer}, 
+    but was called by ''{0}'' with ''{2}''.</entry>
+    <entry key="FcnCallOutArgDTypeMismatchGenericSrcFcnDst">Function ''{4}'', 
+    defined by ''{0}'', was expecting datatype ''{3}'' for output 
+    argument {1,number,integer}, but was called with ''{2}''.</entry>
+    <entry key="FcnCallOutArgDTypeMismatchGenericSrcDst">Function ''{3}'' was 
+    expecting datatype of ID {2,number,integer} for output argument {0,number,integer}, 
+    but was called with {1,number,integer}.</entry>
+
+    <entry key="FcnCallOutArgCplxMismatchCallerSrcFcnDst">Function ''{5}'', 
+    defined by ''{1}'', was expecting complexity {4,number,integer} (0=real or
+    1=complex) for output argument {2,number,integer}, but was called by 
+    ''{0}'' with {3,number,integer}.</entry>
+    <entry key="FcnCallOutArgCplxMismatchCallerSrcGenericDst">Function ''{4}''
+    , was expecting complexity {3,number,integer} (0=real or 1=complex) for output 
+    argument {1,number,integer}, but was called by ''{0}'' with 
+    {2,number,integer}.</entry>
+    <entry key="FcnCallOutArgCplxMismatchGenericSrcFcnDst">Function ''{4}'',
+    defined by ''{0}'', was expecting complexity {3,number,integer} (0=real or
+    1=complex) for output argument {1,number,integer}, but was called with 
+    {2,number,integer}.</entry>
+    <entry key="FcnCallOutArgCplxMismatchGenericSrcDst">Function ''{3}'' was 
+    expecting complexity {2,number,integer} (0=real or 1=complex) for output argument 
+    {0,number,integer}, but was called with {1,number,integer}.</entry>
+
+    <entry key="FcnCallOutArgDimsMismatchCallerSrcFcnDst">Function ''{5}'', 
+    defined by ''{1}'', was expecting dimensions ''{4}'' 
+    for output argument {2,number,integer}, but was called by ''{0}'' with 
+    ''{3}''.</entry>
+    <entry key="FcnCallOutArgDimsMismatchCallerSrcGenericDst">Function ''{4}''
+    , was expecting dimensions ''{3}'' for output  
+    argument {1,number,integer}, but was called by ''{0}'' with
+    ''{2}''.</entry>
+    <entry key="FcnCallOutArgDimsMismatchGenericSrcFcnDst">Function ''{4}'',
+    defined by ''{0}'', was expecting dimensions ''{3}''
+    for output argument {1,number,integer}, but was called with 
+    ''{2}''.</entry>
+    <entry key="FcnCallOutArgDimsMismatchGenericSrcDst">Function ''{3}'' was 
+    expecting dimensions ''{2}'' for output argument 
+    {0,number,integer}, but was called with ''{1}''.</entry>
+
+    <entry key="FcnCallSubsysInvalidRoutingBlock">The function-call signal
+      driving function-call input port of block ''{0}'' cannot be routed through
+      output port {1,number,integer} of block ''{2}''. This function-call signal
+      can be routed through a From, Goto, Inport, Outport, or Subsystem
+      block.</entry>
+    <entry key="FcnCallBlockInvalidRoutingBlock">The function-call signal
+      driving input port {0,number,integer} of block ''{1}'' cannot be routed
+      through output port {2,number,integer} of block ''{3}''. This
+      function-call signal can be routed through a From, Goto, Inport, Outport,
+      or Subsystem block.</entry>
+
+    <entry key="StubPortBlockMustBeInFcnCallSubsys">Cannot define function arguments for subsystem ''{0}''. Arguments may be defined only for a Simulink Function.</entry>
+    <entry key="StubPortBlockNotAllowedInRoot">Cannot define function arguments at the root level of a block diagram. Arguments may be defined only for a Simulink Function.</entry>
+    <entry key="SimulinkFunctionInvDiagSettings">The current diagnostic settings for model ''{0}'' must be updated because the model is setup for exporting functions.</entry>
+    <entry key="InvFcnCallName">The variable ''{0}'' does not provide a valid function-call object type name.</entry>
+    <entry key="FcnCallObjectSignature">Signature:</entry>
+    <entry key="ResolveToFcnCallObjInMaskWorkspace">The symbol ''{0}'' resolved to a function signature object in the mask workspace; Function signature objects should only be created in the base workspace</entry>
+    <entry key="ResolveToFcnCallObjInModelWorkspace">The symbol ''{0}'' resolved to a function signature object in the model workspace; Function  signature objects should only be created in the base workspace</entry>
+    <entry key="FcnCallEmptyArguments">The function signature object ''{0}'' must contain at least one argument (input or output).</entry>
+    <entry key="FcnCallPortArgMismatch">The function signature object ''{0}'' must contain the same number of arguments (input and output) as the number of Stub Inports and Outports in the function-call subsystem.</entry>
+    <entry key="FcnCallIncorrectComplexEntry">The complexity of function argument ''{0}'' must be set to 'auto', 'real' or 'complex'.</entry>
+    <entry key="FcnCallIncorrectArgumentEntry">The argument provided should either be of type Simulink.FunctionArgument, Simulink.FunctionStatusArgument or a vector of these objects.</entry>
+    <entry key="FcnCallIncorrectDataTypeEntry">The data type of function argument ''{0}'' must not be a function signature object.</entry>
+    <entry key="FcnCallIncorrectArgTypeEntry">The argument type of function argument ''{0}'' must be set to 'input', 'output' or 'inout'.</entry>
+    <entry key="FcnCallIncorrectStatusArgEntry">The function signature object ''{0}'' can have only one status argument set.</entry>
+    <entry key="FcnCallArgScope">Scope:</entry>
+    <entry key="FcnCallArgument">Arguments</entry>
+    <entry key="FcnCallInputArg">Input arguments</entry>
+    <entry key="FcnCallOutputArg">Output arguments</entry>
+    <entry key="InvalidFunctionScopeName"> The subsystem block ''{0}'' contains Simulink Functions, and the block name also represents the name of the scope for these Simulink Functions. The block name specified, ''{1}'' is not a valid ANSI C identifier required for being a scope name. Valid identifiers start with an alphabetic or ''_'' character, followed by alphanumeric or ''_'' characters.</entry>
+    <entry key="InvalidFunctionCallerScopeName"> The block ''{0}'' is invoking a scoped Simulink Function. The specified scope name, ''{1}'' is not a valid ANSI C identifier required for being a scope name. Valid identifiers start with an alphabetic or ''_'' character, followed by alphanumeric or ''_'' characters.</entry>
+    <entry key="DuplicateInArgName"> Input argument names provided in the function prototype of block ''{0}'' must be unique.</entry>
+    <entry key="DuplicateOutArgName"> Output argument names provided in the function prototype of block ''{0}'' must be unique.</entry> 
+    <entry key="FcnCallDuplicateServerBlock">Two blocks ''{0}'', and ''{1}'' are defining the same function ''{2}''. Function names must be unique.</entry>
+    <entry key="NonExportedFunctionInvoked"><![CDATA[You must follow <a href="matlab:helpview([docroot ''/toolbox/simulink/helptargets.map''], ''export_function_models'')">export-function rules</a> for the model ''{1}'' containing the function ''{0}'' because this function is called from the block ''{2}'' and placed in another model.]]></entry>
+    <entry key="UndefinedFunctionBuilt">The function ''{0}'' called by block ''{1}'' has not been defined in the model.</entry>
+    <entry key="UnknownFunctionInvoked">A definition for the function ''{0}'' called by Function Caller block ''{1}'', could not be found. </entry>
+    <entry key="UnknownServerReferred">Cannot find a Simulink Function named ''{0}'' in the model.</entry>
+    <entry key="UnresolvedScopedFunctionCall">The scoped function ''{0}'' called by block ''{1}'' has not been defined in the model. Calls to scoped functions must be resolved within a model.</entry>
+    <entry key="FunctionOutOfScope">The Simulink Function ''{0}'' called by ''{1}'' could not be found in current scope of the model.</entry>
+    <entry key="FcnCallArgumentPrototypePortMismatch">There is a mismatch in argument specifications at block ''{0}''. The attributes specified through the prototype must match those inferred from the ports.</entry>
+    <entry key="FcnCallArgumentCatalogMismatch">There is a mismatch in argument specifications between function definition of ''{0}'' and it's caller.</entry>
+    <entry key="FcnCallArgumentPrototypeInvalidDatatype">Datatype ''{1}'' specified in prototype specification at block ''{0}'' is invalid.</entry>
+    <entry key="FcnCallArgumentSpecificationMismatch">The number of input/output argument specifications provided, and the number of input/output arguments provided in the function prototype at block ''{0}'' must match.</entry>
+    <entry key="FcnCallArgumentSpecificationInvalid">The expressions provided for input/output argument specifications at block ''{0}'' must evaluate to a built-in datatype or a Simulink.NumericType object.</entry>
+    <entry key="FcnCallArgumentSpecificationINOUTMismatch">The input and output
+    argument specifications provided for argument ''{0}'' which is both an input
+    and output argument at block ''{1}'', must match.</entry>
+    <entry key="FcnCallArgsINOUTMismatch">The specifications of dimensions,
+    complexity and data type for the reusable input argument {0,number,integer},
+    and reusable output argument {1,number,integer} at block ''{2}'', must match.</entry>
+    <entry key="FcnCallNeedsNonvirtualBus">Block ''{1}'' requires the bus at its input port ''{0,number,integer}'' to be non-virtual. Consider inserting a Signal Conversion block to convert the bus to nonvirtual.</entry>
+    <entry key="FcnCallArgNotShared">The data scope of data type ''{2}'' must be set to ''Imported'' or ''Exported''.  This condition is required to be able to export the declaration of argument ''{0}'' of function ''{1}''.</entry>
+    <entry key="FcnCallPrototypeInvalid" note="stringDatatypeUpdate">The character vector ''{0}'' specified for prototype specification is invalid.</entry>
+    <entry key="FcnCallNeedsTimeAccess">Block ''{0}'' is not able to access absolute time because it is contained in a Simulink Function.  Consider changing your model such that time is passed in as an argument to the Simulink Function.</entry>
+    <entry key="FunctionCallerNonSourceInheritedTs">Function Caller block ''{0}'' must specify inherited sample time (-1 is inherited) when the block is not a source.</entry>
+    <entry key="FunctionCallerNonNumericTypeInArgSpec">Input argument specifications at Function Caller block ''{0}'' must specify examples of built-in data types. Examples of user-defined data types, including Bus, Fixed-point, Enumerations, and Alias types, may be provided with a Simulink.Parameter object.</entry>
+    <entry key="FunctionCallerNonNumericTypeOutArgSpec">Output argument specifications at Function Caller block ''{0}'' must specify examples of built-in data types. Examples of user-defined data types, including Bus, Fixed-point, Enumerations, and Alias types, may be provided with a Simulink.Parameter object.</entry>
+    <entry key="FcnCallNeedsGlobalDWork">Function ''{0}'' may not be invoked concurrently because it contains block ''{1}'' which may access global data through its dwork vectors.  This diagnostic is reported because ''Can be invoked concurrently'' option is selected in the AUTOSAR configuration for the Simulink Function block ''{2}''.</entry>
+    <entry key="FcnCallNeedsGlobalOutputs">Function ''{0}'' may not be invoked concurrently because it contains block ''{1}'' with persistent outputs. This diagnostic is reported because ''Can be invoked concurrently'' option is selected in the AUTOSAR configuration for Simulink Function block ''{2}''.</entry>
+    <entry key="SimulinkFunctionCycleMsg">Simulink does not support the execution of function-call cycles:</entry>
+    <entry key="CascadeSimulinkFunction">Function ''{0}'' contains block ''{1}'' which calls ''{2}''</entry>
+    <entry key="SimulinkFunctionInconsistentPrototype">The arguments for function ''{0}'' must use consistent names between ''{1}'' and ''{2}''.</entry>
+    <entry key="SimulinkFunctionInvalidRootIOForCoder">Simulink Function ''{0}'' defined in model ''{1}'' may not be connected to root Inport or root Outport blocks when the model is generating code as a model reference target.</entry>
+    <entry key="SimulinkFunctionInvalidScalarRootIOForCoder"><![CDATA[The scalar root-level Inport block ''{0}'' defined in model ''{1}'' may not be connected to Simulink Function blocks when the model is generating code as a model reference target unless ''Configuration Parameters'' > ''Model referencing'' > ''Pass fixed-size scalar root inputs by value for code generation'' is deselected.]]></entry>
+    <entry key="SimulinkFunctionNonreusableCodeInterface">Model ''{0}'' may not generate reusable code because it contains one or more global Simulink Functions. Consider setting the option 'Code interface packaging' to 'Nonreusable function'.</entry>
+    <entry key="SimulinkFunctionInvalidOutputFunction">Simulink Function ''{0}'' must not output function-call signals via its output port(s) {1}.  Consider using Function Caller blocks to reuse logic.</entry>
+    <entry key="SimulinkFunctionInvalidLocation">The block ''{0}'' defining Simulink Function ''{1}'',  must be contained at the root level of a model or within the root level of a referenced model.</entry>
+    <entry key="SimulinkFunctionInRefMdlInvalidLocation">Inside the model referenced by Model block ''{0}'' there are global Simulink Function blocks. Therefore, this Model block must be contained within the root level of a model or within a virtual subsystem hierarchy.</entry>
+    <entry key="SimulinkFunctionInAtomicSSInvalidAccess">The Simulink Function ''{0}'' is scoped inside the atomic subsystem ''{1}''. Therefore, this function cannot be accessed outside this subsystem by block ''{2}''.</entry>
+    <entry key="SimulinkFunctionAndCallerDifferentRates">The sample time {0} of the Simulink Function ''{1}'' defined by block ''{2}'' differs from the sample time {3} of its caller block ''{4}''.</entry>
+    <entry key="SimulinkFunctionDrivenByDifferentRates">The Simulink Function ''{0}'' defined by block ''{1}'' cannot be invoked by multiple callers with different sample times. It is called by ''{2}'' with sample time {3} and by ''{4}'' with sample time {5}. </entry> 
+    <entry key="ModelBlockSimulinkFunctionSharedPortDrivenByDifferentRates"> The Simulink Functions ''{1}'' and ''{2}'' in Model block ''{0}'' share ports. They cannot be invoked by different rates. The function ''{1}'' is invoked with sample time {3} and ''{2}'' is invoked with sample time {4}.</entry>
+    <entry key="ModelBlockSimulinkFcnSharedPortWithFcnCallSubsysWithDifferentRates"> The Simulink Function ''{0}'' shares ports with other function call subsystems in Model block ''{1}'', but they are invoked by different rates. The Simulink Function ''{2}'' is invoked by sample time {3}, but the function call subsystem is invoked by sample time {4}. </entry>
+    <entry key="FcnCallerNotSupportRateType">Sample time of block ''{0}'' must not be continuous because it contains a call to a Simulink Function.</entry>
+    <entry key="FcnCallerAsyncSampleTime"> asynchronous sample time</entry>
+    <entry key="FunctionCallerUnspecifiedArgDims">The specifications of input and output arguments of Function Caller block ''{0}'' must be provided because the corresponding Simulink Function is not found within this model or a referenced model.</entry> 
+    <entry key="StubInputPortBlockUnspecifiedDataType">The argument input block ''{0}'' must specify a data type.</entry> 
+    <entry key="StubInputPortBlockUnspecifiedDimension">The argument input block''{0}'' must fully specify its dimension.</entry> 
+    <entry key="StubInputPortBlockUnspecifiedSignalType">The argument input block ''{0}'' must specify a signal type.</entry> 
+    <entry key="StubOutputPortBlockUnspecifiedDataType">The argument output block ''{0}'' must specify a data type.</entry> 
+    <entry key="StubOutputPortBlockUnspecifiedDimension">The argument output block''{0}'' must fully specify its dimension.</entry> 
+    <entry key="StubOutputPortBlockUnspecifiedSignalType">The argument output block ''{0}'' must specify a signal type.</entry>
+    <entry key="StubInputPortBlockGlobalVar">The signal leaving the argument input block ''{0}'' must not be testpointed or have a non-auto storage class.</entry> 
+    <entry key="StubOutputPortBlockGlobalVar">The signal entering the argument output block ''{0}'' must not be testpointed or have a non-auto storage class.</entry> 
+    <entry key="FunctionInsideSimulinkFunction">The function ''{0}'' defined in block ''{1}'' must not reside inside Simulink Function block ''{2}''.</entry> 
+   </message>
+</rsccat>
+
+<!-- LocalWords:  inout redisable redisabled reenable FCSS Nonreusable
+-->
+

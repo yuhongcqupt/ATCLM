@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!-- Copyright 2011-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+    <entry key="AdditionalPathsLink" note="{0} - The number of additional paths (always greater than 1). Period excluded deliberately">
+      {0,number,integer} paths
+    </entry>
+    <entry key="AdditionalPathsList" note="{0} - The job ID number, {1} - The list of additional paths">
+      Additional paths for the job with ID {0,number,integer}:\n{1}
+    </entry>
+    <entry key="ArgsInMustBeCell">InputArguments parameter must be a cell array.</entry>
+    <entry key="AttachedFilesLink" note="{0} - The number of attached files (always greater than 1). Period excluded deliberately">
+      {0,number,integer} files
+    </entry>
+    <entry key="AttachedFilesList" note="{0} - The job ID number, {1} - The list of attached files">
+      Attached files for the job with ID {0,number,integer}:\n{1}
+    </entry>
+    <entry key="AutoAttachedFiles" note="{0} - the job id number, {1} - the list of attached files">Files that are automatically added for the job with ID {0}:\n{1}</entry>
+    <entry key="AutoAttachedFilesLink" note="Period excluded deliberately">
+      List files
+    </entry>
+    <entry key="AutoAttachedPreSubmission" note="Period excluded deliberately">
+      Calculated at submission
+    </entry>
+    <entry key="BadNumberOfTasksToCreate">Creating multiple tasks is not supported for jobs of type {0}.</entry>
+    <entry key="BadStateForCreateTask">Tasks can only be added to jobs which are in state ''pending''.</entry>
+    <entry key="CancelledBeforeRunning">The job was cancelled before it could be run: {0}</entry>
+    <entry key="CannotAddTaskToRunningParallelJob">A task cannot be added to the running parallel job with ID {0}.</entry>
+    <entry key="CannotAddTasksToFinishedJob">Cannot add tasks to the finished job with ID {0}.</entry>
+    <entry key="CannotLoadFromMatFile">Job objects cannot be loaded from a MAT file or directly created from a constructor.</entry>
+    <entry key="ClusterAlreadyRunningPool">This job will remain queued until the Parallel Pool is closed.</entry>
+    <entry key="ClusterErrorDuringDestruction">The Cluster reported an error while destroying a job. The error was: {0}.</entry>
+    <entry key="CommunicatingJobFiniteNumWorkers">Either set NumWorkers on the cluster object to a finite value, or set the limits of NumWorkersRange on the job object to a finite value.</entry>
+    <entry key="CommunicatingJobNeedsOneTask">A communicating job must have a single task defined before submission.</entry>
+    <entry key="CommunicatingJobOneTask">Only one task may be created on a communicating Job.</entry>
+    <entry key="ConcurrentJobOneTask">Only one task may be created on a concurrent Job.</entry>
+    <entry key="ConcurrentJobSingleTask">A concurrent job must contain exactly one task.</entry>
+    <entry key="ConcurrentJobUnsupportedOperation">This concurrent job does not support indirect pool connections.</entry>
+    <entry key="CorruptData">Unable to read AttachedFiles data.</entry>
+    <entry key="CreateTaskFunctionBadSize">Cell array of input functions must be the same size as the cell array of input arguments.</entry>
+    <entry key="CreateTaskFunctionConsistency">Function must be a cell array of function_handle or character vector.</entry>
+    <entry key="CreateTaskInputArgsCells">InputArguments parameter must be a cell array of vector cell arrays, or a vector cell array.</entry>
+    <entry key="CreateTaskInvalidNumOutputs">NumOutputArguments must be a numeric value or vector of integers.</entry>
+    <entry key="CreateTaskNegativeNumOutputArgs">NumberOfOutputArguments must be a non-negative value.</entry>
+    <entry key="CreateTaskNumOutputsBadSize">NumOutputArguments must be the same size as the cell array of input arguments.</entry>
+    <entry key="CurrentStatePending">''{0}'' has not been submitted yet, and its state is still ''pending''. If it is not submitted from a different session, the wait could be indefinite.</entry>
+    <entry key="DestructionOfUnavailableJob">The cluster reported an error while deleting an unavailable job.  This job may already have been deleted.</entry>
+    <entry key="DisplayExpectedDifferentType">Expected an input of class {0}, instead got an input of class: {1}.</entry>
+    <entry key="ErrorDuringTaskExecution">An error occurred during execution of Task with ID {0,number,integer}.</entry>
+    <entry key="FailedToGetLicensedProducts">Failed to get the list of licensed products.</entry>
+    <entry key="FindJobNargout">findTask requires 0, 1 or 3 output arguments.</entry>
+    <entry key="IncorrectJobState">The job object is not in a state for this operation to be performed.</entry>
+    <entry key="IncorrectJobStateForSubmit">The job can only be submitted if it is in the pending state.</entry>
+    <entry key="IncorrectNumberOfTasksForParallelJob">The parallel job was cancelled because the number of tasks in the job, {0}, was not equal to 1.</entry>
+    <entry key="IncorrectStateToDemoteJob">The job cannot be demoted when it is not in the queued state.</entry>
+    <entry key="IncorrectStateToPromoteJob">The job cannot be promoted when it is not in the queued state.</entry>
+    <entry key="IncorrectStateToRunJob">The job can only be run if it is in the queued state.</entry>
+    <entry key="InvalidDeleteSyntax">Invalid syntax. Use "delete(job)" to delete a job.</entry>
+    <entry key="JobAlreadyRerunning">The job is already (or still) queued.</entry>
+    <entry key="JobDataCorrupted">Could not access job and task data, possible data corruption.</entry>
+    <entry key="JobInvalidated">Invalid job object.</entry>
+    <entry key="JobNotYetFinished">Outputs can only be fetched if the job is in State ''finished''.</entry>
+    <entry key="JobStartupUserError">Error thrown in user-supplied jobStartup function ''{0}''.</entry>
+    <entry key="JobSubmissionWithNoTasks">A job must have at least one task to submit.</entry>
+    <entry key="JobUnavailable">Outputs cannot be fetched as the job is unavailable.</entry>
+    <entry key="ListWarningsLinkText">List warnings</entry>
+    <entry key="MJSDataStorageFailed">Failed to read/write job data to the database.</entry>
+    <entry key="MJSJobAddTaskState">New tasks can only be added to an MJS job while the job is in state ''pending'', ''queued'', or ''running''.</entry>
+    <entry key="MJSJobNotFound">The job could not be found.</entry>
+    <entry key="MpiCompatibilityCheckFailed">Compatibility check failed: worker type {0} is not compatible with leading worker type {1}.</entry>
+    <entry key="MpiInitBadTag">Badly formatted parallel tag.</entry>
+    <entry key="MpiUnknownConnectionMethod">Unknown connection method ({0}).</entry>
+    <entry key="NoAutoAttachedFiles" note="{0} - the job id number">No files automatically added for the job with ID {0}.</entry>
+    <entry key="NoLeadingTask">The {0} seems to have no leading task.</entry>
+    <entry key="NotEnoughCompatibleWorkers">The job was cancelled because there are not enough workers of the same OS and architecture to run a parallel job. Your NumWorkersRange is [{0} {1}], but the number of qualified workers is {2}.</entry>
+    <entry key="OperationOnlyValidWhenPending">The operation "{0}" can only be performed on jobs in state "pending".</entry>
+    <entry key="OutputArgumentsMismatch">Task with ID {0,number,integer} returned {1,number,integer} outputs but {2,number,integer} were expected.</entry>
+    <entry key="ParallelJobSingleTask">A parallel job must contain exactly one task.</entry>
+    <entry key="PoolStartupUserError">Error thrown in user-supplied poolStartup function ''{0}'.</entry>
+    <entry key="PropertySetVersionMismatch">Properties must be set on jobs in the same MATLAB release that created the job: {0}</entry>
+    <entry key="RecreateJobInvalidInput">{0} is not a valid property input to recreate.</entry>
+    <entry key="ScalarJobRequiredForCreateTask">The first input to createTask must be a scalar job object, not a vector of job objects.</entry>
+    <entry key="SmpdLaunchAndReadFailed">Failed to launch SMPD and read startup information.</entry>
+    <entry key="SmpdLaunchFailed">Failed to launch SMPD process.</entry>
+    <entry key="SmpdLaunchTimeout">Timeout launching SMPD and reading startup information.</entry> 
+    <entry key="SubmitVersionMismatch">Jobs must be submitted in the same MATLAB release that created the job: {0}</entry>
+    <entry key="TaskCreationVersionMismatch">Tasks must be created in the same MATLAB release that created the job: {0}</entry>
+    <entry key="TaskIDPVPairDisallowed">The ''TaskID'' name-value pair can only be used with independent jobs.</entry>
+    <entry key="TooManyWorkersRequested">Too many workers requested. The job requires {0,number,integer}, but the cluster supports a maximum of {1,number,integer}.</entry>
+    <entry key="TooManyWorkersRequestedForProfile">Too many workers requested. The job requires {0,number,integer}, but the cluster with profile ''{1}'' supports a maximum of {2,number,integer}.</entry>
+    <entry key="UnableToResolveAttachedFile">Could not resolve attached file: ''{0}''.</entry>
+    <entry key="UnexpectedBadNumWorkersRange">The NumWorkersRange for the job was unexpectedly invalid.</entry>
+    <entry key="UserCancellation">The job was cancelled by user "{0}" on machine "{1}".</entry>
+    <entry key="UserCancellationWithMessage">The job was cancelled by user "{0}" on machine "{1}" with message: "{2}".</entry>
+    <entry key="VersionError">Unable to get version information from job. This probably means that the job was created in a client MATLAB prior to the R2009a general release, or that the job data files of the job are corrupt.</entry>
+    <entry key="VersionMismatch">This job was submitted with version {0} of the Parallel Computing Toolbox. However the current MATLAB Distributed Computing Server is version {1}. You must run jobs from clients on servers with the same version.</entry>
+    <entry key="WarningsDuringTaskExecution" note="{0} - the task id number, {1} - a list of the warnings">The task with ID {0,number,integer} issued the following warnings:\n{1}</entry>
+  </message>
+</rsccat>

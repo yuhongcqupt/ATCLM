@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<rsccat version="1.0" locale="en_US" product="asyncio">
+  <message>
+    <entry key="invalidCountRequested" translate="false">COUNTREQUESTED must be a non-negative scalar numeric value.</entry>
+    <entry key="synchronousInputNotPossible" translate="false">Synchronous input is not possible because device does not support polled input.</entry>
+    <entry key="couldNotConvertInputData" translate="false">Device could not convert the given data when reading.</entry>
+    <entry key="notSupported" translate="false">This channel does not support an input stream.</entry>
+    
+  </message>
+</rsccat>

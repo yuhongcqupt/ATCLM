@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="CheckExtension" translate="false">The package does not have the SLX extension.</entry>
+    <entry key="CheckHasBlockDiagramPart" translate="false">The block diagram does not exist in this package.</entry>
+    <entry key="CheckIsRootedDirectedTree" translate="false">The package is not a rooted, directed tree.\n
+        Vertices visited = {0}\n
+        Edges visited = {1}\n
+        Cycle found = {2}</entry>
+  </message>
+</rsccat>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2015-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="cannotWritePackagedModelPermissionDenied" translate="false">There was a problem writing the packaged model {0}. You do not have write permission for the file.</entry>
+
+    <entry key="cannotWritePackagedModel" translate="false">There was a problem writing the packaged model {0}. This can be caused if there is not enough free space on the file system.</entry>
+
+    <entry key="featureOff" translate="false">This method is not supported.</entry>
+
+    <entry key="invalidModelName" translate="false">Model name must be char.</entry>
+
+    <entry key="invalidSupportModes" translate="false">Supports must be a valid cell array of the following values: 'ModelReferenceSimTarget', 'RapidAccelerator'.</entry>
+
+    <entry key="invalidPath" translate="false">Specify a char value for Path instead of ''{0}''.</entry>
+
+    <entry key="invalidVerbose" translate="false">Specify a logical scalar for Verbose instead of ''{0}''.</entry>
+
+    <entry key="unableToFindPackagedModelFile" translate="false">Unable to find the packaged model: ''{0}''.</entry>
+
+    <entry key="packagedModelChangedOrCorrupted" translate="false">The packaged model {0} has been corrupted. To use this packaged model, you need to recreate it.</entry>
+
+    <entry key="packagedModelChangedOrCorruptedDetailed" translate="false">The packaged model {0} has been corrupted. The following may provide further information: {1}</entry>
+
+    <entry key="relationshipNotFoundForPlatformAndRelease" translate="false">In the packaged model ''{0}'', no appropriate files for ''{1}'' were found for the ''{2}'' platform and ''{3}'' release.</entry> 
+
+    <entry key="skipRebuildModelRefSIMTarget" translate="false">Skipping rebuild checks for model ''{0}'' because its corresponding packaged artifacts file has been detected.</entry>
+
+    <entry key="fileRenamed" translate="false">The packaged model {0} was renamed after it was created, which is not supported. Rename it to {1}, which was its original name.</entry>
+
+    <entry key="slprjVersionMismatch" translate="false">The packaged model {0} was created with an incompatible version of slprj.  Recreate this packaged model with the version of Simulink that you are currently using and try again.</entry>
+
+    <entry key="ChildModelMissingPackageError" translate="false">Model {0} has a
+    packaged model and is directly or indirectly referencing a model that does
+    not have a packaged model.  Either delete the packaged model for {0} or
+    create packaged models for all the models that model {0} directly or
+    indirectly references.</entry>
+    
+    <entry key="ChildModelMissingPackageWarning" translate="false">Model {0} has
+    a packaged model and is directly or indirectly referencing a model that does
+    not have a packaged model and will not be treated as a packaged model as a
+    result.  To eliminate this warning, either delete the packaged model for {0}
+    or create packaged models for all the models that model {0} directly or
+    indirectly references.</entry>
+
+    <entry key="ChildModelSimTargetMissingError" translate="false">Model {0} is
+    being used as a referenced model, but its packaged model does not contain a
+    model reference SIM target.  Either delete the packaged model for {0} or
+    create a packaged model for this model that contains a model reference SIM
+    target.</entry>
+
+    <entry key="ChildModelSimTargetMissingWarning" translate="false">Model {0}
+    is being used as a referenced model, but its packaged model does not contain
+    a model reference SIM target.  As a result, it will not be treated as a
+    packaged model.  To eliminate this warning, either delete the packaged model
+    for {0} or create a packaged model for this model that contains a model
+    reference SIM target.</entry>
+   
+    <entry key="RapidAcceleratorMissingError" translate="false">Model {0} is
+    being simulated in rapid accelerator mode, but its packaged model does not
+    contain a rapid accelerator executable.  Either delete the packaged model
+    for {0} or create a packaged model for this model that contains a rapid
+    accelerator executable.</entry>
+
+    <entry key="RapidAcceleratorMissingWarning" translate="false">Model {0} is
+    being simulated in rapid accelerator mode, but its packaged model does not
+    contain a rapid accelerator executable. As a result, it will not be treated
+    as a packaged model.  To eliminate this warning, either delete the packaged
+    model for {0} or create a packaged model for this model that contains a
+    rapid accelerator executable.</entry>
+
+    <entry key="created" translate="false">Packaged Model artifacts for ''{0}'' were created in ''{1}''.</entry>
+
+    <!-- GUI related -->
+    <entry key="browseDialogTitle" translate="false">Find Directory</entry>
+
+    <entry key="noOptionsSelectedError" translate="false">No options were selected in the Packaged Model Creator dialog.</entry>
+
+    <entry key="emptyOutputDirectory" translate="false">The path to create the Packaged Model is empty.</entry>
+
+    <entry key="lblDescriptionName" translate="false">Create a package (.slpkg) of artifacts used for simulation.</entry>
+
+    <entry key="grpPackagedModelDescriptionName" translate="false">Description</entry>
+
+    <entry key="modelRefSimTargetSupportName" translate="false">Simulation as a referenced model (Model Reference Target)</entry>
+
+    <entry key="modelRefSimTargetSupportToolTip" translate="false">Enable Model Reference Target support</entry>
+
+    <entry key="rapidAcceleratorSupportName" translate="false">Simulation as a top model (Rapid accelerator)</entry>
+
+    <entry key="rapidAcceleratorSupportToolTip" translate="false">Enable rapid accelerator support</entry>
+
+    <entry key="grpContentsName" translate="false">Package artifacts for the following:</entry>
+
+    <entry key="editPackagePathName" translate="false">Create packaged model in:</entry>
+
+    <entry key="editPackagePathToolTip" translate="false">Location where the packaged model file will be written</entry>
+
+    <entry key="packagePathBrowseName" translate="false">Browse...</entry>
+
+    <entry key="packagePathBrowseToolTip" translate="false">Click here to browse for a folder</entry>
+
+    <entry key="btnGenerateName" translate="false">Create</entry>
+    
+    <entry key="btnCancelName" translate="false">Cancel</entry>
+
+    <entry key="btnHelpName" translate="false">Help</entry>
+
+    <entry key="dialogTitle" translate="false">Create Packaged Model: {0}</entry>
+
+    <entry key="CreationMessageViewerStageName" translate="false">Packaged Model Creation Diagnostics</entry>
+
+    <entry key="toBeAdded" translate="false">This functionality will be added in the future</entry>
+
+    <!-- status bar messages -->
+    <entry key="PhaseInit" translate="false">Initializing</entry>
+    <entry key="PhaseModelReferenceSimTargetBuild" translate="false">Building model reference targets</entry>
+    <entry key="PhaseRapidAcceleratorBuild" translate="false">Building rapid accelerator targets</entry>
+    <entry key="PhasePackagingArtifacts" translate="false">Packaging model artifacts</entry>
+    <entry key="PhaseDone" translate="false">Packaging complete</entry>
+  </message>
+</rsccat>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <rsccat version="1.0" locale="en_US" product="MATLAB">
+   <message>
+
+     <entry key="DuplicateNames">
+Classes {0} and {1} have the same value for the property ''name''.        
+     </entry>
+      
+   </message>
+ </rsccat>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<rsccat version="1.0" locale="en_US" product="asyncio">
+  <message>
+    <entry key="invalidPacketSize" translate="false">PACKETSIZE must be a positive scalar numeric value.</entry>
+    <entry key="invalidPackets" translate="false">PACKETS must be a cell array.</entry>
+    <entry key="timeoutInDrain" translate="false">DRAIN timed-out while waiting for data to be sent. All remaining data will be flushed.</entry>
+    <entry key="synchronousOutputNotPossible" translate="false">Synchronous output is not possible because device does not support polled output.</entry>
+    <entry key="couldNotConvertOutputData" translate="false">Device could not convert the given data when writing.</entry>
+    <entry key="notSupported" translate="false">This channel does not support an output stream.</entry>
+  </message>
+</rsccat>

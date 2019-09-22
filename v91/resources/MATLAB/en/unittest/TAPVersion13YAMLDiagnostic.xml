@@ -1,0 +1,50 @@
+<!-- Copyright 2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+    <message>
+        <!-- Event Description Headers -->
+        <entry key="EventHeader">
+            Event:
+        </entry>
+        <entry key="NumberedEventHeader">
+            Event {0, number, integer}:
+        </entry>
+        <entry key="EventNameLabel">
+            Event Name:
+        </entry>
+        <entry key="ScopeLabel">
+            Scope:
+        </entry>
+        
+        <!-- Diagnostic Headers -->
+        <entry key="TestDiagnosticHeader">
+            Test Diagnostic:
+        </entry>
+        <entry key="FrameworkDiagnosticHeader">       
+            Framework Diagnostic:
+        </entry>
+        <entry key="LoggedDiagnosticHeader">       
+            Logged Diagnostic:
+        </entry>
+        <entry key="ErrorIdentifierHeader">       
+            Error Identifier:
+        </entry>
+        <entry key="ErrorReportHeader">       
+            Error Report:
+        </entry>
+        
+        <!-- Numbered Diagnostic Headers -->
+        <entry key="NumberedTestDiagnosticHeader">
+            Test Diagnostic {0, number, integer}:
+        </entry>
+        <entry key="NumberedFrameworkDiagnosticHeader">       
+            Framework Diagnostic {0, number, integer}:
+        </entry>
+        <entry key="NumberedLoggedDiagnosticHeader">       
+            Logged Diagnostic {0, number, integer}:
+        </entry>
+        
+        <entry key="StackHeader">
+            Stack:
+        </entry>
+    </message>
+</rsccat>

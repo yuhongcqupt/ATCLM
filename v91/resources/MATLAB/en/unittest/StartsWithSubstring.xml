@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="InvalidExpectedValueBadType">Invalid data type. Prefix must be string scalar or character vector.</entry>
+    <entry key="InvalidExpectedValueMissingElement">Missing string element not supported.</entry>
+    <entry key="InvalidExpectedValueEmptyText">Prefix text must be nonempty.</entry>
+    <entry key="ActualMustBeASupportedType">Value must be a string scalar or a character vector.\nIt is of class "{0}" and of size {1}.</entry>
+    <entry key="ActualIsNotASupportedType">Value is not a string scalar or a character vector.\nIt is of class "{0}" and of size {1}.</entry>
+    <entry key="ExpectedValueHeader">Expected Prefix:</entry>
+    <entry key="ProhibitedValueHeader">Prohibited Prefix:</entry>
+    <entry key="SatisfiedByText">The value starts with the supplied prefix.</entry>
+    <entry key="SatisfiedByTextIgnoringCase">The value starts with the supplied prefix (ignoring case).</entry>
+    <entry key="SatisfiedByTextIgnoringWhitespace">The value starts with the supplied prefix (ignoring whitespace).</entry>
+    <entry key="SatisfiedByTextIgnoringCaseAndWhitespace">The value starts with the supplied prefix (ignoring both case and whitespace).</entry>
+    <entry key="NotSatisfiedByText">The value does not start with the supplied prefix.</entry>
+    <entry key="NotSatisfiedByTextIgnoringCase">The value does not start with the supplied prefix (ignoring case).</entry>
+    <entry key="NotSatisfiedByTextIgnoringWhitespace">The value does not start with the supplied prefix (ignoring whitespace).</entry>
+    <entry key="NotSatisfiedByTextIgnoringCaseAndWhitespace">The value does not start with the supplied prefix (ignoring both case and whitespace).</entry>
+  </message>
+</rsccat>

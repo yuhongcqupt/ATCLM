@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="slplugin_user_unknown_error">Unknown error in user registered listener.</entry>
+    <entry key="slplugin_batched_event">Checking for invocation of a batched {0} listener on {1}.</entry>
+    <entry key="BadSetParamValueMCOS">Invalid setting for MCOS plugin parameter {0}.</entry>
+    <entry key="InvalidPluginID">The plugin id, {0}, entered does not correspond to a registered plugin.</entry>
+    <entry key="GetListOfPluginsRequiresLoadingSimulink">The getListOfPlugins requires Simulink to be loaded. Loading Simulink...</entry>
+  </message>
+</rsccat>

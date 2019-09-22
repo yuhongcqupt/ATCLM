@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <rsccat version="1.0" locale="en_US" product="coreui">
+   <message>
+     <entry key="AboutBoxTitle">About MATLAB</entry>
+     <entry key="CopyrightMsg" translate="false">© 1984-{0,number,integer} The MathWorks, Inc. Protected by U.S and international patents. See mathworks.com/patents. MATLAB and Simulink are registered trademarks of The MathWorks, Inc. See mathworks.com/trademarks for a list of additional trademarks. Other product or brand names may be trademarks or registered trademarks of their respective holders.</entry>
+     <entry key="GdiPlusInitError" translate="true">Error initializing GdiPlus</entry>
+   </message>
+ </rsccat>

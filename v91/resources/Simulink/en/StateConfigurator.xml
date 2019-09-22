@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2009-2013 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="DuplicateConfiguratorBlocks">The {0} block cannot be added into ''{1}'' because the {2} block ''{3}'' already exists.</entry>
+    <entry key="ContinuousBlocksNotSupportedByHardwareSemantics">The block ''{0}'' is continuous, which is not supported for synchronous semantics.</entry>
+    <entry key="BlocksNotSupportedByHardwareSemantics">The block ''{0}'' is not supported for synchronous semantics. Please check the product documentation for more details.</entry>
+    <entry key="ContinuousSampleTimeNotSupportedByHardwareSemantics">The block ''{0}'' uses continuous sample time, which is not supported for synchronous semantics. Consider using discrete sample time.</entry>
+    <entry key="NoMultirateInsideCondExecSystemWithSynchronous">The block ''{0}'' is a multi-rate block but is nested inside conditionally executed subsystem ''{1}'' with synchronous semantics. This is not supported.</entry>
+    <entry key="VariableSizeSignalsNotSupportedByHardwareSemantics">The block ''{0}'' gets variable size signals, which are not supported for synchronous semantics.</entry>
+    <entry key="FrameSignalsNotSupportedByHardwareSemantics">The block ''{0}'' has frame signals, which are not supported for synchronous semantics.</entry>
+    <entry key="MessagePortNotSupportedByHardwareSemantics">The block ''{0}'' has message ports, which are not supported for synchronous semantics.</entry>
+    <entry key="FrameModeNotSupportedByHardwareSemantics">In block ''{0}'', the parameter 'Input processing' is set to 'Columns as channels (frame based)'. Frame based processing is not supported for synchronous semantics. Consider setting this parameter to 'Elements as channels (sample based)'.</entry>
+    <entry key="TimeDomainNotSupportedByHardwareSemantics">The block ''{0}'' sets 'Time domain' parameter as 'Continuous-time', which is not supported by synchronous semantics.</entry>
+    <entry key="OnlyClassicStateSemantics">The block ''{0}'' is not compliant with synchronous semantics. Depending on different configurations, this block may or may not support synchronous semantics for state control. Please check the product documentation for more details.</entry>
+    <entry key="OnlySynchronousStateSemantics">The block ''{0}'' only supports synchronous semantics for state control. Consider inserting a State Control block and setting 'State control' parameter to 'Synchronous'. Please see the block documentation for more details.</entry>
+    <entry key="ElapseTimeBlockNotCompliant">The block ''{0}'' uses elapsed time, which is not compliant with synchronous semantics.</entry>
+    <entry key="TriggerPortBlockNotCompliant">The trigger port block ''{0}'' is not supported for synchronous semantics.</entry>
+    <entry key="FromWorkSpaceBlockNotCompliant">The From Workspace block ''{0}'' is not supported for synchronous semantics.</entry>
+    <entry key="BlockWithStateNotCompliantHardwareForCombinedOutputUpdate">The block ''{0}'' is not compliant with synchronous semantics because it may have states and is nested inside subsystem ''{1}'', which has combined output and update methods.</entry>
+    <entry key="BlockWithStateNotCompliantHardwareForCombinedOutputUpdateMdlRef">The model block ''{0}'' is not compliant with synchronous semantics because it is nested inside a subsystem with combined output and update methods and the referenced model may have states.</entry>
+    <entry key="NoClassicInsideHardwareSemantics">The state control block ''{0}'' specifies classic semantics. It cannot be placed inside a subsystem that uses synchronous semantics. Use State Control blocks with the same settings for the 'State control' parameter.</entry>
+    <entry key="NoResetPortInsideHardwareCondExecSubsys">The block ''{0}'' has an external reset port enabled but is nested inside conditionally executed subsystem ''{1}'' with synchronous semantics. This is not supported.</entry>
+    <entry key="NoHardwareInsideCondExecSystemWithClassic">The subsystem ''{0}'' uses synchronous semantics but is nested inside conditionally executed subsystem ''{1}'' with classic semantics. This is not supported.</entry>
+    <entry key="NoHardwareInsideCondExecSystemWithClassicMdlRef">The model block ''{0}'' refers to a model which has synchronous semantics. However, this model is nested inside conditionally executed subsystem ''{1}'' with classic semantics. This is not supported.</entry>
+    <entry key="NoClassicAndSynchronousBranches">All branches of the action block ''{0}'' should use classic or synchronous semantics consistently. The action subsystem block(s) {1} uses synchronous semantics, while the action subsystem block(s) {2} uses classic semantics. This is not suppported.</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  configurator
+-->
+ 
+

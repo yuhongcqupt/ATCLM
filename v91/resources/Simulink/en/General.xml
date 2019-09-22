@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="CreateDirErr">Error creating directory "{0}": {1}</entry>
+    <entry key="CreateErr">Error creating "{0}": {1}</entry>
+    <entry key="InternalError">Unexpected or internal error encountered in "{0}".  Please report this to MathWorks if you can cause it to recur</entry>
+    <entry key="MLStyleMsgId">{0}</entry>
+    <entry key="MemoryAllocErr">Memory allocation error</entry>
+    <entry key="RemoveErr">Error removing {0} : {1}</entry>
+    <entry key="RenameErr">Error renaming "{0}" to "{1}": {2}</entry>
+    <entry key="StringFormat">{0}</entry>
+    <entry key="StringFormatWithBlockPath">{0}. This originated from ''{1}''</entry>
+    <entry key="TempDirErr">Unable to write to temporary directory {0}</entry>
+    <entry key="UnableToFindPluginSymbolInLibrary">Unable to find symbol ''{0}'' in the shared object file ''{1}''</entry>
+    <entry key="UDDClassNotLoaded">Unable to load class ''{0}'' on the MATLAB path</entry>
+    <entry key="WorkProcError">An error occurred when changing the simulation execution status. This may occur if a memory allocation failed or if you have no X connection</entry>
+    <entry key="SimulationSteppingError">An error occurred while stepping through the simulation and the simulation was terminated</entry>
+    <entry key="SimulationRunningError">An error occurred while running the simulation and the simulation was terminated</entry>
+    <entry key="SimulationPauseOnError">An error occurred while running the simulation and the simulation was paused at the last snapshot</entry>
+    <entry key="DataObjectWizard">Data Object Wi&amp;zard...</entry>
+    <entry key="DataObjectWizardTip">Open Data Object Wizard</entry>
+    <entry key="SymbolImporterMenuName">C Data Con&amp;verter...</entry>
+    <entry key="SymbolImporterMenuTip">Open C Data Converter</entry>
+    <entry key="busCellToObjectIsObsolete">slbus_cell_to_object is obsolete. Please use Simulink.Bus.cellToObject</entry>
+    <entry key="busCreateObjectIsObsolete">slbus_create_object is obsolete. Please use Simulink.Bus.createObject</entry>
+    <entry key="FixAndFloatUnknownAct">Unknown action</entry>
+    <entry key="ErrorLoadingLibrary">Error loading library {0}: {1}</entry>
+    <entry key="ErrorFindingSymbol">Error finding symbol {0} in library {1}: {2}</entry>
+    <entry key="OutputAccessFcnsCompatibilityError">Outport {0} signal attributesare incompatibile with output access functions</entry>
+    <entry key="sluigeomInvalidUnitFormat">units must be ''pixels'' or ''character'' or ''points''</entry>
+    <entry key="sluigeomInvalidComputerType">Invalid computer type {0} in sluigeom.m</entry>
+    <entry key="SensibleMatlabPathForSimulink">The Matlab Path must have these directories for Simulink to function:\n  {0}\nMatlab cannot continue.  Please restore the path and restart Matlab.</entry>
+    <entry key="InvalidDataTypeSizeInDataTypeTable">Signal size for type ''{1}'' exceeds limit of ''{0,number,integer}'', i.e. intmax('int32'), bytes. Signal size is calculated based on data type size, number of elements, and signal type (real/complex).</entry>
+    <entry key="NotSupportedNoDisplay">{0} is not supported because MATLAB was started with the -nodisplay option or there is no display.</entry>
+  </message>
+</rsccat>

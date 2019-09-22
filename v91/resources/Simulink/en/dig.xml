@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="ErrorCreatingMenu">Error creating {0} menu.</entry>
+    <entry key="NoChildCellArray">Children generator function did not return a cell array, for item with tag {0}</entry>
+    <entry key="EmptyChildCellArray">Children generator function returned an empty cell array, for item with tag {0}</entry>
+    <entry key="DuplicateMenuItem">Duplicate menu item found</entry>
+   </message>
+</rsccat>

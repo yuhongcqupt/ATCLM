@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="SLEditorPerspectivesGroupName">System</entry>
+    <entry key="SLEditorTransformativeOptionTooltipStr">Open the system view</entry>
+    <entry key="SLEditorTransformativeOptionHarnessTooltipStr">Open the test harness view</entry>
+    <entry key="InterfaceEditorPerspectivesGroupName">Interface</entry>
+    <entry key="InterfaceEditorPerspectivesTooltipStr">Open the Interface Display</entry>
+    <entry key="InterfaceEditorTransformativeOptionTooltipStr">Open the Interface Display</entry>
+    <entry key="InterfaceEditorTransformativeOptionDisabledTooltipStr">Interface Display not available</entry>
+    <entry key="PerspectiveDisabledAsSlicerActive">Disabled because Model Slicer is active or in editable highlighting mode</entry>
+    <entry key="HarnessPerspectivesGroupName">Test Harness</entry>
+  </message>
+</rsccat>

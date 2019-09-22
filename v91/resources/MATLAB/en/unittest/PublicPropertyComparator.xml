@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- Copyright 2013-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="PropertiesMismatch">Objects contain different properties.</entry>
+    <entry key="MissingProperties">Missing properties in Actual:</entry>
+    <entry key="ExtraProperties">Extra properties in Actual:</entry>
+    <entry key="PropertiesToIgnore">Specified properties to ignore during comparison:</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  rsccat
+-->

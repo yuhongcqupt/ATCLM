@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- Copyright 2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="invalidFilename">Invalid filename : {0}</entry>
+    <entry key="inputMustBeDoubleScalar">Input for the {0} argument must be a scalar.</entry>
+    <entry key="inputMustBeString" note="stringDatatypeUpdate">Input for the {0} argument must be a character vector.</entry>
+    <entry key="invalidSeekOrigin">Seek origin must be -1, 0, or 1.</entry>
+    <entry key="invalidClassNameForRead">Class name {0} cannot be read from the stream as it is unsupported.</entry>
+    <entry key="invalidClassForWrite">Unsupported class for write.</entry>
+    <entry key="invalidStreamMode">Mode {0} is not a valid stream mode.</entry>
+    <entry key="invalidEor">Invalid end of record ''{0}''. End of record must be ''\\r\\n'' or a single character.</entry>
+    <entry key="encodingWithBinary">Encoding input must be used with text mode.</entry>
+    <entry key="fileNotFound">Could not find file : {0}</entry>
+    <entry key="unableToOpenStream">Could not open stream due to an unknown error. This may be due to file permission issues.</entry>
+    <entry key="streamNotOpen">The stream must be open for this operation. Please open the stream by calling ''open''.</entry>
+    <entry key="streamAlreadyOpen">The stream is already open and cannot be reopened. Please call ''close'' and try again.</entry>
+    <entry key="streamAlreadyClosed">The stream is already closed.</entry>
+    <entry key="streamOpenError">Could not open stream: {0}</entry>
+  </message>
+</rsccat>

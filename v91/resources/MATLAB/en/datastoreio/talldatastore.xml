@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- Copyright 2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="unsupportedFiles">The input files must be MAT-files or they must be Sequence files that are outputs of write method of tall.\nInvalid file: ''{0}''</entry>
+    <entry key="invalidReadSize">ReadSize must be a positive integer.</entry>
+    <entry key="unexpectedFileType">The input files must be {0}files that are outputs of write method of tall.\nInvalid file: ''{1}''</entry>
+    <entry key="noFileTypeEmptyError">Invalid file type. At least one input file must be a {0}file that is an output of write method of tall.</entry>
+  </message>
+</rsccat>

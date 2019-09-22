@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="OptionsInvalidParam">The parameter "{0}" does not exist for "Simulink.sigselector.Options" objects.</entry>
+    <entry key="OptionsInvalidInteractiveSelection">The "InteractiveSelection" parameter for "Simulink.sigselector.Options" object is expected to be a boolean.</entry>
+    <entry key="OptionsInvalidFilterVisible">The "FilterVisible" parameter for "Simulink.sigselector.Options" object is expected to be a boolean.</entry>
+    <entry key="OptionsInvalidAutoSelect">The "AutoSelect" parameter for "Simulink.sigselector.Options" object is expected to be a boolean.</entry>
+    <entry key="OptionsInvalidTreeMultipleSelection">The "TreeMultipleSelection" parameter for "Simulink.sigselector.Options" object is expected to be a boolean.</entry>    
+    <entry key="OptionsInvalidBusSupport">The "BusSupport" parameter for "Simulink.sigselector.Options" object is expected to be either ''none'',''wholeonly'',''elementonly'' or ''all''.</entry>
+    <entry key="OptionsInvalidMdlrefSupport">The "MdlrefSupport" parameter for "Simulink.sigselector.Options" object is expected to be either ''none'',''normalonly'' or ''all''.</entry>
+    <entry key="OptionsInvalidSfSupport">The "SfSupport" parameter for "Simulink.sigselector.Options" object is expected to be a boolean.</entry>
+    <entry key="OptionsInvalidRootName">The "RootName" parameter for "Simulink.sigselector.Options" object is expected to be a string.</entry>
+    <entry key="OptionsInvalidViewType">The "ViewType" parameter for "Simulink.sigselector.Options" object is expected to be either ''Java'' or ''DDG''.</entry>
+    <entry key="OptionsInvalidModel">The "Model" parameter for "Simulink.sigselector.Options" object is expected to be the name of a Simulink model as a string.</entry>
+    <entry key="OptionsInvalidHideBusRoot">The "HideBusRoot" parameter for "Simulink.sigselector.Options" object is expected to be a boolean.</entry>
+    <entry key="OptionsCurrentlySelectedSignals">Currently selected signals</entry>
+    <entry key="TCInvalidConstruction">Selected signal viewer tool component object should be constructed with an input of "Simulink.sigselector.Options" object.</entry>
+    <entry key="TCInvalidSignals">The "CurrentSignals" field for the selected signal viewer tool component object should be a cell array that consist of "Simulink.sigselector.SignalItem" or "Simulink.sigselector.BusItem" objects.</entry>
+    <entry key="TCInvalidFilterText">The "FilterText" field for the selected signal viewer tool component object should be a string.</entry>
+    <entry key="TCInvalidRegularExpression">The "RegularExpression" field for the selected signal viewer tool component object should be a boolean.</entry>
+    <entry key="TCInvalidFlatListEnabled">The "FlatListEnabled" field for the selected signal viewer tool component object should be a boolean.</entry>
+    <entry key="TCInvalidItemsWithHideBusRootTrue">The "Items" field for the selected signal viewer tool component object should have a single item when the option "HideBusRoot" is true.</entry>
+    <entry key="TCInvalidItemsWithHideBusRootFalse">All the "BusItem" objects in the "Items" field for the selected signal viewer tool component object should be have a non-empty "Name" when the option "HideBusRoot" is false.</entry>
+    <entry key="ItemInvalidName">The "Name" field for "Item" is expected to be a string.</entry>
+    <entry key="ItemInvalidSource">The "Source" field for "Item" is expected to be either empty or a structure.</entry>
+    <entry key="SignalItemInvalidSelected">The "Selected" field for "SignalItem" is expected to be a boolean.</entry>
+    <entry key="BusItemInvalidHierarchy">The "Hierarchy" field for "BusItem" is expected to be either empty or a structure.</entry>
+    <entry key="UnableToGetHierarchyTitle">Signal Hierarchy Error</entry>
+    <entry key="UnableToGetHierarchy">The signal hierarchy viewer attempts to resolve bus hierarchy of the signal you clicked;\n however, it cannot successfully obtain this information because "Mux blocks used to create bus signals" diagnostic is not set to error.\n To set it, run the command "set_param(mdl,'StrictBusMsg','ErrorLevel1')".</entry>
+    <entry key="InteractiveRequiresModel">When the "InteractiveSelection" parameter is set to be true, the "Model" parameter is expected to be the name of a currently loaded Simulink model.</entry>
+    <entry key="InteractiveBusRequirements">When the "InteractiveSelection" parameter is set to be true and BusSupport has any value other than "wholeonly", the signal viewer has to be able to sense bus signals. To be able to do so, it is required that the model has "StrictBusMsg" parameter to be "ErrorLevel1".</entry>
+    <entry key="FilterByName">Filter by name</entry>
+    <entry key="FilteredTreeTitle">(FILTERED VIEW)</entry>
+    <entry key="FilteredTreeTitleListView">(FILTERED VIEW as a flat list)</entry>
+    <entry key="FilterOptions">Filtering Options</entry>
+    <entry key="FlatListOption">Show filtered results as a flat list</entry>
+    <entry key="RegExpOption">Regular Expression</entry>
+    <entry key="RegExpOptionDDG">Enable regular expression</entry>
+    <entry key="ToolTipFilterOptsShow">Show filtering options</entry>
+    <entry key="ToolTipFilterOptsHide">Hide filtering options</entry>
+    <entry key="NoSignalTip">No signals have currently been selected. Please go back to the model and click on a signal to select it.</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  wholeonly elementonly Mdlref normalonly
+-->

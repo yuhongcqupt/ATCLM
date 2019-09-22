@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+<!-- Copyright 2012-2016 The MathWorks, Inc. -->
+  <message>
+    <entry key="look1MaxAndMin">Maximum x value must be larger than minimum x value (including quantization).</entry>
+    <entry key="look1NotFixPt">The input is not a fixed point data type so the power of two spacing restriction will be ignored.</entry>
+    <entry key="look1InvalidLimits">Both upper limits were invalid.</entry>
+    <entry key="look1ScaleNotEven">ASSERT: Scaling not even.</entry>
+    <entry key="look1DTNotSupport">This class of data type is not supported.</entry>
+    <entry key="numInputArg">Must specify at least two input arguments.</entry>
+    <entry key="num2fixptNonDoubleVal">num2fixpt requires the first parameter to be double.</entry>
+    <entry key="slRmDTNoArg">Must specify the first input argument.</entry>
+    <entry key="slRmDTInputArg">This model has not been loaded, or the provided handle or model name is invalid.</entry>
+    <entry key="slRmDTLibrary">Model {0} is a library. </entry>
+    <entry key="slRmDTResolve">Cannot resolve {0} or {1} for data type {2} in block {3}.</entry>
+    <entry key="slRmDTVerbose0">No calls to slDataTypeAndScale() are found.</entry>
+    <entry key="slRmDTVerbose1u">The following unnecessary calls to slDataTypeAndScale() have been replaced.</entry>
+    <entry key="slRmDTVerbose1">The following calls to slDataTypeAndScale() are unnecessary and can be automatically replaced.</entry>
+    <entry key="slRmDTVerbose2">The following calls to slDataTypeAndScale() need user inspection to determine if they are unnecessary.</entry>
+    <entry key="slDTnScaleNumDTWithAliasOn">The first argument ''{0}'' of slDataTypeAndScale() evaluates to a fully specified Simulink.NumericType object with IsAlias set to true. Such usage of slDataTypeAndScale() is no longer supported. You can safely replace this call with its first argument. {1}</entry> 
+    <entry key="slDTnScaleAliasDT">The first argument ''{0}'' of slDataTypeAndScale() evaluates to a Simulink.AliasType object with a fully specified base type. Such usage of slDataTypeAndScale() is no longer supported. You can safely replace this call with its first argument. {1}</entry> 
+    <entry key="slDTnScaleUpgrade"><![CDATA[To update your model automatically for this and other known upgrade issues, click <a href="matlab:modeladvisor ''{0}''">this link</a> to launch Model Advisor and run the following task: ''{1}''. Alternatively, you can resolve this issue by running the script <a href="matlab:slRemoveDataTypeAndScale(''{2}'')">slRemoveDataTypeAndScale</a>.]]></entry>
+    <entry key="slDTnScaleBusDT">The first argument ''{0}'' of slDataTypeAndScale() evaluates to a Simulink.Bus object. Such usage of slDataTypeAndScale() is not valid.</entry>
+    <entry key="InvWordLength">Invalid WordLength ''{0}'' specified; the WordLength must be a scalar numeric value that is greater than 0.</entry>
+    <entry key="InvFractionLength">Invalid FractionLength ''{0}'' specified; the FractionLength must be a scalar integer value.</entry>
+    <entry key="FxDLicenseRequired">Fixed-Point Designer license is required to run the example. Ensure that the product is installed and a license is available.</entry>
+    <entry key="activeDTOCallback">href="matlab:fxptui.cb_removeDTOModel(''{0}'')"</entry>
+<!--    <entry key="ActiveDTOModel"><![CDATA[Data Type Override is active on the model.Click <a {0}>this link</a> to remove all data type overrides from the model.]]></entry> -->
+<entry key="ActiveDTOModel"><![CDATA[Data type override is active on the model <a href="matlab:open_system(''{0}'')">{0}</a>. This enables you to simulate floating-point behavior regardless of the data types specified on the blocks. To change this setting, open <a href="matlab:fxptdlg(''{0}'')">Fixed-Point Tool</a>. To learn more, refer to the <a href="matlab:helpview(fullfile(docroot,'fixedpoint','fixedpoint.map'), 'dtOverride')">documentation</a>.]]></entry>
+<entry key="ActiveMMOModel"><![CDATA[Min, max and overflow logging is active on the model <a href="matlab:open_system(''{0}'')">{0}</a>. To see the simulation data that was collected, open <a href="matlab:fxptdlg(''{0}'')">Fixed-Point Tool</a>. To learn how to control this setting, refer to the <a href="matlab:helpview(fullfile(docroot,'fixedpoint','fixedpoint.map'), 'minMaxOverflow')">documentation</a>.]]></entry>
+
+<entry key="ActiveDTOModelNoLinks">Data type override is active on the model ''{0}''. This enables you to simulate floating-point behavior regardless of the data types specified on the blocks. To change this setting, open Fixed-Point Tool. To learn more, refer to the Fixed-Point Designer documentation.</entry>
+  <entry key="ActiveMMOModelNoLinks">Min, max and overflow logging is active on the model ''{0}''. To see the simulation data that was collected, open Fixed-Point Tool. To learn how to control this setting, refer to the Fixed-Point Designer documentation.</entry>
+</message>
+
+
+</rsccat>

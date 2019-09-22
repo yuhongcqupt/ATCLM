@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!-- Copyright 2011-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+    <!-- Please keep entries in sorted order -->
+    <entry key="CastThreeInputSyntax">CAST requires two input arguments unless the second argument is ''like''.</entry>
+    <entry key="DisplayDimensionSeparator" note="This is for use in printing array dimensions such as '3-by-2', '10-by-4-by-5' etc.">×</entry>
+    <entry key="DisplayEmptyArray">{0} empty {1} {2} array</entry>                <!-- e.g. "1×0×0 empty single distributed array" -->
+    <entry key="DisplayEmptyColumnVector">{0} empty {1} {2} column vector</entry> <!-- e.g. "0×1 empty single distributed column vector" -->
+    <entry key="DisplayEmptyMatrix">{0} empty {1} {2} matrix</entry>              <!-- e.g. "0×2 empty single distributed matrix" -->
+    <entry key="DisplayEmptyRowVector">{0} empty {1} {2} row vector</entry>       <!-- e.g. "1×0 empty single distributed row vector" -->
+    <entry key="DisplayEmptyTable">{0} empty {2} {1}</entry>                      <!-- e.g. "0×0 empty distributed table" -->
+    <entry key="DisplayHeaderArray">{0} {1} {2} array</entry>                <!-- e.g. "1×2×3 single distributed array" -->
+    <entry key="DisplayHeaderColumnVector">{0} {1} {2} column vector</entry> <!-- e.g. "2×1 single distributed column vector" -->
+    <entry key="DisplayHeaderMatrix">{0} {1} {2} matrix</entry>              <!-- e.g. "2×2 single distributed matrix" -->
+    <entry key="DisplayHeaderRowVector">{0} {1} {2} row vector</entry>       <!-- e.g. "1×2 single distributed row vector" -->
+    <entry key="DisplayHeaderScalar">{0} {1} {2}</entry>                     <!-- e.g. "1×1 single distributed" -->
+    <entry key="DisplayNonScalarArrayHeader">{0} {1} array</entry>
+    <entry key="DisplayHelperInvalidArgument">An unexpected error occurred during distributed display: mismatch between local size and global size.</entry>
+    <entry key="DisplayHelperInvalidInput">An unexpected error occurred during distributed display.</entry>
+    <entry key="DisplayInvalid">Invalid {0} array</entry>
+    <entry key="DisplayInvalidDueToClosedPool">Invalid {0} array (the parallel pool has shut down)</entry>
+    <entry key="DisplayOther">{0} object of size [{1}] with underlying class: {2}</entry>
+    <entry key="DisplayTruncatedPrefix">&lt;page truncated: showing [{0,number,integer}:{1,number,integer}, {2,number,integer}:{3,number,integer}] of {4,number,integer}-by-{5,number,integer}&gt;</entry>
+    <entry key="DisplayTruncatedSuffix">&lt;... display truncated: showed [{0}] of {1}&gt;</entry>
+    <entry key="DisplayTruncatedSuffixSparse">&lt;... display truncated: showed {0,number,integer} of {1,number,integer} non-zeros&gt;</entry>
+    <entry key="EigUnknownSecondArgument">For standard eigenproblem EIG(A), second input must be ''balance'' or ''nobalance''.</entry>
+    <entry key="EigUnknownThirdArgument">For generalized eigenproblem EIG(A,B), third input must be ''qz'' or ''chol''.</entry>
+    <entry key="EigUnsupportedLeftVectors">The three output argument form of EIG is not supported for {0} inputs.</entry>
+    <entry key="GatherInsufficientInputs">GATHER requires at least as many inputs as outputs.</entry>
+    <entry key="LikeNotSupported">{0} does not support the 'like' parameter followed by a codistributed array.</entry>
+    <entry key="MeanUnknownFlag">Trailing input must be 'double' or 'default'.</entry>
+    <entry key="NotRealInt">Size arguments must be real integers.</entry>
+    <entry key="RepmatInvalidSizeParameter">Size vector should be a row vector with integer elements.</entry>
+    <entry key="SubsasgnAmbiguousGrowDim">Attempt to grow array along ambiguous dimension.</entry>
+    <entry key="SubsasgnColonMismatch">In an assignment A(:) = B, the number of elements in B and I must be the same.</entry>
+    <entry key="SubsasgnDeletingTooManyNonColons">A null assignment can have only one non-colon index.</entry>
+    <entry key="SubsasgnIdxMismatch">In an assignment A(I) = B, the number of elements in B and I must be the same.</entry>
+    <entry key="SubsasgnInvalidSubscript">Subscript indices must either be real positive integers or logicals.</entry>
+    <entry key="SubsasgnOutOfRangeForDeletion">Matrix index is out of range for deletion.</entry>
+    <entry key="SubsasgnSubsDimMismatch">Subscripted assignment dimension mismatch.</entry>
+    <entry key="SubsasgnSubscriptedAssignmentMismatch">Subscripted assignment dimension mismatch.</entry>
+    <entry key="SubsasgnTooFewRHSDims">Assignment has fewer non-singleton rhs dimensions than non-singleton subscripts.</entry>
+    <entry key="SubsasgnTooManyRHSDims">Assignment has more non-singleton rhs dimensions than non-singleton subscripts.</entry>
+    <entry key="SubsrefInvalidSubscript">Subscript indices must either be real positive integers or logicals.</entry>
+    <entry key="SubsrefOneSubscriptRequired">At least one index is required.</entry>
+    <entry key="SubsrefSubscriptExceedsDim">Index exceeds matrix dimension.</entry>
+    <entry key="TrailingInputMustBeFloatingPoint">Trailing input must be of floating-point type.</entry>
+    <entry key="TrailingInputMustBeLogical">Trailing input must be of logical type.</entry>
+    <entry key="TrailingInputMustBeNumeric">Trailing input must be of numeric type.</entry>
+    <entry key="UnsupportedFunction">{0} does not support inputs of type ''{1}''.</entry>
+    <entry key="UnsupportedNdSparse">N-dimensional sparse arrays are not supported.</entry>
+  </message>
+</rsccat>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="ActualElementCount">Actual Number of Elements:</entry>
+    <entry key="ExpectedElementCount">Expected Number of Elements:</entry>
+    <entry key="MustHaveExpectedElementCount">The value did not have the correct number of elements.</entry>
+    <entry key="MustNotHaveUnexpectedElementCount">The value must not have the number of elements specified.</entry>
+    <entry key="UnexpectedElementCount">Prohibited Number of Elements:</entry>
+  </message>
+</rsccat>

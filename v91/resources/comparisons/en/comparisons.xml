@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--Copyright 2013-2016 The MathWorks, Inc.-->
+<rsccat version="1.0" locale="en_US" product="comparisons">
+  <message>
+    <entry key="UnknownAction">Unknown action: {0}</entry>
+    <entry key="UnknownComparisonType">Comparison type ''{0}'' not available for these inputs</entry>
+    <entry key="FolderNotAllowed">Cannot return the results of comparing folders</entry>
+    <entry key="TextdiffTitle1">Comparison Tool - {0}</entry>
+    <entry key="TextdiffTitle2">Comparison Tool - {0} vs. {1}</entry>
+    
+    <entry key="InputMustBeString" note="stringDatatypeUpdate">Input argument must be a character vector.</entry>
+
+    <entry key="TextdiffNumMatches">Number of matching lines: {0,number,integer}</entry>
+    <entry key="TextdiffNoDiffs">The files are identical.</entry>
+    <entry key="TextdiffNoDiffs_Whitespace"><![CDATA[No differences to display.  The files are <b>not identical</b>, but the only differences are in white-space characters or end-of-line characters.]]></entry>
+    <entry key="TextdiffNoDiffs_LineEndings"><![CDATA[No differences to display.  The files are <b>not identical</b>, but the only differences are in end-of-line characters.]]></entry>
+    <entry key="TextdiffNumDiffs">{0,number,integer} differences found.  Use the toolstrip buttons to navigate to them.</entry>
+    <entry key="TextdiffNumDiffs_Whitespace">{0,number,integer} differences found, excluding white-space differences.  Use the toolstrip buttons to navigate to non-white-space differences.</entry>
+
+    <entry key="TextdiffNumDiffsLeft">Number of unmatched lines in left file: {0,number,integer}</entry>
+    <entry key="TextdiffNumDiffsRight">Number of unmatched lines in right file: {0,number,integer}</entry>
+    <entry key="TextdiffNumSkipped">[{0,number,integer} unmodified lines hidden]</entry>
+    <entry key="BinaryDiffFirstDiff">The first difference between these files is at byte offset {0,number,integer}.  The differences are below shown starting from byte offset {1,number,integer}</entry>
+    <entry key="BinaryDiffShowDetails">Show Details</entry>
+    <entry key="BinaryDiffShowingOnly">Showing only the first {0,number,integer} bytes</entry>
+    <entry key="BinaryDiffNoDifferences">No differences found in the first {0,number,integer} bytes of these files.</entry>
+    <entry key="FileReadError">Unable to read file: {0}</entry>
+    <entry key="FileNotFound">File &quot;{0}&quot; not found</entry>
+
+    <entry key="MatDiffTitle">File Comparison - {0} vs. {1}</entry>
+    <entry key="MatDiffLeftFile">Left file</entry>
+    <entry key="MatDiffRightFile">Right file</entry>
+    <entry key="MatDiffVariablesIn">Variables in {0}</entry>
+    <entry key="MatDiffVarName">Name</entry>
+    <entry key="MatDiffSize">Size</entry>
+    <entry key="MatDiffClass">Class</entry>
+    <entry key="MatDiffStatus">Difference Summary</entry>
+    <entry key="MatDiffNotInList"><![CDATA[<i style="color: #777">(not in this file)</i>]]></entry>
+    <entry key="MatDiffClickToSort">Click on a column header to sort the table</entry>
+    <entry key="MatDiffContainerDifferenceOnly"><![CDATA[The variables in these files are equivalent, but the files are not identical.  Possible causes of the differences include: file formats, file timestamps, NaN patterns, field ordering, or the order in which the variables are stored. For details see <a href="matlab:helpview([docroot '/toolbox/matlab/matlab_env/matlab_env.map'], 'matlab_env_matcomparison');">Comparing MAT-Files.</a>]]></entry>
+    <!-- Status strings -->
+    <entry key="MatDiffModified">Modified</entry>
+    <entry key="MatDiffClassesDiffer">Class changed</entry>
+    <entry key="MatDiffIdentical"><![CDATA[<i style="color: #777">Equivalent</i>]]></entry>
+    <entry key="MatDiffAdded"><![CDATA[<i>Added</i>]]></entry>
+    <entry key="MatDiffRemoved"><![CDATA[<i>Removed</i>]]></entry>
+    <entry key="MatDiffLoad"><![CDATA[<code>Load {0}</code>]]></entry>
+    <entry key="MatDiffAction">Merge (no undo)</entry>
+    <entry key="MatDiffCompare">(compare)</entry>
+    <entry key="MatDiffCompareVars">View the differences between these two variables</entry>
+    <entry key="MatDiffMergeLeft">Copy the right variable to the left file</entry>
+    <entry key="MatDiffMergeRight">Copy the left variable to the right file</entry>
+    <entry key="MatDiffDeleteLeft">Delete this variable from the left file</entry>
+    <entry key="MatDiffDeleteRight">Delete this variable from the right file</entry>
+    <entry key="MatDiffRestoreFromBackup"><![CDATA[To restore merge overwrites in {0}, click <a href="{2}">here</a> to load backup file {1}, then drag required variables from the Workspace Browser to your file in the Current Folder Browser.]]></entry>
+    
+    <entry key="VarDiffPrivateData">&lt;private data&gt;</entry>
+    <entry key="VarDiffDataInaccessible">Cannot access the private data of these objects</entry>
+    <entry key="VarMergeWriteFailure">Cannot open file {0} for writing.</entry>
+
+    <!-- List Comparison strings -->
+    <entry key="ListComparisonInLeftList">In left list</entry>
+    <entry key="ListComparisonInRightList">In right list</entry>
+    <entry key="ListComparisonLeftList">Left file list</entry>
+    <entry key="ListComparisonRightList">Right file list</entry>
+    <entry key="ListComparisonFileName">File Name</entry>
+    <entry key="ListComparisonSize">Size (bytes)</entry>
+    <entry key="ListComparisonDate">Last Modified Date</entry>
+    <entry key="ListComparisonContentsOf">Contents of</entry>
+    <entry key="ListComparisonStatus">Difference Summary</entry>
+    <entry key="ListComparisonFileType">Type</entry>
+    <entry key="ListComparisonNotInList"><![CDATA[<i style="color: #777">(not in this list)</i>]]></entry>
+    <entry key="ListComparisonOpen">open</entry>
+    <entry key="ListComparisonOpenLeft">left</entry>
+    <entry key="ListComparisonOpenRight">right</entry>
+    <entry key="ListComparisonCompare">compare</entry>
+    <entry key="ListComparisonNewComparison">Compare in a new window</entry>
+    <entry key="ListComparisonClickToSort">Click on a column header to sort the table</entry>
+    <entry key="ListComparisonFile">File</entry>
+    <entry key="ListComparisonFolder"><![CDATA[<b>folder</b>]]></entry>
+    <!-- Status strings -->
+    <entry key="ListComparisonModified">contents changed</entry>
+    <entry key="ListComparisonQueued"><![CDATA[<i style="color: #777">waiting to compare</i>]]></entry>
+    <entry key="ListComparisonComparing">comparing...</entry>
+    <entry key="ListComparisonIdentical"><![CDATA[<i style="color: #777">identical</i>]]></entry>
+    <entry key="ListComparisonAdded"><![CDATA[<i>added</i>]]></entry>
+    <entry key="ListComparisonRemoved"><![CDATA[<i>removed</i>]]></entry>
+    <entry key="ListComparisonDatesDiffer">modification date</entry>
+    <entry key="ListComparisonSkipped">skipped</entry>
+    <entry key="ListComparisonFiltered"><![CDATA[<i style="color: #777">ignored</i>]]></entry>
+    <entry key="ListComparisonNotAnalyzed">(not analyzed)</entry>
+    <!-- Queue strings -->
+    <entry key="ListComparisonQueueLength">Items still to be compared: </entry>
+    <entry key="ListComparisonCancel">Cancel All</entry>
+    <entry key="ListComparisonSkip">Skip Current</entry>
+    
+    <entry key="LinkSetupDescription">This preference is now enabled: {0}.\n\nUse the following file paths to customize your external source control client.\n    Diff:  {1}\n    Merge: {2}</entry>
+  </message>
+</rsccat>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="SL_SERVICES">
+  <message>
+    <entry key="NotScalarInConversion">Was expecting a scalar while converting an object of class ''{0}'' but received a vector of length ''{1,number,integer}''.</entry>
+    <entry key="BadTypeInConversion">Error while constructing an instance of class ''{0}'' from an instance of class ''{1}''. Cannot determine class relationship.</entry>
+    <entry key="BadTypeInConversion2">The specified value must be a ''{0}''.</entry>
+    <entry key="InvalidCellOfStrs" note="stringDatatypeUpdate">The specified value must be a cell array of character vectors.</entry>
+    <entry key="ParameterMustBeStringOrCellString" note="stringDatatypeUpdate">Parameter must be a character vector or a cell array of character vectors</entry>
+    <entry key="ClassNotFound">No class found with name=''{0}''</entry>
+    <entry key="PropertyNoMemberOfClass">Property "{0}" is not defined for class ''{1}''</entry>
+  </message>
+</rsccat>

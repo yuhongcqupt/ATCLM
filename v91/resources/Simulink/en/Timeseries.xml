@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<rsccat version="1.0" locale="en_US" product="Simulink">
+  <message>
+    <entry key="nostrore">Ordinate data storage has not been defined</entry>
+    <entry key="customConstructor">Cannot call custom constructor</entry>
+    <entry key="invconst">Invalid constructor</entry>
+    <entry key="novert">Vertical concatenation is not allowed for TsArray objects</entry>
+    <entry key="onedsubsref">Subscripted reference is restricted to a single dimension</entry>
+    <entry key="scalar">Indices for '{}' must be integers between 1 and the length of the array</entry>
+    <entry key="nohorz">Horizontal concatenation is not allowed for TsArray objects</entry>
+    <entry key="invind">Invalid indices</entry>
+  </message>
+</rsccat>

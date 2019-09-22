@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!-- Copyright 2014-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel" string_type_for_hole="fl_ustring">
+  <message>
+    <entry key="CannotAccessOutputFiles">Could not access output files written to the folder ''{0}''. This location must be accessible to both the client MATLAB and the cluster machines.</entry>
+    <entry key="CannotCreateOutputFolder">Could not create the output folder ''{0}''.</entry>
+    <entry key="HadoopClusterObjectNotValid">The Hadoop Cluster object is not valid. This is a result of loading the cluster object or mapreducer object from a MAT file. This is currently not supported.</entry>
+    <entry key="HadoopDefaultJobName">MATLAB Parallel Computing Job</entry>
+    <entry key="HadoopJobFailure">The HADOOP job failed to complete.</entry>
+    <entry key="HadoopJobOtherFailure">The HADOOP job failed to complete. Check the HADOOP log files for job {0} for more information.</entry>
+    <entry key="HadoopJobSubmitExecutionFailure">The HADOOP job failed to submit. It is possible that there is some issue with the HADOOP configuration.</entry>
+    <entry key="HadoopJobSubmitFailure">The HADOOP job failed to submit. This was caused by error:\n\n{0}</entry>
+    <entry key="HadoopMatlabFailure">An error occurred during execution of MATLAB code:\n\n{0}</entry>
+    <entry key="HadoopOutputNotFound">The HADOOP job completed successfully but the client MATLAB could not find any output files in location ''{0}''. Ensure that the ''OutputFolder'' property is set to a location that is shared by both the client machine and the Hadoop cluster. For example, a folder in HDFS or a folder on a shared network drive.</entry>
+    <entry key="HadoopRequiresOutputFolder">When using Mapreduce with HADOOP, the ''OutputFolder'' parameter must specify a path to a folder that does not already exist.</entry>
+    <entry key="HadoopSparkEvaluationFailure">Failed to launch MATLAB Workers on the Hadoop cluster.</entry>
+    <entry key="HadoopSparkJobSubmitExitEarly">Spark submit process exited early with output:\n\n{0}</entry>
+    <entry key="HadoopSparkJobSubmitFailure">Failed to launch a Spark job on the Hadoop cluster. Check that the installation of Spark at ''{0}'' is valid and configured correctly.</entry>
+    <entry key="HadoopSparkUnsupportedVersion">Unsupported HADOOP version. Evaluating tall array expressions is only supported on a HADOOP cluster of version 2 or later.</entry>
+    <entry key="HadoopTaskCouldNotFindMatlab">The HADOOP job was not able to find a correct installation of MATLAB Distributed Computing Server for attempt {0} of ''{1}'' task {2}. Ensure that the ''ClusterMatlabRoot'' property on the mapreducer cluster object is set to the MATLAB Distributed Computing Server installation on the cluster.</entry>
+    <entry key="HadoopTaskInvalidHome">The HADOOP job was not able to start MATLAB for attempt {0} of ''{1}'' task {2}. The HOME environment variable was set to ''{3}'', which either does not exist or is not writable. This variable is controlled by the HADOOP cluster configuration and MATLAB requires this to be a valid local path on the cluster. See the documentation on {4}Configure a HADOOP cluster{5}.</entry>
+    <entry key="HadoopTaskOtherFailure">The HADOOP job was not able to start MATLAB for attempt {0} of ''{1}'' task {2}. This may be due to an invalid license for MATLAB Distributed Computing Server or a corruption in the MATLAB Distributed Computing Server installation on the cluster. Check the HADOOP log files for job {3} for more information.</entry>
+    <entry key="HadoopTaskVersionMismatch">The HADOOP job was not able to start MATLAB for attempt {0} of ''{1}'' task {2}. This HADOOP job was submitted from a client running version {3} of Parallel Computing Toolbox, to a cluster running version {4} of MATLAB Distributed Computing Server. The client and server must be running parallel computing products of the same version.</entry>
+    <entry key="HadoopTaskWindowsUnsupported">The HADOOP job was not able to start MATLAB for attempt {0} of ''{1}'' task {2}. Running mapreduce from MATLAB using a Hadoop cluster running on Windows is not supported.</entry>
+    <entry key="InconsistentKeyType">Keys contain inconsistent types. Keys either must all be scalar numeric values of the same type or must all be character vectors.</entry>
+    <entry key="InternalExecutionError">Internal error in the mapreduce framework detected during execution of mapreduce.</entry>
+    <entry key="InvalidHadoopInstallFolder">Unable to recognize ''{0}'' as a valid HADOOP installation folder. Check that this is the root folder of your HADOOP installation.</entry>
+    <entry key="InvalidHadoopOutputFolder">The output folder ''{0}'' could not be created by the HADOOP tasks. Check that HADOOP can access this location and that HADOOP has the permissions to create this folder.</entry>
+    <entry key="InvalidKeyType">Keys contain invalid type ''{0}''. Keys either must all be scalar numeric values of the same type or must all be character vectors.</entry>
+    <entry key="InvalidMapFunction">Invalid mapper function handle. This indicates the file containing the mapper function is not available on the workers. Specify the required files by setting the 'AttachedFiles' property of the pool or cluster.</entry>
+    <entry key="InvalidParameterName">Invalid parameter name ''{0}''. The valid parameters for mapreduce are 'OutputFolder', 'OutputType' and 'Display'.</entry>
+    <entry key="InvalidReduceFunction">Invalid reducer function handle. This indicates the file containing the mapper function is not available on the workers. Specify the required files by setting the 'AttachedFiles' property of the pool or cluster.</entry>
+    <entry key="InvalidSparkInstallFolder">Unable to recognize ''{0}'' as a valid Spark installation folder. Check that this is the root folder of your Spark installation. </entry>
+    <entry key="InvalidURL">Invalid URL ''{0}''. When the location is specified as a URL, it must be of the form ''scheme:/path/to/location'' or ''scheme://hostname:port/path/to/location''.</entry>
+    <entry key="MatFileUnsupportedOnHadoop">Mapreduce using HADOOP does not support datastore type ''KeyValueDatastore'' with ''FileType'' set to ''mat''.</entry>
+    <entry key="MismatchedKeyType">Mismatched key types returned from separate calls to the mapper function on two different workers. The types were ''{0}'' and ''{1}''.</entry>
+    <entry key="MismatchedValueType">Mismatched value types returned from separate calls to the mapper function on two different workers. The types were ''{0}'' and ''{1}''.</entry>    
+    <entry key="MpiShufflerAlreadyRunning">An error occurred during the shuffle-sort stage. The engine was initialized when already running.</entry>
+    <entry key="MpiShufflerCancelled">An error occurred during the shuffle-sort stage on one of the other workers.</entry>
+    <entry key="MpiShufflerCannotRead">An error occurred during shuffle-sort when reading from the local filesystem.</entry>    
+    <entry key="MpiShufflerCannotWrite">An error occurred during shuffle-sort when writing to the local filesystem.</entry>
+    <entry key="MpiShufflerCleanupError">An internal error occurred while cleaning up the shuffle-sort engine:\n{0}</entry>
+    <entry key="MpiShufflerInvalidCommand">Invalid command ''{0}'' passed to the shuffle-sort engine.</entry>
+    <entry key="MpiShufflerInvalidDestination">Invalid shuffle-sort destination. The destination must be the path to a writable folder.</entry>
+    <entry key="MpiShufflerInvalidSource">Invalid shuffle-sort input. The input must be a cell array of filenames that is the same length as the pool size.</entry>    
+    <entry key="MpiShufflerInvalidTimeout">Invalid shuffle-sort finalize timeout. This is required to be a scalar double containing a positive integer.</entry>
+    <entry key="MpiShufflerNullComm">Could not initialize the shuffle-sort engine. MPI is not initialized.</entry>
+    <entry key="MpiShufflerUnknownError">Unknown internal error detected during the shuffle-sort stage.</entry>
+    <entry key="NonFileDatastoreNotSupportedOnHadoop">The MapReduce framework does not support datastore type ''{0}'' on a HADOOP cluster.</entry>
+    <entry key="ParallelHadoopMapReducerDisplayHeader">Parallel mapreduce execution on the Hadoop cluster:</entry>
+    <entry key="ParallelMapReducerDisplayHeader">Parallel mapreduce execution on the parallel pool:</entry>
+    <entry key="ParallelOutputError">An error occurred when writing the results to the output folder.</entry>
+    <entry key="PartitionedDatastoreNotSupportedOnHadoop">The MapReduce framework does not support using a partitioned datastore on a HADOOP cluster.</entry>
+    <entry key="SpmdEnabledRequired">The specified parallel pool does not support mapreduce. Mapreduce requires a pool that has been started with its 'SpmdEnabled' property set to true.</entry>
+    <entry key="StartingSparkContext">Starting a Spark Job on the Hadoop cluster. This could take a few minutes ... </entry>
+    <entry key="StartingSparkContextDone">done.</entry>
+    <entry key="UndefinedFunctionOnWorker">An undefined function error was thrown on the workers for ''{0}''.  The file containing ''{1}'' might not be available on the workers.  Specify the required files for this parallel pool using the command: addAttachedFiles(pool, ...).  See the documentation for parpool for more details.</entry>
+    <entry key="UndefinedFunctionOrHandleOnWorker">An undefined function error was thrown on the workers.  The file containing the mapper or reducer function might not be available on the workers.  Specify the required files for this parallel pool using the command: addAttachedFiles(pool, ...).  See the documentation for parpool for more details.</entry>
+    <entry key="UnsupportedClusterType">The parallel mapreduce algorithm currently supports only the local scheduler and HADOOP cluster.</entry>
+    <entry key="UnsupportedDatastoreType">Datastore of type ''{0}'' is not supported by parallel mapreduce. Use ''mapreducer(0)'' to set the current MATLAB session as the working environment for mapreduce when working with this datastore.</entry>
+    <entry key="UnsupportedOutputSchemeForParallelMapReducer">Unsupported scheme ''{0}'' in location ''{1}''. Map Reduce on a parallel pool currently supports writing only to locations of the form ''file:/path/to/location''.</entry>    
+    <entry key="UnsupportedTextValueType">Unsupported value type passed to ''TabularText'' output type. Written values should be character vectors or numeric scalars.</entry>
+  </message>
+</rsccat>

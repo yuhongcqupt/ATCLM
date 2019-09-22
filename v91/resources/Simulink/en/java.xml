@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rsccat locale="en_US" product="Simulink" version="1.0">
+   <message>
+      <entry key="ModelPropertiesLabel">Model Properties: {0}</entry>
+      <entry key="LoadingModelPropertiesMsg">Loading Model Properties...</entry>
+      <entry key="OKLabel">OK</entry>
+      <entry key="CancelLabel">Cancel</entry>
+      <entry key="HelpLabel">Help</entry>
+      <entry key="ApplyLabel">Apply</entry>
+      <entry key="SummaryLabel">Summary</entry>
+      <entry key="CallbacksLabel">Callbacks</entry>
+      <entry key="HistoryLabel">History</entry>
+      <entry key="CreatorLabel">Creator: </entry>
+      <entry key="CreatedLabel">Created: </entry>
+      <entry key="ModelDescriptionLabel">Model description: </entry>
+      <entry key="ModelPreloadFunctionLabel">Model pre-load function: </entry>
+      <entry key="ModelInitFunctionLabel">Model initialization function: </entry>
+      <entry key="StartFunctionLabel">Simulation start function: </entry>
+      <entry key="PauseFunctionLabel">Simulation pause function: </entry>
+      <entry key="ContinueFunctionLabel">Simulation continue function: </entry>
+      <entry key="StopFunctionLabel">Simulation stop function: </entry>
+      <entry key="PresaveFunctionLabel">Model pre-save function: </entry>
+      <entry key="CloseFunctionLabel">Model close function: </entry>
+      <entry key="VersionInfoLabel">Version information</entry>
+      <entry key="ModelVersionLabel">Model version: </entry>
+      <entry key="SavedByLabel">Last saved by: </entry>
+      <entry key="SavedOnLabel">Last saved on: </entry>
+      <entry key="ViewValuesLabel">View current values</entry>
+      <entry key="EditFormatStrinLabelgs">Edit format strings</entry>
+      <entry key="ModelHistoryLabel">Model history</entry>
+      <entry key="UpdateHistoryPrompt">Prompt to update model history:</entry>
+      <entry key="NeverLabel">Never</entry>
+      <entry key="WhenSavingModelLabel">When saving model</entry>
+   </message>
+</rsccat>

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2009-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgc
+at.xsd">
+  <message>
+    <!-- Untraslated messages -->
+    <entry key="AdvisorMainGroupId"
+    translate="false">com.mathworks.Simulink.ModelReferenceAdvisor.MainGroup</entry>
+
+    <entry key="AdvisorSubsystemInterfaceId"
+    translate="false">com.mathworks.Simulink.ModelReferenceAdvisor.SubsystemInterface</entry>
+
+    <entry key="AdvisorSubsystemContentId"
+    translate="false">com.mathworks.Simulink.ModelReferenceAdvisor.SubsystemContent</entry>
+
+    <entry key="AdvisorInputParametersId"
+    translate="false">com.mathworks.Simulink.ModelReferenceAdvisor.InputParameters</entry>
+
+    <entry key="AdvisorModelConfigurationsId"
+    translate="false">com.mathworks.Simulink.ModelReferenceAdvisor.ModelConfigurations</entry>
+
+    <entry key="AdvisorTerminateId"
+    translate="false">com.mathworks.Simulink.ModelReferenceAdvisor.Terminate</entry>
+
+    <entry key="AdvisorCompileModelId"
+    translate="false">com.mathworks.Simulink.ModelReferenceAdvisor.CompileModel</entry>
+
+    <entry key="AdvisorCompleteConversionId"
+    translate="false">com.mathworks.Simulink.ModelReferenceAdvisor.CompleteConversion</entry>
+
+    <!-- Translated messages -->
+    <entry key="AdvisorName">Model Reference Conversion Advisor</entry>
+
+    <entry key="ConversionDialogTitle">Convert subsystem ''{0}'' to a referenced
+    model.</entry>
+
+    <entry key="RightClickBuildDialogTitle">Generate code for subsystem ''{0}''.</entry>
+
+    <entry key="ConversionDialogSubsystemName">Subsystem name:</entry>
+
+    <entry key="ConversionDialogNewModelName">New model name:</entry>
+
+    <entry key="ConversionDialogReplaceSubsystem">Replace the content of a subsystem with a Model
+    block</entry>
+
+    <entry key="ConversionDialogCheckSimulationResults">Check simulation results
+    after conversion</entry>
+
+    <entry key="ConversionDialogDataFileName">Conversion data file name: </entry>
+
+    <entry key="ConversionDialogBuildTarget">Build target:</entry>
+
+    <entry key="ConversionDialogAutoFix">Fix errors automatically (if possible)</entry>
+
+    <entry key="ConversionDialogCreateWraperSubsystem">Create a wrapper subsystem</entry>
+
+    <entry key="ConversionDialogSaveNewModel">Save new model</entry>
+
+    <entry key="AdvisorMainGroupItem">{0}</entry>
+
+    <entry key="AdvisorSubsystemInterfaceItem">Check subsystem interface</entry>
+
+    <entry key="AdvisorSubsystemContentItem">Check subsystem content</entry>
+
+    <entry key="AdvisorInputParametersItem">Check conversion input parameters</entry>
+
+    <entry key="AdvisorModelConfigurationsItem">Check model configurations</entry>
+
+    <entry key="AdvisorCompleteConversionItem">Complete conversion</entry>
+
+    <entry key="AdvisorMainGroupAnalysis">Convert subsystem ''{0}'' to a
+    referenced model. In the dialog box, specify the input parameters and click
+    the Convert button.</entry>
+
+    <entry key="AdvisorSubsystemInterfaceAnalysis">Verify that the subsystem
+    interface meets the model referencing requirements.</entry>
+
+    <entry key="AdvisorSubsystemContentAnalysis">Verify that the subsystem
+    content meets the model referencing requirements.</entry>
+
+    <entry key="AdvisorInputParametersAnalysis">Verify that all conversion input
+    parameters are valid. If this check fails, correct any invalid input
+    parameters in the ''{0}'' node and rerun the conversion. The Model Reference
+    Conversion Advisor will collect the baseline of the top model if
+    required.</entry>
+
+    <entry key="AdvisorModelConfigurationsAnalysis">Verify that the model
+    configuration meets model referencing requirements.</entry>
+
+    <entry key="AdvisorCompleteConversionAnalysis">After the model passes all of
+    the checks, run the conversion, which: \n 1. Creates a referenced model from
+    the subsystem.\n 2. Builds the model reference target if required.\n
+    3. Saves any objects required for the referenced model.\n 4. Creates a
+    Model block.\n 5. Verify the top model simulation results if
+    specified.</entry>
+
+    <entry key="ChangeModelParameter">Changed the parameter ''{0}'' of the model
+    ''{1}'' from ''{2}'' to ''{3}''</entry>
+
+    <entry key="ChangeSubsystemParameter">Changed the parameter ''{0}'' of the
+    subsystem ''{1}'' from ''{2}'' to ''{3}''</entry>
+
+    <entry key="FixTunableParameters">Created Simulink.Parameter objects in the
+    base workspace for tunable parameters {0}.</entry>
+
+    <entry key="CheckFailed">Check failed</entry>
+
+    <entry key="CheckWarn">Warnings:</entry>
+
+    <entry key="CheckPassed">Passed</entry>
+
+    <entry key="DefaultActionDescription">If the ''{0}'' button is enabled,
+    click it to fix at least some of the problems.  After the automatic fixes
+    are reported, click the ''{1}'' or ''{2}'' button and address any remaining
+    issues.</entry>
+
+    <entry key="FixButtonLabel">Fix</entry>
+
+    <entry key="FixDescription">Applied fixes:</entry>
+
+    <entry key="AutoFixDescription">Applied auto-fixes:</entry>
+
+    <entry key="RemainIssueDescription">Remaining issues:</entry>
+
+    <entry key="ReportTitle">Simulink Model Reference Conversion Advisor
+    Report</entry>
+
+    <entry key="RootHelp">Model Reference Conversion Advisor Help</entry>
+
+    <entry key="PerformReportFor">Model Reference Conversion Advisor report for
+    ''{0}''</entry>
+
+    <entry key="Category">Model Reference Conversion</entry>
+
+    <entry key="BackupName">Model Reference Conversion Advisor</entry>
+
+    <entry key="BackupDescription">Back up model ''{0}'' and its configuration
+    set before converting subsystem ''{1}'' to a Model block.</entry>
+
+    <entry key="ConversionIsCompleted">The original subsystem ''{0}'' has been
+    converted to a Model block. You can not run this check.</entry>
+
+    <entry key="CannotConvertSubsystem">Cannot convert subsystem {0} to a
+    referenced model</entry>
+
+    <entry key="BuildTargetNone">None</entry>
+
+    <entry key="BuildTargetSim">Sim</entry>
+
+    <entry key="BuildTargetRTW">RTW</entry>
+
+    <entry key="StandaloneRTWTarget">StandaloneRTWTarget</entry>
+
+    <entry key="LocalDataStoreCrossSubsystemBoundary">The Data Store Memory
+    block ''{0}'' associated with ''{1}'' block is crossing the subsystem
+    ''{2}'' boundary. Cannot convert this subsystem to model reference.</entry>
+
+    <entry key="UpdateDataStoreName">Replaced the Data Store Memory block ''{0}''
+    with a global data store and updated associated Data Store Read and Data
+    Store Write blocks to read from or write to the global data store defined by
+    the Simulink.Signal variable ''{1}''.</entry>
+
+    <entry key="UnwritableFolder">The current folder ''{0}'' is not
+    writable. Please make it writable or change to a writable folder.</entry>
+
+    <entry key="invalidSSTypeSimulinkFunction">Error converting subsystem
+    ''{0}''. You cannot convert a Simulink Function to a referenced
+    model.</entry>
+
+    <entry key="ConversionInfo">Note:</entry>
+
+    <entry key="SaveDataMessage">All variables created during conversion process
+    were saved to ''{0}''.</entry>
+
+    <entry key="FileExisted"> File ''{0}'' is already on the MATLAB path. Remove
+    this file from the search path and then resume the model reference conversion
+    process.</entry>
+
+    <entry key="ModifyModelBlockSimulationMode">changing a new Model block to
+    ''{0}'' simulation mode</entry>
+    
+    <entry key="SimulationResultsMismatch"> The simulation results obtained from
+    {0} do not match the baseline results collected using the original
+    model. {1}.</entry>
+
+    <entry key="SimulationResultsInfo"> The simulation results obtained from {0}
+    are consistent with the baseline results collected using the original
+    model. {1}.</entry>
+
+    <entry key="ClickToOpenSDIView">Click here to view the comparison results</entry>
+
+    <entry key="SetModelParameter">Changed parameter ''{0}'' of model ''{1}''.</entry>
+
+    <entry key="CopiedParameter">Copied variable ''{0}'' to model ''{1}''
+    workspace.</entry>
+
+    <entry key="Baseline">Baseline</entry>
+
+    <entry key="StopTime">Stop time:</entry>
+
+    <entry key="RelativeTolerance">Relative tolerance:</entry>
+
+    <entry key="AbsoluteTolerance">Absolute tolerance:</entry>
+
+    <entry key="NormalMode">Normal</entry>
+
+    <entry key="AccelMode">Accelerator</entry>
+
+    <entry key="SimulationMode">Model block simulation mode:</entry>
+
+    <entry key="InvalidModelBlockSimulationMode">Specified simulation mode for
+    the Model blocks is invalid ''{0}''</entry>
+
+    <entry key="InputParameterInfo">{0} {1}</entry>
+
+    <entry key="CompleteConversionMessage">Subsystem ''{0}'' has been converted
+    to a referenced model. {1}.</entry>
+
+    <entry key="RestoreOriginalModel">Click here to restore the original
+    model</entry>
+
+    <entry key="ConversionDialogSubsystemNameDesc">Name of a subsystem being converted.</entry>
+
+    <entry key="ConversionDialogNewModelNameDesc">Use unique model name.</entry>
+
+    <entry key="ConversionDialogReplaceSubsystemDesc">Replace subsystem with Model block.</entry>
+
+    <entry key="ConversionDialogCreateWrapperSubsystemDesc">Create a new
+    subsystem that wraps around the converted subsystem.</entry>
+
+    <entry key="ConversionDialogCheckSimulationResultsDesc">Compare top model
+    simulation result when Model block replaces subsystem.</entry>
+
+    <entry key="ConversionDialogDataFileNameDesc">Enter unique name of file for
+    storing variables created during conversion.</entry>
+
+    <entry key="ConversionDialogAutoFixDesc">Have the Advisor fix errors
+    automatically, if possible.</entry>
+
+    <entry key="RelativeToleranceDesc">Relative tolerance</entry>
+
+    <entry key="AbsoluteToleranceDesc">Absolute tolerance</entry>
+
+    <entry key="SimulationModeDesc">Simulation mode of new Model block.</entry>
+
+    <entry key="RestoreDialogTitle">Restore the original top model</entry>
+
+    <entry key="RestoreDialogMessage">Do you want to restore the original top model?</entry>
+
+    <entry key="WarnAboutBusOptions">All bus objects created during the conversion
+    process are saved to the conversion data file.</entry>
+
+    <entry key="InfSampleTime">You cannot use ''{0}'' as stop time.</entry>
+
+    <entry key="CopyParameterToReferencedModel">Parameter ''{0}'' has been
+    copied from the top model to the referenced model.</entry>
+
+    <entry key="NoDataLogged"><![CDATA[Baseline creation requires that at least one signal is marked for logging, signal logging is enabled, and each logged signal is logged with timing information for analysis. To configure signals to log, use the <a href = "matlab: modeladvisorprivate openCSAndHighlight
+    {0} ''SignalLogging''">Configuration Parameters> Data Import/Export</a> pane.]]> </entry>
+    
+    <entry key="LongModelName">The new model name must be less than {0}
+    characters.</entry>
+
+    <entry key="InvalidDataFileExtention">Unsupported data file extension
+    ''{0}''. The data file extension must be ''{1}'' or ''{2}''.</entry>
+
+    <entry key="ReferencedModelAndVariableHaveSameName">A variable named ''{0}''
+    exists in the workspace. You cannot use ''{1}'' as a new model name.</entry>
+
+    <entry key="CannotCompileModel">Model ''{0}'' does not compile due to the
+    following issues:.</entry>
+        
+    <entry key="InvalidSignalResolution"><![CDATA[The <a href = "matlab: modeladvisorprivate openCSAndHighlight {0} ''SignalResolutionControl''">Signal resolution</a> option must be set to ''None'' or ''Explicit only''.  See the Model Advisor ''Check for implicit signal resolution'' and Simulink documentation for more information.]]> </entry>
+
+    <entry key="Initialization"><![CDATA[To convert an exported function subsystem to model reference, set the <a href = "matlab: modeladvisorprivate openCSAndHighlight {0} ''UnderspecifiedInitializationDetection''">Underspecified initialization detection</a> parameter to ''Simplified''.]]> </entry>
+
+    <entry key="FcnCallConn"><![CDATA[To convert an exported function subsystem to model reference, set the <a href = "matlab: modeladvisorprivate openCSAndHighlight {0} ''InvalidFcnCallConnMsg''">Invalid function-call connection</a> parameter to ''Error''.]]> </entry>
+
+    <entry key="ContextDepInputs"><![CDATA[To convert an exported function subsystem to model reference, set the <a href = "matlab: modeladvisorprivate openCSAndHighlight {0} ''FcnCallInpInsideContextMsg''">Context-dependent inputs</a> parameter to ''error''.]]> </entry>
+    
+    <entry key="SolverType"><![CDATA[To convert an exported function subsystem to model reference, set the <a href = "matlab: modeladvisorprivate openCSAndHighlight {0} ''SolverType''">Type</a> parameter to ''Fixed-step''.]]> </entry>
+    
+    <entry key="Solver"><![CDATA[To convert an exported function subsystem to model reference, set the <a href = "matlab: modeladvisorprivate openCSAndHighlight {0} ''Solver''">Solver</a> parameter to ''discrete (no continuous states)''.]]> </entry>
+
+    <entry key="SampleTimeConstraint"><![CDATA[To convert an exported function subsystem to model reference, set the <a href = "matlab: modeladvisorprivate openCSAndHighlight {0} ''SampleTimeConstraint''">Periodic sample time constraint</a> parameter to ''Unconstrained''.]]> </entry>
+
+    <entry key="invalidExportedFunctionSS">The subsystem ''{0}'' cannot be
+    converted to a referenced model. </entry>
+    
+    <entry key="invalidModelSettings">Cannot convert subsystem to a referenced
+    model.</entry>
+
+    <entry key="InlineParamsOff">''Inline Parameters'' option in the
+    optimization tab of Configuration Parameters dialog is ''off''.  ''Inline
+    parameters'' must be ''on'' in order to convert a subsystem to model
+    reference.</entry>
+
+    <entry key="TunableVarsTableNotEmpty">The information in the tunable
+    parameters table is being ignored when using model referencing. To control
+    parameter tunability you will need to create Simulink parameter objects for
+    the relevant parameters and set their storage classes accordingly. See help
+    for tunablevars2parameterobjects for more information.</entry>
+
+    <entry key="GotoFromCrossingSubsystemBoundary">Goto and From blocks are
+    crossing the subsystem boundary.</entry>
+    
+    <entry key="InvalidGotoFromPair">The Goto block ''{0}'' and the From block
+    ''{1}'' cross the subsystem ''{2}'' boundary.</entry>    
+
+    <entry key="FixOutsideGotoProblem">Added a new inport ''{0}'' to model ''{1}'' and
+    connected it to the Goto block ''{2}'' to avoid the Goto and From blocks
+    crossing the subsystem boundary.</entry>
+
+    <entry key="FixInsideGotoProblem">Added a new outport ''{0}'' to model ''{1}''
+    and connected it to the Goto block ''{2}'' to avoid the Goto and From blocks
+    crossing the subsystem boundary.</entry>
+
+    <entry key="FixSimpleDataStoreMemoryProblem">Moved Data Store Memory block
+    ''{0}'' inside a subsystem ''{1}'' to avoid the Data Store Memory block
+    crossing the subsystem boundary.</entry>
+
+    <entry key="CreateWrapperSubsystemInfo">Created wrapper subsystem for the
+    original subsystem ''{0}''.</entry>
+
+    <entry key="InvalidMaskedSubsystem">The subsystem ''{0}'' mask has
+    initialization code. Cannot convert this subsystem to a referenced
+    model.</entry>
+
+    <entry key="InvalidSubsystemUnderMask">The subsystem ''{0}'' is under a
+    masked subsystem ''{1}''. Cannot convert this subsystem to a referenced
+    model.</entry>
+
+    <entry key="InvalidSubsystemStateflow">The subsystem ''{0}'' contains a
+    Stateflow chart with machine parented data or events, or exported graphical
+    functions. Cannot convert this subsystem to a referenced model.</entry>
+
+    <entry key="StateflowMessageCrossSubsystemBoundary">A Stateflow message is
+    sent across subsystem ''{0}'' boundary. Stateflow messages cannot be model
+    reference inputs or outputs. Cannot convert this subsystem to a referenced
+    model.</entry>
+
+    <entry key="CopySubsystemMaskToNewModel">The subsystem ''{0}'' mask is
+    copied to the model ''{1}''. If you did not enable the "Check simulation
+    results after conversion" checkbox, then verify that the simulation results
+    are consistent with preconversion simulation results.</entry>
+    
+    <entry key="OptionalParameters">Optional Parameters:</entry>
+ 
+    <entry key="NestedSubsystems">Subsystem ''{0}'' contains subsystem
+    ''{1}''. Cannot convert nested subsystems to referenced models.</entry>
+
+    <entry key="InsertSignalConversionBlock">A Signal Conversion block ''{0}''
+    is inserted after port ''{1}'' of the subsystem ''{2}''. This action makes
+    the top model behavior consistent after the subsystem ''{3}'' is replaced
+    with a Model block.</entry>
+
+    <entry key="ExpandPortsWithVirtualBusSignals">Modify subsystem interface
+    to expand all ports which have virtual bus signals ''{0}''.</entry>
+
+    <entry key="ExpandPortsWithVirtualBusSignalsDlg">Expand all virtual bus signals.</entry>
+
+    <entry key="TimeOut">Simulation time out (seconds).</entry>
+    
+    <entry key="TriggerSubsystemMustBeAtTopLevel">A trigger subsystem ''{0}''
+    must be at the top level of a subsystem ''{1}''.</entry>
+
+    <entry key="ConvertTriggerSubsystemAtTopLevel">Convert all triggered
+    subsystems at top level of subsystem ''{0}'' to function call
+    subsystems.</entry>
+  </message>
+</rsccat>

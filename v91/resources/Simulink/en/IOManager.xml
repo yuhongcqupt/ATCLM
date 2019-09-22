@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2009-2012 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="BdWatchSigsDlgMATLABErr">Error opening the ''Watch Signals'' dialog for block diagram ''{0}''.</entry>
+    <entry key="SigGenCannotFeedBlockInLib">Signal generator ''{0}'' cannot be connected to block ''{1}''.  Signal generators are not allowed to connect to ports inside of library blocks</entry>
+    <entry key="SigGenConnectionNotValid">Signal generator ''{0}'' was previously providing input for block ''{1}'', input port {2,number,integer}.  That destination port is no longer valid and will be removed from the signal generator''s signal list</entry>
+    <entry key="SigGenIsUnconnected"><![CDATA[Signal & Scope Manager contains an unconnected signal generator: ''{0}''. It might produce sample time code that has no effect in the generated code. To eliminate this unnecessary code, either delete the signal generator or connect it to a block input port.]]></entry>
+    <entry key="SigGenReconnectionNotValid">Signal generator ''{0}'' was previously providing input for a destination port that was not copied. The destination port cannot be reconnected and will be removed from the signal generator''s signal list</entry>
+    <entry key="ViewerConnectionNotValid">Viewer ''{0}'' was previously observing the signal originating from block ''{1}'', output port {2,number,integer}.  That signal is no longer valid and will be removed from the viewer''s signal list</entry>
+    <entry key="ViewerReconnectionNotValid">Viewer ''{0}'' was previously observing the signal originating from an output port that was not copied.  The output port cannot be reconnected and will be removed from the viewer''s signal list</entry>
+    <entry key="ViewersLabel">Viewers</entry>
+    <entry key="GeneratorsLabel">Generators</entry>
+  </message>
+</rsccat>

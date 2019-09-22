@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2013 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+    <entry key="IllegalComposite">Composite objects cannot be used within a parfor loop.</entry>
+    <entry key="NoRunningSession">No running parallel pool. To start a new parallel pool use {0}.</entry>
+    <entry key="NoSession">No current parallel pool. To start a new parallel pool use {0}.</entry>
+    <entry key="SessionShutDown">The parallel pool that parfor was using has shut down. To start a new parallel pool, run your parfor code again or use {0}.</entry>
+    <entry key="SourceCodeNotAvailable">Worker unable to find file.</entry>
+  </message>
+</rsccat>

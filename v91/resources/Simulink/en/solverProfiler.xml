@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2009-2014 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+   <message>
+    <!-- Diagnostics  -->
+    
+    <entry key="denseFailureAtEnd"> Solver exception caused the simulation to stall.</entry>
+    <entry key="idFailureStates"> Click states in the Solver exception table and observe solver exceptions on the Step size plot. </entry>
+                                       
+    <entry key="denseFailureSuggestion1">Identify states that contributed to the majority of solver exceptions or solver exceptions around the paused or stopped time point. </entry>
+    <entry key="denseFailureSuggestion2">Highlight corresponding blocks in the model. Check the values and units of block parameters.</entry>
+    <entry key="denseFailureSuggestion3">Examine upstream blocks to identify potential modeling improvements. </entry>
+    <entry key="denseFailureSuggestion4">If states are logged, select each state and click on States Explorer or Simscape Results Explorer to view the state plot.
+                               Look for unexpected behavior in the plots. </entry>
+    
+    <entry key="denseZCAtEnd">Zero crossing caused the simulation to stall.</entry>
+    <entry key="idZCBlocks"> Click blocks in the Zero crossing table and observe zero crossings on the Step size plot.</entry>
+    
+    <entry key="denseZCSuggestion1">Identify blocks that contributed to the majority of zero crossings around the paused or stopped time point.</entry>
+    <entry key="denseZCSuggestion2">Highlight each block in the model. Explore the zero crossing setting for the block.</entry>
+    <entry key="denseZCSuggestion3">Examine upstream blocks to identify potential modeling improvements.</entry>
+    
+    <entry key="denseResetAtEnd">Solver reset caused the simulation to stall at the paused or stopped time point.</entry>
+    <entry key="denseResetSuggestion">Check the model to see if any continuous blocks are driven by discrete blocks.</entry>
+    
+    <entry key="DAEHminFound">Solver profiler found Differential Algebraic Equation (DAE) exceptions.</entry>
+    <entry key="exploreStatesDAEHmin">Rank solver exceptions according by DAE newton iteration exception. Explore states with DAE exceptions in the table.</entry>
+    
+    <entry key="denseReset">The ratio of solver resets to solver steps was too large. This caused the simulation to slow down.</entry>
+    
+    <entry key="denseFailure">Solver profiler detected dense groups of solver exceptions in these regions:</entry>
+    <entry key="FromTo">From: {0} To:  {1}</entry>
+    <entry key="denseFailureSuggestion5">Identify states that contributed to the majority of solver exceptions in these regions.</entry>
+    
+    <entry key="denseZC">Solver profiler detected dense groups of zero crossings in these regions:</entry>
+    <entry key="denseZCSuggestion4">Identify states that contributed to the majority of zero crossings in these regions.</entry>
+    
+    <entry key="hmaxRatio"> During simulation, the solver used the maximum step size {0}% of total simulation time.</entry>
+    <entry key="speedImprove">You can improve the simulation speed.</entry>
+
+    <entry key="hmaxRatioSuggestion">Increase the maximum step size in the Solver pane of model configuration parameters.</entry>
+    
+    <entry key="suggestTurnOnDecouple"> Setting ''DecoupleContODEIntegFromDiscRates'' parameter to ''on'' might speed up simulation.
+    Note, simulation results might be slightly different, but still satisfy the tolerance settings.</entry>
+    <entry key="DecoupleInfoHmax"> Max step size determined by the solver is {0}, </entry>
+    <entry key="DecoupleInfoSDiscTs"> while the fastest discrete rate is {0}. </entry>
+    <entry key="DecoupleInfoNoDiscRate"> while there is no discrete rate. </entry>
+    <entry key="DecoupleInfoSlow"> Simulation might slow down because of this large rate difference.</entry>
+    <entry key="DecoupleSuggestOn"> Set ''DecoupleContODEIntegFromDiscRates'' parameter to ''on'' 
+    by typing set_param(''{0}'', ''DecoupleContODEIntegFromDiscRates'', ''on'') at the matlab command prompt.</entry>
+    <entry key="DecoupleSuggestOff"> Set ''DecoupleContODEIntegFromDiscRates'' parameter to ''off''
+    by typing set_param(''{0}'', ''DecoupleContODEIntegFromDiscRates'', ''off'') at the matlab command prompt.</entry>
+    
+    <entry key="nothing">Solver profiler found no issues in the model.</entry>
+    
+    <!-- Overview  -->
+    <entry key="modelInfo"> MODEL INFORMATION</entry>
+    <entry key="blocksWithState">Blocks with states</entry>
+    <entry key="allStates">States</entry>
+    <entry key="startTime">Start time</entry>
+    <entry key="stopTime">Stop time</entry>
+    <entry key="absoluteTolerance">Absolute tolerance</entry>
+    <entry key="relativeTolerance">Relative tolerance</entry>
+    <entry key="stepInfo"> STEP INFORMATION</entry>
+    <entry key="maxStepSize">Max step size</entry>
+    <entry key="minStepSize">Min step size</entry>
+    <entry key="averageStepSize">Average step size</entry>
+    <entry key="percentageOfMaxSteps">Max step size usage(%)</entry>
+    <entry key="totalSteps">Total steps</entry>
+    <entry key="profileSimTimeRatio">Profile/sim time ratio</entry>
+    <entry key="eventInfo"> EVENT INFORMATION</entry>
+    <entry key="zcSources">Zero crossing source</entry>
+    <entry key="zcSourcesTriggered">Zero crossing source triggered</entry>
+    <entry key="totalZC">Total zero crossing</entry>
+    <entry key="totalSolverResets">Total solver reset</entry>
+    <entry key="totalJacobianUpdate">Total jacobian update</entry>
+    <entry key="totalFailures">Total solver exception</entry>
+    <entry key="errorExceedsTolerance"> Error control exception</entry>
+    <entry key="newtonIterationFailure"> Newton iteration exception</entry>
+    <entry key="infiniteState">Infinite state exception</entry>
+    <entry key="daeMinStepSizeViolation">DAE newton iteration exception</entry>
+    
+    <!-- Tab/Icon/document Name -->
+    <entry key="exportTable">Export Table</entry>
+    <entry key="Profiler">Solver Profiler</entry>
+    <entry key="Explorer">State Explorer</entry>
+    <entry key="Statistics"> Statistics</entry>
+    <entry key="Stepsize">Step Size</entry>
+    <entry key="Diagnostics">Suggestion</entry>
+    <entry key="Zerocrossing">Zero Crossing</entry>
+    <entry key="Solverexception">Solver Exception</entry>
+    <entry key="rankedStates">Ranked States</entry>
+    <entry key="stateDeriv">State and Derivative</entry>
+    <entry key="Solverreset">Solver Reset</entry>
+    <entry key="Solverjacobian">Jacobian Update</entry>
+    <entry key="JacobianAnalysis">Jacobian Analysis</entry>
+    
+    <entry key="save">Save</entry>
+    <entry key="saveRule">Save Rule Set</entry>
+    <entry key="saveSession">Save Session Data</entry>
+    <entry key="load">Load</entry>
+    <entry key="loadRule">Load Rule Set</entry>
+    <entry key="loadSession">Load Session Data</entry>
+    <entry key="buffer">Buffer:</entry>
+    <entry key="event">Events</entry>
+    <entry key="logStates">Continuous States</entry>
+    <entry key="logSimlog">Simscape States</entry>
+    <entry key="logJacobian">Model Jacobian</entry>
+    <entry key="rule">Rule Customization</entry>
+    <entry key="From">From:</entry>
+    <entry key="To">To:</entry>
+    <entry key="run">Run</entry>
+    <entry key="continue">Continue</entry>
+    <entry key="pause">Pause</entry>
+    <entry key="stop">Stop</entry>
+    <entry key="zoomIn">Zoom In</entry>
+    <entry key="zoomOut">Zoom Out</entry>
+    <entry key="pan">Pan</entry>
+    <entry key="hilite">Highlight \n Block</entry>
+    <entry key="traceSrc">Source </entry>
+    <entry key="traceDst">Destination</entry>
+    <entry key="removeTrace">Clear</entry>
+    <entry key="statesExplorer">State</entry>
+    <entry key="SSCExplorer">Simscape \n Results</entry>
+    <entry key="newPlot">Send to \n Figure</entry>
+    <entry key="newTable">Export \n Table</entry>
+    
+    <entry key="stateRankType1">State Derivative</entry>
+    <entry key="stateRankType2">Newton/DAE Exception</entry>
+    <entry key="stateRankType3">State Value</entry>
+    <entry key="stateRankType4">Error Control Exception</entry>
+    <entry key="stateRankType5">State Name</entry>
+    <entry key="stateRankType6">State Chatter</entry>
+    
+    <entry key="newtonDAE">Newton/DAE Exception</entry>
+    <entry key="errorControl">Error Control Exception</entry>
+    <entry key="sec">sec</entry>
+    <entry key="rankBy">Rank States By:</entry>
+    
+    <entry key="stateRange">f(State)</entry>
+    <entry key="derivative">f(Derivative)</entry>
+    <entry key="number">Number</entry>
+    <entry key="likelihood">Likelihood</entry>
+    <entry key="index">Index</entry>
+    <entry key="state">State</entry>
+    <entry key="block">Block</entry> 
+    
+    <entry key="exceptionColumnName1">Total </entry>
+    <entry key="exceptionColumnName2">Error Control </entry>
+    <entry key="exceptionColumnName3">Newton Iteration </entry>
+    <entry key="exceptionColumnName4">Infinite State </entry>
+    <entry key="exceptionColumnName5">DAE </entry>
+    <entry key="exceptionColumnName6">Model State</entry>
+    
+    <entry key="plotXLabel">time (sec)</entry>
+    <entry key="plotYLabel">step (sec)</entry>
+    
+    <entry key="limitingStates">Limiting State</entry>
+    
+    <!-- Messages -->
+     <entry key="modeSupport">Solver profiler only supports normal or accelerator mode, 
+     consider switching to normal mode for profiling and switch back to the current mode afterwards.</entry>
+     <entry key="rankRangeInvalid">There are no states logged outside the time range of</entry>
+     <entry key="compiling">Compiling </entry>
+     <entry key="processingData">Processing data </entry>
+     <entry key="simulationProgress">Simulation progress </entry>
+     <entry key="simulationShort">Not enough data collected. Simulation must run longer to sufficiently profile. </entry>
+     <entry key="fixedStepSolver">Solver profiler does not support profiling for models using fixed-step solvers or Variable-Step Discrete solver. </entry>
+     <entry key="failedToLaunchSP">Solver Profiler Failed to Launch</entry>
+     <entry key="failedToStart">Profiling Cannot Start</entry>
+     <entry key="noStateLogged">State values are not logged during simulation.</entry>
+     <entry key="failedToLaunchSE">No State Data</entry>
+     <entry key="noSimlogLogged">Simscape block state values are not logged during simulation.</entry>
+     <entry key="failedToLaunchSSC">No Simscape State Data</entry>
+     <entry key="notTheSameModel">The name of the current model does not match with the model name in selected session data:</entry>
+     <entry key="failedToLoadData">Cannot Load Data</entry>
+     <entry key="bufferSizeInvalid">Buffer size must be a positive integer.</entry>
+     <entry key="startTimeInvalid">Start time must be positive number.</entry>
+     <entry key="startExceedEnd">Start time must be before end time.</entry>
+     <entry key="endTimeInvalid">Stop time must be positive number.</entry>
+     <entry key="endBeforeStart">Stop time must be after start time.</entry>
+     <entry key="simHasStarted">The model simulation is not in stopped mode. Please stop the existing simulation before profiling again.</entry>
+     <entry key="notASessionData">The selected mat file is not a Solver Profiler session data. Otherwise, data has been corrupted.</entry>
+     <entry key="modelNotLoaded">Model ''{0}'' is not loaded. If it has been saved as a new model, please launch solver profiler from the new model to start profiling.</entry>
+     <entry key="customRuleFail">Unable to run custom diagnostics</entry>
+     <entry key="customRankFail">Unable to rank states</entry>
+     <entry key="ruleLoadFail">The selected file is not a solver profiler rule set</entry>
+     <entry key="ruleValuesOutRange">Threshold values must be a postive number between 0 and 100</entry>
+     <entry key="ruleValuesShouldBePositive">Threshold values must be a postive number</entry>
+     <entry key="stateValEmpty">State value is not logged</entry>
+     <entry key="customRankWrongFileType">Custom rank for State Explorer can only be m files</entry>
+     <entry key="customRuleWrongFileType">Custom rule for Solver Profiler can only be m files</entry>
+     <entry key="customRuleFileNotExist">Cannot find the entered file, please eneter the absolute path</entry>
+     
+     
+    <!-- Tooltip -->
+    <entry key="loadTip">Load session</entry>
+    <entry key="loadRuleTip">Load custom solver profiler rules</entry>
+    <entry key="saveTip">Save session</entry>
+    <entry key="saveRuleTip">Save custom solver profiler rules</entry>
+    <entry key="fromTip">Profiling start time in seconds</entry>
+    <entry key="toTip">Simulation stop time in seconds</entry>
+    <entry key="bufferTip">Maximum number of solver exceptions to collect</entry>
+    <entry key="stateCheckboxTip">Log all continuous states in the model</entry>
+    <entry key="simlogCheckboxTip">Log Simscape states</entry>
+    <entry key="jacobianCheckboxTip">Log model jacobian</entry>
+    
+    <entry key="runTip">Run</entry>
+    <entry key="ContinueTip">Continue</entry>
+    <entry key="pauseTip">Pause</entry>
+    <entry key="stopTip">Stop</entry>
+    <entry key="zoomInTip">Zoom in</entry>
+    <entry key="zoomOutTip">Zoom out</entry>
+    <entry key="panTip">Pan</entry>
+    
+    <entry key="exceptionCheckboxTip">Show solver exception events</entry>
+    <entry key="zcCheckboxTip">Show zero crossing events</entry>
+    <entry key="resetCheckboxTip">Show solver reset events</entry>
+    <entry key="jacobianUpdateCheckboxTip">Show jacobian update events</entry>
+    <entry key="ruleTip">Customize solver profiler suggestions</entry>
+    
+    <entry key="fromSETip">Start of state plot range</entry>
+    <entry key="toSETip">End of state plot range</entry>
+    <entry key="rankTip">Rank continuous states</entry>
+    <entry key="editTip">Edit custom state ranking algorithms</entry>
+    
+    <entry key="newtonDAECheckboxTip">Show Newton/DAE solver exceptions of the selected state</entry>
+    <entry key="otherCheckboxTip">Show all other solver exceptions of the selected state</entry>
+    
+    <entry key="hiliteTip">Highlight selected block in model</entry>
+    <entry key="traceSrcTip">Trace to immediate source</entry>
+    <entry key="traceDstTip">Trace to immediate destination</entry>
+    <entry key="removeTraceTip">Remove trace</entry>
+    <entry key="statesExplorerTip">Explore continuous states</entry>
+    <entry key="SSCTip">Explore Simscape states</entry>
+    <entry key="newPlotTip">Send figure to a MATLAB figure window</entry>
+    <entry key="newTableTip">Save tabular data to a CSV file</entry>
+    
+    <entry key="whatisthis">What''s This</entry>
+    
+    <!-- Rule Window -->
+    <entry key="restoreDefault">Restore to Default</entry>
+    <entry key="suggestionWhenHang">If simulation hangs or pauses, show suggestions when:</entry>
+    <entry key="exceptionToSteps">Ratio of solver exceptions to number of steps exceeds</entry>
+    <entry key="zcToSteps">Ratio of zero crossing events to number of steps exceeds</entry>
+    <entry key="resetToSteps">Ratio of solver reset events to number of steps exceeds</entry>
+    <entry key="suggestionOverEntire">Over the entire simulation, show suggestions when:</entry>
+    <entry key="thereAreDAE">There are any DAE newton iteration exceptions during simulation</entry>
+    <entry key="thereAreRateDifferences">There is coupling between continuous and discrete rates</entry>
+    <entry key="exceptionOneSecond">Number of solver exception in one second simulation time exceeds</entry>
+    <entry key="zcOneSecond">Number of zero crossing in one second simulation time exceeds</entry>
+    <entry key="maxStepPercent">Percentage of steps with max step size exceeds</entry>
+    <entry key="customRuleSet">Custom Rule Set</entry>
+    
+    <!-- Section Name -->
+    <entry key="file">file</entry>
+    <entry key="setup">log</entry>
+    <entry key="profile">profile</entry>
+    <entry key="view">view</entry>
+    <entry key="filter">filter</entry>
+    <entry key="trace">trace</entry>
+    <entry key="explore">explore</entry>
+    <entry key="share">share</entry>
+    <entry key="range">range</entry>
+    <entry key="rank">rank</entry>
+    
+    
+   </message>
+</rsccat>

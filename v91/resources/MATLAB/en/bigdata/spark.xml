@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- Copyright 2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+    <message>
+        <!-- Please keep in alphabetical order! -->
+        <entry key="InternalError">An internal error has occurred while evaluating on Spark:\n\n{0}</entry>
+    </message>
+</rsccat>

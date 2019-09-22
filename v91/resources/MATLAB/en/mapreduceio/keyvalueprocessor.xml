@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- Copyright 2014 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+    <message>
+        <entry key="nonHomogeneousKey">This KeyValueStore contains {0} keys.\nYou cannot add a different type ({1}) of key.</entry>
+        <entry key="nonSingleKey" note="stringDatatypeUpdate">Key must be a character vector or a numeric scalar. Use addmulti() to add multiple key-value pairs.</entry>
+        <entry key="nonHomogeneousType">{0} must be a numeric cell of the same type.</entry>
+        <entry key="nonCellStrNonNumVec" note="stringDatatypeUpdate">{0} must always be the same type, either character vector or numeric.</entry>
+        <entry key="nonCellMultiValue">Multiple values must be in a cell array.</entry>
+        <entry key="nonEqualNumKeysValues">Keys and values must be vectors of the same length.</entry>
+        <entry key="nonStrNonNumVec" note="stringDatatypeUpdate">Each {0} must be a numeric scalar or character vector. Numeric {1} cannot be NaN, complex, logical, or sparse.</entry>
+        <entry key="numericNonReal">Map and reduce functions cannot add complex keys. Use isreal() to filter them.</entry>
+        <entry key="numericSparse">Map and reduce functions cannot add sparse keys. Use issparse() to filter them.</entry>
+        <entry key="numericNaN">Map and reduce functions cannot add NaN keys. Use isnan() to filter them.</entry>
+        <entry key="logicalUnSupported">Map and reduce functions cannot add logical keys. Use islogical() to filter them.</entry>
+    </message>
+</rsccat>

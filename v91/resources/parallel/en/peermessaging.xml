@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!-- Copyright 2013-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+    <entry key="BroadcastRequestNotSent">Broadcast request could not be sent to a destination.</entry>
+    <entry key="BrokerDidNotAck">{0} did not receive an acknowledgment from the broker at {1} within the {2} millisecond time limit.</entry>
+    <entry key="BrokeredPeerFailedToConnect">No peer connected to {0} on {1} after polling accept for {2} milliseconds using {3}: {4}</entry>
+    <entry key="ClientTransferInterrupted">The client became idle in the middle of the data transfer.\nMost likely, it was interrupted with Ctrl+C.</entry>
+    <entry key="ConnectAttemptsInterrupted">{0} was unable to connect to {1} because of an interrupt: {2}</entry>
+    <entry note="{2}={1}" key="ConnectRefusedRemotely">{0} was unable to connect to {1} most probably because {2} refused the connection: {3}</entry>
+    <entry key="CouldNotBindServerSocketChannelToOnePort">{0} could not bind a ServerSocketChannel on {1} to port {2}. Is some other application using this port?</entry>
+    <entry key="CouldNotBindServerSocketChannelToPorts">{0} could not bind a ServerSocketChannel on {1} to a port between {2} and {3} with search step size {4}. Is some other application using those ports?</entry>
+    <entry key="CouldNotConnectIOFailure">{0} was unable to connect to {1} due to a JVM IOException: {2}</entry>
+    <entry key="CouldNotConnectUnknownHost">{0} was unable find the host for {1} due to a JVM UnknownHostException: {2}</entry>
+    <entry key="CouldNotCreateAsyncSelectorException">{0} could not accept on {1}; it failed with a JVM Exception: {2}</entry>
+    <entry key="EndOfStreamDuringHandshake">The remote socket abruptly stopped communicating with the local socket during the handshake. The remote socket is {0}.\nThe local socket is {1}.</entry>
+    <entry key="FatalErrorCauseClause">This is caused by:\n{0}</entry>
+    <entry key="HandshakeDeadlineMissed">The handshake could not be completed before the {0} deadline.\nThe remote socket is {1}.\nThe local socket is {2}.</entry>
+    <entry key="InternalRuntimeErrorOccurred">An internal runtime error has occurred.</entry>
+    <entry key="InternalRuntimeErrorOccurredWithCause">An internal runtime error has occurred.\n This was caused by {0}.</entry>
+    <entry key="InvalidKeepAlivePeriod">The value for the KeepAlive period should be a positive integer. Actual value: {0}</entry>
+    <entry key="InvalidKeepAliveTimeUnit">The value for the KeepAlive time unit should be a valid TimeUnit enum value defined in java.util.concurrent.TimeUnit. Actual value: {0}</entry>
+    <entry key="LabTransferInterrupted">The workers were interrupted during the transfer with Ctrl+C.</entry>
+    <entry key="LocalClosedPossibleTimeout">The local socket stopped communicating with the remote socket, most likely because the remote socket failed to respond before the {0} deadline.\n{1}\nThe remote socket is {2}.\nThe local socket is {3}.</entry>
+    <entry key="LostConnection">Lost communication to {0}.</entry>
+    <entry key="LostConnectionWithCause">Lost connection to {0}.\nThis was caused by: {1}.</entry>
+    <entry key="NoEntryInAddressBook">No entry for: {0}.</entry>
+    <entry key="NoPortFromBroker">{0} on {1} did not receive a reply with port information from {2} within the {3} millisecond time limit.</entry>
+    <entry key="NonblockingServerSocketChannelNotConfigured">{0} could not configure a nonblocking ServerSocketChannel on {1}.</entry>
+    <entry key="NotContactable">No way to contact: {0}.</entry>
+    <entry key="PeerGroupIdMismatch">The remote socket is for a different peer group than the local socket.\nThe remote socket is {0}.\nThe local socket is {1}.</entry>
+    <entry key="ProtocolMismatch">The remote socket is using the MATLAB Distributed Computing Server protocol for {0} of MATLAB Distributed Computing Server peer messaging. The local socket is expecting the protocol for {1}.\nThe remote socket is {2}.\nThe local socket is {3}.</entry>
+    <entry key="ReadErrorOccurred">A read error occurred while reading from {0}.</entry>
+    <entry key="ReadErrorOccurredWithCause">A read error occurred while reading from {0}.\n This was caused by: {1}.</entry>
+    <entry key="RemoteConnectionInitFailed">Failed to initialize the connection.</entry>
+    <entry key="RemoteEndAlreadyHalted">The opposite end had already halted its transfer.</entry>
+    <entry key="RemoteFailedToAcknowledge">The remote socket failed to acknowledge the local socket''s handshake. The remote process might have reported more details.\nThe remote socket is {0}.\nThe local socket is {1}.</entry>
+    <entry key="RemoteIsNotPeerMessaging">The remote socket is using a protocol that this version of MATLAB Distributed Computing Server cannot interpret.\nThe remote socket is {0}.\nThe local socket is {1}.</entry>
+    <entry key="RemoteIsNotPeerMessagingOrVersionIsIncompatible">The remote socket (with version {0}) is using a protocol that the local socket (with version {1}) cannot interpret.\nThe remote socket is {2}.\nThe local socket is {3}.</entry>
+    <entry key="SessionDestroyed">The pmode session has been destroyed.  Halting data transfer.</entry>
+    <entry key="SocketChannelAcceptFailed">The server socket channel {0} could not accept because it failed with a JVM Exception: {1}</entry>
+    <entry key="SocketChannelAcceptWasInterrupted">The server socket channel {0} was interrupted while waiting to accept: {1}</entry>
+    <entry key="SocketChannelBindingGeneralFailure">{0} could not bind a ServerSocketChannel on {1} to port {2}; it failed with a JVM Exception: {3}</entry>
+    <entry key="SocketChannelConfigurationFailed">Configuring the socket channel failed with a JVM Exception: {0} \nThe remote socket is {1}.\nThe local socket is {2}.</entry>
+    <entry key="SocketChannelOpeningFailed">{0} could not open a ServerSocketChannel on {1}.</entry>
+    <entry key="TransferCancelled">The transfer was cancelled.</entry>
+    <entry key="TransferFailed">The remote socket abruptly stopped communicating with the local socket during the handshake.\n{0}\nThe remote socket is {1}.\nThe local socket is {2}.</entry>
+    <entry key="UnableToFindRoute">Unable to send a message because it was not possible to find a route to destination: {0}.</entry>
+    <entry key="UnableToSendDueToNoAddressBookEntry">Unable to send message: {0}. No entry for {1} in address book.</entry>
+    <entry key="UnexpectedRoutingFailure">Unable to send a message because it was not possible to find a route to a destination.</entry>
+    <entry key="UnexpectedTransferError">Data transfer failed with the following command window output from {0}:\n\n{1}</entry>
+    <entry key="VersionMismatch">The remote socket requires MATLAB Distributed Computing Server version {0}. The local socket is using MATLAB Distributed Computing Server version {1}, which is not compatible.\nThe remote socket is {2}.\nThe local socket is {3}.</entry>
+    <entry key="WorkerSessionBuilderTimeout">The parallel pool failed to start within the time limit: {0} milliseconds</entry>
+    <entry key="WriteErrorOccurred">A write error occurred while writing to {0}.</entry>
+    <entry key="WriteErrorOccurredWithCause">A write error occurred while writing to {0}.\nThis was caused by: {1}.</entry>
+  </message>
+</rsccat>

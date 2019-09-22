@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!-- Copyright 2014 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="invalidReadSize" note="stringDatatypeUpdate">ReadSize must be a positive integer or the character vector, ''file''.</entry>
+    <entry key="bothReadSizeRowsPerReadSpecified">Do not specify both RowsPerRead and ReadSize. RowsPerRead has been removed. Use ReadSize instead.</entry>
+    <entry key="rowsString">{0} rows</entry>
+    <entry key="invalidNumHeaderLines">NumHeaderLines must be a nonnegative integer.</entry>
+    <entry key="invalidMissingValue">MissingValue must be a numeric scalar.</entry>
+    <entry key="invalidCommentStyle" note="stringDatatypeUpdate">CommentStyle must be a single character vector or a cell array of two character vectors.</entry>
+    <entry key="invalidLogical">{0} must be logical 1 (true) or logical 0 (false).</entry>
+    <entry key="invalidRowDelimiter" note="stringDatatypeUpdate">RowDelimiter must be a single character or one of the character vectors ''\\r'', ''\\n'', or ''\\r\\n''.</entry>
+	<entry key="invalidTreatAsMissing" note="stringDatatypeUpdate">TreatAsMissing must be a character vector or a cell array of character vectors containing nonnumeric text.</entry>
+    <entry key="replaceReadVariableNames">Variable names are detected from the file but are replaced by the value of VariableNames. Verify that the values of ReadVariableNames and/or NumHeaderLines are correct.</entry>
+    <entry key="varFormatMismatch">The size of {0} does not match the size of {1}.</entry>
+    <entry key="invalidActiveFormats">If you specify SelectedFormats, you must also specify SelectedVariableNames.</entry>
+    <entry key="invalidActiveSkip">Do not specify both {0} and format specifiers that skip fields using an asterisk (''*'') in TextscanFormats.</entry>
+    <entry key="invalidSkips">SelectedFormats must not contain format specifiers that skip fields using an asterisk ('*').</entry>    
+    <entry key="invalidLiteralFormat">A format specifier cannot contain only literal text. Include a format specifier that contains a '%' character.</entry>
+	<entry key="tooManyFormats">Each variable name must correspond to a single format specifier.</entry>
+    <entry key="emptyVar">{0} cannot be empty.</entry>
+    <entry key="cellWithEmptyStr" note="stringDatatypeUpdate">{0} cannot contain an empty character vector.</entry>
+    <entry key="invalidActiveVariableNames">SelectedVariableNames must be a unique subset of VariableNames.</entry>
+    <entry key="tooLessArgs">VariableNames and TextscanFormats must be specified during construction.</entry>
+    <entry key="textProperties">Text Format Properties:</entry>
+    <entry key="retrievalProperties">Properties that control the table returned by preview, read, readall:</entry>
+    <entry key="retrievalPropertiesWithLinks">Properties that control the table returned by {0}, {1}, {2}:</entry>
+    <entry key="advancedProperties">Advanced Text Format Properties:</entry>
+	<entry key="addingSpace">Appending a space (' ') to the specified Whitespace characters.</entry>
+	<entry key="invalidStrOrCellStr" note="stringDatatypeUpdate">{0} must be a character vector or a cell array of character vectors.</entry>
+	<entry key="invalidStr" note="stringDatatypeUpdate">{0} must be a character vector.</entry>
+	<entry key="varFormatDetectionFailure">Cannot detect {1} from file: ''{0}''. Specify {2} when you create the datastore. Verify the Text Format and Advanced Text Format Properties.</entry>
+	<entry key="allSkips">TextscanFormats cannot contain only format specifiers that skip fields using an asterisk ('*').</entry>
+	<entry key="failedConversion">Reading the variable name ''{0}'' using format ''{1}'' from file: ''{2}'' starting at offset {3}.</entry>
+	<entry key="UnequalVarLengths">The data in file: ''{0}'' does not appear to be tabular, with the same number of fields in each row and in each column. Verify the Text Format and Advanced Text Format Properties.</entry>
+	<entry key="unableToOpenFile">Cannot open file: ''{0}'' for reading.</entry>
+  </message>
+</rsccat>

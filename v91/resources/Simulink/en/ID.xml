@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2012 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="InternalError">Incorrect internal Simulink identifiers were detected. The problem has been fixed. Backup the original model, and then save and reopen the current model.</entry>
+    <entry key="DuplicateSID">Incorrect internal Simulink identifiers were detected. The following blocks have conflicting identifiers:\n  ''{0}''\n  ''{1}''.\nThe Simulink identifier of ''{2}'' was changed from ''{3}'' to ''{4}''. Backup the original model, and then save and reopen the current model.</entry>
+    <entry key="InvalidSID">Incorrect internal Simulink identifier was detected. A new internal Simulink identifier is assigned to\n  ''{0}''.\nBackup the original model, save and reopen the current model.</entry>
+    <entry key="UnassignedSID">Internal Simulink identifier was not previously assigned to\n  ''{0}''.\nThis can happen in a library created in an older release of Simulink. Save the library in the current release.</entry>
+    <entry key="OrphandObject">Incorrect internal Simulink identifier was detected. A new internal Simulink identifier is assigned to\n  ''{0}''.\nBackup the original model, and then save and reopen the current model.</entry>
+    <entry key="Overflow">Incorrect internal Simulink identifier was detected. A new Simulink identifier is not available for\n  ''{0}''.</entry>
+    <entry key="InvalidHashMap">Incorrect internal Simulink identifier was detected. Please reload the model.</entry>
+  </message>
+</rsccat>

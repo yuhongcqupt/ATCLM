@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<!-- Copyright 2011-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel"
+        string_type_for_hole="mixed">
+  <message>
+    <!--Resource entries for toolbox/distcomp/src/builtins/mwmpi-->
+    <!--Resource entries for toolbox/distcomp/mpi-->
+    <!--Resource entries for toolbox/distcomp/parallel-->
+    <entry key="AlreadyInitialized">mpiInit was called with a specific implementation library when MPI was already initialized. .</entry>
+    <entry key="BroadcastFailed">Broadcast sender lab must be an integer value.</entry>
+    <entry key="BroadcastInvalidRoot">Broadcast sender lab {0,number,integer} is out of range (valid range: 1 &lt;= root &lt;= {1,number,integer}).</entry>
+    <entry key="ClientConnectFailed">A failure occurred during connect/accept. The MPI error was: {0}.</entry>
+    <entry key="CommsBadAction">Unrecognized action: \"{0}\".</entry>
+    <entry key="CommsBadArgs">mpiCommManip( ''split'' ) requires two integers: color and key.</entry>
+    <entry key="CommsBadDeletion">Cannot delete the specified communicators set.</entry>
+    <entry key="CommsBadHandle">You asked for an invalid communicator set.</entry>
+    <entry key="CommsBadIndex">The max labindex was invalid ({0,number,integer} / {1,number,integer}).</entry>
+    <entry key="CommsBadKey">You supplied an invalid communicator key: {0,number,integer}.</entry>
+    <entry key="CommsBadType">The first argument to mpiCommManip must be an action character vector.</entry>
+    <entry key="CommsDuplicateIndices">A non-unique vector of labindices was passed.</entry>
+    <entry key="CommsMpiNotInitialized">mpiCommManip called before mpiInit has been called.</entry>
+    <entry key="CommsRearrangeBadArg">Lab index rearrangement requires a vector of length {0,number,integer} with unique values from 0 to {1,number,integer}.</entry>
+    <entry key="CommsUint64Expected">Parameter must be of type uint64.</entry>
+    <entry key="CommunicationError">MPI Communication Error: {0}.</entry>
+    <entry key="CommunicationInForDrange">MPI communications cannot be performed within a for-drange loop.</entry>
+    <entry key="CommunicationInterrupted">A communication mismatch error was encountered:\n{0} during {1}.</entry>
+    <entry key="DeadlockDetectionFailed">An MPI error occurred during deadlock detection. The MPI error was: {0}.</entry>
+    <entry key="ErrorUnloadingMpiLibrary">An error occurred unloading the MPI library: {0}.</entry>
+    <entry key="FailedToAlloc">Unable to allocate receive data of size {0}.</entry>
+    <entry key="FailedToExtractTagUB">Couldn''t extract the MPI_TAG_UB property from the world communicator.</entry>
+    <entry key="FailedToOpenLibrary">Error opening library: {0}.\n.</entry>
+    <entry key="FailedToOpenLogFile">Failed to open MPI logging file \"{0}\" for writing.</entry>
+    <entry key="FailedToOpenMPILibrary">Failed to open the MPI Library: {0,number,integer}.</entry>
+    <entry key="FindFileOnClientErrorOccurred">An error occurred while trying to find file. {0}</entry>
+    <entry key="FindFileOnClientNotExist">The file does not seem to exist on the client path.</entry>
+    <entry key="FindFileOnClientPathEmpty">The cluster file path is empty.</entry>
+    <entry key="GatewayBadArg">The first argument to mpigateway must be a char array.</entry>
+    <entry key="GatewayBadCommand">UNKNOWN command \"{0}\" supplied to mpigateway.</entry>
+    <entry key="GetCodeUnableToReadFile">Unable to read file {0}.</entry>
+    <entry key="GopCodistributed">Second input must not be a codistributed array.</entry>
+    <entry key="GopDistributed">Second input must not be a distributed array.</entry>
+    <entry key="GopFunHandle">First input must be a function handle.</entry>
+    <entry key="GopIncorrectLabIndex">labTarget must be an integer between 1 and numlabs.</entry>
+    <entry key="IdleCheck">This lab is in the idle state and no further communication is possible\nuntil the idle state is reset. The idle state will be reset either\nat the end of the current SPMD block, before the next P&gt;&gt; prompt \nin PMODE, or at the end of a parallel job.</entry>
+    <entry key="IdleCheckError">An MPI error occurred during idle detection. The MPI error was: {0}.</entry>
+    <entry key="InitializationFailed">MPI Initialization Error: {0}.</entry>
+    <entry key="InitializingOnClient">MPI is being initialized on a client MATLAB (this warning only occurs in debug builds).</entry>
+    <entry key="InvalidLogArg">Unexpected arguments when setting logging to a file.</entry>
+    <entry key="InvalidSource">Source for operation {0} is out of range (valid values: 1 &lt;= source &lt;= {1,number,integer} or ''any'').</entry>
+    <entry key="InvalidTag">Invalid tag specified. Valid tags have integer values in the range 0 &lt;= tag &lt;= {0,number,integer}.</entry>
+    <entry key="LibConfCellArrayExpected">Didn''t receive a cell array of extra libraries.</entry>
+    <entry key="LibConfCellOfCharExpected">Cell array of extra libraries didn''t contain only character vectors.</entry>
+    <entry key="MemoryCorruptionAtEnd">Memory corruption detected at end of received array at index {0}.</entry>
+    <entry key="MemoryCorruptionAtStart">Memory corruption detected at beginning of received array at index {0}.</entry>
+    <entry key="MpiInitNotFound">Error using MPI library ''{0}'' - symbol MPI_Init not found.</entry>
+    <entry key="MpiNotLoaded">The MPI implementation has not yet been loaded. Please call mpiInit.</entry>
+    <entry key="MpiThreadSupportNotSupported">The MPI implementation reported that it only supports {0}. This MPI is not usable within MATLAB, please use an MPI which supports at least {1}.</entry>
+    <entry key="MpiprofileAlreadyStartedCannotChangeMessageDetail">The profiler has already been started.  MESSAGEDETAIL cannot be changed until you turn MPIPROFILE OFF or CLEAR.</entry>
+    <entry key="MpiprofileInvalidInput">Invalid input to mpiprofile.</entry>
+    <entry key="MpiprofileUnsupportedOrInvalidOption">Unsupported or invalid option.</entry>
+    <entry key="OpenPortFailed">An error occurred opening a port for MPI communication. The MPI error was: {0}.</entry>
+    <entry key="OpenPortInvalidArgs">Invalid arguments for MPI communicator manipulation.</entry>
+    <entry key="OperationWouldDeadlock">Attempt to {0} would cause deadlock: source == labindex.</entry>
+    <entry key="ParforDepth">Argument to parfor_depth must be a scalar integer.</entry>
+    <entry key="ProfAggregateError">Cannot find the aggregate information selected.\nIf the error persists please contact MathWorks.\nSee also Parallel Computing Toolbox documentation.</entry>
+    <entry key="ProfArrayOfProfilesRequired">MPIPROFILE(''{0}'', profInfoVector) takes an array of profile info objects when not in PMODE.  Refer to the Parallel Computing Toolbox documentation for MPIPROFILE.</entry>
+    <entry key="ProfBadSortKey">Bad sort key {0,number,integer}.</entry>
+    <entry key="ProfBadSortMode">Unsupported sort mode {0}.</entry>
+    <entry key="ProfChangeLabFunction">Invalid arguments to change lab function. Please contact MathWorks with reproduction steps.</entry>
+    <entry key="ProfCouldNotEnsureAllFunctions">Could not insert all functions in the profile info array.</entry>
+    <entry key="ProfEmptyProfileInfoVector">Profile info structure is empty or html post is not working. Please run MPIPROFILE VIEWER again. If this error persists, please contact MathWorks.</entry>
+    <entry key="ProfEmptyProfileVector">Error mpiprofview Profile Info is empty. Please run MPIPROFVIEW or MPIPROFILE VIEWER again.</entry>
+    <entry key="ProfFunDisplayWarning">Function name {0} appears more than once in this file.\nOnly the first occurrence is being displayed.</entry>
+    <entry key="ProfFunctionNotFound">MPIPROFVIEW Error: Function {0} not found in profiler Function Table.</entry>
+    <entry key="ProfInsidePmodeWarning">MPIPROFILE VIEWER does not take any arguments {0} inside pmode. Ignoring all additional arguments.</entry>
+    <entry key="ProfInvalidActionCommand">Error Invalid action argument to pCallBackHelpers.</entry>
+    <entry key="ProfInvalidArgument">Chosen labindex is greater than the number of ProfileInfo objects.</entry>
+    <entry key="ProfInvalidArguments">Unknown or illegal &lt;action&gt; argument. MPIPROFILE must be called with a valid argument in PMODE or as part of a parallel job.</entry>
+    <entry key="ProfInvalidFcnNameOrIndex">The function name or index must be valid (a character vector or integer less than or equal to numlabs). See documentation for MPIPROFVIEW.</entry>
+    <entry key="ProfInvalidFieldName">Not a valid field name.</entry>
+    <entry key="ProfInvalidHtmlPost">Error the option selected is invalid. Please report this error and your environment to MathWorks.</entry>
+    <entry key="ProfInvalidInputArgs">a {0} GET requires at least 1 additional argument. One argument must specify the item description (maxaggregate or labindex).</entry>
+    <entry key="ProfInvalidInputArgument">{0}.</entry>
+    <entry key="ProfInvalidInputType">{0} requires a following {1} argument.</entry>
+    <entry key="ProfInvalidInternalState">Error:  Bad internal state in mpiprofview, please run mpiprofile viewer.</entry>
+    <entry key="ProfInvalidLabIndexForGet">mpiprofview ''get labindex'' action with invalid lab index. Selected lab index must be a valid integer.</entry>
+    <entry key="ProfInvalidLabSelectionType">Error: pCallBackHelpers get . Invalid lab selection type {0}.</entry>
+    <entry key="ProfInvalidNumArgs">{0} requires at least one following {1} argument.</entry>
+    <entry key="ProfInvalidOptionSelected">Error the option {0} selected is invalid. Please report this error and your environment to MathWorks.</entry>
+    <entry key="ProfInvalidPlotOptionSelected">Error the Plot option selected is invalid. Please report this error to MathWorks.</entry>
+    <entry key="ProfNewData">The initial lab index selected must be a valid integer less than or equal to numlabs. See documentation for MPIPROFILE.</entry>
+    <entry key="ProfNoCommInfoForPlot">No communication information found. You may have used the standard profiler.\n Plots can only be generated for programs that are profiled with MPIPROFILE.\n See documentation for MPIPROFILE VIEWER.</entry>
+    <entry key="ProfNotInParallelMode">Warning you appear to be using MPIPROFILE after calling PROFILE. Communication fields will not be recorded.</entry>
+    <entry key="ProfOnClientError">MPIPROFILE {0} must run in pmode or as part of a parallel job.\nSee doc for MPIPROFILE in the Parallel Computing Toolbox.</entry>
+    <entry key="ProfPmodeNotRunning">Cannot execute {0} from pmode as the session isempty.</entry>
+    <entry key="ProfRunOnLabs">Should not execute {0} with {1,number,integer} args on the MATLAB worker.\nRun MPIPROFILE VIEWER in PMODE or with a profile info array on the client.\nSee also the Parallel Computing Toolbox documentation.</entry>
+    <entry key="ProfTempDataManager">Invalid Action in mpiprofview temp data manager.</entry>
+    <entry key="ProfTempFileManager">Could not remove temp dir, Please delete [{0}] to prevent potential space waste.</entry>
+    <entry key="ProfTooManyArguments">MPIPROFVIEW only takes 2 arguments. See documentation for MPIPROFILE VIEWER.</entry>
+    <entry key="ProfUnexpectedEmptyFcnNameCache">function EnsureAllLabsHaveAllFunctions cannot be called if aggregate profile info have not been calculated.</entry>
+    <entry key="ProfUnexpectedState">Unknown case {0}.</entry>
+    <entry key="ProfUnknownActionCommand">Unknown action command passed to pCallBackHelpers. Please use mpiprofview as direct usage of this function is not recommended.</entry>
+    <entry key="ProfUnknownHiliteOption">hiliteOption {0} unknown.</entry>
+    <entry key="ProfUnknownPlotOption">Invalid plot type ''{0}''.</entry>
+    <entry key="ProfUnknownSortKind">Unknown sort kind: {0}.</entry>
+    <entry key="ProfUnknownUDDpackage">Unable to find UDD package.</entry>
+    <entry key="ProfUnsupportedNumberOfActions">MPIPROFILE {0} should not be mixed with another action {1}.</entry>
+    <entry key="ProfUnsupportedOptions">Changing {0} option is not supported in mpiprofile.</entry>
+    <entry key="ProfValidProfileInfoRequired">A valid Profile info was not passed in. You can use MPIPROFILE more readily in PMODE.</entry>
+    <entry key="ProfinvalidHtmlPostType">There was an error in the htmlPost Type: {0}. Please report this error to MathWorks.</entry>
+    <entry key="SendBadDestination">Destination {0,number,integer} is out of range (valid range: 1 &lt;= destination &lt;= {1,number,integer}).</entry>
+    <entry key="SendFailed">labSend destination must be a vector of numeric values.</entry>
+    <entry key="SendReceiveBadLab">Source/Destination for labSendReceive must be a positive scalar integer or [].</entry>
+    <entry key="SendToSelf">Destination ({0,number,integer}) is same as source, would cause deadlock.</entry>
+    <entry key="SettingsExpectedCharArg">All arguments to mpiSettings must be chars - argument {0,number,integer} is "{1}".</entry>
+    <entry key="SettingsInvalidToggleValue">Invalid setting for: {0} - valid values are ''on'' or ''off''.</entry>
+    <entry key="SettingsLoggingDestinationFileRequired">mpiSettings( ''MessageLoggingDestination'', ''File'', ... ) must be called with 3 arguments.</entry>
+    <entry key="SettingsLoggingDestinationRequired">mpiSettings( ''MessageLoggingDestination'', ... ) must be called with 2 or 3 arguments.</entry>
+    <entry key="SettingsToggleValueRequired">mpiSettings for {0} must specify ''on'' or ''off''.</entry>
+    <entry key="SettingsUnknownSettingsOption">Unknown command "{0}" in mpiSettings.</entry>
+    <entry key="UnhandledHeaderType">An internal error occurred receiving a message: unhandled header type.</entry>
+    <entry key="UnhandledMessageType">An internal error occurred sending a message: unhandled message type.</entry>
+    <entry key="WouldDeadlockNumlabsOne">Attempt to {0} would cause deadlock: numlabs == 1.</entry>
+  </message>
+</rsccat>

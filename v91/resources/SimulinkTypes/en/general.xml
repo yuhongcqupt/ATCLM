@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="SimulinkTypes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/.xsd">
+  <message>
+    <entry key="CannotModifyDataTypeGroundRepresentation">Cannot modify the zero representation of data type ''{0}''</entry>
+    <entry key="CannotModifyDataTypeProperties">Cannot modify the properties of data type ''{0}''</entry>
+    <entry key="CannotModifyDataTypePropertiesSize">Size of properties of data type ''{0}'' was set to {1,number,integer}. It cannot be modified to {2,number,integer}</entry>
+    <entry key="CannotModifyDataTypeSize">Size of data type ''{0}'' was set to {1,number,integer}. It cannot be modified</entry>
+    <entry key="CannotSetAliasForDefinedType">Cannot set the AliasedTo attribute of data type ''{0}'' because this data type is already defined</entry>
+    <entry key="CannotSetDataTypeConvertBetweenOfAlias">Cannot set the convert-between function of data type ''{0}'' since it is an alias data type</entry>
+    <entry key="CannotSetDataTypeGreaterEqualOfAlias">Cannot set the greater-equal function of data type ''{0}'' since it is an alias data type</entry>
+    <entry key="CannotSetDataTypeGreaterThanOfAlias">Cannot set the greater-than function of data type ''{0}'' since it is an alias data type</entry>
+    <entry key="CannotSetDataTypeGroundOfAlias">Cannot set the ground of data type ''{0}'' since it is an alias data type</entry>
+    <entry key="CannotSetDataTypeIsNegativeOfAlias">Cannot set the is-negative function of data type ''{0}'' since it is an alias data type</entry>
+    <entry key="CannotSetDataTypeIsPositiveOfAlias">Cannot set the is-positive function of data type ''{0}'' since it is an alias data type</entry>
+    <entry key="CannotSetDataTypePropertiesOfAlias">Cannot set the properties of data type ''{0}'' since it is an alias data type</entry>
+    <entry key="CannotSetDataTypePropertiesSizeOfAlias">Cannot set the properties size of data type ''{0}'' since it is an alias data type</entry>
+    <entry key="CannotSetDataTypeSizeOfAlias">Cannot set the size of data type ''{0}'' since it is an alias data type</entry>
+    <entry key="CannotSetDataTypeIsAtomicOfAlias">Cannot set the atomicity of data type ''{0}'' since it is an alias data type</entry>
+    <entry key="CannotSetDataTypeGroundHasNonZeroOfAlias">Cannot set the ground has nonzero of data type ''{0}'' since it is an alias data type</entry>
+    <entry key="CannotSetDataTypeStorageIdOfAlias">Cannot set the storage id of data type ''{0}'' since it is an alias data type</entry>
+    <entry key="CannotSetGroundRepBeforeSettingSize">Size of data type ''{0}'' has not been set.  Cannot specify the zero representation of this data type</entry>
+    <entry key="CannotSetPropertiesBeforeSettingSize">Size of properties of data type ''{0}'' has not been set.  Cannot specify the properties of this data type</entry>
+    <entry key="DataTypeAliasLoop">Cannot define data type ''{0}'' to be aliased to ''{1}'' because the latter is already aliased directly or indirectly to the former</entry>
+    <entry key="DataTypeConvertBetweenFcnDoesNotExist">Cannot call the convertBetween function for data type ''{0}'' because it has not been set</entry>
+    <entry key="DataTypeConvertBetweenFcnUnknownError">An unknown error was reported from the convertBetween function for data type ''{0}''</entry>
+    <entry key="DataTypeGreaterEqualFcnDoesNotExist">Cannot call the greaterEqual function for data type ''{0}'' because it has not been set</entry>
+    <entry key="DataTypeGreaterEqualFcnUnknownError">An unknown error was reported from the greaterEqual function for data type ''{0}''</entry>
+    <entry key="DataTypeGreaterThanFcnDoesNotExist">Cannot call the greaterThan function for data type ''{0}'' because it has not been set</entry>
+    <entry key="DataTypeGreaterThanFcnUnknownError">An unknown error was reported from the greaterThan function for data type ''{0}''</entry>
+    <entry key="DataTypeIsNegativeFcnDoesNotExist">Cannot call the isNegative function for data type ''{0}'' because it has not been set</entry>
+    <entry key="DataTypeIsNegativeFcnUnknownError">An unknown error was reported from the isNegative function for data type ''{0}''</entry>
+    <entry key="DataTypeIsPositiveFcnDoesNotExist">Cannot call the isPositive function for data type ''{0}'' because it has not been set</entry>
+    <entry key="DataTypeIsPositiveFcnUnknownError">An unknown error was reported from the isPositive function for data type ''{0}''</entry>
+	<entry key="DataType_WithIntrinsicFixptName">Invalid name ''{0}'' for data type object; the names of data type objects may not start with "sfix", "ufix", or "flt" since these prefixes are reserved for intrinsic fixed point types</entry>
+    <entry key="DataType_SameNameAsExistingType">Cannot register data type ''{0}'' because another type with this name already exists</entry>
+    <entry key="EnumType_SameNameAsExistingType">Cannot register enumerated data type ''{0}'' because another type with this name already exists</entry>
+    <entry key="IllegalDataTypeToBeStorageId">Cannot define data type ''{0}'' to use the same storage as type ''{1}'' because that type is not a builtin type</entry>
+    <entry key="InConsistentTargetToHostFcn">Inconsistent setting of target to host function</entry>
+    <entry key="InconsistentDataTypeConvertBetweenFcn">Cannot redefine the type conversion function associated with data type ''{0}''</entry>
+    <entry key="InconsistentDataTypeGreaterEqualFcn">Cannot redefine the greater-or-equal function associated with data type ''{0}''</entry>
+    <entry key="InconsistentDataTypeGreaterThanFcn">Cannot redefine the greater-than function associated with data type ''{0}''</entry>
+    <entry key="InconsistentDataTypeIdAliasedTo">Cannot define data type ''{0}'' to be aliased to ''{1}'' because it is already aliased to ''{2}''</entry>
+    <entry key="InconsistentDataTypeIsNegativeFcn">Cannot redefine the negative function associated with data type ''{0}''</entry>
+    <entry key="InconsistentDataTypeIsPositiveFcn">Cannot redefine the positive function associated with data type ''{0}''</entry>
+    <entry key="InconsistentDataTypeStorageId">Cannot define data type ''{0}'' to use the same storage as ''{1}'' because it is already defined to use the same storage as ''{2}''</entry>
+    <entry key="DataTypeErrorFromBlock">Datatype error reported from block ''{0}''</entry>
+    <entry key="InvalidBuiltinDataTypeId">Specified data type id {0,number,integer} is not a valid builtin type</entry>
+    <entry key="InvalidDataType">Specified data type ''{0}'' is not a valid identifier</entry>
+    <entry key="InvalidDataTypeId">Attempt to  use invalid data type id {0,number,integer}</entry>
+    <entry key="InvalidDataTypePropertiesSize">Cannot set the size of properties of data type ''{0}'' to {1,number,integer}.  The size of data type properties must be greater than or equal to zero</entry>
+    <entry key="InvalidDataTypeSize">Cannot set size of data type ''{0}'' to {1,number,integer}.  Data type size must be greater than zero</entry>
+    <entry key="InvalidNumericTypeIdentifier">Specified identifier ''{0}'' is not valid numeric type identifier</entry>
+    <entry key="InvalidNumericTypeDirectConstructor">Specified text ''{0}'' is not valid for direct numeric type construction</entry>
+    <entry key="MemoryAllocErr">Memory allocation error</entry>
+    <entry key="UndefinedDataTypeToBeAliasedTo">Cannot define data type ''{0}'' to be aliased to id {1,number,integer} because no data type with that id exists</entry>
+  </message>
+</rsccat>

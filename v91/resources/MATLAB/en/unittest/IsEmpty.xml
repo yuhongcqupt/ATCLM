@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="MustBeEmpty">The value must be empty.</entry>
+    <entry key="ActualSize">The value has a size of [{0}].</entry>
+    <entry key="MustNotBeEmpty">The value must not be empty.</entry>
+  </message>
+</rsccat>

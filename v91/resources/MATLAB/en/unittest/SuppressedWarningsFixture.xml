@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- Copyright 2013-2014 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="InvalidIdentifier">"{0}" is not a valid warning identifier.</entry>
+    <entry key="SetupDescription">Suppressed the following warnings:</entry>
+    <entry key="TeardownDescription">Restored the states of the following warnings to their original values:</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  rsccat
+-->

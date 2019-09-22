@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2009-2013 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="AllowedUnitSystemsCannotBeEmpty">Unit System Configuration block ''{0}'' does not support empty lists of unit systems.</entry>
+    <entry key="BlockUnitError">Block ''{0}'' reports unit error.</entry>
+    <entry key="InitUnitError">Error occurred when initializing signal unit.</entry>
+    <entry key="InvalidUnit">Invalid unit ''{0}'' specified for ''{1}''.</entry>
+    <entry key="InvalidUnitId">Invalid unit ID {0,number,integer} specified for ''{1}''.</entry>
+    <entry key="PropBackwardUnitError">Error while propagating {0} from input port {1,number,integer} of ''{2}''.</entry>
+    <entry key="PropForwardUnitError">Error while propagating {0} from output port {1,number,integer} of ''{2}''.</entry>
+    <entry key="UnitSystemNotInDatabase">Unit systems ''{0}'' specified by Unit Configuration block ''{1}'' are not in the units database.</entry>
+    <entry key="InvalidExpressionInUnitProperty">Invalid unit expression ''{0}'' in 'Unit' property.</entry>
+    <entry key="UnitConfigurationLabel" translate="false">Unit\nConfiguration</entry>
+    <entry key="InputPortStrLC">input port</entry>
+    <entry key="OutputPortStrLC">output port</entry>
+    <entry key="InputPortStrUC">Input Port</entry>
+    <entry key="OutputPortStrUC">Output Port</entry>
+    <entry key="AutoConversionFailureReasonVirtBlocks">Either the source or the destination block is virtual.</entry>
+    <entry key="AutoConversionFailureReasonRootLevel">The model is configured either for concurrent execution or to export functions. In these instances, a Unit Conversion block at the root-level is not supported.</entry>
+    <entry key="AutoConversionFailureReasonMergeBlock">Automatic unit conversion cannot be performed at an input port of a Merge block.</entry>
+    <entry key="AutoConversionFailureReasonAsyncRateTransBlock">Automatic unit conversion cannot be performed at a port of an asynchronous Rate Transition block.</entry>
+    <entry key="AutoConversionFailureReasonFunctionCallSubsystem">Automatic unit conversion cannot be performed at an input port of a function-call subsystem.</entry>
+    <entry key="AutoConversionFailureReasonMessage">Entity and message lines do not support automatic unit conversions.</entry>
+    <entry key="AutoConversionFailureReasonVirtualBus">Buses do not support automatic unit conversions.</entry>
+    <entry key="AutoConversionFailureReasonFixedPoint">Fixed-point and integer signals do not support automatic unit conversions.</entry>
+    <entry key="BusObjLoading">Bus object associated with</entry>
+    <entry key="UnitMismatchDetected"><![CDATA[Output port {0,number,integer} of ''{1}'' sends a signal of unit ''{2}'', but input port {3,number,integer} of ''{4}'' expects a signal of unit ''{5}''. {6} {7}]]></entry>
+    <entry key="UnitMismatchBusDetected"><![CDATA[Incoming buses to block ''{0}'' have a unit mismatch. The signal at input port {1,number,integer} of ''{2}'' is of unit ''{3}'', while its corresponding signal at {4} {5,number,integer} of ''{6}'' is of unit ''{7}''. {8} {9}]]></entry>
+    <entry key="UnitMismatchBusObjDetected"><![CDATA[Bus element ''{0}'' of bus object ''{1}'' in block ''{2}'' is specified to be of unit ''{3}'', but this incoming signal has a unit of ''{4}''. {5} {6}]]></entry>
+    <entry key="AutomaticUnitConversionDetected">To convert between ''{0}'' and ''{1}'', Simulink performed an automatic unit conversion at {2} {3,number,integer} of ''{4}''. {5}</entry> 
+    <entry key="AutomaticUnitConversionAttemptFailed"><![CDATA[To convert between ''{0}'' and ''{1}'', Simulink attempted to perform an automatic unit conversion at input port {2,number,integer} of ''{3}''. This attempt failed due to: {4} {5} <actions exclusiveFixIts="yes"><action cmd="matlab:Simulink.UnitUtils.insertUnitConversionBlockAtPort(''{6}'',{7,number,integer},{8,number,integer})" type="fixit">Add Unit Conversion block</action></actions>]]></entry>
+    <entry key="AutomaticUnitConversionAttemptFailedNotFixable"><![CDATA[To convert between ''{0}'' and ''{1}'', Simulink attempted to perform an automatic unit conversion at input port {2,number,integer} of ''{3}''. This attempt failed due to: {4} Consider modifying either the source or destination unit so that they match. {5}]]></entry> 
+    <entry key="UnitMismatchDetectedWhileLoading"><![CDATA[The unit specified on block ''{0}'', ''{1}'', does not match the unit specified in the data loaded from the workspace, ''{2}''. {3}]]></entry>
+    <entry key="UnitMismatchDetectedWhileLoadingBus"><![CDATA[The unit specified on the bus object associated with block ''{0}'', ''{1}'', does not match the unit specified in the data loaded from the workspace, ''{2}''. {3}]]></entry>
+    <entry key="DisallowedUnitSystemUsage">One or more of the units in the unit expression ''{0}'' at {1} {2,number,integer} of ''{3}'' is not in one of the allowed unit systems ''{4}''. {5}</entry>
+    <entry key="DisallowedUnitSystemUsageInParamObj"><![CDATA[One or more of the units in the unit expression ''{0}'', specified for the 'Unit' field of {1} object <a href="matlab:Simulink.UnitUtils.openObjectEditor(''{2}'', ''{3}'');">''{4}''</a> referenced by parameter ''{5}'' of ''{6}'', is not in one of the allowed unit systems ''{7}''. {8}]]></entry>
+    <entry key="DisallowedUnitSystemUsageInSignalObj"><![CDATA[One or more of the units in the unit expression ''{0}'' specified for the 'Unit' field of Simulink.Signal object <a href="matlab:Simulink.UnitUtils.openObjectEditor(''{1}'', ''{2}'');">''{3}''</a> referenced by output port {4, number, integer} of ''{5}'' is not in one of the allowed unit systems ''{6}''. {7}]]></entry>
+    <entry key="UndefinedUnitUsage"><![CDATA[The units ''{0}'' specified on block ''{1}'' are not defined in the <a href="matlab:showunitslist">Simulink unit database</a>. {2} \n\nIf you cannot use a unit that exists in the database, consider suppressing all units inconsistency warnings by setting the configuration parameter <sldiag objui="configset" objparam="UnitsInconsistencyMsg">'Units inconsistency messages'</sldiag> to 'none'.]]></entry>
+    <entry key="UndefinedUnitUsageInObj"><![CDATA[Units ''{0}'' specified for the 'Unit' field of {1} object <a href="matlab:Simulink.UnitUtils.openObjectEditor(''{2}'', ''{3}'');">''{4}''</a> referenced by ''{5}'' are not defined in the <a href="matlab:showunitslist">Simulink unit database</a>. {6} \n\nIf you cannot use a unit that exists in the database, consider suppressing all units inconsistency warnings by setting the configuration parameter <sldiag objui="configset" objparam="UnitsInconsistencyMsg">'Units inconsistency messages'</sldiag> to 'none'.]]></entry>
+    <entry key="UnitWithSpecialCharactersInObj"><![CDATA[Unit expression ''{0}'' specified for the 'Unit' field of {1} object <a href="matlab:Simulink.UnitUtils.openObjectEditor(''{2}'', ''{3}'');">''{4}''</a> referenced by ''{5}'' contains one or more special characters that are not supported. Simulink will mangle the expression and interpret it as ''{6}'' instead.]]></entry>
+    <entry key="IncompatibleSimscapeUnit"><![CDATA[The Simscape unit ''{0}'' specified in block ''{1}'' is not compatible with the Simulink unit database. {2}]]></entry>
+<entry key="ModelAdvisorReportLink"><![CDATA[Open the <a href="matlab:Simulink.UnitUtils.generateUnitDiagnosticReport(''{0}'');">Model Advisor Report</a> for more details.]]></entry>
+<entry key="ModelAdvisorReportLinkMultipleIssues"><![CDATA[Investigate <b><a href="matlab:Simulink.UnitUtils.generateUnitDiagnosticReport(''{0}'');">{1,number,integer} similar inconsistencies</a></b> on Model Advisor Report.]]></entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  xml UTF CDATA Datatype datatype Downcasts nonvirtual dworks
+-->

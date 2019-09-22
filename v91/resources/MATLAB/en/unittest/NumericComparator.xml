@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="Equaln">The values are equal using "isequaln".</entry>
+    <entry key="NotEqualn">The values are not equal using "isequaln".</entry>
+    <entry key="ToleranceNotUsed" note="Example: The tolerance was ignored. The tolerance as specified does not support comparisons of int8 values." >
+        The tolerance was ignored. The tolerance as specified does not support comparisons of {0} values.
+    </entry>
+  </message>
+</rsccat>
+<!-- LocalWords:  isequaln
+-->

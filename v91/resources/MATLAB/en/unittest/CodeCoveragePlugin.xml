@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- Copyright 2013-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="EmptyFolder">At least one folder is required.</entry>
+    <entry key="EmptyPackage">At least one package is required.</entry>
+    <entry key="FolderDoesNotExist">Cannot find the ''{0}'' folder.</entry>
+    <entry key="PackageDoesNotExist">The ''{0}'' package does not exist or does not contain any MATLAB code.</entry>
+    <entry key="UnableToGenerateReport">Unable to generate report for folder ''{0}''.\nCaused by:\n{1}</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  rsccat
+-->

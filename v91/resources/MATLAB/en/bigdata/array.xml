@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<!-- Copyright 2015-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+    <message>
+        <!-- Please keep in alphabetical order! -->
+        <entry key="AllArgsTall">All data arguments to {0} must be tall arrays.</entry>
+        <entry key="AllTableArgsTall">When constructing a tall table, all data arguments must be tall arrays.</entry>
+        <entry key="AmbiguousOption">Option {0} to {1} is ambiguous. Valid options are: {2}.</entry>
+        <entry key="ArgMustBeTall">Argument {0} to {1} must be a tall array.</entry>
+        <entry key="ArgMustBeTallReal">Argument {0} to {1} must be a tall array of real data.</entry>
+        <entry key="ArgMustNotBeTall">Argument {0} to {1} must be a non-tall array.</entry>
+        <entry key="BadEdgeColor">Invalid EdgeColor value.</entry>
+		<entry key="BadFaceColor">Invalid FaceColor value.</entry>
+        <entry key="BadHistogram2XY">Both X and Y must be tall column vectors.</entry>
+        <entry key="BetweenTallDatetime">One of the first two arguments to BETWEEN must be a tall datetime array.</entry>
+        <entry key="CannotPlotTall">{0} is not supported for tall arrays. &lt;a href="matlab:helpview(fullfile(docroot,'matlab','helptargets.map'),'tall_visualization')"&gt;Learn more&lt;/a&gt;.</entry>
+        <entry key="CatDimensionMismatch">Dimensions of arrays being concatenated are not consistent.</entry>
+        <entry key="CategoricalReductionFlagNotSupported">For tall categorical arrays, the function {0} does not support the options: {1}.</entry>
+        <entry key="CharArrayNotRow">Character vector arguments to {0} must be row vectors.</entry>
+        <entry key="CharMultipleInputsNotSupported">Multiple arguments to CHAR are not supported for tall arrays.</entry>
+        <entry key="CharNumericColumn">The argument to CHAR must be a tall numeric column vector.</entry>
+        <entry key="CharUseCellstr">The argument to CHAR must be a tall numeric column vector.
+            Use CELLSTR to convert tall arrays of type {0}.</entry>
+        <entry key="CovPartialRowsNotSupported">Option ''partialrows'' is not supported for tall arrays.</entry>
+        <entry key="DatevecInputsColumn">Data inputs to DATEVEC must be column vectors.</entry>
+        <entry key="DisplayPreviewErrored">Error encountered during preview of tall array ''{0}''. Attempting to gather ''{0}'' 
+            will probably result in an error. The error encountered was:\n{1}</entry>
+        <entry key="DurationAsDenominator">In X./Y, when Y is a duration array, X must also be a duration array.</entry>
+        <entry key="EmptySingleFlag">Only a single classname argument is permitted for tall.empty.</entry>
+        <entry key="EndNumericIncrement">In END-K:D:END indexing expressions, D must be a numeric scalar.</entry>
+        <entry key="EndScalarColonEndpoints">For END-K:END or END-K:D:END indexing expressions, K must be a numeric scalar.</entry>
+        <entry key="EndSubscriptFormat">In END-based subscript expressions A:B or A:D:B, both A and B must be offsets from END.</entry>
+        <entry key="ErrorDuringGather">
+            &lt;a href="matlab:helpview(fullfile(docroot,'matlab','helptargets.map'),'tall_gather_error')"&gt;Learn more&lt;/a&gt;
+            about errors encountered during GATHER.</entry>
+        <entry key="ExecutionError">Internal problem while evaluating tall expression. The problem was:\n\n{0}</entry>
+        <entry key="FcnNotSupported">{0} does not support tall arrays.</entry>
+        <entry key="FcnNotSupportedForType">{0} does not support tall arrays with underlying data type {1}.</entry>
+        <entry key="FindgroupsSingleOutput">Only a single output argument is supported for FINDGROUPS of tall arrays.</entry>
+        <entry key="FunFunErrorHandlerNotSupported">The ErrorHandler argument to {0} is not supported for tall arrays.</entry>
+        <entry key="FunctionHandleError">A user error occurred while evaluating a tall expression.</entry>
+        <entry key="FusedTimesTransANotColumn">For A'*B with tall arrays, B must be a tall array and A must be a tall column vector or non-tall scalar.</entry>
+        <entry key="GatherInsufficientInputs">GATHER requires at least as many inputs as outputs.</entry>
+        <entry key="GeneralIndexingNotSupported">When indexing a tall array, the
+        subscript in the tall dimension must be either a tall logical vector, a
+        consecutive range starting at the beginning of the array 1:K, or a consecutive range ending at the end of the array END-K:END.</entry>
+        <entry key="GetDatetimePropertiesUnsupported">Getting properties of tall arrays of {0} is not supported.</entry>
+        <entry key="HistUseHistogram">HIST does not support tall arrays. Use HISTOGRAM instead.</entry>
+        <entry key="IncompatibleTallDatastore">Incompatible tall array arguments. The tall arrays must be based on the same datastore.</entry>
+        <entry key="IncompatibleTallExecutor">Incompatible tall array arguments. The tall arrays must be created using the same execution environment.</entry>
+        <entry key="IncompatibleTallIndexing">Incompatible tall array arguments. The tall arrays must be based on the same datastore and be indexed in the first dimension using the same logical index vector.</entry>
+        <entry key="IncompatibleTallSize">Incompatible tall array arguments. The first dimension in each tall array must have the same size, or have a size of 1.</entry>
+        <entry key="IncompatibleTallStrictSize">Incompatible tall array arguments. The first dimension in each tall array must have the same size, and each tall array must be based on the same datastore.</entry>
+        <entry key="IndexingArrayWithTooFewSubscripts">The array has {0,number,integer} dimensions, but only {1,number,integer} subscript(s) were provided. To index a non-vector tall array, specify one subscript for each dimension of the array.</entry>
+        <entry key="InnerjoinTwoTallTableNotSupported">INNERJOIN can only join a tall table and an in-memory table.</entry>
+        <entry key="InputClassRequired">Arguments to {0} must be of data type: {1}.</entry>
+        <entry key="InsufficientRowsForTallSubscript">There were insufficient rows in the array to satisfy the tall indexing request.</entry>
+        <entry key="InvalidArgumentType">Argument {0} to {1} must be one of the following data types: {2}.</entry>
+        <entry key="InvalidConcatenation">Invalid combination of data types for concatenation: {0}.</entry>
+        <entry key="InvalidConcatenationUnknownTypes">Invalid combination of data types for concatenation.</entry>
+        <entry key="InvalidConstructorSyntax">First argument to TALL must be a datastore or an in-memory array.</entry>
+        <entry key="InvalidEndPlusEnd">Adding two indexing expressions containing END is not supported.</entry>
+        <entry key="InvalidEndPlusNonScalar">Only scalar values can be added to END-based indexing expressions.</entry>
+        <entry key="InvalidEndSubscript">END-based indexing expressions in the tall dimension must specify a continuous block of elements.  Use either END-K:END or END:-1:END-K instead.</entry>
+        <entry key="InvalidIndexingWithEnd">In END-based indexing expressions, the function {0} cannot be applied to a value derived from END.</entry>
+        <entry key="InvalidOption">Option {0} to {1} is invalid. Valid options are: {2}.</entry>
+        <entry key="InvalidOutputSize">The operation generated an invalid chunk for output parameter {0}. The chunk has size {1} where the expected size is {2}. This indicates an internal error. Please contact MathWorks Technical Support.</entry>
+        <entry key="InvalidOutputTallSize">The operation generated an invalid chunk for output parameter {0}. The chunk has tall size {1} where the expected tall size is {2}. This indicates an internal error.</entry>
+        <entry key="InvalidRepeatedFlag">Invalid repeated option to {0}. Option must be one of: {1}.</entry>
+        <entry key="InvalidStringArray">Input to {0} must be a string array or a cell array of character vectors.</entry>
+        <entry key="InvalidStringInput">Input to {0} must be a string.</entry>
+        <entry key="InvalidTableFlag">Parameter name must be 'VariableNames'.</entry>
+        <entry key="InvalidTall">Invalid tall array. The execution environment backing this tall array no longer exists.</entry>
+        <entry key="InvalidWriteLocation">Invalid write location: {0}\nFolder must either be empty or non-existing.</entry>
+        <entry key="JoinNoDim">Unable to determine the dimension to join. Specify the join dimension using JOIN(S,DIM) or JOIN(S,DELIM,DIM).</entry>
+        <entry key="MinMaxCompareTallData">When calling {0}(A,B,...) to compare arrays, one of A or B must be a tall array.</entry>
+        <entry key="MinMaxSingleOutput">Only a single output argument is supported when using MAX or MIN with a tall array.</entry>
+        <entry key="MldivideXNotScalar">When calling X\\Y where Y is a tall array, X must be scalar.</entry>
+        <entry key="MrdivideYNotScalar">When calling X/Y where X is a tall array, Y must be scalar.</entry>
+        <entry key="MtimesBothTall">Matrix multiplication A*B is not supported when both A and B are tall arrays.</entry>
+        <entry key="MtimesTallXScalar">When calling X*Y where X is a tall array and Y is a matrix, X must not be scalar.</entry>
+        <entry key="MtimesXNotScalar">When calling X*Y where Y is a tall array, X must be scalar.</entry>
+        <entry key="MultipleNaNFlags">Multiple NaN behavior flags are not supported for {0}.</entry>
+        <entry key="MultipleOptionsSpecified">Invalid option combination for {0}. Specify only one of: {1}.</entry>
+        <entry key="MultipleSubstrings">Returning multiple substrings is not supported for tall strings.</entry>
+        <entry key="NoOptionsAllowed">No options are allowed for {0}.</entry>
+        <entry key="PermuteTallDim">Permuting the tall dimension is not supported.</entry>
+        <entry key="ReductionOptionString">Options to {0} must be strings.</entry>
+        <entry key="ReshapeDimVector">When using RESHAPE with a tall array, you must specify the dimension arguments as separate inputs.</entry>
+        <entry key="ReshapeNotSameNumel">Product of requested non-tall dimensions, {0,number,integer}, does
+            not match product of original non-tall dimensions, {1,number,integer}.</entry>
+        <entry key="ReshapeTallDim">Reshaping the first dimension of tall arrays is not supported.</entry>
+        <entry key="SetDatetimePropertiesUnsupported">Setting properties of tall arrays of {0} is not supported.</entry>
+        <entry key="SizeMismatchIndexingWithEnd">A size mismatch was encountered in an indexing expression involving END.</entry>
+        <entry key="SortSortrowsNotSupported">{0} does not support tall arrays. Use TOPKROWS instead.</entry>
+        <entry key="SparseNotAllowed">Tall arrays are not allowed to contain sparse data.</entry>
+        <entry key="SplitApplyOperationNotSupported">The function ''{0}'' uses functionality that is not supported by splitapply.</entry>
+        <entry key="SplitApplyOutputNotUniform">The function ''{0}'' returned a non-scalar value when applied to the {1} group of data.</entry>
+        <entry key="SplitApplyUnsupportedGroupNums">Group numbers must be a tall column vector of positive integers.</entry>
+        <entry key="StackTableinTableNotSupported">Stacking tall table variables that are tables is not supported.</entry>        
+        <entry key="StrrepNotTall">The first argument to STRREP must be a tall array if any other input is a tall array..</entry>
+        <entry key="Str2numNotSupported">The STR2NUM function does not support tall arrays. Use STR2DOUBLE instead.</entry>
+        <entry key="SubsasgnBracesNotSupported">Indexed assignments of the form T'{'...,...'}' = B are not supported for tall arrays.</entry>
+        <entry key="SubsasgnDeletingTooManyNonColons">A null assignment can have only one index that is not a colon (:).</entry>
+        <entry key="SubsasgnDeletingInvalidTallSubscript">For A(m,n,...) = [], m must be either a colon (:) or a tall logical vector.</entry>
+        <entry key="SubsasgnFirstDimTallOrColon">For A(m,n,...) = B, m must be either a colon (:) or a tall logical vector.</entry>
+        <entry key="SubsasgnInvalidNumberOfSubscripts">For A(m,n,...) = B or A(m,n,...) = [], the number of subscripts 
+            must be either 1, or it must match the number of dimensions of A.</entry>
+        <entry key="SubsasgnInvalidTallSubscript">For A(m,n,...) = B, only the tall index m can be a tall array.</entry>
+        <entry key="SubsasgnParensSingleLevel">Only a single level of indexing is supported for expressions A(m,n,...) = B.</entry>
+        <entry key="SubsasgnSingleSubDims">For A(idx) = B, either idx must have the same dimensions as A, or A must be a vector.</entry>
+        <entry key="SubsasgnTallRHSNotSupported">In the assignment A(m,n,...) = B, B must be a scalar value.</entry>
+        <entry key="SubsasgnValueMustBeScalarOrTall">In the assignment A(m,n,...) = B, B must be either a scalar value or a tall array.</entry>
+        <entry key="SubsindexNotSupported">Indexing using tall arrays as subscripts for non-tall arrays is not supported.</entry>
+        <entry key="SubsrefBracesNotSupported">Indexing expressions of the form T'{'...,...'}' are not supported for tall arrays.</entry>
+        <entry key="SubsrefInvalidTallSubscript">For B = A(m,n,...), only m can be a tall array.</entry>
+        <entry key="SubstractDatetimeFrom">Tall datetime arrays can only be subtracted from other tall datetime arrays.</entry>
+        <entry key="TableinTableNotSupported">Tall table variables that are tables are not supported for {0}.</entry>        
+        <entry key="TableVariableNamesFormat">Value of 'VariableNames' must be a cell array of length {0}.</entry>
+        <entry key="TableVariableNamesUnique">'VariableNames' must specify unique variable names.</entry>
+        <entry key="TallSubscriptInNonTallDimension">When indexing a tall array, only the first subscript can be a tall array.</entry>
+        <entry key="TallSubscriptLogicalVector">When indexing a tall array, the first subscript must be a tall logical column vector.</entry>
+        <entry key="TopKBadCol">Sorting columns must be a scalar or vector of positive integer column indices not greater than the number of columns.</entry>
+        <entry key="TopKBadX">First argument must be a 2-D matrix.</entry>
+        <entry key="TypeNotAllowed">Tall arrays are not allowed to contain data of type {0}.</entry>
+        <entry key="UnevaluatedArrayDisplayFooter">Preview deferred. 
+            &lt;a href="matlab:helpview(fullfile(docroot,'matlab','helptargets.map'),'tall_no_preview')"&gt;Learn more&lt;/a&gt;.
+        </entry>
+        <entry key="UniqueRequiresVector">For C=UNIQUE(A), A must be a tall vector or a tall table.</entry>
+        <entry key="UniqueSingleOutput">Only a single output argument is supported for UNIQUE of tall arrays.</entry>
+        <entry key="UniqueUnsupportedSyntax">Only C = UNIQUE(A) and C = UNIQUE(A,'rows') are supported for tall arrays.</entry>
+        <entry key="UnrecognizedSortDirection">DIRECTION must be 'ascend', 'descend', or a cell array containing those values.</entry>
+        <entry key="UnsupportedArgumentType">Argument {0} to {1} must not be of type: {2}.</entry>
+        <entry key="VarFlagZeroOrOne">For tall arrays, the weight argument to VAR can be 0 or 1.</entry>
+        <entry key="VertcatNotSupported">Vertical concatenation is not supported for tall arrays.</entry>
+        <entry key="WeightVectorNotSupported">Weight vector is not supported for {0}.</entry>
+        <entry key="WrongLengthSortDirection">DIRECTION must contain one element for each sorting variable.</entry>
+        <entry key="WritingInfo">Writing tall data to folder {0}</entry>
+    </message>
+</rsccat>

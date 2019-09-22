@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!-- Copyright 2011-2013 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+    <!-- Please keep entries in sorted order -->
+    <entry key="ArgMismatch">The number of inputs to the PTX code ({0,number,integer}) is NOT the same as the number of inputs in the C prototype ({1,number,integer}).</entry>
+    <entry key="BadBlockSize">The specified block size ({0,number,integer}) was invalid for this device.</entry>
+    <entry key="BadBoolPrototype">bool in C must be unsigned.</entry>
+    <entry key="BadGridSize">The specified grid size was invalid for this device.</entry>
+    <entry key="BadShmemAmount">The specified shared memory amount was invalid for this device.</entry>
+    <entry key="CUFileNotFound">Could not find .cu file corresponding to PTX file {0}.</entry>
+    <entry key="CannotParseDeclaration">Unable to parse declaration: {0}</entry>
+    <entry key="CompilationError">An error occurred during PTX compilation of {0}.\nThe information log was:\n{1}\nThe error log was:\n{2}\nThe CUDA error code was: {3}.</entry>
+    <entry key="CouldNotReadCUFile">Unable to read CUDA file {0}: No such file or directory.</entry>
+    <entry key="IncorrectPTXVersion">This function only understands PTX version 1.4, but the module supplied indicates version {0}.\nNot checking prototype and number of args.</entry>
+    <entry key="InvalidArgument">An invalid argument was supplied for argument {0,number,integer}.</entry>
+    <entry key="InvalidEntryArg">The entry name argument must be a character vector.</entry>
+    <entry key="InvalidFile">Cannot read from file: {0}</entry>
+    <entry key="InvalidGridSize">Invalid size input to kernel GridSize. You must provide a vector of up to 3 positive integers. The maximum value in each dimension is: [{0}].</entry>
+    <entry key="InvalidInput">Input must be ''all''.</entry>
+    <entry key="InvalidInputArgument">The first input to parallel.gpu.CUDAKernel must be the name of a file that contains PTX code or an array containing PTX code.</entry>
+    <entry key="InvalidInputClass">Kernel inputs must be numeric, logical, or {0}. Input argument {1,number,integer} was of type ''{2}''.</entry>
+    <entry key="InvalidInputSize">The kernel prototype specifies that argument {0,number,integer} must be a scalar input. The array supplied was not scalar.</entry>
+    <entry key="InvalidKernel">This kernel is no longer valid.</entry>
+    <entry key="InvalidModuleArg">The ''module'' argument must be a character vector.</entry>
+    <entry key="InvalidNargin">Number of input arguments for this kernel is fixed at {0,number,integer}.</entry>
+    <entry key="InvalidNargout">Number of output arguments for this kernel cannot exceed {0,number,integer}.</entry>
+    <entry key="InvalidPrototypeArg">The C Prototype argument must be a character vector.</entry>
+    <entry key="InvalidRegistry">Internal error: bad registry line: &lt;{0}&gt;</entry>
+    <entry key="InvalidShmemSize">The shared memory size for a kernel must be a positive integer, and must not exceed the device''s limit on the amount of shared memory per block ({0} bytes).</entry>
+    <entry key="InvalidThreadBlockSize">Invalid size input to kernel ThreadBlockSize. You must provide a vector of up to 3 positive integers whose product is &lt;= {0,number,integer}. The maximum value in each dimension is: [{1}].</entry>
+    <entry key="InvalidVariableDeclaration">Unable to parse variable declaration.</entry>
+    <entry key="KernelInvocationBadGridSize">The matrix is too large for this operation.</entry>
+    <entry key="LaunchFailure">An unexpected error occurred trying to launch a kernel. The CUDA error was:\n{0}</entry>
+    <entry key="LaunchInvalidImage">The kernel image is invalid. Be sure that the specified kernel was compiled using CUDA 3.2 or later.</entry>
+    <entry key="LaunchTimeout">The GPU has timed out. See &lt;a href="matlab:web('http://www.mathworks.com/gputimeout','-browser')"&gt;www.mathworks.com/gputimeout&lt;/a&gt; for details about GPU timeouts and how to avoid them.</entry>
+    <entry key="MultipleMatchingEntries">Found multiple matching entries in the PTX code. Matches found:\n{0}</entry>
+    <entry key="NoEntries">No entries were found in the PTX file.</entry>
+    <entry key="NoEntriesFound">No entry point in the PTX code matches ''{0}''.  The entry points in the PTX code are:\n{1}</entry>
+    <entry key="NoKernel">Internal error: no kernel was found for identifier ''{0}''.</entry>
+    <entry key="NoLongerExists">Kernel no longer exists on the GPU.</entry>
+    <entry key="NoModule">No module with that handle.</entry>
+    <entry key="NoUnsignedFloatTypes">Cannot have unsigned double or float.</entry>
+    <entry key="NullPointer">An empty array (null pointer) was passed to the CUDA kernel. Attempting to access the elements of this array will cause an error on the GPU.</entry>
+    <entry key="PossibleLaunchTimeout">The GPU might have timed out. See &lt;a href="matlab:web('http://www.mathworks.com/gputimeout','-browser')"&gt;www.mathworks.com/gputimeout&lt;/a&gt; for details about GPU timeouts and how to avoid them.</entry>
+    <entry key="PrototypeMismatchComplexity">The complexity of the array supplied for argument {0,number,integer} does not match the kernel prototype. The kernel prototype specifies that the input must be an array of {1} data but the input supplied was an array of {2} data.</entry>
+    <entry key="PrototypeMismatchExpectedPointer">Expected pointer type for kernel argument {0,number,integer} but found ''{1}'' in the PTX.</entry>
+    <entry key="PrototypeMismatchInvalidMapping">Found invalid mapping for kernel argument {0,number,integer}. The PTX is not consistent with the prototype. The kernel prototype specifies {1} but the PTX expects ''{2}''. You might have specified the wrong PTX file, or it might need recompiling.</entry>
+    <entry key="PrototypeMismatchType">The type of the array supplied for argument {0,number,integer} does not match the kernel prototype. The kernel prototype specifies that the input must be an array of ''{1}'' data but the input supplied was an array of type ''{2}''.</entry>
+    <entry key="PrototypeRequired">When constructing a CUDAKernel with PTX code, a prototype must be specified.</entry>
+    <entry key="RegistryFileNotFound">File not found: {0}</entry>
+    <entry key="RegistryFileReadError">An error occurred reading from: {0}</entry>
+    <entry key="SetConstantMemoryConstantNotFound">The constant ''{0}'' was not found.</entry>
+    <entry key="SetConstantMemoryDataTooLarge">The data supplied is too big for constant ''{0}''.</entry>
+    <entry key="SetConstantMemoryInputsMustBePairs">Inputs to ''setConstantMemory'' must be supplied as name-value pairs.</entry>
+    <entry key="SetConstantMemoryNameInputMustBeString">The name of the device constant memory variable must be a character array.</entry>
+    <entry key="SetConstantMemoryValueInputMustBeFull">Only full arrays are supported on the GPU.</entry>
+    <entry key="SetConstantMemoryValueInputMustBeNumeric">Values to be set into device constant memory must be numeric.</entry>
+    <entry key="TooManyEntries">Found more than one entry point in the PTX code.  Possible names are:\n{0}</entry>
+    <entry key="UnableToCreateCastCopy">Unable to create GPU input of the correct type.</entry>
+    <entry key="UnableToParsePtxEntryName">The PTX entry point name has not parsed to an equivalent C name.</entry>
+    <entry key="UnknownType">Unable to parse declaration: {0}</entry>
+    <entry key="UnsupportedType">Unsupported type in argument specification ''{0}''.</entry>
+  </message>
+</rsccat>

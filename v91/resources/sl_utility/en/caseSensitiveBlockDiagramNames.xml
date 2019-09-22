@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="sl_utility" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="InvalidFlag" translate="false">The feature flag for caseSensitiveBlockDiagramNames was set to ''{0}'', an invalid value. The feature has now been turned off.</entry>
+    <entry key="PathWarn">Cannot find an exact case-sensitive match for the model or library name ''{0}''.\nUsing the closest case-insensitive match: ''{1}'' at ''{2}''.\nCase-insensitive matching will be removed in a future release. Specify exact case instead.</entry>
+    <entry key="PathError" translate="false">Cannot find an exact case-sensitive match for the model or library name ''{0}''.\nDid you mean the closest case-insensitive match: ''{1}'' at ''{2}''?</entry>
+    <entry key="NameWarn">Cannot find an exact case-sensitive match for the model or library name ''{0}''.\nUsing the closest case-insensitive match: ''{1}''.\nCase-insensitive matching will be removed in a future release. Specify exact case instead.</entry>
+    <entry key="NameError" translate="false">Cannot find an exact case-sensitive match for the model or library name ''{0}''.\nDid you mean the closest case-insensitive match: ''{1}''?</entry>
+  </message>
+</rsccat>

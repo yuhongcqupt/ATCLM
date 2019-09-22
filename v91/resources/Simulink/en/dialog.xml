@@ -1,0 +1,1935 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2009-2016 The MathWorks, Inc. -->
+<rsccat locale="en_US" product="Simulink" version="1.0">
+   <message>
+    <entry key="ModelParameters">Model Parameters: {0}</entry>
+    <entry key="BlockParameters">Block Parameters: {0}</entry>
+    <entry key="GeneratorParameters">Generator Parameters: {0}</entry>
+    <entry key="Parameters">Parameters</entry>
+    <entry key="OutputDataType">Output data type:</entry>
+    <entry key="AxisMustbeVector1x4">Axis is not defined correctly; it must be a 1x4 vector"</entry>
+    <entry key="AxisUseDefault">Axis not defined; using default axis</entry>
+    <entry key="AxisUseCurrent">Axis not defined correctly; using current axis</entry>
+    <entry key="LookupTableEditor">Lookup Table Editor:</entry>
+    <entry key="MismatchTableAndBreakpoints">Specified table data must have the number of dimensions indicated by 'Number of table dimensions' parameter.</entry>
+    <entry key="MismatchTableAndBreakpointsDimensions">Length of breakpoint #{0} must equal dimension #{0} of table data.</entry>
+    <entry key="BreakpointIsNotVector">Breakpoint {0} is not a vector. Specify breakpoint value as vector.</entry>
+    <entry key="SearchProduct">Searching product: {0}</entry>
+    <entry key="StateAttributes">State Attributes</entry>
+    <entry key="SignalAttributes">Signal Attributes</entry>
+    <entry key="DataAlgorithm">Data and Algorithm</entry>
+    <entry key="DelayLength">Delay length:</entry>
+    <entry key="InitialCondition">Initial condition:</entry>
+    <entry key="Source">Source</entry>
+    <entry key="Value">Value</entry>
+    <entry key="UpperLimit">Upper Limit</entry>
+    <entry key="Main">Main</entry>
+    <entry key="ParameterAttributes">Parameter Attributes</entry>
+    <entry key="BusObjects">Bus Objects</entry>
+    <entry key="FixedPointTab">Fixed-point</entry>
+    <entry key="DataTypeAttributes">Data Type Attributes</entry>
+    <entry key="IntermediateAttributes">Intermediate Attributes</entry>
+    <entry key="CodeGeneration">Code Generation</entry>    
+    <entry key="Edit">Edit</entry>
+    <entry key="Editing">Edit...</entry>
+    <entry key="SFuncName">S-function name:</entry>
+    <entry key="SFuncParameter">S-function parameters:</entry>
+    <entry key="SFuncModule">S-function modules:</entry>
+    <entry key="AvgPowerSpectralDensity">Average Power Spectral Density</entry>
+    <entry key="PowerSpectralDensity">Power Spectral Density</entry>
+    <entry key="WaitingMsg">Working - please wait</entry>
+    <entry key="TimeHistory">Time history</entry>
+    <entry key="TimeInSeconds">Time (Seconds)</entry>
+    <entry key="ObjectNamePrompt">Name:</entry>
+    <entry key="ObjectDescriptionPrompt">Description:</entry>
+    <entry key="DDGInvalidDialogHandle">Did not receive a valid dialog handle in {0}</entry>
+    <entry key="DataMinimumPrompt">Minimum:</entry>
+    <entry key="DataMinimumToolTip">Minimum allowable value (use -Inf for unspecified)</entry>
+    <entry key="DataMaximumPrompt">Maximum:</entry>
+    <entry key="DataMaximumToolTip">Maximum allowable value (use Inf for unspecified)</entry>
+    <entry key="DataDataTypePrompt">Data type:</entry>
+    <entry key="DataDimensionsPrompt">Dimensions:</entry>
+    <entry key="DataDimensionsToolTip1">Size of array (use -1 for undefined)</entry>
+    <entry key="DataDimensionsToolTip2" note="stringDatatypeUpdate">Size of the array, implied by parameter value. Dimension variants can also be specified in form of character vector.</entry>
+    <entry key="DataDimensionsModePrompt">Dimensions mode:</entry>
+    <entry key="DataDimensionsModeToolTip">Dimensions mode of this signal</entry>
+    <entry key="DataComplexityPrompt">Complexity:</entry>
+    <entry key="DataComplexityToolTip1">Numeric type (i.e., real or complex)</entry>
+    <entry key="DataComplexityToolTip2">Numeric type (implied by parameter value)</entry>
+    <entry key="DataUnitsPrompt">Unit:</entry>  
+    <entry key="DataUnitPrompt">Unit:</entry>
+    <entry key="UnitsAutoCompleteViewColumnSymbolPrompt">Symbol                             </entry>
+    <entry key="UnitsAutoCompleteViewColumnNamePrompt">Name                                    </entry>
+    <entry key="DataUnitsToolTip" note="stringDatatypeUpdate">Measurement units entered as a character vector</entry>
+    <entry key="DataUnitToolTip" note="stringDatatypeUpdate">Measurement units entered as a character vector</entry>
+    <entry key="ParamValuePrompt">Value:</entry>
+    <entry key="ParamValueToolTip1">"Real-world" numeric value</entry>
+    <entry key="ParamValueToolTip2">Numeric value ({0})</entry>
+    <entry key="SignalSampleTimePrompt">Sample time:</entry>
+    <entry key="SignalSampleTimeToolTip">Rate at which this signal is calculated (use -1 for unspecified)</entry>
+    <entry key="SignalSampleModePrompt">Sample mode:</entry>
+    <entry key="SignalSampleModeToolTip">Sample mode of this signal</entry>
+    <entry key="SignalInitialValuePrompt">Initial value:</entry>
+    <entry key="SignalInitialValueToolTip">Signal object initial value</entry>
+    <entry key="DataStorageClassPrompt">Storage class:</entry>
+    <entry key="DataStorageClassToolTip1">Controls storage of data in generated code</entry>
+    <entry key="DataStorageClassToolTip2">Controls storage of data in generated code (if InlineParameters ON)</entry>
+    <entry key="DataCustomAttributesPrompt">Custom attributes</entry>
+    <entry key="DataAliasPrompt">Alias:</entry>
+    <entry key="DataAliasToolTip">Identifier to use in generated code (optional)</entry>
+    <entry key="DataAlignmentPrompt">Alignment:</entry>
+    <entry key="DataAlignmentToolTip">Data alignment boundary in generated code (optional)</entry>
+    <entry key="DataTypeQualifierPrompt">Type qualifier:</entry>
+    <entry key="DataTypeQualifierToolTip">Qualifier string to include in data declaration in generated code (optional)</entry>
+    <entry key="DataCodeGenOptionsPrompt">Code generation options</entry>
+    <entry key="DataCustomAttributesGetFunctionPrompt">Get function:</entry>
+    <entry key="DataCustomAttributesSetFunctionPrompt">Set function:</entry>
+    <entry key="DataTab1Prompt">Standard attributes</entry>
+    <entry key="DataTab2Prompt">Additional attributes</entry>
+    <entry key="DataAdditionalPropsPrompt">Additional properties</entry>
+    <entry key="TargetUserDataPrompt">Target user data</entry>
+    <entry key="UnableToDisplayProperty">Unable to display property: {0}</entry>
+    <entry key="InvalidArgFourExpLogStat">Invalid argument #4. Expecting logical argument.</entry>
+    <entry key="DataTypeDataScopePrompt">Data scope</entry>
+    <entry key="DataTypeHeaderFilePrompt">Header file</entry>
+    <entry key="NumericTypeDataTypeModePrompt">Data type mode:</entry>
+    <entry key="NumericTypeSignednessPrompt">Signedness:</entry>
+    <entry key="NumericTypeWordLengthPrompt">Word length:</entry>
+    <entry key="NumericTypeFractionLengthPrompt">Fraction length:</entry>
+    <entry key="NumericTypeSlopePrompt">Slope:</entry>
+    <entry key="NumericTypeBiasPrompt">Bias:</entry>
+    <entry key="NumericTypeDataTypeOverridePrompt">Data type override:</entry>
+    <entry key="NumericTypeIsAliasPrompt">Is alias</entry>
+    <entry key="AliasTypeBaseTypePrompt">Base type:</entry>
+    <entry key="ModelCallbackPromptPreLoadFcn">Model pre-load function:</entry>
+    <entry key="ModelCallbackPromptPostLoadFcn">Model post-load function:</entry>
+    <entry key="ModelCallbackPromptSetupFcn">Model setup function:</entry>
+    <entry key="ModelCallbackPromptInitFcn">Model initialization function:</entry>
+    <entry key="ModelCallbackPromptStartFcn">Simulation start function:</entry>
+    <entry key="ModelCallbackPromptPauseFcn">Simulation pause function:</entry>
+    <entry key="ModelCallbackPromptContinueFcn">Simulation continue function:</entry>
+    <entry key="ModelCallbackPromptStopFcn">Simulation stop function:</entry>
+    <entry key="ModelCallbackPromptCleanupFcn">Model cleanup function:</entry>
+    <entry key="ModelCallbackPromptPreSaveFcn">Model pre-save function:</entry>
+    <entry key="ModelCallbackPromptPostSaveFcn">Model post-save function:</entry>
+    <entry key="ModelCallbackPromptCloseFcn">Model close function:</entry>
+    <entry key="ModelCbTreeName">Model callbacks</entry>
+    <entry key="TopModelCbTreeName">Top-model callbacks</entry>
+    <entry key="ModelReadOnlyName">Read Only</entry>
+    <entry key="ModelCreatorEditLblName">Created by:</entry>
+    <entry key="ModelLastByValLblName">Last saved by:</entry>
+    <entry key="ModelCreatedEditLblName">Created on:</entry>
+    <entry key="ModelLastOnVerValLblName">Last saved on:</entry>
+    <entry key="ModelModelVerValLblName">Model version:</entry>
+    <entry key="ModelVersionName">Model information</entry>
+    <entry key="ModelHistoryName">Model history:</entry>
+    <entry key="ModelPromptHistoryValName">Prompt to update model history:</entry>
+    <entry key="ModelPromptHistoryValEntryNever">Never</entry>
+    <entry key="ModelPromptHistoryValEntryWhenSavingModel">When saving model</entry>
+    <entry key="ModelDescriptionName">Model description:</entry>
+    <entry key="ModelTabOneName">Main</entry>
+    <entry key="ModelTabTwoName">Callbacks</entry>
+    <entry key="ModelTabThreeName">Forwarding Table</entry>
+    <entry key="ModelTabFourName">History</entry>
+    <entry key="ModelTabFiveName">Description</entry>
+    <entry key="ModelDialogTitle">Model Properties</entry>
+    <entry key="LibraryDialogTitle">Library Properties</entry>
+    <entry key="ForwardingTableDefOldBlockPath">&lt;Enter old block path&gt;</entry>
+    <entry key="ForwardingTableDefnewBlockPath">&lt;Enter new block path&gt;</entry>
+    <entry key="ForwardingTableDefTransformation">&lt;Enter Transformation name&gt;</entry>
+    <entry key="ForwardingTableDefBlockVer">n/a</entry>
+    <entry key="ForwardingTableNoTransformation"> No Transformation</entry>
+    <entry key="ModelHTMLTextModelInfoFor">Model Information for:</entry>
+    <entry key="HarnessHTMLTextHarnessInfoFor">Harness Information for:</entry>
+    <entry key="HarnessHTMLTextSystemBD">Main Model:</entry>
+    <entry key="HarnessHTMLTextOwner">Owner:</entry>
+    <entry key="ModelHTMLTextSourceFile">Source File:</entry>
+    <entry key="ModelHTMLTextLastSaved">Last Saved:</entry>
+    <entry key="ModelHTMLTextCreatedOn">Created On:</entry>
+    <entry key="ModelHTMLTextIsModified">Is Modified:</entry>
+    <entry key="ModelHTMLTextModelVersion">Model Version:</entry>
+
+
+    <entry key="ModelHTMLTextHtmLineOne">The model workspace is similar to the base MATLAB workspace except:</entry>
+    <entry key="ModelHTMLTextHtmLineThree">Variables in this workspace are only visible within the scope of this model.</entry>
+    <entry key="ModelHTMLTextHtmLineFour">When the model is loaded, the workspace is initialized from a specified data source.</entry>
+    <entry key="ModelHTMLTextHtmLineFive">Changes to the workspace are saved to the data source when the model is saved (except if the data source is set to ''MATLAB Code'').</entry>
+    <entry key="ModelHTMLTextHtmLineSix">The current data repository can also be manually reloaded or saved.</entry>
+    <entry key="ModelHTMLTextHtmLineSeven">In general, parameters in this workspace are not tunable.  However, when referencing this model from another model, parameters can be made tunable by identifying them as parameter arguments.</entry>
+    <entry key="ModelHTMLTextHtmLineNine">To work with this workspace at the MATLAB command line, type:</entry>
+    <entry key="BusBustableColHeaderName">Name</entry>
+    <entry key="BusBustableColHeaderDimension">Dimension</entry>
+    <entry key="BusBustableColHeaderDataBusType">Data/Bus Type</entry>
+    <entry key="BusBustableColHeaderSampleTime">Sample Time</entry>
+    <entry key="BusBustableColHeaderComplexity">Complexity</entry>
+    <entry key="BusBustableColHeaderDimensionsMode">Dimensions Mode</entry>
+    <entry key="BusBustableColHeaderSamplingMode">Sampling Mode</entry>
+    <entry key="BusElementsgrpName">Bus elements (read only)</entry>
+    <entry key="BusDataScopeLblName">Data scope</entry>
+    <entry key="BusHeaderFileLblName">Header file</entry>
+    <entry key="BusEditorbtnName">Launch Bus Editor</entry>
+    <entry key="MENoDialogsToDisplay">This item does not have dialogs that can be displayed in the Model Explorer.\nPlease use the links below to open the stand-alone dialogs.</entry>
+    <entry key="MEOpenDialog">- Open {0}.</entry>
+    <entry key="MEOpenBlockProps">- Open block properties dialog for {0}.</entry>
+    <entry key="MEBlockDialogTitle">Default Block Dialog: {0}</entry>
+    <entry key="StructtypeStructtableColHeaderName">Name</entry>
+    <entry key="StructtypeStructtableColHeaderDimension">Dimension</entry>
+    <entry key="StructtypeStructtableColHeaderDataBusType">Data/Bus Type</entry>
+    <entry key="StructtypeStructtableColHeaderComplexity">Complexity</entry>
+    <entry key="StructtypeElementsgrpName">Struct elements</entry>
+    <entry key="StructtypeElementsLblName">Elements:</entry>
+    <entry key="StructtypeElementsValNameEmpty">&lt;empty&gt;</entry>
+    <entry key="StructtypeStructName">Name:</entry>
+    <entry key="StructtypeDataScopeLblName">Data scope:</entry>
+    <entry key="StructtypeAlignmentLblName">Alignment</entry>
+    <entry key="StructtypeHeaderFileLblName">Header file:</entry>
+    <entry key="StructelementNameLblName">Name:</entry>
+    <entry key="StructelementDatatypeLblName">Data Type:</entry>
+    <entry key="StructelementDimLblName">Dimensions:</entry>
+    <entry key="StructelementComplexLblName">Complexity:</entry>
+    <entry key="BuselementSamptimeLblName">Sample time:</entry>
+    <entry key="BuselementDimsmodeLblName">Dimensions mode:</entry>
+    <entry key="BuselementSampmodeLblName">Sampling mode:</entry>
+    <entry key="RootDialogTitle">Root</entry>
+    <entry key="Regular_Exec_CB">Time-Driven</entry>
+    <entry key="Startup_Exec_CB">Initialize</entry>
+    <entry key="Shutdown_Exec_CB">Terminate</entry>
+    <entry key="Reset_Exec_CB">Reset</entry>
+    <entry key="Reset_With_Init_Exec_CB">Reset With Initialize</entry>
+    <entry key="SigpropEmptyPortObjTxtName">This line does not have a signal source</entry>
+    <entry key="SigpropEmptyPortObjDialogTitle">Connection Line</entry>
+    <entry key="SigpropChkLogSigDataName">Log signal data</entry>
+    <entry key="SigpropChkTestPointName">Test point</entry>
+    <entry key="SigpropCmbLogEntryUseSignalName">Use signal name</entry>
+    <entry key="SigpropCmbLogEntryCustom">Custom</entry>
+    <entry key="SigpropGrpLogging">Logging</entry>
+    <entry key="SigpropGrpLogName">Logging name</entry>
+    <entry key="SigpropLblDataPointsName">Limit data points to last </entry>
+    <entry key="SigpropLblDecimationName">Decimation</entry>
+    <entry key="SigpropGrpDataName">Data</entry>
+    <entry key="SigpropTabOneName">Logging and accessibility</entry>
+    <entry key="SigpropRTWPackageName">Package:</entry>
+    <entry key="StateAndSigpropSignalObjectClass">Signal object class:</entry>
+    <entry key="SigpropRTWRefreshBtn">Refresh</entry>
+    <entry key="SigpropRTWStorageClassName">Storage class:</entry>
+    <entry key="SigpropRTWTypeQualifierName">Storage type qualifier:</entry>
+    <entry key="SigpropTabTwoName">Code Generation</entry>
+    <entry key="SigpropLblDescriptionName">Description:</entry>
+    <entry key="SigpropHyplinkName">Document Link</entry>
+    <entry key="SigpropTabThreeName">Documentation</entry>
+    <entry key="SigpropLblSignalNameName">Signal name:</entry>
+    <entry key="SigpropLblSampleTime">Sample time:</entry>
+    <entry key="SigpropLblShowSigPropName">Show propagated signals</entry>
+    <entry key="SigpropChkResSigObjName">Signal name must resolve to Simulink signal object</entry>
+    <entry key="SigpropTabContainerName" translate="false">MainTab</entry>
+    <entry key="SigpropPortObjDlgStructDialogTitle">Signal Properties: {0}</entry>
+    <entry key="InitializeFcnPromp">Initialize</entry>
+    <entry key="TerminateFcnPromp">Terminate</entry>
+    <entry key="NotEnoughInpArgs">Not enough input arguments</entry>
+    <entry key="InvalidArgsPerfAction">Invalid arguments for ''{0}'' to perform ''{1}'' action</entry>
+    <entry key="InvalidActionPerfAction">Invalid action command for ''{0}'': {1}.</entry>
+    <entry key="SignalProps">Signal Properties: {0}</entry>
+    <entry key="SigLoggFeatureParamUnknown">Signal logging feature: parameter ''{0}'' is returning unknown value</entry>
+    <entry key="SigPropsDlgMsg">Signal Properties Dialog Message</entry>
+    <entry key="cannotLaunchHTMLDocLinkEmpty">Cannot launch HTML viewer since Document link field is empty.</entry>
+    <entry key="SigPropWarn">Signal Properties Warning</entry>
+    <entry key="MissingInpArgs">Missing input arguments</entry>
+    <entry key="NoModelWithHandle">There is no model with handle {0}</entry>
+    <entry key="ModelNotFound">Model "{0}" is not found</entry>
+    <entry key="FirstInpArgMustBeValidModel">First input argument must be a valid model name, handle, or {0} object</entry>
+    <entry key="SecondInpArgValidStr" note="stringDatatypeUpdate">Second input argument must be a valid action character vector</entry>
+    <entry key="ActionReqrThirdInpArgSpecPage">"{0}" action requires a third input argument specifying page name</entry>
+    <entry key="CSActionExtraArg">Too many input arguments provided for action "{0}".</entry>
+    <entry key="PageMustBeStr" note="stringDatatypeUpdate">Page name must be a character vector</entry>
+    <entry key="PageNotValid">Page "{0}" is not a valid page.</entry>
+    <entry key="ActionReqrThirdInpArgInterPrm">"{0}" action requires a third input argument specifying interested parameter</entry>
+    <entry key="PrmMustBeStr" note="stringDatatypeUpdate">Parameter name must be a character vector</entry>
+    <entry key="ActionReqrThirdInpArgSpecUI">"{0}" action requires a third input argument specifying the UI item</entry>
+    <entry key="IncorrectUIDesc">Incorrect UI description</entry>
+    <entry key="UnsupportedAct">Unsupported action</entry>
+    <entry key="UnsupportedReason">Unsupported highlighting scheme "{0}"</entry>
+    <entry key="ItemMustBeCharacterString" note="stringDatatypeUpdate">item must be a character vector in {0}.</entry>
+    <entry key="ParameterNotVisible">''{0}'' is not visible in the Commonly Used Parameters tab due to parameter dependencies.</entry>
+    <entry key="NonUIParameter">''{0}'' is not available in the Commonly Used Parameters tab of the Configuration Parameters dialog box.</entry>
+    <entry key="ParameterNotAvailable">''{0}'' is not available in the Configuration Parameters dialog box with the current System Target File and available licenses.</entry>
+    <entry key="ListViewHighlightHyperlink">Show ''{0}'' in the All Parameters tab.</entry>
+    <entry key="ListViewOnly">Parameter Not Available</entry>
+    <entry key="NoSuchParameter">''{0}'' is not a valid parameter name in the current configuration.</entry>
+    <entry key="NotSupportforLib">Configuration set parameters UI lookup is not supported for library.</entry>
+    <entry key="AnnotationClickDescNamePartOne">Clicking the annotation invokes this ClickFcn callback. For example, to open the website specified in the annotation text, enter:</entry>
+    <entry key="AnnotationClickDescNamePartTwo" translate="false">an = getCallbackAnnotation; web(an.Text);</entry>
+    <entry key="AnnotationImageClickDescNamePartOne">Clicking the image invokes this ClickFcn callback. For example, to open a website with a click on this image, enter:</entry>
+    <entry key="AnnotationImageClickDescNamePartTwo" translate="false">web(&lt;url&gt;);</entry>
+    <entry key="AnnotationUseTextForClickFcnName">Use annotation text as click callback</entry>
+    <entry key="AnnotationDropShadowName">Shadow</entry>
+    <entry key="AnnotationFixedHeightName">Fixed height</entry>
+    <entry key="AnnotationFixedWidthName">Fixed width</entry>
+    <entry key="AnnotationFixedSizeName">Fixed size</entry>
+    <entry key="AnnotationTexModeName">Enable TeX commands</entry>
+    <entry key="AnnotationFontName">Font...</entry>
+    <entry key="AnnotationForegroundName">Foreground color:</entry>
+    <entry key="AnnotationBackgroundName">Background color:</entry>
+    <entry key="AnnotationAlignmentName">Alignment:</entry>
+    <entry key="AnnotationLeftMarginName">Left margin:</entry>
+    <entry key="AnnotationTopMarginName">Top margin:</entry>
+    <entry key="AnnotationRightMarginName">Right margin:</entry>
+    <entry key="AnnotationBottomMarginName">Bottom margin:</entry>
+    <entry key="AnnotationLeftMarginShortName">Left:</entry>
+    <entry key="AnnotationTopMarginShortName">Top:</entry>
+    <entry key="AnnotationRightMarginShortName">Right:</entry>
+    <entry key="AnnotationBottomMarginShortName">Bottom:</entry>
+    <entry key="AnnotationDefaultFontName">Default font:</entry>
+    <entry key="AnnotationTextGroupName">Text</entry>
+    <entry key="AnnotationTextGroupToolTip">Text</entry>
+    <entry key="AnnotationActiveGroupName" translate="false">ClickFcn</entry>
+    <entry key="AnnotationActiveGroupToolTip">Active Code</entry>
+    <entry key="AnnotationAppearanceGroupName">Appearance</entry>
+    <entry key="AnnotationAppearanceGroupToolTip">Appearance</entry>
+    <entry key="AnnotationFormatGroupName">Format</entry>
+    <entry key="AnnotationFormatGroupToolTip">Format</entry>
+    <entry key="AnnotationInternalMarginGroupName">Internal margin</entry>
+    <entry key="AnnotationInternalMarginGroupToolTip">Internal margin</entry>
+    <entry key="AnnotationGeneralTabName">General</entry>
+    <entry key="AnnotationClickFcnTabName" translate="false">ClickFcn</entry>
+    <entry key="AnnotationTitlePartial">Annotation Properties: {0}</entry>
+    <entry key="AreaAnnotationTitlePartial">Area Properties: {0}</entry>
+    <entry key="AreaAnnotationDescriptionPanel">Description</entry>
+    <entry key="AreaAnnotationObjectName">Name</entry>
+    <entry key="AnnotationTitleImage">Image Properties</entry>
+    <entry key="AnnotationTypeAnnotation">Annotation</entry>
+    <entry key="AnnotationTypeImage">Image</entry>
+    <entry key="AnnotationTypeArea">Area</entry>
+    <entry key="AnnotationUndoRedoCommand">Edit Annotation</entry>
+    <entry key="AreaUndoRedoCommand">Edit Area</entry>
+    <entry key="ImageUndoRedoCommand">Edit Image</entry>
+    <entry key="DsmRwGuiCorrespondingBlocks">Corresponding {0} blocks:</entry>
+    <entry key="DsmRwGuiRefresh">refresh</entry>
+    <entry key="CapitalRefresh">Refresh</entry>
+    <entry key="RenameAllCorrespondingBlocks">Corresponding blocks:</entry>
+    <entry key="RenameAllCorrespondingConfigSets">Corresponding configurations:</entry>
+    <entry key="OtherStateAccessorBlocks">Related {0} blocks:</entry>
+    <entry key="StateOwnerBlock">State owner block:</entry>
+    <entry key="StateOwnerTree">State Owner Selector Tree</entry>
+    <entry key="RelatedRW">Related State Reader and Writer Blocks</entry>
+    <entry key="Highlight">Highlight</entry>
+    <entry key="HighlightSelectedBlock">Highlight selected state owner in block diagram</entry>
+    <entry key="RefreshTree">Refresh state owner selector tree</entry>
+    <entry key="StateReaderBlocks">State Reader Blocks</entry>
+    <entry key="StateWriterBlocks">State Writer Blocks</entry>
+    <entry key="WorkspaceExportUserOptionDialogTitle">Configure Export Option</entry>
+    <entry key="WorkspaceExportUserOptions">Options</entry>
+    <entry key="WorkspaceExportUserOptionCreate">{0} Overwrite entire file</entry>
+    <entry key="WorkspaceExportUserOptionUpdate">{0} Only update variables that exist in file</entry>
+    <entry key="WorkspaceExportUserOptionAppend">{0} Update variables that exist in file and append new variables to file</entry>
+    <entry key="WorkspaceRootDlgStructDialogTitle">Base Workspace</entry>
+    <entry key="WorkspaceDataSourceError">Unhandled data source: {0}</entry>
+    <entry key="WorkspacePnlTitle">Data source</entry>
+    <entry key="WorkspaceSourceLocation">Location:</entry>
+    <entry key="WorkspaceSourceName">Data source:</entry>
+    <entry key="WorkspaceSourceModelFile">Model File</entry>
+    <entry key="WorkspaceSourceMATFile">MAT-File</entry>
+    <entry key="WorkspaceSourceMATLABFile">MATLAB File</entry>
+    <entry key="WorkspaceSourceMATLABCode">MATLAB Code</entry>
+    <entry key="WorkspaceFileEditName">File name:</entry>
+    <entry key="WorkspaceFileEditToolTip">The source MAT-File or MATLAB file for the workspace</entry>
+    <entry key="WorkspaceFileBrowserButtonName">Browse ...</entry>
+    <entry key="WorkspaceFileBrowserButtonToolTip">Open file browser</entry>
+    <entry key="WorkspaceUserMCodeName">MATLAB Code:</entry>
+    <entry key="WorkspaceUserMCodeToolTip">MATLAB code that is evaluated to initialize the workspace</entry>
+    <entry key="WorkspaceReloadButtonName">Reinitialize from Source</entry>
+    <entry key="WorkspaceReloadButtonToolTip">Clear and reinitialize the workspace</entry>
+    <entry key="WorkspaceSavetosrcButtonName">Save to Source</entry>
+    <entry key="WorkspaceSavetosrcButtonToolTip">Save the data in the workspace to the source MAT-File or MATLAB file</entry>
+    <entry key="WorkspaceImportFileDialogName">Import from File</entry>
+    <entry key="WorkspaceExportFileDialogName">Export to File</entry>
+    <entry key="WorkspacePnlModelWrkSpaceName">Workspace data</entry>
+    <entry key="WorkspaceModelArgNamesName">Model arguments (for referencing this model):</entry>
+    <entry key="WorkspaceModelArgNamesToolTip">This is an ordered, comma-separated list of parameters that will become the arguments to this model \n when it is called from within another model (they will appear as dialog parameters on the Model block).  \n To specify the characteristics of these parameters, create variables with the same names in this model''s workspace.</entry>
+	<entry key="WorkspaceCreateModelMask">Create Model Mask</entry>
+    <entry key="WorkspaceEditModelMask">Edit Model Mask</entry>
+    <entry key="WorkspaceCreateModelMaskToolTip">Create mask on a model</entry>
+	<entry key="WorkspaceEditModelMaskToolTip">Edit mask on a model</entry>
+    <entry key="WorkspaceDlgStructDialogTitle">Model Workspace</entry>
+    <entry key="WorkspaceHTMLText">The base (MATLAB) workspace contains variables that are visible to all Simulink models.  These variables can be used to parameterize certain model, block and signal parameters.</entry>
+    <entry key="WorkspaceCalledByExternal">This is an internal function</entry>
+    <entry key="WorkspaceErrorMessageBoxTitle">Error Message</entry>
+    <entry key="WorkspaceRecognizedFileFormat">Recognized Files</entry>
+    <entry key="WorkspaceCannotImportFromNonMATMATLABFile">File ''{0}'' is neither MAT-file nor MATLAB file</entry>
+    <entry key="WorkspaceCannotImportFromFileWithInvalidMATLABFileName">File ''{0}'' has invalid MATLAB file name</entry>
+    <entry key="WorkspaceCannotGetModelWorkspace">Cannot get model workspace for model ''{0}'' </entry>
+    <entry key="WorkspaceSupportOnlyBaseAndModelWorkspace">Support only Base and Model workspace</entry>
+    <entry key="WorkspaceNoVariablesInFile">The selected file ''{0}'' does not contain any variables.</entry>
+    <entry key="WorkspaceNoVariablesInFileWarnDlgTitle">No Variables Imported</entry>
+    <entry key="WorkspaceCannotLoadFromFile">Cannot load variables from file ''{0}'': {1}</entry>
+    <entry key="WorkspaceCannotSaveToFile">Cannot save variables to file ''{0}'': {1}</entry>
+    <entry key="WorkspaceMATLABFileLoadingConfirmationTitle">Import from MAT-file</entry>
+    <entry key="WorkspaceMATLABFileLoadingConfirmation">The MAT-file ''{0}'' is associated with ''{1}'' in the same folder. Loading this MATLAB file by itself results in incomplete workspace data. \n \n Do you want to continue the import operation?</entry>
+    <entry key="WorkspaceVariableReplacementConfirmationAllVars">All variables already exist in this workspace\n\n Do you want to continue with the import operation and overwrite them?</entry>
+    <entry key="WorkspaceVariableReplacementConfirmation">Variable ''{0}'' already exists in this workspace.\n \n Do you want to continue with the import operation and overwrite it?</entry>
+    <entry key="WorkspaceVariableReplacementConfirmationpl">{0} variables already exist in this workspace:\n {1} \n\n Do you want to continue with the import operation and overwrite them?</entry>
+    <entry key="WorkspaceVariableReplacementMsgBoxTitle">Variable Replacement</entry>
+    <entry key="WorkspaceVariableClearConfirmation">Do you want to clear all variables in the workspace?</entry>
+    <entry key="WorkspaceVariableClearMsgBoxTitle">Clear Workspace</entry>
+    <entry key="WorkspaceCannotOpenReadMATLABFile">Cannot open MATLAB file ''{0}'' to read</entry>
+    <entry key="WorkspaceExportVariablesWaitBarMessage">Exporting variables to file ...</entry>
+    <entry key="WorkspaceMATFileRemoveReplacementConfirmationTitle">Export to MATLAB file</entry>
+    <entry key="WorkspaceMATFileRemoveReplacementConfirmation">Exporting to ''{0}'' will either remove or replace the existing MAT-file ''{1}'' in the same folder.  \n \n Do you want to proceed?</entry>
+    <entry key="WorkspaceMATLABFileExistingConfirmationTitle">Export to MAT-file</entry>
+    <entry key="WorkspaceMATLABFileExistingConfirmation">The existing MAT-file ''{0}'' is associated with ''{1}'' in the same folder. \nReplacing that associated MAT-file may cause the MATLAB file to fail. \n \n Do you want to proceed?</entry>
+    <entry key="WorkspaceMATFileCreation">An associated MAT-file ''{0}'' was created to store the variables that could not be written out into ''{1}''.</entry>
+    <entry key="WorkspaceMATFileCreationWarnDlgTitle">Associated MAT-file Created</entry>
+    <entry key="WorkspaceMATFileChanged">The variables that could not be written out into ''{0}'' are saved in the associated MAT-file ''{1}''.</entry>
+    <entry key="WorkspaceMATFileChangedWarnDlgTitle">Associated MAT-file Updated</entry>
+    <entry key="WorkspaceMATFileCleanupWarnDlgTitle">Associated MAT-file Deleted</entry>
+    <entry key="WorkspaceFileNoNeedUpdate">None of the variables in this workspace exist in ''{0}''. The file is not changed.</entry>
+    <entry key="WorkspaceFileNoNeedUpdateSelect">None of the selected variables exist in ''{0}''. The file is not changed.</entry>
+    <entry key="WorkspaceFileNoNeedUpdateWarnDlgTitle">File Not Updated</entry>
+    <entry key="RootHTMLTextLineFour">Simulink Root Information</entry>
+    <entry key="RootHTMLTextLineSeven">The Simulink Root is the top most node in the Simulink hierarchy. All loaded models and libraries live under the Simulink Root. Any global instances of Simulink data classes such as:</entry>
+    <entry key="RootHTMLTextLineNine">Parameter</entry>
+    <entry key="RootHTMLTextLineEleven">Signal</entry>
+    <entry key="RootHTMLTextLineTwelve">or other</entry>
+    <entry key="RootHTMLTextLineThirteen">data object classes</entry>
+    <entry key="RootHTMLTextLineFourteen">can be found in the Simulink Root''s Base Workspace or data dictionary nodes along with any valid MATLAB workspace variables.</entry>
+    <entry key="RootHTMLTextLineSeventeen">Models loaded:</entry>
+    <entry key="RootHTMLTextLineEighteen">Libraries loaded:</entry>
+    <entry key="RootHTMLTextLineNineteen">Models opened:</entry>
+    <entry key="RootHTMLTextLineTwenty">Libraries opened:</entry>
+    <entry key="RootHTMLTextLineTwentySix">Preferences</entry>
+    <entry key="RootHTMLTextLineThirty">Block Diagram Session Defaults:</entry>
+    <entry key="CSCTypeAttrPromotedOwnerDefinitionFileWarning">The csc_registration file for package ''{0}'' specifies Owner and DefinitionFile as CSCTypeAttributes on CSC ''{1}''. These attributes have been promoted to Simulink and the old attributes will be removed in a future release. The values of the old attributes have been copied over, but you must use the cscdesigner to resave the csc_registration file for this package to avoid errors in the future.</entry>
+    <entry key="CSCTypeAttrUserOwnerDefinitionFileWarning">The custom attributes class ''{0}'' specifies properties Owner and DefinitionFile that have been built into Simulink. The old properties are still being used, but will be disallowed in a future release. This custom attributes class is used by custom storage class ''{1}'' in package ''{2}''. \n
+Follow these steps to use the built-in properties: \n
+1. Use the cscdesigner to resave the csc_registration file for this package \n
+2. Manually remove these properties from your custom attributes class \n
+3. Manually modify the csc_registration file to remove the statements that set these properties for your CSCTypeAttributes object</entry>
+    <entry key="UnableToFindPKg">Cannot find package ''{0}''.</entry>
+    <entry key="CannotLoadDefnsForLevel1Package">Cannot load custom storage classes for level-1 package ''{0}'' because Simulink is configured to use level-2 data classes.</entry>
+    <entry key="InvalidCSCDefn">\nWarning: Invalid CSC definition ''{0}''.\n{1}</entry>
+    <entry key="InvalidMSDefn">\nWarning: Invalid MemorySection definition ''{0}''.\n{1}</entry>
+    <entry key="UnableToLoadRegFile">Unable to load custom storage class registration file for ''{0}'':\n{1}\n</entry>
+    <entry key="PkgCircularReference">Package ''{0}'' has a circular reference to itself when called by package ''{1}''.</entry>
+    <entry key="InvalidCSCName">Invalid custom storage class ''{0}'' for package ''{1}''</entry>
+    <entry key="SwitchToDefaultCSC">Reverting to ''Default'' custom storage class because it cannot be set to ''{0}''</entry>
+    <entry key="SwitchToSimulinkDefaultCSC">Reverting to custom storage classes from Simulink package because custom storage classes could not be loaded for package ''{0}''</entry>
+    <entry key="InvalidCSCType">Unexpected return of non {0} type.</entry>
+    <entry key="ActionInCorrectArg">Incorrect argument for {0} action.</entry>
+    <entry key="InCorrectArgForSigProp">Incorrect argument for {0}</entry>
+    <entry key="UnexptdEmptyForSigProp">unexpected empty port object</entry>
+    <entry key="UnknownCaseEncountered">Unknown case encountered in {0}</entry>
+    <entry key="InCorrectCallWksParamAttribDlgFunct">Incorrect call to Workspace Parameter Attributes dialog function.</entry>
+    <entry key="ErrorSetParamWksSrc">Error when set_param on workspace source.</entry>
+    <entry key="ErrorSetParamTunableParams">Error when set_param on tunable parameters.</entry>
+    <entry key="InternalDataCorrptCloseModel">Internal data corruption happened. Close your model and re-open dialogs.</entry>
+    <entry key="MAssertTableEmptyCallingFunct">M-assert: table cannot be empty when calling function: {0}.</entry>
+    <entry key="ModelParamConfigDialogErrTitle">Model Parameter Configuration Dialog Error</entry>
+    <entry key="LoadingFailed">Loading failed.</entry>
+    <entry key="ErrorTunableParamsStorageClassSettings">Error on tunable parameters setting in model: {0}. Number of tunable parameter names doesn''t match the number of storage class settings.</entry>
+    <entry key="ErrorTunableParamsTypeQualSettings">Error on tunable parameters setting in model: {0}. Number of tunable parameter names doesn''t match the number of type qualifier settings.</entry>
+    <entry key="ErrorTunableParamsNumberQualSettings">Error on tunable parameters setting in model: {0}. Number of  tunable parameter storage class settings  doesn''t match the number of type qualifier settings.</entry>
+    <entry key="InvalidVarChkCommandWindow">Invalid variable specified: ''{0}''. Variable must have an valid MATLAB variable name. Please check them in model by typing the following in command window:\n{1}</entry>
+    <entry key="ParamHasSCAutoCannotHaveStorageType">Parameter {0} has storage class ''Auto'' and can not have storage type qualifier specified.</entry>
+    <entry key="UnableToResolveAllParamFields">Unable to resolve all parameter fields</entry>
+    <entry key="MsgReady">Ready</entry>
+    <entry key="InvalidVarMustBeMatVar">Invalid variable specified: ''{0}''.\nIt must be an valid MATLAB variable name. </entry>
+    <entry key="AttribHasSCCannotHaveStorageType">''{0}'' has storage class ''{1}''\nthat can not have storage type qualifier specified.</entry>
+    <entry key="LoadingParams">Loading parameters...</entry>
+    <entry key="StringDescForGlobalTunnableParams1">Define the global (tunable) parameters for your model. These parameters affect: \n1. the simulation by providing the ability to tune parameters during execution, and \n2. the generated code by enabling access to parameters by other modules.</entry>
+    <entry key="StringDescForGlobalTunnableParams2">Define the global (tunable) parameters for your model. These parameters will affect the generated code by enabling access to parameters by other modules.</entry>
+    <entry key="MATLABWksVars">MATLAB workspace</entry>
+    <entry key="ReferencedWksVars">Referenced workspace variables</entry>
+    <entry key="AddingParamsToTable">Adding parameters to table ...</entry>
+    <entry key="SavingParams">Saving parameters...</entry>
+    <entry key="AddSelectVarsToGlobalTunable">Add selected variables to Global\n(tunable) parameters table</entry>
+    <entry key="ApplyChangesToDialogAndClose">Apply changes and close the dialog</entry>
+    <entry key="DiscardChangesToDialogAndClose">Discard changes and close the dialog</entry>
+    <entry key="LaunchHelp">Launch Help</entry>
+    <entry key="ApplyChanges">Apply changes</entry>
+    <entry key="RefreshSourceList">Refresh the Source list</entry>
+    <entry key="AddingNewParamToGlobalTunable">Add new parameter to Global\n(tunable) parameters table</entry>
+    <entry key="RemoveSelectParamsFromGlobalTunable">Remove selected parameters from\nGlobal (tunable) parameters table</entry>
+    <entry key="DispVarsInSelSrc">Display variables in selected source</entry>
+    <entry key="SelVarsAddToGlobalTunable">Select variables and press ''Add to table''\nto add to Global (tunable) parameters table</entry>
+    <entry key="NoStatus">no status</entry>
+    <entry key="NoModelSpecified">No model specified</entry>
+    <entry key="NumTunableVarsTypeQualsDoesNotMatch">Number of TunableVars, StorageClasses and TypeQualifiers does not match.</entry>
+    <entry key="TunableVarsInfoInvalid">TunableVars information is invalid for model ''{0}''.\n{1}</entry>
+    <entry key="DiscardInfoFromModelForTunableVar">Discarding information from model ''{0}'' for TunableVar ''{1}'' because the existing variable is already a Simulink parameter object.</entry>
+    <entry key="SkipConvOfTunableVarForMissingVar">Skipping conversion of TunableVar ''{0}'' for model ''{1}'' because there is no variable with this name.</entry>
+    <entry key="SkipConvOfTunableVarForModelVarInBase">Skipping conversion of TunableVar ''{0}'' for model ''{1}'' because the existing variable is not numeric.</entry>
+    <entry key="SkipConvOfTunableVarForModelInvalidSC">Skipping conversion of TunableVar ''{0}'' for model ''{1}''. Invalid storage class ''{2}'' specified: {3}</entry>
+    <entry key="SkipConvOfTunableVarForModelInvalidTypeQual">Skipping conversion of TunableVar ''{0}'' for model ''{1}''. Invalid type qualifier ''{2}'' specified: {3}</entry>
+    <entry key="SkipConvOfTunableVarForModelUnableToAssignVarInBase">Skipping conversion of TunableVar ''{0}'' for model ''{1}''. Unable to assign variable: {2}</entry>
+    <entry key="InvalidParamClassNotSubClassOfSimParam">Invalid parameter class provided ''{0}''. It must be a subclass of the {1} class.</entry>
+    <entry key="TunableVarNotSpecifiedInModel">TunableVars not specified in model ''{0}''.</entry>
+    <entry key="WarnMsgCSCRefObsol">The {0} ''{1}'' can not be referenced because referencing of CSCDefn and MemorySectionDefn has been obsoleted.</entry>
+    <entry key="PkgValidFailedCSC">Package ''{0}'' validation failed.\nUse cscdesigner to fix the following errors:\n</entry>
+    <entry key="CSCMessageWithNewLine">Custom storage classes:\n</entry>
+    <entry key="MSMessageWithNewLine">Memory sections:\n</entry>
+    <entry key="InvalidCSCTagInCSCUICallBck">Invalid widget tag in cscuicallback: "{0}".</entry>
+    <entry key="InvalidNumOutputArgs">Invalid number of output arguments</entry>
+    <entry key="ShouldBeEmpty">{0} should be empty</entry>
+    <entry key="UnexpectedAction">Unexpected action: {0}</entry>
+    <entry key="UnexpectedDataSrc">Unexpected data source: {0}</entry>
+    <entry key="ReInitSrcFailed">Reinitialize From Source Failed</entry>
+    <entry key="SaveToSourceFailed">Save To Source Failed</entry>
+    <entry key="ObsoleteFunctionUsetParam">{0} is an obsolete function, use {1} instead\n\nThis warning can be turned off by issuing the following command at the matlab prompt:\n\n{2}\n</entry>
+    <entry key="FirstInputArgValidModelName">First input argument must be a valid model name</entry>
+    <entry key="InputArgsPropValPair">Input arguments must be in the form of property/value pair.</entry>
+    <entry key="UnsupportedParamSpecified">Unsupported parameter specified: {0}</entry>
+    <entry key="UnsupportedParamOrValSpecified">Unsupported parameter: {0} or value: {1} specified.</entry>
+    <entry key="InvalidInputParamValForParam">Invalid input parameter value: {0} for parameter: {1}</entry>
+    <entry key="ErrorRTWOptSetting">Error setting code generation option for model {0}. The option {1} does not exist.</entry>
+    <entry key="MATLABErrorPrefixText">Error using ==&gt;</entry>
+    <entry key="CSCUICSCDefnListName">Custom storage class definitions:</entry>
+    <entry key="CSCUIMSDefnListName">Memory section definitions:</entry>
+    <entry key="CSCUINewDefn">New</entry>
+    <entry key="CSCUINewRef">New Reference</entry>
+    <entry key="CSCUICopyDefn">Copy</entry>
+    <entry key="CSCUIUpDefn">Up</entry>
+    <entry key="CSCUIDownDefn">Down</entry>
+    <entry key="CSCUIRemoveDefn">Remove</entry>
+    <entry key="CSCUIValidateDefn">Validate</entry>
+    <entry key="CSCUISelectPackage">Select package:</entry>
+    <entry key="CSCUIMemorySectionTab">Memory Section</entry>
+    <entry key="CSCUICustomStorageClassTab">Custom Storage Class</entry>
+    <entry key="CSCUIMainConfiguration">Main Configuration</entry>
+    <entry key="CSCUIPseudoCodePreview">Pseudocode preview</entry>
+    <entry key="CSCUIPseudoCodeWithEmptyMemorySection">Code preview not available. Memory section is invalid.</entry>
+    <entry key="CSCUINoHeaderFileSpecified">No header file is specified. By default, data is\nexported via the generated model.h file.</entry>
+    <entry key="CSCUIHeaderDataExportedVia">Data is exported via: {0}</entry>
+    <entry key="CSCUIHeaderImportedVia">Data is imported via:\n{0}</entry>
+    <entry key="CSCUIHeaderImportedByExternDecl">Data is imported by using extern declaration,\ninstead of using {0}</entry>
+    <entry key="CSCUIHeaderAccessFunctionImportedVia">Access functions are imported via:\n{0}</entry>
+    <entry key="CSCUIHeaderAccessFunctionImportedViaCustomCode">Access functions are imported via custom code.</entry>
+    <entry key="CSCUIHeaderMacroImportedVia">Data is defined as a macro and imported via:\n{0}</entry>
+    <entry key="CSCUIHeaderMacroImportedViaCompilerFlag">Data is defined by a compiler flag.</entry>
+    <entry key="CSCUIDataScopeLimited">Data scope is limited to each individual file.</entry>
+    <entry key="CSCUIDataScopeInternalRule">Data scope is subject to internal rule.</entry>
+    <entry key="CSCUINotApplicable">Not applicable.</entry>
+    <entry key="CSCUIControlledTLC">Controlled by TLC file.</entry>
+    <entry key="CSCUIHeaderFile">Header file:</entry>
+    <entry key="CSCUITypeDefn">Type definition:</entry>
+    <entry key="CSCUIDeclaration">Declaration:</entry>
+    <entry key="CSCUIDefinition">Definition:</entry>
+    <entry key="CSCUIValidationResult">Validation result</entry>
+    <entry key="CSCUIValidationSucceeded">Last validation succeeded.</entry>
+    <entry key="CSCUISaveDefns">Save</entry>
+    <entry key="CSCUIFileName">Filename: {0}{1}  </entry>
+    <entry key="CSCUILocation">Location: {0}  </entry>
+    <entry key="CSCUIToolTipPathSave">Path of the file to save to:\n{0}</entry>
+    <entry key="CSCUIInvalidNumArg">Invalid number of input arguments.</entry>
+    <entry key="CSCUIInvalidInpArg">Invalid input arguments.</entry>
+    <entry key="InvalidInpArgWithoutDot">Invalid input arguments</entry>
+    <entry key="CSCUIPackageExist">Package ''{0}'' does not exist.</entry>
+    <entry key="CSCUIPackageIsInvalidForCSCReg">Cannot create csc_registration file for package ''{0}''.</entry>
+    <entry key="CSCUIMultiplePackageDirsFound">Cannot create csc_registration file for package ''{0}'' because there are multiple +{1} folders on the MATLAB path.</entry>
+    <entry key="CSCUIFindPkgs">Finding packages</entry>
+    <entry key="CSCUIFindPkgsPlsWait">Please wait...</entry>
+    <entry key="CSCUIInstComboUnexpectedArgType">Unexpected argument type: "{0}".</entry>
+    <entry key="CSCUIInstComboInvalidWidgetTag">Invalid widget tag in instanceComboFcn: "{0}".</entry>
+    <entry key="CSCUILoadPackageWarnings">The following warnings/errors are encountered during loading definition of package ''{0}'':\n\n{1}</entry>
+    <entry key="CSCUILoadDefnsPkg">Loading definitions of package ''{0}''</entry>
+    <entry key="CSCUILoadReadOnlyPkg">(Read Only)</entry>
+    <entry key="CSCUINameDefnEmpty">The definition name must not be empty.</entry>
+    <entry key="CSCUINameDefnDefaultReserve">"Default" is a reserved word. Please choose another name.</entry>
+    <entry key="CSCUINameDefnInstantSpecific">"Instance specific" is a reserved word. Please choose another name.</entry>
+    <entry key="CSCUINameDefnUniqName">The definition name must be unique within the list.</entry>
+    <entry key="CSCUIRemoveDefnAtleastOneItem">The entry list must contain at least one item.</entry>
+    <entry key="CSCUIRemoveDefnEntryInUse">The entry is still in use by at least one CSC definition. Remove disallowed.</entry>
+    <entry key="CSCUIPromptSaveDefns">Do you want to save any change to the definitions in package ''{0}''?</entry>
+    <entry key="CSCYes">Yes</entry>
+    <entry key="CSCNo">No</entry>
+    <entry key="CSCCancel">Cancel</entry>
+    <entry key="CSCUICSCRegPathEmpty">The CSC registration file path or name must not be empty.</entry>
+    <entry key="CSCUICSCRegPathClose">Cannot close CSC registration file: {0}</entry>
+    <entry key="CSCUICSCRegPathOpen">Cannot open CSC registration file to write: {0}</entry>
+    <entry key="CSCUISavingFile">Saving file.</entry>
+    <entry key="CSCUIRestartMatlabWarn">The custom storage classes for package ''{0}'' are already in use.  You must restart MATLAB for your changes to take effect.</entry>
+    <entry key="CSCDesignerTitle">Custom Storage Class Designer</entry>
+    <entry key="CSCUIValidateDefnWait">Validating current definition.</entry>
+    <entry key="CSCUIValidateAllDefnsWait">Validating all definitions.</entry>
+    <entry key="CSCDefnToolTipAdvMode">To edit fields below when Type is "Other", restart cscdesigner with the "-advanced" option.</entry>
+    <entry key="CSCDefnGeneralTabName">Name:</entry>
+    <entry key="CSCDefnGeneralTabForParameters">For parameters</entry>
+    <entry key="CSCDefnGeneralTabForSignals">For signals</entry>
+    <entry key="CSCDefnGeneralTabType">Type:</entry>
+    <entry key="CSCDefnGeneralTabMemorySection">Memory section:</entry>
+    <entry key="CSCDefnGeneralTabDataScope">Data scope:</entry>
+    <entry key="CSCDefnGeneralTabInitialization">Data initialization:</entry>
+    <entry key="CSCDefnGeneralTabDataAccess">Data access:</entry>
+    <entry key="CSCDefnGeneralTabHeaderFile">Header file:</entry>
+    <entry key="CSCDefnGeneralTabOwner">Owner:</entry>
+    <entry key="CSCDefnGeneralTabDefinitionFile">Definition file:</entry>
+    <entry key="CSCDefnGeneralTab">General</entry>
+    <entry key="CSCDefnGeneralTabIsReusable">Is Reusable:</entry>
+    <entry key="CSCDefnGeneralTabLatching">Latching:</entry>
+    <entry key="CSCDefnGeneralTabCriticalSection">Critical section:</entry>
+    <entry key="CSCDefnCommentsTab">Comments</entry>
+    <entry key="CSCDefnCommentsTabRules">Comment rules:</entry>
+    <entry key="CSCDefnCommentsTabTypeComment">Type comment:</entry>
+    <entry key="CSCDefnCommentsTabDeclarationComment">Declaration comment:</entry>
+    <entry key="CSCDefnCommentsTabDefinitionComment">Definition comment:</entry>
+    <entry key="CSCDefnStructAttribTabName">Structure Attributes</entry>
+    <entry key="CSCDefnStructAttribTabStructName">Struct name:</entry>
+    <entry key="CSCDefnStructAttribTabIsTypedef">Is typedef</entry>
+    <entry key="CSCDefnStructAttribTabBitPackBool">Bit-pack booleans</entry>
+    <entry key="CSCDefnStructAttribTabTypeTag">Type tag:</entry>
+    <entry key="CSCDefnStructAttribTabTypeName">Type name:</entry>
+    <entry key="CSCDefnStructAttribTabTypeToken">Type token:</entry>
+    <entry key="CSCDefnAccessFunctionTabName">Access Function Attributes</entry>
+    <entry key="CSCDefnAccessFunctionGetFunction">Get function:</entry>
+    <entry key="CSCDefnAccessFunctionSetFunction">Set function:</entry>
+    <entry key="CSCDefnAccessFunctionSupportsArrayAccess">Supports array access</entry>
+    <entry key="CSCDefnAccessFunctionGetElementFunction">Get element function:</entry>
+    <entry key="CSCDefnAccessFunctionSetElementFunction">Set element function:</entry>
+    <entry key="CSCDefnOthersTabIsGrouped">Is grouped</entry>
+    <entry key="CSCDefnOthersTabCSCAttribClassName">CSC attributes class name:</entry>
+    <entry key="CSCDefnOthersTabTLCFileName">TLC file name:</entry>
+    <entry key="CSCDefnOthersTabName">Other Attributes</entry>
+    <entry key="CSCRefDefnTabName">Name:</entry>
+    <entry key="CSCRefDefnTabReferPkg">Refer to custom storage class in package:</entry>
+    <entry key="CSCRefDefnTabPkgLocation">Location: {0}</entry>
+    <entry key="CSCRefDefnTabReferCSC">Custom storage class to reference:</entry>
+    <entry key="CSCRefDefnDetailsTab">Reference</entry>
+    <entry key="MSRefDefnTabReferPkg">Refer to memory section in package:</entry>
+    <entry key="MSRefDefnTabReferMS">Memory section to reference:</entry>
+    <entry key="MSRefDefnDetailsTab">Reference</entry>
+    <entry key="MemorySectionDefnTabName">Name:</entry>
+    <entry key="MemorySectionDefnTabIsConst">Is const</entry>
+    <entry key="MemorySectionDefnTabIsVolatile">Is volatile</entry>
+    <entry key="MemorySectionDefnTabQualifer">Qualifier:</entry>
+    <entry key="MemorySectionDefnTabComment">Comment:</entry>
+    <entry key="MemorySectionDefnTabPragmaSurrounds">Pragma surrounds:</entry>
+    <entry key="MemorySectionDefnTabPragmaSurroundsPreVarTip">%&lt;identifier&gt; allowed in pragmas.</entry>
+    <entry key="MemorySectionDefnTabPreMemorySectionPragma">Pre-memory-section pragma:</entry>
+    <entry key="MemorySectionDefnTabPostMemorySectionPragma">Post-memory-section pragma:</entry>
+    <entry key="MemorySectionDefnTab">Memory Section</entry>
+    <entry key="MemorySectionDefnToolTipMS">Memory sections may be applied to custom storage class data\n, functions and data generated for the model\n, or functions and data generated for a subsystem.\n</entry>
+    <entry key="MemorySectionDefnToolTipMSIdent">The %&lt;identifier&gt; token will be replaced by the variable or function name.\nThis is allowed only when ''Pragma surrounds'' is set to ''Each variable.''\n</entry>
+    <entry key="CSCDefnPostSetFcnCSCTypeAttrbUseClass">Cannot use class ''{0}'': {1}</entry>
+    <entry key="CSCDefnPostSetFcnCSCTypeAttrbExpObject">Expected an object of class: {0}</entry>
+    <entry key="CSCDefnCustomAttribClassCreatePackage">Cannot create package ''{0}''</entry>
+    <entry key="CSCDefnCustomAttribClassFindPackage">Cannot find package ''{0}''</entry>
+    <entry key="CSCDefnCustomAttribClassFindClass">Cannot find class ''{0}.{1}''</entry>
+    <entry key="CSCDefnCustomAttribClassCreateCustomClass">Unable to create custom attributes class for CSCDefn: {0}::{1}.\n{2}</entry>
+    <entry key="CSCDefnCustomAttribClassCreateCustomObj">Unable to create custom attributes object for CSCDefn: {0}::{1}.\n{2}</entry>
+    <entry key="CSCDefnIsSignalReusableInvalidSettingForParam">A parameter cannot be selected for reusability.</entry>
+    <entry key="CSCDefnConcurrentAccessSettingForParam">A parameter cannot be selected if latching is enabled.</entry>
+    <entry key="CSCNameIsTLCKeyword">Cannot use the custom storage class name ''{0}'' because it is a TLC keyword.</entry>
+    <entry key="MSNameIsTLCKeyword">Cannot use the memory section name ''{0}'' because it is a TLC keyword.</entry>
+    <entry key="CSCDefnReferNonExistMSDefn">Referring to a non existent memory section definition ''{0}'' in package ''{1}''.</entry>
+    <entry key="CSCRefDefnSetRefPkgBeforeOwnerPkg">Cannot set reference package before OwnerPackage.</entry>
+    <entry key="CSCRefDefnCannotSetRefPkg">Unable to set a reference to package ''{0}'' for definition {1}::{2}.\n{3}</entry>
+    <entry key="CSCRefDefnCannotUpdateRefObj">Unable to find definition ''{0}'' in package ''{1}''.</entry>
+    <entry key="CSCRefDefnSetDefnNameError2Warning">Error setting reference custom storage class name.\n{0}\nReverting to ''{1}''.</entry>
+    <entry key="MSRefDefnSetDefnNameError2Warning">Error setting reference memory section name.\n{0}\nReverting to ''{1}''.</entry>
+    <entry key="CSCRefDefnOutOfDateRefDefnObject">Reference object was out of date.  It has been updated, but you need to restart code generation.</entry>
+    <entry key="CSCRefDefnNoCSCFound">No custom storage class definition available.</entry>
+    <entry key="MSRefDefnNoMSFound">No memory section definition available.</entry>
+    <entry key="CSCRefDefnUniqueName">Cannot reference CSC ''{0}'' in package ''{1}'' because it is not unique.</entry>
+    <entry key="CSCRefDefnInvalidMS">Cannot reference memory section ''{0}'' in package ''{1}''.\n''{2}''</entry>
+    <entry key="CSCDefnInvalidOwnerPackage">OwnerPackage must be a valid MATLAB name.</entry>
+    <entry key="CSCRegFileNotFound">Package ''{0}'' does not contain a csc_registration file.</entry>
+    <entry key="CSCDefnPackageNotFoundInPath">Package ''{0}'' was not found on the MATLAB path or does not contain a csc_registration file.</entry>
+    <entry key="CSCDefnMustBeUnstructuredForIdentifierSubstitution">Identifier substitution in memory section is supported only when custom storage class is unstructured.</entry>
+    <entry key="CSCDefnCSCTypeUnstructuredIsGroupedFalse">CSCType Unstructured must set IsGrouped to false.</entry>
+    <entry key="CSCDefnCSCTypeUnstructuredTLCFileName">CSCType Unstructured must set TLCFileName to Unstructured.tlc</entry>
+    <entry key="CSCDefnCSCTypeUnstructuredClassNameEmpty">CSCType Unstructured must set CSCTypeAttributesClassName to empty.</entry>
+    <entry key="CSCDefnCSCTypeFlatStructureIsGroupedTrue">CSCType FlatStructure must set IsGrouped to true.</entry>
+    <entry key="CSCDefnCSCTypeFlatStructureTLCFileName">CSCType FlatStructure must set TLCFileName to {0}.</entry>
+    <entry key="CSCDefnCSCTypeFlatStructureCSCTypeAttributesClassName">CSCType FlatStructure must set CSCTypeAttributesClassName to {0}</entry>
+    <entry key="CSCDefnCSCTypeAccessFunctionIsGroupedFalse">CSCType AccessFunction must set IsGrouped to false</entry>
+    <entry key="CSCDefnCSCTypeAccessFunctionTLCFileName">CSCType AccessFunction must set TLCFileName to GetSet.tlc</entry>
+    <entry key="CSCDefnCSCTypeAccessFunctionMustBeImported">CSCType AccessFunction must set DataScope to ''Imported''</entry>
+    <entry key="CSCDefnCSCTypeAccessFunctionWithMemorySection">CSCType AccessFunction must set MemorySection to ''Default''</entry>
+    <entry key="CSCDefnCSCTypeAccessFunctionWithInvalidDataInit">CSCType AccessFunction cannot set DataInit to ''Static'' or ''Macro''</entry>
+    <entry key="CSCDefnCSCTypeAccessFunctionWithInvalidDataAccess">CSCType AccessFunction must set DataAccess to ''Direct''</entry>
+    <entry key="CSCDefnCSCTypeAccessFunctionEmptyGetFunctionForParameter">GetFunction cannot be empty because CSC is enabled for parameters.</entry>
+    <entry key="CSCDefnCSCTypeAccessFunctionEmptyGetAndSetFunctions">GetFunction and SetFunction are both empty.</entry>
+    <entry key="CSCDefnCSCTypeAccessFunctionGetFunctionWithoutToken">GetFunction is not instance-specific so it must include name token ($N).</entry>
+    <entry key="CSCDefnCSCTypeAccessFunctionSetFunctionWithoutToken">SetFunction is not instance-specific so it must include name token ($N).</entry>
+    <entry key="CSCDefnInstantSpecificMS">{0} CSC cannot have instance specific memory section.</entry>
+    <entry key="CSCDefnInstantSpecificDataScope">{0} CSC cannot have instance specific data scope.</entry>
+    <entry key="CSCDefnInstantSpecificDataInit">{0} CSC cannot have instance specific data initialization.</entry>
+    <entry key="CSCDefnInstantSpecificDataAccess">{0} CSC cannot have instance specific data access.</entry>
+    <entry key="CSCDefnInstantSpecificHeaderFile">{0} CSC cannot have instance specific header file.</entry>
+    <entry key="CSCDefnInstantSpecificIsSignalReusable">{0} CSC cannot have instance specific choice of a reusable signal.</entry>
+    <entry key="CSCDefnForParametersButNotMemorySection">CSC enabled for parameters but memory section is not.\nSelect a different memory section.</entry>
+    <entry key="CSCDefnForSignalsButNotMemorySection">CSC enabled for signals but memory section is not.\nSelect a different memory section.</entry>
+    <entry key="CSCDefnSignalConstMemory">CSC enabled for signal cannot use constant memory section.\nSelect a different memory section.</entry>
+    <entry key="CSCDefnDataUsageParamDynamicInit">CSC enabled for parameter cannot be dynamically initialized.\nSelect a different option for data initialization.</entry>
+    <entry key="CSCDefnImportedDataInit">Imported data cannot be statically initialized.\nSelect a different option for data initialization.</entry>
+    <entry key="CSCDefnNonImportedDataPointer">Non-imported data cannot be accessed via pointer.\nSelect a different option for data access.</entry>
+    <entry key="CSCDefnSignalMacroInit">CSC enabled for signal cannot have macro initialization.\nSelect a different option for data initialization.</entry>
+    <entry key="CSCDefnIsGroupedMacroInit">{0} CSC cannot have macro initialization.\nSelect a different option for data initialization.</entry>
+    <entry key="CSCDefnDataAccessMacroInit">CSC with macro initialization cannot be accessed via pointer.\nSelect a different option for data access.</entry>
+    <entry key="CSCDefnInvalidName">Name must be a valid MATLAB name.</entry>
+    <entry key="CSCDefnInvalidName2">Name cannot be one of the built-in storage class names.</entry>
+    <entry key="CSCDefnIsConstMacroInit">CSC with macro initialization cannot have const/volatile modifier or any qualifier.\nSelect the default memory section.</entry>
+    <entry key="CSCDefnInvalidHeaderFileExportedData">Invalid header file for exported data: {0}</entry>
+    <entry key="CSCDefnInvalidDefinitionFileExportedData">Invalid definition file for exported data: {0}</entry>
+    <entry key="CSCDefnInvalidOwnerExportedData">Invalid owner name: {0}</entry>
+    <entry key="CSCDefnTLCFileNameExist">TLCFileName does not exist: {0}</entry>
+    <entry key="CSCDefnInvalidTypeComment">TypeComment is not a valid C comment.</entry>
+    <entry key="CSCDefnInvalidDeclareComment">DeclareComment is not a valid C comment.</entry>
+    <entry key="CSCDefnInvalidDefineComment">DefineComment is not a valid C comment.</entry>
+    <entry key="CSCDefnCSCAttribClassInit">CSCTypeAttributes class could not be instantiated: {0}</entry>
+    <entry key="CSCDefnInvalidStructName">StructName is not a valid C identifier.</entry>
+    <entry key="CSCDefnInvalidTypeName">When using typedef, TypeName must be a valid C identifier.</entry>
+    <entry key="CSCDefnTypeNameEmpty">When not using typedef, TypeName must be empty.</entry>
+    <entry key="CSCDefnTypeTagEmpty">When not using typedef, TypeTag must not be empty.</entry>
+    <entry key="CSCDefnInvalidTypeTag">TypeTag must be a valid C identifier.</entry>
+    <entry key="MSDefnInvalidComment">Comment must be a valid C comment.</entry>
+    <entry key="MSDefnIdentSubstPragmaPreVar">Identifier substitution only allowed when pragmas apply to individual variables.</entry>
+    <entry key="MSDefnIdentSubstNoTLCTokensFound">Identifier substitution token only allowed in pragma fields.</entry>
+    <entry key="MSRefDefnUniqueName">Cannot reference memory section ''{0}'' in package ''{1}'' because it is not unique.</entry>
+    <entry key="BaseCSCMSOverridden">This method should be overridden by the subclasses.</entry>
+    <entry key="NoTypeAttributesClassForGroupedCSC">No CSCTypeAttributes class provided for grouped custom storage class ''{0}'' in package ''{1}''.  Grouped custom storage classes must provide a CSCTypeAttributes class that implements methods getIdentifiersForGroup and getIdentifiersForInstance.</entry>
+    <entry key="NoGroupIdentifiersForGroupedCSC">CSCTypeAttributes class {0} must implement the getIdentifiersForGroup method because it is used with the grouped custom storage class ''{1}'' in package ''{2}''.</entry>
+    <entry key="NoInstanceIdentifiersForGroupedCSC">CSCTypeAttributes class {0} must implement the getIdentifiersForInstance method because it is used with the grouped custom storage class ''{1}'' in package ''{2}''.</entry>
+    <entry key="CSCGroupIdentifiersMustBeValidStruct">{0}.getIdentifiersForGroup must return a structure with a separate field for each group identifier.  The field names describe the purpose of each identifier.</entry>
+    <entry key="CSCGroupIdentifiersNotDefined">{0}.getIdentifiersForGroup returns a structure with no fields.  Grouped custom storage classes must define one/more group identifiers.</entry>
+    <entry key="CSCInstanceIdentifiersMustBeValidStruct">{0}.getIdentifiersForInstance must return a structure with a separate field for each identifier.  The field names describe the purpose of each identifier.</entry>
+    <entry key="CSCInstanceIdentifiersMustBeUnique1">Data object ''{0}'' cannot use the same identifier more than once:{1}</entry>
+    <entry key="CSCInstanceIdentifiersMustBeUnique2">Data object used by ''{0}'' cannot use the same identifier more than once:{1}</entry>
+    <entry key="SfunSearch">Searching for file: {0}</entry>
+    <entry key="SfunCannotFindFile">The S-Function source file cannot be found.\nIt could be either that the file does not exist, or it''s not on your MATLAB path. Do you want to manually browse it, simply open the editor or cancel?</entry>
+    <entry key="SfunDlgTitle">Question</entry>
+    <entry key="SfunBrowse">Browse...</entry>
+    <entry key="SfunOpenEditor">Open Editor</entry>
+    <entry key="SfunCancel">Cancel</entry>
+    <entry key="SfunAllSourceFiles">All S-Function Source Files</entry>
+    <entry key="SfunAllFiles">All Files (*.*)</entry>
+    <entry key="SfunBrowserTitle">S-Function Browser</entry>
+    <entry key="ClassNameSpecStrs" note="stringDatatypeUpdate">Class names must be specified as character vectors</entry>
+    <entry key="InvalidPropInfoSpecs">Invalid property information specified</entry>
+    <entry key="UnableToCreateNewClassSpecClassName">Unable to create new class from specified class names.\n{0}</entry>
+    <entry key="UnableToAddPropsNewCreatedClassDel">Unable to add properties to newly created class.\nClass is being deleted.\n{0}</entry>
+    <entry key="InsuffArgsProvd">Insufficient arguments provided</entry>
+    <entry key="SyntaxStr">Syntax: {0}</entry>
+    <entry key="rtwNotInstalled">The required code generation components are not available.</entry>
+    <entry key="InvalidHeaderFileDelimiters">Invalid header file delimiters.</entry>
+    <entry key="HeaderFileNotEmptyDelimSpec">Header file cannot be empty if delimiters or extension are specified.</entry>
+    <entry key="HeaderFileStartEndWhiteSpace">Header file cannot start or end with white space inside delimiters.</entry>
+    <entry key="HeaderFileCannotBeCoreHeaderFile">Header file cannot be ''{0}''.</entry>
+    <entry key="HeaderFileMustBeString" note="stringDatatypeUpdate">FatalError: HeaderFile must be a character vector</entry>
+    <entry key="AllInpMustBeStrs" note="stringDatatypeUpdate">All input arguments must be valid character vectors.</entry>
+    <entry key="UnableToFindPerlFile">Unable to find Perl file: {0}</entry>
+    <entry key="CSCRegInvalidAction">Invalid action ''{0}''</entry>
+    <entry key="StructNameMustBeValidCIdent">Structure name must be a valid c identifier or empty</entry>
+    <entry key="NoConstWithMatchSignFnd">No constructor {0} with matching signature found.</entry>
+    <entry key="CSCNotDefinedForPkg">Custom storage classes not defined for package ''{0}''.</entry>
+    <entry key="DCDTypeAlreadyExists">A type named ''{0}'' already exists and cannot be redefined.</entry>
+    <entry key="DCDInvalidNumberofArgs">Invalid number of input arguments</entry>
+    <entry key="DCDWarnDialogName">Warning</entry>
+    <entry key="DCDUnableToOverwriteFile">Unable to overwrite existing file: {0}</entry>
+    <entry key="DCDUnableToOpenFileForWrite">Could not open file for writing: {0}</entry>
+    <entry key="DCDPleaseWait">Please wait...</entry>
+    <entry key="DCDPkgChangeApply">Apply</entry>
+    <entry key="DCDName">Name</entry>
+    <entry key="DCDHelp">Help</entry>
+    <entry key="DCDWritingPkg">Writing package: {0}</entry>
+    <entry key="DCDClose">Close</entry>
+    <entry key="DCDOK">OK</entry>
+    <entry key="DCDCancel">Cancel</entry>
+    <entry key="InputArgumentMustBeDirectoryName">Input must be a valid directory name.</entry>
+    <entry key="InvalidPropertyName">Invalid property name ''{0}''.</entry>
+    <entry key="SkipUnknownPropertyType">Skipping property ''{0}'' of unknown type ''{1}'' for dialog ''{2}''</entry>
+    <entry key="NoOldClasses">No level-1 classes found.</entry>
+    <entry key="NoOldClassesToMigrate">No classes upgraded.\nAll valid level-1 classes have already been upgraded.</entry>
+    <entry key="MCOSDirAlreadyExists">Specified folder already exists. The upgraded classes will be stored in this folder: ''{0}''</entry>
+    <entry key="WarnAboutFolderToStoreMCOSClasses">Created folder to store the new classes: ''{0}''</entry>
+    <entry key="UnableToCreateFolderToStoreMCOSClasses">Unable to create folder ''{0}''\n{1}</entry>
+    <entry key="MCOSPackageFolderAlreadyExists">Folder already exists: ''{0}''\nDelete this folder to regenerate the classes in package ''{1}''.</entry>
+    <entry key="NoPackageDefinitionFile">Unable to upgrade package ''{0}'' because package definition file could not be found.</entry>
+    <entry key="InvalidPackageDefinitionFile">Unable to upgrade package ''{0}'' because the package definition file is invalid.</entry>
+    <entry key="InconsistentPackageName">Unable to upgrade package ''{0}'' because the name of the package does not match the package name in the packagedefn.mat file (''{1}'').  This suggests that the package has been modified by hand (outside of the Simulink data class designer).  Please upgrade this package by hand.</entry>
+    <entry key="Level1PackageFilesNotPCoded">The level-2 data classes for package ''{0}'' will be generated from the information in the level-1 package's packagedefn.mat file.  However, this package contains MATLAB files that are not P-coded.  This suggests that the level-1 package may have been modified by hand and the resulting level-2 package may be inconsistent.</entry>
+    <entry key="UnableToCopyFile">Unable to upgrade package ''{0}'' because the following file could not be copied: {1}</entry>
+    <entry key="WarnAboutAddingMCOSClassesToPath">NOTE: The path has been updated to include folder ''{0}'' and Simulink has been configured to work with the upgraded classes.  You will need to restart MATLAB for the upgraded classes to take effect.</entry>
+    <entry key="CannotMigrateR13CustomStorageClasses">Unable to upgrade package ''{0}'' because it uses obsolete infrastructure for defining custom storage classes.  You must use the Simulink data class designer to regenerate this package to use a csc_registration file before upgrading classes.</entry>
+    <entry key="UpgradeClassWithoutSuperclass">Cannot specify property types for class ''{0}'' because it is not a Simulink data class.</entry>
+    <entry key="UpgradeClassCannotFindSuperclassPackage">Cannot specify property types for class ''{0}'' because its superclass package ''{1}'' cannot be found.</entry>
+    <entry key="UpgradeClassCannotFindSuperclass">Cannot specify property types for class ''{0}'' because its superclass ''{1}'' cannot be found.</entry>
+    <entry key="SuperclassDoesNotSupportPropertyTypes">Cannot specify property types for class ''{0}'' because it is not a Simulink data class.</entry>
+    <entry key="UDTDTOLbl">Data type override:</entry>
+    <entry key="UDTInheritRadioEntry">Inherit</entry>
+    <entry key="UDTBuiltinRadioEntry">Built in</entry>
+    <entry key="UDTExprRadioEntry">Expression</entry>
+    <entry key="UDTFixedPointRadioEntry">Fixed point</entry>
+    <entry key="UDTEnumRadioEntry">Enumerated</entry>
+    <entry key="UDTBusRadioEntry">Bus object</entry>
+    <entry key="UDTAutoRule">auto</entry>
+    <entry key="UDTSameAsInputRule">Same as input        </entry>
+    <entry key="UDTSameAsBreakpointDataRule">Inherit from ''Breakpoint data'' </entry>
+    <entry key="UDTSameAsFirstInputRule">Same as first input</entry>
+    <entry key="UDTSameAsSecondInputRule">Same as second input</entry>
+    <entry key="UDTSameAsCorrespondingInputRule">Same as corresponding input</entry>
+    <entry key="UDTInternalRule">Inherit via internal rule</entry>
+    <entry key="UDTBackpropagationRule">Inherit via back propagation</entry>
+    <entry key="UDTSameAsSimulinkRule">Same as Simulink</entry>
+    <entry key="UDTFromTableDataRule">Inherit from table data</entry>
+    <entry key="UDTFromTableDataParamRule">Inherit from ''Table data''</entry>
+    <entry key="UDTSameAsOutputRule">Same as output</entry>
+    <entry key="UDTInheritFromGain">Inherit from ''Gain''</entry>
+    <entry key="UDTLogicalRule">Logical (see Configuration Parameters: Optimization)</entry>
+    <entry key="UDTAllPortsSameDataRule">All ports same datatype</entry>
+    <entry key="UDTSameAsConstantRule">Inherit from ''Constant value''</entry>
+    <entry key="UDTSameAsAccumulatorRule">Same as accumulator</entry>
+    <entry key="UDTSameAsProductRule">Same as product output</entry>
+    <entry key="UDTSameAsInputWordLengthRule">Same word length as input</entry>
+    <entry key="UDTBusEditBtn">Edit</entry>
+    <entry key="UDTExprEdit">Expression:</entry>
+    <entry key="UDTSignRadio">Signedness:</entry>
+    <entry key="UDTSetScalingBtn">Calculate Best-Precision Scaling</entry>
+    <entry key="UDTUnsignedSign">Unsigned</entry>
+    <entry key="UDTSignedSign">Signed</entry>
+    <entry key="UDTSameAsInputSign">Same as input</entry>
+    <entry key="UDTInheritSign">Auto</entry>
+    <entry key="UDTBestPrecisionMode">Best precision</entry>
+    <entry key="UDTSlopeBiasMode">Slope and bias</entry>
+    <entry key="UDTBinaryPointMode">Binary point</entry>
+    <entry key="UDTIntegerMode">Integer</entry>
+    <entry key="UDTFractionLengthEdit">Fraction length:</entry>
+    <entry key="UDTSlopeEdit">Slope:</entry>
+    <entry key="UDTBiasEdit">Bias:</entry>
+    <entry key="UDTDataTypeAssistGrp">Data Type Assistant</entry>
+    <entry key="UDTSpcDataTypeAssistGrp">Data Type Assistant for {0}</entry>
+    <entry key="UDTPromptColon" translate="false">:</entry>
+    <entry key="UDTDataTypeSpecMethodRadio">Mode:</entry>
+    <entry key="UDTScalingModeRadio">Scaling:</entry>
+    <entry key="UDTWordLengthEdit">Word length:</entry>
+    <entry key="UDTDTOInherit">Inherit</entry>
+    <entry key="UDTDTOOff">Off</entry>
+    <entry key="UDTSetScalingToolTip">Calculate and set best-precision scaling based on specified minimum, maximum and value (if available)</entry>
+    <entry key="UDTShowDataTypeAssistToolTip">Show data type assistant</entry>
+    <entry key="UDTHideDataTypeAssistToolTip">Hide data type assistant</entry>
+    <entry key="UDTDataTypeToolTip">Enter data type or select one from the pulldown menu</entry>
+    <entry key="UDTExprNotAllowedErr">Expressions not allowed for this object</entry>
+    <entry key="UDTInvalidInheritErr">Invalid inheritance rule for this object</entry>
+    <entry key="UDTInvalidBuiltinErr">Invalid built-in type for this object</entry>
+    <entry key="UDTInvalidSignModeErr">Invalid sign mode for this object</entry>
+    <entry key="UDTEnumNotSupportedErr">Enumerated data types are not supported for this object</entry>
+    <entry key="UDTBusNotSupportedErr">Bus data types are not supported for this object</entry>
+    <entry key="UDTFixedPointNotSupportedErr">Fixed-point data types are not supported for this object</entry>
+    <entry key="UDTInvalidDataTypeModeErr">Invalid data type mode for this object</entry>
+    <entry key="UDTScalingNoEvalErr">The expression ''{0}'' specified for the ''{1}'' parameter cannot be evaluated</entry>
+    <entry key="UDTScalingComplexValErr">The expression ''{0}'' specified for the ''{1}'' parameter contains a complex value. {2}</entry>
+    <entry key="UDTScalingNanValErr">The expression ''{0}'' specified for the ''{1}'' parameter contains one or more NaN values. {2}</entry>
+    <entry key="UDTScalingNonNumValErr">The expression ''{0}'' specified for the ''{1}'' parameter is not a numeric value. {2}</entry>
+    <entry key="UDTScalingNonScalarValErr">The expression ''{0}'' specified for the ''{1}'' parameter is not a scalar value. {2}</entry>
+    <entry key="UDTScalingAllowedVals">Only scalar real values are allowed</entry>
+    <entry key="UDTScalingNegativeValErr">Calculating the best-precision scaling for an unsigned fixed-point data type requires the value of ''{0}'' to be nonnegative </entry>
+    <entry key="UDTScalingValAllEmptyErr">To calculate best-precision scaling, specify at least one of the following parameters: {0}</entry>
+    <entry key="UDTWordLengthNoEvalErr">The expression ''{0}'' specified for the ''Word length'' parameter can not be evaluated</entry>
+    <entry key="UDTWLTooSmallSignedErr">The word length must be at least 2 for a signed fixed-point data type</entry>
+    <entry key="UDTWLTooSmallUnsignedErr">The word length must be at least 1 for an unsigned fixed-point data type</entry>
+    <entry key="UDTAllValsIdenticalErr">To calculate best-precision slope and bias scaling, specify at least two distinct values for the following parameters: {0} </entry>
+    <entry key="UDTWordLengthFixedErr">The word length is fixed and cannot be changed</entry>
+    <entry key="UDTFractionLengthFixedErr">The fraction length is fixed and cannot be changed</entry>
+    <entry key="UDTSlopeFixedErr">The slope is fixed and cannot be changed</entry>
+    <entry key="UDTBiasFixedErr">The bias is fixed and cannot be changed</entry>
+    <entry key="UDTFixdtNoEvalErr">The expression specified for the ''Data Type'' can not be evaluated</entry>
+    <entry key="UDTAssumeSignedWarn">The sign of data type ''{0}'' is unspecified. Assuming signed</entry>
+    <entry key="UDTIPLinkName">Fixed-point details</entry>
+    <entry key="UDTIPRefreshDetailsBtn">Refresh Details</entry>
+    <entry key="UDTIPDesignMaxDefaultName">Design maximum:</entry>
+    <entry key="UDTIPDesignMinDefaultName">Design minimum:</entry>
+    <entry key="UDTIPRepMaxName">Representable maximum:</entry>
+    <entry key="UDTIPRepMinName">Representable minimum:</entry>
+    <entry key="UDTIPResolutionName">Precision:</entry>
+    <entry key="UDTIPUnknownVal">Unknown</entry>
+    <entry key="UDTIPCannotEvalComm">Cannot evaluate</entry>
+    <entry key="UDTIPOutOfRangeComm">Outside representable range by {0} ({1} x precision)</entry>
+    <entry key="UDTIPEmptyFieldComm">Parameter not set</entry>
+    <entry key="UDTIPNonNumComm">Non-numeric value</entry>
+    <entry key="UDTIPNonScalarComm">Non-scalar value</entry>
+    <entry key="UDTIPComplexComm">Complex value</entry>
+    <entry key="UDTIPNanComm">NaN value</entry>
+    <entry key="UDTIPPlusInfComm">Invalid value for minimum</entry>
+    <entry key="UDTIPMinusInfComm">Invalid value for maximum</entry>
+    <entry key="UDTIPAssumeSignedComm">Assuming signed</entry>
+    <entry key="ProdHWToolTip">Select a predefined hardware device to specify the C language constraints \nfor your microprocessor or "{0}" if your microprocessor is not \nlisted.  Select "{1}" for no constraints.</entry>
+    <entry key="TargetHWToolTip">Select a predefined hardware device to specify the C language constraints \nfor your microprocessor or "{0}" if your microprocessor is not \nlisted.  Select "{1}" to target current MATLAB\n host machine.</entry>
+    <entry key="UnknownDeviceName">Unknown device name. Type getHardwareConfigs(''{0}'') for available device names.</entry>
+    <entry key="DeviceNotSuitable">Device is not suitable for Embedded Hardware. Type getHardwareConfigs(''Production'') for available device names.</entry>
+    <entry key="DeviceNotSuitableEmulation">Device is not suitable for test hardware. Type getHardwareConfigs(''Target'') for available device names.</entry>
+    <entry key="StatePrompt">State:</entry>
+    <entry key="MultiplicandPrompt">Multiplicand:</entry>
+    <entry key="CoefPrompt">Coefficients:</entry>
+    <entry key="NumCoefPrompt">Numerator coefficients:</entry>
+    <entry key="NumProdPrompt">Numerator product output:</entry>
+    <entry key="NumAccumPrompt">Numerator accumulator:</entry>
+    <entry key="DenCoefPrompt">Denominator coefficients:</entry>
+    <entry key="DenProdPrompt">Denominator product output:</entry>
+    <entry key="DenAccumPrompt">Denominator accumulator:</entry>
+    <entry key="OutputPrompt">Output:</entry>
+    <entry key="TapSumPrompt">Tap sum:</entry>
+    <entry key="ProdPrompt">Product output:</entry>
+    <entry key="AccumPrompt">Accumulator:</entry>
+    <entry key="BreakPointTableHeader">Data</entry>
+    <entry key="BreakPointTableHeaderMin">Minimum</entry>
+    <entry key="BreakPointTableHeaderMax">Maximum</entry>
+    <entry key="BreakPointTableHeaderDT">Data Type</entry>
+    <entry key="BreakPointTableHeaderAsst">Assistant</entry>
+    <entry key="EditButton">Edit table and breakpoints...</entry>
+    <entry key="EditButtonTip">Open the Lookup Table Editor</entry>
+    <entry key="TableAndBreakpointsTab">Table and Breakpoints</entry>
+    <entry key="DataTypesTab">Data Types</entry>
+    <entry key="AlgorithmTab">Algorithm</entry>
+    <entry key="GroupControlPort">Control</entry>
+    <entry key="BreakPointsTypePrompt">Breakpoints {0,number,integer}:</entry>
+    <entry key="BreakPointPrompt">Breakpoint:</entry>
+    <entry key="FractionTypePrompt">Fraction:</entry>
+    <entry key="IndexTypePrompt">Index:</entry>
+    <entry key="IntermediateTypePrompt">Intermediate results:</entry>
+    <entry key="OutputTypePrompt">Output:</entry>
+    <entry key="BreakPointsMin">Breakpoints minimum {0,number,integer}:</entry>
+    <entry key="BreakPointsMax">Breakpoints maximum {0,number,integer}:</entry>
+    <entry key="GroupLookupMethod">Lookup method</entry>
+    <entry key="GroupInputSettings">Input settings</entry>
+    <entry key="GroupCodeGeneration">Code generation</entry>
+    <entry key="GroupIndexSearch">Index search</entry>
+    <entry key="TableAttributes">Table Attributes</entry>
+    <entry key="FloatingPointTrumpRule">Floating-point inheritance takes precedence over the settings in the ''''Data Type'''' column below. When the block input is floating point, all block data types match the input.\n</entry>
+    <entry key="DataTypeColumnLabel">Data Type</entry>
+    <entry key="AssistantColumnLabel">Assistant</entry>
+    <entry key="MinimumColumnLabel">Minimum</entry>
+    <entry key="MaximumColumnLabel">Maximum</entry>
+    <entry key="TableAttributesHiddenPrompt">Table attributes are inherited from the input port when you select ''Make table an input'' </entry>
+    <entry key="autosaveCantDateFile">Cannot determine last modified date of ''{0}''</entry>
+    <entry key="autosaveDefaultApplyErr">Error restoring some or all of the selected files. These will remain in the autosave dialog.&lt;br&gt;&lt;br&gt;Detail: {0}</entry>
+    <entry key="autosavePermissionsError">File permissions or missing files prevented ''{0}'' from being restored or discarded.</entry>
+    <entry key="autosaveCopyError">Error restoring autosave file for "{0}"</entry>
+    <entry key="autosaveCloseError">Error closing model "{0}": "{1}"</entry>
+    <entry key="autosaveDialogTitle">Model Recovery</entry>
+    <entry key="autosaveExplanation">The following block diagrams have been automatically saved more recently than the versions that you are trying to load.</entry>
+    <entry key="autosaveExplanationSingle">Block diagram "{0}"in folder:\n   {1}\nhas a more recent autosave copy available.</entry>
+    <entry key="autosaveKeepOriginal">Keep a copy of original model file. (As &lt;name&gt;.mdl.original.)</entry>
+    <entry key="autosaveTableTitle1">Restore</entry>
+    <entry key="autosaveTableTitle2">Delete Autosave</entry>
+    <entry key="autosaveTableTitle3">Ignore</entry>
+    <entry key="autosaveTableTitle4">Model</entry>
+    <entry key="autosaveTableTitle5">Path</entry>
+    <entry key="autosaveTableTitle6">Model Last Modified</entry>
+    <entry key="autosaveTableTitle7">Autosave Created</entry>
+    <entry key="autosaveRestore">Restore from Autosave</entry>
+    <entry key="autosaveIgnore">Ignore</entry>
+    <entry key="autosaveDiscard">Delete Autosave</entry>
+    <entry key="autosaveAllButton1">Restore All</entry>
+    <entry key="autosaveAllButton2">Delete All</entry>
+    <entry key="autosaveAllButton3">Ignore All</entry>
+    <entry key="autosaveDiscardError">Autosave could not delete autosave file {0}</entry>
+    <entry key="autosaveNoDialog">Autosave file detected, but Model Recovery dialog could not be displayed.  You can recover the file manually by renaming it:</entry>
+    <entry key="autosaveOpenNewer">This backup file contains unsaved changes to a model or library called "{0}".  Do you want to open "{1}" to restore the changes?</entry>
+    <entry key="autosaveOpenOlder">This file contains unsaved changes to a model or library called "{0}" but it is older than the model file itself. Do you want to open it as a new model called "{1}"?</entry>
+    <entry key="autosaveOpenMissing">This file contains unsaved changes to a model or library called "{0}" which cannot be found. Do you want to open it as a new model called "{1}"?</entry>
+    <entry key="autosaveOpenTitle">Open Autosave File</entry>
+    <entry key="libraryNotFound">Could not find library "{0}" specified in {1}.</entry>
+    <entry key="SourceInformation">Source information:</entry>
+    <entry key="openSlBlock">Unable to open the slblocks file "{0}".</entry>
+    <entry key="parseError">An error occurred while parsing "{0}". Error Message: {1}.</entry>
+    <entry key="InvalidEnumListSpecExpCellArray" note="stringDatatypeUpdate">Invalid enumerated list of character vectors specified.\nExpected a cell array of character vectors</entry>
+    <entry key="CannotFindPropInDestObj">Cannot find property ''{0}'' in destination object.</entry>
+    <entry key="DestObjDoesNotAllowPublicGet">Destination property ''{0}'' does not allow public get.</entry>
+    <entry key="SlidegNoArg" note="stringDatatypeUpdate">The Slider Gain dialog manager, slideg, was called with no arguments. There should always be one argument, and it should be a character vector indicating the action to be carried out.</entry>
+    <entry key="SlidegExtraArgs" note="stringDatatypeUpdate">The Slider Gain dialog manager, slideg, was called with extra arguments that are not used. There should only be one argument, and it should be a character vector indicating the action to be carried out.</entry>
+    <entry key="UnknownAction">The sliding gain block''s dialog box manager, slideg, was called with an unknown action ''{0}''.</entry>
+    <entry key="SliderGainInLockLib">The Slider Gain is in a locked library.  You must place it in a model or unlocked library in order to use its dialog.</entry>
+    <entry key="SlidegUnexpectedObject">Unexpected object in MATLAB file ''{0}''.</entry>
+    <entry key="SlidegInvalidLowerLimit">Invalid data entry for slider gain lower limit. The lower limit must be a literal numeric value such as -3.1, and it must also be finite, real, and scalar. General MATLAB code such as the use of variables or equations is not supported. The entry ''{0}'' does not satisfy these requirements.</entry>
+    <entry key="SlidegInvalidGainValue">Invalid data entry for slider gain. The gain must be a literal numeric value such as -3.1, and it must also be finite, real, and scalar. General MATLAB code such as the use of variables or equations is not supported. The entry ''{0}'' does not satisfy these requirements.</entry>
+    <entry key="SlidegInvalidUpperLimit">Invalid data entry for slider gain upper limit. The upper limit must be a literal numeric value such as -3.1, and it must also be finite, real, and scalar. General MATLAB code such as the use of variables or equations is not supported. The entry ''{0}'' does not satisfy these requirements.</entry>
+    <entry key="SlidegLowerLimitGTGain">The value entered for the slider gain lower limit was {0}. The current gain value is {1}. The entered lower limit was not less than or equal to the gain value as is required.  To satisfy this requirement, the entered value for the lower limit was replaced by the current gain value.</entry>
+    <entry key="SlidegUpperLimitLTGain">The value entered for the slider gain upper limit was {0}. The current gain value is {1}. The entered upper limit was not greater than or equal to the gain value as is required.  To satisfy this requirement, the entered value for the upper limit was replaced by the current gain value.</entry>
+    <entry key="SlidegNoChangeWhenInit">Cannot change the Slider Gain value while the model is initializing.</entry>
+    <entry key="SlidegMATLABError">Error setting Slider Gain value. MATLAB error message:\n ''{0}''.</entry>
+    <entry key="SlidegObsolete">The Slider Gain dialog manager, slideg, was called with obsolete arguments. This suggests that the current model contains an obsolete version of the Slider Gain block. You should replace the block ''{0}'' with the latest version of Slider Gain from the Simulink library.</entry>
+    <entry key="SlprophelpInvalidProperty">Invalid property type specified as input to SLPROPHELP: ''{0}''.</entry>
+    <entry key="MAssertUnknownAction">M Assert: unknown action</entry>
+    <entry key="ErrorText">Error</entry>
+    <entry key="EnableRTWUseSimCustomCodeWarning">Warning: Current custom code settings will be lost. If you want to keep your settings, please uncheck ''Use the same custom code settings as Simulation Target''. If you do want to use the same custom code settings as Simulation Target, please click on Apply.</entry>
+    <entry key="EnableUseSimReservedNamesWarning">Warning: The current reserved names in the Code Generation &gt; Symbols pane will be lost.  If you want to keep the reserved names, clear the ''Use the same reserved names as Simulation Target'' check box. If you want to use the reserved names from the Simulation Target in the generated code, in the Configuration Parameters dialog box click ''Apply''.</entry>
+    <entry key="ModelRefVariantChoices">Variant choices</entry>
+    <entry key="VarTableColumn1">Variant control</entry>
+    <entry key="VarTableColumn2">Condition (read-only)</entry>
+    <entry key="VarTableColumn3">Model name</entry>
+    <entry key="ModelRefVariantShortDetail">The model variant block can have one active variant for simulation. The variant control determines which variant is active. It can be a condition expression or a Simulink.Variant object specifying a condition expression.</entry>
+    <entry key="ModelRefVisibilityDetail">If the referenced model has more than
+      one instance simulating in Normal mode, you might need to turn on Normal Mode
+      Visibility for this Model block. Normal Mode visibility can be controlled by going to
+      the top model and editing Normal Mode Visibility.</entry>
+    <entry key="ModelRefOverrideVariant">Override variant conditions and use the following variant</entry>
+    <entry key="InlineVariantBlockIconOption">Show variant condition on block</entry>
+    <entry key="InlineVariantAllowZeroCondition">Allow zero active variant controls</entry>
+    <entry key="ModelRefOverrideVariantCombo">Variant:</entry>
+    <entry key="ModelRefOverrideVariantTip">Use the specified variant instead of selecting the active variant from the variant control</entry>
+
+    <entry key="GenPreprocessorConditionals">Analyze all choices during update diagram and generate preprocessor conditionals</entry>
+    <!-- GenPreprocessorConditionalsTip: used by Variant Subsystems,
+         Variant Model Blocks, Inline Variant blocks -->
+
+    <entry key="GenPreprocessorConditionalsTip">
+      Analyze all choices during update diagram. In addition, 
+      when generating code with the Embedded Coder,
+      guard each choice with C preprocessor conditional statements (#if)
+  </entry>
+    <entry key="PropagateConditions">Propagate conditions outside of variant subsystem</entry>
+    <entry key="PropagateConditionsTip">When a signal is conditionally used, propagate the variant conditions to the blocks connected to the Variant Subsystem.</entry>
+    <entry key="ModelRefCodeGeneration">Code generation</entry>
+    <entry key="ModelRefGPC">Generate preprocessor conditionals</entry>
+    <entry key="ModelRefGPCTip">
+      When generating code with the Embedded Coder, 
+      guard each choice with C preprocessor conditional statements (#if).
+    </entry>
+    <entry key="ModelRefBrowse">Browse...</entry>
+    <entry key="ModelRefOpen">Open Model</entry>
+    <entry key="ModelRefDisableVariants">&gt;&gt; Disable variants</entry>
+    <entry key="ModelRefEnableVariants">&lt;&lt; Enable variants</entry>
+    <entry key="OpenInVariantManager">Open block in Variant Manager</entry>
+    <entry key="ModelRefVariantDetails">Model parameters for chosen variant in table</entry>
+    <entry key="ModelRefAddTip">Add a new variant</entry>
+    <entry key="ModelRefDeleteTip">Delete selected variant</entry>
+    <entry key="ModelRefUpTip">Move variant up</entry>
+    <entry key="ModelRefDownTip">Move variant down</entry>
+
+    <!-- For now, do not translate column headings since i18n is not supported
+         for column names in spreadsheets -->
+    <entry key="ModelRefArgsTableTitle">Model arguments (for this instance):</entry>
+    <entry key="ModelRefArgsTableNameColumn" translate="false">Name</entry>
+    <entry key="ModelRefArgsTableNameColumnTooltip">Click to open the Model Explorer</entry>
+    <entry key="ModelRefArgsTableValueColumn" translate="false">Value</entry>	
+    <entry key="ModelRefArgsTableDefaultValueColumn" translate="false">Default Value</entry>
+    <entry key="ModelRefArgsTableFullPathColumn" translate="false">Path</entry>
+    <entry key="ModelRefArgsTableOwnerColumn" translate="false">Owner</entry>
+    <entry key="ModelRefArgsTableSearchPrompt">Filter Arguments</entry>
+    <entry key="ModelRefArgsTableOwnerColumnTooltip">Click to open ''{0}''</entry>
+    <entry key="ModelRefArgsTableProtectedModel">&lt;Protected Model&gt;</entry>
+    <entry key="ModelRefArgsTableNoData">The referenced model has not specified
+    any model arguments.</entry>
+    <entry key="ModelRefArgsTableError">Error determining model arguments:
+    {0}</entry>
+
+    <entry key="NoVariantObject">(no object)</entry>
+    <entry key="VariantConditionNotApplicable">(N/A)</entry>
+    <entry key="SLVariantCondition">Condition:</entry>
+    <entry key="VariantObject">The Simulink.Variant object is defined in the base workspace or data dictionary and used in association with Model Reference Variants or Variant Subsystems.\n\nThe Condition field should be a logical expression evaluating to true or false to determine if the object is active or not. For example:\nA == 1</entry>
+    <entry key="VariantConfigurationDataObject">Simulink.VariantConfigurationData object is used to define variant configuration for models.\n\nIt contains variant configurations, constraints and an optionally specified default active configuration. The variant configurations consist of a set of control variables and submodel configuration selections.</entry>
+    <entry key="ForwardingTableDescription">Use the Forwarding Table to define the mapping from old library blocks to new library blocks. \nAny links to old library blocks will be updated when you open a model containing links to the library with this Forwarding Table.\nIf you select identical old and new library block names and paths, the Forwarding Table automatically populates library version numbers. \nYou can optionally define a transformation function to update old links parameter data using a MATLAB file on the path. Transforming old links parameter data for the new library block enables you to load old links and preserve parameter data.</entry>
+    <entry key="ForwardingTableCol0">Old Block Path</entry>
+    <entry key="ForwardingTableCol13">Version</entry>
+    <entry key="ForwardingTableCol2">New Block Path</entry>
+    <entry key="ForwardingTableCol4">Transformation Function</entry>
+    <entry key="ForwardingTable">Forwarding Table (mapping for old library blocks)</entry>
+    <entry key="ForwardingTableAddEntryTip">Add new entry</entry>
+    <entry key="ForwardingTableDeleteEntryTip">Delete entry</entry>
+    <entry key="ForwardingTableMoveUpEntryTip">Move up selected row entry</entry>
+    <entry key="ForwardingTableMoveDownEntryTip">Move down selected row entry</entry>
+    <entry key="ForwardingTableGetGcb">Get gcb</entry>
+    <entry key="ForwardingTableGetGcbTip">Get complete path of current selected block</entry>
+    <entry key="SubsystemVariantDescription">The variant subsystem block can have one active variant for simulation. The variant control determines which variant is active. The variant control can be a condition expression, a Simulink.Variant object specifying a condition expression or a default variant.</entry>
+    <entry key="VariantSourceDescription">The Variant Source provides variation on the source of a signal. Blocks connected to the input ports define variant choices and at most one input port can be active during simulation. Blocks connected to the inactive ports will be removed from the simulation. The variant control determines which input port, if any, is active. One input port must be active, unless 'Allow zero active variant controls' is selected.</entry>
+    <entry key="VariantSinkDescription">The Variant Sink provides variation on the sink (destination) of a signal. Blocks connected to the output ports define variant choices and at most one output port can be active during simulation. Blocks connected to the inactive ports will be removed from the simulation. The variant control determines which output port, if any, is active. One output port must be active, unless 'Allow zero active variant controls' is selected.</entry>
+    <entry key="ResetSubsystemDescription">This subsystem executes when the model receives an event with the name specified by the identifier. The identifier can be configured via the 'Event name' parameter of the event listener block placed within this subsystem.</entry>
+    <entry key="InitializeSubsystemDescription">This subsystem executes on model initialize event.</entry>
+    <entry key="TerminateSubsystemDescription">This subsystem executes on model terminate event.</entry>
+    <entry key="ResetIdentifiersTableName">Recently used identifiers:</entry>
+    <entry key="SubsystemAddSubsystemChoiceTip">Create and add a new subsystem variant choice</entry>
+    <entry key="InlineVariantAddPortToolTip">Add a new input port</entry>
+    <entry key="InlineVariantDeletePortToolTip">Delete selected port</entry>
+    <entry key="InlineVariantTableCol1">Port</entry>
+    <entry key="InlineVariantTableItems">Ports and associated conditions</entry>
+    <entry key="SubsystemAddModelChoiceTip">Create and add a new model variant choice</entry>
+    <entry key="SubsystemOpenVariantTip">Open selected variant choice block</entry>
+    <entry key="SubsystemEditVariantObjectTip">Create/Edit selected variant object</entry>
+    <entry key="SubsystemRefreshVariantTip">Refresh dialog information from variant subsystem contents</entry>
+    <entry key="SubsystemChoiceNotPresentInVariantSubsystem">The selected subsystem choice does not exist</entry>
+    <entry key="SubsystemVarTableCol0">Name (read-only)</entry>
+    <entry key="SubsystemVarTableCol1">Variant control</entry>
+    <entry key="SubsystemVarTableCol2">Condition (read-only)</entry>
+    <entry key="SubsystemVarChoices">Variant choices (list of child subsystems or model blocks)</entry>
+    <entry key="LinksToolNeedsJava">The Edited Links Tool requires Java support</entry>
+    <entry key="VariantManagerToolNeedsJava">The Variant Manager Tool requires Java support</entry>
+    <entry key="LinksConflictTxt">Resolving the following links results in a conflict.\nReturn to the Links Tool and choose non-conflicting actions.</entry>
+    <entry key="LinksConflictTitle">Error : Conflicting actions</entry>
+    <entry key="LinkDiscard1">As a result of restoring the links to the following blocks :</entry>
+    <entry key="LinkDiscard2">The changes to the following links will be discarded :</entry>
+    <entry key="LinkDiscard3">Warning : Changes to links being discarded</entry>
+    <entry key="DuplicateVariableUsage">The following variable or alias names are duplicated. Variable names must be unique irrespective of case.</entry>
+    <entry key="EmptyVariableField">Missing Variable name for prompt(s)</entry>
+    <entry key="ParameterKeyword">parameter</entry>
+    <entry key="MaskEditorNeedsJava">The Mask Editor requires Java support</entry>
+    <entry key="ExcessParameters">The number of parameters defined by the mask variables ({0,number,integer}) exceeds the number of mask parameters ({1,number,integer}). Ignoring excess parameters.</entry>
+    <entry key="PopupString" note="stringDatatypeUpdate">Usage of commas in following popup character vectors is not allowed. Use ''''|'''' or new line to separate choices.</entry>
+    <entry key="AboutSimulink">About Simulink</entry>
+    <entry key="DDGSource_Bus_Find">Find</entry>
+    <entry key="DDGSource_Bus_Select">Select&gt;&gt;</entry>
+    <entry key="DDGSource_Bus_Refresh">Refresh</entry>
+    <entry key="DDGSource_Bus_OutputList">Selected signals</entry>
+    <entry key="DDGSource_Bus_MuxOut">Output as bus</entry>
+    <entry key="DDGSource_Bus_Up">Up</entry>
+    <entry key="DDGSource_Bus_Down">Down</entry>
+    <entry key="DDGSource_Bus_Remove">Remove</entry>
+    <entry key="DDGSource_Bus_SignalsInBus">Signals in the bus</entry>
+    <entry key="DDGSource_Bus_NVOut">Output as nonvirtual bus</entry>
+    <entry key="DDGSource_Bus_NumInputs">Number of inputs:</entry>
+    <entry key="DDGSource_Bus_RenameInputs">Rename selected signal:</entry>
+    <entry key="DDGSource_Bus_InheritNames">Inherit bus signal names from input ports</entry>
+    <entry key="DDGSource_Bus_OverrideFromInputs">Override bus signal names from inputs</entry>
+    <entry key="DDGSource_Bus_RequireMatch">Require input signal names to match signals below</entry>
+    <entry key="DDGSource_Bus_RequireMatch_New">Require input signal names to match signals above</entry>
+    <entry key="DDGSource_Bus_AssignedList">Signals that are being assigned</entry>
+    <entry key="DDGSource_Bus_Add">Add</entry>
+    <entry key="BusHierarchyViewerTitle">Signal Hierarchy Viewer - {0} </entry>
+    <entry key="BusHierarchyViewerSubTitle">Currently selected signal(s):</entry>
+    <entry key="ForEachTutorialLink">Working with For Each Subsystems</entry>
+    <entry key="ForEachTutorialPromp">For more information, </entry>
+    <entry key="ForEachInputGroupPromp">Input Partition</entry>
+    <entry key="ForEachOutputGroupPromp">Output Concatenation</entry>
+    <entry key="ForEachMaskPrmGroupPromp">Parameter Partition</entry>
+    <entry key="ForEachDlgTitle">Block Parameters: {0}</entry>
+    <entry key="ForEachActiveIterPromp">Has active iteration signal</entry>
+    <entry key="ForEachInputGroupDesc">Select the input(s) to partition and then specify the dimension to slice through and the width of each slice. (For example, to process each element of a [1xN] row vector, set the ''Partition Dimension'' to 2 and the ''Partition Width'' to 1.)</entry>
+    <entry key="ForEachOutputGroupDesc">Specify the dimension along which the results are stacked to form output(s). (For example, to stack elements into a row vector, set the ''Concatenation'' dimension to 2.)</entry>
+    <entry key="ForEachMaskPrmGroupDesc">Select the mask parameter(s) to partition and then specify the dimension to slice through and the width of each slice. (For example, to process each element of a [1xN] row vector, set the ''Partition Dimension'' to 2 and the ''Partition Width'' to 1.)</entry>
+    <entry key="ForEachInputNonPartitionListPromp">Non-Partition Inports</entry>
+    <entry key="ForEachPortColHead">Port</entry>
+    <entry key="ForEachPrmColHead">Parameter</entry>
+    <entry key="ForEachInputPartitionColHead">Partition Input(s)</entry>
+    <entry key="ForEachOutputConcatColHead">Concatenate Output(s)</entry>
+    <entry key="ForEachMaskPrmPartitionColHead">Partition Parameter(s)</entry>
+    <entry key="UnitConfigurationDlgTitle">Unit System Configuration Block: {0}</entry>
+    <entry key="UnitConfigurationDescTitle">Unit System Configuration</entry>
+    <entry key="UnitConfigurationAllUnitSystems">Allow all unit systems</entry>
+    <entry key="UnitConfigurationAllowedUnitSystems">Allowed unit systems</entry>
+    <entry key="UnitConfigurationUnitSystems">Disallowed unit systems</entry>
+    <entry key="UnitConfigurationAllowButton"><![CDATA[Allow >>]]></entry>
+    <entry key="UnitConfigurationDisallowButton"><![CDATA[<< Disallow]]></entry>
+    <entry key="GotoBlockRefresh">refresh</entry>
+
+    <entry key="GotoBlockCorrespondingBlocks">Corresponding blocks:</entry>
+
+    <entry key="GotoSelectTag">Select tag >></entry>
+
+    <entry key="Clicktolocatetheblock">Click to locate the block.</entry>
+
+    <!-- Begin External mode control panel -->
+    <entry key="ExtModeControlPanelError">Error using External Mode Control Panel</entry>
+    <entry key="ExtModeControlPanelInputArgError">Input argument must be a model name or handle.</entry>
+    <entry key="ExtModeControlPanel">{0}: External Mode Control Panel</entry>
+    <entry key="ExtModeConnect">Connect</entry>
+    <entry key="ExtModeConnectTooltip">Connect ''{0}'' to a target hardware executable</entry>
+    <entry key="ExtModeDisconnect">Disconnect</entry>
+    <entry key="ExtModeOneClickStart">Run</entry>
+    <entry key="ExtModeOneClickStartTooltip">Start the External mode simulation for ''{0}''</entry>
+    <entry key="ExtModeDisconnectTooltip">Disconnect ''{0}'' from a target hardware executable</entry>
+    <entry key="ExtModeStartRealTimeCode">Start Real-Time Code</entry>
+    <entry key="ExtModeStartRealTimeCodeTooltip">Start the target hardware executable</entry>
+    <entry key="ExtModeStopRealTimeCode">Stop Real-Time Code</entry>
+    <entry key="ExtModeStopRealTimeCodeTooltip">Stop the target hardware executable</entry>
+    <entry key="ExtModeOneClickStop">Stop</entry>
+    <entry key="ExtModeOneClickStopTooltip">Stop the target hardware executable and External mode simulation for ''{0}''</entry>    
+    <entry key="ExtModeArmTrigger">Arm Trigger</entry>
+    <entry key="ExtModeArmTriggerTooltip">Initiate data uploading from the target hardware executable</entry>
+    <entry key="ExtModeCancelTrigger">Cancel Trigger</entry>
+    <entry key="ExtModeCancelTriggerTooltip">Cease data uploading from the target hardware executable</entry>
+    <entry key="ExtModeConnectionAndTriggering">Connection and triggering</entry>
+    <entry key="ExtModeEnableDataUploading">Enable data uploading</entry>
+    <entry key="ExtModeEnableDataUploadingTooltip">If selected, initiates floating scope data uploading from the target hardware executable</entry>
+    <entry key="ExtModeFloatDurationError">Duration must be 'auto', a positive integer, or a global variable resolving to a positive integer.</entry>
+    <entry key="ExtModeDuration">Duration:</entry>
+    <entry key="ExtModeDurationTooltip">Number of base rate samples to collect in one buffer on the target hardware executable</entry>
+    <entry key="ExtModeFloatingScope">Floating scope</entry>
+    <entry key="ExtModeBatchDownload">Batch download</entry>
+    <entry key="ExtModeBatchDownloadTooltip">If selected, parameter changes in ''{0}'' are batched together before downloading to the target hardware executable</entry>
+    <entry key="ExtModeDownload">Download</entry>
+    <entry key="ExtModeDownloadTooltip">Downloads all batched parameter changes to the target hardware executable</entry>
+    <entry key="ExtModeParameterChangesPending">Parameter changes pending ...</entry>
+    <entry key="ExtModeParameterTuning">Parameter tuning</entry>
+    <entry key="ExtModeSigAndTrigButtonTitle">Signal &amp;&amp; Triggering ...</entry>
+    <entry key="ExtModeSigAndTrigButtonTitleTooltip">Configure data uploading for ''{0}''</entry>
+    <entry key="ExtModeDataArchiving">Data Archiving ...</entry>
+    <entry key="ExtModeDataArchivingDirectoryNameError">Data archiving directory ''{0}'' contains invalid characters in the system's default encoding, {1}. </entry>
+    <entry key="ExtModeDataArchivingFileNameError">Data archiving file name ''{0}'' contains invalid characters in the system's default encoding, {1}.</entry>
+    <entry key="ExtModeDataArchivingTooltip">Configure data archiving for ''{0}''</entry>
+    <entry key="ExtModeConfiguration">Configuration</entry>
+    <!-- End External mode control panel -->
+    <!-- Begin External mode signal & triggering dialog -->
+    <entry key="ExtModeOn">on</entry>
+    <entry key="ExtModeOff">off</entry>
+    <entry key="ExtModeRadioButtonTooltip">Determine if the highlighted block(s) will upload data from the target hardware executable</entry>
+    <entry key="ExtModeSigAndTrigDlgTitle">{0}: External Signal &amp; Triggering</entry>
+    <entry key="ExtModeSelectAll">Select all</entry>
+    <entry key="ExtModeSelectAllTooltip">Select all blocks in ''{0}'' to upload data from the target hardware executable</entry>
+    <entry key="ExtModeClearAll">Clear all</entry>
+    <entry key="ExtModeClearAllTooltip">Remove all blocks in ''{0}'' from uploading data from the target hardware executable</entry>
+    <entry key="ExtModeTriggerSignalButton">Trigger Signal</entry>
+    <entry key="ExtModeTriggerSignalTooltip">Determine if the highlighted block will trigger data uploading</entry>
+    <entry key="ExtModeGoToBlock">Go To Block</entry>
+    <entry key="ExtModeGoToBlockTooltip">Select the highlighted block in ''{0}''</entry>
+    <entry key="ExtModeSignalSelection">Signal selection</entry>
+    <entry key="ExtModeSignalSelectionTableTooltip">Select which blocks in ''{0}'' will upload data from the target hardware executable</entry>
+    <entry key="ExtModeSource">Source:</entry>
+    <entry key="ExtModeSourceTooltip">Choose how data uploading will start</entry>
+    <entry key="ExtModeManual">manual</entry>
+    <entry key="ExtModeSignal">signal</entry>
+    <entry key="ExtModeMode">Mode:</entry>
+    <entry key="ExtModeModeTooltip">Choose if data uploading will stop after logging event is complete or continuously rearm</entry>
+    <entry key="ExtModeOneShot">one-shot</entry>
+    <entry key="ExtModeNormal">normal</entry>
+    <entry key="ExtModeDelay">Delay:</entry>
+    <entry key="ExtModeDelayTooltip">Number of base rate samples to delay uploading data once a trigger event occurs</entry>
+    <entry key="ExtModeArmWhenConnect">Arm when connecting to target</entry>
+    <entry key="ExtModeArmWhenConnectTooltip">Automatically arm the trigger when connecting to the target hardware executable</entry>
+    <entry key="ExtModePort">Port:</entry>
+    <entry key="ExtModePortTooltip">Port number of the trigger-specified block to act as the trigger signal</entry>
+    <entry key="ExtModeElement">Element:</entry>
+    <entry key="ExtModeElementTooltip">Element of the trigger-specified block and port to act as the trigger signal</entry>
+    <entry key="ExtModeDirection">Direction:</entry>
+    <entry key="ExtModeDirectionTooltip">Direction the trigger signal must be traveling when it crosses the threshold</entry>
+    <entry key="ExtModeRising">rising</entry>
+    <entry key="ExtModeFalling">falling</entry>
+    <entry key="ExtModeEither">either</entry>
+    <entry key="ExtModeLevel">Level:</entry>
+    <entry key="ExtModeLevelTooltip">Threshold value the trigger signal must cross to start data uploading</entry>
+    <entry key="ExtModeHoldOff">Hold-off:</entry>
+    <entry key="ExtModeHoldOffTooltip">In normal mode, the number of base rate samples between termination of one trigger event and rearming of the trigger</entry>
+    <entry key="ExtModeSelected">Selected</entry>
+    <entry key="ExtModeTrigger">Trigger</entry>
+    <entry key="ExtModeBlock">Block</entry>
+    <entry key="ExtModePath">Path</entry>
+    <entry key="ExtModeTriggerSignalGroup">Trigger signal</entry>
+    <entry key="ExtModeTriggerOptionsGroup">Trigger options</entry>
+    <entry key="ExtModeTriggerSourceTooltip">Block specified as the source of the trigger</entry>
+    <entry key="ExtModeDurationGreaterThanZero">Duration must be greater than zero.</entry>
+    <entry key="ExtModeOneTriggerSigOnly">There can be only one trigger signal in the model.</entry>
+    <entry key="ExtModePreTrigDelay">Pre-triggering delay must be less than the duration.</entry>
+    <entry key="ExtModeDelayVal">Delay must be an integer or a global variable resolving to an integer.</entry>
+    <!-- End External mode signal & triggering dialog -->
+    <!-- Begin External mode data archiving dialog -->
+    <entry key="ExtModeEnableDataArchiving">{0}: Enable Data Archiving</entry>
+    <entry key="ExtModeCouldNotCreateDirNoteFile">Could not create directory note file: {0}.</entry>
+    <entry key="ExtModeCouldNotOpenDirNoteFile">Could not open directory note file: ''{0}'' in MATLAB''s default editor.</entry>
+    <entry key="ExtModeCouldNotOpenDefaultEditor">Could not open MATLAB''s default editor.</entry>
+    <entry key="ExtModeEditFileNote">Edit File Note</entry>
+    <entry key="ExtModeEditFileNoteTooltip">Add annotations to a log file</entry>
+    <entry key="ExtModeCouldNotLoadNote">Error loading note from MAT-file ''{0}'': {1};</entry>
+    <entry key="ExtModeEnableArchiving">Enable archiving</entry>
+    <entry key="ExtModeEnableArchivingTooltip">If selected, enables automated data archiving for ''{0}''</entry>
+    <entry key="ExtModeDirectory">Directory:</entry>
+    <entry key="ExtModeDirectoryTooltip">Specifies the folder in which data is saved</entry>
+    <entry key="ExtModeDirectoryBrowse">Browse ...</entry>
+    <entry key="ExtModeDirectoryBrowseTooltip">Browse for the folder in which data is saved</entry>
+    <entry key="ExtModeFile">File:</entry>
+    <entry key="ExtModeFileTooltip">Specifies the filename in which data is saved</entry>
+    <entry key="ExtModeIncDirWhenArmed">Increment directory when trigger armed</entry>
+    <entry key="ExtModeIncDirWhenArmedTooltip">Use a different folder for writing log files when arming trigger</entry>
+    <entry key="ExtModeIncFileAfterOneShot">Increment file after one-shot</entry>
+    <entry key="ExtModeIncFileAfterOneShotTooltip">Use a different file for writing log data after one-shot trigger</entry>
+    <entry key="ExtModeAppendFileSuffix">Append file suffix to variable names</entry>
+    <entry key="ExtModeAppendFileSuffixTooltip">Use unique variable names in each log file</entry>
+    <entry key="ExtModeWriteIntResultsToWS">Write intermediate results to workspace</entry>
+    <entry key="ExtModeWriteIntResultsToWSTooltip">Write all intermediate logging results to the workspace</entry>
+    <entry key="ExtModeEditDirectoryNote">Edit Directory Note ...</entry>
+    <entry key="ExtModeEditDirectoryNoteTooltip">Add annotations to a directory containing log files</entry>
+    <entry key="ExtModeDataArchivingGroup">Data archiving</entry>
+    <entry key="ExtModeEnterNoteFor">Enter note for: {0}</entry>
+    <entry key="ExtModeExternalMode">External mode</entry>
+    <!-- End External mode data archiving dialog -->
+    <!-- Begin External mode config set -->
+    <entry key="ExtModeOptions">External mode options</entry>
+    <!-- End External mode config set -->
+
+    <entry key="SecondOrderIntegratorTabName_x" translate="false">x</entry>
+    <entry key="SecondOrderIntegratorTabName_dxdt" translate="false">dx/dt</entry>
+    <entry key="SecondOrderIntegratorTabName_Attributes">Attributes</entry>
+
+    <entry key="SlwsPrmAddToTable">Add to table &gt;&gt;</entry>
+    <entry key="SlwsPrmDescription">Description</entry>
+    <entry key="SlwsPrmGlobalTunableParameters">Global (tunable) parameters</entry>
+    <entry key="SlwsPrmName">Name</entry>
+    <entry key="SlwsPrmNew">New</entry>
+    <entry key="SlwsPrmRefreshList">Refresh list</entry>
+    <entry key="SlwsPrmRemove">Remove</entry>
+    <entry key="SlwsPrmSourceList">Source list</entry>
+    <entry key="SlwsPrmStorageClass">Storage class</entry>
+    <entry key="SlwsPrmStorageTypeQualifier">Storage type qualifier</entry>
+  <!--Resource entries for toolbox/simulink-->
+    <entry key="UDTScalingEmptyFieldErr" translate="false">err</entry>
+    <entry key="UDTScalingPlusInfValErr" translate="false">err</entry>
+    <entry key="UDTScalingMinusInfValErr" translate="false">err</entry>
+    <entry key="FieldNotFound">Could not find field {0} in the gui_State struct in GUI file {1}</entry>
+    <entry key="SL_DSCPT_ASSIGNMENT">Assign values to specified elements of a multidimensional output signal. The index to each element is identified from an input port or this dialog. You can choose the indexing method for each dimension by using the \"Index Option" parameter.</entry>
+    <entry key="SL_DSCPT_ACTION">Place this block in a subsystem to link to a signal from an If block or a Switch-Case block.</entry>
+    <entry key="SL_DSCPT_SELECTOR">Select or reorder specified elements of a multidimensional input signal. The index to each element is identified from an input port or this dialog. You can choose the indexing method for each dimension by using the \"Index Option" parameter.</entry>
+    <entry key="SL_DSCPT_RESETPORT">Place this block in a subsystem to create a resettable subsystem.</entry>
+    <entry key="SL_DSCPT_ENABPORT">Place this block in a subsystem or at the root level of a model to create an enabled system.  
+      \n\nPlacing this block at the root level of a model enables a Signal Attributes tab.</entry>
+    <entry key="SL_DSCPT_LOGIC">Logical operators.  For a single input, operators are applied across the input vector.  For multiple inputs, operators are applied across the inputs.</entry>
+    <entry key="SL_DSCPT_PRODUCT">Multiply or divide inputs.  Choose element-wise or matrix product and specify one of the following:\n a) * or / for each input port. For example, **/* performs the operation ''u1*u2/u3*u4''.\n b) scalar specifies the number of input ports to be multiplied.\nIf there is only one input port and the Multiplication parameter is set to Element-wise(.*), a single * or / collapses the input signal using the specified operation. However, if the Multiplication parameter is set to Matrix(*), a single * causes the block to output the matrix unchanged, and a single / causes the block to output the matrix inverse.</entry>
+    <entry key="SL_DSCPT_TRIGPORT">Place this block in a subsystem or at the root level of a model to create a triggered or function-call system.  \n\nIf the trigger type is \"rising,\" \"falling,\" or \"either,\" placing this block at the root level of a model enables a Signal Attributes tab.</entry>
+    <entry key="SL_DSCPT_ASYNC_TASK_SPEC">Specify the parameters of an asynchronous task associated with an Inport block. Place this block at the output port of each root-level Inport block that outputs a function-call trigger signal.</entry>
+    <entry key="SL_DSCPT_EXP_FCN_SPEC">Specify the properties of the export function associated with an Inport block. Place this block at the output port of each root-level Inport block that outputs a function-call trigger signal.</entry>
+    <entry key="SL_DSCPT_IMPLICIT_ASSIGNMENT">Assign result from one iteration to Implicit Iterator Output which is a concatenation of all iterations.</entry>
+    <entry key="SL_DSCPT_IMPLICIT_SELECTOR">Select Implicit Iterator Subsystem input which is iterated on for one iteration</entry>
+    <entry key="SL_DSCPT_IMPLICIT_ITER">Enable the blocks in this subsystem to process elements (or subarrays) of the input signals independently. Specify the parameters for partitioning inputs into elements (or subarrays) and for concatenating the results into outputs.</entry>
+    <entry key="SL_DSCPT_CLOCK">Output the current simulation time.</entry>
+    <entry key="SL_DSCPT_CTF">The numerator coefficient can be a vector or matrix expression. The denominator coefficient must be a vector. The output width equals the number of rows in the numerator coefficient. You should specify the coefficients in descending order of powers of s. </entry>
+    <entry key="SL_DSCPT_CZP">Matrix expression for zeros.  Vector expression for poles and gain.  Output width equals the number of columns in zeros matrix, or one if zeros is a vector.</entry>
+    <entry key="SL_DSCPT_CSS">State-space model:\n   dx/dt = Ax + Bu\n       y = Cx + Du</entry>
+    <entry key="SL_DSCPT_DEMUX">Split vector signals into scalars or smaller vectors. Check ''Bus Selection Mode'' to split bus signals.</entry>
+    <entry key="SL_DSCPT_BUSSELECT">This block accepts a bus as input which can be created from a Bus Creator, Bus Selector or a block that defines its output using a bus object. The left listbox shows the signals in the input bus. Use the Select button to select the output signals. The right listbox shows the selections. Use the Up, Down, or Remove button to reorder the selections. Check ''Output as bus'' to output a single bus signal.</entry>
+    <entry key="SL_DSCPT_BUSREG">This block accepts a struct and a bus object name and it will register the bus represented by the struct in the data type table.</entry>
+    <entry key="SL_DSCPT_DFILTER">The numerator coefficient can be a vector or matrix expression. The denominator coefficient must be a vector. The output width equals the number of rows in the numerator coefficient. You should specify the coefficients in ascending order of powers of 1/z. </entry>
+    <entry key="SL_DSCPT_CONCAT">Concatenate input signals of the same data type to create a contiguous output signal. Select vector or multidimensional array mode.\n\nIn vector mode, all input signals must be either vectors or one-row [1xM] matrices or one-column [Mx1] matrices or a combination of vectors and either one-row matrices or one-column matrices. The output is a vector if all inputs are vectors. The output is a one-row or one-column matrix if any of the inputs are one-row or one-column matrices, respectively.\n\nIn multidimensional mode, use ''Concatenate dimension'' to specify the output dimension along which to concatenate the input arrays. For example, to concatenate the input arrays vertically or horizontally, specify 1 or 2, respectively, as the concatenate dimensions.</entry>
+    <entry key="SL_DSCPT_DELAY">Sample and hold with one sample period delay.</entry>
+    <entry key="SL_DSCPT_CDELAY">Delay the input signal of a quantity specified by the user.</entry>
+    <entry key="SL_DSCPT_CASE">Perform a switch-case operation on the input.  The input must be a scalar and its value will be truncated.  The case conditions are specified using the MATLAB cell notation, where each case is a cell element.  For example, entering '{'1,[2,3]'}' as the case condition implies that port 1 is run when the input is 1 and port 2 is run when the input is either 2 or 3.  If the default case is shown, then port 3 is run for all other inputs.</entry>
+    <entry key="SL_DSCPT_CAN_OUTPUT">Make an output of a Code Reuse Subsystem a canonical output.</entry>
+    <entry key="SL_DSCPT_BUS_TO_VECTOR">Convert a virtual bus signal to a vector signal. The input bus signal must consist of scalar, 1-D, or either row or column vectors having the same data type, signal type, and sampling mode. If the input bus contains row or column vectors, this block outputs a row or column vector, respectively; otherwise, it outputs a 1-D array.</entry>
+    <entry key="SL_DSCPT_BUSASSIGN">This block accepts a bus as input and allows signals in the bus to be assigned with new signal values. The left listbox shows the signals in the input bus. Use the Select button to select the signals that are to be assigned. The right listbox shows the selections. Use the Up, Down, or Remove button to reorder the selections.</entry>
+    <entry key="SL_DSCPT_ASSERTION">Assert that the input signal is non-zero.  The default behavior in the absence of a callback is to output an error message when the assertion fails.</entry>
+    <entry key="SL_DSCPT_DIGCLOCK">Output current simulation time at the specified rate.</entry>
+    <entry key="SL_DSCPT_DINTEGRT">Discrete-time integration or accumulation of the input signal.</entry>
+    <entry key="SL_DSCPT_DISPLAY">Numeric display of input values.</entry>
+    <entry key="SL_DSCPT_DSS">Discrete state-space model:\n   x(n+1) = Ax(n) + Bu(n)\n   y(n)   = Cx(n) + Du(n)</entry>
+    <entry key="SL_DSCPT_DSTORMEM">Define a memory region for use by the Data Store Read and Data Store Write blocks. All Read and Write blocks that are in the current (sub)system level or below and have the same data store name will be able to read from or write to this block.</entry>
+    <entry key="SL_DSCPT_DSTOREREAD">Read values from specified data store.</entry>
+    <entry key="SL_DSCPT_DSTOREWRITE">Write values to specified data store.</entry>
+    <entry key="SL_DSCPT_STATE_READ">Read values from states of specified block.</entry>
+    <entry key="SL_DSCPT_STATE_WRITE">Write values to states of specified block.</entry>
+    <entry key="SL_DSCPT_GOTO">Send signals to From blocks that have the specified tag.  If tag visibility is ''scoped'', then a Goto Tag Visibility block must be used to define the visibility of the tag.  The block icon displays the selected tag name (local tags are enclosed in brackets, [], and scoped tag names are enclosed in braces, '{}').</entry>
+    <entry key="SL_DSCPT_FROM">Receive signals from the Goto block with the specified tag.  If the tag is defined as ''scoped'' in the Goto block, then a Goto Tag Visibility block must be used to define the visibility of the tag.  After ''Update Diagram'', the block icon displays the selected tag name  (local tags are enclosed in brackets, [], and scoped tag names are enclosed in braces, '{}').</entry>
+    <entry key="SL_DSCPT_FROMWKS">Read data values specified in matrix or structure format from MATLAB''s workspace.\n\nMatrix format can be used only for one-dimensional signals. Each row of the matrix has a time stamp in the first column and a vector containing the corresponding data sample in the subsequent column(s).\n\nStructure format can be used for either one-dimensional or multidimensional signals:\n   var.time=[TimeValues]\n   var.signals.values=[DataValues]\n   var.signals.dimensions=[DimValues]</entry>
+    <entry key="SL_DSCPT_GAIN">Element-wise gain (y = K.*u) or matrix gain (y = K*u or y = u*K).</entry>
+    <entry key="SL_DSCPT_UNIT_CONVERSION">Convert the input unit to that of the output. Convert only between units that differ by a scale factor.</entry>
+    <entry key="SL_DSCPT_FROMFILE_NO_BUSES">Read a matrix or timeseries in the specified MAT file. Simulink incrementally reads data from MAT files version 7.3 or later.\n\nThe timeseries must be saved in a MAT file version 7.3 or later.\n\nThe matrix must contain time values in the first row. Additional rows correspond to output elements.</entry>
+    <entry key="SL_DSCPT_FROMFILE">
+Read data values from a variable in the specified MAT-file.\n\nThe data values may be specified in MATLAB timeseries or matrix format.\n\nMATLAB timeseries may be used for any data type, complexity, or dimensions. To load the bus signal, use a MATLAB structure that matches the bus hierarchy. Each leaf of the structure must be a MATLAB timeseries object.\n\nMatrix format can be used only for vector, double, noncomplex  signals. Each column of the matrix must have a time stamp in the first row and a vector containing the corresponding data sample in the subsequent rows.\n\nSimulink incrementally reads data from MAT-files of version 7.3.\n\nThe MATLAB timeseries and structures of timeseries must be saved in MAT-files of version 7.3.</entry>
+    <entry key="SL_DSCPT_FROMFILE_BROWSE_FILTER">MAT files (*.mat)</entry>
+    <entry key="SL_DSCPT_FROMFILE_BROWSE_TOOLTIP">Browse for a MAT-file.</entry>
+    <entry key="SL_DSCPT_FROMFILE_SIGNALEDITOR_TOOLTIP">View the signal from the MAT-file.</entry>
+    <entry key="SL_DSCPT_FROMFILE_SIGNALEDITOR_EMPTYFILE">There is no signal to view from the MAT-file.</entry>
+    <entry key="SL_DSCPT_FROMFILE_SIGNALEDITOR_ERROR">Error occurred while viewing the signal from the MAT-file.</entry>
+    <entry key="SL_DSCPT_FOR">Run the blocks in this subsystem for a number of iterations.  The iteration limit may be specified either in the block''s dialog or through an external input port.  If the iteration variable is incremented externally, then the next iteration value is read in through an external input port, otherwise it is incremented by one.  The iteration continues to run until the iteration variable exceeds the iteration limit.  If the output port is shown, it will output the current iteration number starting at zero or one.  When the iteration is started, any states in the subsystem may be either reset to their initial value or held at their previous value.</entry>
+    <entry key="SL_DSCPT_FRAME_CONV">Set sampling mode of the output signal.</entry>
+    <entry key="SL_DSCPT_FCN">General expression block. Use \"u\" as the input variable name.\nExample: sin(u(1)*exp(2.3*(-u(2))))</entry>
+    <entry key="SL_DSCPT_GROUND">Used to \"ground\" input signals.  (Prevents warnings about unconnected input ports.)  Outputs zero.</entry>
+    <entry key="SL_DSCPT_HARDWARECONFIG">Specifies synchronous reset and enable behavior for blocks with state in a subsystem, an enabled subsystem or a resettable subsystem.</entry>
+    <entry key="SL_DSCPT_UNITCONFIG">Restrict units to specified allowed unit systems.</entry>
+    <entry key="SL_DSCPT_TIMECONFIG">Specify component date time.</entry>
+    <entry key="SL_DSCPT_IRTCONFIG">Specify event type for function.</entry>
+    <entry key="SL_DSCPT_GOTOTAGV">Used in conjunction with Goto and From blocks to define the visibility of scoped tags.  For example, if this block resides in a subsystem (or root system) called MYSYS, then the tag is visible to From blocks that reside in MYSYS or in subsystems of MYSYS.</entry>
+    <entry key="SL_DSCPT_ELMATH">Various elementary math operations including trigonometric, exponential, and hyperbolic functions.</entry>
+    <entry key="SL_DSCPT_IF">IF expression\n    Run the Action Subsystem connected to 1st output port\nELSEIF expression\n    Run the Action Subsystem connected to 2nd output port\nELSE\n    Run the Action Subsystem connected to last output port\nEND\nThe number of Elseif output ports in the block is equal to the\nnumber of comma-separated Elseif expressions entered in the dialog.\nThe If and Elseif expressions can use these MATLAB operators:\n    &lt;, &lt;=, ==, ~=, &gt;, &gt;=, &amp;, |, ~, (  ), unary-minus\non the input port signals named u1, u2, u3, etc.</entry>
+    <entry key="SL_DSCPT_INITCOND">Initial condition for signal.</entry>
+    <entry key="SL_DSCPT_SIGNAL_CONVERSION">Convert a signal to a new type without altering signal values.\na) If the incoming signal is not a bus, the ''Signal copy'' option creates a contiguous segment of memory to store a copy of an input signal. If the incoming signal is a bus, the ''Signal copy'' option outputs a copy of the incoming bus. \n\nb) The ''Virtual bus'' option converts the input bus to a virtual bus.\n\nc) The ''Nonvirtual bus'' option converts the input bus to a nonvirtual bus.\n</entry>
+    <entry key="SL_DSCPT_DZP">Matrix expression for zeros.  Vector expression for poles and gain. Output width equals the number of columns in zeros matrix, or one if zeros is a vector.</entry>
+    <entry key="SL_DSCPT_INPORT">Provide an input port for a subsystem or model.\nFor Triggered Subsystems, ''Latch input by delaying outside signal'' produces the value of the subsystem input at the previous time step.\nFor Function-Call Subsystems, turning ''On'' the ''Latch input for feedback signals of function-call subsystem outputs'' prevents the input value to this subsystem from changing during its execution.\nThe other parameters can be used to explicitly specify the input signal attributes.</entry>
+    <entry key="SL_DSCPT_DATA_TYPE_CONV">Convert the input to the data type and scaling of the output. \n\nThe conversion has two possible goals. One goal is to have the Real World Values of the input and the output be equal.  The other goal is to have the Stored Integer Values of the input and the output be equal.  Overflows and quantization errors can prevent the goal from being fully achieved.</entry>
+    <entry key="SL_DSCPT_MATLFCN">Pass the input values to a MATLAB function for evaluation.  The function must return a single value having the dimensions specified by ''Output dimensions'' and ''Collapse 2-D results to 1-D''.\nExamples: sin, sin(u), foo(u(1), u(2))</entry>
+    <entry key="SL_DSCPT_INTEGRAT">Continuous-time integration of the input signal.</entry>
+    <entry key="SL_DSCPT_MEMBLK">Apply a one integration step delay. The output is the previous input value.</entry>
+    <entry key="SL_DSCPT_LOOKUP2D">Performs 2-D linear interpolation of input values using the specified table.  Extrapolation is performed outside the table boundaries.  The first dimension corresponds to the top (or left) input port.</entry>
+    <entry key="SL_DSCPT_MERGE">Merge the input signals into a single output signal whose initial value is specified by the ''Initial output'' parameter. If ''Initial output'' is empty, the Merge block outputs the initial output of one of its driving blocks.</entry>
+    <entry key="SL_DSCPT_M_SFCN_BLOCK">User-definable block written using the MATLAB S-Function API. Specify the name of a MATLAB S-Function below. Use the Parameters field to specify a comma-separated list of parameters for this block.</entry>
+    <entry key="SL_DSCPT_BUS_CREATOR">This block creates a bus signal from its inputs.</entry>
+    <entry key="SL_DSCPT_MUX">Multiplex scalar or vector signals.</entry>
+    <entry key="SL_DSCPT_OUTPORT">Provide an output port for a subsystem or model.  The ''Output when disabled'' and ''Initial output'' parameters only apply to conditionally executed subsystems. When a conditionally executed subsystem is disabled, the output is either held at its last value or set to the ''Initial output''.</entry>
+    <entry key="SL_DSCPT_MPSWITCH">Pass through the input signals corresponding to the truncated value of the first input. The inputs are numbered top to bottom (or left to right). The first input port is the control port. The other input ports are data ports.</entry>
+    <entry key="SL_DSCPT_REFBLOCK">Unresolved library link. Specify valid library block path as the source block.</entry>
+    <entry key="SL_DSCPT_RESHAPE">Change the dimensions of a vector or matrix input signal. Output\n - a one-dimensional array (vector), \n - a column vector (Mx1 matrix), \n - a row vector (1xN matrix), \n - a matrix or vector with specified dimensions, e.g., [M, N] or [W], or \n - with dimensions derived from dimensions of reference port.</entry>
+    <entry key="SL_DSCPT_RATETRANS">Handle transfer of data between ports operating at different rates. Configuration options allow you to trade off transfer delay and code efficiency for safety and determinism of data transfer. The default configuration assures safe and deterministic data transfer. The block''s behavior depends on option settings and/or the sample times of its input and output ports. Updating the block diagram causes text on the block''s icon to indicate its behavior as follows:\n\tZOH:\tZero Order Hold \n\t1/z:\tUnit Delay   \n\tBuf:\tCopy input to output under semaphore control \n\tDb_buf:\tCopy input to output, using double buffers \n\tCopy:\tUnprotected copy from input to output \n\tNoOp:\tNo Operation \n\tMixed:\tExpanded to multiple blocks with different behaviors \n</entry>
+    <entry key="SL_DSCPT_STOP">Stop simulation when input is non-zero.</entry>
+    <entry key="SL_DSCPT_TERM">Used to \"terminate\" output signals.  (Prevents warnings about unconnected output ports.)</entry>
+    <entry key="SL_DSCPT_SQUEEZE">Remove singleton dimensions of multi-dimensional input signal. A singleton dimension is a dimension whose size is 1. For example, a 2x1x3 signal becomes a 2x3 signal. 1-D and 2-D signals pass through unchanged. </entry>
+    <entry key="SL_DSCPT_SIGNAL_SPECIFICATION">Specify attributes of a signal line.</entry>
+    <entry key="SL_DSCPT_SUM" note="stringDatatypeUpdate">Add or subtract inputs.  Specify one of the following:\na) character vector containing + or - for each input port, | for spacer between ports (e.g. ++|-|++)\nb) scalar, &gt;= 1, specifies the number of input ports to be summed. \nWhen there is only one input port, add or subtract elements over all dimensions or one specified dimension \n</entry>
+    <entry key="SL_DSCPT_SWTCHBLK">Pass through input 1 when input 2 satisfies the selected criterion; otherwise, pass through input 3.  The inputs are numbered top to bottom (or left to right). The input 1 pass-through criteria are input 2 greater than or equal, greater than, or not equal to the threshold.  The first and third input ports are data ports, and the second input port is the control port.</entry>
+    <entry key="SL_DSCPT_VARIANTEND">Paired with Variant Start block. Select one input as the active branch. Other unselected branches are commented out in the block diagram.</entry>
+    <entry key="SL_DSCPT_WHILE">Run the blocks in this subsystem until the while-iterator condition is false or the maximum number of iterations is reached.  If the block is in do-while mode, all the blocks in the subsystem will be run once before checking the while-iterator condition, otherwise an external signal must be fed into the IC port to check if the block should be run on the first iteration. If the output port is shown, it will output the current iteration number starting at one.</entry>
+    <entry key="SL_DSCPT_TOFILE">Incrementally write data into a variable in the specified MAT-file.\n\nThe variable may be created as a MATLAB timeseries, an array, or a MATLAB structure.\n\nMATLAB timeseries may be used for any data type, complexity, or dimensions. Logging a bus signal produces a MATLAB structure that matches the bus hierarchy. Each leaf of the structure is a MATLAB timeseries object.\n\nUse Array format only for vector, double, noncomplex inputs. Each column of the array has a time stamp in the first row and a vector containing the corresponding data sample in the subsequent rows.</entry>
+    <entry key="SL_DSCPT_WIDTH">Output the width of the input signal, using the specified output data type.</entry>
+    <entry key="SL_DSCPT_VARIANTDST">Select one output as the active destination. Other unselected outputs are commented out in the block diagram.</entry>
+    <entry key="SL_DSCPT_VARIANTSRC">Select one input as the active source. Other unselected inputs are commented out in the block diagram.</entry>
+    <entry key="SL_DSCPT_VARIANTSTART">Paired with Variant End block. One output port is the active branch. The blocks on other branches are commented out in the block diagram.</entry>
+    <entry key="SL_DSCPT_FCNCALL_SPLIT">Provides a junction from which a function-call signal can be branched.</entry>
+    <entry key="SL_DSCPT_FCNCALL_LATCH">Break a feedback loop involving data signals between function-call blocks.\nFor loops involving parent and child function-call blocks (i.e., where the initiator of the child function-call block is inside the parent function-call block), place this block on the feedback signal from the child to the parent in order to ensure that the signal''s value does not change during the execution of the child.\nFor loops involving function-call blocks connected to branches of the same function-call signal, this block latches the signal at the input of the destination function-call block, and thereby allows it to execute prior to the source function-call block. \nSuch latching results in the destination block reading a delayed signal from the previous execution of the source function-call block.</entry>
+    <entry key="SL_DSCPT_SFUNCBLK">User-definable block.  Blocks can be written in C, MATLAB (Level-1), and Fortran and must conform to S-function standards.  The variables t, x, u, and flag are automatically passed to the S-function by Simulink.  You can specify additional parameters in the ''S-function parameters'' field. If the S-function block requires additional source files for building generated code, specify the filenames in the ''S-function modules'' field. Enter the filenames only; do not use extensions or full pathnames, e.g., enter ''src src1'', not ''src.c src1.c''.</entry>
+    <entry key="SL_DSCPT_TASKTRANS">THIS IS A PRIVATE BLOCK, NOT INTENDED FOR DIRECT USE!\n Handle transfer of data between different tasks in a deployment diagram. \n Configuration options allow you to specify task transition parameters.\n</entry>
+    <entry key="SL_DSCPT_TOWKS">Write input to specified array or structure in a workspace. For menu based simulation, data is written in the MATLAB base workspace. Data is not available until the simulation is stopped or paused.</entry>
+    <entry key="SL_DSCPT_FCNCALL_STUB">Call a function to compute output signals from input signals.</entry>
+    <entry key="SL_DSCPT_FCNCALL_STUB_INPORT">Provide an input port corresponding to an input argument.</entry>
+    <entry key="SL_DSCPT_FCNCALL_STUB_OUTPORT">Provide an output port corresponding to an output argument.</entry>
+    <entry key="SL_DSCPT_FCNCALL_STUB_STATUS">Provide a status port corresponding to a status argument.</entry>
+    <entry key="SL_DSCPT_MULTI_ROOT_INPORT_FC_GEN">This is a hidden block designed for use in the SIL/PIL simulation harness of an export function model only. Pass the function-call signal from each root Inport block through the corresponding input and output ports of this block before connecting the function-call signal to the desired input port of the SIL/PIL S-Function block.</entry>
+    <entry key="SL_DSCPT_OBSERVERPORTBLOCK">To observe, select the output signal or the state of any block that belongs to the component under observation.</entry>
+    <entry key="Classic_CB">Classic</entry>
+    <entry key="Synchronous_CB">Synchronous</entry>
+    <entry key="Specify_indices_CB">Specify indices</entry>
+    <entry key="Zero_based_contiguous_CB">Zero-based contiguous</entry>
+    <entry key="One_based_contiguous_CB">One-based contiguous</entry>
+    <entry key="Last_data_port_CB">Last data port</entry>
+    <entry key="Additional_data_port_CB">Additional data port</entry>
+    <entry key="Warning_CB">Warning</entry>
+    <entry key="Error_CB">Error</entry>
+    <entry key="warning_CB">warning</entry>
+    <entry key="error_CB">error</entry>
+    <entry key="on_CB">on</entry>
+    <entry key="off_CB">off</entry>
+    <entry key="xonly_CB" translate="false">xonly</entry>
+    <entry key="yonly_CB" translate="false">yonly</entry>
+    <entry key="OneTimeTick_CB" translate="false">OneTimeTick</entry>
+    <entry key="Auto_CB">Auto</entry>
+    <entry key="Exported_CB">Exported</entry>
+    <entry key="Imported_CB">Imported</entry>
+    <entry key="unresolved_CB">unresolved</entry>
+    <entry key="none_CB">none</entry>
+    <entry key="NoTriggerOnFirstEval_CB">compatibility (no trigger on first evaluation)</entry>
+    <entry key="zero_CB">zero</entry>
+    <entry key="positive_CB">positive</entry>
+    <entry key="negative_CB">negative</entry>
+    <entry key="rising_CB">rising</entry>
+    <entry key="falling_CB">falling</entry>
+    <entry key="either_CB">either</entry>
+    <entry key="level_CB">level</entry>
+    <entry key="None_CB">None</entry>
+    <entry key="bar_CB">bar</entry> 
+    <entry key="internal_CB">internal</entry>
+    <entry key="external_CB">external</entry>
+    <entry key="auto_CB">auto</entry>
+    <entry key="held_CB">held</entry>
+    <entry key="reset_CB">reset</entry>
+    <entry key="inherit_CB">inherit</entry>
+    <entry key="triggered_CB">triggered</entry>
+    <entry key="periodic_CB">periodic</entry>
+    <entry key="function_call_CB">function-call</entry>
+    <entry key="int32_CB" translate="false">int32</entry> 
+    <entry key="int16_CB" translate="false">int16</entry> 
+    <entry key="int8_CB" translate="false">int8</entry>  
+    <entry key="double_CB" translate="false">double</entry>
+    <entry key="Frame_based_CB">Frame based</entry>
+    <entry key="Sample_based_CB">Sample based</entry>
+    <entry key="SignalName_CB" translate="false">SignalName</entry>
+    <entry key="rectangular_CB">rectangular</entry>
+    <entry key="sparse_CB">sparse</entry>
+    <entry key="general_CB">general</entry>
+    <entry key="NonreusableNew_Function_CB">Nonreusable function</entry>
+    <entry key="Nonreusable_Function_CB">Non-reusable function</entry>
+    <entry key="Function_CB">Function</entry>
+    <entry key="Index_vector_dialog_CB">Index vector (dialog)</entry>
+    <entry key="Index_vector_port_CB">Index vector (port)</entry>
+    <entry key="Starting_index_dialog_CB">Starting index (dialog)</entry>
+    <entry key="Starting_index_port_CB">Starting index (port)</entry>
+    <entry key="Signal_name_CB">Signal name</entry>
+    <entry key="UnitMismatchError_CB">Error on unit mismatch</entry>
+    <entry key="UnitMismatchHighlight_CB">Highlight unit mismatch</entry>
+    <entry key="UnitMismatchIgnore_CB">Ignore unit mismatch</entry>
+    <entry key="UnitDisplay_Name_CB">Unit name</entry>
+    <entry key="UnitDisplay_Symbol_CB">Unit symbol</entry>
+    <entry key="UnitDisplay_DisplayStr_CB">Unit display string</entry>
+    <entry key="UnitDisplay_UserSpec_CB">Specification string</entry>
+    <entry key="Array_CB">Array</entry>
+    <entry key="while_CB" translate="false">while</entry>
+    <entry key="do_while_CB" translate="false">do-while</entry>
+    <entry key="real_CB">real</entry>
+    <entry key="complex_CB">complex</entry>
+    <entry key="Sample__based_CB">Sample-based</entry>
+    <entry key="Frame__based_CB">Frame-based</entry>
+    <entry key="sample__based_CB">sample-based</entry>
+    <entry key="frame__based_CB">frame-based</entry>
+    <entry key="State_only_most_efficient_CB">State only (most efficient)</entry>
+    <entry key="State_and_output_CB">State and output</entry>
+    <entry key="State_CB">State (most efficient)</entry>
+    <entry key="Compatibility_CB">Compatibility</entry>
+    <entry key="Output_CB">Output</entry>
+    <entry key="Integration_Trapezoidal_CB">Integration: Trapezoidal</entry>
+    <entry key="Accumulation_Forward_Euler_CB">Accumulation: Forward Euler</entry>
+    <entry key="Accumulation_Backward_Euler_CB">Accumulation: Backward Euler</entry>
+    <entry key="Accumulation_Trapezoidal_CB">Accumulation: Trapezoidal</entry>
+    <entry key="sampled_level_CB">sampled level</entry>
+    <entry key="Integration_Forward_Euler_CB">Integration: Forward Euler</entry>
+    <entry key="Integration_Backward_Euler_CB">Integration: Backward Euler</entry>
+    <entry key="ForwardEuler_CB" translate="false">ForwardEuler</entry>
+    <entry key="BackwardEuler_CB" translate="false">BackwardEuler</entry>
+    <entry key="Forward_Euler_CB">Forward Euler</entry>
+    <entry key="Backward_Euler_CB">Backward Euler</entry>
+    <entry key="Trapezoidal_CB">Trapezoidal</entry>
+    <entry key="short_CB" translate="false">short</entry>
+    <entry key="long_CB" translate="false">long</entry>
+    <entry key="short_e_CB" translate="false">short_e</entry>
+    <entry key="long_e_CB" translate="false">long_e</entry>
+    <entry key="bank_CB" translate="false">bank</entry>
+    <entry key="hex_Stored_Integer_CB">hex (Stored Integer)</entry>
+    <entry key="binary_Stored_Integer_CB">binary (Stored Integer)</entry>
+    <entry key="decimal_Stored_Integer_CB">decimal (Stored Integer)</entry>
+    <entry key="octal_Stored_Integer_CB">octal (Stored Integer)</entry>
+    <entry key="Custom_CB">Custom</entry>
+    <entry key="Real_World_Value_RWV_CB">Real World Value (RWV)</entry>
+    <entry key="Stored_Integer_SI_CB">Stored Integer (SI)</entry>
+    <entry key="Real_World_Value_CB">Real World Value</entry>
+    <entry key="Stored_Integer_CB">Stored Integer</entry>
+    <entry key="sin_CB" translate="false">sin</entry>
+    <entry key="cos_CB" translate="false">cos</entry>
+    <entry key="tan_CB" translate="false">tan</entry>
+    <entry key="asin_CB" translate="false">asin</entry>
+    <entry key="acos_CB" translate="false">acos</entry>
+    <entry key="atan_CB" translate="false">atan</entry>
+    <entry key="atan2_CB" translate="false">atan2</entry>
+    <entry key="sinh_CB" translate="false">sinh</entry>
+    <entry key="cosh_CB" translate="false">cosh</entry>
+    <entry key="tanh_CB" translate="false">tanh</entry>
+    <entry key="exp_CB" translate="false">exp</entry>
+    <entry key="log_CB" translate="false">log</entry>
+    <entry key="log10_CB" translate="false">log10</entry>
+    <entry key="floor_CB" translate="false">floor</entry>
+    <entry key="ceil_CB" translate="false">ceil</entry>
+    <entry key="sqrt_CB" translate="false">sqrt</entry>
+    <entry key="reciprocal_CB" translate="false">reciprocal</entry>
+    <entry key="pow_CB" translate="false">pow</entry>
+    <entry key="hypot_CB" translate="false">hypot</entry>
+    <entry key="Frame_Based_CB">Frame based</entry>
+    <entry key="Sample_Based_CB">Sample based</entry>
+    <entry key="local_CB">local</entry>
+    <entry key="scoped_CB">scoped</entry>
+    <entry key="global_CB">global</entry>
+    <entry key="Extrapolation_CB">Extrapolation</entry>
+    <entry key="Setting_to_zero_CB">Setting to zero</entry>
+    <entry key="Holding_final_value_CB">Holding final value</entry>
+    <entry key="Cyclic_repetition_CB">Cyclic repetition</entry>
+    <entry key="SettingToZero_CB" translate="false">SettingToZero</entry>
+    <entry key="HoldingFinalValue_CB" translate="false">HoldingFinalValue</entry>
+    <entry key="CyclicRepetition_CB" translate="false">CyclicRepetition</entry>
+    <entry key="Element_wise_K_dot_times_u_CB">Element-wise(K.*u)</entry>
+    <entry key="Matrix_K_times_u_CB">Matrix(K*u)</entry>
+    <entry key="Matrix_u_times_K_CB">Matrix(u*K)</entry>
+    <entry key="Matrix_K_times_u_vector_CB">Matrix(K*u) (u vector)</entry>
+    <entry key="Signal_copy_CB">Signal copy</entry>
+    <entry key="Contiguous_copy_CB">Contiguous copy</entry>
+    <entry key="Bus_copy_CB">Bus copy</entry>
+    <entry key="Virtual_bus_CB">Virtual bus</entry>
+    <entry key="Nonvirtual_bus_CB">Nonvirtual bus</entry>
+    <entry key="level_hold_CB">level hold</entry>
+    <entry key="signals_CB">signals</entry>
+    <entry key="Left_CB">Left</entry>   
+    <entry key="Right_CB">Right</entry>   
+    <entry key="Slow_to_Fast_CB">Slow to Fast</entry>
+    <entry key="Fast_to_Slow_CB">Fast to Slow</entry>
+    <entry key="Specify_CB">Specify</entry>
+    <entry key="Inherit_CB">Inherit</entry>
+    <entry key="Multiple_of_input_port_sample_time_CB">Multiple of input port sample time</entry>
+    <entry key="One_D_array_CB">1-D array</entry>
+    <entry key="Column_vector_2D_CB">Column vector (2-D)</entry>
+    <entry key="Row_vector_2D_CB">Row vector (2-D)</entry>
+    <entry key="Customize_CB">Customize</entry>
+    <entry key="Derive_from_reference_input_port_CB">Derive from reference input port</entry>
+    <entry key="Customize_ND_CB">Customize (N-D)</entry>
+    <entry key="ReadWrite_CB" translate="false">ReadWrite</entry>
+    <entry key="ReadOnly_CB" translate="false">ReadOnly</entry>
+    <entry key="NoReadOrWrite_CB" translate="false">NoReadOrWrite</entry>
+    <entry key="Inline_CB">Inline</entry>
+    <entry key="Reusable_function_CB">Reusable function</entry>
+    <entry key="Use_subsystem_name_CB">Use subsystem name</entry>
+    <entry key="UseSubsystemName_CB" translate="false">UseSubsystemName</entry>
+    <entry key="UserSpecified_CB" translate="false">UserSpecified</entry>
+    <entry key="Use_function_name_CB">Use function name</entry>
+    <entry key="User_specified_CB">User specified</entry>
+    <entry key="UseFunctionName_CB" translate="false">UseFunctionName</entry>
+    <entry key="UseLocalSettings_CB" translate="false">UseLocalSettings</entry>
+    <entry key="One_CB" translate="false">One</entry>
+    <entry key="Multiple_CB" translate="false">Multiple</entry>
+    <entry key="ScaledDouble_CB" translate="false">ScaledDouble</entry>
+    <entry key="ScaledDoubles_CB" translate="false">ScaledDoubles</entry>
+    <entry key="Double_CB">Double</entry>
+    <entry key="TrueDoubles_CB" translate="false">TrueDoubles</entry>
+    <entry key="Single_CB">Single</entry>
+    <entry key="TrueSingles_CB" translate="false">TrueSingles</entry>
+    <entry key="AllNumericTypes_CB" translate="false">AllNumericTypes</entry>
+    <entry key="Floating_point_CB">Floating-point</entry>
+    <entry key="Fixed_point_CB">Fixed-point</entry>
+    <entry key="MinMaxAndOverflow_CB" translate="false">MinMaxAndOverflow</entry>
+    <entry key="OverflowOnly_CB" translate="false">OverflowOnly</entry>
+    <entry key="Off_CB">Off</entry>
+    <entry key="ForceOff_CB" translate="false">ForceOff</entry>
+    <entry key="FromPortIcon_CB" translate="false">FromPortIcon</entry>
+    <entry key="FromPortBlockName_CB" translate="false">FromPortBlockName</entry>
+    <entry key="then_CB" translate="false">then</entry>
+    <entry key="elseif_CB" translate="false">elseif</entry>
+    <entry key="else_CB" translate="false">else</entry>
+    <entry key="case_CB" translate="false">case</entry>
+    <entry key="default_CB">default</entry>
+    <entry key="unset_CB" translate="false">unset</entry>
+    <entry key="no_CB">no</entry>
+    <entry key="yes_CB">yes</entry>
+    <entry key="All_CB">All</entry>
+    <entry key="ExplicitOnly_CB" translate="false">ExplicitOnly</entry>
+    <entry key="ParametersOnly_CB" translate="false">ParametersOnly</entry>
+    <entry key="round_CB">round</entry>
+    <entry key="All_dimensions_CB">All dimensions</entry>
+    <entry key="Specified_dimension_CB">Specified dimension</entry>
+    <entry key="all_elements_CB">all elements</entry>
+    <entry key="specified_dimension_CB">specified dimension</entry>
+    <entry key="u2_greater_equal_Threshold_CB">u2 &gt;= Threshold</entry>
+    <entry key="u2_greater_Threshold_CB">u2 &gt; Threshold</entry>
+    <entry key="u2_not_equal_zero_CB" translate="false">u2 ~= 0</entry>
+    <entry key="AND_CB" translate="false">AND</entry>
+    <entry key="C_AND_CB" translate="false">&amp;&amp;</entry>
+    <entry key="IEEE_AND_CB" translate="false">&amp;</entry>
+    <entry key="OR_CB" translate="false">OR</entry>
+    <entry key="C_OR_CB" translate="false">||</entry>
+    <entry key="MATLAB_OR_CB" translate="false">|</entry>
+    <entry key="COMMON_USAGE_OR_CB" translate="false">+</entry>
+    <entry key="IEEE_OR_CB" translate="false">&gt;=1</entry>
+    <entry key="NAND_CB" translate="false">NAND</entry>
+    <entry key="NOT_AND_CB" translate="false">!&amp;&amp;</entry>
+    <entry key="NOT_AND2_CB" translate="false">~&amp;&amp;</entry>
+    <entry key="NOT_AND3_CB" translate="false">!&amp;</entry>
+    <entry key="NOT_AND4_CB" translate="false">~amp;</entry>
+    <entry key="NOR_CB" translate="false">NOR</entry>
+    <entry key="NOT_OR_CB" translate="false">!||</entry>
+    <entry key="NOT_OR2_CB" translate="false">~||</entry>
+    <entry key="NOT_OR3_CB" translate="false">!|</entry>
+    <entry key="NOT_OR4_CB" translate="false">~|</entry>
+    <entry key="NOT_OR5_CB" translate="false">!+</entry>
+    <entry key="NOT_OR6_CB" translate="false">~+</entry>
+    <entry key="XOR_CB" translate="false">XOR</entry>
+    <entry key="IEEE_XOR_CB" translate="false">=1</entry>
+    <entry key="C_XOR_CB" translate="false">^</entry>
+    <entry key="NXOR_CB" translate="false">NXOR</entry>
+    <entry key="NOT_CB" translate="false">NOT</entry>
+    <entry key="C_NOT_CB" translate="false">!</entry>
+    <entry key="MATLAB_NOT_CB" translate="false">~</entry>
+    <entry key="distinctive_CB">distinctive</entry>
+    <entry key="Vector_CB">Vector</entry>
+    <entry key="Multidimensional_array_CB">Multidimensional array</entry>
+    <entry key="Vector_concatenation_CB">Vector concatenation</entry>
+    <entry key="Horizontal_matrix_concatenation_CB">Horizontal matrix concatenation</entry>
+    <entry key="Vertical_matrix_concatenation_CB">Vertical matrix concatenation</entry>
+    <entry key="Port_number_CB">Port number</entry>
+    <entry key="Port_number_and_signal_name_CB">Port number and signal name</entry>
+    <entry key="Element_wise_CB">Element-wise(.*)</entry>
+    <entry key="Matrix_wise_CB">Matrix(*)</entry>
+    <entry key="Memory_CB">Memory</entry>
+    <entry key="Flops_CB">Flops</entry>
+    <entry key="Ceiling_CB">Ceiling</entry>
+    <entry key="Convergent_CB">Convergent</entry>
+    <entry key="Floor_CB">Floor</entry>
+    <entry key="Nearest_CB">Nearest</entry>
+    <entry key="Round_CB">Round</entry>
+    <entry key="Simplest_CB">Simplest</entry>
+    <entry key="Zero_CB">Zero</entry>
+    <entry key="Columns_as_channels_frame_based_CB">Columns as channels (frame based)</entry>
+    <entry key="Elements_as_channels_sample_based_CB">Elements as channels (sample based)</entry>
+    <entry key="Inherited_CB">Inherited</entry>
+    <entry key="Structure_With_Time_CB">Structure With Time</entry>
+    <entry key="StructureWithTime_CB">StructureWithTime</entry>  
+    <entry key="Structure_CB">Structure</entry>
+    <entry key="Matrix_CB">Matrix</entry>
+    <entry key="Dataset_CB">Dataset</entry>
+    <entry key="two_D_array_concatenate_along_first_dimension_CB">2-D array (concatenate along first dimension)</entry>
+    <entry key="three_D_array_concatenate_along_third_dimension_CB">3-D array (concatenate along third dimension)</entry>
+    <entry key="Inherit_from_input_this_choice_will_be_removed_see_release_notes_CB">Inherit from input (this choice will be removed - see release notes)</entry>
+    <entry key="Concatenate_frames_2D_array_CB">Concatenate frames (2-D array)</entry>
+    <entry key="Log_frames_separately_3D_array_CB">Log frames separately (3-D array)</entry>
+    <entry key="both_CB">both</entry>
+    <entry key="x_CB" translate="false">x</entry>
+    <entry key="dx_div_dt_CB" translate="false">dx/dt</entry>
+    <entry key="Variable_time_delay_CB">Variable time delay</entry>
+    <entry key="Variable_transport_delay_CB">Variable transport delay</entry>
+    <entry key="Zero_based_CB">Zero-based</entry>
+    <entry key="One_based_CB">One-based</entry>     
+    <entry key="Use_simulation_time_CB">Use simulation time</entry>
+    <entry key="Use_external_signal_CB">Use external signal</entry>
+    <entry key="AutoStorageClass_CB" translate="false">Auto</entry>
+    <entry key="ExportedGlobal_CB" translate="false">ExportedGlobal</entry>
+    <entry key="ImportedExtern_CB" translate="false">ImportedExtern</entry>
+    <entry key="ImportedExternPointer_CB" translate="false">ImportedExternPointer</entry>
+    <entry key="ConfigSignal_No_CB" translate="false">No</entry>
+    <entry key="ConfigSignal_Yes_CB" translate="false">Yes</entry>
+    <entry key="ConfigSignal_ResolveToExternal_CB" translate="false">Resolve</entry>
+    <entry key="Interpolation_Extrapolation_CB">Interpolation-Extrapolation</entry>
+    <entry key="Interpolation_Use_End_Values_CB">Interpolation-Use End Values</entry>
+    <entry key="Use_Input_Nearest_CB">Use Input Nearest</entry>
+    <entry key="Use_Input_Below_CB">Use Input Below</entry>
+    <entry key="Use_Input_Above_CB">Use Input Above</entry>
+    <entry key="Redesign_Table_CB">Redesign Table</entry>
+    <entry key="Approximate_Function_CB">Approximate Function</entry>
+    <entry key="Block_Dialog_CB">Block Dialog</entry>
+    <entry key="Matlab_Workspace_CB">Matlab Workspace</entry>
+    <entry key="Assign_all_CB">Assign all</entry>
+    <entry key="Initialize_using_input_port_Y0_CB">Initialize using input port &lt;Y0&gt;</entry>
+    <entry key="Specify_size_for_each_dimension_in_table_CB">Specify size for each dimension in table</entry>
+    <entry key="Initialize_using_input_U1_CB">Initialize using input (U1)</entry>
+    <entry key="Specify_required_dimensions_CB">Specify required dimensions</entry>
+    <entry key="Select_all_CB">Select all</entry>    
+    <entry key="Starting_and_ending_indices_port_CB">Starting and ending indices (port)</entry>
+    <entry key="Tag_CB">Tag</entry>
+    <entry key="Tag_and_signal_name_CB">Tag and signal name</entry>
+    <entry key="NONE_CB">NONE</entry>
+    <entry key="Chart_CB">Chart</entry>
+    <entry key="MATLAB_Function_CB">MATLAB Function</entry> 
+    <entry key="Truth_Table_CB">Truth Table</entry>
+    <entry key="State_Transition_Table_CB">State Transition Table</entry>   
+    <entry key="Read_CB">Read</entry>
+    <entry key="Write_CB">Write</entry>
+    <entry key="Dialog_CB">Dialog</entry>
+    <entry key="Input_signal_CB">Input signal</entry>
+    <entry key="Along_dimension_CB">Along dimension</entry>
+    <entry key="Timeseries_CB">Timeseries</entry>
+    <entry key="Same_state_for_all_iterations_CB">Same state for all iterations</entry>
+    <entry key="Separate_states_for_each_iteration_CB">Separate states for each iteration</entry>
+    <entry key="One_state_for_all_iterations_CB">One state for all iterations</entry>
+    <entry key="external_signal_CB">external signal</entry>
+    <entry key="SL_DSCPT_SCOPE">Display signals with respect to simulation time. Attach signals to a Scope block through input ports. Attach signals to a Floating Scope block with the Signal Selector.</entry>
+
+    <entry key="dlg_ExternalDataLogging">External data logging</entry>
+    <entry key="externalTriggeringLabel">External Signal &amp; Triggering</entry>
+    <entry key="dlg_Error">Error</entry>
+    <entry key="fixedLabel">fixed</entry>
+    <entry key="visibleLabel">visible</entry>
+    <entry key="opaqueLabel">opaque</entry>
+    <entry key="autoscaleLabel">autoscale</entry>
+    <entry key="pixelsLabel">pixels</entry>
+    <entry key="defaultLabel">default</entry>
+    <entry key="continuousLabel">Continuous</entry>
+    <entry key="warningLabel">Warning  </entry>
+    <entry key="inheritedLabel">Inherited</entry>
+    <entry key="blockPropertiesLabel">Block Properties: </entry>
+    <entry key="blockPropertiesLabelTwoHoles">Block Properties: {0} {1}</entry>
+    <entry key="generalLabel">General </entry>
+    <entry key="advancedLabel">Advanced </entry>
+    <entry key="blockAnnotationLabel">Block Annotation </entry>
+    <entry key="callbacksLabel">Callbacks </entry>
+    <entry key="cannotOpenDialogHandleMsg">Invalid Dialog Handle: Cannot open dialog</entry>
+    <entry key="saveLibraryMsg">If you have an unsaved library with a Configurable Subsystem please save it and try again.</entry>
+    <entry key="tagLabel">Tag</entry>
+    <entry key="yesLabel">Yes</entry>
+    <entry key="lowLabel">Low</entry>
+    <entry key="highLabel">High</entry>
+    <entry key="horizontalAlignmentLabel" translate="false">HorizontalAlignment</entry>
+    <entry key="Assignmetn_OutSizeMsg"><![CDATA[Inherit from port <Y0>]]></entry>
+    <entry key="Selector_OutSizeMsg1">Inherit from "Index"</entry>
+    <entry key="Selector_OutSizeMsg2"><![CDATA[Inherit from port <U>]]></entry>
+    <entry key="Selector_OutSizeMsg3"><![CDATA[Inherit from port <Idx{0, number, integer}>]]></entry>
+    <entry key="Selector_OutSizeMsg4"><![CDATA[Determined by signal from port <Idx{0, number, integer}>]]></entry>
+    <entry key="NDIndexing_IdxStrMsg"><![CDATA[from port <Idx{0, number, integer}>]]></entry>
+    <entry key="usage">Usage</entry>
+    <entry key="infoTextDescription">Open Block: Click on the link to open the block. \nDescription: Text saved with the block in the model file.\nPriority: Specifies the block''s order of execution relative to other blocks in the same model.\nTag: Text that appears in the block label that Simulink generates.</entry>
+    <entry key="openfcnBlock">Open Block: </entry>
+    <entry key="openBlockTooltip">This is identical to double-clicking on the block in the model.</entry>
+    <entry key="priority">Priority: </entry>
+      
+    <entry key="contentOfCallbackFunction">Content of callback function: </entry>
+    <entry key="invalidNumberOfArguments">Invalid number of arguments {0}</entry>
+    <entry key="textBelowDescription">Text that appears below the block''s label. Enter the text in the annotation field. The text may include any of the block property tokens in the Block property tokens list. Simulink replaces each token with the value of the corresponding property in the generated annotation. Click the &gt;&gt; button to enter the selected token in the annotation field. Text can be edited on the right side edit field. See example syntax on the bottom.</entry>
+    <entry key="appendInstructionsDblClick">Select tokens from the list to append by \ndouble click mouse or using Append button.</entry>
+    <entry key="appendInstructionsFromLeft">Click to append selected tokens \nfrom left side to the right side</entry>
+    <entry key="callbackInstructions">To create or edit a callback function for this block, select it in the callback list (below, left). Then enter MATLAB code that implements the function in the content pane (below, right). The callback name''s suffix indicates its status: *(has saved content).</entry>
+    <entry key="selectCallbackFunction">Select callback function.\nFunctions with asterisk(*) are non-empty.</entry>
+    <entry key="exampleSyntax">Example syntax: \n    Name=%&lt;Name&gt;</entry>
+      
+    <entry key="invalidDialogCommandMsg">Invalid command "{0}" for Block Properties dialog.</entry>
+      
+    <entry key="contentOfCallbackFunctionWithHole">Content of callback function: "{0}"</entry>
+    <entry key="tabPanelError">Internal error: no such tab panel on this dialog.</entry>
+      
+    <entry key="doNothingIfDisabled">Nothing to do if the property is not enabled</entry>
+    <entry key="doNothingIfHidden">Nothing to do if the property is not visible</entry>
+      
+    <entry key="unknownAction">Unknown action</entry>
+    <entry key="unknownWidgetType">Unknown widget type</entry>
+    <entry key="Only_when_enabling_CB">Only when enabling</entry>
+    <entry key="During_execution_CB">During execution</entry>
+    <entry key="Allow_only_fixed_size_CB">Allow only fixed size</entry>
+    <entry key="Allow_to_vary_only_at_reinitialization_CB">Allow to vary only at (re)initialization</entry>    
+    <entry key="Only_when_execution_is_resumed_CB">Only when execution is resumed</entry>  
+    <entry key="Allow_to_vary_during_execution_CB">Allow to vary during execution</entry>
+    <entry key="Only_when_resetting_CB">Only when resetting</entry>
+    <entry key="No_CB">No</entry> 
+    <entry key="Yes_CB">Yes</entry> 
+    <entry key="Fixed_CB">Fixed</entry>
+    <entry key="Variable_CB">Variable</entry>
+    <entry key="InvalidDefaultDataPackageInSLPrefDlg">The specified package ''{0}'' is no longer a valid default data package. Click Refresh and select a different package from the list.</entry>
+    <entry key="InvalidDefaultDataPackageInME">''{0}'' is no longer a valid default data package. Select and set a valid package in Simulink Preferences > Data Management Defaults.</entry>
+    <entry key="DefaultPackageRefreshBtn">Refresh</entry>
+    <entry key="PropertyDescriptionInfo"><![CDATA[''Description'' is a text field associated with the block that is generally used for saving comments about the block usage within the model.\n''Priority'' can be empty or an integer value which specifies the block''s sequencing during execution relative to other blocks with priorities in the same window.\n''Tag'' is a general text field which is saved with the block\n''Open function'' is the function to be called when you double-click on a block.\n''Attributes format string'' sets the display format shown below the block name (e.g., Pri=%<Priority>).]]></entry>
+    <entry key="ColorCustom">Custom</entry>
+    <entry key="ColorBlack">Black</entry>
+    <entry key="ColorWhite">White</entry>
+    <entry key="ColorRed">Red</entry>
+    <entry key="ColorGreen">Green</entry>
+    <entry key="ColorBlue">Blue</entry>
+    <entry key="ColorCyan">Cyan</entry>
+    <entry key="ColorMagenta">Magenta</entry>
+    <entry key="ColorYellow">Yellow</entry>
+    <entry key="ColorGray">Gray</entry>
+    <entry key="ColorLightBlue">Light Blue</entry>
+    <entry key="ColorOrange">Orange</entry>
+    <entry key="ColorDarkGreen">Dark Green</entry>
+    <entry key="ColorBrown">Brown</entry>
+    <entry key="ColorViolet">Violet</entry>
+    <entry key="TextAlignmentLeft">Left</entry>
+    <entry key="TextAlignmentCenter">Center</entry>
+    <entry key="TextAlignmentRight">Right</entry>
+    <entry key="EnterTextHere">Enter text here</entry>
+    <entry key="EnterIntegerValue">Enter integer value or leave it empty</entry>
+    <entry key="TagPrompt">Tag: </entry>
+    <entry key="BlockPropertyTokens">Block property tokens: </entry>
+    <entry key="EnterTextAndTokens">Enter text and tokens for annotation: </entry>
+    <entry key="EditAnnotationStringsTooltip" note="stringDatatypeUpdate">Edit annotation character vectors. Click Apply to see the change on block.</entry>
+    <entry key="EditAnnotationTooltip">Type % to see a list of available tokens.</entry>
+    <entry key="CallbackFunctionsList">Callback functions list: </entry>
+    <entry key="EditingSelectedCallback">Edit selected callback function here.</entry>
+    <entry key="DataDictDialogTitle">Data Dictionary</entry>
+    <entry key="DataDictHTMLTextInfoFor">Information for:</entry>
+    <entry key="DataDictHTMLTextSourceFile">File:</entry>
+    <entry key="DataDictHTMLTextCreated">Created:</entry>
+    <entry key="DataDictHTMLTextLastModified">Last Modified:</entry>
+    <entry key="DataDictHTMLTextLastSaved">Last Saved:</entry>
+    <entry key="DataDictHTMLTextIsModified">Unsaved Changes:</entry>
+    <entry key="DataDictHTMLTextIsModifiedYes">yes</entry>
+    <entry key="DataDictHTMLTextIsModifiedNo">no</entry>
+    <entry key="DataDictRefGrpName">Referenced Dictionaries</entry>
+    <entry key="DataDictRefTableAddBtn">Add Reference...</entry>
+    <entry key="DataDictRefTableRemoveBtn">Remove</entry>
+    <entry key="DataDictRefTableOpenBtn">Open</entry>
+    <entry key="DataDictEntryNotFound">Entry ''{0}'' not found in dictionary</entry>
+    <entry key="DataDictScopeDesc_Design">This section of the dictionary stores variables that are visible to the Simulink models that reference this dictionary. These variables can be used to parameterize certain model, block and signal parameters.</entry>
+    <entry key="DataDictScopeDesc_Configurations">This section of the dictionary stores Configuration objects that may be referenced by models.</entry>
+    <entry key="DataDictScopeDesc_Other">This section of the dictionary stores objects that are associated with your design but are not visible to the Simulink models that reference this dictionary. This section is intended for objects of classes you defined on your MATLAB path.</entry>
+    <entry key="LaunchDataDictMdlRefGUI">Explore...</entry>
+    <entry key="ModelDataSourceSelectLabel">Defined in:</entry>
+    <entry key="ModelDataSourceSelectDesc">Design data are variables defined outside the model that parameterize the model and its blocks and signals.</entry>
+    <entry key="ModelDataSourceSelectTooltip">Select where design data is defined</entry>
+    <entry key="ModelDataSourceSelectBWS">Base Workspace</entry>
+    <entry key="ModelDataSourceSelectDD">Data Dictionary:</entry> 
+    <entry key="ModelDataDictTooltip">Data Dictionary file</entry>
+    <entry key="ModelSelectDDBtn">Browse...</entry>
+    <entry key="ModelNewDDBtn">New...</entry>
+    <entry key="ModelPropogateDDBtn">Link referenced models...</entry>
+    <entry key="ModelSelectDDTooltip">Select a dictionary</entry>
+    <entry key="ModelNewDDTooltip">Create a new dictionary</entry>
+    <entry key="ModelPropagateDDTooltip">Explore this setting on models referenced by this model</entry>
+    <entry key="ModelPropagateWaitMsg">Applying Design Data setting, please wait...</entry>
+    <entry key="ModelPropagateNowQuestion">Would you like to link all referenced models to the dictionary ''{0}'' now?</entry>
+    <entry key="ModelDesignDataGroupName">Design Data</entry>
+    <entry key="ModelDataTabName">Data</entry>
+    <entry key="ModelInspectorInstruction">Select a model element to set or view its parameters or properties.</entry>
+    <entry key="EnumTypeAddTip">Add new enumeration name</entry>
+    <entry key="EnumTypeDeleteTip">Delete enumeration name</entry>
+    <entry key="EnumTypeUpTip">Move enumeration name up</entry>
+    <entry key="EnumTypeDownTip">Move enumeration name down</entry>
+    <entry key="EnumTypeTableNameColumn">Name</entry>
+    <entry key="EnumTypeTableValueColumn">Value</entry>
+    <entry key="EnumTypeTableDescriptionColumn">Description</entry>
+    <entry key="EnumTypeEnumeration">Enumeration</entry>
+    <entry key="EnumTypeDefault">Default</entry>
+    <entry key="EnumTypeDataScope">Data Scope</entry>
+    <entry key="EnumTypeDialogOutsideDictionary">Editing of enumerated type ''{0}'' is only supported in a data dictionary</entry>
+    <entry key="EnumTypeStorageType">Storage Type</entry>
+    <entry key="EnumTypeHeaderFile">Header File</entry>
+    <entry key="EnumTypeAddClassName">Add Class Name To Enum Names</entry>
+    <entry key="EnumTypeTitle">Enumerated Type: </entry>
+    <entry key="DictionaryEntryDataSource">Data Source:</entry>
+    <entry key="DictionaryEntryModification">Modified by {0} on {1}</entry>
+    <entry key="ObjectHasNoPublicProperties">(Object has no public properties)</entry>
+    <entry key="VoidFcnVoidV_CB" translate="false">void_void</entry>
+    <entry key="VoidFcnVoid_CB">Without argument</entry>
+    <entry key="VoidFcnUYV_CB">Allow arguments</entry>
+    <entry key="VoidFcnUY_CB">With argument for code efficiency</entry>
+    <entry key="CSTurnToPageError">Configuration Parameter dialog is not open. You should open the dialog first, or you can set the ''CurrentDlgPage'' property of Configuration object to change the current page.</entry>
+    <entry key="MainAttributesPrompt">Main Attributes</entry>
+    <entry key="CalibrationAttributesPrompt">Calibration Attributes</entry>
+    <entry key="ConfigurationValidationAndDiagnosticPrompt">Parameter validation</entry>
+    <entry key="CalibrationDataValuePrompt">Calibration value:</entry>
+    <entry key="CalibrationDataMinimumPrompt">Calibration minimum:</entry>
+    <entry key="CalibrationDataMaximumPrompt">Calibration maximum:</entry>
+    <entry key="CalibrationDataNumeratorPrompt">CalToMain compute numerator:</entry>
+    <entry key="CalibrationDataDenominatorPrompt">CalToMain compute denominator:</entry>
+    <entry key="CalibrationDataNamePrompt">Calibration name:</entry>
+    <entry key="CalibrationDataUnitsPrompt">Calibration units:</entry>
+    <entry key="CalibrationDataValidation">Is configuration valid:</entry>
+    <entry key="CalibrationDataMessage">Diagnostic message:</entry>
+    <entry key="ModelLocked_CanNotApplyChanges">The model is currently locked, so your changes will not be committed.  Unlock it from the Diagram menu to make changes to the dialog.</entry>
+    <entry key="ParameterValidityDataTypeErrorMessage">Supported data types for the parameter only include {0}. However, its data type is {1}.</entry>
+    <entry key="ParameterValidityDimensionErrorMessage">Supported dimensions for the parameter only include {0}. However, its dimension is {1}.</entry>
+    <entry key="ParameterValidityComplexityErrorMessage">Supported complexity for the parameter is {0}. However, its complexity is {1}.</entry>
+    <entry key="ParameterValidityFractionErrorMessage">The parameter only supports {0} values. However, its value is {1}.</entry>
+    <entry key="ParameterValiditySignFinitenessErrorMessage">The parameter only supports {0} values. However, its value has {1}.</entry>
+    <entry key="ParameterCrossValidationFailure">Invalid setting in ''{0}''.</entry>
+    <entry key="ParameterCrossValidationDualError">Parameters ''{0}'' and ''{1}'' violate the rule "{2}".</entry>
+    <entry key="ParameterCrossValidationTripleError">Parameters ''{0}'', ''{1}'', and ''{2}'' violate the rule "{3}".</entry>
+    <entry key="ParameterCrossValidationDimensionMismatch">Length or dimension of parameters ''{0}'' and ''{1}'' are inconsistent.</entry>
+    <entry key="ParameterCrossValidationTripleDimensionMismatch">Length or dimension of parameters ''{0}'', ''{1}'', and ''{2}'' are inconsistent.</entry>
+    <entry key="ParameterCrossValidationQuadDimensionMismatch">Length or dimension of parameters ''{0}'', ''{1}'', ''{2}'', and ''{3}'' are inconsistent.</entry>
+    <entry key="ErrorOutAtEditTimeForUndefinedVariableErrorMessage">\nThe parameter "{0}" of the block {1} cannot have an undefined variable during edit time.</entry>
+    <entry key="DoNotSupportVariableErrorMessage">\nThe parameter "{0}" of the block {1} do not support variable.</entry>
+    <entry key="ModelParamConfigName">Model Parameter Configuration: {0}</entry>
+    <entry key="CalibrationDataCompuMethodName">CompuMethod name:</entry>
+    <entry key="CustomizeClassListsDialogTitle">Customize class lists</entry>
+    <entry key="CustomizeClassListsDialogPrompt">Select classes to appear in the Model Explorer Toolbar</entry>
+    <entry key="WorkspaceLocation_Base">Base Workspace</entry>
+    <entry key="WorkspaceLocation_Model">Model Workspace</entry>
+    <entry key="WorkspaceLocation_Dictionary">Data Dictionary</entry>
+    <entry key="WorkspaceLocation_Base_short">Base</entry>
+    <entry key="WorkspaceLocation_Model_short">Model</entry>
+    <entry key="WorkspaceLocation_Dictionary_short">Dictionary</entry>
+    <entry key="WorkspaceLocation_Block">Block</entry>
+    <entry key="WorkspaceLocation_Create">Create...</entry>
+    <entry key="WorkspaceLocation_Multiple"><![CDATA[(multiple)]]></entry>
+    <entry key="WorkspaceLocation_DD_Duplicates">Data Dictionary-multiple entries</entry>
+    <entry key="WorkspaceLocation_Mask">Mask</entry>
+    <entry key="WorkspaceLocation_MaskInit">Mask Initialization</entry>
+    <entry key="WorkspaceLocation_Classdef">Class definition</entry>
+    <entry key="WorkspaceLocation_Undetermined">Undetermined</entry>
+    <entry key="VariableContextMenu_Create">Create Variable</entry>
+    <entry key="VariableContextMenu_Explore">Explore Variable</entry>
+    <entry key="VariableContextMenu_Open">Open Variable</entry>
+    <entry key="VariableContextMenu_Tooltip">Right-click to act on variables</entry>
+    <entry key="CreateNewDataDlg_Title">Create New Data</entry>
+    <entry key="CreateNewDataDlg_Name">Name:</entry>
+    <entry key="CreateNewDataDlg_Value">Value:</entry>
+    <entry key="CreateNewDataDlg_Location">Location:</entry>
+    <entry key="ExpressionSuggestion"><![CDATA[<expression>]]></entry>
+    <entry key="EnterExpression">Select an item from the list or type a valid MATLAB expression.</entry>
+    <entry key="OutputPortLayout_Default_CB">default</entry>
+    <entry key="OutputPortLayout_Alternate_CB">reverse</entry>
+    <entry key="DataTypeGenOptionsPrompt">Struct Type definition</entry>
+    <entry key="DatascopeToolTip">Scope of the data</entry>
+    <entry key="LookupTableDataGroup">Table </entry>
+    <entry key="LookupTableBpNamePrompt">Name</entry>
+    <entry key="LookupTableDataValuePrompt">Value</entry>
+    <entry key="BreakpointsTablePrompt">Breakpoints</entry>
+    <entry key="BreakpointTablePrompt">Breakpoint</entry>
+    <entry key="LookupTableBreakpointsSpecificationPrompt">Specification:</entry>
+    <entry key="LookupTableDataTypePrompt">Data type</entry>
+    <entry key="LookupTableNumberOfTableDimensionsPrompt">Number of table dimensions: </entry>
+    <entry key="LookupTableFieldNamePrompt">Field name</entry>
+    <entry key="LookupTableFieldNameToolTip">Name of the Field</entry>
+    <entry key="LookupTableDescriptionPrompt">Description</entry>
+    <entry key="LookupTableUnitPrompt">Unit</entry>
+    <entry key="LookupTableUnitToolTip" note="stringDatatypeUpdate">Measurement unit entered as a character vector </entry>
+    <entry key="LookupTableDimensionsPrompt">Dimensions</entry>
+    <entry key="LookupTableDataMinimumPrompt" note="Here Min is short for Minimum">Min</entry>
+    <entry key="LookupTableDataMaximumPrompt">Max</entry>	
+    <entry key="LookupTableSupportTunableSizePrompt">Support tunable size</entry>
+    <entry key="LookupTableTunableSizeNamePrompt">Tunable size name</entry>
+    <entry key="LookupTableCoderInfoGroupPrompt">Data definition:</entry>
+    <entry key="SimulinkLineTypeName" note="Line in this case means graphics line">Line</entry>
+    <entry key="ManualVariantNumChoices">Number of choices:</entry>
+    <entry key="SL_DSCPT_MANUALVARIANTSOURCE">The Manual Variant Source provides variation on the source of a signal. Blocks connected to the input ports define variant choices and one input port is active during simulation. Blocks connected to the inactive ports will be removed from the simulation. Double-clicking the block icon selects the active choice which is shown with a line connecting the input to output.</entry>
+    <entry key="SL_DSCPT_MANUALVARIANTSINK">The Manual Variant Sink provides variation on the sink (destination) of a signal. Blocks connected to the output ports define variant choices and one output port is active during simulation. Blocks connected to the inactive ports will be removed from the simulation. Double-clicking the block icon selects the active choice which is shown with a line connecting the input to output.</entry>
+    <entry key="DataViewCreateModelMaskToolTip">Create Model Mask</entry>
+    <entry key="DataViewEditModelMaskToolTip">Edit Model Mask</entry>    
+    <entry key="LookupTableInvalidValueForTable">Value of table data is invalid. Specify an expression that returns a numeric array or fi object.</entry>
+    <entry key="LookupTableInvalidValueForBreakpoints">Value of data for breakpoint set number ''{0}'' is invalid. Specify an expression that returns a numeric array or fi object.</entry>
+    <entry key="BreakpointInvalidValueForBreakpoints">Value of breakpoint data is invalid. Specify an expression that returns a numeric array or fi object.</entry> 
+</message>
+</rsccat>
+<!-- LocalWords:  UI workspave dlg Defn cscdesigner cscuicallback Pseudocode
+     LocalWords:  Pragma pragma pragmas deployable datatype Signedness Configs
+     LocalWords:  BP uncheck subarrays Cx MYSYS nd Buf buf noncomplex xonly Pri
+     LocalWords:  yonly NAND NXOR reusability Nonreusable Compu
+-->
+

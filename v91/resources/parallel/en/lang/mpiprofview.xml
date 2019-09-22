@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<!-- Copyright 2011-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <!-- Note to translators: All of these strings will appear in a HTML page.  
+     Please do not translate HTML tags.  HTML tags are '&amp;nbsp;' or within 
+     less than (&lt;) and greater than ($gt;) tags in this file. -->
+  <message>
+    <!--dctMpiProfHelpers starts here-->
+    <entry key="ActiveCommTime" note="Table column heading.  'Comm' is short for 'Communication'">
+        Active Comm Time
+    </entry>
+    <entry key="ActiveCommTimeLowercase" note="Used in drop down selection box.  'comm' is short for 'communication'.">
+        active comm time
+    </entry>
+    <entry key="Aggregate">Aggregate</entry>
+    <entry key="AllOtherLines" note="Table entry">All other lines</entry>
+    <entry key="AllWorkersForAllFunctionsTitle" note="Titlefor plot">All workers {0}\n for all functions</entry>
+    <entry key="AllWorkersForSingleFunctionTitle" note="Title for plot">All workers {0}\n for function {1}</entry>
+    <entry key="AllocatedMemory" note="Table column heading">Allocated Memory</entry>
+    <entry key="AllocatedMemoryLowercase" note="Used in drop down selection box.">
+        allocated memory
+    </entry>
+    <entry key="AnonymousFunction">anonymous function from prompt or eval''ed string</entry>
+    <entry key="AnonymousFunctionShort" note="Table Entry">anonymous function</entry>
+    <entry key="AutoComparisonSelection" note="Button text.">Automatic&amp;nbsp;Comparison&amp;nbsp;Selection</entry>
+    <entry key="BuiltinFunction" note="Table Entry">built-in function</entry>
+    <entry key="CallFcnDataFull" note="HTML Page heading.  Lists various calling statistics of the function.  'sec' is short for 'seconds', 'rec' is short for 'received', 'act comm' is short for 'active communication'">
+        ({0} call(s), {1} sec, {2} sent, {3} rec, {4} wait, {5} act comm)
+    </entry>
+    <entry key="CallFcnDataMemoryOnly" note="HTML Page heading.  Lists various calling statistics of the function.">
+        ({0} call(s), {1}, {2}, {3}, {4})
+    </entry>
+    <entry key="CallFcnDataSecondsOnly" note="HTML Page heading.  Lists various calling statistics of the function.  'sec' is short for 'seconds'.">
+        ({0} call(s), {1} sec)
+    </entry>
+    <entry key="Calls" note="Table column heading">Calls</entry>
+    <entry key="CallsLowercase" note="Table column heading.">
+        calls
+    </entry>
+    <entry key="Children" note="Heading">&lt;b&gt;Children&lt;/b&gt; (called functions)</entry>
+    <entry key="ClearComparison" note="Button text">Clear Comparison</entry>
+    <entry key="ClientFileDifferentLocationFromWorker">File name {0} for function {1} \nis not in the same location that was run on the MATLAB worker\nMPIPROFVIEW is assuming the file is available on the client path.\nThis message will only be shown once. See MPIPROFILE in the Parallel\nComputing Toolbox documentation.\n</entry>
+    <entry key="Code" note="Table column heading">Code</entry>
+    <entry key="CodeAnalyzer" note="Used in drop down selection box.">
+        code analyzer
+    </entry>
+    <entry key="CodeLines" note="Table row heading">Code lines (lines that can run)</entry>
+    <entry key="CodeLinesThatDidNotRun" note="Table row heading">Code lines that did not run</entry>
+    <entry key="CodeLinesThatDidRun" note="Table row heading">Code lines that did run</entry>
+    <entry key="CodeMayHaveChangedOnClient">Please note that the code displayed is taken from the client, and might have changed since execution on the cluster. Only valid MATLAB functions will be shown.</entry>
+    <entry key="ColorHighlightCodeAccordingTo" note="This text is followed by a drop down selection box">
+        Color highlight code according to: 
+    </entry>
+    <entry key="CommTimePerWorkerImages" note="Heading">Comm Time Per Worker Image</entry>
+    <entry key="CommTimePerWorkerImagesForFunction" note="Heading">Comm Time Per Worker Image for {0}</entry>
+    <entry key="CommTimeWaitingActive" note="Axis label and title on plot.  'Comm' is short for 'Communication'.">
+        Comm Time (Waiting + Active)
+    </entry>
+    <entry key="CommWaitTimeLowercase" note="Used in drop down selection box.  'comm' is short for 'communication'.">
+        comm waiting time
+    </entry>
+    <entry key="CommWaitingTime" note="Table column heading.  Comm is short for Communication">
+        Comm Waiting Time
+    </entry>
+    <entry key="CommWaitingTimeLowercase" note="Comm is short for Communication">
+        comm waiting time
+    </entry>
+    <entry key="CommWaitingTimePerWorker" note="Axis label and title on plot.  'Comm' is short for 'Communication'.">
+        Comm Waiting Time Per Worker
+    </entry>
+    <entry key="CompTimeRatio" note="Table column heading">Computation &lt;br/&gt;Time Ratio  </entry>
+    <entry key="CompareMaxVsMinCommTime" note="Button text">Compare (max vs. min CommTime)</entry>
+    <entry key="CompareMaxVsMinTotalTime" note="Button text">Compare (max vs. min TotalTime)</entry>
+    <entry key="CompareWith" note="Label for drop down box">Compare with: </entry>
+    <entry key="ComparedComputationPercentTotalTime" note="This is used immediately after CallFcnData message when the call statistics of 2 workers are being compared.  It indicates the time difference between the workers.  {1} and {2} are percentages that are color coded for the 2 workers.">
+        Time difference: {0} seconds. Total computation took {1} compared to {2} of total time.
+    </entry>
+    <entry key="ComparisonWithWorker" note="Part of a table column heading.  Appended to FunctionName.">
+        comparison with worker {0}
+    </entry>
+    <entry key="ComparisonsDisabled">Comparisons&amp;nbsp;are&amp;nbsp;disabled</entry>
+    <entry key="ComputationPercentTotalTime" note="{0} is a percentage">
+        Total computation took {0} of total time.
+    </entry>
+    <entry key="ConstructorOverhead" note="Table Entry">constructor overhead</entry>
+    <entry key="CopyNewWindowToCompare">Copy to new window for comparing multiple runs</entry>
+    <entry key="CouldNotFindFileOnClient">Could not find {0} on the client. {1} Make sure the profiled MATLAB file is accessible from the MATLAB client.</entry>
+    <entry key="Coverage" note="Used in drop down selection box.">
+        coverage
+    </entry>
+    <entry key="CoverageDidCanRun" note="Table row heading">Coverage (did run/can run)</entry>
+    <entry key="CoverageResults" note="Heading">Coverage results</entry>
+    <entry key="DarkBandDescription">(dark band is self time)</entry>
+    <entry key="DarkBandOrangeBandDescription">(dark band is self time and orange band is self waiting time)</entry>
+    <entry key="DataRec" note="Table column heading.  'Rec' is short for 'received'">
+        Data Rec
+    </entry>
+    <entry key="DataRecLowercase" note="Used in drop down selection box. 'rec' is short for 'received'">
+        data rec
+    </entry>
+    <entry key="DataReceived" note="Table column heading">Data Received</entry>
+    <entry key="DataReceivedLowercase">data received</entry>
+    <entry key="DataReceivedPerWorker">Data Received Per Worker</entry>
+    <entry key="DataSent" note="Table column heading">Data Sent</entry>
+    <entry key="DataSentLowercase" note="Used in drop down selection box.">
+        data sent
+    </entry>
+    <entry key="DestinationLabIndex" note="Axis label for plot">destination labindex</entry>
+    <entry key="FileModifiedDuringProfiling">This file was modified or was different on the cluster than it is on your client MATLAB. Function listing disabled.</entry>
+    <entry key="FoundFileOnClientNotReadable">Found file {0} on the client, but could not read it. Make sure the file is up-to-date and that this account has read permission from the MATLAB client.</entry>
+    <entry key="FreedMemory" note="Table column heading">Freed Memory</entry>
+    <entry key="FreedMemoryLowercase" note="Used in drop down selection box.">
+        freed memory
+    </entry>
+    <entry key="FunctionChangedDuringProfile">This function changed during profiling or before generation of this report.  Profile results might be incomplete or inaccurate.</entry>
+    <entry key="FunctionChangedPathDuringProfile">WARNING: The MATLAB file was not found in the original path {0} run on cluster. This function could have changed during profiling or before generation of this report.  Profile results might be incomplete or inaccurate.</entry>
+    <entry key="FunctionListing" note="Heading">Function listing</entry>
+    <entry key="FunctionMLocked">This function has been mlocked. Results may be incomplete or inaccurate.</entry>
+    <entry key="FunctionName" note="Table column heading">Function Name</entry>
+    <entry key="FunctionType" note="Table column heading">Function Type</entry>
+    <entry key="GeneratedUsing" note="{0} is the current date/time.">Generated {0} using {1} time.</entry>
+    <entry key="GotoWorker" note="Label for drop down box">Go to worker: </entry>
+    <entry key="Histograms" note="Heading">Histograms</entry>
+    <entry key="HistogramsForFunction" note="Heading">Histograms for {0}</entry>
+    <entry key="InFile" note="{0} is one of the code type descriptions e.g. MFunction, Subfunction from above">
+        {0} in file
+    </entry>
+    <entry key="InFileWithError" note="{0} is one of the code type descriptions e.g. MFunction, Subfunction from above">
+        {0} in file {1}. {2}
+    </entry>
+    <entry key="JavaMethod" note="Table Entry">Java method</entry>
+    <entry key="LightBlueTotalTime">light blue bar shows total time.</entry>
+    <entry key="LineLowercase" note="Table column heading">line</entry>
+    <entry key="LineNumber" note="Table column heading">Line Number</entry>
+    <entry key="LineNumberForWorkerAndCompareWorker" note="Part of a table column heading.  This is appended to LineNumber column heading.">
+        Line Number &lt;br/&gt;(for worker {0,number,integer} and {1})
+    </entry>
+    <entry key="LineNumberSoft" note="Table column heading">Line number</entry>
+    <entry key="LinesSpent">Lines where the most {0} was spent.</entry>
+    <entry key="LinesSpentIncludingComparison">Lines where the most {0} was spent including the top 5 code lines from the comparison worker (maroon)</entry>
+    <entry key="MEXfile" note="Table Entry">MEX-file</entry>
+    <entry key="MFunction" note="Table Entry">function</entry>
+    <entry key="ManualComparison" note="Heading">Manual&amp;nbsp;Comparison&amp;nbsp;Selection</entry>
+    <entry key="MaxCommTime" note="Drop down selection box entry.  Comm is short for communication">max Comm Time</entry>
+    <entry key="MaxForAllFunctionsTitle" note="Title for plot">Max {0} for all functions</entry>
+    <entry key="MaxTime">max time</entry>
+    <entry key="MaxTimeAggregate" note="Drop down selection box entry">max Time Aggregate</entry>
+    <entry key="MaxTimeAggregatePerFunction">max Time Aggregate / Function</entry>
+    <entry key="MaxTotalTime" note="Drop down selection box entry">max Total Time</entry>
+    <entry key="MemLowercase" note="Table column heading.  'mem' is short for 'memory'.">
+        mem
+    </entry>
+    <entry key="Method">class method</entry>
+    <entry key="Message" note="Table column heading">Message</entry>
+    <entry key="MinCommTime" note="Drop down selection box entry.  Comm is short for communication">min Comm Time</entry>
+    <entry key="MinTime">min time</entry>
+    <entry key="MinTimeGreater0Aggregate" note="Drop down selection box entry">min Time &gt;0 Aggregate</entry>
+    <entry key="MinTotalTime" note="Drop down selection box entry">min Total Time</entry>
+    <entry key="NestedFunction" note="Table Entry">nested function</entry>
+    <entry key="NoBuiltIns">Note that built-in functions do not appear in this report.</entry>
+    <entry key="NoChildren">No children</entry>
+    <entry key="NoCodeAnalyzerMessages">No Code Analyzer messages.</entry>
+    <entry key="NoCommFieldsFound" note="Entry in list selection box">No communication fields found.</entry>
+    <entry key="NoInfoToDisp">No profile information to display.</entry>
+    <entry key="NoMATLABCodeToDisplay">No MATLAB code to display</entry>
+    <entry key="NoMeasurableSpentInThisFunction">No measurable {0} spent in this function</entry>
+    <entry key="NoParent">No parent</entry>
+    <entry key="NoPlot" note="Entry in list selection box">No Plot</entry>
+    <entry key="NonCodeLines" note="Table row heading">Non-code lines (comments, blank lines)</entry>
+    <entry key="Noncoverage" note="Used in drop down selection box.">
+        noncoverage
+    </entry>
+    <entry key="None" note="Drop down selection box entry">None</entry>
+    <entry key="NoneLowercase">none</entry>
+    <entry key="NumWorkersCumulativeAxisLabel" note="Axis label on plot">Number workers (cumulative)</entry>
+    <entry key="Numcalls" note="Used in drop down selection box. 'num calls' is short for 'number of calls'.">
+        num calls
+    </entry>
+    <entry key="PFileNoMFile">This is a P-file for which there is no corresponding MATLAB file</entry>
+    <entry key="ParallelProfileSummary" note="Title">Parallel Profile Summary</entry>
+    <entry key="Parents" note="Heading">&lt;strong&gt;Parents&lt;/strong&gt; (calling functions)</entry>
+    <entry key="PeakMemory" note="Table column heading">Peak Memory</entry>
+    <entry key="PeakMemoryLowercase" note="Used in drop down selection box.">
+        peak memory
+    </entry>
+    <entry key="PerWorkerCommImages" note="Heading">Per Worker Communication Images</entry>
+    <entry key="PerWorkerCommImagesForFunction" note="Heading">Per Worker Communication Images for {0}</entry>
+    <entry key="Plot" note="Table column heading">Plot</entry>
+    <entry key="PlotAllPerWorkerComm" note="Entry in list selection box">Plot All Per Worker Communication</entry>
+    <entry key="PlotCommTimePerLab" note="Entry in list selection box">Plot Communication Time Per Worker</entry>
+    <entry key="PlotPageNoComparisonTitle" note="HTML page title">
+        {0,number,integer}, {1,number,integer}, {2,number,integer}, Plot Page
+    </entry>
+    <entry key="PlotPageTitle" note="HTML page title">
+        {0,number,integer}, {1,number,integer}, {2,number,integer}, {3,number,integer}, Plot Page
+    </entry>
+    <entry key="PlotTimeHist" note="Entry in list selection box">Plot Time Histograms</entry>
+    <entry key="PlotView" note="Heading">Plot View</entry>
+    <entry key="ReceiveCommTimePerWorker" note="Axis label and title on plot.  'Comm' is short for 'Communication'.">
+        Receive Comm Time Per Worker
+    </entry>
+    <entry key="Root" note="Table Entry">Root</entry>
+    <entry key="ScaLAPACKCommStatsNotAvailable">** Communication statistics are not available for ScaLAPACK functions, so data marked with &lt;i&gt;**&lt;/i&gt; might be inaccurate.</entry>
+    <entry key="Script" note="Table Entry">script</entry>
+    <entry key="SecondsAxisLabel" note="Axis label on plot">{0}\n(seconds)</entry>
+    <entry key="SelfBuiltIns">Self {0} (built-ins, overhead, etc.)</entry>
+    <entry key="SelfCommWaitTime" note="Table column heading">Self Comm Waiting Time</entry>
+    <entry key="SelfMemory" note="Table column heading">Self Memory</entry>
+    <entry key="SelfTime" note="Table column heading">Self Time</entry>
+    <entry key="SelfTimeDescription">&lt;strong&gt;Self time&lt;/strong&gt; is the time spent in a function excluding the time spent in its child functions. Self time also includes overhead resulting from the process of profiling.</entry>
+    <entry key="SentRecWaiting" note="Table column heading.  'rec' is short for 'received'.">
+        (sent/rec/waiting)
+    </entry>
+    <entry key="ShowBusyLines" note="Check box label">Show busy lines</entry>
+    <entry key="ShowChildFunctions" note="Check box label">Show child functions</entry>
+    <entry key="ShowCodeAnalyzerResults" note="Check box label">Show Code Analyzer results</entry>
+    <entry key="ShowCoverageForParentDir" note="Table row heading">Show coverage for parent directory</entry>
+    <entry key="ShowFigsAllWorkers" note="Table column heading">Show&amp;nbsp;Figures&amp;nbsp;(all&amp;nbsp;workers):&amp;nbsp;</entry>
+    <entry key="ShowFileCoverage" note="Check box label">Show file coverage</entry>
+    <entry key="ShowFunctionListing" note="Check box label">Show function listing</entry>
+    <entry key="ShowParentFunctions" note="Check box label">Show parent functions</entry>
+    <entry key="ShowingCalledInWorker">Showing &lt;b&gt;all functions&lt;/b&gt; called in worker {0}</entry>
+    <entry key="ShowingCalledInWorkerCompared">Showing &lt;b&gt;all functions&lt;/b&gt; called in worker {0} compared with worker {1}</entry>
+    <entry key="ShowingThisFcnStatsComparedWithWorker">Showing &lt;b&gt;this function''s&lt;/b&gt; statistics on worker {0} compared with worker {1}</entry>
+    <entry key="ShowingThisFcnStatsOnWorker">Showing &lt;b&gt;this function''s&lt;/b&gt; statistics on worker {0}</entry>
+    <entry key="SimulinkModelFunction" note="Table Entry">Simulink model function</entry>
+    <entry key="SortBusyLines" note="Drop down box label">Sort busy lines and graph according to:</entry>
+    <entry key="SourceLabIndex" note="Axis label for plot">source labindex</entry>
+    <entry key="Subfunction" note="Table Entry">subfunction</entry>
+    <entry key="SubfunctionsNotIncluded">Other subfunctions in this file are not included in this listing.</entry>
+    <entry key="Time" note="Table column heading">Time</entry>
+    <entry key="TimeLowercase" note="Used in drop down selection box or as a column heading.">
+        time
+    </entry>
+    <entry key="TimePlotForFunctionTitle" note="Title for plot">{0} for \nfunction {1}</entry>
+    <entry key="TotalCommTime" note="Table column heading.  Comm is short for Communication">
+        Total Comm Time
+    </entry>
+    <entry key="TotalCommTimeLowercase" note="Comm is short for Communication">
+        total comm time
+    </entry>
+    <entry key="TotalInterWorkerData" note="Table column heading">Total Inter-worker Data</entry>
+    <entry key="TotalLinesInFunction" note="Table row heading">Total lines in function</entry>
+    <entry key="TotalTime" note="Table column heading">Total Time</entry>
+    <entry key="TotalTimePlot" note="Table column heading">Total Time Plot</entry>
+    <entry key="Totals" note="Table row heading">Totals</entry>
+    <entry key="UseMPIProfileOn">Use {0} before running your code.</entry>
+    <entry key="UseToolbarForOtherWorkers">Use the top toolbar to browse other workers.</entry>
+    <entry key="WorkerHasMaxCommTime" note="Comm is short for communication">worker {0,number,integer} has max comm time</entry>
+    <entry key="WorkerHasMinCommTime" note="Comm is short for communication">worker {0,number,integer} has min comm time</entry>
+    <entry key="WorkerHasMaxTotalTime">worker {0,number,integer} has max total time</entry>
+    <entry key="WorkerHasMinTotalTime">worker {0,number,integer} has min total time</entry>
+    <entry key="WorkerParentheses">(worker&amp;nbsp;{0,number,integer})</entry>
+  </message>
+</rsccat>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2012-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="BuildStartConsoleMessage">### Building simulation target for model: ''{0}''.</entry>
+    <entry key="BuildErrorConsoleMessage">### Build procedure for model: ''{0}'' aborted due to an error.</entry>
+    <entry key="BuildSuccessConsoleMessage">### Successfully built the simulation target for model: ''{0}''.</entry>
+    <entry key="BuildError">Problem creating simulation target MEX-file for model ''{0}''.</entry>
+    <entry key="MakeError">Error(s) encountered while building simulation target for model ''{0}''.</entry>
+    <entry key="DeleteFileFirstAttempt">Could not delete {0}. Trying to delete again.</entry>
+    <entry key="DeleteFileSecondAttempt">Could not delete {0} on second attempt. This file is either not writable or is locked by another process.</entry>
+    <entry key="TwoAttemptsToDeleteFile">Two attempts to delete {0} have failed.</entry>
+    <entry key="FileMoveFailed">Unable to move {0} from {1} to {2}.</entry>
+    <entry key="FileNotFound">Unable to locate file {0} in the folder {1}.</entry>
+    <entry key="FailedToCreateFile">Failed to create file: {0}.</entry>
+    <entry key="FailedToCreateDirectory">Failed to create folder {0} due to the error: {1}</entry>
+    <entry key="GenericModelSetupError">Simulink encountered an error while setting up for the simulation target of the model ''{0}''.</entry>
+    <entry key="GenericModelCodegenError">Simulink encountered an error while generating code for the simulation target of the model ''{0}'': {1}</entry>
+    <entry key="MexInitializeFcnError">Simulink encountered an error while attempting to initialize the simulation target of the model: ''{0}''.</entry>
+    <entry key="MexTerminateFcnError">Simulink encountered an error while attempting to terminate the simulation target of the model: ''{0}''.</entry>
+    <entry key="CompileError">An error occurred in the block ''{0}'' during compile.</entry>
+    <entry key="RuntimeError">A runtime error occurred in the block ''{0}'' during simulation.</entry>
+    <entry key="RuntimeWarning">A runtime warning occurred in the block ''{0}'' during simulation.</entry>
+    <entry key="ErrorIn">Error in </entry>
+    <entry key="RuntimeErrorStack">{0}</entry>
+    <entry key="UnableToLocateExecutionEngine">Unable to locate execution engine for the block ''{0}'' for simulation through code generation.</entry>
+    <entry key="MexFileForSimCGNotGenerated">The expected MEX file ''{0}'' is not generated.</entry>
+    <entry key="SimStateNotSupported">Block ''{0}'' does not support simulation save and restore.</entry>
+    <entry key="JITRequiredButJITIncompatible">JIT is required but JIT incompatibilities found.</entry>
+    <entry key="JITEngineFailSerialize">Failed to serialize JIT engine to file. Make sure the disk is not full or write-protected. ''{0}''.</entry>
+    <entry key="BadMessageID">Simulation through code generation attempted to generate a diagnostics with message ID ''{0}'' but failed.</entry>
+    <!--
+      Subsystem CGXE-based simulation
+    -->
+    <entry key="MultirateSubsystemNotSupported">Cannot simulate through code generation subsystem block ''{0}'' because it contains multiple sample times. The subsystem block must be a single-rate block.</entry>
+    <entry key="NestedSubsystems">Cannot simulate through code generation subsystem block ''{0}'' because it contains subsystem block ''{1}''. The subsystem block must contain only LLVM compatible blocks that are not subsystems.</entry>
+    <entry key="VarDimsNotSupported">Cannot simulate through code generation subsystem block ''{0}'' because it contains blocks with variable dimensions mode.</entry>
+</message>
+</rsccat>
+
+<!-- LocalWords:  subviewer AVT wakeup LLVM --> 

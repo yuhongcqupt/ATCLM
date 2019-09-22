@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="InvalidPackage">The "{0}" package cannot be found.</entry>
+    <entry key="UnsupportedFile">"{0}" is not a supported file.</entry>
+    <entry key="InvalidMATLABFilename">"{0}" is not a valid MATLAB filename.</entry>
+    <entry key="ShadowedFile">"{0}" is shadowed by a "{1}" file with the same name.</entry>
+    <entry key="PackageFolderNotAllowed">Package folders are not allowed when using fromFolder. Use fromPackage instead.</entry>
+    <entry key="ClassFolderNotAllowed">Class folders are not allowed when using fromFolder. Use fromClass instead.</entry>
+    <entry key="PrivateFolderNotAllowed">Private folders are not allowed when using fromFolder.</entry>
+    <entry key="FilesInPackageFolderNotAllowed">Files in package folders are not allowed when using fromFile. Use fromClass instead.</entry>
+    <entry key="FilesInClassFolderNotAllowed">Files in class folders are not allowed when using fromFile. Use fromClass instead.</entry>
+    <entry key="FilesInPrivateFolderNotAllowed">Files in private folders are not allowed when using fromFile.</entry>
+    <entry key="FileExcluded">"{0}" was excluded.\nCaused by:\n{1}</entry>
+    <entry key="NonTestFile">"{0}" is not recognized as a test entity.</entry>
+    <entry key="NonMetaClass">The class must be specified as a metaclass rather than a TestCase instance. Use the ? operator to construct the metaclass instance.</entry>
+    <entry key="InvalidClass">The specified class cannot be found.</entry>
+    <entry key="NonscalarClass">The specified meta.class must be a scalar.</entry>
+    <entry key="NonTestCase">The specified class must refer to a matlab.unittest.TestCase.</entry>
+    <entry key="AbstractTestCase">The "{0}" TestCase class is abstract.</entry>
+    <entry key="InvalidMethodName">The "{0}" method cannot be found in the "{1}" class.</entry>
+    <entry key="InvalidTestFunction">"{0}" does not include a test named "{1}".</entry>
+    <entry key="InvalidName">"{0}" is not a valid Test name.</entry>
+    <entry key="IncorrectParameters" note="Example: The set of MethodSetup Parameters referenced by MyTest/test1 is not correct. The test requires the following parameter(s): Param1, Param2.">The set of {0} Parameters referenced by "{1}" is not correct. The test requires the following parameter(s): {2}.</entry>
+    <entry key="NoParametersNeeded" note="Example: The test does not accept any ClassSetup Parameters.">The test does not accept any {0} Parameters.</entry>
+    <entry key="TestsInclude">Tests Include:</entry>
+    <entry key="ZeroParameterizationsFooter">0 Parameterizations</entry>
+    <entry key="SingleParameterizationFooter">1 Unique Parameterization</entry>
+    <entry key="MultipleParameterizationsFooter">{0,number,integer} Unique Parameterizations</entry>
+    <entry key="ZeroSharedTestFixturesFooter">0 Shared Test Fixture Classes</entry>
+    <entry key="SingleSharedTestFixtureFooter">1 Unique Shared Test Fixture Class</entry>    
+    <entry key="MultipleSharedTestFixturesFooter">{0,number,integer} Unique Shared Test Fixture Classes</entry>
+    <entry key="ZeroTagsFooter">0 Tags</entry>
+    <entry key="SingleTagFooter">1 Unique Tag</entry>    
+    <entry key="MultipleTagsFooter">{0,number,integer} Unique Tags</entry>
+    <entry key="UnrecognizedSuite">"{0}" is not recognized as a test entity.</entry>
+    <entry key="ScriptFileNotFound">Unable to find script "{0}".</entry>
+    <entry key="ScriptFileExtensionChanged">The file extension for script "{0}" changed from "{1}" to "{2}". Create a new suite to incorporate changes.</entry>
+    <entry key="ScriptContentChanged">The script "{0}" changed. Create a new suite to incorporate changes.</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  rsccat PFile MLX Parameterizations
+-->

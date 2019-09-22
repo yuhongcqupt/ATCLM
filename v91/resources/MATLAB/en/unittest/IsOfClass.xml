@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="MustBeClass">The value's class is incorrect.</entry>
+    <entry key="ActualClass">Actual Class:</entry>
+    <entry key="ExpectedClass">Expected Class:</entry>
+    <entry key="MustNotBeClass">The value's class is prohibited.</entry>
+    <entry key="UnexpectedClass">Prohibited Class:</entry>
+  </message>
+</rsccat>

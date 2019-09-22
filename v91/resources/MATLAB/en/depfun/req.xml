@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <rsccat version="1.0" locale="en_US" product="MATLAB">
+   <message>
+
+     <entry key="FileError">
+Error manipulating file ''{0}'': {1}
+     </entry>
+
+     <entry key="InvalidContentDir">
+Cannot find content directory ''{0}''. Please make sure the directory name is 
+spelled correctly, and that it identifies an existing directory.
+     </entry>
+
+     <entry key="MissingContentFileArg">
+No content file specified for target ''{0}''. Target names must always be 
+followed by a target content file. Please specify a full or relative path to
+a content file for this target.
+     </entry>
+
+     <entry key="InvalidContentFile">
+Could not read file list from content file ''{0}''. The file must contain a
+list of full paths to the files for target ''{1}''. Please make sure the 
+file contains character data, one file path per line.
+     </entry>
+
+     <entry key="UnreadableContentFile">
+Could not open content file ''{0}''. Please ensure the file exists and that 
+you have permission to read it.
+     </entry>
+
+     <entry key="ContentFileMustExist">
+The content file ''{0}'' for target ''{1}'' does not exist. Please ensure the 
+file path is spelled correctly. 
+     </entry>
+
+     <entry key="InvalidDatabaseFile">
+Invalid database file ''{0}''. Database files must be writable and have
+extension ''{1}''. Please specify a valid SQLite database file.
+     </entry>
+	 
+     <entry key="MissingDatabaseTable">
+Internal error: Database ''{0}'' does not contain table ''{1}''. 
+     </entry>
+
+     <entry key="InvalidInsertAsIsList">
+Invalid insert_as_is list or wrong format.
+     </entry>
+
+     <entry key="DeployableFile">
+File not expected by target {0} or excluded by deployment policies.
+     </entry>
+
+     <entry key="BadStringFlag" note="stringDatatypeUpdate">
+Character vector flag "{0}" not recognized. Type "help {1}" for a list of valid 
+character vector flags.
+     </entry>
+
+     <entry key="BadTarget">
+Target {0} not recognized.
+     </entry>
+
+     <entry key="UnlicensedPart">
+Part "{0}" belongs to a component for which no license is available. Use
+the LICENSE command to determine available licenses.
+     </entry>
+
+     <entry key="ExcludedBy">
+Cannot be packaged for use in the target environment {0}. Removed from the 
+parts list by license {1}.
+     </entry>
+
+     <entry key="ExpectedBy">
+Expected to be present in the target environment {0}. Removed from the parts 
+list by license {1}.
+     </entry>
+
+     <entry key="NoEntryPoints">
+None of the input files or functions may be used as the main function or as a
+library function in target {0}. The parts list may be empty. See the exclusion 
+list for an explanation of why each file was excluded.
+     </entry>
+
+     <entry key="ScriptEntryPoint">
+MATLAB scripts may not be used as main functions or entry points.
+Please specify a MATLAB function instead. Script file detected: {0}.
+     </entry>
+
+     <entry key="MexEntryPoint">
+MATLAB MEX-functions may not be used as main functions or entry points.
+Please specify a MATLAB function instead. MEX file detected: {0}.
+     </entry>
+
+     <entry key="PcodeEntryPoint">
+MATLAB PCODE functions may not be used as main functions or entry points.
+Please specify a MATLAB function instead. PCODE file detected: {0}.
+     </entry>
+
+     <entry key="McosEntryPoint">
+MATLAB MCOS classes may not be used as entry points except for standalone applications. 
+Please specify a MATLAB function instead. MCOS class file detected: {0}.
+     </entry>
+
+     <entry key="CorrespondingMCodeIsEmpty">
+Requirements cannot analyze {0} unless the user provides a corresponding 
+M-code along with it in the same folder. Its dependencies may 
+not be included in the completion because its corresponding M-code found by 
+REQUIREMENTS either is empty or contains nothing but comments.
+     </entry>
+     
+     <entry key="BuiltIn">
+built-in
+     </entry>
+     
+     <entry key="Method">
+method
+     </entry>
+    
+     <entry key="BuiltinEntryPoint">
+MATLAB built-in functions may not be used as main functions or entry points.
+Please specify a non-built-in MATLAB function instead. Built-in detected: {0}.
+     </entry>
+
+     <entry key="UnknownClass">
+Unknown class "{0}".
+     </entry>
+
+     <entry key="InvalidClassInfo">
+Could not determine class name for symbol "{0}". File path "{1}" does not
+contain an '@'. Class metadata object is empty or invalid.
+     </entry>
+
+     <entry key="NonFunctionEntryPoint">
+Application main files and interface entry points must be MATLAB functions.
+Invalid function types include: MEX files, PCODE files, Java functions, 
+COM or .NET components and data files. Please specify a MATLAB function 
+instead. Invalid file detected: {0}.
+     </entry>
+
+     <entry key="DuplicateArgType">
+Please specify only one input of type {0}. Arguments {1} and {2} both have
+type {3}. 
+     </entry>
+
+     <entry key="TwiceToldTarget" note="stringDatatypeUpdate">
+Target specified more than once in argument list. {0} interprets the first 
+character vector argument ({1}) as the target. Unexpectedly encountered a second character vector:
+{2}. Please specify only a single character vector.
+     </entry>
+
+     <entry key="DoubleEntryPoint">
+Entry point flag specified more than once in argument list. {0} interprets the 
+first logical argument ({1}) as the entry point flag. Unexpectedly encountered
+a second logical: {2}. Please specify only one logical input.
+     </entry>
+
+     <entry key="NeedFilesOrTargetToCreate">
+To create a Completion, you must specify a list of files or a target 
+environment. The inputs you provided specified neither.
+     </entry>
+
+     <entry key="InternalNoClassForMethod">
+Internal Error: Could not determine class of method "{0}". Number of classes 
+checked: {1,number,integer}.
+     </entry>
+
+     <entry key="InternalDBFailure">
+Internal error: Database operation failed: "{0}". Database: "{1}".
+     </entry>
+
+     <entry key="InternalMetadataMismatch">
+Internal error: Metadata name "{0}" does not match class name "{1}".
+     </entry>
+
+     <entry key="InternalNoRules">
+Internal error: no rules file specified.
+     </entry>
+    
+     <entry key="EmptyComponentID">
+Component ID must not be empty.
+     </entry>
+
+     <entry key="MissingComponent">
+Component "{0}" missing from database "{1}". Cannot proceed.
+Reinstalling the product or regenerating the database may fix this problem.
+     </entry>
+
+     <entry key="MissingFile">
+File "{0}" missing from database "{1}". Cannot proceed.
+Reinstalling the product or regenerating the database may fix this problem.
+     </entry>
+
+     <entry key="EmptyPartsList">
+The parts list is empty. 
+All of the input files and functions were excluded by the rules for target {0}. 
+See the exclusion list for an explanation of why each file was excluded.
+     </entry>
+     
+     <entry key="NoFilesToAnalyze">
+No input files specified. REQUIREMENTS analyzes files to determine their
+dependencies. Please specify a cell array of files to analyze.
+     </entry>
+
+     <entry key="RulesFileMustExist">
+Rules file {0} could not be found. Check that the path name is correct.
+     </entry>
+
+     <entry key="BadInputCount">
+Incorrect number of inputs. Expecting {0}, found {1,number,integer}. Type "help {2}" to review the number and type of expected inputs.
+     </entry>
+	 
+	 <entry key="BadSyntax">
+MATLAB code ''{0}'' contains the following syntax error(s):\n{1}
+     </entry>
+     
+     <entry key="BadImport">
+Import argument "{0}" in MATLAB code ''{1}'' cannot be found or cannot be imported.
+     </entry>
+
+     <entry key="InvalidInputType">
+Input {0,number,integer} has unexpected type {1}. Expecting {2}.
+     </entry>
+
+     <entry key="NoNamesFound">
+ None of the input names could be resolved. Check that the names are spelled correctly and that the file paths are correct.
+     </entry>
+
+     <entry key="NameIsAnEmptyDirectory">
+Found empty folder(s): {0}. Expecting file(s) or non-empty folder(s).
+     </entry>
+
+     <entry key="NameNotFound">
+File, function or class "{0}" may not exist. Neither WHICH nor EXIST could find an exact, case-sensitive match. Please check the spelling of the name, and that any required directories are on the MATLAB path.
+     </entry>
+
+     <entry key="NameIsADirectory">
+Input name "{0}" is a directory. Expecting a file or function.
+     </entry>
+
+     <entry key="NameMustBeChar" note="stringDatatypeUpdate">
+Function, method and class names must be character vectors. Input #{0,number,integer} is a {1}.
+     </entry>
+
+     <entry key="InternalBadLanguage">
+Internal error: Unrecognized language "{0}" not present in database "{1}".
+     </entry>
+
+     <entry key="InternalBadSharedLicenseClientID">
+Internal error: No entry for shared license client ID {0,number,integer} in
+database merge client map.
+     </entry>
+
+     <entry key="InternalBadSharedLicenseProviderID">
+Internal error: No entry for shared license provider ID {0,number,integer} in
+database merge provider map.
+     </entry>
+
+     <entry key="InternalDupFileVertex">
+Internal error: Duplicate entry {0} in known dependency table.
+     </entry>
+
+     <entry key="InternalNoExclusions">
+Internal error: Unexpectedly empty exclude reason list for target {0}.
+     </entry>
+
+     <entry key="InternalNoExpected">
+Internal error: Unexpectedly empty expect reason list for target {0}.
+     </entry>
+
+     <entry key="InternalEmptyWhyList">
+Internal error: Unexpectedly empty 'why' list for target {0}.
+     </entry>
+
+     <entry key="InternalRulesFileMustExist">
+Internal error: Cannot find rules function file {0}.
+     </entry>
+
+     <entry key="InternalRulesFileMustRun">
+Internal error: Could not find rules function {0} on MATLAB path. exist() reports {1,number,integer}.
+     </entry>
+
+     <entry key="InternalCreateRulesDirFail">
+Internal error: Could not create rules function directory {0}.
+     </entry>
+
+     <entry key="InternalCreateRulesFileFail">
+Internal error: Could not create rules function file {0}.
+     </entry>
+
+     <entry key="InternalRDLFileMustExist">
+Internal error: Could not open rules description file {0}.
+     </entry>
+
+     <entry key="InternalUnsortedComponentID">
+Component ID list must be a sorted set (containing no duplicate IDs).
+     </entry>
+
+     <entry key="InvalidFileName">
+Invalid file name ''{0}''. MATLAB names must start with a letter and contain only letters, numbers, or underscores.
+     </entry> 
+	 
+     <entry key="RDLBadlyFormedXFormRule">
+Internal error: {0} rule {1} ({2}:{3}) for target {4} is badly formed. 
+Operation cancelled.
+     </entry>
+
+     <entry key="RDLAllowBadArgCount">
+Allow command ({0}, line {1,number,integer}) requires four arguments: 
+Schema object, target name, set name and at least one file pattern. Only 
+{2,number,integer} arguments were provided.
+     </entry>
+
+     <entry key="RDLInsertBadArgCount">
+Insert command ({0}, line {1,number,integer}) requires four arguments: 
+Schema object, target name, set name and at least one operation. 
+Only {2,number,integer} arguments were provided.
+     </entry>
+
+     <entry key="RDLSubstituteBadArgCount">
+Substitute command ({0}, line {1,number,integer}) requires five arguments: 
+Schema object, target name, source set name, destination set name and at 
+least one substitution predicate. Only {2,number,integer} arguments were
+provided.
+     </entry>
+
+     <entry key="RDLMoveBadArgCount">
+Move command ({0}, line {1,number,integer}) requires five arguments: 
+Schema object, target name, source set name, destination set name and at 
+least one move predicate. Only {2,number,integer} arguments were provided.
+     </entry>
+
+     <entry key="RDLRemoveBadArgCount">
+Remove command ({0}, line {1,number,integer}) requires four arguments: 
+Schema object, target name, set name and at least one remove predicate. Only 
+{2,number,integer} arguments were provided.
+     </entry>
+
+     <entry key="RDLReplaceBadArgCount">
+Replace command ({0}, line {1,number,integer}) requires four arguments: 
+Schema object, target name, set name and at least one replace transformation.
+Only {2,number,integer} arguments were provided.
+     </entry>
+
+     <entry key="InternalInvalidFeatureName">
+Internal error: Invalid feature name "{0}". Reason: "{1}"
+     </entry>
+
+     <entry key="RDLBadLicense">
+Internal error: Wrong number of arguments ({0,number,integer}) to license function.
+     </entry>
+
+     <entry key="IllogicalSortProperty">
+Sort property cannot be set to {0} which has type {1}. It must be set to a 
+logical value: true or false.
+     </entry>
+
+     <entry key="NonExistDir">
+Cannot add directory "{0}" to the search path because the directory does not exist.       
+     </entry>
+
+     <entry key="NonExistSearchDir">
+Cannot remove directory "{0}" from the search path because the directory is not on the search path.       
+     </entry>
+
+     <entry key="InvalidSearchDirectory">
+Invalid search directory: "{0}" does not refer to an existing directory. 
+Please specify the full or relative path to a directory that exists on the 
+MATLAB path or in the file system. See the documentation for EXIST to learn
+how MATLAB checks for the existence of directories.
+     </entry>
+     
+     <entry key="InvalidSearchDirectories">
+The following directories don't refer to any existing directory: "{0}". 
+Please specify the full or relative path to a directory that exists on the 
+MATLAB path or in the file system. See the documentation for EXIST to learn
+how MATLAB checks for the existence of directories.
+     </entry>
+
+     <entry key="ComponentMismatch">
+Unexpected release, version or location for component ''{0}''. Expected ''{1}'',
+found ''{2}''.
+     </entry>
+
+     <entry key="EmptyResultSet">
+Could not retrieve {0} data from database {1}.
+     </entry>
+     
+     <entry key="UnknownPlatform">
+Cannot determine computer type. Verify that COMPUTER returns the correct 
+type for this computer.
+     </entry>
+
+     <entry key="InvalidSearchComponent">
+Component name "{0}" does not refer to an existing component. Please specify 
+the final path element of the root directory of a MATLAB toolbox. For example,
+use 'images' to specify the Image Processing Toolbox, which has 'toolbox/images'
+as its root directory.
+     </entry>
+
+     <entry key="TargetInfoNotInDB">
+Database "{0}" contains no component information for target "{1}". Please 
+specify a different database or target. This database contains information for
+these targets: {2}.
+     </entry>
+     
+     <entry key="NonExistDatabase">
+Database file "{0}" does not exist. Please check that the path is specified
+correctly.
+     </entry>
+
+     <entry key="InvalidTarget">
+Target "{0}" not recognized. Please specify one of these valid targets: {1}.
+     </entry>
+
+     <entry key="BadPathSwitch">
+Unrecognized switch: "{0}". Use -p to limit the search path or -i to specify
+include path directories.
+     </entry>
+
+     <entry key="MissingPathArg" note="stringDatatypeUpdate">
+Too few input arguments. Argument {0,number,integer}, {1} must be followed by a
+character vector or cell array of character vectors specifying valid path directories.
+     </entry>
+
+     <entry key="InvalidPathLimitType" note="stringDatatypeUpdate">
+Invalid type for path limit. Expecting cell array or character vector, found "{0}".
+     </entry>
+
+     <entry key="InvalidIncludePathType" note="stringDatatypeUpdate">
+Invalid type for include path, input {0,number,integer}. Expecting cell array 
+or character vector, found "{1}".
+     </entry>
+
+     <entry key="InvalidDatabaseNameType" note="stringDatatypeUpdate">
+Invalid type for database name, input {0,number,integer}. Expecting character vector,
+found "{1}".
+     </entry>
+
+     <entry key="InvalidComponentNameType" note="stringDatatypeUpdate">
+Invalid type for component name. Expecting alphabetic character vector or numeric ID,
+found "{0}".
+     </entry>
+
+     <entry key="EmptyComponentName">
+Component name is empty.
+     </entry>
+
+     <entry key="EmptyFetchResult">
+Expected single record from database query, but result was empty.
+     </entry>
+
+     <entry key="EmptyFetchResultList">
+Expected one or more records from database query, but result was empty.
+     </entry>
+	 
+    <entry key="DefaultCategoryTitle" note="ui_title"> 
+Default Category
+    </entry>
+
+    <entry key="InvalidDatabaseConnectionObj"> 
+Could not create database connection object. Details: {0}
+    </entry>
+
+   </message>
+ </rsccat>

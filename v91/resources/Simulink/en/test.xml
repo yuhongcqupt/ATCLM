@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+      <!-- 
+       Message catalog: Simulink:test
+       Messages originating from Simulink internal testing modules. Please use
+       these message for internal testing only, and do NOT expose any message
+       in shipping code.
+     
+       Please contact with Shailesh Jha or Wei Li for a code review if you 
+       change the contents of this file.
+
+       Copyright 2010 The MathWorks, Inc.
+    -->
+
+    <entry key="CoreBlockFcnCallErrorUponRun">The tester block ''{0}'' reports an error for testing purpose at time {1} when its input port {2,number,integer} runs a function-call.</entry>
+    <entry key="CoreBlockFcnCallErrorUponEnable">The tester block ''{0}'' reports an error for testing purpose at time {1} when its input port {2,number,integer} enables a function-call.</entry>
+    <entry key="CoreBlockFcnCallErrorUponDisable">The tester block ''{0}'' reports an error for testing purpose at time {1} when its input port {2,number,integer} disables a function-call.</entry>
+  </message>
+</rsccat>

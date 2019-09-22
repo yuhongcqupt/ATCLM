@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="sl_diagnostic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="UnknownDiagnostic">Unknown error</entry>
+    <entry key="MultipleDiagnostics">Multiple diagnostics</entry>
+    <entry key="OutOfRange">Out of range. Asked index {0, number, integer}, but max is {1, number, integer}</entry>
+    <entry key="HotlinkTemplate"><![CDATA[<a href="{0}">{1}</a>]]></entry>
+    <entry key="HotlinkTemplateArg"><![CDATA[<a href="{0}({1})">{2}</a>]]></entry>
+    <entry key="Wrapper">{0}{1}</entry>
+  </message>
+</rsccat>

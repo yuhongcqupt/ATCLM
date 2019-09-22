@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="MustBeFinite">The value must be finite.</entry>
+    <entry key="MustBeNumeric">The value must be numeric.</entry>
+    <entry key="IsNotNumeric">The value is not numeric.</entry>
+    <entry key="MustNotBeFinite">The value must not be finite.</entry>
+    <entry key="MustHaveOneNonFiniteElement">At least one element must be non-finite.</entry>
+    <entry key="AllMustBeFinite">All elements must be finite-valued.\nFailing indices:\n{0}</entry>
+    <entry key="IndicesWithNonFiniteValues">Indices with non-finite values:\n{0}</entry>
+  </message>
+</rsccat>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="WindowTitle">Simulink Preferences</entry>
+    <entry key="SelectListEntry">Select an element in the tree to set its preferences.</entry>
+    <entry key="AllSimulinkModels">These options affect the behavior of all Simulink models</entry>
+    <entry key="InheritedBySimulinkModels">These values will be inherited by new models</entry>
+    <entry key="ThisSimulinkModel">These values will be applied to block diagram ''{0}''</entry>
+    <entry key="PreferencesTitle">Simulink Preferences</entry>
+    <entry key="UseGetInstance">Use getInstance to create a Simulink.Preferences instance</entry>
+    <entry key="ConfigurationPreferences">Configuration Defaults</entry>
+    <entry key="NotifyIfLoadOldModel">Notify when loading an old model</entry>
+    <entry key="NotifyIfLoadOldModelToolTip">Print a message in the command window when loading a model last saved in an old version of Simulink</entry>
+    <entry key="ErrorIfLoadNewModel">Do not load models created with a newer version of Simulink</entry>
+    <entry key="ErrorIfLoadNewModelToolTip">Displays an error, if trying to load a model created in a newer version of Simulink</entry>
+    <entry key="ErrorIfLoadShadowedModel">Do not load models that are shadowed on the MATLAB path</entry>
+    <entry key="ErrorIfLoadShadowedModelToolTip">Displays an error, if trying to load a model that is shadowed by another file of the same name higher up on the MATLAB path</entry>
+    <entry key="SaveSLXThumbnail">Save a thumbnail image inside SLX files</entry>
+    <entry key="SaveSLXThumbnailToolTip">When saving, include a small screenshot of the model to display in the Current Folder browser preview pane</entry>
+    <entry key="CallbackTracing">Show callback tracing</entry>
+    <entry key="CallbackTracingToolTip">Show callbacks in the MATLAB Command Window as they are invoked</entry>
+    <entry key="OpenLegendWhenChangingSampleTimeDisplay">Open the sample time legend when the sample time display is changed</entry>
+    <entry key="OpenLegendWhenChangingSampleTimeDisplayToolTip">Controls whether the Sample Time Legend automatically opens when a Sample Time Display choice is selected from the Display menu.</entry>
+    <entry key="ChangeNotification">Change Notification</entry>
+    <entry key="ChangedOnDiskLabel">Notify if model has changed on disk when:</entry>
+    <entry key="ChangedOnDiskUpdating">Updating or simulating the model</entry>
+    <entry key="ChangedOnDiskUpdatingToolTip">Before updating or simulating the model, check the model file timestamp to determine whether the file has changed on disk since it was loaded</entry>
+    <entry key="ChangedOnDiskHandlingToolTip">Action to take if the file has changed on disk since it was loaded</entry>
+    <entry key="Action">Action:</entry>
+    <entry key="ChangedOnDiskEditing">First editing the model</entry>
+    <entry key="ChangedOnDiskEditingToolTip">When first making a change to the model, check whether the file has changed on disk since it was loaded</entry>
+    <entry key="ChangedOnDiskSaving">Saving the model</entry>
+    <entry key="ChangedOnDiskSavingToolTip">When saving the model, check whether the file has changed on disk since it was loaded</entry>
+    <entry key="AutoSaveOptions">Autosave Options</entry>
+    <entry key="AutoSaveOnUpdate">Save before updating or simulating the model</entry>
+    <entry key="AutoSaveOnUpdateToolTip">If the model has unsaved changes, automatically save a backup before updating or simulating, so that the changes can be restored after a crash</entry>
+    <entry key="MATLABPreferences">MATLAB Preferences</entry>
+    <entry key="DataManagementNodeLabel">Data Management Defaults</entry>
+    <entry key="DefaultPackagePrefsDialogTitle">Data Object Defaults</entry>
+    <entry key="DefaultPackagePrefsSelectPackage">Package:</entry> 
+    <entry key="FontPrefsDialogTitle">Font Defaults for New Models</entry>
+    <entry key="FontDialogTitle">Font Styles</entry>
+    <entry key="FontDialogLabel">Select the fonts to be used by blocks, lines and annotations in ''{0}'' which\nhave their font properties set to "auto"</entry>
+    <entry key="FontDisplayString" translate="false">The quick brown fox jumps over the lazy dog. 1234567890</entry>
+    <entry key="FontSample">Sample</entry>
+    <entry key="FontPlain">Plain</entry>
+    <entry key="FontBold">Bold</entry>
+    <entry key="FontItalic">Italic</entry>
+    <entry key="FontBoldItalic">Bold Italic</entry>
+    <entry key="Block">Blocks</entry>
+    <entry key="Line">Lines</entry>
+    <entry key="Annotation">Annotations</entry>
+    <entry key="EditorPrefsDialogTitle">Editor Preferences</entry>
+    <entry key="EditorDialogTitle">Editor Preferences</entry>
+    <entry key="EditorPrefsNodeLabel">Editor</entry>
+    <entry key="DiagramTheme">Use classic diagram theme</entry>
+    <entry key="DiagramThemeToolTip">Cause diagrams to appear in the current editor as they did in the original Simulink editor</entry>
+    <entry key="SmartEditing">Enable smart editing features</entry>
+    <entry key="SmartEditingToolTip">Show smart editing cues like quick insert, tear-offs and marquee actions</entry>
+    <entry key="SmartEditingHotParam">Edit key parameter when adding new blocks</entry>
+    <entry key="SmartEditingHotParamToolTip">Ability to specify block parameter values right after adding new blocks</entry>
+    <entry key="ScrollWheel">Scroll wheel controls zooming</entry>
+    <entry key="ScrollWheelToolTip">Use the scroll wheel on the mouse to control zooming instead of scrolling</entry>
+    <entry key="ToolBarConfigGroup">Toolbar Configuration</entry>
+    <entry key="FileToolBar">File Toolbar</entry>
+    <entry key="FileToolBarToolTip">Display the New/Save toolbar or the New/Open/Save or no file toolbar</entry>
+    <entry key="NewSaveToolBar">New/Save</entry>
+    <entry key="NewOpenSaveToolBar">New/Open/Save</entry>
+    <entry key="NoFileToolBar">None</entry>
+    <entry key="PrintToolBar">Print</entry>
+    <entry key="PrintToolBarToolTip">Show the model editor's Print toolbar</entry>
+    <entry key="CutCopyPasteToolBar">Cut/Copy/Paste</entry>
+    <entry key="CutCopyPasteToolBarToolTip">Show the model editor's Cut/Copy/Paste toolbar</entry>
+    <entry key="UndoRedoToolBar">Undo/Redo</entry>
+    <entry key="UndoRedoToolBarToolTip">Show the model editor's Undo/Redo toolbar</entry>
+    <entry key="NavigateToolBar">Browse Back/Forward/Up</entry>
+    <entry key="NavigateToolBarToolTip">Show the model editor's Browse/Backward/Forward/Up toolbar</entry>
+    <entry key="LibraryExplorerToolBar">Library/Model Configuration/Model Explorer</entry>
+    <entry key="LibraryExplorerToolBarToolTip">Show the model editor's Library/Model Configuration/Model Explorer toolbar</entry>
+    <entry key="RefreshBlocksToolBar">Refresh Blocks</entry>
+    <entry key="RefreshBlocksToolBarToolTip">Show the model editor's Refresh Blocks toolbar</entry>
+    <entry key="UpdateDiagramToolBar">Update Diagram</entry>
+    <entry key="UpdateDiagramToolBarToolTip">Show the model editor's Update Diagram toolbar</entry>
+    <entry key="InputToolBar">Input</entry>
+    <entry key="InputToolBarToolTip">Show the model editor's Input toolbar</entry>
+    <entry key="SimulationToolBar">Simulation</entry>
+    <entry key="SimulationToolBarToolTip">Show the model editor's Simulation toolbar</entry>  
+    <entry key="FastRestartButton">Fast Restart</entry>
+    <entry key="FastRestartButtonToolTip">Show Fast Restart button on the Simulation toolbar</entry>  
+    <entry key="DebugModelToolBar">Debug Model</entry>
+    <entry key="DebugModelToolBarToolTip">Show the model editor's Debug Model toolbar</entry>
+    <entry key="ModelAdvisorToolBar">Model Advisor</entry>
+    <entry key="ModelAdvisorToolBarToolTip">Show the model editor's Model Advisor toolbar</entry>
+    <entry key="BuildToolBar">Build</entry>
+    <entry key="BuildToolBarToolTip">Show the model editor's Build toolbar</entry>
+    <entry key="FindToolBar">Find</entry>
+    <entry key="FindToolBarToolTip">Show the model editor's Find toolbar</entry>
+    <entry key="InheritedBySimulinkSaveVars">The following settings are used in exporting variables to MATLAB scripts \nvia the Model Explorer and by Simulink.saveVars</entry>
+    <entry key="SaveVarsPrefsMaxNumberElements">Maximum elements in an array</entry>
+    <entry key="SaveVarsPrefsMaxNumberElementsToolTip">Set the maximum elements in an array that saveVars can save to MATLAB file</entry>
+    <entry key="SaveVarsPrefsMaxNumberLevels">Maximum levels of nesting</entry>
+    <entry key="SaveVarsPrefsMaxNumberLevelsToolTip">Set the maximum number of levels of an object, or nested cell/struct hierarchy that saveVars can save to MATLAB file</entry>
+    <entry key="SaveVarsPrefsLargeVariableGroup">Limits for writing variables to MATLAB code</entry>
+    <entry key="SaveVarsPrefsUsing2dSlice">Use 2-D slice</entry>
+    <entry key="SaveVarsPrefsUsing2dSliceToolTip">Enable using 2-D slices to represent N-D (N > 2) char/logic/numeric array</entry>
+    <entry key="SaveVarsPrefs2dSliceDimensions">Dimensions for 2-D slice</entry>
+    <entry key="SaveVarsPrefs2dSliceDimensionsToolTip">Set two dimensions for 2-D slices that are used to represent N-D (N > 2) char/logic/numeric array</entry>
+    <entry key="SaveVarsPrefsNDArrayFormatGroup">Multidimensional array formatting</entry>
+    <entry key="SaveVarsPrefsTextWidth">Maximum characters per line</entry>
+    <entry key="SaveVarsPrefsTextWidthToolTip">Set the text wrap width for MATLAB file</entry>
+    <entry key="SaveVarsPrefsOutputFormatGroup">File formatting</entry>
+    <entry key="SaveVarsPrefsDialogTitle">Simulink Variable Export Defaults</entry>
+    <entry key="SaveVarsPrefsNodeLabel">Variable Export Defaults</entry>
+    <entry key="DisplayGroup">Display</entry>
+    <entry key="Transparency">Render subsystem blocks translucent</entry>
+    <entry key="TransparencyToolTip">Specifies whether to render subsystem blocks translucent to their contents </entry>
+    <entry key="ModelFileFormatPrompt">File format for new models and libraries:</entry>
+    <entry key="ModelFileFormatTooltip">Specifies format to use when saving a new model or library without specifying a file extension</entry>
+    <entry key="PathXStylePrompt">Line crossing style:</entry>
+    <entry key="PathXStyleTooltip">Specifies decoration style for line crossings</entry>
+    <entry key="PathXStyleGradPin">Tunnel</entry>
+    <entry key="PathXStyleLineHop">Line Hop</entry>
+    <entry key="PathXStyleNone">None</entry>
+    <entry key="SaveBackupOnVersionUpgrade">Save backup when overwriting a file created in an older version of Simulink</entry>
+    <entry key="SaveBackupOnVersionUpgradeToolTip">Allows recovery of the original file in case of accidental overwriting with a newer version of Simulink</entry>
+    <entry key="DefaultPackageDlgText">The following setting is used to create parameter and signal objects\nin the Model Explorer. It is also available in the Data Object Wizard,\nand for specifying embedded signal objects for signals and block states</entry>
+    <entry key="DefaultPackageDlgTextForSignalsAndBlocks">The following setting is used for specifying embedded signal objects\nfor signals and block states</entry>
+    <entry key="PrintExportClipboardOptions">Background Color</entry>
+    <entry key="PrintBackgroundColorMatchCanvas">Match Canvas Color</entry>
+    <entry key="PrintBackgroundColorWhite">White</entry>
+    <entry key="PrintBackgroundColorModePrompt">Print:</entry>
+    <entry key="PrintBackgroundColorModeToolTip">Print background color mode.</entry>
+    
+    <entry key="ExportBackgroundColorMatchCanvas">Match Canvas Color</entry>
+    <entry key="ExportBackgroundColorWhite">White</entry>
+    <entry key="ExportBackgroundColorTransparent">Transparent</entry>
+    <entry key="ExportBackgroundColorModePrompt">Export:</entry>
+    <entry key="ExportBackgroundColorModeToolTip">Export background color mode.</entry>
+    
+    <entry key="ClipboardBackgroundColorMatchCanvas">Match canvas color</entry>
+    <entry key="ClipboardBackgroundColorWhite">White</entry>
+    <entry key="ClipboardBackgroundColorTransparent">Transparent</entry>
+    <entry key="ClipboardBackgroundColorModePrompt">Clipboard:</entry>
+    <entry key="ClipboardBackgroundColorModeToolTip">Clipboard background color mode.  Transparency only works for Metafile</entry>
+   
+    <entry key="ConvertPrefsTemplateTitle">Model using Converted Simulink Preferences</entry>
+    <entry key="ConvertPrefsTemplateUnknownRelease">a previous release</entry>
+    <entry key="ConvertPrefsTemplateDescription">For compatibility with previous releases, root block diagram
+    parameters in your Simulink Preferences from {0} have been converted into this model template.
+    For more information, run "doc Simulink.defaultModelTemplate".</entry>
+    <entry key="ConvertPrefsTemplateMessage">Created model template: {0}\n</entry>
+    <entry key="ConvertPrefsScriptComments">% For compatibility with MATLAB code written in previous releases
+\n% this file sets parameters of Simulink's root block diagram to the values
+\n% specified in your Simulink Preferences from {0}.
+\n% For more information, run "doc Simulink.defaultModelTemplate"</entry>
+    <entry key="ConvertPrefsScriptMessage">Created compatibility script: {0}\n</entry>
+    <entry key="ConvertPrefsStart">Found Simulink Preferences from {0}.  These will be converted into a model template for use in this release.\n</entry>
+
+    <entry key="ModelFilePreferencesTitle">Model File Preferences</entry>
+    <entry key="ModelFilePrefsNodeLabel">Model File</entry>
+    <entry key="FileFormatOptions">Format</entry>
+
+    <entry key="GeneralPrefsTitle">General Preferences</entry>
+    <entry key="GeneralPrefsNodeLabel">General</entry>
+  </message>
+</rsccat>

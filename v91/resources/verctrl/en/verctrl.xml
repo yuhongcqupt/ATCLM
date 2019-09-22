@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="verctrl" >
+  <message>
+    <entry key="ProjectNotInitialized"> Project could not be initialized.</entry>            
+    <entry key="UnknownProject">Project is unknown to the source code control system.</entry>    
+    <entry key="NoProject">The project did not exist or could not be created.</entry>    
+    <entry key="FileNotCheckedOut"> File is not checked out, so cannot be checked in.</entry> 
+    <entry key="FileAlreadyCheckedOut">File is already checked out.</entry>     
+    <entry key="FileLocked">File is locked, prohibiting creation of new versions.</entry> 
+    <entry key="FileExclusive">File(s) are exclusively checked out by someone else.</entry>                                        
+    <entry key="NoAccess">Problem accessing the source control system, likely due to network or contention problem.  Try again later. </entry>                                       
+    <entry key="NoMerge">Check in could not be performed because another user has checked in ahead and merging is not allowed. </entry>                                        
+    <entry key="FileAlreadyInSourceControl">The selected file is already under source code control. </entry>                                        
+    <entry key="FileNotInSourceControl">The file is not under source code control.</entry>                                        
+    <entry key="NoGet">Cannot get a file that is already checked out.</entry>                                        
+    <entry key="InvalidDate">Specified an invalid version or date/time.</entry>                                        
+    <entry key="NotSupported">The source code control system does not support this operation.</entry>                                        
+    <entry key="InternalError">Internal error in source control system.</entry>                                        
+    <entry key="RequestFailed">Source control system did not perform the reqested operation.</entry>                                        
+    <entry key="TypeNotSupported">The type of file (e.g. binary) is not supported by the source code control system. </entry>                                        
+    <entry key="FilePending">File has been auto-merged, but has not been checked in pending user verification. </entry>  
+    <entry key="MergeConflict">File has been auto-merged, but has not been checked in due to a merge conflict which must be manually resolved.</entry>                                        
+    <entry key="Failure">Catastrophic failure.</entry>                                        
+    <entry key="LogInFailed">Could not login into the source control system. </entry>                                        
+    <entry key="ProjectOpened"> A project is already open.</entry>                                        
+    <entry key="InvalidProject">Invalid project syntax. </entry>                                        
+    <entry key="InvalidPath">Invalid or unusable file path. </entry>                                        
+    <entry key="ProjectNotOpened">No project is currently open. </entry>                                        
+    <entry key="NotAuthorized">This operation is not authorized. </entry>                                        
+    <entry key="InvalidFileName">Invalid file name syntax. </entry>                                        
+    <entry key="FileNotFound">Local file not found. </entry>                                        
+    <entry key="ConnectFailed">Could not connect to source control server. </entry>          
+    <entry key="Unknown">Unknown error.</entry>       
+    <entry key="InvalidCommand">Invalid command, try help verctrl.m.</entry>           
+    <entry key="MemoryError">Verctrl failed due to memory allocation problem.</entry>    
+    <entry key="InvalidSecondParameter">Invalid data type for the second argument. Must be a cell array or a window handle.</entry>        
+    <entry key="InvalidThirdParameter">Invalid data type for the third argument. Must be a window handle.</entry>        
+    <entry key="ProviderNotInstalled">Source control provider is not installed properly.</entry>
+    <entry key="NoValue"> No value supplied with option \" {0}\" .</entry>     
+    <entry key="InvalidArgument">Invalid argument {0}</entry>
+    <entry key="InvalidOption">Input {0} is not a valid option name.</entry>
+    <entry key="PromptMode">Comments and KeepCheckout flags ignored in prompt mode.</entry>
+    <entry key="NoProvider">Source control provider not installed properly.</entry>
+    <entry key="ProviderNotSelected">No source control system is configured. Select a source control system from preferences.</entry>
+    <entry key="ProviderFailedToLoad">Failed to load source code control provider.</entry>
+    <entry key="FailedToInitialize">Unable to initialize the source control provider.</entry>
+    <entry key="DiffError">The file is identical to latest version under source control.</entry>
+    <entry key="NoJava">Could not perform the requested operation. Java not available.</entry>
+    <entry key="InvalidHandle">Invalid or empty Window handle specified.</entry>
+    <entry key="NoDirectory">No directory name supplied.</entry>
+    <entry key="NoFiles">No files specified for version control command {0}.</entry>
+    <entry key="BadWindowHandle">Invalid or empty window handle specified.</entry> 
+    <entry key="VerctrlDeprecationUnix">This source control function will be removed in a future release. Use MathWorks built-in source control integration instead.</entry>
+    <entry key="VerctrlDeprecationWindows">This source control function will be removed in a future release. The MATLAB integration with Microsoft Source Code Control Interface (MSSCCI) is now supported by a download. Go to <![CDATA[<a href="http://mathworks.com">http://mathworks.com</a>]]> for more information.</entry>
+  </message>
+</rsccat>

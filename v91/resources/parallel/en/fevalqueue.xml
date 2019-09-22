@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!-- Copyright 2013-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+    <entry key="CouldNotInterpretFunction">An error occurred interpreting function call.</entry>
+    <entry key="CreateFutureFunctionBadSize">Cell array of input functions must be the same size as the cell array of input arguments.</entry>
+    <entry key="CreateFutureFunctionConsistency">Function must be a function_handle or character vector.</entry>
+    <entry key="CreateFutureInputArgsCells">InputArguments parameter must be a cell array of vector cell arrays, or a vector cell array.</entry>
+    <entry key="CreateFutureInvalidNumOutputs">NumOutputArguments must be a real numeric integer.</entry>
+    <entry key="CreateFutureNegativeNumOutputArgs">NumberOfOutputArguments must be a non-negative value.</entry>
+    <entry key="CreateFutureNumArgs">Two or three input arguments required for Future creation.</entry>
+    <entry key="CreateFutureNumOutputsBadSize">NumOutputArguments must be the same size as the cell array of input arguments.</entry>
+    <entry key="DeletedObject">Deleted object</entry>
+    <entry key="ErrorSerializingResult">An error occurred serializing the result of the function evaluation.</entry>
+    <entry key="ExecutionCancelled">Execution of the future was cancelled.</entry>
+    <entry key="ExecutionErrors">One or more futures resulted in an error.</entry>
+    <entry key="FailedToInterpretState">Failed to interpret state.</entry>
+    <entry key="FetchNextFutureErrored">The function evaluation completed with an error.</entry>
+    <entry key="FetchNextInvalidFuture">fetchNext cannot operate on Futures in state ''unavailable''.</entry>
+    <entry key="FetchNextTimeoutScalar">The timeout parameter to fetchNext must be a numeric scalar.</entry>
+    <entry key="FetchNextUnequalQueues">fetchNext can only be used on Futures submitted to the same parallel pool.</entry>
+    <entry key="FetchOutputsConcatenationFailed">fetchOutputs could not concatenate the OutputArguments. Set ''UniformOutput'' to false.</entry>
+    <entry key="FetchOutputsOnUnavailableFuture">fetchOutputs cannot operate on Futures in state ''unavailable''.</entry>
+    <entry key="FetchOutputsScalarFevalOnAll">fetchOutputs does not accept arrays of FevalOnAllFutures.</entry>
+    <entry key="FetchOutputsSyntax">fetchOutputs must be called either with a single input argument, or with two additional arguments specifying ''UniformOutput'' as a logical scalar.</entry>
+    <entry key="FevalOnAllVectorizedCreation">Vectorized creation of FevalOnAllFutures is not supported.</entry>
+    <entry key="FevalOnAllWorkerFailed">A worker failed while executing a FevalOnAllFuture.</entry>
+    <entry key="FuturesInStateFailed">One or more futures are in state ''failed''.</entry>
+    <entry key="InvalidExecutionResult">An error occurred interpreting the results of the function evaluation.</entry>
+    <entry key="InvalidQueue">The FutureQueue is not running.</entry>
+    <entry key="InvalidStateForSubmission">Futures must be in state ''pending'' prior to submission.</entry>
+    <entry key="InvalidStateToWait">It is not possible to wait for state: {0}. Valid states to wait for are: {1}.</entry>
+    <entry key="NoFevalOnWorkers">Workers cannot execute parfeval or parfevalOnAll.</entry>
+    <entry key="NoResourcesForQueue">No workers are available for FevalQueue execution.</entry>
+    <entry key="NoResultAvailable">No result was produced by the worker. The worker may have crashed or encountered some other problem.</entry>
+    <entry key="NoUnreadFutures">There are no unread Futures to fetch. Use fetchOutputs to fetch all outputs.</entry>
+    <entry key="PoolRequiredForParfeval">Create a parallel pool using parpool before using parfeval or parfevalOnAll.</entry>
+    <entry key="TooManyOutputsRequested">Too many output arguments requested.</entry>
+    <entry key="WaitOnUnavailableFuture">Cannot wait for completion of Futures that are in state ''unavailable''.</entry>
+    <entry key="WaitOnUnsubmittedFuture">Cannot wait for completion of Futures that have not been submitted for execution.</entry>
+  </message>
+</rsccat>

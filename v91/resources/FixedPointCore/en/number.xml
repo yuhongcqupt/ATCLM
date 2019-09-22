@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="FixedPointCore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="ArrayDimMustAgree">Array dimensions must agree.</entry>
+    <entry key="IndexAssignElementCountMismatch">In an assignment A(I) = B, the number of elements in B and I must be the same.</entry>
+    <entry key="bitIndexOutOfRange">A bit position is not an integer in the appropriate range.</entry>
+  </message>
+</rsccat>

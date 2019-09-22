@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2010-2012 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="sqldb" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="IllegalArgument">sqldbInternal must have string as a first argument</entry>
+    <entry key="UnknownCallback">Unknown sqldbInternal callback: {0}.</entry>
+    <entry key="CheckJDBCServicesNumberArgumentError">CheckJDBCServicesArgumentError expects at least 3 arguments, but got {0,number,integer}.</entry>
+    <entry key="CheckJDBCServicesArgumentError">CheckJDBCServicesArgumentError expects only string arguments (4 arguments: path to jdbc driver, connection string, vector of strings, test string or 3 arguments: connection string, vector of strings, test string. If the path to the JDBC driver wasn't provided  JDBC driver jar file should be in MATLAB javaclasspath).</entry>
+    
+  </message>
+</rsccat>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2009-2014 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="BlkSpecifiedInvDWorkNum">Invalid number of data type work vectors ({0,number,integer}) has been specified by ''{1}''. Number of data type work vectors must be dynamically sized (-1) or greater than or equal to zero</entry>
+    <entry key="CannotInitWidthOfDynmSizedDWork">Cannot initialize the width of data type work vector {0,number,integer} of ''{1}''. The data type work vector width is set to dynamically sized (-1). Initialize the data type work vector width in mdlInitializeSizes or mdlSetWorkWidths</entry>
+    <entry key="CannotResetDWorkNum">Number of data type work vectors has already been set. {0} {1} cannot reset this value</entry>
+    <entry key="DWorkArraySizeOverflowsInteger">The ''{0}'' block has requested a data type work vector ({1,number,integer}) consisting of {2,number,integer} {3,number,integer}-byte elements. Simulink cannot allocate this vector because its size exceeds the limit of a 32-bit integer. Examine block parameters that potentially result in large memory requirements.</entry>
+    <entry key="DWorkInvalidIdentifier">The name ''{0}'' assigned to state of ''{1}'' is not a valid identifier. Valid identifiers start with an alphabetic or ''_'' character, followed by alpha numeric or ''_'' characters. Identifiers starting with ''rt'' are reserved by Simulink Coder, but can be allowed by opening the Configuration Parameters dialog and setting the ''rt prefix for identifiers'' setting to ''warning'' or ''none''</entry>
+    <entry key="SFcnDWorkAttributeConflictErr1">Invalid storage class id ({0,number,integer}) specified for dwork {1,number,integer} for ''{2}''</entry>
+    <entry key="SFcnDWorkAttributeConflictErr2">Can not specify type qualifier for dwork {0,number,integer} for ''{1}'' when its storage class is auto</entry>
+    <entry key="SFcnDWorkAttributeConflictErr3">Can not select MustResolveToSignalObject for dwork {0,number,integer} for ''{1}'' unless its storage class is auto</entry>
+    <entry key="SFcnDWorkAttributeConflictErr4">Can not select MustResolveToSignalObject for dwork {0,number,integer} for ''{1}'' when its identifier is not specified</entry>
+    <entry key="SFcnDWorkAttributeConflictErr5">Must specify an identifier for dwork {0,number,integer} for ''{1}'' when its storage class is not auto</entry>
+    <entry key="StateAttributeConflictErr1">Can not specify RTWStateStorageTypeQualifier for ''{0}'' when RTWStateStorageClass is ''Auto''</entry>
+    <entry key="StateAttributeConflictErr2">Can not select StateMustResolveToSignalObject for ''{0}'' unless RTWStateStorageClass is ''Auto''</entry>
+    <entry key="StateAttributeConflictErr3">Can not select StateMustResolveToSignalObject for ''{0}'' when StateIdentifier is empty</entry>
+    <entry key="StateAttributeConflictErr4">Must specify StateIdentifier for ''{0}'' when RTWStateStorageClass is not ''Auto''</entry>
+  </message>
+</rsccat>

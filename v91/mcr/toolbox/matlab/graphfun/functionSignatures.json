@@ -1,0 +1,16 @@
+{
+"plot":
+{
+        "inputs":
+        [
+                {"name":"ax", "kind":"optional", "type":"matlab.graphics.axis.Axes"},
+                {"name":"G", "kind":"required", "type":[["graph"],["digraph"]]},
+                {"name":"Layout", "kind":"namevalue", "type":["char","choices={'auto','circle','force','layered','subspace'}"]},
+                {"name":"options", "kind":"varargin", "type":"matlab.graphics.chart.primitive.GraphPlot"}
+        ],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.chart.primitive.GraphPlot"}
+	]
+}
+}

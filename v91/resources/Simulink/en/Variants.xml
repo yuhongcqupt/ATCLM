@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2009-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="CodeVariantConfigExternalMode">You have chosen to generate preprocessor conditionals for one or more Variant blocks, but ''External mode'' data exchange is selected. Preprocessor conditionals are not supported when data exchange is set to ''External mode''.</entry>
+    <entry key="CodeVariantConfigRightClickSIL">You have chosen to generate preprocessor conditionals for one or more Variant blocks, but are also generating an ERT S-Function for a subsystem.  Preprocessor conditionals are not supported when generating an ERT S-Function for a subsystem.</entry>
+    <entry key="CodeVariantCustomStorageClassesIgnored">You have chosen to generate preprocessor conditionals for one or more Variant blocks, but ''Ignore custom storage classes'' is selected. Preprocessor conditionals require custom storage classes.</entry>
+    <entry key="CodeVariantCustomStorageClassesIgnoredEncapCPP">You have chosen to generate preprocessor conditionals for one or more Variant blocks, but the ''C++ class'' code interface packaging cannot be used when generating preprocessor conditionals.</entry>
+    <entry key="CodeVariantIllegalConstOupTs">The sample time of output {0,number,integer} of {1} is constant, but constant output port sample times are not supported for model variants when generating preprocessor conditionals.</entry>
+    <entry key="CodeVariantInconsistentInpStorageClass">The storage class of input {0,number,integer} of {1} is not consistent with the storage class of the same port of the other variants.</entry>
+    <entry key="CodeVariantInconsistentInpTypeQual">The storage type qualifier of input {0,number,integer} of {1} is not consistent with the storage type qualifier of the same port of the other variants.</entry>
+    <entry key="CodeVariantInconsistentInpIdent">The identifier of input {0,number,integer} of {1} is not consistent with the identifier of the same port of the other variants.</entry>
+    <entry key="CodeVariantInconsistentInpBusType">The bus type setting (virtual or nonvirtual) of input {0,number,integer} of ''{1}'' is not consistent with the bus type setting(s) of the same port of the other variant(s).</entry>
+    <entry key="CodeVariantInconsistentBusInterface">The bus interface of variant choice blocks of ''{0}'' are not consistent. Try modifying your model to have same bus interface for all the  variant choice blocks.</entry>
+    <entry key="CodeVariantInconsistentInpBusTypeTrans">The bus type transition setting of input {0,number,integer} of ''{1}'' is not consistent with the bus type transition setting(s) of the same port of the other variant(s).</entry>
+    <entry key="CodeVariantInconsistentInpCmplxIR">Input {0,number,integer} of {1} is complex, yet it should be non-complex to be consistent with the other variants.</entry>
+    <entry key="CodeVariantInconsistentInpCmplxRI">Input {0,number,integer} of {1} is non-complex, yet it should be complex to be consistent with the other variants.</entry>
+    <entry key="CodeVariantInconsistentInpDataType">The data type of input {0,number,integer} of {1} is ''{2}'', yet it should be ''{3}'' to be consistent with the other variants.</entry>
+    <entry key="CodeVariantInconsistentInpDims">The dimensions of input {0,number,integer} of {1} are not consistent with the dimensions of the same port of the other variants.</entry>
+    <entry key="CodeVariantInconsistentInpDimsModeFV">Input {0,number,integer} of {1} is of fixed dimensions, yet it should be of variable dimensions to be consistent with the other variants.</entry>
+    <entry key="CodeVariantInconsistentInpDimsModeVF">Input {0,number,integer} of {1} is of variable dimensions, yet it should be of fixed dimensions to be consistent with the other variants.</entry>
+    <entry key="CodeVariantInconsistentInpFrmNY">Input {0,number,integer} of {1} is non-framed, yet it should be framed to be consistent with the other variants.</entry>
+    <entry key="CodeVariantInconsistentInpFrmYN">Input {0,number,integer} of {1} is framed, yet it should be non-framed to be consistent with the other variants.</entry>
+    <entry key="CodeVariantInconsistentInpTs">The sample time of input {0,number,integer} of {1} is {2}, yet it should be {3} to be consistent with the other variants.</entry>
+    <entry key="CodeVariantInconsistentNumInputs">{0} has {1,number,integer} inputs, yet it should have {2,number,integer} inputs to be consistent with the other variants.</entry>
+    <entry key="CodeVariantInconsistentNumOutputs">{0} has {1,number,integer} outputs, yet it should have {2,number,integer} outputs to be consistent with the other variants.</entry>
+    <entry key="CodeVariantInconsistentOupStorageClass">The storage class of output {0,number,integer} of {1} is not consistent with the storage class of the same port of the other variants.</entry>
+    <entry key="CodeVariantInconsistentOupTypeQual">The storage type qualifier of output {0,number,integer} of {1} is not consistent with the storage type qualifier of the same port of the other variants.</entry>
+    <entry key="CodeVariantInconsistentOupIdent">The identifier of output {0,number,integer} of {1} is not consistent with the identifier of the same port of the other variants.</entry>
+    <entry key="CodeVariantInconsistentOupBusType">The bus type setting (virtual or nonvirtual) of output {0,number,integer} of {1} is not consistent with the bus type setting(s) of the same port of the other variant(s).</entry>
+    <entry key="CodeVariantInconsistentOupBusTypeTrans">The bus type transition setting of output {0,number,integer} of {1} is not consistent with the bus type transition setting(s) of the same port of the other variant(s).</entry>
+    <entry key="CodeVariantInconsistentOupCmplxIR">Output {0,number,integer} of {1} is complex, yet it should be non-complex to be consistent with the other variants.</entry>
+    <entry key="CodeVariantInconsistentOupCmplxRI">Output {0,number,integer} of {1} is non-complex, yet it should be complex to be consistent with the other variants.</entry>
+    <entry key="CodeVariantInconsistentOupDataType">The data type of output {0,number,integer} of {1} is ''{2}'',  yet it should be ''{3}'' to be consistent with the other variants.</entry>
+    <entry key="CodeVariantInconsistentOupDims">The dimensions of output {0,number,integer} of {1} are not consistent with the dimensions of the same port of the other variants.</entry>
+    <entry key="CodeVariantInconsistentOupDimsModeFV">Output {0,number,integer} of {1} is of fixed dimensions, yet it should be of variable dimensions to be consistent with the other variants.</entry>
+    <entry key="CodeVariantInconsistentOupDimsModeVF">Output {0,number,integer} of {1} is framed, yet it should be non-framed to be consistent with the other variants.</entry>
+    <entry key="CodeVariantInconsistentOupFrmNY">Output {0,number,integer} of {1} is non-framed, yet it should be framed to be consistent with the other variants.</entry>
+    <entry key="CodeVariantInconsistentOupFrmYN">Output {0,number,integer} of {1} is framed, yet it should be non-framed to be consistent with the other variants.</entry>
+    <entry key="CodeVariantInconsistentOupTs">The sample time of output {0,number,integer} of {1} is {2}, yet it should be {3} to be consistent with the other variants.</entry>
+    <entry key="CodeVariantMdlRefCStates">Variant {0,number,integer} ({1}) of the variant model block ''{2}'' may not be used because the model ''{3}'' has continuous states; the generation of preprocessor conditionals does not support continuous states</entry>
+    <entry key="CodeVariantMdlRefFCall">Variant {0,number,integer} ({1}) of the variant model block ''{2}'' may not be used because the model ''{3}'' has a function call port; model variants do not support function call ports</entry>
+    <entry key="CodeVariantMdlRefTrigger">Variant {0,number,integer} ({1}) of the variant model block ''{2}'' may not be used because the model ''{3}'' has a trigger port; model variants do not support trigger ports</entry>
+    <entry key="CodeVariantMdlRefEnable">Variant {0,number,integer} ({1}) of the variant model block ''{2}'' may not be used because the model ''{3}'' has an enable port; model variants do not support enable ports</entry>
+    <entry key="CodeVariantMdlRefMassMatrix">Variant {0,number,integer} ({1}) of the variant model block ''{2}'' may not be used because the model ''{3}'' has a mass matrix; model variants don''t support mass matrices.</entry>
+    <entry key="CodeVariantSubsysCStates">Subsystem variant {0} of the variant subsystem block {1} can not be used because the subsystem {2} has continuous states; the generation of preprocessor conditionals does not support continuous states</entry>
+    <entry key="CodeVariantSubsysMassMatrix">Subsystem variant {0} of the variant subsystem block {1} can not be used because the subsystem {2} has a mass matrix; the generation of preprocessor conditionals does not support mass matrices.</entry>
+    <entry key="CannotChangeRTWSystemCodeParam">Cannot set the "Function packaging" (RTWSystemCode) parameter of Variant Subsystem ''{0}'' to a non-auto value.</entry>
+    <entry key="CannotInsertRateTransition">Multiple rates are feeding Outport block, ''{0}'', of Variant Subsystem block, ''{1}''.To fix this issue, you need to ensure that the rate of the signal from each choice feeding the Outport is the same.</entry>
+    <entry key="CannotInsertRateTransitionForIV">Block ''{0}'' output port {1, number, integer} is connected to ''{2}'' which has a different sample time and also have propagated condition on it's ports due to Variant blocks. Try modifying the model to have same propagated condition on all input and output ports of the block ''{3}''.</entry>
+    <entry key="InconsistentActivePort">The active port selected at ''{0}'' and its matching VariantEnd block is not consistent</entry>
+    <entry key="VariantConditionEmpty">Variant condition expression used in block ''{0}'' is empty.</entry>
+    <entry key="VariantConditionEmptyNoContext">Variant condition expression is empty.</entry>
+    <entry key="VariantConditionParseError">The variant control expression ''{0}'' used by block ''{1}'' is invalid.</entry>
+    <entry key="CannotOverrideVariant">Cannot override variant block ''{0}'' with variant control ''{1}''.</entry>
+    <entry key="VariantConditionEnumTypeName">Enumerated type name ''{0}'' can only be used in an expression as the left-hand side of ''{1}.enumeral''. ''{2}'' was found without ''.enumeral'' in variant {3} condition expression ''{4}'' used by block ''{5}''.</entry>
+    <entry key="VariantConditionEnumTypeNameExpr">Enumerated type name ''{0}'' can only be used in an expression as the left-hand side of ''{1}.enumeral''. ''{2}'' was found without ''.enumeral'' in variant condition expression ''{3}'' used by block ''{4}''.</entry>
+    <entry key="VariantConditionEnumTypeNameNoContext">Enumerated type name ''{0}'' can only be used in an expression as the left-hand side of ''{1}.enumeral''. ''{2}'' was found without ''.enumeral'' in variant {3} condition expression ''{4}''.</entry>
+    <entry key="VariantConditionExceedsArgLimit">Argument list of ''{0}'' exceeding supported limit.</entry>
+    <entry key="VariantConditionIncorrectExprResultDataType">Result type of variant ''{0}'' condition expression ''{1}'' is {2}. Must be Boolean.</entry>
+    <entry key="VariantConditionIncorrectFuncArgumentCount">Number of arguments supported for ''{0}'' is {1,number,integer}. Please correct the usage.</entry>
+    <entry key="VariantConditionInvalidBitshiftSecondArgument">Second argument of bitshift is not a constant integer literal. If second argument is positive, it does a left shift and if it is negative, it does a right shift. Please correct the usage.</entry>
+    <entry key="VariantConditionInvalidArgumentList">Invalid argument list found, Please try to call with a function.</entry>
+    <entry key="VariantConditionUnsupportedFunction">Function call ''{0}'' not supported for code generation, only bitand, bitor, bitxor, bitcmp, bitshift and idivide are supported</entry>    
+    <entry key="VariantConditionInvalidDotLHS">''{0}'' is not allowed as the left-hand side of ''{1}.{2}'' in variant {3} condition expression ''{4}'' used by block ''{5}''. Only enumerated type names are allowed.</entry>
+    <entry key="VariantConditionInvalidDotLHSExpr">''{0}'' is not allowed as the left-hand side of ''{1}.{2}'' in variant condition expression ''{3}'' used by block ''{4}''. Only enumerated type names are allowed.</entry>
+    <entry key="VariantConditionInvalidDotLHSNoContext">''{0}'' is not allowed as the left-hand side of ''{1}.{2}'' in variant {3} condition expression ''{4}''. Only enumerated type names are allowed.</entry>
+    <entry key="VariantConditionInvalidEnumeral">''{0}'' is not a valid enumeral of enumerated type ''{1}'' in variant {2} condition expression ''{3}'' used by block ''{4}''.</entry>
+    <entry key="VariantConditionInvalidEnumeralExpr">''{0}'' is not a valid enumeral of enumerated type ''{1}'' in variant condition expression ''{2}'' used by block ''{3}''.</entry>
+    <entry key="VariantConditionInvalidEnumeralNoContext">''{0}'' is not a valid enumeral of enumerated type ''{1}'' in variant {2} condition expression ''{3}''.</entry>
+    <entry key="VariantConditionNotVariantObject">The variant control ''{0}'' of the variant block ''{1}'' must be a condition expression or name of a Simulink.Variant object in the global scope workspace of the model.</entry>
+    <entry key="VariantConditionNumericValue">Unsupported numeric value {0} in variant {1} condition expression ''{2}'' used by block ''{3}''. Only integers that can fit into the integer type for this system are allowed.</entry>
+    <entry key="VariantConditionNumericValueExpr">Unsupported numeric value {0} in variant condition expression ''{1}'' used by block ''{2}''. Only integers that can fit into the integer type for this system are allowed.</entry>
+    <entry key="VariantConditionNumericValueNoContext">Unsupported numeric value {0} in variant {1} condition expression ''{2}''. Only integers are allowed.</entry>
+    <entry key="VariantControlVariableModelName" note="stringDatatypeUpdate">You cannot set a variant control variable with name ''{0}'' for block ''{1}'' because it matches the name of the model ''{2}''. If this variable is referenced in the condition expression of a Simulink.Variant object that is defined in a global scope workspace, Simulink converts the condition expression to an empty character vector when you load or open the model.</entry>
+    <entry key="VariantConditionUndefinedObject">Object ''{0}'' in variant ''{1}'' condition expression ''{2}'' used by block ''{3}'' is not defined.
+      Variables used in variant expressions must be Simulink.Variant objects or variant control variables with scalar numeric values.
+      For code generation, variant control variables must be Simulink.Parameter objects with one of the following custom storage classes:\n
+      - Define or ImportedDefine with header file specified\n
+      - CompilerFlag\n
+      - SystemConstant (AUTOSAR.Parameter)\n
+      - User-defined custom storage class that defines data as a macro in a specified header file</entry>
+    <entry key="VariantConditionUnexpectedToken">Encountered unexpected token ''{0}'' in variant ''{1}'' condition expression ''{2}'' used by block ''{3}''.</entry>
+    <entry key="VariantConditionUnexpectedTokenExpr">Encountered unexpected token ''{0}'' in variant condition expression ''{1}'' used by block ''{2}''.</entry>
+    <entry key="VariantConditionUnexpectedTokenNoContext">Encountered unexpected token ''{0}'' in variant {1} condition expression ''{2}''.</entry>
+    <entry key="VariantConditionUnsupportedComplexity">Object ''{0}'' in variant ''{1}'' condition expression ''{2}'' used by block ''{3}'' must not be complex.</entry>
+    <entry key="VariantConditionUnsupportedDataType">Unsupported data type ''{0}'' for object ''{1}'' in variant {2} condition expression ''{3}'' used by block ''{4}''. Only Integer, Boolean and Enumerated types are allowed.
+      For code generation, variant control variables must be Simulink.Parameter objects with one of the following custom storage classes:\n
+      - Define or ImportedDefine with header file specified\n
+      - CompilerFlag\n
+      - SystemConstant (AUTOSAR.Parameter)\n
+      - User-defined custom storage class that defines data as a macro in a specified header file</entry>
+    <entry key="VariantConditionUnsupportedDataTypeInclFloat">Unsupported data type ''{0}'' for object ''{1}'' in variant {2} condition expression ''{3}'' used by block ''{4}''. Only Integer, Boolean, Enumerated, and Floating Point types are allowed.</entry>
+    <entry key="VariantConditionUnsupportedDimensions">Object ''{0}'' in variant ''{1}'' condition expression ''{2}'' used by block ''{3}'' must be scalar.</entry>
+	<entry key="VariantConditionUnsupportedObject">Unsupported object class for ''{0}'' in variant {1} condition expression ''{2}'' used by block ''{3}''. Only {4} allowed.
+      Variables used in variant expressions must be Simulink.Variant objects or variant control variables with scalar numeric values.
+      For code generation, variant control variables must be Simulink.Parameter objects with one of the following custom storage classes:\n
+      - Define or ImportedDefine with header file specified\n
+      - CompilerFlag\n
+      - SystemConstant (AUTOSAR.Parameter)\n
+      - User-defined custom storage class that defines data as a macro in a specified header file</entry>
+    <entry key="VariantConditionUnsupportedStorageClass">Unsupported storage class ''{0}'' for variant control variable ''{1}'' in variant {2} condition expression ''{3}'' used by block ''{4}''.
+      Specify one of the following custom storage classes:\n
+      - Define or ImportedDefine with header file specified\n
+      - CompilerFlag\n
+      - SystemConstant (AUTOSAR.Parameter)\n
+      - User-defined custom storage class that defines data as a macro in a specified header file</entry>
+    <entry key="VariantConditionUnsupportedCustomStorageClass">Unsupported custom storage class ''{0}'' for variant control variable ''{1}'' in variant {2} condition expression ''{3}'' used by block ''{4}''.
+      Specify one of the following custom storage classes:\n
+      - Define or ImportedDefine with header file specified\n
+      - CompilerFlag\n
+      - SystemConstant (AUTOSAR.Parameter)\n
+      - User-defined custom storage class that defines data as a macro in a specified header file</entry>
+    <entry key="VariantConditionUnsupportedStructuredness">Object ''{0}'' in variant ''{1}'' condition expression ''{2}'' used by block ''{3}'' must not be a structure.</entry>
+    <entry key="VariantFeatureDisabled">Error initializing block ''{0}''. The ''Variants'' feature has been disabled</entry>
+    <entry key="VariantGraphConflict">Graph conflict is detected at ''{0}. A block must not appear in multiple branches</entry>
+    <entry key="VariantInvNumPort">Number of ports specified in ''{0}'' is invalid.  Port numbers must be positive integer constants</entry>
+    <entry key="VariantLoop">An illegal variant loop is detected at block ''{0}''</entry>
+    <entry key="VariantNotMatchingVariantStartEnd">Variant block ''{0}'' has more than one matching variant blocks</entry>
+    <entry key="VariantObjectDependencyLoop1Object">There is a dependency loop in the Condition expression of Simulink.Variant object {0}, which is not allowed.</entry>
+    <entry key="VariantObjectDependencyLoopNObjects">There is a dependency loop in the Condition expressions of Simulink.Variant objects {0} and {1}, which is not allowed.</entry>
+    <entry key="VariantUnusedPortOfMatchingVariant">The matching variant block of ''{0}'' is not reach from this block. Variant usage rule violation</entry>
+    <entry key="VariantCannotBeChangedDuringCompilation">Block ''{0}'' attempted to change the active variant during simulation. The active variant must be configured before the simulation is started.</entry>
+    <entry key="SimCodegenUseTopModel">The "(sim)" and "(codegen)" variant keywords cannot be used in Variant block ''{0}'' in referenced model ''{1}''. They can only be used in the topmost model in the compiled hierarchy. </entry>
+    <entry key="VSSMultipleSimVariants">Variant Subsystem block ''{0}'' contains more than one ''(sim)'' variant choice which is invalid.</entry>
+    <entry key="VSSMultipleCodegenVariants">Variant Subsystem block ''{0}'' contains more than one ''(codegen)'' variant choice which is invalid.</entry>
+    <entry key="VSSSimCodegenOnlyVariants">It is invalid to specify any other variant choice for Variant Subsystem block ''{0}'' when ''(sim)'' and ''(codegen)'' variant choices are used together.</entry>
+    <entry key="VSSSimVariantNoCodegenVariant">Variant Subsystem block ''{0}'' contains ''(sim)'' variant as one variant choice. Its other variant choice must be ''(codegen)'' variant.</entry>
+    <entry key="VSSCodegenVariantNoSimVariant">Variant Subsystem block ''{0}'' contains ''(codegen)'' variant as one variant choice. Its other variant choice must be ''(sim)'' variant.</entry>
+    <entry key="VSSSimCodegenVariantsGPCMustBeOff">''GeneratePreprocessorConditionals'' for Variant Subsystem block ''{0}'' must be ''off'' when the block has ''(sim)'' and ''(codegen)'' variant choices.</entry>
+    <entry key="InlineVariantConditionCannotBeEmpty">Variant {0} block ''{1}'' cannot have an empty variant condition. Specify a variant condition as a Simulink.Variant object or a boolean expression.</entry>
+    <entry key="VariantConditionCannotBeEmpty">You cannot specify an empty variant condition for block ''{0}''. The variant condition must be a Simulink.Variant object or a boolean expression. </entry>
+    <entry key="InlineVariantCannotOverride">Variant {0} block ''{1}'' cannot be overridden to the specified condition, as it does not exist in variant control list.</entry>
+    <entry key="InlineVariantMultipleOverride">Variant {0} block ''{1}'' cannot be overridden to the specified condition, because there exists multiple overridden conditions.</entry> 
+    <entry key="InlineVariantWithMultipleActivePortsAndAZVCOn">Variant {0} block ''{1}'' must have no active ports or only one active port.</entry>
+    <entry key="InlineVariantWithMultipleActivePortsAndAZVCOff">Variant {0} block ''{1}'' must have only one active port.</entry>
+    <entry key="InlineVariantWithMultipleDefaultPorts">Variant {0} block ''{1}'' has multiple default ports. Only one port can be specified as the default port.</entry>
+    <entry key="InlineVariantSingleDefaultChoice">The variant {0} block ''{1}'' contains only one {2} port, which is also specified as the default port. Add at least one more {3} port before specifying the default port.</entry>
+    <entry key="InlineVariantMismatchVariantControls">Number of {0} ports in variant {1} block ''{2}'' does not match the number of elements defined in variant controls.</entry>
+    <entry key="InlineVariantExpectCellArray" note="stringDatatypeUpdate">Specify variant controls for variant {0} block ''{1}'' as a cell array of character vectors</entry>
+    <entry key="VariantSrcBusTypesMustBeSame">Invalid connection detected for ''{0}'' at input port {1,number,integer}. All inputs to a Variant source block need to have identical signal names and hierarchies.</entry>
+    <entry key="InlineVariantZeroVariantsNotAllowed"><![CDATA[The variant {0} block ''{1}'' does not contain an active variant. <actions exclusiveFixIts="yes"><action cmd="matlab:slprivate(''variantfixes'',''InlineVariantZeroVariantsNotAllowed'',''enable_azvc'',''{1}'')" type="fixit">If you want to explicitly allow zero variants for this block, select the "Allow zero active variant controls" check box in the block dialog box.</action></actions> ]]></entry>
+    <entry key="InlineVariantZeroVariantsNotAllowedFixAZVC">The value of parameter 'AllowZeroVariantControls' is set to 'on'</entry>
+    <entry key="InlineVariantExtInputNotSupported">The root inport block ''{0}'' has a variant condition and the model is configured to accept external inputs. This requires that you specify a comma separated list, corresponding to each of the root input port, in Configuration Parameters -> Data Import/Export -> Input.</entry>
+    <entry key="InlineVariantExtInputDimensionUnknown">The root inport block ''{0}'' has a variant condition, which requires that the block parameter 'Port Dimensions' be explicitly specified (it cannot be set to inherited, -1).</entry>
+    <entry key="InlineVariantExtOutputNotSupported"><![CDATA[Root outport block ''{0}'' has a variant condition and the model is configured to log outputs.<actions exclusiveFixIts="yes"><action cmd="matlab:slprivate(''variantfixes'',''InlineVariantExtOutputNotSupported'',''specify_csv_list'',{1,number,integer})" type="fixit"> When logging variant Outport blocks in Array, Structure, or Structure with time formats you must specify a comma separated list of variable names, one per Outport block, in the <a href="matlab:load_system(bdroot);configset.highlightParameter(bdroot,'OutputSaveName')">Data Import/Export Pane</a> of the Configuration Parameters Dialog Box.</action></actions> ]]></entry>
+    <entry key="InlineVariantExtOutputNotSupportedFixCSVList"><![CDATA[A comma separated list of variables is specified for the parameter <a href="matlab:load_system(bdroot);configset.highlightParameter(bdroot,'OutputSaveName')">OutputSaveName</a>.]]></entry>
+    <entry key="InlineVariantFunctionCallCodeReuse">The specified value of the ''Code generation function packaging'' parameter for the block ''{0}'' is not supported with Variant Source or Variant Sink blocks. Consider changing the value of this parameter to ''Inline'' or ''Auto''.</entry>
+    <entry key="InlineVariantCodeReuseForExportFunctions">The conditions propagated to the input ports of the block ''{0}'' are different, and the model is configured for export-functions. Models with export functions do not support ports with different propagated conditions. Consider changing the model to have same propagated condition on the ports of the block ''{1}''. You can do this by inserting Variant Source blocks that result in consistent conditions at the input ports of the block.</entry>
+    <entry key="InlineVariantConfigExternalMode">You have selected ''External mode'' data exchange for the model, and it has Variant blocks. Variant blocks are not supported when ''External mode'' data exchange is selected.</entry>
+    <entry key="InlineVariantConfigIgnoreCPP">You have chosen ''C++ class'' code interface packaging and model has Variant blocks. Variant blocks are not supported with ''C++ class''.</entry>
+    <entry key="InlineVariantConfigIgnoreFcnProtoCtrl">You have chose function prototype control and model has Variant blocks. Variant blocks are not supported with function prototype control.</entry>
+    <entry key="InlineVariantMultipleSimVariants">Variant {0} block ''{1}'' contains more than one ''(sim)'' variant choice which is invalid.</entry>
+    <entry key="InlineVariantMultipleCodegenVariants">Variant {0} block ''{1}'' contains more than one ''(codegen)'' variant choice which is invalid.</entry>
+    <entry key="InlineVariantSimCodegenOnlyVariants">It is invalid to specify any other variant choice for Variant {0} block ''{1}'' when ''(sim)'' and ''(codegen)'' variant choices are used together.</entry>
+    <entry key="InlineVariantSimNoCodegenVariant">Variant {0} block ''{1}'' contains ''(sim)'' variant as one variant choice. Its other variant choice must be ''(codegen)'' variant.</entry>
+    <entry key="InlineVariantCodegenNoSimVariant">Variant {0} block ''{1}'' contains ''(codegen)'' variant as one variant choice. Its other variant choice must be ''(sim)'' variant.</entry>
+    <entry key="InlineVariantSimCodegenVariantsGPCMustBeOff">''GeneratePreprocessorConditionals'' for Variant {0} block ''{1}'' must be ''off'' when the block has ''(sim)'' and ''(codegen)'' variant choices.</entry>
+    <entry key="InlineVariantSimCodegenVariantsAZVCMustBeOff">''AllowZeroVariantControls'' for Variant {0} block ''{1}'' must be ''off'' when the block has ''(sim)'' and ''(codegen)'' variant choices.</entry>
+    <entry key="InlineVariantMdlrefMultiInstNormalModeVisibility"><![CDATA[Referenced model {0} is referenced more than one time in normal mode and the visible instance has been disabled due to Inline Variants. Select an active instance of this model to be visible using the <a href="matlab:Simulink.ModelReference.NormalModeVisibility(''{1}'')">Model Block Normal Model Visibility Editor</a>.]]></entry>
+    <entry key="CSStoVSSGUITitle">Convert to Variant Subsystem: </entry>
+    <entry key="CSStoVSSGUIdescText">Simulink copies the block choices of the configurable subsystem to the variant subsystem. By default, the copy operation does not create links to the configurable subsystem library. Also, the current block choice is made the active variant selection.\n\nThe table allows assigning of variant controls to the choices in the variant subsystem.</entry>
+    <entry key="CSStoVSSGUICheckBoxName">Copy without creating links to the configurable subsystem library</entry>
+    <entry key="CSStoVSSGUICheckBoxGroupName">Specify copy option</entry>
+    <entry key="CSStoVSSGUIVariantGroupName">Specify variant controls</entry>
+    <entry key="CSStoVSSGUIDescription">Description</entry>
+    <entry key="CSStoVSSConversionStage">Configurable Subsystem to Variant Subsystem</entry>
+    <entry key="SubsystemToVariant">Subsystem To Variant Subsystem</entry>
+    <entry key="ErrorInValidatingConfigLong">Error in validating the model ''{0}'' which is using variant configuration ''{1}'' of object ''{2}''.</entry>
+    <entry key="ErrorInValidatingConfigShort">Error in validating the model ''{0}'' which is using variants configuration data object ''{1}''.</entry>
+    <entry key="ControlVariableInConflict">Value of the control variable ''{0}'' conflicts with value in configuration ''{1}'' used by model ''{2}''.</entry>
+    <entry key="SubmodelConfigInConflict">Submodel configuration ''{0}'' for submodel ''{1}'' is in conflict with value ''{2}'' in configuration ''{3}'' used by model ''{4}''.</entry>
+    <entry key="ConfigInConflictWithPreviousValidation">Cannot validate model ''{0}'' using variant configuration ''{1}'' as it has already been validated for configuration ''{2}'' earlier in the hierarchy.</entry>
+    <entry key="ConfigInConflictWithPreviousSelection">Cannot validate model ''{0}'' using variant configuration ''{1}'' as it conflicts with submodel configuration selection ''{2}'' in model ''{3}'' earlier in the hierarchy.</entry>
+    <entry key="FailedConstraint">Constraint ''{0}'' is not satisfied.</entry>
+    <entry key="ConfigDataNotFound">Variant configuration data object ''{0}'' not found.</entry>
+    <entry key="VariantConfigurationRequired">Variant configuration data object is required for ''{0}''.</entry>
+    <entry key="ConfigDataNotFoundForConfig">Variant configuration data object ''{0}'' required for configuration ''{1}'' not found.</entry>
+    <entry key="EmptyConfigurationName">Name of variant configuration cannot be empty.</entry>
+    <entry key="SkippingValidation">Skipping further validation of the variant configuration ''{0}''.</entry>
+    <entry key="Ignored">(Ignored)</entry>
+    <entry key="ErrorInEvalOfVarCondition">Variant condition ''{0}'' of variant object ''{1}'' used by block ''{2}'' should return a logical value.</entry>
+    <entry key="ErrorInEvalOfBeginningOfVarControl">You cannot specify the variant control for the block ''{0}'' to be ignored. Remove the "%" in front of the "Variant control" block parameter value of ''{1}'' to specify the variant condition.</entry>
+    <entry key="ErrorInEvalOfVarControl">Variant control ''{0}'' used by block ''{1}'' should return a logical value.</entry>
+    <entry key="InvalidModelName">Argument must be name of a model.</entry>
+    <entry key="InvalidModelNameOrHandle">Argument must be name or handle of a model.</entry>
+    <entry key="InvalidElement">Invalid element at index ''{0}''.</entry>
+    <entry key="InvalidVectorOfConfigs">Invalid vector of variant configurations.</entry>
+    <entry key="VariantConfigMustBeUnique">Variant configurations must have unique names.</entry>
+    <entry key="InvalidVectorOfConstraints">Invalid vector of constraints.</entry>
+    <entry key="ConstraintsMustBeUnique">Constraints must have unique names.</entry>
+    <entry key="InvalidVectorOfSubModelConfigs">Invalid vector of submodel configurations.</entry>
+    <entry key="InvalidVectorOfControlVars">Invalid vector of control variables.</entry>
+    <entry key="NonUniqueFieldValues">Values of the field ''{0}'' are not unique.</entry>
+    <entry key="ArgNotVectorOfStructs">Argument must be vector of structures.</entry>
+    <entry key="RequiredFieldsNotFound">Required field(s) not found in vector of structures.</entry>
+    <entry key="InvalidFieldValues">Invalid value(s) of field ''{0}''.</entry>
+    <entry key="InvalidControlVarValue">Invalid value of a control variable.</entry>
+    <entry key="InvalidVariableName">Invalid MATLAB variable name.</entry>
+    <entry key="ValueNotString" note="stringDatatypeUpdate">Value is not a character vector.</entry>
+    <entry key="ConfigNotFound">Variant configuration ''{0}'' not found.</entry>
+    <entry key="AnotherConfigExists">Another variant configuration with name ''{0}'' exists.</entry>
+    <entry key="ControlVarNotFound">Control variable ''{0}'' not found in variant configuration ''{1}''.</entry>
+    <entry key="AnotherControlVarExists">Another control variable with name ''{0}'' exists in variant configuration ''{1}''.</entry>
+    <entry key="ControlVarsMustBeUnique">Control variables in a variant configuration must have unique names.</entry>
+    <entry key="SubModelNotFound">Submodel name ''{0}'' not found in variant configuration ''{1}''.</entry>
+    <entry key="AnotherSubModelExists">Another entry for submodel ''{0}'' exists in variant configuration ''{1}''.</entry>
+    <entry key="ConstraintNotFound">Constraint ''{0}'' not found.</entry>
+    <entry key="AnotherConstraintExists">Another constraint with name ''{0}'' exists.</entry>
+    <entry key="SubModelEntriesMustBeUnique">Names of submodels in a variant configuration must be unique.</entry>
+    <entry key="DataSourceBase">Base Workspace</entry>
+    <entry key="DataSourceDictionary">Data Dictionary ''{0}''</entry>
+    <entry key="DataSourceConfig">Configuration ''{0}'' of variant configuration data object ''{1}''</entry>
+    <entry key="DataSourceUnsaved">Configuration ''{0}'' of unexported variant configuration data object ''{1}''</entry>
+    <entry key="DataSourceUnsavedNoData">Configuration ''{0}'' of unnamed variant configuration data object being edited</entry>
+    <entry key="ChoiceNotFound">Choice ''{0}'' with variant control ''{1}'' not found at index ''{2}''.</entry>
+    <entry key="InvalidFirstArgOfSaveConfigsFunc">The first argument must be a model name or a cell array containing model and variant configuration names or control variables.</entry>
+    <entry key="InvalidSecondArgOfSaveConfigsFunc">The second argument must be the relative or absolute path to a folder.</entry>
+    <entry key="CannotCreateOutputDir">Unable to create output folder ''{0}''.</entry>
+    <entry key="OutputDirNotWritable">Unable to write to output folder ''{0}''. Model copies cannot be saved in this folder.</entry>
+    <entry key="InvalidModelArg">Invalid value of model argument at index ''{0}''. Value must be either a model name or a cell array.</entry>
+    <entry key="InvalidModelArgNameNotChar" note="stringDatatypeUpdate">Model name at index ''{0}'' of the first argument must be a character vector .</entry>
+    <entry key="InvalidModelArgConfigsLength">Invalid number of elements for the first argument at index ''{0}''.</entry>
+    <entry key="InvalidModelConfigsArg" note="stringDatatypeUpdate">Invalid value of variant configurations at index ''{0}'' of the first argument. Value must be a character vector, a cell array of character vectors, or a structure containing a set of control variables.</entry>
+    <entry key="InvalidModelConfigsArgNonChar" note="stringDatatypeUpdate">Value of variant configuration at index ''{0}'' for the first argument at index ''{1}'' must be a character vector.</entry>
+    <entry key="NonUniqueConfigNames">Names of variant configurations for model ''{0}'' must be unique.</entry>
+    <entry key="InvalidModelArgNotFound">Block diagram ''{0}'' not found. The first argument to the function must be a valid block diagram name.</entry>
+    <entry key="InvalidModelArgLib">Model specified by the first argument at index ''{0}'' must not be a library.</entry>
+    <entry key="NonUniqueModelNames">Model names specified by the first argument must be unique.</entry>
+    <entry key="ModelNotFound">Model ''{0}'' was not found</entry>
+    <entry key="SameSrcAndDstDirs">The same folder ''{1}'' cannot be specified as the source folder and output folder for model ''{0}''.</entry>
+    <entry key="InvalidModelArgDirty">Model ''{0}'' has unsaved changes. Save changes to proceed.</entry>
+    <entry key="ConfigDataNotFoundForModel">For model ''{0}'', unable to find variant configuration data object required for variant configuration ''{1}''.</entry>
+    <entry key="ConfigNotFoundForModel">Variant configuration ''{0}'' not found in variant configuration data object ''{1}'' of model ''{2}''.</entry>
+    <entry key="InvalidControlVarsForModel">Invalid set of control variables specified for model ''{0}''.</entry>
+    <entry key="InternalErrModelUsingConfig">Internal error occurred when validating variant configuration ''{0}'' of model ''{1}''.</entry>
+    <entry key="InternalErrModelUsingWorkspace">Internal error occurred when validating variant configuration of model ''{0}'' using base workspace.</entry>
+    <entry key="InvalidConfigForModel">Variant configuration ''{0}'' of model ''{1}'' is not valid.</entry>
+    <entry key="InvalidConfigForModelUsingWorkspace">Variant configuration of model ''{0}'' using base workspace is not valid.</entry>
+    <entry key="InternalErrInCombiningConfigs">Internal error in combining results of variant configurations of model ''{0}''.</entry>
+    <entry key="InternalErrInDisablingAllLinks">Internal error in disabling library links in model ''{0}''.</entry>
+    <entry key="InternalErrInDisablingReadOnly">Internal error in converting read-only subsystems in model ''{0}'' to ''ReadWrite''.</entry>
+    <entry key="CannotRemoveCommented">Unable to remove commented block ''{0}'' in reduced model ''{1}''.</entry>
+    <entry key="InternalErrInDeletingChoices">Internal error in deleting unused variant choices or converting variant blocks to non-variants in model ''{0}''.</entry>
+    <entry key="InternalErrInRestoringPermissions">Internal error in restoring access permissions of subsystem blocks in model ''{0}''.</entry>
+    <entry key="ErrInSaving">Unable to save model ''{0}'' as ''{1}''.</entry>
+    <entry key="CannotFindVariables">Unable to find variable dependencies of model ''{0}''.</entry>
+    <entry key="CannotFindFileDeps">Unable to find file dependencies of model ''{0}''.</entry>
+    <entry key="MissingFileDeps">Missing file dependencies of model ''{0}'': ''{1}''.</entry>
+    <entry key="CannotFindModelDeps">Unable to find dependencies of model ''{0}''.</entry>
+    <entry key="DepCannotBeSaved">Unable to save dependency ''{0}'' of model ''{1}'' as ''{2}''.</entry>
+    <entry key="MatDepCannotBeSaved">Unable to save mat file ''{0}'' as ''{1}''.</entry>
+    <entry key="DDDepCannotBeSaved">Unable to save data dictionary ''{0}'' as ''{1}''.</entry>
+    <entry key="DepCannotBeOverwritten">Unable to save dependency ''{0}'' because source and destination paths are same.</entry>
+    <entry key="ErrAccessingDD">Error in accessing data dictionary ''{0}''.</entry>
+    <entry key="DDDepNotModifiable">Unable to write to data dictionary ''{0}''.</entry>
+    <entry key="CannotReduceDDDep">Unable to reduce data dictionary ''{0}''.</entry>
+    <entry key="VarCondPropNonEqualConditionInputErr"> <![CDATA[All input ports of block ''{0}'' must have same variant condition. The variant conditions when taking into consideration the ''GeneratePreprocessorConditionals'' parameter setting have conditions on the input ports as '{'{1}'}'.]]></entry>
+    <entry key="VarCondPropNonEqualConditionOutputErr"> <![CDATA[All output ports of block ''{0}'' must have same variant condition. The variant conditions when taking into consideration the ''GeneratePreprocessorConditionals'' parameter setting have conditions on the output ports as '{'{1}'}'.]]></entry>
+    <entry key="ExportFunctionInlineVariantBuildFailure">Build failed. All function-call input ports of subsystem ''{0}'' must have same variant condition. Based on the setting of the ''GeneratePreprocessorConditionals'', current variant conditions on function-call inports {1} are '{'{2}'}'.</entry>
+   <entry key="VarCondPropMulVarSrcConnErr">The block ''{0}'' is connected to two or more variant source blocks.</entry>
+   <entry key="VarCondPropUnsupportedBlockErr">Setting variant condition on block ''{0}'' is not supported.</entry>
+   <entry key="VarCondPropUnsupportedVSSBlockErr"><![CDATA[The choice blocks of the Variant Subsystem block ''{0}'' are propagating variant conditions from within the Variant Subsystem. However, the Variant Subsystem block is not configured to propagate variant conditions.<actions exclusiveFixIts="yes"><action cmd="matlab:slprivate(''variantfixes'',''VSSPropagateConditions'',''{0}'')" type="fixit"> For the Variant Subsystem block ''{0}'', select the 'Propagate conditions outside of Variant Subsystem' checkbox on the block parameters dialog.</action></actions> ]]></entry>
+   <entry key="VarCondPropUnsupportedVSSBlockErr_fix">The block parameter 'PropagateConditions' has been enabled for the Variant Subsystem block </entry>
+    <entry key="VarCondPropVarSimulinkFunctionInsideModelRefErr">Simulink Function block with Variants enabled is not supported inside a Model block.</entry>
+    <entry key="VarCondSimulinkFunctionArgInErr">Argument Inport block ''{0}'' has been propagated a variant condition which is not allowed. To prevent it from being conditional, ensure that ''{0}'' is not in the path of a Variant Source or a Variant Sink block. If you want to specify the Simulink Function block ''{1}'' to be variant, select the "Enable variant condition" block parameter of ''{2}''.</entry>
+    <entry key="VarCondSimulinkFunctionArgOutErr">Argument Outport block ''{0}'' has been propagated a variant condition which is not allowed. To prevent it from being conditional, ensure that ''{0}'' is not in the path of a Variant Source or a Variant Sink block. If you want to specify the Simulink Function block ''{1}'' to be variant, select the "Enable variant condition" block parameter of ''{2}''.</entry>
+    <entry key="VarCondSimulinkFunctionCallerIncompatibleConditions">Propagated condition on block ''{0}'' can lead to an error during model compilation and code generation if ''{0}'' is calling an inactive Simulink Function block ''{1}''. Variant condition on ''{0}'' is {2} and that on ''{1}'' is {3}.</entry>
+    <entry key="VarCondSimulinkFunctionConditionalCallerUnconditional">Propagated condition on block ''{0}'' can lead to an error during model compilation and code generation if ''{0}'' is calling an inactive Simulink Function block ''{1}''. ''{0}'' is unconditional and variant condition on ''{1}'' is {2}.</entry>
+    <entry key="VarCondStateAccessorOwnerIncompatibleConditions">Propagated condition on the State Reader or State Writer block ''{0}'' can lead to an error during model compilation and code generation if ''{0}'' is accessing the state owned by the inactive block ''{1}''. Variant condition on ''{0}'' is {2} and that on ''{1}'' is {3}.</entry>
+    <entry key="VarCondStateAccessorOwnerUnconditional">Propagated condition on the State Reader or State Writer block ''{0}'' can lead to an error during model compilation and code generation if ''{0}'' is accessing the state owned by the inactive block ''{1}''. ''{0}'' is unconditional and variant condition on ''{1}'' is {2}.</entry>
+    <entry key="InlineVarCondExprParseError">Variant condition expression ''{0}'' is invalid and cannot be parsed.</entry>
+    <entry key="InlineVariantInvalidExpFcnModel">Model ''{0}'' is configured to export functions and Inport block ''{1}'' of virtual subsystem ''{2}'' has propagated variant condition. Virtual subsystems at the root of export functions cannot have ports with different variant conditions. To fix this error, you can adjust the variant conditions with the use of the variant blocks, or you can unselect the "Treat as grouped when propagation variant conditions" subsystem parameter.</entry>
+    <entry key="MdlRefFileSysError">Simulink encountered file access error. Please make sure that you have read/write permission in the directory where you run Simulink.</entry>
+    <entry key="SLVersionLessThan14a">Simulink version 8.3 (R2014a) or higher is required to run this function.</entry>
+    <entry key="VarSrc">Source</entry>
+    <entry key="VarSink">Sink</entry>
+    <entry key="VarSrcPort">input</entry>
+    <entry key="VarSinkPort">output</entry>
+    <entry key="VarCondPropModelRefVariantErr">Model block ''{0}'' does not support condition propagation.</entry>
+    <entry key="RemovedChoiceNotSupportedInVSS">The net variant conditions on the Variant Subsystem block choice ''{0}'' makes it inactive. This is not supported in a Variant Subsystem. Consider modifying the variant conditions to make the choice active.</entry>
+     <entry key="VarCondPropModelBlockAsVariantChoiceErr">Model block ''{0}'' as a choice in Variant Subsystem does not support variant condition propagation.</entry>
+    <entry key="VarCondPropModelBlockAsVariantChoicePropOffErr"><![CDATA[Model block ''{0}'' which is present as a choice of the Variant Subsystem block ''{1}'' is propagating variant conditions.However, the Variant Subsystem block is not configured to propagate variant conditions.<actions exclusiveFixIts="yes"><action cmd="matlab:slprivate(''variantfixes'',''VSSPropagateConditions'',''{1}'')" type="fixit"> For the Variant Subsystem block ''{0}'', select the 'Propagate conditions outside of variant subsystem' checkbox on the block parameters dialog.</action></actions>]]></entry>
+    <entry key="VariantReducerNotSupported">This version of Simulink does not support the Variant Reducer.</entry>
+    <entry key="VariantReducerSuccessDiffModelNames">Successfully created reduced model ''{0}''.</entry>
+    <entry key="VariantReducerSuccessSameModelName">Successfully created reduced model ''{0}''.</entry>
+    <entry key="InvalidOutputDirReduceModel">The third argument must be the relative or absolute path to a folder.</entry>
+    <entry key="InvalidReducedModelName">Invalid output model name. The fourth argument must be a valid model name.</entry>
+    <entry key="InvalidConfigStructControlVars">Invalid struct of control variables. Field names of the struct must be ''Name'' and ''Value''.</entry>
+    <entry key="InternalErrInvalidVariantBlk">Invalid variant block ''{0}'' detected.</entry>
+    <entry key="ModelFileNotFound">Unable to find model file ''{0}''. Check if the file is on the MATLAB path.</entry>
+    <entry key="ErrRedMdlIsOpen">Unable to write to output model name ''{0}'' because it shares the same name as another model ''{1}'' that is currently loaded. Close the open model.</entry>
+    <entry key="VariantSimulinkFunctionDefaultChoice">You cannot specify the variant control for variant Simulink Function block ''{0}'' to be "(default)". If you want to always enable the Simulink Function block ''{1}'', uncheck the "Enable variant condition" block parameter of ''{2}''.</entry>
+    <entry key="VariantSimulinkFunctionSimChoice">You cannot specify the variant control for variant Simulink Function block ''{0}'' to be the ''(sim)'' variant keyword.</entry>
+    <entry key="VariantSimulinkFunctionCodegenChoice">You cannot specify the variant control for variant Simulink Function block ''{0}'' to be the ''(codegen)'' variant keyword.</entry>
+    <entry key="VariantSimulinkFunctionCommentedVariantControl">You cannot specify the variant control for variant Simulink Function block ''{0}'' to be ignored. Remove the "%" in front of the "Variant control" block parameter value of ''{1}'' to specify the variant condition, or uncheck the "Enable variant condition" block parameter to always enable the Simulink Function.</entry>
+    <entry key="ReducerStatusMsgProcessConfigs">Processing model and submodels for specified configurations</entry>
+    <entry key="ReducerStatusMsgRedSaveMdls">Reducing model and submodels</entry>
+    <entry key="ReducerStatusMsgRedSaveCommonDeps">Saving related file dependencies</entry>	
+    <entry key="InlineVariantSubsysBuildNotSupported"> Subsystem build is not supported since the output port ''{0}'' inside the subsystem is conditional and MAT File logging is enabled. You must either disable MAT File logging or change the model such that the output ports inside the subsystem ''{1}'' do not have any variant conditions.</entry> 
+    <entry key="InlineVariantVMReplacedForVarSrcNotSupported"> The variant source block ''{0}'' is fed by a function call signal and has generate preprocessor conditionals turned on. Preprocessor conditionals are not supported when generating code for multi input variant source blocks with function call signals.</entry>
+    <entry key="InlineVariantSigConvNotSupported"> The variant {0} block ''{1}'' is placed on a function call signal and has a signal property specified on its output port. Specifying signal property on a variant {0} block is not supported when it is placed on a function call signal.</entry>
+    <entry key="VariantReducerReadOnlySubsystem">Unable to reduce subsystem ''{0}'' because it is read-only. Make subsystem ''{0}'' writeable to reduce model ''{1}'' for the specified configurations.</entry>
+    <entry key="ModelHasVCDOAssociated"> Model ''{0}'' is associated with variant configuration data object ''{1}''. However, the configurations to be retained in the reduced model are specified as a struct of variant control values, not as configuration names in ''{1}''. Therefore, the reduced model ''{2}'' will not be associated with a variant configuration data object. </entry>
+    <entry key="ConfigStructEmpty"> Invalid specification of struct corresponding to variant configurations. To reduce model ''{0}'', specify a struct with field names corresponding to all variant control variables used by ''{0}'' and their values to be retained in the reduced model. </entry>
+    <entry key="ConfigStructInvalid"> Invalid specification of struct corresponding to variant configurations. The structure with field and values ''{0}'', does not map to a valid configuration for model ''{1}''. Specify a struct with field names corresponding to all variant control variables used by ''{1}'' and their corresponding values that would result in successful compilation.</entry>
+    <entry key="ConfigStructWithEmptyValues">Invalid specification of struct corresponding to variant configurations. Fields ''{0}'' are specified with empty value. Specify a struct with field names corresponding to all variant control variables used by ''{1}'' and their values to be retained in the reduced model.</entry>
+    <entry key="MdlEditedWhenInlineVariant">Model has variant blocks and compilation of model tries to alter the model. With variant blocks, model must be configured before compilation starts.</entry>     
+    <entry key="InlineVariantAddedInCallback">Your model tries to add/delete variant blocks through call-backs. With variant blocks we do not allow this change.</entry>
+    <entry key="CannotRewireModelRef">Unable to reduce referenced model ''{0}'' which is referenced by ''{1}''. Reduce the model ''{0}'' manually.</entry>
+    <entry key="VariantReducerMissingDepFiles">Missing dependency ''{0}'' is referenced by: {1}</entry>
+    <entry key="VariantSimEventBlockNotSupported">Block ''{0}'' contains SimEvents blocks. SimEvents blocks are not supported when configured to generate preprocessor conditionals.</entry>
+    <entry key="InlineVariantSimEventBlockNotSupported">SimEvents block ''{0}'' has a propagated variant condition and is present on a path that generates preprocessor conditionals. SimEvents blocks do not support the generation of preprocessor conditionals.</entry>
+    <entry key="GPCVariantInSimViewingDevice">Block ''{0}'' has generate preprocessor conditionals "on" and is not allowed in subsystem ''{1}'' which has "SimViewingDevice" parameter "on". Sim Viewing Device subsystems are removed during code generation which conflicts with the request to generate preprocessor conditionals. To fix the error, you can turn generate preprocessor conditionals off.</entry>
+    <entry key="VariantReducerSimulationModeRestricted">Before reducing model ''{0}'', set simulation mode to ''Normal'' for model block(s): {1}</entry>
+    <entry key="InlineVariantContStateNotSupported">Block ''{0}''  contains continuous states and has a propagated variant condition. Continuous states are not allowed when present on a path that generates preprocessor conditionals.
+    </entry>
+    <entry key="VariantReducerGPCOoffMultiBlocks">Model ''{0}'' contains variant blocks with different active choices in different configurations. Generate preprocessor conditionals must be 'on' for these blocks before reducing model ''{0}'' for multiple configurations: {1}
+    </entry>
+    <entry key="OutputDirPublicPrompt">Specified output folder ''{0}'' contains public files. \nWould you like to delete the contents of this folder and proceed </entry>
+    <entry key="OutputDirUnclean">Unable to delete contents of output folder ''{0}''.</entry>
+    <entry key="OutputDirInstall">Specified output folder is ''{0}''. Simulink does not permit you to modify the MATLAB installation area. Please specify an output folder that is not in the MATLAB installation area and re-try the previous command.</entry>
+    <entry key="ReducerLogMsg" note="reduced model is an output model with lesser number of blocks compared to original model">Current folder contains reduced model ''{0}'' generated from model ''{1}''.</entry>
+    <entry key="ReducerLogCautionMsg">DO NOT PLACE content in this folder because it is overwritten when you re-run the Variant Reducer.</entry>  
+    <entry key="ReducerCommandPrefix" note="reduced model is an output model with lesser number of blocks compared to original model">Generating reduced model by executing: </entry>
+    <entry key="ReducerLogErrorPrefix">Error creating reduced model:</entry>
+    <entry key="ReducerLogWarningPrefix">The following warnings occurred:</entry>
+    <entry key="ReducerLogErrorCausedBy">Caused by:</entry>
+    <entry key="OutputDirPublicVMError">Specified output folder ''{0}'' contains public files.</entry>
+    <entry key="VariantSrcSnkErrorOnFcnCallLine">Variant condition, ''{0}'', on output port of block ''{1}'' is not compatible with the variant condition on the corresponding function-call signal input port of block ''{2}''. The incompatible conditions can result in ''{2}'' being active and controlled by an inactive function-call signal, which is not allowed. To fix the error, you can make the conditions compatible by placing a single-input single-output Variant Source at the function-call input port of ''{2}'' with condition ''{3}''.</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  unexported writeable rsccat xmlns xsi msgcat xsd Encap Oup
+# LocalWords:  Inp Qual Cmplx FV Frm YN CStates FCall Func Structuredness
+# LocalWords:  NObjects Mis Sto VSSGUI VSSGU Idesc VSS Configs Dirs Deps Dep
+-->

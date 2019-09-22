@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- Copyright 2015-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+    <message>
+        <!-- Please keep in alphabetical order! -->
+        <entry key="AssignVariableMustBeTall">In expressions of the form T.X = B where T is a tall table, B must be a tall array.</entry>
+        <entry key="BraceAssignSingleLevelIndexing">When assigning into a tall table using braces, the brace expression must be the only subscript.</entry>
+        <entry key="CreateUnsupported">Creating tall tables using indexing expressions is not supported.</entry>
+        <entry key="DeleteWholeTableUsingIndexing">Expressions of the form T(:,:) = [] are not allowed for tall table T.</entry>
+        <entry key="DotDeletingSingleLevelIndexing">tall table does not support deleting only portions of a variable.</entry>
+        <entry key="FcnNotSupported">Function ''{0}'' is not supported for tall tables.</entry>
+        <entry key="FirstSubscriptColonOrTallVariable">When indexing a tall table, the first subscript must be either a tall array or ':'.</entry>
+        <entry key="SetPropertiesUnsupported">Setting properties of a tall table is not supported.</entry>
+        <entry key="SubsasgnBracesNotSupported">Indexed assignments of the form T'{'...,...'}' = B are not supported for tall tables.</entry>
+        <entry key="SubsasgnParensNotSupported">Indexed assignments of the form T(...,...) = B are not supported for tall tables.</entry>
+        <entry key="UnrecognizedVarNameDeleting">Cannot delete {0} from the tall table because it does not exist.</entry>
+    </message>
+</rsccat>

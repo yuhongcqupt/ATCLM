@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!-- Copyright 2015-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+     <entry key="InvalidMeterInteraction">
+         {0} attempted to record measurements in an unsupported manner.
+     </entry>
+     <entry key="TooManyMeasurements">
+         {0} recorded multiple measurements. Only one measurement per test method is allowed.
+     </entry>
+     <entry key="ValidMeterInteraction">{0} produced a valid measurement.</entry>
+     <entry key="InvalidFixtureMeasurement" note="Example: foo/bar attempted to record measurements in TestMethodSetup or TestMethodTeardown which is not supported.">
+         {0} attempted to record measurements in {1} or {2} which is not supported.
+     </entry>
+     <entry key="ValidFixtureMeasurement">
+         {0} did not attempt a measurement in {1} or {2}.
+     </entry>
+     <entry key="SufficientlyOutsidePrecision">The {0} of {1} was sufficiently far from the precision of the framework.</entry>
+     <entry key="InsufficientlyOutsidePrecision" note="Do not translate MeasurementResult as it is an API element.">
+         The {0} of {1} was too close to the precision of the framework.\nTherefore, the MeasurementResult is not valid.\nThe test code needs to measure a larger {0}.</entry>
+     <entry key="MeasuredCodeShouldBeSufficientlyLong">The {0} should not be too close to the precision of the framework.</entry>
+  </message>
+</rsccat>

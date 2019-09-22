@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- Copyright 2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="ActualHeader">Actual Value ({0}):</entry>
+    <entry key="ExpectedHeader">Expected Superset ({0}):</entry>
+    <entry key="PositiveCaseElementsNotFound">The actual value contains {0,number,integer} element(s) not found in the expected superset:</entry>
+    <entry key="NegativeCaseElementsNotFound">The actual value contains {0,number,integer} element(s) not found in the provided set:</entry>
+    <entry key="PositiveCaseElementsNotFoundFirst5">The actual value contains elements not found in the expected superset (First 5 of {0,number,integer}):</entry>
+    <entry key="NegativeCaseElementsNotFoundFirst5">The actual value contains elements not found in the provided set (First 5 of {0,number,integer}):</entry>
+    <entry key="PositiveCaseElementAtIndex">Element at index {0,number,integer} not found in the expected superset:\n{1}</entry>
+    <entry key="PositiveCaseIndexOfElement">Element at index {0,number,integer} not found in the expected superset.</entry>
+    <entry key="NegativeCaseElementAtIndex">Element at index {0,number,integer} not found in the provided set:\n{1}</entry>
+    <entry key="NegativeCaseIndexOfElement">Element at index {0,number,integer} not found in the provided set.</entry>
+    <entry key="PassedWhenShouldNotHave">The actual value is a subset of the prohibited superset.</entry>
+    <entry key="ProhibitedHeader">Prohibited Superset ({0}):</entry>
+  </message>
+</rsccat>

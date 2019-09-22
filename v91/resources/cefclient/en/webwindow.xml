@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="cefclient">
+    <!-- All CEF messages and strings should go in here:  -->    
+    <message> 
+                
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- Error messages ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        
+        <entry key="invalidWindow">            
+            <!-- 
+            -->               
+            Webwindow is not valid. It was closed by user or the process was terminated.
+        </entry>  
+        
+        <entry key="noDownloadInProgress">
+            <!-- 
+            -->
+           There is no download in progress currently.
+        </entry>  
+        
+        <entry key="useICOForWindowIcon">
+            <!-- 
+            -->
+           Invalid icon file format. Please use .ico file.
+        </entry>  
+        
+        
+        <entry key="usePNGForWindowIcon"> 
+            <!-- 
+            -->   
+            Invalid icon file format. Please use .png file.
+        </entry>                  
+       
+        <entry key="invalidIconFile"> 
+            <!-- 
+            -->               
+            You have specified a file that cannot be found or is not an image.\nSpecify a file name that is on the MATLAB path, or use a full or relative path.
+        </entry>         
+
+		<entry key="invalidMinSize"> 
+            <!-- 
+            -->               
+            Minimum size of window can't be greater than maximum size of the window. Please use valid size. 
+        </entry>     
+        
+        <entry key="updatePositionMaxSize">
+            The size of the object is greater than the new maximum size. The size will be adjusted to the new maximum size.
+        </entry>
+        <entry key="updatePositionMinSize">
+            The size of the object is less than the new minimum size. The size will be adjusted to the new minimum size.
+        </entry>
+        <entry key="positionGreaterThanMaxSize">
+            The requested new size of the window is greater than the specified maximum size.
+        </entry>
+        <entry key="positionLessThanMinSize">
+            The requested new size of the window is less than the specified minimum size.
+        </entry>
+
+		<entry key="invalidMaxSize"> 
+            <!-- 
+            -->               
+            Maximum size of window can't be less than minimum size of the window. Please use valid size. 
+        </entry>     
+        
+        <entry key="jserror">
+            Error executing JavaScript command: \n\n\t{0}
+        </entry>
+        
+        <entry key="jstimeout">
+            Timeout while executing JavaScript command.
+        </entry>
+
+        <!-- Callbacks ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        
+        <entry key="invalidCallback" note="stringDatatypeUpdate">            
+            <!-- 
+            -->               
+            Invalid callback type. Callback value must be a character vector, a function handle, or a cell array containing character vector or function handle.     
+        </entry> 
+		
+        <entry key="noOpenPort">
+            <!-- 
+            -->
+           Could not find an open port to use.
+        </entry> 	
+        <entry key="portInUse">
+            The specified debug port, {0, number,integer}, is already in use. The debug port will be disabled.
+        </entry>
+        <entry key="CouldNotFindNonEphemeralPort">
+            <!-- 
+            -->
+           Could not find an ephemeral port to use.
+        </entry> 		
+        <entry key="launchProcess">
+            Unable to start MATLABWindow process
+        </entry>
+        <entry key="nonresizable">
+            The webwindow object is currently non-resizable. Call setResizable(obj) before changing the window's size.
+        </entry>
+		
+        <entry key="UnsupportedOpForWindowType">            
+            This feature is not supported for the window Type.     
+        </entry> 	
+        <entry key="ProxyWillBeIgnored">            
+            Browser process is already running. Proxy settings can not be applied at this stage. Please close all the windows and retry.
+        </entry> 		
+
+    </message>
+</rsccat>

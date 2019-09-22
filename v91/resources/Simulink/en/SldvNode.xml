@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="UnableToCreateDVOutputObj">Unable to create class Simulink.DVOutput for model.</entry>
+    <entry key="DvResultsUnavailable">Simulink Design Verifier results unavailable</entry>
+    <entry key="DvResultsCreation">Simulink Design Verifier results are no longer available if you close the model after analysis.  To analyze the model, select {0}  from the Simulink Editor.  To load previous analysis results, select {1} from the Simulink Editor.</entry>
+    <entry key="DvRunAnalysis">Analysis &gt; Design Verifier</entry>
+    <entry key="DvLoadResults">Analysis &gt; Design Verifier &gt; Results &gt; Load</entry> 
+    <entry key="DvMoreInfo">Click here for more information about Simulink Design Verifier</entry> 
+    <entry key="LogFile">Log file</entry>
+  </message>
+</rsccat>

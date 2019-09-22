@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- Copyright 2014 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+    <message>
+        <entry key="createFolderFailed">Unable to create output folder: ''{0}''\n{1}</entry>
+        <entry key="folderNotForWriting">Unable to write files to output folder: ''{0}''\n{1}</entry>
+        <entry key="cannotReadDatastore">Map call #{0}: Unable to read the input datastore {1}.\n{2}</entry>
+        <entry key="cannotApplyMap">Map call #{0}: Unable to apply the function {1}.\n{2}</entry>
+        <entry key="cannotApplyReduce">Reduce call #{0}: Unable to apply the function {1}.\n{2}</entry>
+        <entry key="cannotRemoveTempResource">{0}\nUnable to remove temporary folder {1}\nDelete folder manually.</entry>
+        <entry key="unsupportedOutputIriScheme">Unsupported IRI ''{0}''. The value of 'OutputFolder' must be a local path or an IRI supported by the mapreduce execution environment.</entry>
+    </message>
+</rsccat>

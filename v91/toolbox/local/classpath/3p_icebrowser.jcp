@@ -1,0 +1,11 @@
+# Java classpath entries for 3p/icebrowser
+$matlabroot/java/jarext/ice/ice.jar
+$matlabroot/java/jarext/ice/ib6core.jar
+$matlabroot/java/jarext/ice/ib6extra.jar
+$matlabroot/java/jarext/ice/ib6http.jar
+$matlabroot/java/jarext/ice/ib6https.jar
+$matlabroot/java/jarext/ice/ib6js.jar
+$matlabroot/java/jarext/ice/ib6swing.jar
+$matlabroot/java/jarext/ice/ib6util.jar
+$matlabroot/java/jarext/ice/ib6xalan.jar
+$matlabroot/java/jarext/ice/icessl.jar

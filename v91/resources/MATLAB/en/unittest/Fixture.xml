@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- Copyright 2013-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="MustOverrideIsCompatible">Because its constructor accepts one or more inputs, the {0} class must override the isCompatible method.</entry>
+    <entry key="QualificationMethodMustBeCalledFromSetupOrTeardown">Shared fixture qualification methods can only be called from the setup or teardown method.</entry>
+    <entry key="LogMethodMustBeCalledFromSetupOrTeardown">Shared fixture log method can only be called from the setup or teardown method.</entry>   
+  </message>
+</rsccat>
+
+<!-- LocalWords:  rsccat
+-->

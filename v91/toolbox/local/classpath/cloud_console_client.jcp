@@ -1,0 +1,2 @@
+# Java classpath entries for cloud_console_client
+$matlabroot/java/jarext/webservices/cloud_console/cloud-console-client.jar

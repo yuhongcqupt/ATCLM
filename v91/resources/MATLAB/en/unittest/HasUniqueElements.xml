@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Copyright 2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="ContainsNonuniqueElements">The value contains {0,number,integer} nonunique element(s):</entry>
+    <entry key="ContainsNonuniqueElementsFirst5">The value contains nonunique elements (First 5 out of {0,number,integer}):</entry>
+    <entry key="ElementAtIndices">Nonunique element found at indices {0}:\n{1}</entry>
+    <entry key="IndicesOfElement">Nonunique element found at indices {0}.</entry>
+    <entry key="ElementsAreUnique">The value has unique elements.</entry>
+  </message>
+</rsccat>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!-- Copyright 2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="SizeMismatch">Sizes do not match.</entry>
+    <entry key="ActualSize">Actual size:</entry>
+    <entry key="ExpectedSize">Expected size:</entry>
+    <entry key="ClassMismatch">Classes do not match.</entry>
+    <entry key="ActualClass">Actual Class:</entry>
+    <entry key="ExpectedClass">Expected Class:</entry>
+    <entry key="SparsityMismatch">Sparsity does not match.</entry>
+    <entry key="ActualSparsity">Actual Sparsity:</entry>
+    <entry key="ExpectedSparsity">Expected Sparsity:</entry>
+    <entry key="SparseAttribute">Sparse</entry>
+    <entry key="FullAttribute">Full</entry> 
+    <entry key="ComplexityMismatch">Complexity does not match.</entry>
+    <entry key="ActualComplexity">Actual Complexity:</entry>
+    <entry key="ExpectedComplexity">Expected Complexity:</entry>
+    <entry key="RealAttribute">Real</entry>
+    <entry key="ComplexAttribute">Complex</entry>
+    <entry note="Example: Actual double:" key="ActualValueWithType">Actual {0}:</entry>
+    <entry note="Example: Expected double:" key="ExpectedValueWithType">Expected {0}:</entry>
+    <entry note="Example: Prohibited double:" key="ProhibitedValueWithType">Prohibited {0}:</entry>
+    <entry key="TruncatedFailureTableHeader">Failure table (First {0} out of {1} failed indices):</entry>
+    <entry key="FailureTableHeader">Failure table:</entry>
+    <entry key="FailureTableIndex" translate="false">Index</entry>
+    <entry key="FailureTableSubscripts" translate="false">Subscripts</entry>
+    <entry key="FailureTableActVal" translate="false">Actual</entry>
+    <entry key="FailureTableExpVal" translate="false">Expected</entry>
+    <entry key="FailureTableError" translate="false">Error</entry>    
+    <entry key="FailureTableRelativeError" translate="false">RelativeError</entry>    
+    <entry key="FailureTableAbsoluteError" translate="false">AbsoluteError</entry>
+    <entry note="Example: IsEqualTo passed" key="RequirementCompletelySatisfied">{0} passed.</entry>
+    <entry note="Example: IsEqualTo failed" key="RequirementNotCompletelySatisfied">{0} failed.</entry>
+    <entry note="Example: Negated IsEqualTo passed" key="NegatedRequirementCompletelySatisfied">Negated {0} passed.</entry>
+    <entry note="Example: Negated IsEqualTo failed" key="NegatedRequirementNotCompletelySatisfied">Negated {0} failed.</entry>
+  </message>
+</rsccat>
+<!-- LocalWords:  rsccat
+-->

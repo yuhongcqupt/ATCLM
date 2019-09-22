@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- Copyright 2014 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+    <message>
+        <entry key="useMethodsCustomDisp">Use {0} or {1} to add more key-value pairs.</entry>
+        <entry key="noKVPairs">{0} with no key-value pairs.</entry>
+        <entry key="containingStringKeys" note="stringDatatypeUpdate">{0} containing character vector keys.</entry>
+        <entry key="containingNumericKeys">{0} containing numeric keys.</entry>
+        <entry key="lastKVPairs">Last {0} key-value pairs added:</entry>
+        <entry key="lastOneKVPair">Last 1 key-value pair added:</entry>
+
+        <entry key="scalarOrStringKeysAnyValues" note="stringDatatypeUpdate">Keys must be numeric scalars or character vectors, and values may be any type.</entry>
+        <entry key="scalarOrStringKeysScalarOrStringValues" note="stringDatatypeUpdate">Keys and values must be numeric scalars or character vectors.</entry>
+        <entry key="scalarOrStringKeysStringValues" note="stringDatatypeUpdate">Keys must be numeric scalars or character vectors, and values must be character vectors.</entry>
+        <entry key="scalarOrStringKeysScalarValues" note="stringDatatypeUpdate">Keys must be numeric scalars or character vectors, and values must be {0} scalars.</entry>
+
+        <entry key="stringKeysAnyValues" note="stringDatatypeUpdate">Keys must be character vectors, and values may be any type.</entry>
+        <entry key="stringKeysScalarOrStringValues" note="stringDatatypeUpdate">Keys must be character vectors, and values must be numeric scalars or character vectors.</entry>
+        <entry key="stringKeysStringValues" note="stringDatatypeUpdate">Keys and values must be character vectors.</entry>
+        <entry key="stringKeysScalarValues" note="stringDatatypeUpdate">Keys must be character vectors, and values must be {0} scalars.</entry>
+
+        <entry key="scalarKeysAnyValues">Keys must be {0} scalars, and values may be any type.</entry>
+        <entry key="scalarKeysScalarOrStringValues" note="stringDatatypeUpdate">Keys must be {0} scalars, and values must be numeric scalars or character vectors.</entry>
+        <entry key="scalarKeysStringValues" note="stringDatatypeUpdate">Keys must be {0} scalars, and values must be character vectors.</entry>
+        <entry key="scalarKeysScalarValues">Keys must be {0} scalars, and values must be {1} scalars.</entry>
+        <entry key="sameScalarKeysAndValues">Keys and values must be {0} scalars.</entry>
+    </message>
+</rsccat>

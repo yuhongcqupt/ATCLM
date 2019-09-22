@@ -1,0 +1,20 @@
+MATLAB Benchmark Data.
+ 
+Copyright 1984-2016 The MathWorks, Inc.
+Get latest revision from:
+   http://www.mathworks.com/matlabcentral/fileexchange/1836-bench-dat
+																	LU      FFT     ODE     Sparse   2-D     3-D
+Windows 7, Intel Xeon E5-1650 v3 @ 3.50 GHz                        0.133	0.128	0.0535	0.0968	0.2334	0.2309
+  12 cores, Windows 7 Enterprise, Intel Xeon CPU E5-1650 v3 @ 3.50 GHz, 64 GB RAM,	NVIDIA Quadro K620	GPU, MATLAB 9.1 (R2016b)
+Surface Pro 3, Windows 8.1, Intel Core i5-4300U @ 1.9 GHz          0.4426	0.2447	0.1256	0.2108	0.9683	0.8135
+  2 cores, Windows 8.1 Enterprise, Intel Core i5-4300U @ 1.9 GHz, 8 GB RAM, Intel HD 4400 Integrated GPU, MATLAB 9.1 (R2016b)  
+MacBook Pro, OS X 10.11.4, Intel Core i5 @ 2.6GHz                  0.2537	0.1922	0.0678	0.1212	2.2133	1.7815
+  2 cores, OS X 10.11.4, Intel Core I5 @ 2.6GHz, 8 GB RAM, Intel Iris 1536 MB Integrated GPU, MATLAB 9.1 (R2016b)
+Windows 10, Intel Xeon X5650 @ 2.67 GHz                            0.1987	0.1466	0.1199	0.1635	0.4315	0.3773
+  12 cores, Windows 10, Intel Xeon X5650 @ 2.67 GHz, 24 GB RAM, NVIDIA Quadro FX 380 GPU, MATLAB 9.1 (R2016b)  
+iMac, OS X 10.10.5, Intel Core i7 @ 3.4 GHz                        0.1422	0.1432	0.0967	0.112	0.3811	0.3203
+  4 cores, OS X 10.10.5, Intel Core i7 @ 3.4 GHz, 16 GB RAM, AMD Radeon 6970M GPU, MATLAB 9.1 (R2016b)
+Windows 8, AMD A8-6410 APU @ 2.00 GHz                               0.9729	0.5021	0.2867	0.6188	1.5988	1.3353
+  4 cores, Windows 8.1 Enterprise, AMD A8-6410 APU @ 2.00 GHz, 6.94 GB RAM, AMD Radeon R5 GPU, MATLAB 9.1 (R2016b) 
+Linux, Intel Xeon CPU W3690 @ 3.47 GHz                              0.2027	0.125	0.142	0.1337	0.9327	0.7505
+  12 cores, Ubuntu 16.04 LTS, Intel Xeon CPU W3690 @ 3.47 GHz, 24 GB RAM, NVIDIA Quadro 400 GPU, MATLAB 9.1 (R2016b)

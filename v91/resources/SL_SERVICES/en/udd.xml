@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="SL_SERVICES">
+  <message>
+    <entry key="BadSetRectValue">Input bounds are out of range</entry>
+    <entry key="EnumUnrecognized">''{0}'' is not a valid enumeration choice for data type ''{1}''.</entry>
+    <entry key="NotEnumTypeValue">Parameter must be an enumeration value.</entry>
+    <entry key="IncompatibleEnumType">Found new declaration of type ''{0}'' which is incompatible with the existing type.  To use the new declaration, restart MATLAB and try again.</entry>
+  </message>
+</rsccat>

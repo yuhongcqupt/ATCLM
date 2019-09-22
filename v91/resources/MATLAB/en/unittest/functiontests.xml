@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- Copyright 2013 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="MustProvideCellOfFunctions">Input must be a cell array of function handles.</entry>
+    <entry key="NoTestsFound">No tests were found in the list of functions. Test functions are those that start or end with "test" (case insensitive).</entry>
+    <entry key="MustBeLocalFunction">FunctionTestCase only supports local functions.</entry>
+    <entry key="MustAcceptExactlyOneInputArgument">The "{0}" function must accept exactly one input argument.</entry>    
+  </message>
+</rsccat>

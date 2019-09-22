@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- Copyright 2011-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="nonNegRealStringType" note="stringDatatypeUpdate">Invalid value for OPTIONS parameter {0}: must be a real non-negative scalar (not a character vector).</entry>
+    <entry key="notAnonNegReal">Invalid value for OPTIONS parameter {0}: must be a real non-negative scalar.</entry>
+    <entry key="nonNegIntegerStringType" note="stringDatatypeUpdate">Invalid value for OPTIONS parameter {0}: must be a real non-negative integer (not a character vector).</entry>
+    <entry key="notANonNegInteger">Invalid value for OPTIONS parameter {0}: must be a real non-negative integer.</entry>
+    <entry key="matrixTypeStringType" note="stringDatatypeUpdate">Invalid value for OPTIONS parameter {0}: must be a matrix (not a character vector).</entry>
+    <entry key="notAMatrix">Invalid value for OPTIONS parameter {0}: must be a matrix.</entry>
+    <entry key="notAPosMatrix">Invalid value for OPTIONS parameter {0}: \n must be a positive scalar or a vector with positive entries.</entry>
+    <entry key="notAFunction">Invalid value for OPTIONS parameter {0}: must be a function handle.</entry>
+    <entry key="notAStringsType">Invalid value for OPTIONS parameter {0}:\n must be {1}.</entry>
+    <entry key="notAboundedReal">Invalid value for OPTIONS parameter {0}: \n must be a scalar in the range {1}.</entry>
+    <entry key="notAStringPosIntegerCellType">Invalid value for OPTIONS parameter {0}: must be a cell-array of the form '{'''{1}'', positive integer'}'.</entry>
+    <entry key="notAStringPosRealCellType" note="stringDatatypeUpdate">Invalid value for OPTIONS parameter {0}: must be a cell-array of the form '{'character vector, positive real'}', where character vector is {1}.</entry>
+    <entry key="posRealStringType" note="stringDatatypeUpdate">Invalid value for OPTIONS parameter {0}: must be a real positive scalar (not a character vector).</entry>
+    <entry key="nonPositiveNum">Invalid value for OPTIONS parameter {0}: must be a real positive scalar.</entry>
+    <entry key="realLessThanPlusInfStringType" note="stringDatatypeUpdate">Invalid value for OPTIONS parameter {0}: must be a real scalar less than +Inf (not a character vector).</entry>
+    <entry key="PlusInfReal">Invalid value for OPTIONS parameter {0}: must be a real scalar less than +Inf.</entry>
+    <entry key="zeroInTypicalX">Zero-valued elements in OPTIONS parameter TypicalX may cause invalid results during the optimization. Set OPTIONS parameter TypicalX with all non-zero elements.</entry>
+    <entry key="NotLogicalScalar">Invalid value for OPTIONS parameter {0}: must be logical TRUE or FALSE.</entry> 
+    <entry key="onlyOptimoptionsAlg">OPTIMSET does not support setting the OPTIONS parameter Algorithm to ''{0}''.\nUse OPTIMOPTIONS to set Algorithm to ''{1}''.</entry>
+  </message>
+</rsccat>

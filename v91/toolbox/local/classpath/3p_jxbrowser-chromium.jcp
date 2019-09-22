@@ -1,0 +1,4 @@
+# Java classpath entries for 3p/jxbrowser-chromium
+$matlabroot/java/jarext/jxbrowser-chromium/jxbrowser-chromium.jar
+$matlabroot/java/jarext/jxbrowser-chromium/runtime.jar
+$matlabroot/java/jarext/jxbrowser-chromium/jxbrowser-linux64.jar

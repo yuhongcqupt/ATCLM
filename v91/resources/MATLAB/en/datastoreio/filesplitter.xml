@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- Copyright 2014 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="invalidFilesInput" note="stringDatatypeUpdate">Files input must be a character vector or a cell array of character vectors. Please recheck the permissions for this file.</entry>
+    <entry key="invalidSplits">Invalid split structure array.</entry>
+    <entry key="invalidFileSize">Ignoring file {0} because its size cannot be determined.</entry>
+    <entry key="invalidSplitSize">Split size must be a positive integer or Inf.</entry>
+  </message>
+</rsccat>

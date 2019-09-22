@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rsccat locale="en_US" product="MATLAB" version="1.0">
+   <message>
+      <entry key="TitleCloseDialog">Close dialog</entry>
+      <entry key="ButtonStop">Stop</entry>
+      <entry key="ButtonPause">Pause</entry>
+      <entry key="LabelOpenPlotInNewWindow">Open this plot in a new window</entry>
+      <entry key="ButtonResume">Resume</entry>
+      <entry key="DialogYes">YES</entry>
+      <entry key="DialogNo">NO</entry>
+      <entry key="DialogStopSolverAndCloseFigure">YES will stop the solver (if running) and close the figure.\nNO will cancel this request.</entry>
+      <entry key="TitleTotalFunctionEvaluations">Total Function Evaluations: {0,number,integer}</entry>
+      <entry key="LabelIteration">Iteration</entry>
+      <entry key="LabelEvaluations">Function evaluations</entry>
+      <entry key="LabelNumberOfVariables">Number of variables: {0}</entry>
+      <entry key="LabelShowingOnlyFirst100Variables">Showing only the first 100 variables</entry>
+      <entry key="TitleCurrentPoint">Current Point</entry>
+      <entry key="LabelCurrentPoint">Current point</entry>
+      <entry key="TitleCurrentFunctionValue">Current Function Value: {0}</entry>
+      <entry key="LabelFunctionValue">Function value</entry>
+      <entry key="LabelNumberOfFunctionValues0">Number of function values: {0}</entry>
+      <entry key="LabelShowingOnlyFirst100Values">Showing only the first 100 values</entry>
+      <entry key="TitleCurrentFunctionValues">Current Function Values</entry>
+   </message>
+</rsccat>

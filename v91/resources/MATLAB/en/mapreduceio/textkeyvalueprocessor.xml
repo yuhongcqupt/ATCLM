@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- Copyright 2014 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+    <message>
+        <entry key="nonHomogeneousValues">This KeyValueStore contains {0} values.\nYou cannot add a different type ({1}) of value in the reduce function when OutputType = 'TabularText'.</entry>
+        <entry key="nonSingleValue" note="stringDatatypeUpdate">Values must be character vectors or numeric scalars in the reduce function when OutputType = 'TabularText'.</entry>
+        <entry key="numericNonReal">Reduce functions cannot add complex values when OutputType = 'TabularText'.\nUse isreal() to filter them.</entry>
+        <entry key="numericSparse">Reduce functions cannot add sparse values when OutputType = 'TabularText'.\nUse issparse() to filter them.</entry>
+        <entry key="numericNaN">Reduce functions cannot add NaN values when OutputType = 'TabularText'.\nUse isnan() to filter them.</entry>
+        <entry key="logicalUnSupported">Reduce functions cannot add logical values when OutputType = 'TabularText'.\nUse islogical() to filter them.</entry>
+    </message>
+</rsccat>

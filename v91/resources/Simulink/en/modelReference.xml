@@ -1,0 +1,1254 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2009-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <!-- These slMdlref_* messages are used in private/get_ordered_model_references.m, the keys are constructed in M -->
+    <entry key="slMdlRef_accelerator">accelerator</entry>
+    <entry key="slMdlRef_rapid_accelerator">rapid accelerator</entry>
+    <entry key="slMdlRef_software_in_the_loop">software-in-the-loop</entry>
+    <entry key="slMdlRef_processor_in_the_loop">processor-in-the-loop</entry>
+    
+    <entry key="slMdlRefIncompatibleSimModes"><![CDATA[Incompatible simulation
+    modes. Model ''{0}'' is running in {1} mode and references model ''{2}'' in
+    {3} mode. You must change one of the conflicting simulation modes. For more
+    details, see the documentation on <a href="matlab:helpview([docroot,
+    ''/toolbox/simulink/ug/simulink_ug.map''],
+    ''ModelRefMixingSimulationModes'');">mixing simulation modes</a>.]]></entry>
+    
+    <entry key="topLevelFunctionCallInvalidName">The function call input
+    associated with inport ''{0}'' has been configured use the name ''{1}'' as
+    the method name during code generation, which is not a valid identifier.
+    Change the name of the signal associated with this inport or the name of the
+    inport so that it is a valid identifier name.</entry>
+
+    <entry key="slSSDeleteContentsInvalidNumInputs"> Incorrect usage of
+    Simulink.SubSystem.deleteContents. This function expects one input.</entry>
+    <entry key="slSSDeleteContentsInvalidInput"> Incorrect usage of Simulink.SubSystem.deleteContents. The input must be a subsystem name or handle.</entry>
+    <entry key="slBadSimStatus"> Simulation status of block diagram ''{0}'' is ''{1}''. This indicates that the block diagram is being run. Please stop the simulation and rerun the command.</entry>
+    <entry key="slBDDeleteContentsInvalidNumInputs"> Incorrect usage of Simulink.BlockDiagram.deleteContents. This function expects one input.</entry>
+    <entry key="slBDDeleteContentsInvalidInput"> Incorrect usage of Simulink.BlockDiagram.deleteContents. The input must be a block diagram name or handle.</entry>
+    <entry key="slBDCopyContentsToSSInvalidNumInputs"> Incorrect usage of Simulink.BlockDiagram.copyContentsToSubSystem. This function expects two inputs.</entry>
+    <entry key="slBDCopyContentsToSSIn1Invalid"> The first input of Simulink.BlockDiagram.copyContentsToSubSystem must be a block diagram name or handle.</entry>
+    <entry key="slBDCopyContentsToSSIn2Invalid"> The second input of Simulink.BlockDiagram.copyContentsToSubSystem must be a subsystem name or handle.</entry>
+    <entry key="slBDCopyContentsToSSInvalidInputs"> Incorrect usage of Simulink.BlockDiagram.copyContentsToSubSystem. The Subsystem block cannot be part of the input block diagram.</entry>
+    <entry key="slSSCopyContentsToBDInvalidNumInputs">Incorrect usage of Simulink.SubSystem.copyContentsToBlockDiagram. This function expects two inputs.</entry>
+    <entry key="slSSCopyContentsToBDIn1Invalid"> The first input of Simulink.SubSystem.copyContentsToBlockDiagram must be a subsystem name or handle.</entry>
+    <entry key="slSSCopyContentsToBDIn2Invalid"> The second input of Simulink.SubSystem.copyContentsToBlockDiagram must be a block diagram name or handle.</entry>
+    <entry key="ConversionUtilityFailedToCreateVariableName">Failed to create a unique and valid variable name from ''{0}''.  Using default identifier: ''{1}'' instead.</entry>
+    <entry key="slss2mdlInvalidSubsystemName">Unable to find a valid model name from the subsystem name.  Please rename the subsystem.</entry>
+    <entry key="slss2mdlInvalidModelName">The name of the Subsystem is not a valid model name or a model with the same name already exists.  The model name ''{0}'' will be used for the referenced model.</entry>
+    <entry key="slss2mdlUnsupportedDataType">Data type ''{0}'' is not supported.</entry>
+    <entry key="modelNotFound">Model ''{0}'' not found.</entry>
+    <entry key="buildingModelReferenceTarget">Building model reference target</entry>
+    <entry key="ModelNotFoundWithBlockName">The model ''{0}'' referenced by ''{1}'' is not found.</entry>
+
+    <entry key="MultiInstanceTargetBuildFailed">Failed to build a
+    multi-instanced target.  Modifying the model to allow only one instance and
+    rebuilding the target.</entry>
+
+    <entry key="successfullyConvertedSubsystem">Successfully converted Subsystem to Model reference block</entry>
+    <entry key="compareComponentsIncorrectNumberOfArguments">There must be two arguments to this function.</entry>
+    <entry key="findMdlrefsUsage">Usage:  find_mdlrefs(ModelName, [true/false]) or find_mdlrefs(ModelName, ''Param1'', Val1, ...).</entry>
+    <entry key="findMdlrefsFirstArgModel">The first input must be a model name, or a path to a subsystem or a Model block.</entry>
+    <entry key="findMdlrefsSecondArgTrueFalse">When two inputs are given, the second input must be true or false.</entry>
+    <entry key="findMdlrefsInvalidNumberOfOutputs">Invalid number of output arguments.</entry>
+    <entry key="findMdlrefsInvalidModel">The Model ''{0}'' could not be loaded due to the following: {1}</entry>
+    <entry key="detectedModelReferenceLoop">Detected model reference loop ''{0}''</entry>
+    <entry key="signalLoggingRequiresJavaSupport">Model Reference Signal Logging requires Java support.</entry>
+    <entry key="signalLoggingInvalidBlockHandle">Invalid block handle.</entry>
+    <entry key="signalLoggingUnableToUpdateData">Unable to update signal data.</entry>
+    <entry key="unableToFindMdlFile">Unable to find the model file ''{0}'' for the model ''{1}''.</entry>
+    <entry key="referencedModelNeverSaved">Cannot update the model reference {0} target of model ''{1}'' because it is not referenced in Normal mode and has never been saved.  Please reference this model in Normal mode or save the model.</entry>
+    <entry key="unableToLoadBdBecauseOfCase">Could not load model ''{0}'' with an exact (case-sensitive) match.  However, model ''{1}'' that differs only in case was found.  The specified Model name on the Model block must be an exact (case-sensitive) match with the referenced model name. There should not be any open model or any model on the MATLAB path with case-insensitive match. Please either specify the correct referenced model name on the Model block, or close any open model with case-insensitive match and remove it from the MATLAB path.</entry>
+    <entry key="duplicatedMdlRefsName">Invalid referenced model names. Cannot reference multiple models that only differ in case. One invalid pair of referenced models names is: ''{0}'' and ''{1}''.</entry>
+
+    <entry key="ModelRefGraphAnalyzerInvalidGraphObject" translate="false">The value must be a Simulink.ModelReference.internal.ModelRefGraph object.</entry>
+    <entry key="ModelRefGraphAnalyzerInvalidSimModeChoice" translate="false">The value must be either ''OnlyNormal'', ''OnlyAccel'', ''AnyNormal'', ''AnyAccel'', or ''All''.</entry>
+    <entry key="ModelRefGraphAnalyzerInvalidResultView" translate="false">The value must be either ''File'' or ''Instance''.</entry>
+    
+    <entry key="nameValuePairNeedsLogicalValue">The value of parameter {0} must be a logical.</entry>
+    <entry key="nameValuePairNeedsStringValue" note="stringDatatypeUpdate">The value of parameter {0} must be a character vector.</entry>
+    <entry key="nameValuePairNeedsFunctionValue">The value of parameter {0} must be a function handle.</entry>
+    <entry key="nameValuePairNeedsCellArrayOfStringsValue" note="stringDatatypeUpdate">The value of parameter {0} must be a cell array of character vectors.</entry>
+    <entry key="nameValuePairNeedsCellArray">The value of parameter {0} must be a cell array.</entry>
+    <entry key="nameValuePairNeedsStringForName" note="stringDatatypeUpdate">Input number {0,number,integer} is expected to be the name of a name/value pair but is not a character vector.  Names of name/value pairs are required to be character vectors.  </entry>
+    <entry key="nameValuePairUnknownParameter">The argument {0} is not a recognized name for a name/value pair.</entry> 
+
+    <entry key="TunableParameterCannotBeChangedToNonTunable">The parameter
+    ''{0}'' was declared by referenced model ''{1}'' as being tunable.  The
+    current definition of the parameter declares it to be nontunable.  This is
+    not supported.  Change the parameter so that it is declared to be
+    tunable.</entry>
+
+    <entry key="browseMdlRefsName">Select a model</entry>
+
+    <entry key="selectedFileInvalidModel">The selected file ''{0}'' is not a
+    valid Simulink model.</entry>
+
+    <entry key="selectedMdlNotOnPathQString">Selected model ''{0}'' does not
+    reside on the MATLAB path. Referenced model must be on the MATLAB
+    path. Please make the appropriate choice. Note that "Add path" adds the path
+    for the current MATLAB session only.</entry>
+
+    <entry key="selectedMdlNotOnPathAddCurrentSession">Add path</entry>
+
+    <entry key="selectedMdlNotOnPathDoNotAdd">Do not add path</entry>
+
+    <entry key="selectedMdlNotOnPathCancel">Cancel</entry>
+
+    <entry key="selectedMdlExistsOnPathQString">Selected model ''{0}'' has same
+    name as another model(s) on the path. Multiple models with the same name on
+    the MATLAB path may cause unexpected behavior. Please make the appropriate
+    choice. Note that "Add path" adds the path for the current MATLAB session
+    only.</entry>
+    
+    <entry key="selectedMdlPathIssueTitle">Resolve path issue with selected model</entry>
+
+    <entry key="selectedModelHasLowerPrecedence">Selected model ''''{0}'''' with
+    full path ''''{1}'''' has lower precedence than model ''''{2}'''' with full
+    path ''''{3}''''. This operation is not allowed because the selected model
+    will not get used.</entry>
+    
+    <entry key="selectedModelHasLowerPrecedenceDirty">Selected model ''''{0}''''
+    with full path ''''{1}'''' has lower precedence than an unsaved model in
+    memory. This operation is not allowed because the selected model will not
+    get used.</entry>
+
+    <entry key="selectedModelHasHigherPrecedenceTemporarily">Selected model
+    ''''{0}'''' with full path ''''{1}'''' currently has higher precedence than
+    another model ''''{2}'''' with full path ''''{3}'''' because the selected
+    model is loaded in memory. However, the other model has a higher PATH
+    precedence. This will cause an issue if the selected model is no longer in
+    memory. Please Continue or Cancel the operation. </entry>
+
+    <entry key="selectedFileIsLoadedWithMultipleFilesOnPath">Selected model
+    ''''{0}'''' with full path ''''{1}'''' is loaded and on the path.  Another
+    model ''''{2}'''' with full path ''''{3}'''' is also on the path. This may
+    cause an issue if the selected model is no longer in memory. Please Continue
+    or Cancel the operation.</entry>
+
+    <entry key="selectedMdlPrecedenceIssueTitle">Resolve precedence issue with
+    selected model</entry>
+
+    <entry key="selectedMdlPrecedenceIssueCancel">Cancel</entry>
+
+    <entry key="selectedMdlPrecedenceIssueContinue">Continue</entry>
+
+    <entry key="searchingRefMdlsStatus">Searching for all referenced models</entry>
+
+    <entry key="updatingSIMTargetStatus"> ({0,number,integer} of {1,number,integer}) ''{2}'': Updating model reference SIM target</entry>
+    <entry key="updatingParallelSIMTargetStatus"> ({0,number,integer} of {1,number,integer} completed) Updating model reference SIM targets in parallel using {2,number,integer} workers</entry>
+    <entry key="updatingCoderTargetStatus"> ({0,number,integer} of {1,number,integer}) ''{2}'': Updating model reference code generation target</entry>
+    <entry key="updatingParallelCoderTargetStatus"> ({0,number,integer} of {1,number,integer} completed) Updating model reference code generation targets in parallel using {2,number,integer} workers</entry>
+    <entry key="updatingProtectedSIMTargetStatus"> ({0,number,integer} of {1,number,integer}) ''{2}'': Updating protected model reference SIM target</entry>    
+    <entry key="updatingProtectedCoderTargetStatus"> ({0,number,integer} of {1,number,integer}) ''{2}'': Updating protected model reference code generation target</entry>    
+
+    <entry key="multiTaskingInSingleTasking"> Model ''{0}'' has the 'Configuration Parameters' > 'Solver' > 'Treat each discrete rate as a separate task' option cleared, and it references  model ''{1}'', which has this option selected and contains rate transitions. This configuration is not supported when generating code for ERT or GRT based targets. Select the option for the parent model or clear the option for the referenced model.</entry>
+
+    <entry key="variableDimsNotAllowedOnInput"> Input port {0,number,integer} of
+    the subsystem ''{1}'' has an output that is a variable-size signal.  Such
+    input ports are not allowed when converting this subsystem to a model
+    reference.</entry>
+
+    <entry key="variableDimsNotAllowedOnOutput"> Output port {0,number,integer}
+    of the subsystem ''{1}'' has an input that is a variable-size signal.  Such
+    output ports are not allowed when converting a subsystem with an enable port
+    to a model reference.</entry>
+    
+    <entry key="invalidSSTypeEnabFeatOff">Error converting subsystem ''{0}'' to
+    model reference.  The subsystem to be converted must be an atomic,
+    function-call, or triggered subsystem block.</entry>
+
+    <entry key="invalidSSType"> Error converting subsystem ''{0}'' to model
+    reference.  The subsystem to be converted must be a subsystem block.</entry>
+
+    <entry key="invalidSSTypeEnable"> Error converting subsystem ''{0}''. You
+    cannot convert an enabled subsystem to a referenced model.</entry>
+
+    <entry key="invalidSSTypeAction"> Error converting subsystem ''{0}''. You
+    cannot convert an action subsystem to a referenced model.</entry>
+
+    <entry key="invalidSSTypeIterator"> Error converting subsystem ''{0}''. You
+    cannot convert an iterator subsystem to a referenced model.</entry>
+
+    <entry key="invalidSSTypeFor"> Error converting subsystem ''{0}''. You
+    cannot convert a subsystem containing a For block to a referenced
+    model.</entry>
+
+    <entry key="invalidSSTypeForEach"> Error converting subsystem ''{0}''. You
+    cannot convert a subsystem containing a ForEach block to a referenced
+    model.</entry>
+
+    <entry key="invalidSSTypeWhile"> Error converting subsystem ''{0}''. You
+    cannot convert a subsystem containing a While block to a referenced
+    model.</entry>
+
+    <entry key="invalidSSTypePhysMod"> Error converting subsystem ''{0}''. The
+    selected subsystem exposes Simscape connection ports, which model reference
+    does not support. To reference a Simscape physical model, ensure it exists
+    entirely within a single subsystem.</entry>
+
+    <entry key="invalidSSTypeStateflow"> Error converting subsystem ''{0}''. You
+    cannot convert a Stateflow or MATLAB Function block to a referenced
+    model.</entry>
+
+    <entry key="invalidSSTypeVirtual"> <![CDATA[Error converting subsystem
+    ''{0}''. You cannot convert a virtual subsystem to a referenced
+    model. Change the subsystem to be atomic by right-clicking the subsystem and
+    in the Block Parameters dialog box, select ''Treat as atomic
+    unit''.]]></entry>
+
+    <entry key="invalidSSTypeVariant"> Error converting subsystem ''{0}''. You
+    cannot convert a variant subsystem to a referenced model.</entry>
+
+    <entry key="ModelRefConfigurableSubsystemDuplicateName">You cannot have
+    duplicate port names on a block that is a part of a configurable subsystem.
+    The Model block ''{0}'' is used in configurable subsystem ''{1}'' and has
+    multiple ports with the name ''{2}''.  To avoid duplicate port names, edit
+    the referenced model ''{3}'' and do one or more of the following, depending
+    on the configuration of this model:\n\n
+
+    a) Set ''Icon display'' to ''Port number'' on the root input and output
+    ports.\n\n
+
+    b) Show the block names on the root input and output ports.\n\n
+
+    c) Change the names of the signals attached to the root input and output
+    ports to eliminate having more than one root input or output attached to a
+    signal with the same name.</entry>
+
+    <entry key="convertToModelReference_ErrorInSubsystem">The following error
+    occurred in subsystem ''{0}'': {1}</entry>
+
+    <entry key="convertToModelReference_SubsystemInInactiveVariant">The
+    subsystem block ''{0}'' is part of an inactive variant hierarchy or
+    commented out hierarchy. As a result, it cannot be converted to a referenced
+    model.</entry>
+
+    <entry key="convertToModelReference_BusWithMixedSampleTimes">Invalid bus
+    element sample time. Cannot use bus object ''{0}'' for {1} block ({2}) in
+    the new model. This bus object has elements with different sample
+    times. In order to convert a subsystem to a model, all bus element sample
+    times must be the same or they must be inherited (-1).</entry>
+    
+    <entry key="convertToModelReference_InvalidSubsystemFcnCallOutput">Output
+    port {0,number,integer} of the specified subsystem block is a
+    function-call signal. Cannot convert subsystems with function call outputs
+    to model reference.</entry>
+    
+    <entry key="convertToModelReference_InvalidSubsystemConstInput">Input port
+    {0,number,integer} of the specified subsystem block has constant sample
+    time. Cannot convert subsystems with constant inputs to model
+    reference.</entry>
+    
+    <entry key="convertToModelReference_InvalidMergeConnection">Input port
+    ''{0}'' is driving a Merge block. Since external signals from root level
+    inports in the new model cannot be merged with internal block output
+    signals, this subsystem cannot be converted to a model.</entry>
+    
+    <entry key="convertToModelReference_BusWithKnownTsInTriggerSS">Invalid bus
+    element sample time. Bus object ''{0}'' has non-inherited sample time
+    elements (or sub-elements).  Cannot use this bus object for {1} block
+    ({2}) in the new model. Since the new model must be configured to be
+    sample time independent, all bus element sample times must be specified as
+    inherited (-1).</entry>
+    
+    <entry key="convertToModelReference_SubsystemHasLinkToADirtyLibrary">Subsystem
+      ''{0}'' is linked to a library with unsaved changes. Please save the
+      library before converting the subsystem to a model.</entry>
+    <entry key="convertToModelReference_BadSimulationStatus">Simulation status
+    of model ''{0}'' is ''{1}''.  This indicates that the model is being run.
+    Please stop the simulation, and rerun convertToModelReference.</entry>
+    
+    <entry key="convertToModelReference_InvalidModelRef" note="stringDatatypeUpdate">The new model name must be 
+    a valid character vector and variable name: ''{0}''.</entry>
+
+    <entry key="convertToModelReference_ModelRefFileExisted">Cannot use ''{0}''
+    as a new referenced model name. The model ''{1}'' already exists on the
+    path.</entry>
+
+    <entry key="convertToModelReference_UnableToWireBlock">Error occurred when
+      wiring the input and output ports of block ''{0}'' in system ''{1}''.
+      Please connect the block.</entry>
+
+    <entry key="convertToModelReference_InvalidSubsystemDWorkCrossSys">The
+    subsystem ''{0}'' is in an iterator system. This subsystem
+    directly/indirectly contains an Assignment block. The Assignment block is
+    not in an iterator system. Please update your model to avoid this
+    configuration. Cannot convert this subsystem to model reference.</entry>
+
+    <entry
+    key="convertToModelReference_InvalidSubsystemFcnCallSSWithInheritState">The
+    ''State when enabling'' parameter of the Trigger port block inside the
+    Function-Call subsystem ''{0}'' is set to inherit. Simulink cannot ensure
+    compatibility between the original subsystem ''{1}'' and the new
+    model. Please set the ''State when enabling'' parameter to reset or held
+    before converting the subsystem block to model reference.</entry>
+
+    <entry key="convertToModelReference_InvalidSubsystemWideFcnCallPort">The
+    function-call input port of the specified subsystem block expects a wide
+    (non-scalar) signal with {0,number,integer} elements. Cannot convert
+    subsystems with wide function-call input port to model reference.</entry>
+
+    <entry key="convertToModelReference_FailedToBuildTarget">Failed to build
+    model reference target.</entry>
+
+    <entry key="convertToModelReference_InvalidSigGenConnection"><![CDATA[The
+    specified subsystem block contains input ports connected to Signal & Scope
+    Manager signal generators.  Cannot convert subsystems with this
+    condition.]]></entry>
+
+    <entry key="convertToModelReference_InvalidNumInputs">Invalid usage of
+    convertToModelReference.  Two or more inputs are expected.</entry>
+
+    <entry key="convertToModelReference_BuildTarget">Invalid value for
+    BuildTarget parameter.  BuildTarget must be ''Sim'' or ''RTW''.</entry>  
+   
+    <entry key="SubsystemsForErrorChecking">Invalid input parameter for
+    ''SubsystemConversionCheck'' class. This parameter must be a cell array of
+    subsystem names or handles.</entry>
+    
+    <entry key="convertToModelReference_InvalidInputArgument">Invalid input
+    argument: {0}.</entry>
+
+    <entry key="DataStoreUtils_InvalidInputArgument">The second input argument
+    of DataStoreUtils is invalid. It must be a logical value: {0}.</entry>
+
+    <entry key="convertToModelReference_inportInvalidDownStreamSampleTimeErr">
+      Block ''{0}'' has a sample time of [{1}, {2}] which does not match the
+      sample time [{3}, {4}] of input port {5,number,integer} of downstream
+      block ''{6}''. Sample times must be the same. Please either change one of
+      the two sample times or insert a Rate Transition block.
+    </entry>
+
+    <entry key="convertToModelReference_outportInvalidUpStreamSampleTimeErr">
+      Block ''{0}'' has a sample time of [{1}, {2}] which does not match the
+      sample time [{3}, {4}] of output port {5,number,integer} of upstream block
+      ''{6}''. Sample times must be the same. Please either change one of the
+      two sample times or insert a Rate Transition block.
+    </entry>
+
+    <entry key="NormalModeSimulationError">An error occurred during simulation
+    of Model block ''{0}''.  </entry>
+
+    <entry key="NormalModeSimulationWarning">The following warning occurred
+    while simulating the Model block with block path {0}</entry>
+
+    <entry key="NormalModeCodegenError">An error occurred during code generation
+    of Model block ''{0}''.  </entry>
+
+    <entry key="NormalModeVisibilityUnexpectedCommand">The command {0} is not a
+    valid option to Simulink.ModelReference.NormalModeVisibility.</entry>
+
+    <entry key="NormalModeVisibilityUnexpectedCommandType" note="stringDatatypeUpdate">The command given to
+    Simulink.ModelReference.NormalModeVisibility is not a character vector.</entry>
+
+    <entry key="MultiinstanceNormalModeWorkspaceVariableChanged">The values of
+    one or more global workspace variables used by the model ''{0}'' have
+    changed between the time when two different instances of this model were
+    compiled for Model Reference Normal Mode, which is not allowed.</entry>
+
+    <entry key="MultiinstanceNormalModeBlockDiagramChecksumChanged">The model
+      ''{0}'' has changed between the time when two instances of this model were
+      compiled.  This is not allowed for models referenced in Normal
+      Mode.</entry>
+
+    <entry key="ModelBlockNormalModeVisibilityInvalidValue" note="stringDatatypeUpdate">The value of the
+      ''ModelBlockNormalModeVisibility'' parameter must be either a cell array
+      of cell arrays of character vectors, or an array of Simulink.BlockPaths.</entry>
+
+    <entry key="DuplicateModelBlockNormalModeVisibility"><![CDATA[
+      Model blocks {1} and {2} reference model ''{0}'' and have their Normal
+      Mode Visibility set to on. You need to change the Normal Mode Visibility
+      settings on the top model, ''{3}'', so that at most one Model block that
+      references model ''{4}'' has its Normal Mode Visibility set to on. Change
+      the settings either with the ''ModelBlockNormalModeVisibility'' block
+      diagram parameter or with the <a
+      href="matlab:Simulink.ModelReference.NormalModeVisibility(''{5}'')">Model
+      Block Normal Model Visibility Editor</a>.]]></entry>
+
+    <entry key="ParameterOnlyValidWhenModelIsCompiledAndTopModel">The value of
+      this parameter is only valid when the model is in a compiled
+      state and is a top model.</entry>
+
+    <entry key="IgnoringModelBlockNormalModeVisibilitySummary">Normal Mode
+    Visibility is being ignored for the following block paths because they do
+    not specify Model blocks that simulate in Normal mode.  Save the model
+    ''{0}'' to avoid this warning when simulating in the future.</entry>
+
+    <entry key="IgnoringOneModelBlockNormalModeVisibility">Normal Mode
+    Visibility is being ignored for the block path {0}.</entry>
+    
+    <entry key="IgnoringVisibilityInactiveVariant">Normal Mode Visibility is
+    being ignored for the block path {0}.  This block path is in an inactive
+    variant.</entry>
+
+    <entry key="MultiInstanceNormalModeSetupFailedBecauseOfModelName">Simulink
+      failed to set up the model ''{0}'' for multi-instance Normal mode.  This
+      can happen if you have models with similar names that are referenced many
+      times or are on the path.  Rename some of your models and try
+      again.</entry>
+    <entry key="InvalidNormalModeCallbackSpecified">The callback being set must
+      be a single object of type
+      Simulink.ModelReference.NormalModeCallback or an empty matrix.</entry>
+    <entry key="MultiInstanceNormalModeSFunctionMustSupportMultipleExecBlockInstances">The
+      S-Function block ''{0}'' is not supported in multi-instance Normal mode
+      because it does not declare that it supports multiple execution instances.
+      If the S-Function satisfies the multiple execution instances requirements,
+      you can declare this using the SimStruct function
+      'ssSupportsMultipleExecInstances' in the 'mdlSetWorkWidths'
+      method.</entry>
+    <entry key="MultiInstanceNormalModeMFileSFunctionMustSupportMultipleExecBlockInstances">The
+      MATLAB S-Function block ''{0}'' is not supported in multi-instance Normal
+      mode because it does not declare that it supports multiple execution
+      instances. If the MATLAB S-Function satisfies the multiple execution
+      instances requirements, you can declare this by setting the flag
+      block.SupportsMultipleExecInstances to true in the Setup section.
+      </entry>
+    <entry key="RTWConstantSampleTimeSimulationNot">Output port
+      {0,number,integer} of Model block ''{1}'' has a constant sample time in the
+      Model Reference Coder target but not during simulation.  Change the model
+      ''{2}'' so that the sample times of this output port are the same.
+    </entry>
+    <entry key="RTWAndSimulationConstantOutputsDiffer">Output port
+      {0,number,integer} of Model block ''{1}'' has a constant sample time, but
+      the value of the output in the Model Reference Coder target differs from the
+      value obtained during simulation.  Change the model ''{2}'' so that the
+      values of this output port are the same.
+    </entry>
+    <entry key="OpenNonVisibleInstanceTitle">Warning:  Opening model ''{0}''</entry>
+    <entry key="OpenNonVisibleInstancePrefKey" translate="false">PREFSMULTIINSTANCENORMALMODENONVISIBLEINSTANCEWARNING</entry>
+
+    <entry key="OpenNonVisibleInstancePrefDescription">Warn when opening Model
+      blocks with Normal Mode Visibility set to off</entry>
+
+    <entry key="OpenNonVisibleInstancePrefToolTip">Show a warning when opening
+      models from Model blocks that have Normal Mode Visibility set to
+      off</entry>
+    <entry key="OpenNonVisibleInstanceActionButton">Edit Visibility</entry>
+
+    <entry key="OpenNonVisibleInstanceText">The last time that you simulated the
+    model ''{0}'', the Model block from which you opened the model ''{1}'' did
+    not have its Normal Mode Visibility set to on.  When a model is referenced
+    multiple times in Normal mode, Model blocks that do not have Normal Mode
+    Visibility set to on will have gray corners.  The Scope blocks, port values,
+    etc. for model ''{2}'' will show data from a different instance.  To change
+    the Normal Mode Visibility settings, click ''{3}''.</entry>
+
+    <entry key="HierarchyExplorerInstructionsPrompt">Instructions</entry>
+    <entry key="HierarchyExplorerReadyStatusMessage">Ready</entry>
+    <entry key="HierarchyExplorerRefreshingStatusMessage">Refreshing</entry>
+    <entry key="HierarchyExplorerOKButton">OK</entry>
+    <entry key="HierarchyExplorerCancelButton">Cancel</entry>
+    <entry key="HierarchyExplorerHelpButton">Help</entry>
+    <entry key="HierarchyExplorerRefreshButton">Refresh</entry>
+    <entry key="HierarchyExplorerApplyButton">Apply</entry>
+    <entry key="HierarchyExplorerLegendAccelerator">Accelerated, Software-in-the-Loop (SIL), or Processor-in-the-Loop (PIL) Mode</entry>
+    <entry key="HierarchyExplorerLegendNormal">Normal Mode</entry>
+    <entry key="HierarchyExplorerUnappliedChangesTitle">Apply Changes</entry>
+    <entry key="HierarchyExplorerRefreshWithUnappliedChangesMessage">
+       You have changed the settings for model ''{0}'', but have not yet applied
+       these changes to the model.  Would you like to apply these changes before
+       refreshing the dialog?</entry>
+    <entry key="HierarchyExplorerClosedWhenNotReady">The Hierarchy Explorer was
+       closed in a non-ready state.</entry>
+    <entry key="HierarchyExplorerUnappliedChangesApplyButton">Apply</entry>
+    <entry key="HierarchyExplorerUnappliedChangesDoNotApplyButton">Do Not Apply</entry>
+    <entry key="HierarchyExplorerUnappliedChangesCancelButton">Cancel</entry>
+    <entry key="NormalModeVisibilityExplorerInstructions"><![CDATA[
+       <p>The Normal Mode Visibility setting determines the instances of a
+          Normal mode referenced model for which you can perform activities such
+          as viewing Scope blocks or port values.</p>
+
+       <p>Select the check boxes for the multi-instance Normal mode Model blocks
+          for which you want to enable Normal Mode Visibility during the next
+          simulation.</p>
+
+       <p>If you change the model reference hierarchy, click <b>Refresh</b> to
+          update the hierarchy in the dialog.</p>
+    ]]></entry>
+
+    <entry key="HierarchyExplorerCouldNotLoadModel">The {0} dialog for model
+    ''{1}'' could not be opened because it references the model ''{2}'' that
+    failed to load.</entry>
+
+    <entry key="NormalModeVisibilityExplorerTitle">Model Block Normal Mode Visibility</entry>
+    <entry key="NormalModeVisibilityExplorerOpenCallback"><![CDATA[&Open]]></entry>
+    <entry key="NormalModeVisibilityExplorerOpenTooltip">Open</entry>
+    <entry key="CannotOpenBlockInModelWithNormalModeVisibilityUnset">The block
+      ''{0}'' cannot be opened because it is in a model that does not have
+      Normal mode visibility set to on.</entry>
+    <entry key="CannotOpenBlockDiagramWithNormalModeVisibilityUnset">The block
+      diagram ''{0}'' cannot be opened because it does not have Normal mode
+      visibility set to on.</entry>
+    <entry key="RefreshBlockAlertTitle">Refresh Model Blocks Changed</entry>
+    <entry key="RefreshBlockAlertMessage"><![CDATA[Model block ''{0}'' is referencing
+      model ''{1}''.  This Model block contains stale information.  To save
+      model ''{2}'', all Model blocks need to be refreshed. Select:      
+      <ul>
+        <li> <b>Refresh</b> to refresh all Model blocks in the model.
+        <li> <b>Cancel</b> to cancel the Save operation.
+      </ul> ]]></entry>
+    <entry key="SaveBlockAlertTitle">Saving Referenced Models</entry>
+    <entry key="SaveBlockAlertMessage"><![CDATA[Model block ''{0}'' is referencing model
+      ''{1}''. Model ''{2}'' has unsaved changes.  Select: 
+      <ul>
+        <li> <b>Save</b> to save ''{3}'' and refresh all Model blocks in the parent model.
+        <li> <b>Save All</b> to recursively repeat the above action for referenced models that
+        have unsaved changes.
+        <li> <b>Cancel</b> to cancel the Save operation for this model and its parents.
+      </ul> ]]></entry>
+    <entry key="SaveButton">Save</entry>
+    <entry key="SaveAllButton">Save All</entry>
+    <entry key="RefreshButton">Refresh</entry>
+    <entry key="CancelButton">Cancel</entry>
+    <entry key="noMinAlgLoopForTriggeredMdlRef"> Invalid settings when generating model reference code for model ''{0}''.  'Minimize algebraic loop occurrences' option in the 'Model Referencing' page of the Configuration Parameters dialog cannot be set when the model has a trigger port at the root level.</entry>
+    <entry key="ArrayBoundsCheckingNotSupportedInMdlRefNormalMode">The referenced model ''{0}'' has ''Array bounds exceeded'' set to ''{1}''. This is not supported in Normal mode simulation of a referenced model.
+      <![CDATA[<actions>
+        <action cmd="matlab:configset.internal.fixIt(''{0}'',''ArrayBoundsChecking'',''none'')" type="fixit">Set <sldiag objui="configset" objparam="ArrayBoundsChecking">Array bounds exceeded</sldiag> to ''none'' to run ''{0}'' in Normal mode</action>
+      </actions>]]>
+    </entry>
+    <entry key="CannotChangeVerIoMismatchMsg"><![CDATA[Model block ''{0}'' \n was
+    refreshed from model ''{1}'' that had unsaved \n changes. Before changing
+    "Model block version mismatch" or \n "Port and parameter mismatch"
+    diagnostics from none \n to warning or error, you should \n (1) save all
+    referenced models, and \n (2) <a href="matlab:helpview([docroot,
+    ''/toolbox/simulink/ug/simulink_ug.map''], ''RefreshingModelBlocks'');">refresh
+    all Model blocks</a> in your model.]]></entry>
+    <entry key="CannotReferenceALibrary">Model block cannot reference a Library. ''{0}'' is a Library. Please specify a model name.</entry>
+    <entry key="CannotReferenceAHarness">Model block cannot reference a test harness. ''{0}'' is a test harness. Please specify a model name.</entry>
+    <entry key="CannotRefreshFromDirtyMdlDiagOn">Cannot refresh Model block ''{0}'' from model ''{1}''. The referenced model has unsaved changes. In addition, ''Model block version mismatch'' or ''Port and parameter mismatch'' option in the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog of model ''{2}'' is set to ''warning'' or ''error''. Please save the referenced model ''{3}'' before refreshing the Model block.</entry>
+    <entry key="InconsistentStopTime">Model reference configuration set property mismatch. The ''Stop time'' for model ''{0}'' is ''{1}''. 
+      This does not match the value ''{2}'' for the model ''{3}'' referenced via the Model block ''{4}''.  Note that the Stop time
+      that is used for a model is adjusted to fall exactly on a sample hit.  Set the parameter ''Configuration Parameters > Diagnostics > Automatic solver
+      parameter selection'' to either ''warning'' or ''error'' to be notified when Simulink adjusts the ''Stop time''.\n
+      To turn off the reporting of this condition, change the 
+    value of the ''Configuration Parameters > Diagnostics > Model Referencing > Model configuration mismatch'' parameter to ''none''.</entry>
+    <entry key="ConsistentOutportInitMismatchParentToClassic"><![CDATA[Model reference parameter mismatch. To have the model ''{0}'' be referenced via the Model 
+    block ''{1}'' in the parent model ''{2}'', set (in the model ''{3}'') <sldiag objui="configset" objparam="UnderspecifiedInitializationDetection">Underspecified initialization detection</sldiag> to ''Classic''.]]></entry>    
+    <entry key="ConsistentOutportInitMismatch"><![CDATA[Model reference parameter mismatch. To have the model ''{0}'' be referenced via the Model 
+    block ''{1}'' in the parent model ''{2}'', set (in the model ''{3}'') <sldiag objui="configset" objparam="UnderspecifiedInitializationDetection">Underspecified initialization detection</sldiag> to ''Simplified''.]]></entry>    
+    <entry key="Cycle">The model ''{0}'' contains a reference to itself through the referencing hierarchy ''{1}'' initiated in Model block ''{2}''</entry>
+    <entry key="CycleNotAllowed">Model reference loop is not supported. Model ''{0}'' has a model reference loop: ''{1}''</entry>
+    <entry key="DSMMismatch">A global data store {0} that is being accessed in a model directly or indirectly referenced by ''{1}'' has an inconsistent data type with the data store memory that is being created.  The data type in the referenced model is {2} and the data type of the memory is {3}.  One possible cause of this is if the DataTypeOverride parameter is set inconsistently in this model reference hierarchy.</entry>
+    <entry key="DisallowNonIterAssignmentBlocks">Invalid configuration for an Assignment block in a referenced model.  The following configuration is not currently supported: \n - the Model block ''{0}'' lives in an iterator system ''{1}''. \n \n - the Model block is referencing a model ''{2}'' that directly/indirectly contains the Assignment block ''{3}''. \n \n - the Assignment block is not in an iterator system in the referenced model.\n\n Please update your model to avoid this configuration.</entry>
+    <entry key="DisallowNonzeroStartTime">The model ''{0}'' can not have a
+    nonzero start time when generating real-time code if it is being referenced
+    by another model.  Please change the "Start Time" to zero in the Solver page
+    of the Configuration Parameters dialog.</entry>
+    <entry key="DisallowWideFcnCallMdlRef">Multiple callers specified for
+    ''{0}''.  The Model block must have a single caller.</entry>
+
+    <entry key="ErrDiagIOMismatchMsg"><![CDATA[ There is a port/parameter
+    mismatch between the Model block ''{0}'' and the referenced model ''{1}''. To
+    address this mismatch, right-click the Model block and select 'Subsystem & Model Reference > Refresh
+    Selected Model Block', and if necessary, update the referencing
+    model to reflect changes in the referenced model. To turn off reporting of
+    this condition, set the <a
+    href="matlab:sl('openConfigSetItem', ''{2}'',
+    ''ModelReferenceIOMismatchMessage'');">''Configuration Parameters >
+    Diagnostics > Model Referencing > Port and parameter mismatch''</a>
+    parameter to ''none''.]]></entry>
+
+    <entry key="WarnDiagIOMismatchMsg"><![CDATA[ There is a port/parameter
+    mismatch between the Model block ''{0}'' and the referenced
+    model ''{1}''. The Model block will use the current interface of the
+    referenced model. To address this mismatch, right-click the Model block and
+    select 'Subsystem & Model Reference > Refresh Selected Model Block', and if necessary, update
+    the referencing model to reflect changes in the referenced model. To turn
+    off reporting of this condition, set the <a
+    href="matlab:sl('openConfigSetItem', ''{2}'',
+    ''ModelReferenceIOMismatchMessage'');">''Configuration Parameters >
+    Diagnostics > Model Referencing > Port and parameter mismatch''</a>
+    parameter to ''none''.]]></entry>
+
+    <entry key="WarnNoSyncDiagIOMismatchMsg"><![CDATA[ There is a port/parameter
+    mismatch between the Model block ''{0}'' and the referenced model ''{1}''. The
+    Model block cannot use the current interface of the referenced model. To
+    address this mismatch, right-click the Model block and select 'Subsystem & Model Reference > Refresh
+    Selected Model Block', and if necessary, update the referencing
+    model to reflect changes in the referenced model. To turn off reporting of
+    this condition, set the <a
+    href="matlab:sl('openConfigSetItem', ''{2}'',
+    ''ModelReferenceIOMismatchMessage'');">''Configuration Parameters >
+    Diagnostics > Model Referencing > Port and parameter mismatch''</a>
+    parameter to ''none''.]]></entry>
+
+    <entry key="ErrInvalidModelrefInput_Sfcn">A noninlined S-Function reading its input from a root Inport block is found. A hidden Signal Conversion block (with the ''Exclude this block...'' option enabled) needs to be inserted before noninlined S-Function ''{0}'' in referenced model ''{1}'' to facilitate code generation. \nUse the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>
+    <entry key="ErrInvalidModelrefInput_Sfcn_FcnCall">A noninlined S-Function ''{0}'' is reading its input from root Inport {1,number,integer}. This scenario is not allowed because this root Inport is driving a function-call block whose trigger signal is driven by another root Inport block. A Signal Conversion block (with the ''Exclude this block...'' option enabled) needs to be inserted before the noninlined S-Function in referenced model ''{2}'' to facilitate code generation.</entry>
+    <entry key="ErrInvalidModelrefOutput_ConstTP">Invalid root Outport block connection in the referenced model ''{0}''. Root Outport {1,number,integer} is driven by the block ''{2}'' which also has an output port that is testpointed or has non-auto storage class. \nUse the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>
+    <entry key="ErrInvalidModelrefOutput_ConstTP_FcnCall">Invalid root Outport block connection in the referenced model ''{0}''. Root Outport {1,number,integer} is driven by the block ''{2}'' which also has an output port that is testpointed or has non-auto storage class. This scenario is not allowed because the function-call block that drives this root Outport is triggered by a root Inport block that outputs a function-call signal.</entry>
+    <entry key="ErrInvalidModelrefOutput_GroundBlock">Invalid root Outport block connection in the referenced model ''{0}''. Root Outport {1,number,integer} is driven by a ground block. \nUse the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>
+    <entry key="ErrInvalidModelrefOutput_MultiDst">Invalid root Outport block connection in the referenced model ''{0}''. Output port {1,number,integer} of block ''{2}'' drives root Outport blocks {3,number,integer} and {4,number,integer}. To be a valid connection, the source port must drive only one root Outport block. \nUse the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>
+    <entry key="ErrInvalidModelrefOutput_MultiDst_FcnCall">Invalid root Outport block connection in the referenced model ''{0}''. Output port {1,number,integer} of block ''{2}'' drives root Outport blocks {3,number,integer} and {4,number,integer}. This scenario is not allowed because the function-call block that drives this root Outport is triggered by a root Inport block that outputs a function-call signal. To be a valid connection, the source port must drive only one root Outport block.</entry>
+    <entry key="ErrInvalidModelrefOutput_MultiPath">Invalid root Outport block connection in the referenced model ''{0}''. Output port {1,number,integer} of block ''{2}'' drives root Outport {3,number,integer} via two paths. To be a valid connection, only one signal path can exist between a root Outport block and the block that drives it. \nUse the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>
+    <entry key="ErrInvalidModelrefOutput_MultiPath_FcnCall">Invalid root Outport block connection in the referenced model ''{0}''. Output port {1,number,integer} of block ''{2}'' drives root Outport {3,number,integer} via two paths. This scenario is not allowed because the function-call block that drives this root Outport is triggered by a root Inport block that outputs a function-call signal. To be a valid connection, only one signal path can exist between a root Outport block and the block that drives it.</entry>
+    <entry key="ErrInvalidModelrefOutput_MultiSrc">Invalid root outport connection in the referenced model ''{0}''. Two different blocks drive the root Outport block {1,number,integer}. To be a valid connection, the root Outport block must be driven by one source port. \nUse the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>
+    <entry key="ErrInvalidModelrefOutput_MultiSrc_FcnCall">Invalid root outport connection in the referenced model ''{0}''. Two different blocks drive the root Outport block {1,number,integer}. This scenario is not allowed because the function-call block that drives this root Outport is triggered by a root Inport block that outputs a function-call signal. To be a valid connection, the root Outport block must be driven by one source port.</entry>
+    <entry key="ErrInvalidModelrefOutput_NONCont">Invalid root Outport block connection in the referenced model ''{0}''. Only {1,number,integer} element(s) of output port {2,number,integer} of block ''{3}'' drive the root Outport {4,number,integer}. To be a valid connection, all of the signal''s elements must drive the root Outport block to which it is connected. \nUse the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>
+    <entry key="ErrInvalidModelrefOutput_NONCont_FcnCall">Invalid root Outport block connection in the referenced model ''{0}''. The input of the root-level Outport block ''{1}'' driven by function-call root-level Inport block(s) cannot use partial signal from output port {2,number,integer} of ''{3}''.</entry>
+    <entry key="ErrInvalidModelrefOutput_NONCont_SimulinkFcn">Invalid root Outport block connection in the referenced model ''{0}''. The input of the root-level Outport block ''{1}'' cannot use partial signal from output port {2,number,integer} of Simulink Function ''{3}''.</entry>
+    <entry key="ErrInvalidModelrefOutput_NonConstDrivingConst">Invalid root Outport block connection in the referenced model ''{0}''. Root Outport {1,number,integer} has a constant sample time but is driven by a block that does not have a constant sample time. \nUse the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>    
+    <entry key="ErrInvalidModelrefOutput_ConstDrivingNonConst">Invalid root Outport block connection in the referenced model ''{0}''. Root Outport {1,number,integer} does not have a constant sample time but is driven by a block that has a constant sample time. \nUse the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>
+    <entry key="ErrInvalidModelrefOutput_NoninlinedSfcn">Invalid root Outport block connection in the referenced model ''{0}''. Root Outport {1,number,integer} is being read from or written to by the noninlined S-Function ''{2}''. \nUse the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>
+    <entry key="ErrInvalidModelrefOutput_NoninlinedSfcn_FcnCall">Invalid root Outport block connection in the referenced model ''{0}''. Root Outport {1,number,integer} is being read from or written to by the noninlined S-Function ''{2}''. This scenario is not allowed because the function-call block that drives this root Outport is triggered by a root Inport block that outputs a function-call signal.</entry>
+    <entry key="ErrInvalidModelrefOutput_TestPoint">Invalid root Outport block connection in the referenced model ''{0}''. The signal driving the root Outport block {1,number,integer} is a test point or it has SimulinkGlobal storage class specified. Use the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>
+    <entry key="ErrInvalidModelrefOutput_TestPoint_FcnCall">Invalid root Outport block connection in the referenced model ''{0}''. The signal driving the root Outport block {1,number,integer} is a test point or it has SimulinkGlobal storage class specified. This scenario is not allowed because the function-call block that drives this root Outport is triggered by a root Inport block that outputs a function-call signal.</entry>
+    <entry key="InvalidModelrefOutput_ReturnByValueClassic"><![CDATA[Invalid root Outport block connection in the referenced model ''{0}''. The Outport block {1,number,integer} is configured to return the model output by value in the model''s function prototype control dialog. The block may be conditionally assigned and therefore incompatible with the selected model function prototype control setting. \nSimulink inserts a hidden Signal Conversion block before the Outport and enables the ''Exclude this block...'' option for that Signal Conversion block.  As a result, the behavior of the generated code may be inconsistent with simulation.  Consider setting <sldiag objui="configset" objparam="UnderspecifiedInitializationDetection">Underspecified initialization detection</sldiag> to 'Simplified' in order to ensure consistent behavior.  For a large or complex model, use the Model Advisor check ''Check consistency of initialization parameters for Outport and Merge blocks'' to help with this task. Use the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.]]></entry>
+    <entry key="InvalidModelrefOutput_ReturnByValueSimplified">Invalid root Outport block connection in the referenced model ''{0}''. The Outport block {1,number,integer} is configured to return the model output by value in the model''s function prototype control dialog. The block may be conditionally assigned and therefore incompatible with the selected model function prototype control setting. \nSimulink inserts a hidden Signal Conversion block before the Outport and enables the ''Exclude this block...'' option for that Signal Conversion block.  Use the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>
+    <entry key="ConflictModelRefOutportAndDrivingSignalSpec">Conflicting signal specifications: Outport block {0} attributes '{'Signal name:''{1}'', StorageClass = ''{2}'''}' and output port {3,number,integer} of {4} attributes '{'Signal name:''{5}'', StorageClass=''{6}'''}' are inconsistent. Either make them consistent or change the identifiers.</entry>
+    <entry key="ConflictModelRefOutportAndDrivingSignalSpec1">Conflicting signal specifications: Outport block {0} and output port {1,number,integer} of {2} have specified same signal identifier '{'Signal name:''{3}'''}' but the properties are different. Either make them consistent or change the identifiers.</entry>
+    <entry key="ErrorRetrievingEmbeddedSignalObject">Unable to retrieve embedded root port signal object for ''{0}''.</entry>
+    <entry key="ErrorRetrievingInterfaceChecksum">Unable to retrieve interface checksum for ''{0}''.</entry> 
+    <entry key="ErrorDisplayingReport">Unable to display report for ''{0}''.</entry> 
+    <entry key="ErrorDisplayingWebview">Unable to display Web view for ''{0}''.</entry>
+    <entry key="ErrorSignalLabelInconsistency">Signal labels of the root Outport blocks in the saved model file for model ''{0}'' are different than those in the updated diagram. Run update diagram and then save the model to resolve the inconsistency.</entry>
+    <entry key="ErrorSignalLabelInconsistencyDetail">The signal label of root
+    Outport block {0,number,integer} in the saved model file for model ''{1}'' is
+    "{2}", but the signal label in the updated diagram is "{3}".</entry>
+
+    <entry key="ErrorSignalLabelNumberOfPortsMismatch">The number of Outport
+    blocks in the saved model file for model ''{0}'' is different than the
+    number in the updated diagram.  The saved model file has {1,number,integer},
+    while the updated diagram has {2,number,integer}. Save the model to resolve
+    the inconsistency.</entry>
+    <entry key="FixedStepMismatch">The model ''{0}'', which has a fixed step size of {1}, is referencing (via the Model block ''{2}'') the model ''{3}'', which has a fixed step size of {4}.  Referencing a hybrid (having both discrete and continuous components) model with a different fixed step size is not supported.</entry>
+    <entry key="IOMismatchInputBusName">Input port {0,number,integer} of Model block ''{1}'' is using bus object "{2}" and is referencing model ''{3}''. The input port {4,number,integer}, of the referenced model, is using bus object "{5}".</entry>
+    <entry key="IOMismatchInputNames">Input port {0,number,integer} of Model block ''{1}'' has a name of "{2}" and is referencing model ''{3}''. The input port {4,number,integer}, of the referenced model, has a name of "{5}".</entry>
+    <entry key="IOMismatchInputSigName">Input port {0,number,integer} of Model block ''{1}'' has a signal name of "{2}" and is referencing model ''{3}''. The input port {4,number,integer}, of the referenced model, has a signal name of "{5}".</entry>
+
+    <entry key="IOMismatchInputUnitExpr">Input port {0,number,integer} of Model block ''{1}'' has a unit expression of "{2}" and is referencing model ''{3}''. The input port {4,number,integer}, of the referenced model, has a unit expression of "{5}".</entry>
+
+    <entry key="IOMismatchNumInports">The Model block ''{0}'', which has
+    {1,number,integer} inport(s), is referencing model ''{2}'', which has
+    {3,number,integer} inport(s).</entry>
+
+    <entry key="IOMismatchNumOutports">The Model block ''{0}'', which has
+    {1,number,integer} outport(s), is referencing model ''{2}'', which has
+    {3,number,integer} outport(s).</entry>
+
+    <entry key="IOMismatchInputLatchParams">Input port {0,number,integer} of Model block ''{1}'' has "InputPortLatchByCopyingInsideSignal" set to "{2}". The referenced model, ''{3}'', has "InputPortLatchByCopyingInsideSignal" set to "{4}" for this port.</entry>
+    <entry key="IOMismatchInputLatchOutsideParams">Input port {0,number,integer} of Model block ''{1}'' has "InputPortLatchByDelayingOutsideSignal" set to "{2}". The referenced model, ''{3}'', has "InputPortLatchByDelayingOutsideSignal" set to "{4}" for this port.</entry>
+    <entry key="IOMismatchOutputBusAsStructParams">Output port {0,number,integer} of Model block ''{1}'' has "OutputPortOutputBusAsStructs" set to "{2}". The referenced model, ''{3}'', has "OutputPortOutputBusAsStructs" set to "{4}" for this port.</entry>
+
+    <entry key="IOMismatchNotificationBar">The interface for Model block ''{0}'' does not match the referenced model. Refresh the Model block.</entry>
+
+    <entry key="IOMismatchNumProps">The Model block ''{0}'' has a different set of "{1}" than the model it is referencing ''{2}''.</entry>
+    <entry key="IOMismatchOutputBusName">Output port {0,number,integer} of Model block ''{1}'' is using bus object "{2}" and is referencing model ''{3}''. The output port {4,number,integer}, of the referenced model, is using bus object "{5}".</entry>
+    <entry key="IOMismatchOutputNames">Output port {0,number,integer} of Model block ''{1}'' has a name of "{2}" and is referencing model ''{3}''. The output port {4,number,integer}, of the referenced model, has a name of "{5}".</entry>
+    <entry key="IOMismatchOutputSigName">Output port {0,number,integer} of Model block ''{1}'' has a signal label of "{2}" and is referencing model ''{3}''. The output port {4,number,integer}, of the referenced model, has a signal label of "{5}".</entry>
+    <entry key="IOMismatchOutputUnitExpr">Output port {0,number,integer} of Model block ''{1}'' has a unit expression of "{2}" and is referencing model ''{3}''. The output port {4,number,integer}, of the referenced model, has a unit expression of "{5}".</entry>
+    <entry key="IOMismatchParamArgs">The Model block ''{0}'', which has the parameter arguments "{1}", is referencing model ''{2}'', which has parameter arguments "{3}".</entry>
+    <entry key="IOMismatchTrigName">The Model block ''{0}'' has a trigger port with the name "{1}" and is referencing model ''{2}''. The trigger port of the referenced model has the name "{3}".</entry>
+    <entry key="IOMismatchEnableName">The Model block ''{0}'' has an enable port with the name "{1}" and is referencing model ''{2}''. The enable port of the referenced model has the name "{3}".</entry>
+    <entry key="IOMismatchTrigType">The Model block ''{0}'' has a trigger port with the Trigger type "{1}" and is referencing model ''{2}''. The trigger port of the referenced model has the Trigger type "{3}".</entry>
+    <entry key="IllegalModelRefName">The Model block ''{0}'' is trying to reference a model that has a name longer than {1,number,integer} characters.  Please enter a valid model name.</entry>
+    <entry key="InvFcnCallMdlRefOutputConn">The diagnostic ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog has been overridden to warning because this model contains function-call trigger port at the root level. To avoid this warning, please insert a Signal Conversion block immediately before the root outport blocks described above. Ensure that the ''Exclude this block from ''Block reduction'' optimization'' flag is turned on for these Signal Conversion blocks.</entry>
+    <entry key="InvSolverType">The variable-step model ''{0}'' is referencing (via the Model block ''{1}'') the fixed-step model ''{2}'' which has blocks with continuous and discrete sample times.  Referencing a fixed-step hybrid (having both discrete and continuous components) model from a variable-step model is not supported.</entry>
+    <entry key="ModelNameIsDefaultName">You have not entered a referenced model name. Please specify a model to open.</entry>
+    <entry key="InvalidContinuousSampleTime">The Model block ''{0}'' cannot inherit a continuous or fixed-in-minor-step sample time.  
+    On the Configuration Parameters > Solver page for the referenced model ''{1}'', either set the Type parameter to ''Variable-step'' or 
+    set Type to ''Fixed-step'' and the Fixed-step size (fundamental sample time) parameter to a value other than ''Auto''. </entry>
+    <entry key="InvalidConstantSampForMdlrefInputPort">Input ports of a Model block cannot be constant. Input port {0,number,integer} of Model block ''{1}'' cannot accept ''constant'' sample time.</entry>
+    <entry key="InvalidContinuousSampForMdlrefOnInput">The Model block cannot inherit a continuous sample time. Input port {0,number,integer} of Model block ''{1}'' cannot accept ''continuous'' sample time.</entry>
+    <entry key="InvalidContinuousSampForMdlrefOnOutput">The Model block cannot inherit a continuous sample time. Output port {0,number,integer} of Model block ''{1}'' cannot accept ''continuous'' sample time.</entry>
+    <entry key="InvalidInportDTypeForMdlRef">Invalid root Inport block data type. Data type of root Inport block ''{0}'' in model ''{1}'' is ''{2}''. This data type is not supported for referenced models; data types must be builtin, or fixed-point, or registered from Simulink.DataType or Simulink.Bus objects.</entry>
+    <entry key="InvalidMdlRefPhase">Model ''{0}'' directly, or indirectly via referenced models, references model ''{1}''. The simulation status for the referenced model ''{2}'' is invalid. When updating, simulating or generating code for a model containing Model blocks, none of the referenced models can be in compiled phase. Please stop compilation or simulation of the referenced model.</entry>
+    <entry key="InvalidMdlrefTarget">Invalid model reference target. Block ''{0}'' is referencing model ''{1}''. There is an inconsistency between the reference model and its target. Try to update the model reference target of model ''{2}''.</entry>
+    <entry key="InconsistentMdlrefFrameDiagnosticsSettings">When the 'Block behavior depends on frame status of signal' parameter under Model Configuration parameters->Diagnostics->Compatibility for ''{0}'' is set to 'error', the referenced model ''{1}'' must have the 'Block behavior depends on frame status of signal' parameter set to 'error' as well.</entry>
+    <entry key="InvalidMinAlgAndCmbOutputUpdate"><![CDATA[Invalid settings when generating model reference code for model ''{0}''.  
+      <sldiag objui="configset" objparam="ModelReferenceMinAlgLoopOccurrences">Minimize algebraic loop occurrences</sldiag> and <sldiag objui="configset" objparam="CombineOutputUpdateFcns">Single output/update function</sldiag> cannot be set at the same time.]]></entry>
+    <entry key="InvalidModelrefName">Model name parameter ''{0}'' in the Model block ''{1}'' is invalid. Model name must be a valid MATLAB identifier.</entry>
+    <entry key="InvalidOutportDTypeForMdlRef">Invalid root Outport block data type. Data type of root Outport block ''{0}'' in model ''{1}'' is ''{2}''. This data type is not supported for referenced models; data types must be builtin, or fixed-point, or registered from Simulink.DataType or Simulink.Bus objects.</entry>
+    <entry key="InvalidTarget">Invalid model reference target. Block ''{0}'' is referencing model ''{1}''. The number of input and output ports of the model and the model reference target does not match. This indicates that the model reference target of model ''{2}'' is not up to date.</entry>
+    <entry key="InvalidVariantName">The variant control ''{0}'' specified in the Model block ''{1}'' is invalid. It must be a condition expression or a valid variant object name.</entry>
+    <entry key="LoadInitStateNotSupportedInMdlRefNormalMode">The referenced model ''{0}'' has ''Load initial state'' selected. This is not supported in Normal mode simulation of a referenced model.
+      <![CDATA[<actions>
+        <action cmd="matlab:configset.internal.fixIt(''{0}'',''LoadInitialState'',''off'')" type="fixit">Clear <sldiag objui="configset" objparam="LoadInitialState">Load initial state</sldiag> to run ''{0}'' in Normal mode</action>
+      </actions>]]>
+    </entry>
+
+    <entry key="IOMismatchLeftConnportNames">Left connection port {0,number,integer} 
+    of Model block ''{1}'' has a name of "{2}" and is referencing model ''{3}''. 
+    The connection port {4,number,integer}, of the referenced model, has a name of "{5}".</entry>
+
+    <entry key="IOMismatchRightConnportNames">Right connection port {0,number,integer} 
+    of Model block ''{1}'' has a name of "{2}" and is referencing model ''{3}''. 
+    The connection port {4,number,integer}, of the referenced model, has a name of "{5}".</entry>
+
+
+    <entry key="NoDiscreteInitialStatesForCodeGen">Initial state loading is not
+    supported for discrete states in referenced models for code generation or
+    Rapid Accelerator.  Initial states for such blocks are ignored.  One block
+    for which a given initial state is ignored is ''{0}''.</entry>
+
+    <entry
+    key="GetModelBlockArgumentsNotSupported">Simulink.ModelReference.getModelBlockArguments
+    is not yet supported.</entry>
+
+    <entry
+    key="SetModelBlockArgumentsNotSupported">Simulink.ModelReference.setModelBlockArguments
+    is not yet supported.</entry>
+
+    <entry key="ModelArgumentCouldNotBeSetNoPath">Could not set the model
+    argument {0} on Model block ''{1}'' because no argument exists with that
+    name.</entry>
+
+
+    <entry key="ModelArgumentCouldNotBeSetWithPath">Could not set the model
+    argument {0} promoted from {1} on Model block {2} because no argument exists
+    with that name.</entry>
+
+    <entry key="ModelArgumentIncorrectValues"><![CDATA[The second value to
+    Simulink.ModelReference.internal.setModelBlockArguments must be a structure
+    array with three fields, 'Name', 'Path', and 'Value' where:
+    <UL>
+     <LI>'Name' is the name of the model argument.</LI>
+     <LI>'Path' should be a Simulink.BlockPath object for a promoted grouped model argument
+          and empty otherwise.</LI>
+     <LI>'Value' is the new value for the model argument, given as a character vector.</LI>
+     </UL>]]></entry>
+
+    <entry key="InvalidParameterArgumentValuesList">The value of the model
+    arguments for Model block ''{0}'' must be a cell array of character
+    vectors.</entry>
+
+    <entry key="CouldNotParseParameterArgumentValue">The value ''{0}'' of model
+    argument {1,number,integer} on Model block ''{2}'' could not be
+    parsed.</entry>
+
+    <entry key="CouldNotParseNamedParameterArgumentValue">The value ''{0}'' of
+    model argument {1} on Model block ''{2}'' could not be parsed.</entry>
+
+    <entry key="MultipleValueParameterArgumentValue">The value ''{0}'' of model
+    argument {1,number,integer} on Model block ''{2}'' must be a empty or a
+    single value, but {3,number,integer} values were found.</entry>
+
+    <entry key="MultipleValueNamedParameterArgumentValue">The value ''{0}'' of
+    model argument {1} on Model block ''{2}'' must be a empty or a single value,
+    but {3,number,integer} values were found.</entry>
+
+    <entry key="ParameterArgumentValueWithComment">The value ''{0}'' of model
+    argument {1,number,integer} on Model block ''{2}'' cannot contain a
+    comment.</entry>
+
+    <entry key="NamedParameterArgumentValueWithComment">The value ''{0}'' of
+    model argument {1} on Model block ''{2}'' cannot contain a comment.</entry>
+
+    <entry key="CouldNotParseParameterArgumentValues">The value ''{0}'' of
+    ParameterArgumentValues on Model block ''{1}'' could not be parsed.</entry>
+
+    <entry key="ParameterArgumentValuesWithComment">The value ''{0}'' of
+    ParameterArgumentValues on Model block ''{1}'' cannot contain a
+    comment.</entry>
+
+    <entry key="MRV_CondError">Variant condition ''{0}'' could not be evaluated successfully.</entry>
+    <entry key="MRV_InvalidVariantSelection">The selected variant ''{0}'' is not a valid selection.</entry>
+    <entry key="MRV_InvalidVariants">Invalid variants structure specified for block ''{0}''.</entry>
+    <entry key="MRV_MultipleVariants">Only one variant can be active for block ''{0}'', yet the following variants are active: {1}</entry>
+    <entry key="MRV_NoVariant">None of the specified variants are active for block ''{0}'' as all the specified conditions evaluated to false.</entry>
+    <entry key="MRV_InvalidObjectName">''{0}'' is not a valid name for a variant object.</entry>
+    <entry key="MRV_UndefinedObject">Undefined variant object ''{0}''.</entry>
+    <entry key="MRV_InvalidSimMode">Invalid simulation mode ''{0}'' specified in the variant structure for the block ''{1}''.</entry>
+    <entry key="MRV_NoCodeVariantFcnCallMdlRef">Model block ''{0}'' cannot be configured to generate preprocessor conditionals because one of the variant control corresponds to a model with a function-call root Inport block.</entry>
+    <entry key="MRV_ParamArgValueCannotbeChangedDuringSim">Cannot change parameter '(ParameterArgumentValues)' of Model Variant block ''{0}'' while simulation is running.</entry>
+
+    <entry key="slInternal_invalidArg_ModelBlockHandle">This slInternal call
+    takes a single argument, which must be the handle to a Model block.</entry>
+    
+    <entry key="GroupedArg_ParamArgValueCannotbeChangedDuringSim">Cannot change
+    parameter 'ParameterArgumentValues' of Model block ''{0}'' during simulation
+    because it has grouped model arguments.</entry>
+    
+    <entry key="MRateSTaskingInMTasking">The multirate model ''{0}'' has the 'Configuration Parameters' > 'Solver' > 'Treat each discrete rate as a separate task' option selected. This model references the multirate model ''{1}'' via Model block ''{2}''. The referenced model has that same option cleared. A model that is multirate and has this option selected must not reference a multirate model that has this option cleared. In the referenced model, select the 'Configuration Parameters' > 'Solver' > 'Treat each discrete rate as a separate task' option.\n\n</entry>
+    <entry key="FcnCallMTaskingInSTasking">A model with the option "Configuration Parameters" > "Solver" > "Treat each discrete rate as a separate task" checked cannot reference a model with this option un-checked and that accepts a function-call trigger signal via a root Inport block. The model ''{0}'' is referencing the model ''{1}'' via the Model block ''{2}''.</entry>
+    <entry key="MdlRefCannotLogStatesNoCAPI">The states in model ''{0}'' cannot be logged because the model has Model blocks with states. 
+      The specified code generation target does not support state logging for model reference.</entry>
+    <entry key="MdlRefCannotSaveWhenCompiled">Cannot save model ''{0}''. This model is being compiled and it contains Model blocks that need to be refreshed before saving the model. Please stop model compilation/simulation before saving the model.</entry>
+    <entry key="MdlRefContainsAlgebraicLoop">The model ''{0}'' contains an algebraic loop and is being referenced by another model. Algebraic loops are not supported in referenced models.</entry>
+    <entry key="MdlRefDoesNotSupportDiagForLocalDataStores">Model reference configuration set property mismatch in model ''{0}''. The ''Detect read before write'', ''Detect write after write'', and ''Detect write after read'' diagnostics are not supported for local data stores with model reference. \nTo turn off the reporting of this condition, set the ''Model configuration mismatch'' parameter on the ''Model Referencing'' group of the Diagnostics pane of the Configuration Parameters dialog box to ''none''.</entry>
+    <entry key="MdlRefGlobalVariableClash">Global variable ''{0}'' is used in incompatible ways in the following two Model blocks: ''{1}'' and ''{2}''.  The variable must have the same attributes in all contexts.</entry>
+    <entry key="MdlRefHardwareSettingsMismatch">Error in Model block ''{0}'':
+      the hardware settings must match between the parent model ''{1}'' and the
+      referenced model ''{2}''. These values can be changed on the ''Hardware
+      Implementation'' page of the Configuration Parameters dialog.</entry>
+    <entry key="MdlRefHardwareSettingsMismatchNum">The setting for the property
+      ''{0}'' is ''{1,number,integer}'' for the parent model and
+      ''{2,number,integer}'' for the referenced model.</entry>
+    <entry key="MdlRefHardwareSettingsMismatchStr">The setting for the property
+      ''{0}'' is ''{1}'' for the parent model and ''{2}'' for the referenced
+      model.</entry>
+    <entry key="MdlRefIgnoreTunableParamTable">Ignoring settings in the tunable parameters table for model ''{0}'' because it references or is referenced by another model. Run tunablevars2parameterobjects to create parameter objects with the storage class information from the tunable parameters table.</entry>
+    <entry key="MdlRefInconsistentOptimSettingsStr">The setting for the property
+    ''{0}'' in the ''{1}'' page of the model configuration parameters dialog does
+    not match between the parent model ''{2}'' and the referenced model ''{3}'' 
+    referenced by the Model block ''{4}''.  The parent model''s setting is 
+    ''{5}'' and the referenced model''s setting is ''{6}''.
+    </entry>
+    <entry key="MdlRefInconsistentStartTime">Error in Model block ''{0}'': the ''Start time'' must match between the parent model ''{1}'' 
+      and the referenced model ''{2}''.  The parent model has a value of ''{3}'', while the referenced model has a value of ''{4}''.  To 
+      change this parameter, go to the ''Solver'' page of the Configuration Parameters dialog.  Note that the ''Start time'' that is used 
+      for a model is adjusted to fall exactly on a sample hit.  Set the parameter ''Configuration Parameters > Diagnostics > Automatic solver
+      parameter selection'' to either ''warning'' or ''error'' to be notified when Simulink adjusts the ''Start time''.</entry>
+    <entry key="MdlRefInlinedParamValues">Error updating model ''{0}''.  The values of parameters that were inlined into submodels used by ''{1}'' have changed.  The list of inlined workspace variables used by submodels is: ''{2}''</entry>
+    <entry key="MdlRefInvFcnCallCycle">The model ''{0}'' referenced by the Model block ''{1}'' is directly connected to 
+      input port {2,number,integer} of the function-call block ''{3}''. This input port depends on the output(s) of the same system, 
+      which means the inputs to the Model block may not remain fixed over the duration of the function-call.  This may also cause results 
+      from generated code to be different than simulation results.  Consider using the ''Latch input for feedback signals 
+      of function-call subsystem outputs'' option on the inport ''{4}''.</entry>
+    <entry key="MdlRefInvSimCommand">The model ''{0}'' is referenced in normal mode and the SimulationCommand was set to ''{1}'' while it is compiling. It is not valid to set the SimulationCommand to any other value than ''Stop'' while it is compiling.</entry>
+    <entry key="MdlRefInvalidAdd">Model block ''{0}'' was added during block parameter evaluation. Model blocks and their parameters should not be modified in block callbacks.</entry>
+    <entry key="MdlRefInvalidCallFromGeneratedCode">The noninlined S-function ''{0}'' in a referenced model is not allowed to call macros that use the generic function in the SimStruct. To find such macros, search for GenericFcn in simstruc.h.</entry>
+    <entry key="MdlRefInvalidCallFromGeneratedCode_SigSelect">A noninlined S-function used in either a referenced model or the S-function Target is not allowed to use macros that access the selected signals in a model.  If such an S-function is being used to view the selected signals, the S-function should set the option SS_OPTION_SIM_VIEWING_DEVICE using ssSetOptions.</entry>
+    <entry key="MdlRefInvalidDelete">One or more Model blocks were deleted during block evaluation parameter phase. Model blocks and their parameters should not be modified in block callbacks.</entry>
+    <entry key="MdlRefInvalidModelNameChange">ModelName parameter of Model block ''{0}'' is changed after evaluating block parameters:\n  - before evaluating block parameters: {1},\n  - after evaluating block parameters:  {2}\n Model blocks and their parameters should not be modified in block callbacks.</entry>
+    <entry key="MdlRefInvalidSimModeChange">SimulationMode parameter of Model block ''{0}'' is changed after evaluating block parameters:\n  - before evaluating block parameters: {1},\n  - after evaluating block parameters:  {2}\n Model blocks and their parameters should not be modified in block callbacks.</entry>
+    <entry key="MdlRefLifeSpanMismatch">Error in Model block ''{0}'': the ''Application lifespan'' must match between the parent model ''{1}'' and the referenced model ''{2}''.  The parent model has a value of ''{3}'', while the referenced model has a value of ''{4}''.  To change this parameter, go to the ''Optimization'' page of the Configuration Parameters dialog.</entry>
+    <entry key="MdlRefStateSemanticsMismatch">Model block ''{0}'' is inside a synchronous environment, but the referenced model ''{1}'' does not use synchronous semantics. To fix this, add a State Control block with synchronous semantics into the referenced model. </entry>
+    <entry key="MdlRefConcurrentTasksSupportMismatch">Configuration mismatch for Model block ''{0}''.  The ''Allow tasks to execute concurrently on target'' check box on the Configuration Parameters > Solver pane  is set to ({3}) for parent model ''{1}'' and ({4}) for referenced model ''{2}''. Such mismatches are allowed only if the referenced model does not contain asynchronous sample times and one of the following is true:\n
+     * The referenced model contains only a single periodic sample time.\n
+     * The referenced model contains multiple periodic sample times but you have enabled the parent model for explicit partitioning. In this case, Simulink satisfies the rate transition requirements with rate monotonic scheduling.
+</entry>
+    <entry key="MdlRefDictionaryAssociationMismatchBWS"><![CDATA[Error in Model block ''{0}''. Referenced model ''{1}'' is configured to use the base workspace. It must be linked to dictionary ''{2}'' (used by ''{3}'') or a dictionary referenced by ''{4}''. {5} to link ''{6}'' to a dictionary.]]></entry>
+    <entry key="MdlRefDictionaryAssociationMismatchBWSLink">Click here</entry>
+    <entry key="MdlRefDictionaryAssociationMismatchDD"><![CDATA[Error in Model block ''{0}''. Dictionary ''{1}'' (used by ''{2}'') is missing a reference to dictionary ''{3}'' (used by ''{4}''). <a href="matlab:sl('linkDictToDict', ''{5}'', ''{6}'');">Click here</a> to automatically create this reference.]]></entry>
+    <entry key="MdlRefDictionaryAssociationMismatchDDRefByBWS">Referenced model ''{0}'' (referenced from Model block ''{1}'') is linked to a data dictionary, but parent model ''{2}'' is not. A parent model must be linked to a dictionary if any of the models it references are linked to a dictionary.</entry>
+
+    <entry key="MdlRefNoCppForSimAccel">The model ''{0}'' \n
+      * has set the Language to C++ on the Configuration Parameters > Code Generation page,\n 
+      * is configured to use the Simulink Accelerator, and\n 
+      * contains the Model block ''{1}''.\n 
+      This configuration is not allowed.  To avoid this error, either set the model's Simulation Mode to Normal, or set the 
+      Language on the Configuration Parameters > Code Generation page to C.</entry>
+    <entry key="MdlRefNoninlinedSfcnNotReused">The S-function ''{0}'' has the option SS_OPTION_WORKS_WITH_CODE_REUSE set but either it does not have a ''{1}.tlc'' file or it does not set the SS_OPTION_USE_TLC_WITH_ACCELERATOR option to enable inlining for Model Reference. The system that it lives in will not be reused.</entry>
+    <entry key="MdlRefNotAvailForLicense">The model ''{0}'' contains a Model block. Model blocks using Accelerator mode are not supported with this license. The Model block will run in Normal mode.</entry>
+    <entry key="MdlRefNotAvailForLicenseWithBlock">The model ''{0}'' contains the Model block ''{1}''. Model blocks using Accelerator mode are not supported with this license. The Model block will run in Normal mode.</entry>
+    <entry key="MdlRefPILInsideCondExecedSubsystem">The Model block ''{0}'' resides in the conditionally executed subsystem ''{1}'' and is either configured to use SIL or PIL simulation mode or is directly or indirectly referencing a model that contains a Model block using SIL or PIL simulation mode.  This configuration is not supported when the referenced model in SIL or PIL mode has multiple sample times or contains a block which requires absolute time support.</entry>
+    <entry key="MdlRefXILStdAloneInsideCondExecedSubsystem">The Model block ''{0}'' lies in a conditionally executed context (e.g. a triggered or enabled subsystem) and is configured for SIL or PIL simulation.   This is not supported when the Model block parameter "Code interface" is "Top model".   To avoid this error, either remove the Model block from its conditionally executed context or set "Code interface" to "Model reference".</entry>
+    <entry key="MdlRefRTPOnlyIfInlined">Invalid run-time parameter registration in S-function ''{0}'' in model ''{1}''. An S-function can register run-time parameters only if the S-function is being inlined.  To be able to reference the model ''{2}'', the S-function ''{3}'' needs to set the option SS_OPTION_USE_TLC_WITH_ACCELERATOR and it needs to have a TLC file.</entry>
+    <entry key="MdlRefRTWGeneratedSFcn">The block ''{0}'' is an S-function generated by Simulink Coder.  This is not supported in a referenced 
+      model in accelerated mode or when generating code for a referenced model.</entry>
+    <entry key="MdlRefSFcnDoesNotExist">Error in Model block ''{0}'': The model reference simulation target for the referenced model ''{1}'' does not exist.  One reason this can happen is that the top model has the ''Rebuild options'' parameter set to ''Never'' on the ''Model Referencing'' pane of the Configuration Parameters dialog.</entry>
+    <entry key="MdlRefSaveCanceled">Save operation was canceled</entry>
+    <entry key="MdlRefSfcnJacobianNotSupportedWithSimTarget">S-function ''{0}'' in ''{1}'' contains a Jacobian method. Model Reference does not support S-functions with Jacobian methods.</entry>    
+    <entry key="MdlRefSfcnLevel1NotSupportedWithSimTarget">S-function ''{0}'' in ''{1}'' is a Level 1 S-function. Model Reference does not support Level 1 S-functions.</entry>
+    <entry key="MdlRefSfcnNonInlinedInSimTarget">S-function ''{0}'' in ''{1}''  will not be inlined for Model Reference, since it does not set the SS_OPTION_USE_TLC_WITH_ACCELERATOR option. Consider setting the SS_OPTION_USE_TLC_WITH_ACCELERATOR in the S-function source code.</entry>
+    <entry key="MdlRefSfcnNotSupportedWithVStepSimTarget">Model Reference does not support noninlined S-Functions when the model is configured to use a variable-step solver.  Remove S-function ''{0}'' in ''{1}'' or configure model to use a fixed-step solver.</entry>
+    <entry key="MdlRefSolverParamInitialStepMismatchError">Solver parameter ''Initial step size'' does not match between top model ''{0}'' and model ''{1}'' referenced by block ''{2}''.  The top model''s setting is ''{3}'' and the referenced model''s setting is ''{4}''.</entry>
+    <entry key="MdlRefSolverParamInitialStepMismatchWarn">Solver parameter ''Initial step size'' does not match between top model ''{0}'' and model ''{1}'' referenced by block ''{2}''.  Simulink will use the top model''s setting of ''{3}''.</entry>
+    <entry key="MdlRefSolverParamMaxOrderMismatchError">Solver parameter ''Maximum order'' does not match between top model ''{0}'' and model ''{1}'' referenced by block ''{2}''.  The top model''s setting is ''{3}'' and the referenced model''s setting is ''{4}''.</entry>
+    <entry key="MdlRefSolverParamMaxOrderMismatchWarn">Solver parameter ''Maximum order'' does not match between top model ''{0}'' and model ''{1}'' referenced by block ''{2}''.  Simulink will use the top model''s setting of ''{3}''.</entry>
+    <entry key="MdlRefSolverParamMaxStepMismatchError">Solver parameter ''Max step size'' does not match between top model ''{0}'' and model ''{1}'' referenced by block ''{2}''.  The top model''s setting is ''{3}'' and the referenced model''s setting is ''{4}''.</entry>
+    <entry key="MdlRefSolverParamMaxStepMismatchWarn">Solver parameter ''Max step size'' does not match between top model ''{0}'' and model ''{1}'' referenced by block ''{2}''.  Simulink will use the top model''s setting of ''{3}''.</entry>
+    <entry key="MdlRefSolverParamMinStepMismatchError">Solver parameter ''Min step size'' does not match between top model ''{0}'' and model ''{1}'' referenced by block ''{2}''.  The top model''s setting is ''{3}'' and the referenced model''s setting is ''{4}''.</entry>
+    <entry key="MdlRefSolverParamMinStepMismatchWarn">Solver parameter ''Min step size'' does not match between top model ''{0}'' and model ''{1}'' referenced by block ''{2}''.  Simulink will use the top model''s setting of ''{3}''.</entry>
+    <entry key="MdlRefSolverParamRelTolMismatchError">Solver parameter ''Relative tolerance'' does not match between top model ''{0}'' and model ''{1}'' referenced by block ''{2}''.  The top model''s setting is ''{3}'' and the referenced model''s setting is ''{4}''.</entry>
+    <entry key="MdlRefSolverParamRelTolMismatchWarn">Solver parameter ''Relative tolerance'' does not match between top model ''{0}'' and model ''{1}'' referenced by block ''{2}''.  Simulink will use the top model''s setting of ''{3}''.</entry>
+    <entry key="MdlRefSolverParamZCControlMismatchError">Solver parameter ''Zero Crossing Control'' does not match between top model ''{0}'' and model ''{1}'' referenced by block ''{2}''.</entry>
+    <entry key="MdlRefSolverParamZCControlMismatchWarn">Solver parameter ''Zero Crossing Control'' does not match between top model ''{0}'' and model ''{1}'' referenced by block ''{2}''. Zero crossing detection in the referenced model may not follow the setting in the top model.</entry>
+<entry key="MdlRefUnsupportedDataLogging">Model reference Accelerator, SIL, or PIL modes do not support logging data with a Scope block configured to save data to the workspace. Logging with a To Workspace block in model reference Accelerator mode is only supported for Timeseries format, and is not supported for model reference SIL or PIL mode. Model ''{0}'' contains an unsupported logging combination of model reference simulation mode and Scope block or To Workspace block configuration. Data is not being logged to the workspace. To avoid this message, set the ''Configuration Parameters > Diagnostics > Model Referencing > Unsupported data logging'' parameter to ''none''.</entry>
+    <entry key="MdlRefWarnOutputUpdateNotCombined"><![CDATA[The referenced model ''{0}'' has set <sldiag objui="configset" objparam="CombineOutputUpdateFcns">Single output/update function</sldiag>, but Simulink is unable to honor this request.  Some possible reasons for this are\n * The model has a continuous sample time.\n * The model is saving states.]]></entry>
+    <entry key="MdlRefWarnOutputUpdateNotCombinedWithMultiTask"><![CDATA[Referenced model ''{0}'' has set <sldiag objui="configset" objparam="CombineOutputUpdateFcns">Single output/update function</sldiag>, but Simulink is unable to complete this request. Some possible reasons for this are:\n * The model has multiple sample times and has the 'Configuration Parameters' > 'Solver' > 'Treat each discrete rate as a separate task' option selected. \n * The model has a continuous sample time.\n * The model is saving states.]]></entry>
+    <entry key="ModelBlkWithUnsetTsInhSupLevel">The Model block ''{0}'' contains blocks which have not set their sample time inheritance rule for model reference and the model is inheriting a sample time. If the blocks are not properly configured to support this, then the Model block may give incorrect results.</entry>
+    <entry key="MultiInstanceCallWideFcnCallTrig"><![CDATA[''Configuration Parameters > Model Referencing > Total number of instances allowed per top model'' is set to ''Multiple'' for model ''{0}''.  Block ''{1}'' of this model is calling a function-call subsystem that has a function-call port of width greater than 1.  This is not allowed in a model configured to be referenced multiple times.  Consider setting the configuration parameter ''Total number of instances allowed per top model'' to ''One''.]]></entry>
+    <entry key="MultiInstanceDWorkDataNotReusableSC"><![CDATA[''Configuration Parameters > Model Referencing > Total number of instances allowed per top model'' is set to ''Multiple'' for model ''{0}''.  Block ''{1}'' of this model has a state with a global storage class. This is not allowed in a model configured to be referenced multiple times. Consider setting the configuration parameter ''Total number of instances allowed per top model'' to ''One'' or changing the state''s storage class.]]></entry>
+    <entry key="MultiInstanceSimulinkFunction"><![CDATA[''Configuration Parameters > Model Referencing > Total number of instances allowed per top model'' is set to ''Multiple'' for model ''{0}''.  Block ''{1}'' of this model is a Simulink Function. This is not allowed in a model configured to be referenced multiple times. Consider setting the configuration parameter ''Total number of instances allowed per top model'' to ''One''.]]></entry>
+    <entry key="MultiInstanceSimulinkFunctionCaller"><![CDATA[''Configuration Parameters > Model Referencing > Total number of instances allowed per top model'' is set to ''Multiple'' for model ''{0}''.  Block ''{1}'' of this model invokes a Simulink Function. This is not allowed in a model configured to be referenced multiple times. Consider setting the configuration parameter ''Total number of instances allowed per top model'' to ''One''.]]></entry>
+    <entry key="MultiInstanceForcedNonInline"><![CDATA[''Configuration Parameters > Model Referencing > Total number of instances allowed per top model'' is set to ''Multiple'' for model ''{0}''.  Subsystem block ''{1}'' of this model is forced to be a non-reusable function because its function-call port of this block is being driven either by an S-Function with no TLC implementation or the mdlInitializeSizes function for the TLC implementation''s S-function does not set the option SS_OPTION_USE_TLC_WITH_ACCELERATOR, SS_OPTION_FORCE_NONINLINED_FCNCALL, or SS_OPTION_WORKS_WITH_CODE_REUSE.  Consider setting the configuration parameter ''Total number of instances allowed per top model'' to ''One'' or developing a valid TLC implementation.]]></entry>
+    <entry key="MultiInstanceNonReusableSFcn"><![CDATA[''Configuration Parameters > Model Referencing > Total number of instances allowed per top model'' is set to ''Multiple'' for model ''{0}''.  S-Function block ''{1}'' of this model does not support code reuse.  This is not allowed in a model configured to be referenced multiple times.\n To enable code reuse, the block must have a TLC implementation and the S-function''s mdlInitializeSizes function must set the options ''SS_OPTION_USE_TLC_WITH_ACCELERATOR'' and ''SS_OPTION_WORKS_WITH_CODE_REUSE''.\n To configure the model to be referenced only once, change the configuration parameter ''Total number of instances allowed per top model'' to ''One''.]]></entry>
+    <entry key="MultiInstanceNonReusableSFcnRTW"><![CDATA[''Configuration Parameters > Model Referencing > Total number of instances allowed per top model'' is set to ''Multiple'' for model ''{0}''.  S-Function block ''{1}'' of this model does not support code reuse.  This is not allowed in a model configured to be referenced multiple times.\n To enable code reuse, the block must have a TLC implementation and the S-function''s mdlInitializeSizes function must set the option ''SS_OPTION_WORKS_WITH_CODE_REUSE''.\n To configure the model to be referenced only once, change the configuration parameter ''Total number of instances allowed per top model'' to ''One''.]]></entry>
+    <entry key="MultiInstanceSignalDataNotReusableSC"><![CDATA[''Configuration Parameters > Model Referencing > Total number of instances allowed per top model'' is set to ''Multiple'' for model ''{0}''.  Block ''{1}'' of this model has an output signal with a global storage class. This is not allowed in a model configured to be referenced multiple times.  Consider setting the configuration parameter ''Total number of instances allowed per top model'' to ''One'' or changing the signal''s storage class.]]></entry>
+    <entry key="MultiInstanceSingleInstanceMdlRef"><![CDATA[''Configuration Parameters > Model Referencing > Total number of instances allowed per top model'' is set to ''Multiple'' for parent model ''{0}'' and ''One'' for referenced model ''{1}''. A top model configured to be referenced multiple times cannot reference a model configured to be referenced only once. Consider setting the configuration parameter ''Total number of instances allowed per top model'' for the parent model to ''One'' or the referenced model to ''Multiple''.]]></entry>
+    <entry key="MultiInstanceSubsystemMarkedAsFunction"><![CDATA[''Configuration Parameters > Model Referencing > Total number of instances allowed per top model'' is set to ''Multiple'' for model ''{0}''.  Subsystem block ''{1}'' of this model has its ''Function packaging'' option set to ''Function''. This is not allowed in a model configured to be referenced multiple times. Consider changing the configuration parameter ''Total number of instances allowed per top model'' to ''One'', or changing the ''Function packaging'' option of subsystem block ''{2}'' to ''Reusable function''.]]></entry>
+    <entry key="MultiInstanceForEachSubsystemMarkedAsParallel"><![CDATA[''Configuration Parameters > Model Referencing > Total number of instances allowed per top model'' is set to ''Multiple'' for model ''{0}''.  Subsystem block ''{1}'' of this model has checked ''Request parallel execution in rapid accelerator simulation''. This is not allowed in a model configured to be referenced multiple times. Consider changing the configuration parameter ''Total number of instances allowed per top model'' to ''One'', or unchecking the ''Request parallel execution in rapid accelerator simulation'' option of subsystem block ''{2}''.]]></entry>
+    <entry key="MultiInstanceToFile"><![CDATA[''Configuration Parameters > Model Referencing > Total number of instances allowed per top model'' is set to ''Multiple'' for model ''{0}''.  This model contains a To File block ''{1}''. To prevent loss of simulation data, this is not allowed in a model configured to be referenced multiple times. Consider setting the configuration parameter ''Total number of instances allowed per top model'' to ''One'' or removing the To File block.]]></entry>
+    <entry key="MultiInstanceToWksAndScope"><![CDATA[''Configuration Parameters > Model Referencing > Total number of instances allowed per top model'' is set to ''Multiple'' for model ''{0}''.  This model contains a To Workspace block or a Scope block with data logging enabled. To prevent loss of simulation data, this is not allowed in a model configured to be referenced multiple times.  Consider setting the configuration parameter ''Total number of instances allowed per top model'' to ''One'', disabling data logging for the block, or removing the block.]]></entry>
+    <entry key="MultiInstanceWideFcnCallTrig"><![CDATA[''Configuration Parameters > Model Referencing > Total number of instances allowed per top model'' is set to ''Multiple'' for model ''{0}''.  Subsystem block ''{1}'' of this model is a function-call subsystem with a function-call port that has a width greater than 1. This is not allowed in a model configured to be referenced multiple times. Consider setting the configuration parameter ''Total number of instances allowed per top model'' to ''One''.]]></entry>
+    <entry key="MultipleRefToSingleInstMdl"><![CDATA[''Configuration Parameters > Model Referencing > Total number of instances allowed per top model'' is set to ''One'' for model ''{0}''.  This model, however, is directly or indirectly referenced by Model blocks ''{1}'' and ''{2}''. Consider setting the configuration parameter ''Total number of instances allowed per top model'' to ''Multiple'' or changing the models that reference this model.]]></entry>
+    <entry key="NoDirectConnAtMrefRoot">Invalid connection originating from root Inport block ''{0}''. Root level Inport blocks cannot be connected directly to root level Outport blocks. Consider breaking this connection by explicitly inserting a Signal Conversion block.</entry>
+    <entry key="NoInstAllowed"><![CDATA[Cannot generate model reference target for model ''{0}''. ''Configuration Parameters > Model Referencing > Total number of instances allowed per top model'' is set to ''Zero'' for this model.  Consider setting the parameter ''Total number of instances allowed per top model'' to ''One'' or ''Multiple'' or removing the reference to this model.]]></entry>
+    <entry key="NormalModeStatus">({0,number,integer} of {1,number,integer}) ''{2}'': Updating referenced model in normal mode</entry>
+    <entry key="MultiInstanceNormalModeStatus">({0,number,integer} of {1,number,integer}) ''{2}'': Updating referenced model in multi-instance normal mode</entry>
+    <entry key="NormalModeInExtModeNotSupported"> Model ''{0}'' is running in External mode but references one or more models.  
+    Blocks inside referenced models cannot upload data or tune parameters in External mode.</entry>
+    <entry key="NormalModeInRaccelNotSupported"> Model ''{0}'' is running in Rapid Accelerator mode but references one or more models configured in Normal mode.  Consequently, you cannot tune or update any parameters or visualization blocks inside these referenced models.</entry>
+    <entry key="NotSupportedAsyncSFcn">Cannot generate model reference target. Block ''{0}'' in model {1} has one of the following options: SS_OPTION_ASYNCHRONOUS, SS_OPTION_ASYNCHRONOUS_CUSTOM, SS_OPTION_ASYNCHRONOUS_INTERRUPT or SS_OPTION_FORCE_NONINLINED_FCNCALL. These options are not supported for model reference target.</entry>
+    <entry key="OptCodeInResetSubsys">Error in Model block ''{0}'': this block is in a subsystem that is resetting its states. The block is referencing model ''{1}'' that has the setting ''Optimize initialization code for model reference'' turned on. Turn this optimization off on the ''Optimization'' page of the Configuration Parameters dialog of the referenced model to use this block in a subsystem that can reset its states.</entry>
+    <entry key="OptCodeMismatch">The model ''{0}'' has the setting ''Optimize Initialization code for model reference'' turned off, but is referencing the model ''{1}'' via the Model block ''{2}'' which has the option turned on.  When generating Model Reference code for a model with this option turned off, all referenced models must have this option turned off.  The setting can be changed on the ''Optimization'' page of the Configuration Parameters dialog.</entry>
+    <entry key="OptCodeForRootLevelFcnCall">Error in model ''{0}'': this model has a root level function call port that is resetting states, while the setting ''Optimize initialization code for model reference'' is turned on, which is not allowed. Turn this optimization off on the ''Optimization'' page of the Configuration Parameters dialog of this model.</entry>
+    <entry key="RemoveResetFuncForRootLevelFcnCall">Error in model ''{0}'': this model has a root level function call port that is resetting states, while the setting ''Remove reset function'' is turned on, which is not allowed. Turn this option off for this model.</entry>
+    <entry key="RemoveResetFuncWrongContext">Error in Model block ''{0}'': this block is in a conditionally executed context that is resetting states, while it is referencing model ''{1}'' that has the setting ''Remove reset function'' turned on, which is not allowed. Turn this option off for the referenced model to use this block in any conditionally executed context that is resetting states.</entry>
+    <entry key="RemoveDisableFuncWrongContext">Error in Model block ''{0}'': this block is in a conditionally executed context, while it is referencing model ''{1}'' that has the setting ''Remove disable function'' turned on, which is not allowed. Turn this option off for the referenced model to use this block in any conditionally executed context.</entry>
+    <entry key="RemoveDisableFuncWrongContextForFcnCall">Error in Model block ''{0}'': this model block is a function call system that can be disabled by function call initiator ''{1}''. However, this model block is referencing model ''{2}'' that has the setting ''Remove disable function'' turned on, which is not allowed. Turn this option off for the referenced model to use this block in any conditionally executed context.</entry>
+    <entry key="PILECoderLicense">SIL or PIL simulation requires Embedded Coder to be installed and licensed.  The software is either not installed, or installed but not licensed.</entry>
+    <entry key="XILSimulinkCoderLicense">SIL or PIL simulation requires Simulink Coder to be installed and licensed.  The software is either not installed, or installed but not licensed.</entry>
+    <entry key="ParamIntf_DuplicateParamArgName">Duplicate parameter argument name, ''{0}''.</entry>
+    <entry key="ParamIntf_GlobalParam_DimsMismatch">Invalid dimensions for global parameter ''{0}'' of Model block ''{1}''. The parameter provided is a {2} array but a {3} array is expected.</entry>
+    <entry key="ParamIntf_GlobalParam_Missing">Unable to find global parameter ''{0}'' used by Model block ''{1}''. This parameter is required by the referenced model ''{2}'' and existed when the referenced model was rebuilt, but it has been removed.</entry>
+    <entry key="ParamIntf_GlobalParam_ShouldBeComplex">Invalid complexity of global parameter ''{0}'' of Model block ''{1}''. The parameter provided is a real array but a complex array is expected</entry>
+    <entry key="ParamIntf_GlobalParam_ShouldNotBeComplex">Invalid complexity for global parameter ''{0}'' of Model block ''{1}''. The parameter provided is a complex array but a real array is expected.</entry>
+    <entry key="ParamIntf_InvalidParamArgName">Argument {0,number,integer} specified in ''{1}'' is not a valid MATLAB variable. Model arguments are required to be a comma separated list of valid MATLAB variables.</entry>  
+    <entry key="ParamIntf_NumParamArgMismatch">Invalid number of parameter arguments for Model block ''{0}''. This block expects {1,number,integer} parameter arguments but {2,number,integer} were provided.</entry>
+    <entry key="ParamIntf_ParamArgDefinitionInvalid">Block diagram ''{0}'' has a parameter argument ''{1}'' but the corresponding parameter in the model''s workspace is not valid.  The value of this parameter must be numeric and non-empty.</entry>
+    <entry key="ParamIntf_ParamArgSpecifiedButNotDefined">Block diagram ''{0}'' has a parameter argument ''{1}'' but this parameter is not defined in the model''s workspace.</entry>
+    <entry key="ParamIntf_ParamArg_DimsMismatch">Invalid dimensions for parameter argument ''{0}'' of Model block ''{1}''. The parameter provided is a {2} array but a {3} array is expected.</entry>
+    <entry key="ParamIntf_ParamArg_DataTypeMismatch">Invalid data type for parameter argument ''{0}'' of Model block ''{1}''. The data type of the argument value is inconsistent with that of the corresponding model argument defined in the referenced model.</entry>
+    <entry key="ParamIntf_ParamArg_InvalidStructDataType">Invalid structure data type for parameter argument ''{0}'' of Model block ''{1}''. The parameter type is ''{2}'' but ''{3}'' is expected.</entry>
+    <entry key="ParamIntf_ParamArg_ShouldBeComplex">Invalid complexity of parameter argument ''{0}'' of Model block ''{1}''. The parameter provided is a real array but a complex array is expected.</entry>
+    <entry key="ParamIntf_ParamArg_ShouldNotBeComplex">Invalid complexity for parameter argument ''{0}'' of Model block ''{1}''. The parameter provided is a complex array but a real array is expected.</entry>
+    <entry key="ParamIntf_CannotSetParamArgModelMaskPresent">Parameter argument names for block diagram ''{0}'', cannot be set using set_param as a Model Mask exist.To edit parameter argument names edit the Model Mask.</entry>
+    <entry key="LUTIntf_LUTArg_PropertyMismatch">Mismatch in property ''{0}'' between ''{1}'' (used to set a model argument value in Model block ''{2}'') and ''{3}'' (argument definition in referenced model workspace).</entry>
+    <entry key="LUTIntf_LUTArg_Mismatch">Mismatch between properties of model argument ''{2}'' (in referenced model workspace) and ''{0}'' (used to set argument value in Model block ''{1}'').</entry>
+    <entry key="InlineOffParentInlineOn">Model ''{0}'' supports only ''Inline parameters'' enabled because parent model ''{1}'' has ''Inline parameters'' enabled.  Go to the Optimization > Signals and Parameters pane of the Configuration Parameters dialog for model ''{2}'' and enable ''Inline parameters''.</entry>
+       
+    <entry key="ModelFileExtensionMismatch">The Model block ''{0}'' specifies
+    its referenced model by ''{1}'' and the Model file being used is ''{2}'',
+    which has a different extension.  To eliminate this warning, update the
+    ''ModelName'' parameter of Model block ''{3}'' to be ''{4}''.</entry>
+
+    <entry key="RootControlPortLinearizationNotSupported">Linearization is not supported for model ''{0}'' because the model
+      contains a root level control port ''{1}''.</entry>
+    <entry key="RootControlPortCodeGenRequiresModelRef">Standalone code generation is not supported for model ''{0}'' because 
+      the model contains a root level control port ''{1}''.  The model must be referenced through a Model block to generate code.</entry>
+    <entry key="RootFuncallRequiresSingleFundamentalRate">Invalid solver option specified for model ''{0}''. All of the model''s blocks specify the same sample time and this sample time is slower than the fundamental sample time specified by the model on the Solver pane of the Configuration Parameters dialog box.  To fix the problem, set the fundamental sample time to ''Auto'' or to be the same as the sample time of the root function-call trigger port ''{1}''.</entry>
+    <entry key="RootInputTsError">Root Inport ''{0}'' has a sample time of {1} which does not match the sample time {2} of its destination: input port {3,number,integer} of block ''{4}''. Root inports must have the same sample time as their destinations for model reference. Please correct this situation by changing one of the two sample times or inserting a Rate Transition block.</entry>
+    <entry key="RootOutputTsError">Root Outport ''{0}'' has a sample time of {1} which does not match the sample time {2} of its source: output port {3,number,integer} of block ''{4}''. Root outports must have the same sample time as their sources for model reference. Please correct this by changing one of the two sample times or inserting a Rate Transition block.</entry>
+    <entry key="ConstantRootOutputTsError">When generating code, root Outport ''{0}'' is implemented using a sample time of {1} which does not match the Constant sample time of its source: output port {2,number,integer} of block ''{3}''. Root outports must have the same implemented sample time as their sources for model reference. Please correct this by changing the sample time of the source to match the implemented sample time of the root Outport, or by inserting a Rate Transition block.</entry>
+    <entry key="RootTrigportRequiresSimpleRate">Invalid sample time {0} specified for ''{1}''.  The block must specify a zero offset value for its sample time.</entry>
+    <entry key="RootTrigportRequiresSimpleRateNoAsync">Simulink does not support asynchronous subsystems in a model containing a function-call trigger port block in the model root level. The function-call model ''{0}'' contains one or more asynchronous subsystems.</entry>
+    <entry key="SavingCycleDetected">Unable to save ''{0}'' because of Model reference cycle. Model ''{1}'' is being referenced by model ''{2}'' via Model block ''{3}''. Model ''{4}'' is indirectly referencing model ''{5}'' through other Model blocks. Model reference cycle is not allowed.</entry>
+    <entry key="SelfReferenceNotAllowed">Invalid model name is specified for the Model block ''{0}'' in model ''{1}''. The Model block cannot reference the model that it is placed in.</entry>
+    <entry key="SelfReferenceNotAllowedEdit">Invalid model name is specified for the Model block being placed in model ''{0}''. The Model block cannot reference the model that it is placed in.</entry>
+    <entry key="SigAttribPropErr4ForInport">Conflicting signal specifications: The attributes '{'Name = ''{0}'', StorageClass = ''{1}'', StorageTypeQualifier = ''{2}'''}' specified on output port {3,number,integer} of {4}, and the attributes '{'Name = ''{5}'', StorageClass = ''{6}'', StorageTypeQualifier = ''{7}'''}' specified for the root Inport {8,number,integer} of referenced model ''{9}'' are inconsistent but they correspond to the same signal.</entry>
+    <entry key="SigAttribPropErr4ForOutport">Conflicting signal specifications: The attributes '{'Name = ''{0}'', StorageClass = ''{1}'', StorageTypeQualifier = ''{2}'''}' specified on output port {3,number,integer} of {4}, and the attributes '{'Name = ''{5}'', StorageClass = ''{6}'', StorageTypeQualifier = ''{7}'''}' specified for the root Outport {8,number,integer} of referenced model ''{9}'' are inconsistent but they correspond to the same signal.</entry>
+    <entry key="SigAttribPropErr5ForInport">Signal label mismatch: {0} output port {1,number,integer} label ''{2}'', should match the root Inport {3,number,integer} label ''{4}'' of referenced model ''{5}''.</entry>
+    <entry key="SigAttribPropErr5ForOutport">Signal label mismatch: {0} output port {1,number,integer} label ''{2}'', should match the root Outport {3,number,integer} label ''{4}'' of referenced model ''{5}''.</entry>
+    <entry key="SigAttribPropErr6ForInport">Conflicting signal configuration.  The Simulink signal object on the input port {0,number,integer} of ''{1}'' conflicts with the Simulink signal object on the root Inport {2,number,integer} of referenced model ''{3}'' since both inputs map to the same signal.</entry>
+    <entry key="SigAttribPropErr6ForOutport">Conflicting signal configuration.  The Simulink signal object on the output port {0,number,integer} of ''{1}'' conflicts with the Simulink signal object on the root Outport {2,number,integer} of referenced model ''{3}'' since both outputs map to the same signal.</entry>
+    <entry key="SolverMismatch">The model ''{0}'' has continuous states and is referencing (via the Model block ''{1}'') the fixed-step model ''{2}'' which has blocks with continuous sample time.  The solver ''{3}'' used to simulate model ''{4}'', will execute the referenced model ''{5}'' in minor time steps, where as during standalone simulation the model ''{6}'' uses a discrete solver which does not have minor time steps.  This can cause results from the Model block and results obtained from standalone simulation of the referenced model to be different. You can disable this diagnostic by setting ''Automatic solver parameter selection'' diagnostic to ''none'' in the Diagnostics page of the configuration parameters dialog.</entry>
+    <entry key="SolverModeMismatch">Model ''{0}'', configured with the 'Configuration Parameters' > 'Solver' > 'Treat each discrete rate as a separate task' option cleared, is referencing (via Model block ''{1}'') model ''{2}'' which is configured with this option selected. This can cause the results from the Model block and the results obtained from standalone simulation of the referenced model to be different. You can disable this diagnostic by setting 'Automatic solver parameter selection' diagnostic to 'none' in the Diagnostics page of the Configuration Parameters dialog box.</entry>
+    <entry key="SolverNameMismatch">The solver used for model ''{0}'', and the referenced model ''{1}'' (referenced via the Model block ''{2}'') do not match.  Using a different solver for the continuous time referenced model is not supported.  The solver specified on the top model will be used for the referenced models. You can disable this diagnostic by setting ''Automatic solver parameter selection'' diagnostic to ''none'' in the Diagnostics page of the configuration parameters dialog.</entry>
+    <entry key="SolverTypeMismatch">The variable-step model ''{0}'' is referencing (via the Model block ''{1}'') the fixed-step model ''{2}'' which has blocks with continuous sample time.  This can cause the results from the Model block and the results obtained from standalone simulation of the referenced model to be different. You can disable this diagnostic by setting ''Automatic solver parameter selection'' diagnostic to ''none'' in the Diagnostics page of the configuration parameters dialog.</entry>
+    <entry key="SolverTypeMismatch2">The fixed-step model ''{0}'' is referencing (via the Model block ''{1}'') the variable-step model ''{2}''.  Referencing a variable-step model from a fixed-step model is not supported.</entry>
+    <entry key="TunableParamRefByNonInlinedSFcn">Reducing parameter {0,number,integer} of S-Function ''{1}'' to its numerical equivalent because model reference does not support tunable parameters for non-inlined S-Functions. This parameter resolves to tunable variables ({2}). You will be unable to tune this parameter during model execution.</entry>
+    <entry key="VariableTsWithModelRef">''{0}'' has a variable sample time. Variable sample times are not supported by Model Reference.</entry>
+
+    <entry key="WarnInvalidModelrefInput_Sfcn">A noninlined S-Function reading its input from a root Inport block is found. A hidden Signal Conversion block (with the ''Exclude this block...'' option enabled) needs to be inserted before noninlined S-Function ''{0}'' in referenced model ''{1}'' to facilitate code generation. \nUse the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>
+    <entry key="WarnInvalidModelrefOutput_ConstTP">Invalid root Outport block connection in the referenced model ''{0}''. Root Outport {1,number,integer} is driven by the block ''{2}'' which also has an output port that is testpointed or has non-auto storage class. Simulink inserts a hidden Signal Conversion block (with the ''Exclude this block...'' option enabled) before the root Outport block. \nUse the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>
+    <entry key="WarnInvalidModelrefOutput_GroundBlock">Invalid root Outport block connection in the referenced model ''{0}''. Root Outport {1,number,integer} is driven by a ground block. Simulink inserts a hidden Signal Conversion block (with the ''Exclude this block...'' option enabled) before the root Outport block. \nUse the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>
+    <entry key="WarnInvalidModelrefOutput_MultiDst">Invalid root Outport block connection in the referenced model ''{0}''. Output port {1,number,integer} of block ''{2}'' drives root Outport blocks {3,number,integer} and {4,number,integer}. To be a valid connection, the source port must drive only one root Outport block. Simulink inserts a hidden Signal Conversion block (with the ''Exclude this block...'' option enabled) before the root Outport block. \nUse the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>
+    <entry key="WarnInvalidModelrefOutput_MultiPath">Invalid root Outport block connection in the referenced model ''{0}''. Output port {1,number,integer} of block ''{2}'' drives root Outport {3,number,integer} via two paths. To be a valid connection, only one signal path can exist between a root Outport block and the block that drives it. Simulink inserts a hidden Signal Conversion block (with the ''Exclude this block...'' option enabled) before the root Outport block. \nUse the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>
+    <entry key="WarnInvalidModelrefOutput_MultiSrc">Invalid root Outport block connection in the referenced model ''{0}''. Two different blocks drive the root Outport block {1,number,integer}. To be a valid connection, the root Outport block must be driven by one source port. Simulink inserts a hidden Signal Conversion block (with the ''Exclude this block...'' option enabled) before the root Outport block. \nUse the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>
+    <entry key="WarnInvalidModelrefOutput_NONCont">Invalid root Outport block connection in the referenced model ''{0}''. Only {1,number,integer} element(s) of output port {2,number,integer} of block ''{3}'' drive the root Outport {4,number,integer}. To be a valid connection, all of the signal''s elements must drive the root Outport block to which it is connected. Simulink inserts a hidden Signal Conversion block (with the ''Exclude this block...'' option enabled) before the root Outport block. \nUse the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>
+    <entry key="WarnInvalidModelrefOutput_NonConstDrivingConst">Invalid root Outport block connection in the referenced model ''{0}''. Root Outport {1,number,integer} has a constant sample time but is driven by a block that does not have a constant sample time. Simulink inserts a hidden Signal Conversion block (with the ''Exclude this block...'' option enabled) before the root Outport block. \nUse the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>
+    <entry key="WarnInvalidModelrefOutput_ConstDrivingNonConst">Invalid root Outport block connection in the referenced model ''{0}''. Root Outport {1,number,integer} does not have a constant sample time but is driven by a block that has a constant sample time. Simulink inserts a hidden Signal Conversion block (with the ''Exclude this block...'' option enabled) before the root Outport block. \nUse the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>
+    <entry key="WarnInvalidModelrefOutput_NoninlinedSfcn">Invalid root Outport block connection in the referenced model ''{0}''. Root Outport {1,number,integer} is being read from or written to by the noninlined S-Function ''{2}''. Simulink inserts a hidden Signal Conversion block (with the ''Exclude this block...'' option enabled) before the root Outport block. \nUse the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>
+    <entry key="WarnInvalidModelrefOutput_TestPoint">Invalid root Outport block connection in the referenced model ''{0}''. The signal driving the root Outport block {1,number,integer} is a test point or it has SimulinkGlobal storage class specified. Use the ''Invalid root Inport/Outport block connection'' option on the ''Model Referencing'' group of the Diagnostics page of the Configuration Parameters dialog box to control reporting of this condition.</entry>
+    <entry key="WarnMaxConstBOSizeIgnoredForMdlRef">The TLC option MaxConstBOSize specified at the model ''{0}'' is ignored while building model reference target.</entry>
+
+    <entry key="WarnSaveFunctionInterfaceInMdlFile">Some function connectors may not be shown because one or more referenced models were saved using an older version of Simulink. Resave these models to avoid this warning.</entry>
+    <entry key="BlockSaveFunctionInterfaceInMdlFile">The model ''{0}'' referenced by Model block ''{1}'' needs to be resaved.</entry>
+
+    <entry key="WarnSaveInterfaceInfoInMdlFile">The Model block ''{0}'' is referencing model ''{1}''. Model ''{2}'' was saved using an older version of Simulink. Resave model ''{3}'' to speed up model loading.</entry>
+    <entry key="WarningCannotSetSignalPropagationToAll">For signal propagation on signals that go out of Model blocks, "all" is an invalid setting.  The signal propagation setting for the signal out of Model block ''{0}'' has been set to "on".</entry>
+    <entry key="ErrorDiagVersionMismatchMsg"><![CDATA[ Referenced model version
+    mismatch. The Model block ''{0}'' is referencing model ''{1}''. This block
+    has been using version ''{2}'' of the model ''{3}''. However, version ''{4}'' of
+    the model is currently on the MATLAB path.\n To address this mismatch,
+    right-click the Model block and select 'Subsystem & Model Reference > Refresh Selected Model
+    Block', and if necessary, update the referencing model to reflect changes in
+    the referenced model.  To turn off reporting of this condition,
+    set the <a href="matlab:sl('openConfigSetItem', ''{5}'',
+    ''ModelReferenceVersionMismatchMessage'');">''Configuration Parameters >
+    Diagnostics > Model Referencing > Model block version mismatch''</a>
+    parameter to ''none''.]]></entry>
+
+    <entry key="WarningDiagVersionMismatchMsg"><![CDATA[ Referenced model
+    version mismatch. The Model block ''{0}'' is referencing model ''{1}''. This
+    block has been using version ''{2}'' of the model ''{3}''. However, version
+    ''{4}'' of the model is currently on the MATLAB path. The block will use the
+    current version of the model. \n To address this mismatch, right-click the
+    Model block and select 'Subsystem & Model Reference > Refresh Selected Model Block', and if
+    necessary, update the referencing model to reflect changes in the referenced
+    model.  To turn off reporting of this condition, set the <a
+    href="matlab:sl('openConfigSetItem', ''{5}'',
+    ''ModelReferenceVersionMismatchMessage'');">''Configuration Parameters >
+    Diagnostics > Model Referencing > Model block version mismatch''</a>
+    parameter to ''none''.]]></entry>
+
+    <entry key="WarningNoSyncDiagVersionMismatchMsg"><![CDATA[ Referenced model
+    version mismatch. The Model block ''{0}'' is referencing model ''{1}''. This
+    block has been using version ''{2}'' of the model ''{3}''. However, version
+    ''{4}'' of the model is currently on the MATLAB path. The block cannot use the
+    current version of the model. \n To address this mismatch, right-click the
+    Model block and select 'Subsystem & Model Reference > Refresh Selected Model Block', and if
+    necessary, update the referencing model to reflect changes in the referenced
+    model.  To turn off reporting of this condition, set the <a
+    href="matlab:sl('openConfigSetItem', ''{5}'',
+    ''ModelReferenceVersionMismatchMessage'');">''Configuration Parameters >
+    Diagnostics > Model Referencing > Model block version mismatch''</a>
+    parameter to ''none''.]]></entry>
+
+    <entry key="MessageViewer_BuildingTarget">Building {0}</entry>
+    <entry key="MessageViewer_UpdatingTargets">Updating Model Reference {0} Targets</entry>
+
+    <!-- Error is internal.  No need to translate -->
+    <entry key="ParameterTestPointExternalFileReferencesMismatch"
+    translate="false">slfeature ParameterTestPoint cannot be greater than or
+    equal to 6 when GraphicalInterfaceExternalFileReferences is greater than
+    or equal to 2.</entry>
+    
+    <entry key="TargetUpdateError">Error while bringing model references of model {0} up to date: {1}</entry>
+    <entry key="TargetUpdateErrorMenu">Error while bringing model references of model {0} up to date:  see errors reported above for details.</entry>
+    <entry key="OutOfDate">The model ''{0}'' has the Rebuild parameter on the Model Referencing pane of the Configuration Parameters dialog box set to Never.  However, the following referenced models are out-of-date for the following reasons.  Consider resetting the Rebuild parameter to a value other than Never.</entry>
+    <entry key="ExtModeOutOfDate">The model ''{0}'' is configured to run in external mode, but the following referenced models are out-of-date.  
+      Regenerate the code for ''{1}''.</entry>
+    <entry key="constBusOutputNotAllowed">The root Outport block ''{0}'' has a constant sample time and is outputting a nonvirtual bus signal. This configuration is not allowed for referenced models when generating code.  Insert a Rate Transition block before the root Outport or specify a discrete sample time for the upstream Constant block that is outputting a bus signal.</entry>
+    <entry key="OverriddenBusRootOutputNotAllowedInAccel">Overridden bus object ''{0}''  detected at the root Outport block ''{1}''. Overridden bus objects are not supported at root Outport blocks of a referenced model in accelerated simulation mode. Either run the referenced model using normal mode simulation or set the Data type override setting of the referenced model to 'Use local settings' or 'Off'.</entry>
+    <entry key="modelAlreadyCompiled">The model ''{0}'' is already in a compiled state as a referenced model.</entry>
+    <entry key="inheritedStatesWhenResettingSubsystem">The function-call subsystem ''{0}'' has the 'States when enabling' 
+      parameter set to 'Inherit', and is inheriting from the context of the referenced model's root system.  
+      Set the parameter 'States when enabling' on the subsystem's Trigger port block to either 'Reset' or 'Held'.
+      The 'Inherit' setting will be removed in a future release.</entry>
+    <entry key="inheritedStatesWhenResettingStateflow">The Stateflow chart ''{0}'' has the 'States when enabling' 
+      parameter set to 'Inherit', and is inheriting from the context of the referenced model's root system.  
+      Set the parameter 'States when enabling' on the Stateflow chart to either 'Reset' or 'Held'.
+      The 'Inherit' setting will be removed in a future release.</entry>
+    <entry key="inheritedStatesWhenResettingError">The Model block ''{0}'' lives in a conditionally executed 
+      context and is referencing a model that directly or indirectly contains function-call subsystems that 
+      have their 'States when enabling' parameter set to 'Inherit'.  This is not supported when the "Remove 
+      reset function" option in the Configuration Parameters dialog for the referenced model is turned on.
+      See below for a list of function-call subsystems that you must update.</entry>
+    <entry key="findToolSearching">Searching...</entry>
+    <entry key="findToolSearchingModel">Searching ''{0}''</entry>
+    <entry key="dialogDescName" translate="false">Model Reference</entry>
+    <!-- Used in compareComponentWithChild -->
+    <entry key="CompareComponentTypeWithChild">When comparing components, the component type must be the same for both components.  The component type for the first argument is "{0}", and the component type for the second argument is "{1}".</entry>
+    <entry key="CompareComponentWithChildNumVisibleField">When comparing {0} to {1} the number of visible fields must be the same.  The number of fields in {2} is {3,number,integer} and the number of fields in {4} is {5,number,integer}.</entry>
+    <entry key="CompareComponentWithChildEnumValues">When comparing {0} to {1} the field {2} is an enum but has different enum values.  In {3} the values are: {4} and in {5} the values are: {6}</entry>
+    <entry key="InvalidFixedStepSizeForEnabledModel">The model ''{0}'' has a root level Enable and
+      has the Configuration Parameters > Solver > Fixed-step size (fundamental sample time) parameter
+      set to ''{1}''.  However, no blocks are running at that rate.  Consider changing
+      the fixed-step size of this model to ''{2}''.      
+    </entry>
+    <entry key="MRSignalLoggingTitle">Model Reference Signal Logging: {0} ({1})</entry>
+    <entry key="StateflowSignalLoggingTitle">Stateflow Signal Logging: {0}</entry>
+    <entry key="UnspecifiedLoggingName">Logging name must be specified</entry>
+    <entry key="UnspecifiedLoggingTitle">Signal Logging Interface</entry>
+    <entry key="ConversionDialogMessage">The following error has occurred while converting the subsystem
+    into a model:\n\n{0}\n\nYou can choose to continue the conversion, in which case some of the errors 
+    are reported as warnings, or stop the conversion.
+    </entry>    
+    <entry key="ConversionDialogTitle">Create Model Block</entry>    
+    <entry key="ConversionDialogContinue">Continue conversion</entry>    
+    <entry key="ConversionDialogStop">Stop</entry>    
+    <entry key="Normal_CB">Normal</entry>
+    <entry key="Accelerator_CB">Accelerator</entry>
+    <entry key="Software_in_loop_CB">Software-in-the-loop (SIL)</entry>
+    <entry key="Processor_in_loop_CB">Processor-in-the-loop (PIL)</entry>
+    <entry key="CodeInterfaceMdlref">Model reference</entry>
+    <entry key="CodeInterfaceTop">Top model</entry>
+    <entry key="ModelRefLogSignals">Log Referenced Signals</entry>
+    <entry key="StateflowLogSignals">Log Chart Signals</entry>
+    <entry key="SignalGUIInLockedLibrary">The ''{0}'' GUI is being invoked from a locked system.
+    Please unlock the library to view/modify signals.</entry>
+    <entry key="SignalGUIInLinkedLibrary">The ''{0}'' GUI is being invoked from inside a linked system.
+    Please disable the link to view/modify signals.</entry>
+
+    <!-- Rebuild Manager messages -->
+    <entry key="AddToBuildSkipListNotEmpty">Adding to Rebuild Manager build list for top model ''{0}'' is not allowed because there are models in the skip list.</entry>
+    <entry key="AddToSkipBuildListNotEmpty">Adding to Rebuild Manager skip list for top model ''{0}'' is not allowed because there are models in the build list.</entry>
+    <entry key="RemoveErrorSkipListEmpty">Cannot remove models from Rebuild Manager skip list because the list for top model ''{0}'' is empty.</entry>
+    <entry key="RemoveErrorBuildListEmpty">Cannot remove models from Rebuild Manager build list because the list for top model ''{0}'' is empty.</entry>
+
+    <entry key="DirectFeedThrough">LibBlockInputSignal was used by a block in
+    this model, but the direct feedthrough was set to false for root input port
+    ''{0}''.  Please fix the TLC for the block reading this input port.</entry>
+
+    <entry key="SetBlockParamNotAllowedForMixedModeModelRef">Tuning block
+    parameters of model ''{0}'' during simulation is not allowed because at
+    least one of its instance(s) is referenced in Accelerator,
+    Software-in-the-loop (SIL) or Processor-in-the-loop (PIL) mode.</entry>
+    
+    <entry key="OutputExportedFcnError" translate="false">Export functions
+    output call failed.</entry>
+    
+    <entry key="EnableExportedFcnError" translate="false">Export functions
+    enable call failed.</entry>
+
+    <entry key="DisableExportedFcnError" translate="false">Export functions
+    disable call failed.</entry>
+    
+    <entry key="WarnAboutStatesNotLogged"> The model ''{0}'' is logging states,
+    but the following referenced models contain a state that cannot be logged
+    because its data type is not supported for logging: ''{1}''.  To see which
+    states are not logged, simulate these referenced models and check for
+    warnings. </entry>
+
+    <!-- Message to flag potential blind spots in TLC -->
+    <entry key="InternalCodeGenerationError">
+        An internal error occurred while generating code. The error
+        message is ''{0}''. Please report this bug to MathWorks Technical
+        Support.
+    </entry>
+
+    <entry key="WarnAboutConstCastPrototypeFeature">
+        Model ''{0}'' is being used as a referenced model through block ''{1}'', and it 
+        is using the Model step function prototype control. The referenced model's root 
+        input argument ''{2}'' does not have
+        a 'const' qualifier, but its source signal in the parent model has a 'const' 
+        qualifier. To honor the referenced model's interface specification, a type cast
+        has been inserted in the code for the parent model to discard the 'const' qualifier
+        from the source signal. If this behavior is not desired, consider adding an
+        appropriate 'const' qualifier to the ''{3}'' argument of the referenced model.
+    </entry>
+    <entry key="WarnAboutConstCastIOArgFeature">
+        Model ''{0}'' is being used as a referenced model through block ''{1}'', and it 
+        is using the 'I/O arguments step method' style C++ class interface. 
+        The referenced model's root input argument ''{2}'' does not have
+        a 'const' qualifier, but its source signal in the parent model has a 'const' 
+        qualifier. To honor the referenced model's interface specification, a type cast
+        has been inserted in the code for the parent model to discard the 'const' qualifier
+        from the source signal. If this behavior is not desired, consider adding an
+        appropriate 'const' qualifier to the ''{3}'' argument of the referenced model.
+    </entry>
+
+    <entry key="UpgradeToModelMask">This Model contains model reference blocks with 
+        user defined masks, which can be upgraded to Model Mask. Replace the user-defined
+        masks for such blocks with Model Mask.
+    </entry>
+
+      <entry key="unableToFindSparseJacobianFile">Cannot open the sparse Jacobian
+    data file: ''{0}''.</entry>
+
+    <entry key="VarDimsNotSupportedForVirtualBusAcrossModelReferenceInput">
+        Inport block {0,number,integer} of model ''{1}'' accepts a virtual
+        bus with a variable dimensions element. This is not currently supported
+        for referenced models. Please configure the bus to be nonvirtual by
+        opening the Inport block parameters and selecting "Output as nonvirtual bus".
+    </entry>
+
+    <entry key="VarDimsNotSupportedForVirtualBusAcrossModelReferenceOutput">
+        Outport block {0,number,integer} of model ''{1}'' outputs a virtual bus
+        with a variable dimensions element. This is not currently supported 
+        for referenced models. Please configure the bus to be nonvirtual by
+        opening the Outport block parameters and selecting "Output as nonvirtual
+        bus in parent model".
+    </entry>
+    
+    <entry key="VirtualBusAcrossModelReferenceInportNeedsStrictBusMode">
+        Inport block {0,number,integer} of referenced model ''{1}'' accepts a
+        virtual bus and the model does not have ''Configuration Parameters'' >
+        ''Diagnostics'' > ''Connectivity'' > ''Mux blocks used to create bus
+        signals'' set to ''error''.  Either set ''Mux blocks used to create bus
+        signals'' to ''error'' or select the "Output as nonvirtual bus"
+        parameter on the Inport block.
+    </entry>
+
+
+    <entry key="VirtualBusAcrossModelReferenceOutportNeedsStrictBusMode">
+        Outport block {0,number,integer} of referenced model ''{1}'' outputs a
+        virtual bus and the model does not have ''Configuration Parameters'' >
+        ''Diagnostics'' > ''Connectivity'' > ''Mux blocks used to create bus
+        signals'' set to ''error''.  Either set ''Mux blocks used to create bus
+        signals'' to ''error'' or select the "Output as nonvirtual bus in parent
+        model" parameter on the Outport block.
+    </entry>
+
+    <entry key="VirtualBusAcrossModelReferenceAOBInput">
+        Inport block {0,number,integer} of referenced model ''{1}'' accepts a
+        virtual bus and the bus ''{2}'' has an element that is an array of
+        buses.  Arrays of buses are not supported in virtual buses.  On the
+        Inport block, select "Output as nonvirtual bus".
+    </entry>
+
+
+    <entry key="VirtualBusAcrossModelReferenceAOBOutput">
+        Outport block {0,number,integer} of referenced model ''{1}'' accepts a
+        virtual bus and the bus ''{2}'' has an element that is an array of
+        buses.  Arrays of buses are not supported in virtual buses.  On the
+        Outport block, select "Output as nonvirtual bus in parent model".
+    </entry>
+
+    
+    <entry key="VirtualBusAcrossModelReferenceModelBlockNeedsStrictBusMode">
+        Model block ''{0}'' has a root Inport or root Outport block configured
+        to use a virtual bus and model ''{1}'' does not have ''Configuration
+        Parameters'' > ''Diagnostics'' > ''Connectivity'' > ''Mux blocks used to
+        create bus signals'' set to ''error''.  Either:\n
+
+        (1) Set ''Mux blocks used to create bus signals'' to ''error'' in model
+        ''{2}'', or\n
+
+        (2) Configure the root Inport and root Outport blocks of referenced
+        model ''{3}'' to not use virtual buses by selecting "Output as
+        nonvirtual bus" on root Inport blocks and "Output as nonvirtual bus in
+        parent model" on root Outport blocks.
+    </entry>
+
+    <entry key="VirtualBusRootIOInfo_InvalidArg">slInternal call
+    ''getModelReferenceVirtualBusRootPortInformation'' requires one argument which
+    must be the handle to a root Inport or Outport block of a referenced model.</entry>
+    <entry key="VirtualBusAcrossModelReference_SampleTimeMismatch_Input">
+      Inport block {0,number,integer} of referenced model ''{1}'' specifies a
+      sample time of {2}, which is incompatible with sample time {3} of bus
+      element ''{4}'' of bus object ''{5}''.  These sample times either need to
+      be the same, or one or both of them must be inherited.
+    </entry>
+
+
+    <entry key="VirtualBusAcrossModelReference_SampleTimeMismatch_Output">
+      Outport block {0,number,integer} of referenced model ''{1}'' specifies a
+      sample time of {2}, which is incompatible with sample time {3} of bus
+      element ''{4}'' of bus object ''{5}''.  These sample times either need to
+      be the same, or one or both of them must be inherited.
+    </entry>
+
+    <entry key="DeletedUserDefinedMask">The user-defined mask for block
+    ''{0}''is now replaced with an auto generated Model Mask.</entry>
+    
+    <entry key="DeleteUserDefinedMask">Block ''{0}'' is referring a model with
+    Model Mask. To proceed, delete the mask for the block ''{1}''. For more
+    information , see Configuration Parameters > Diagnostic > Model
+    Referencing.</entry>
+    
+    <entry key="SaveSystemWithDirtyReferencedModels">The specified top model was
+    not saved due to the existence of dirty referenced models (for example,
+    ''{0}''). Use the save_system name-value pair
+    'SaveDirtyReferencedModels','on' to save the specified top model as well as
+    all the dirty referenced models. </entry>
+
+    <entry key="ModelMaskVarNotDefined">
+        Block diagram ''{0}'' has Model Mask parameter ''{1}'', but the
+        corresponding variable is not defined in the model workspace.
+    </entry>
+
+    <entry key="ModelMaskDataTypeMismatch">
+        Parameter value for ''{0}'' on Model Mask of ''{1}'' does not match the
+        data type of the corresponding model argument.
+    </entry>
+    <entry key="ModelMaskDimsMismatch">
+        Invalid dimensions  for parameter ''{0}'' of Model Mask of ''{1}''. The
+        parameter provided is a {2} array but a {3} array is expected.
+    </entry>
+    
+    <entry key="PropertyInspectorModelRefObjectType">ModelReference</entry>
+    <entry key="PropertyInspectorProtectedModelRefObjectType">ProtectedModelReference</entry>
+
+    <entry key="CannotFetchUpdateStatus">Cannot fetch update-only model status.</entry>    
+    <entry key="ContainsModelWithEventPorts">The model block ''{0}'' references a model which contains a model block with one or many of the Initialize, Terminate and Reset ports enabled. In such cases, the enabling of the Initialize, Terminate and Reset ports on the model block ''{0}'' is not supported.</entry>
+    <entry key="InvalidCodeGenWithModelRefWithEventPorts">The top model ''{0}'' contains the model block ''{1}'' which has one or more of its Initialize, Reset or Terminate ports enabled. Code generated is not supported for such models.</entry>
+
+    <entry key="InvalidVirtualBusWithStorageClassSpec"> Outport block ''{0}'' is configured to output a virtual bus but has non-Auto storage class. Set "Output as nonvirtual bus in parent model" on the block dialog or change to ''Auto'' storage class.</entry>
+
+    <entry key="InvalidModelContainingStateRWInSubsystemWhichResets">The model block ''{0}'' contains State Reader/Writer blocks and is placed in subsystem ''{1}'' which resets its states. This is not supported. To fix this, ensure the model referenced by block ''{0}'' does not contain State Reader/Writer blocks or change the setting of subsystem ''{1}''. </entry>
+    <entry key="InvalidModelContainingIRTSystemsInSubsystemWhichResets">The model block ''{0}'' contains Initialize/Reset/Terminate Function blocks and is placed in subsystem ''{1}'' which resets its states. This is not supported. To fix this, ensure the model referenced by block ''{0}'' does not contain Initialize/Reset/Terminate Function blocks or change the setting of subsystem ''{1}''. </entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  xml UTF CDATA SIL checksums mdlrefs slprj mexfile SLX SLXP
+     LocalWords:  testpointed singletasking Parameterizing FCNCALL Resave slxp
+     LocalWords:  unchecking tunability tunablevars parameterobjects dropdown
+     LocalWords:  PREFSMULTIINSTANCENORMALMODENONVISIBLEINSTANCEWARNING AES mlx
+     LocalWords:  subsystem's Webview Configurator webview buildable resaved
+-->

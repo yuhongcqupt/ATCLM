@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<rsccat version="1.0" locale="en_US" product="asyncio">
+  <message>
+    <entry key="cannotAddFilterWhileOpen" translate="false">A filter cannot be added while the stream is open.</entry>
+    <entry key="couldNotLoadFilter" translate="false">Failure to load the filter plug-in.</entry>
+    <entry key="couldNotCreateFilter" translate="false">Failure to create the filter object.</entry>
+  </message>
+</rsccat>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Copyright 2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="invalidSplitterName">Invalid SplitterName. CustomReadDatastore needs a concrete subclass of FileBasedSplitter.</entry>
+    <entry key="invalidReadFcn">ReadFcn must be a function handle with at least one input argument and one output argument.</entry>
+    <entry key="invalidReadFcnFromXtor">ReadFcn must be a function handle with at least one input argument and one output argument.\n\nUse syntax {0}(__, 'ReadFcn', @MYCUSTOMREADER)</entry>
+    <entry key="readFcnError">Error using ReadFcn {0} function handle for file\n{1}.\n\n{2}</entry>
+    <entry key="noOutputReadFcn">{0} must be a function handle with at least one output argument.</entry>
+  </message>
+</rsccat>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!-- Copyright 2011-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+    <entry key="AbstractStorageMethodCall">Storage sub-classes MUST override this method.</entry>
+    <entry key="ByteBufferConversionFailed">Array construction from ByteBuffer Threw an exception.</entry>
+    <entry key="ByteBufferConversionType">Conversion requires a java ByteBuffer.</entry>
+    <entry key="ByteBufferTooLarge">Buffer is too large.</entry>
+    <entry key="CalcAttachedFilesInputs">Arguments to calculateAttachedFiles must be a cell array of character vectors of absolute paths to files.</entry>
+    <entry key="DeserializationException">Deserialization threw an exception.</entry>
+    <entry key="DeserializationFailed">Failed to deserialize data.</entry>
+    <entry key="DeserializeBufferTooLarge">Buffer is too large.</entry>
+    <entry key="DeserializeInputNonEmpty">Input to deserialize must not be empty.</entry>
+    <entry key="DeserializeInputType">Input to deserialize must be uint8 or java.nio.ByteBuffer.</entry>
+    <entry key="GetShortPathInputType">Input to distcompGetShortPath must be a character vector.</entry>
+    <entry key="HetfunInvalidArgument">The third input to ''hetfun'' must be ''stable''</entry>
+    <entry key="InvalidMxArrayOutputType">Invalid output type, supported types are ''int8'' and ''uint8''.</entry>
+    <entry key="NoLocalPathFoundForAttachedFile">Could not find a local path on the worker for the attached file ''{0}''.</entry>
+    <entry key="PathClearBadArg">dctPathAndClearNotification must be called with 1 argument - ''on'' or ''off''.</entry>
+    <entry key="PathClearJNIFailure">An internal error occurred during dctPathAndClearNotification.</entry>
+    <entry key="ProcessFileTimeToSystem">Could not convert FILETIME to SYSTEMTIME for {0,number,integer}.</entry>
+    <entry key="PsFcnsBadCommand">Invalid command \"{0}\".</entry>
+    <entry key="PsFcnsBadExitCode">Expected a scalar integer as the second argument to fast exit.</entry>
+    <entry key="PsFcnsBadPidArg">Expected a scalar process ID as the second argument.</entry>
+    <entry key="PsFcnsCouldNotKillEINVAL">Attempt to kill {0,number,integer} resulted in EINVAL.</entry>
+    <entry key="PsFcnsCouldNotKillEPERM">You do not have permission to terminate PID {0,number,integer}.</entry>
+    <entry key="PsFcnsCouldNotKillESRCH">Could not find process {0,number,integer} to terminate.</entry>
+    <entry key="PsFcnsCouldNotKillUnknown">Unknown error code returned while trying to kill process {0,number,integer}: error code was {1,number,integer}.</entry>
+    <entry key="PsFcnsFailedToGetProcName">Couldn't find the process name for process: {0,number,integer}.</entry>
+    <entry key="PsFcnsFailedToLaunch">Failed to launch process \"{0}\" with message: {1}.</entry>
+    <entry key="PsFcnsFailedToTerminate">Failed to terminate process with PID {0,number,integer}.</entry>
+    <entry key="PsFcnsFailedToTerminateMsg">Failed to terminate process with PID {0,number,integer}: {1}.</entry>
+    <entry key="PsFcnsInvalidArgs">The second and third arguments to dct_psfcns( 'winlaunchproc', ... ) must be character vectors.</entry>
+    <entry key="PsFcnsInvalidArguments">dct_psfcns must be called with a command and one other argument.</entry>
+    <entry key="PsFcnsInvalidPid">The supplied PID ({0,number,integer}) is invalid.</entry>
+    <entry key="PsFcnsNoPermission">You do not have permission to terminate process with PID {0,number,integer}.</entry>
+    <entry key="PsFcnsNoSuchProcess">Could not find process {0,number,integer}.</entry>
+    <entry key="PsFcnsPidNotAlive">Cannot kill PID {0,number,integer} - the PID is not alive.</entry>
+    <entry key="PsFcnsProcessInfoFailed">Failed to extract process information: {0}.</entry>
+    <entry key="PsFcnsQueryFailed">Couldn't query process creation time for {0,number,integer}: {1}.</entry>
+    <entry key="PsFcnsSnapshotFailed">Could not list all running processes: {0}.</entry>
+    <entry key="PsFcnsTimeConversionFailed">Couldn't convert FILETIME to SYSTEMTIME for {0,number,integer}.</entry>
+    <entry key="RegisterMpiFcnsInvalidArg">dctRegisterMpiFunctions must be called with 1 argument - 'mpi_mi' or 'mwmpi'.</entry>
+    <entry key="SerializeAllocFailed">Out of memory attempting to serialize data for transmission.</entry>
+    <entry key="SerializeBufferTooLarge">Attempt to serialize data which is too large.</entry>
+    <entry key="SerializeDataTooLarge">Out of memory attempting to serialize data for transmission.</entry>
+    <entry key="SerializeInputTooLarge">Input is too large to create ByteBuffer.</entry>
+    <entry key="SerializeInputType">Making a ByteBuffer requires an int8 or uint8 input.</entry>
+    <entry key="SerializeTooLarge">Attempt to serialize data which is too large.</entry>
+    <entry key="StableCharMapInvalidKey">Keys in the StableCharMap must be non-empty and of type ''char''</entry>
+    <entry key="UnexpectedApiLevel">An unexpected API level was specified in pctconfig.</entry>
+    <entry key="UnsetenvNotSupportedPlatform">unsetenv is not supported on windows.</entry>
+  </message>
+</rsccat>

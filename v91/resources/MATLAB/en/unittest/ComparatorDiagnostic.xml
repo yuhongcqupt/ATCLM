@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- Copyright 2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="PathToFailure">Path to failure:</entry>
+    <entry key="PathToValue">Path to value:</entry>
+    <entry key="ActualValue">Actual Value:</entry>
+    <entry key="ExpectedValue">Expected Value:</entry>
+    <entry note="Example: Actual double:" key="ActualValueWithType">Actual {0}:</entry>
+    <entry note="Example: Expected double:" key="ExpectedValueWithType">Expected {0}:</entry>
+  </message>
+</rsccat>

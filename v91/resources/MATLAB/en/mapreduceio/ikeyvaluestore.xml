@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!-- Copyright 2014 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB" string_type_for_hole="mixed">
+    <message>
+        <entry key="ConstructionException">Invalid keyvaluestore constructor.</entry>
+        <entry key="InvalidNRHSException">Invalid number of input arguments: Must be {0,number,integer}.</entry>
+        <entry key="InvalidVarNRHSException">Invalid number of input arguments: Must be {0,number,integer} or {1,number,integer}.</entry>
+        <entry key="InvalidNLHSException">Invalid number of output arguments: Must be {0,number,integer}.</entry>
+        <entry key="InvalidDeleteStrConstructorException" note="stringDatatypeUpdate">Invalid delete character vector: {0}.</entry>
+        <entry key="InvalidCreateStrConstructorException" note="stringDatatypeUpdate">Invalid create character vector: {0}.</entry>
+        <entry key="FileNotFoundConstructorException">File does not exist: {0}. Use option: createIfNecessary.</entry>
+        <entry key="InvalidMethodCallException">Invalid method call.</entry>
+        <entry key="SelectStoreException">Error in selecting store for creation or to write.</entry>
+        <entry key="CreateStoreKeyIndexException">Error in creating store key index: {0}</entry>
+        <entry key="SelectToWriteException">Error in selecting store to write: {0}</entry>
+        <entry key="SelectToReadException">Error in selecting store to read: {0}</entry>
+        <entry key="SelectToCreateException">Error in selecting store to create: {0}</entry>
+        <entry key="AddKeyValueException">Error in adding keys and values.</entry>
+        <entry key="IndexedOutputException">Error in indexed reading of keys.</entry>
+        <entry key="CannotFinalizeDbException">Exception in finalizing db statements. Exception:\n{0}.</entry>
+        <entry key="CannotCreateDbException">Error in creating db. Exception:\n{0}. Path: {1}</entry>
+        <entry key="CannotDeleteDbException">Error in deleting db. Exception:\n{0}. Path: {1}</entry>
+        <entry key="UnsupportedKeyTypeException">Key type unsupported by the KeyValueStore. KeyType: {0,number,integer}</entry>
+        <entry key="SetStoreKeyTypeException">Error in setting key type to the KeyValueStore. KeyType: {0,number,integer}</entry>
+        <entry key="StoreNotFoundException">The store does not exist in the KeyValueStore. Store: {0}</entry>
+        <entry key="UnexpectedColumnTypeException">Unexpected data type in the specified column. Type: {0,number,integer}</entry>
+        <entry key="UnequalNumKeysValuesException">Unequal number of keys and values. NumKeys: {0,number,integer}; NumValues: {1,number,integer}</entry>
+        <entry key="UnexpectedNullColumnException">Unexpected null value in the specified column.</entry>
+        <entry key="InvalidReadKeyStatementException">Invalid read key statement. Statement to select next key is not prepared.</entry>
+        <entry key="InvalidReadKeyTypeStatementException">Invalid read key-type statement. Statement to select key-type is not prepared.</entry>
+        <entry key="InvalidReadValueStatementException">Invalid read value statement. Statement to select next value is not prepared.</entry>
+        <entry key="InvalidInsertStatementException">Invalid insert statement. Use selectStoreToWrite() first.</entry>
+        <entry key="InvalidHasNextKeyCallException">Invalid hasNextKey() call. Use getNextKey() first.</entry>
+        <entry key="InvalidHasNextValueCallException">Invalid hasNextValue() call. Use getNextValue() first.</entry>
+        <entry key="NoMoreKeysException">No more keys in the KeyValueStore. Check with hasNextKey() first.</entry>
+        <entry key="NoMoreValuesException">No more values in the KeyValueStore. Check with hasNextValue() first.</entry>
+        <entry key="GetNextKeyException">Error in getting the next key from the KeyValueStore.</entry>
+        <entry key="GetNextValueException">Error in getting the next value from the KeyValueStore.</entry>
+        <entry key="DbNotConnectedException">Db is not connected.</entry>
+        <entry key="EmptyQueryException" note="stringDatatypeUpdate">Db query character vector is empty.</entry>
+        <entry key="NonStringDbQueryException" note="stringDatatypeUpdate">Db query character vector is non character vector.</entry>
+        <entry key="StdErrorException">Standard error occurred. Reason: {0}</entry>
+        <entry key="CannotCloseKVStoreException">Cannot close the KeyValueStore. Path: {0}</entry>
+        <entry key="KeyValueStoreClosedException">KeyValueStore is closed. Path: {0}</entry>
+    </message>
+</rsccat>

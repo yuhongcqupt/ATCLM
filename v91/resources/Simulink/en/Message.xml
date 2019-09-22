@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2009-2013 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+<!-- Message Connection -->
+    <entry key="InvalidSendMsgConnectionMutiple"> Invalid message connection at output port {0,number,integer} of ''{1}''. Message connections may not be branched and provided to multiple destinations. </entry>
+    <entry key="MsgModePropError">Invalid connection between message and signal ports. Output port {0,number,integer} of ''{1}'' is not compatible with input port {2,number,integer} of ''{3}''.</entry>
+    <entry key="InvalidGraphicalConnectionBadgeTip">Invalid connection that mixes signals and messages.\nThe type of source and destination for this port are not compatible.\nClick to highlight source and destination.</entry>
+    <entry key="BranchedLineCrossesNonVirtualSubsystem">The message line originating at output port {0,number,integer} of block ''{1}'' is being branched and crosses the boundary of the non-virtual subsystem ''{2}''. Branched message lines cannot cross non-virtual subsystem boundaries.</entry>
+    <entry key="DuplicateQueuesWithSameName">Duplicate message queue regions named ''{0}'' found. The first reference is in ''{1}''. The second reference is in ''{2}''. Message queues in a given non-virtual hierarchy must have unique names.</entry>
+    <entry key="QueueAccessBlockWithoutQueue">Message queue block with name ''{0}'' was not found for the block ''{1}''.</entry>
+    <entry key="QueueWithNoReadersOrWriters">No reader or writer blocks found for message queue block ''{0}'' with name ''{1}''.</entry>
+    <entry key="InvalidMessageSelfLoop">Error in block ''{0}''. This block is in a message self loop. A message self loop is formed by directly connecting a message output port and a message input port of the same block.\n\nRemove the loop connections and model the message reception inside the block.</entry>
+    <entry key="InvalidDirectMessageConn">Invalid connection originating from Inport block ''{0}''. The Inport block must not be connected directly to an Outport block because it is receiving message data.</entry>
+    <entry key="CannotSupportBusAndNonScalarWithPriorityLocalQueue">Invalid data attributes set for local queue {0,number,integer} of the "{1}" block.  Local priority queues require scalar and non-bus message data.</entry>
+    <entry key="MultiportObserverForMessage">The block ''{0}'' that is observing messages does not support more than one input port.</entry>
+    <entry key="MultiportObserverForDES">The block ''{0}'' that is observing statistics does not support more than one input port.</entry>
+    <entry key="MuxOrBusForDESNotSupported">The statistics port is connected to ''{0}'', which is a Bus Creator or Mux. Either stream these signals to the Simulation Data Inspector or use one observation block for each signal.</entry>
+    <entry key="MultiEventSignalsObserverForDES">The block ''{0}'' does not support the observation of multiple signals when used with SimEvents blocks. Either stream these signals to the Simulation Data Inspector or use one observation block for each signal.</entry>
+    <entry key="MessageLoopBreakBadgeTooltip">Reception delayed due to message loop</entry>
+    <entry key="CannotLinearizeMessages">Message output port {0,number,integer} of block ''{1}'' cannot be configured as a linearization point.</entry>
+    <entry key="CannotSendMsgToRootOutport">Messages cannot be sent to the root-level Outport block ''{0}''. Use a Stateflow chart to convert the message to a signal.</entry>
+    <entry key="CannotReceiveMsgFromRootInport">Messages cannot be received from the root-level Inport block ''{0}''. Use a Stateflow chart to generate messages from the signal data at this port.</entry>
+    <entry key="UnsupportedCodeVariantSubsystem">Messages cannot be sent or received from the Variant Block or Variant Subsystem ''{0}'' because it has been configured to analyze all possible choices and generate preprocessor conditionals. Either change the variant interfaces to be signal-based instead of message-based, or clear the option "Analyze all choices during update diagram and generate preprocessor conditionals" in the Variant Block or Variant Subsystem dialog.</entry>
+    <entry key="SendMessageToFullQueue">Message queue connected to block ''{0}'' through port {1,number,integer} overflowed during the simulation.</entry>
+  </message>
+</rsccat>

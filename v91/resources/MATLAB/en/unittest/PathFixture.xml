@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="SetupDescription">Added ''{0}'' to the path.</entry>
+    <entry key="SetupDescriptionSubfolders">Added ''{0}'' and its subfolders to the path.</entry>
+    <entry key="TeardownDescription">Restored the path to its original state.</entry>
+    <entry key="InvalidPosition">Value of position should be either 'begin' or 'end'.</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  rsccat
+-->

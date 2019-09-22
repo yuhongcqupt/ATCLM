@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="ArgNotStruct">Argument {0,number,integer} must be an options structure.</entry>
+  </message>
+</rsccat>

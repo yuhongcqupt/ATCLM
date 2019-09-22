@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="TestMethodAttributeNeeded">Test methods must have a true ''Test'' attribute.</entry>
+    <entry key="LoadingObsoleteTestSuite">The ability to load TestSuites created in {0} will not be supported in a future release. Resave the suite in the current release to be able to load it in future releases.</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  rsccat
+-->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2013 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <!-- Messages used by the API for associating arbitrary data with a
+         block diagram -->
+    <entry key="SimulinkNotLoaded">Simulink is not loaded.  Call "load_simulink" and try again.</entry>
+    <entry key="NotRegistered">No associated data is registered with name "{0}".</entry>
+    <entry key="AlreadyRegistered">Associated data with name "{0}" is already registered.</entry>
+    <entry key="AlreadyExposed">Associated data with name "{0}" is already exposed as a block diagram parameter.</entry>
+    <entry key="TypeMismatch">Associated data "{0}" is registered with type "{1}", and cannot be converted to type "{2}".</entry>
+    <entry key="InvalidBlockDiagramHandle">Invalid block diagram handle specified.</entry>
+    <entry key="CloseAllBlockDiagrams">Before registering associated data with the default block diagram you must close all other block diagrams.</entry>
+    <entry key="UnsupportedMATLABType">Associated data of type "{0}" cannot be returned to MATLAB.</entry>
+    <entry key="UnsupportedParameterType">Associated data of type "{0}" cannot be exposed as a block diagram parameter.</entry>
+  </message>
+</rsccat>

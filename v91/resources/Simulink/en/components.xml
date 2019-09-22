@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="discmdlMdlNotFound">The model ''''{0}'''' cannot be found, you must open the model first.</entry>
+    <entry key="discmdlCriticalFreq">Critical frequency must be provided to use ''''prewarp'''' operation.</entry>
+    <entry key="discmdlCriticalFreqTooLarge">Critical frequency must be a positive scalar smaller than the Nyquist frequency.</entry>
+    <entry key="discmdlDerivativeBlk">Applying ''tustin'' to derivative instead of ''{0}''.</entry>
+    <entry key="discmdlInvalidArg">Invalid argument.</entry>
+    <entry key="discmdlInvalidArgNum">Invalid argument: {0}.</entry>
+    <entry key="discmdlInvalidArgStr">Invalid argument: {0}.</entry>
+    <entry key="discmdlInvalidOptionStr">Invalid option: {0}.</entry>
+    <entry key="discmdlInvalidNumberOption">Invalid number of options. </entry>
+    <entry key="discmdlInvalidTransform">Invalid transformation method ''''{0}''''.</entry>
+    <entry key="discmdlWrongFormatSampleTime">Wrong format of sample time.</entry>
+    <entry key="discmdlWrongFormatFreq">Wrong format of critical frequency.</entry>
+    <entry key="discmdlMaskedNotSupport">Discretizing user-masked built-in block ''''{0}'''' is not supported. </entry>
+    <entry key="VariableTransportDelayNotSupported">Model Discretizer does not support Variable Transport Delay block.</entry>
+    <entry key="discmdlWrongIndex">Wrong index number. </entry>
+    <entry key="discmdlBlkNotExist">Block ''''{0}'''' does not exist. </entry>
+    <entry key="PerforceDetectedDontShowAgain">Do not show this message again</entry>
+    <entry key="PerforceDetectedError">Perforce is selected as the current Source Control system. Some (but not all) versions of Perforce are incompatible with Simulink and can make Simulink unstable.\n\nGo to {0} for more information on this problem.\n\n If you have incompatible versions then:\n 1. Use the Source Control options of the MATLAB Preferences menu to change your Source Control system.\n 2. Quit MATLAB and restart.</entry>
+    <entry key="PerforceDetectedDailogTitle">Simulink and Perforce Compatibility Problem</entry>
+    <entry key="DVOpen"><![CDATA[&Open]]></entry>
+    <entry key="DVHelp"><![CDATA[&Help]]></entry>
+    <entry key="DVClose"><![CDATA[&Close]]></entry>
+    <entry key="DVMessage">Message</entry>
+    <entry key="DVSource">Source</entry>
+    <entry key="DVReportedBy">Reported By</entry>
+    <entry key="DVSummary">Summary</entry>
+    <entry key="DVShowMsg"><![CDATA[Show &Message]]></entry>
+    <entry key="DVShowMsgTip">Show message type in the message list.</entry>
+    <entry key="DVShowSrc"><![CDATA[Show &Source]]></entry>
+    <entry key="DVShowSrcTip">Show the message source in the message list.</entry>
+    <entry key="DVShowReportedBy"><![CDATA[Show &Reported By]]></entry>
+    <entry key="DVShowReportedByTip">Show the component that issued the message in the message list.</entry>
+    <entry key="DVShowSummary"><![CDATA[Show S&ummary]]></entry>
+    <entry key="DVShowSummaryTip">Show the message text in the message list.</entry>
+    <entry key="DVView"><![CDATA[&View]]></entry>
+    <entry key="DVFontSize"><![CDATA[&Font Size]]></entry>
+  </message>
+</rsccat>

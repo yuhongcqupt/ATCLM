@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="NotEnoughInputs">Not enough input arguments.</entry>
+    <entry key="Arg1NotStruct">First argument must be an options structure created with OPTIMSET.</entry>
+  <!--Resource entries for toolbox/matlab/funfun-->
+    <entry key="AmbiguousPropName">Ambiguous option name ''{0}'' {1}</entry>
+    <entry key="InvalidPropName">Unrecognized option name ''{0}''.  See OPTIMSET for possibilities.</entry>
+  </message>
+</rsccat>

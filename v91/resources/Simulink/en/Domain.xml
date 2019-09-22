@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <!-- 
+       Message catalog: Simulink:Domain
+       Messages originating from Simulink domain infrastructure.
+
+       Copyright 2010-2013 The MathWorks, Inc.
+    -->
+    <entry key="DomainMismatchAtInputPort">The input port {0,number,integer} of the block ''{1}'' requires ''{2}'' signal. However, the output port {3,number,integer} of the block ''{4}'' produces a time-based signal.\nInsert a block that converts this signal.</entry>
+    <entry key="DomainMismatchAtOutputPort">The output port {0,number,integer} of the block ''{1}'' produces ''{2}'' signal. However, the input port {3,number,integer} of the block ''{4}'' requires a time-based signal.\nInsert a block that converts this signal.</entry>
+    <entry key="DomainMismatchAtConnectionPort">The {0} connection port {1,number,integer} of the block ''{2}'' is of type ''{3}'', which does not match that of the {4} connection port {5,number,integer} of the block ''{6}''.</entry>
+
+    <entry key="AlgLoopsDisabledWithNoCStateBlocks"><![CDATA[Algebraic Loop: One or more signals originating from a discrete-event system in model ''{0}'' are being fed back to the same discrete-event system through a direct feedback path. This forms an algebraic loop, which cannot be solved due to the presence of SimEvents blocks.\n\nThis loop includes timed-to-event and event-to-timed transitions at input ports of the following blocks:\n{1}\nThe time-based blocks involved in the loop are:\n{2}\nTo resolve this error see '<a href="matlab:helpview(fullfile(docroot,'mapfiles','simulink.map'),'how_sl_works_algebraic_loops')">Algebraic Loops in Simulink</a>'']]></entry>
+
+    <entry key="AlgLoopsDisabledWithCStatesBlocks"><![CDATA[Algebraic Loop: One or more signals originating from a discrete-event system in model ''{0}'' are being fed back to the same discrete-event system through a direct feedback path. This forms an algebraic loop, which cannot be solved due to the presence of SimEvents blocks.\n\nThis loop includes timed-to-event and event-to-timed transitions at input ports of the following blocks:\n{1}\nThe time-based blocks involved in the loop are:\n{2}\nTo resolve this error see '<a href="matlab:helpview(fullfile(docroot,'mapfiles','simulink.map'),'how_sl_works_algebraic_loops')">Algebraic Loops in Simulink</a>'']]></entry>
+
+    <entry key="AlgLoopsDisabledNoBlocks"><![CDATA[Algebraic Loop: One or more signals originating from a discrete-event system in model ''{0}'' are being fed back to the same discrete-event system through a direct feedback path. This forms an algebraic loop, which cannot be solved due to the presence of SimEvents blocks.\n\nThis loop includes timed-to-event and event-to-timed transitions at input ports of the following blocks:\n{1}\nTo resolve this error see '<a href="matlab:helpview(fullfile(docroot,'mapfiles','simulink.map'),'how_sl_works_algebraic_loops')">Algebraic Loops in Simulink</a>'']]></entry>
+
+    <entry key="AlgLoopMsgIgnored">Note that the Algebraic loop option in the Diagnostics page of the Configuration Parameters Dialog is being ignored because the algebraic loop contains SimEvents blocks.</entry>
+    <entry key="FcnCallInputGatewayInvalidDst">The output port of block ''{0}'' is connected to an invalid destination ''{1}''. You can connect the output port of the ''{2}'' block to the function-call input port of only one of the following blocks:\n-- Entity Departure Counter\n-- Event-Based Entity Generator\n-- Instantaneous Event Counting Scope\n-- Release Gate\n-- Signal-Based Function-Call Generator\n\nIf you connect the output port of the ''{3}'' block to a Signal-Based Function-Call Generator block, on the Timing tab of the Signal-Based Function-Call Generator block dialog box, select the 'Resolve simultaneous signal updates according to event priority' check box. Also, set the value of the 'Function-call delay from' parameter to one of the following:\n-- 'Signal port t'\n-- 'Dialog', with 'Function-call time delay' value greater than zero</entry>
+    <entry key="FcnCallInputGatewayInvalidTerminated">The output of Timed to Event Function-Call block ''{0}'' cannot be unconnected or be connected to a Terminator block.</entry>
+    <entry key="FcnCallInputGatewayInvalidMultiDsts">The output of Timed to Event Function-Call block ''{0}'' cannot be connected to multiple destinations.</entry>
+    <entry key="FcnCallInputGatewayDstHasInvalidDataInputConn">If the function-call input port of ''{0}'' is connected to the Timed to Event Function-Call block ''{1}'', its data input port {2,number,integer} must connect to a Timed to Event Signal block, not ''{3}''.</entry>
+    <entry key="FcnCallInputGatewayDstHasInvalidSrcWithMultiDsts">If the function-call input port of ''{0}'' is connected to the Timed to Event Function-Call block ''{1}'', its data input port {2,number,integer} must connect to a Timed to Event Signal block. This block ''{3}'' cannot have multiple destinations. </entry>
+    <entry key="AbsoluteTimeNotSupported">Block ''{0}'' requires to use simulation time. However, maintaining simulation time is not supported when both of the following are true:\n  - This block is in a discrete-event system\n  - The model is configured to use fixed-step solver\n\nTo resolve this issue, change Solver type to Variable-step in Solver pane of the Configuration Parameters dialog.</entry>
+    <entry key="ElaspeTimeNotSupported">Block ''{0}'' requires the atomic subsystem ''{1}'' to maintain the time elapsed since the previous block execution. However, maintaining elapsed time is not supported when the subsystem is connected to an event-based signal.</entry>
+    <entry key="IntegrationModeNotSupported">Block ''{0}'' is configured to run under integration mode. However, integration mode is not supported when this block is in an atomic subsystem block (''{1}'') and the subsystem is connected to an event-based signal. Reconfigure the block to use accumulation mode.</entry>
+    <entry key="UseEventPriorityInsteadOfBlockPriority">The SimEvents block ''{0}'' has event priority {1,number,integer} and block priority to {2,number,integer}. For this block, SimEvents will use the event priority and ignore the block priority.</entry>
+    <entry key="AsyncAcrossDomainBoundaryNotSupported">The ''{0}'' block does not accept asynchronous function-call at its input port 1. </entry>
+    <entry key="AsyncSFunctionNotSupportedInSEDomain">The ''{0}'' block is not supported in discrete-event systems.</entry>
+    <entry key="CrossedNonVirtualSubsystemBoundary">The line connecting the ''{0}'' block to the ''{1}'' block cannot cross a non-virtual subsystem boundary, since both blocks are part of the same discrete-event system.</entry>
+    <entry key="GatewaysInDifferentNonVirtualSubsystems">The gateway blocks ''{0}'' and ''{1}'' cannot reside in two different non-virtual subsystems, since both blocks are part of the same discrete-event system.</entry>
+    <entry key="CannotUpdateBlock_InvalidReplacementBlock">Assertion failed: Cannot update block ''{0}'' of type ''{1}'' because its replacement type ''{2}'' is unknown.</entry>
+
+   <!-- Model Explorer: text displayed in event summary dialog -->
+   <entry key="MExplorerEventInfoDialogTitle">Event-based execution information for {0}</entry>
+   <entry key="MExplorerEventInfoDialogCaption">Event-based execution information for {0}</entry>
+   <entry key="MExplorerEventInfoSection1Heading">Events scheduled by block ({0} in total)</entry>
+   <entry key="MExplorerEventInfoSection2Heading">Dependent transition groups ({0} in total)</entry>
+   <entry key="MExplorerEventInfoTable1Heading1">Event type</entry>
+   <entry key="MExplorerEventInfoTable1Heading2">Block</entry>
+   <entry key="MExplorerEventInfoTable2Heading1">Transition type</entry>
+   <entry key="MExplorerEventInfoTable2Heading2">Source block(s)</entry>
+   <entry key="MExplorerEventInfoEventType1">Entity departed</entry>
+
+   <!-- Model Explorer: text displayed in block event dialog -->
+   <entry key="MExplorerBlockEventDialogTitle">Event scheduled by block</entry>
+   <entry key="MExplorerBlockEventDialogCaption1">{0} at {1}</entry>
+   <entry key="MExplorerBlockEventDialogCaption2">{0}</entry>
+   <entry key="MExplorerBlockEventSection1Heading">Event type</entry>
+   <entry key="MExplorerBlockEventSection2Heading">Event details</entry>
+   <entry key="MExplorerBlockEventTable1Heading1">Scheduling block</entry>
+
+   <!-- Model Explorer: text displayed in compiled entity route dialog -->
+   <entry key="MExplorerEntityRouteDialogTitle">Dependent transition group</entry>
+   <entry key="MExplorerEntityRouteDialogCaption">Dependent transition group {0}</entry>
+   <entry key="MExplorerEntityRouteSection1Heading">Source</entry>
+   <entry key="MExplorerEntityRouteSection2Heading">Destination</entry>
+   <entry key="MExplorerEntityRouteSection3Heading">Path</entry>
+   <entry key="MExplorerEntityRouteTable1Heading1">Block</entry>
+   <entry key="MExplorerEntityRouteTable1Heading2">Output port</entry>
+   <entry key="MExplorerEntityRouteTable2Heading1">Block</entry>
+   <entry key="MExplorerEntityRouteTable2Heading2">Input port</entry>
+   <entry key="MExplorerEntityRouteTable3Heading1">Block</entry>
+   <entry key="MExplorerEntityRouteTable3Heading2">From input port</entry>
+   <entry key="MExplorerEntityRouteTable3Heading3">To output port</entry>
+
+   <!-- Model Explorer: text shared by multiple dialogs -->
+   <entry key="MExplorerUnableToCreateEventInfoObj">Unable to create class Simulink.EventInfo for model.</entry>
+   <entry key="MExplorerToggleHighlight">Toggle highlight</entry>
+   <entry key="MExplorerMultipleBlocks">multiple blocks</entry>
+   <entry key="MExplorerContentEmpty">none</entry>
+   <entry key="MExplorerSignalOutputSectionHeading">Signal outputs</entry>
+   <entry key="MExplorerSignalOutputTableHeading1">Block</entry>
+   <entry key="MExplorerSignalOutputTableHeading2">Port</entry>
+
+  </message>
+</rsccat>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2012 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="sql_mcos_api" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="SQL_MCOS_API_ARG_SB_EQ">Invalid number of arguments: {0,number,integer}; should be {1,number,integer}.</entry>
+    <entry key="SQL_MCOS_API_ARG_SB_GTE">Invalid number of arguments: {0,number,integer}; should be {1,number,integer} or more.</entry>
+    <entry key="SQL_MCOS_API_ARG_SB_0_1_2">Invalid number of arguments: {0,number,integer}; should be 0, 1, or 2.</entry>
+    <entry key="SQL_MCOS_API_ARG_SB_OR">Invalid number of arguments: {0,number,integer}; should be {1,number,integer} or {2,number,integer}.</entry>
+    <entry key="SQL_MCOS_API_ARG_N_SB_TYPE">Argument {0,number,integer} (arg. 0 = first arg.) should be {1}.</entry>
+    <!-- Note that we don't count the object in the number of args passed. -->
+    <entry key="SQL_MCOS_API_ARG_TOO_FEW_TABLE_PLUS_PAIR">Invalid number of arguments passed to object for insert: {0,number,integer}; should include table name and at least one column name/data pair.</entry>
+    <entry key="SQL_MCOS_API_ARG_TOO_FEW_TABLE_PLUS_AG_FLAG_PLUS_PAIR">Invalid number of arguments passed to object for insert: {0,number,integer}; should include table name, autogenerate flag, and at least one column name/data pair.</entry>
+    <!-- Note that we don't count the object in the number of args passed. -->
+    <entry key="SQL_MCOS_API_ARG_SB_EVEN">Odd number of arguments ({0,number,integer}) passed to function {1}; should be even.</entry>
+    <entry key="SQL_MCOS_API_ARG_SB_ODD">Even number of arguments ({0,number,integer}) passed to function {1}; should be odd.</entry>
+    <entry key="SQL_MCOS_API_ARG_SB_LOGICAL_1_OR_0">Argument should be a logical 1 or 0.</entry>
+    <entry key="SQL_MCOS_API_ARG_SB_SINGLE_LOGICAL">Argument should be a single logical 1 or 0; found matrix of size {0,number,integer}.</entry>
+    <entry key="SQL_MCOS_API_ARG_SB_STRING_TABLE_NAME">The first argument should be a string indicating the name of the table.</entry>
+    <entry key="SQL_MCOS_API_ARG_SB_STRING_COL_NAME">Argument {0,number,integer} (arg. 0 = first arg.) should be a string indicating the name of the corresponding column in the table.</entry>
+    <entry key="SQL_MCOS_API_DB_NOT_CREATED">Database file {0} was not created.</entry>
+    <entry key="SQL_MCOS_API_DB_NOT_DELETED">Database file {0} was not deleted.</entry>
+    <entry key="SQL_MCOS_API_CONNECTION_FAILED">Could not connect to database {0}.</entry>
+    <entry key="SQL_MCOS_API_COUNT_FAILED">Could not retrieve count; database: {0}, statement: {1}.</entry>
+    <entry key="SQL_MCOS_API_INVALID_CLASS">Invalid class: {0,number,integer}; details: {1}.</entry>
+    <entry key="SQL_MCOS_API_TOO_MANY_OUTPUTS_FOR_FETCH">The number of outputs ({0,number,integer}) for fetchRow exceeds the number of columns ({1,number,integer}).</entry>
+    <entry key="SQL_MCOS_API_NO_OUTPUTS_FOR_FETCH">No outputs specified for fetchRow.</entry>
+    <entry key="SQL_MCOS_API_NO_ROWS_FOR_FETCH">Invalid number of rows ({0,number,integer}) specified for fetchRow; must be greater than 0.</entry>
+    <entry key="SQL_MCOS_API_NONEMPTY_PATH">A nonempty path must be specified for the {0} command.</entry>
+    <entry key="SQL_MCOS_API_NO_CONNECTION">A connection to the database must be established before calling {0}.</entry>
+    <entry key="SQL_MCOS_API_UNEXPECTED_NULL_IN_COL">Unexpected NULL; (zero-based) column index: {0,number,integer}; details: {1}.</entry>
+    <entry key="SQL_MCOS_API_OBJECT_IS_NULL">SqlDbConnector object is null.</entry>
+
+    <!-- Note that arg 0 is passed here as a string, not an int. If you want to display the numeric value, convert it to a string first. -->
+    <entry key="SQL_MCOS_API_UNEXPECTED_TYPE_IN_COL">Unexpected type: {0}; (zero-based) column index: {1,number,integer}; details: {2}.</entry>
+    <entry key="SQL_MCOS_API_INCONSISTENT_ROW_COUNTS">Inconsistent row counts for column 0 ({0,number,integer}) and column {1,number,integer} ({2,number,integer}).</entry>
+    <entry key="SQL_MCOS_API_RETRY">Retrying operation {0} due to error: {1}</entry>
+    <entry key="SQL_MCOS_API_NO_COMPLEX_NUMS">Complex numbers are not allowed.</entry>
+    <entry key="SQL_MCOS_API_TOO_MANY_ARGS_TO_FETCH_ROWS">Incorrect input args passed to fetchRows ({0}); should be 0, 1, or 2 integers.</entry>
+    <entry key="SQL_MCOS_API_BAD_TYPE">Incorrect type ({0,number,integer}) passed to {1}.</entry>
+    <entry key="SQL_MCOS_API_SQLDB_ERR">Received error ({0}) upon executing statement {1}.</entry>
+    <entry key="SQL_MCOS_API_EXCEPTION">Received exception ({0}) upon attempting an operation; details: {1}.</entry>
+    <entry key="SQL_MCOS_API_TRANSACT_IN_PROGRESS">Attempted to begin transaction with one in progress; details: new transaction: "{0}"; old transaction: "{1}".</entry>
+    <entry key="SQL_MCOS_API_NOTHING_TO_ROLL_BACK">Attempted to roll back transaction when none was in progress; details: {0}.</entry>
+    <entry key="SQL_MCOS_API_NOTHING_TO_COMMIT">Attempted to commit transaction when none was in progress; details: {0}.</entry>
+    <entry key="SQL_MCOS_API_EXCEPTION_IN_DESTRUCTOR">Error suppressed in SqlDbConnector destructor; details: {0}.</entry>
+    <entry key="SQL_MCOS_API_DISCONNECT_DURING_TRANSACT">Attempted to disconnect while transaction was in progress; details: {0}.</entry>
+    <entry key="SQL_MCOS_API_CONSTRAINT_VIOLATION">Database constraint violation; zero-based index of offending record: {0,number,integer}; contents: [{1}]; details: {2}.</entry>
+    <entry key="SQL_MCOS_API_ARG_VECTOR">Could not read the arguments passed to {0}.</entry>
+    <entry key="SQL_MCOS_API_INVALID_ATE_VALUE">Invalid enum value: {0,number,integer}.</entry>
+  </message>
+</rsccat>

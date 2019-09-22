@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="UnhandledOption">Unknown option: {0}</entry>
+    <entry key="NeedsModel">This block must be placed into a model to operate.</entry>
+    <entry key="WindowTitle">Model Info: {0}</entry>
+    <entry key="Help">Help</entry>
+    <entry key="OK">OK</entry>
+    <entry key="Cancel">Cancel</entry>
+    <entry key="Apply">Apply</entry>
+    <entry key="HorizontalTextAlignment">Horizontal text alignment:</entry>
+    <entry key="HorzAlignLeft">Left</entry>
+    <entry key="HorzAlignRight">Right</entry>
+    <entry key="HorzAlignCenter">Center</entry>
+    <entry key="ShowBlockFrame">Show block frame</entry>
+    <entry key="ModelProperties">Model properties:</entry>
+    <entry key="ConfigurationManagerProperties">Configuration manager properties:</entry>
+    <entry key="EnterTextPrompt">Enter text and tokens to display on Model Info block:</entry>
+    <entry key="PropertiesFor">Properties for {0}</entry>
+    <entry key="ConfigurationManagerMismatch">Block "{0}" refers to a different Configuration Management system from the block diagram which contains it.</entry>
+    <entry key="Created">Created</entry>
+    <entry key="Creator">Creator</entry>
+    <entry key="ModifiedBy">Modified By</entry>
+    <entry key="ModifiedDate">Modified Date</entry>
+    <entry key="ModifiedComment">Modified Comment</entry>
+    <entry key="ModelVersion">Model Version</entry>
+    <entry key="ModelName">Model Name</entry>
+    <entry key="Description">Description</entry>
+    <entry key="LastModifiedBy">Last Modified By</entry>
+    <entry key="LastModificationDate">Last Modification Date</entry>
+    <entry key="WindowTooSmall">Window too small</entry>
+    <entry key="WindowTooNarrow">Window width too small</entry>
+    <entry key="WindowTooShort">Window height too small</entry>
+    <entry key="LockedLibrary">Could not update the Model Info block "{0}" because it is in a locked library.</entry>
+    <entry key="NotAvailable">(Not available in SLX model file format)</entry>
+    <entry key="ConfigurationManagerKeywordSubstitutionDetected">The block ''{0}'' is configured to allow some source control tools to modify the contents of
+        the MDL file using keyword substitution.
+        \nUsing third-party source control tool keyword expansion might corrupt your model files when you submit them. Keyword substitution is not available in SLX model file format.
+        \nKeyword substitution will be removed in a future release. For a more flexible interface to source control tools, use Simulink Project instead of the Model Info block.</entry>
+</message>
+</rsccat>

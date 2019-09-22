@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Copyright 2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="compiler_tall">
+  <message>
+    <entry key="CTFFileDoesNotExist">Error in matlab.mapreduce.DeploySparkMapReducer. CTF File ''{0}'' does not exist.</entry>
+    <entry key="UnsupportedMapReduceFunction">Map-Reduce paradigm is unsupported for matlab.mapreduce.DeploySparkMapReducer. Use matlab.mapreduce.DeployHadoopMapReducer instead.</entry>
+    <entry key="UnsupportedMatlabMode">Class matlab.mapreduce.DeploySparkMapReducer can only be used in deployed mode on a Linux platform.</entry>
+    <entry key="UnsupportedSparkMode">Class matlab.mapreduce.DeploySparkMapReducer can only be used for Spark clusters.</entry>
+    <entry key="UnsupportedSparkAPI">SparkLogLevel property is not supported for this version of Spark. Consider using Spark version 1.4 or higher.</entry>
+  </message>
+</rsccat>

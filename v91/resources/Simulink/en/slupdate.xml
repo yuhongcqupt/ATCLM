@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2009-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="UpgradeTitle">Upgrade Advisor</entry>
+    <entry key="slupdateDeprecation"><![CDATA[The slupdate command can only upgrade some parts of your model. It will be removed in a future release.
+    Click the link to use the <a href="matlab:upgradeadvisor {0}">Upgrade Advisor</a> instead or run the command "advisor = upgradeadvisor(''{0}'')".]]></entry>
+    <entry key="UpgradeModelDescription">Tasks for upgrading models</entry>
+    <entry key="UpgradeLibraryDescription">Tasks for upgrading libraries</entry>
+    <entry key="slupdatePrefToolTip">Prompt to run Model Advisor upgrade checks when a model saved in an earlier Simulink version fails to compile</entry>
+    <entry key="slupdatePrefDescription">Prompt if a model needs upgrading</entry>
+    <entry key="noCompileUpdateTip">Some of the issues encountered during model compilation may be because this model was created in a previous release.</entry>
+    <entry key="slupdateTipPrefsKey" translate="false">PREFSSLUPDATETIPSHOW</entry>
+    <entry key="restoreBrokenLinksName">Check for broken links</entry>
+    <entry key="restoreBrokenLinksDesc">Check for broken or disabled library links</entry>
+    <entry key="brokenLinksAction">Restore all</entry>
+    <entry key="brokenLinksActionDescription">Restore all broken or disabled links</entry>
+    <entry key="sfunCheckName">Check model for outdated S-functions</entry>
+    <entry key="SFunCheckTip">Check model for any S-functions that may need to use a more modern interface</entry>
+    <entry key="fcnCallCheckName">Check usage of function-call connections</entry>
+    <entry key="noncompileCheckName">Check current model for outdated blocks</entry>
+    <entry key="noncompileUpdateDesc">Check current model for upgrades that can be made without signal type or dimension information</entry>
+    <entry key="noncompileActionName">Upgrade blocks</entry>
+    <entry key="noncompileActionDesc">Upgrade outdated blocks</entry>
+    <entry key="compileCheckName">Check current model for outdated modeling constructs</entry>
+    <entry key="compileUpdateDesc">Check current model for upgrades that need signal type or dimension information</entry>
+    <entry key="slDataTypeCheckName">Check for calls to slDataTypeAndScale</entry>
+    <entry key="busUsageCheckName">Check bus usage</entry>
+    <entry key="initParamCheckName">Check consistency of initialization parameters for Outport and Merge blocks</entry>
+    <entry key="changedModelCheckName">Check that upgrades are saved.</entry>
+    <entry key="changedModelCheckDesc">Check that all upgrade changes to a model have been saved so they are not lost.</entry>
+    <entry key="saveActionButton">Save model</entry>
+    <entry key="saveActionDesc">Save the upgraded version of the model</entry>
+    <entry key="toNextMdlDescription">Continue on to upgrade the next model</entry>
+    <entry key="continueLabel">Continue</entry>
+    <entry key="saveMdl">Save model</entry>
+    <entry key="UATitle">Upgrade Advisor - {0}</entry>
+    <entry key="MATitleFcnCallUsageCheck">Check function-call connection diagnostic settings</entry>
+    <entry key="MATitleCheckDTAndScale">Check for slDataTypeAndScale()</entry>
+    <entry key="MATitleOutportInitParamsCheck">Check consistency of initialization parameters for Merge and Outport blocks</entry>
+    <entry key="ignoreWarningDesc">You can manually fix the problems described above or ignore these problems and continue.</entry>
+    <entry key="MATitleCheckForProperBusUsage">Check bus usage</entry>
+    <entry key="SeverityDowngrade">Severity is downgraded to ''warning'' for this check</entry>
+    <entry key="success">Success</entry>
+    <entry key="errorInUpdate">Error</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  PREFSSLUPDATETIPSHOW
+-->

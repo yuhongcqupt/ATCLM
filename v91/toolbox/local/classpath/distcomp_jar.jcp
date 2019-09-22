@@ -1,0 +1,2 @@
+# Java classpath entries for distcomp_jar
+$matlabroot/java/jar/toolbox/distcomp.jar

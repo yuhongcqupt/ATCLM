@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- Copyright 2014-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="nonFilePaths">''{0}'' does not appear to be a file.\nFiles property assignment cannot accept folder names or wildcard (*) operations.\n\nSpecify full file and path names instead.</entry>
+    <entry key="fileExtensionsNotPresent">Input folders or files do not contain specified file extensions: {0}</entry>
+    <entry key="allNonstandardExtensions">Input folders or files contain non-standard file extensions.\n\nUse FileExtensions Name-Value pair to include the non-standard file extensions.</entry>
+  </message>
+</rsccat>

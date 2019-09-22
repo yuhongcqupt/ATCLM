@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- Copyright 2013-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="ExpectedScalarComparator">Expected specified comparator to be a scalar.</entry>
+    <entry key="UnsupportedElement">The {0} found no comparator which supports the element below:\n\nElement ({1}):\n{2}</entry>
+  </message>
+</rsccat>

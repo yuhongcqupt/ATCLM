@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- Copyright 2014 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="datastoreTypeNotFound">Type: ''{0}'' is not recognized. Refer to the &lt;a href="matlab:doc(''datastore'')"&gt;datastore&lt;/a&gt; documentation for supported values of Type.</entry>
+    <entry key="duplicateType">Do not specify Type multiple times.</entry>
+    <entry key="invalidDatastoreTypeInput" note="stringDatatypeUpdate">Type must be a nonempty character vector. Refer to the &lt;a href="matlab:doc(''datastore'')"&gt;datastore&lt;/a&gt; documentation for supported values of Type.</entry>
+    <entry key="ambiguousTypeSpecified">Ambiguous Type: {0}. Found multiple matches.</entry>
+    <entry key="noSupportedDatastoreForLocation">Cannot determine the datastore type for the specified location.\n\nSpecify the 'Type' name-value pair argument to indicate the type of datastore to create.</entry>
+    <entry key="missingDatastoreTypeValue">Specify a value for Type.</entry>
+    <entry key="fileExtsWithDatastoreType">Specify 'FileExtensions' along with 'Type' Name-Value pair argument.</entry>
+    <entry key="undefinedFunction">Undefined function ''{0}'' for input arguments of type ''{1}''.</entry>
+    <entry key="typeAndDatastoreType">'DatastoreType' Name-Value pair is discouraged.\n\nSpecify only 'Type' Name-Value pair instead.</entry>
+    <entry key="typeOrDatastoreTypeProperty">'Type' or 'DatastoreType' cannot be a property while using the datastore function.\n\nRemove 'Type' or 'DatastoreType' from your class or directly construct using ''{0}(LOCATION)''.</entry>
+    <entry key="invalidFileExtensions">FileExtensions must begin with ''.'' or be empty quotes ''''.</entry>
+  </message>
+</rsccat>

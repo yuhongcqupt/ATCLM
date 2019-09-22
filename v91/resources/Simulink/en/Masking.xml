@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsccat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" locale="en_US" product="Simulink" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="Bad_Init_Commands">Error in ''{0}'': Initialization commands cannot be evaluated.</entry>
+    <entry key="BlockNotMasked">''{0}'' is not masked</entry>
+    <entry key="CannotMaskReferenceBlock">''{0}'' is a Reference block and may not be masked</entry>
+    <entry key="CannotMaskInportShadowBlock">''{0}'' is a duplicate Inport block and may not be masked</entry>
+    <entry key="CannotMaskAlreadyMaskedBlock">The block ''{0}'' is already masked</entry>
+    <entry key="CannotMaskSimulinkFunctionBlock">''{0}'' is a Simulink Function block and may not be masked</entry>
+    <entry key="CannotMaskInitTermResetSubsystems">''{0}'' is an Initialize, Reset or Terminate Function block and may not be masked</entry>
+    <entry key="CannotMaskAlreadyMaskedModel">The model ''{0}'' is already masked</entry>
+    <entry key="CannotMaskLibrary">The Library ''{0}'' cannot be masked</entry>
+    <entry key="ClosingBlockDialog">The dialog of ''{0}'' is being closed because a mask parameter has been changed</entry>
+    <entry key="Color_InvalidName">Invalid argument passed to the ''color'' drawing command in block ''{0}''. The color must be specified as the name of a supported color</entry>
+    <entry key="DelimiterInCallbackString">The mask callback specification ''{0}'' for mask parameter {1,number,integer} contains a ''|'' character, which conflicts with the character''s usage as a delimiter between mask callbacks. Replace the boolean expression containing the ''|'' character with a MATLAB ''or'' command, e.g., ''a | b'' with ''or(a, b)''</entry>
+    <entry key="DelimiterInStyleString">The mask style specification ''{0}'' for mask parameter {1,number,integer} contains a '','' character, which conflicts with the character''s usage as a delimiter between mask styles</entry>
+    <entry key="DispBadCmdErrMsg">Unrecognized function encountered in mask display command</entry>
+    <entry key="DispBracketErrMsg">Unmatched bracket encountered in mask command</entry>
+    <entry key="DispInvalidExpr">When displaying: "{0}", the expression "{1}" in ''{2}'' command  could not be evaluated.  Check that the parameter entries  and variables used in the Initialization command are valid  MATLAB expressions</entry>
+    <entry key="DispNotEnoughArgs">The number of arguments passed to "{0}" ({1,number,integer}) in block ''{2}'' is fewer than  the minimum required ({3,number,integer})</entry>
+    <entry key="DispParenErrMsg">Unmatched parenthesis encountered in mask command</entry>
+    <entry key="DispTickErrMsg">Unmatched string delimiter encountered in mask command.</entry>
+    <entry key="DispTooManyArgs">The number of arguments passed to "{0}" ({1,number,integer}) in block ''{2}'' exceeds the  maximum allowable ({3,number,integer})</entry>
+    <entry key="Disp_InvalidArgType">Invalid argument passed to ''disp'' drawing command in block ''{0}''. Argument must be character vector or double.</entry>
+    <entry key="Disp_InvalidArgs">Invalid arguments passed to ''disp'' drawing command in block ''{0}''</entry>
+    <entry key="Disp_InvalidParamEntry">''{0}'' is an invalid entry for ''disp'' drawing command parameter ''{1}'' in block ''{2}''</entry>
+    <entry key="Disp_NumArgConvertErr">The ''disp'' drawing command in block ''{0}'' could not convert numeric argument specified</entry>
+    <entry key="Disp_PropNotSupported">The ''disp'' drawing command property ''{0}'' in block ''{1}'' is invalid</entry>
+    <entry key="DlgRefTooLarge">The ''{0}'' of block ''{1}'' has dialog reference "{2}{3,number,integer}" which exceeds the number of prompts ({4,number,integer}).</entry>
+    <entry key="DlgRefTooSmall">The ''{0}'' of block ''{1}'' has dialog reference "{2}{3,number,integer}" which is less than 1.</entry>
+    <entry key="Dpoly_EmptyPolynomialArgs">Invalid arguments passed to ''dpoly'' drawing command in block ''{0}''. Polynomial arguments cannot be empty</entry>
+    <entry key="Dpoly_InvalidArgs">Invalid arguments passed to ''dpoly'' drawing command in block ''{0}''. The variable argument must be a specified as a character</entry>
+    <entry key="Droots_InvalidArgs">Invalid arguments passed to ''droots'' drawing command in block ''{0}''. The variable argument must be specified as a character</entry>
+    <entry key="DuplicatePropertyName">Invalid mask variable name specified.\n ''{0}'' is a duplicate property name</entry>
+    <entry key="ExcessDialogEntries">Ignoring excess mask dialog entries in: ''{0}''</entry>
+    <entry key="Fprintf_ExecutionErr">Could not execute the arguments to ''fprintf'' drawing command in block ''{0}''</entry>
+    <entry key="Image_IgnoreLocationInAutoscale">Ignoring location argument of ''image'' command in block ''{0}'' for autoscale option in Icon units</entry>
+    <entry key="Image_InvalidData">Invalid arguments passed to ''image'' drawing command in block ''{0}''. The image data should be specified as a m x n x 3 matrix</entry>
+    <entry key="Image_InvalidFilePath">Image file cannot be found. The ''image'' drawing command in block ''{0}'' has an invalid file path.</entry>
+    <entry key="Image_InvalidFileFormat">Image passed to ''image'' drawing command in block ''{0}'' failed to load. The image file is corrupt or the format is unsupported.</entry>
+    <entry key="Image_InvalidLocation">Invalid arguments passed to ''image'' drawing command in block ''{0}''. Location should either be specified as [left bottom width height] or a valid corner</entry>
+    <entry key="Image_InvalidRotation">Invalid arguments passed to ''image'' command in block ''{0}''. Rotation  must be specified as either ''off'' or ''on''</entry>
+    <entry key="Image_InvalidSize">Invalid size specification of ''image'' command in block ''{0}''</entry>
+    <entry key="Image_LocationNotNormalized">The image location of ''image'' drawing command in block ''{0}'' must be normalized</entry>
+    <entry key="Image_LocationOutsideBlock">The ''image'' drawing command in block ''{0}'' specifies the image location to be outside the block</entry>
+    <entry key="InvUsageOfReferenceSymbolParameters">Mask Initialization of block ''{0}'' contains reference symbols of type @n or &amp;n. This is not allowed, use mask variable names instead</entry>
+    <entry key="Invalid">Could not evaluate MaskDisplay commands of block ''{0}'': {1}</entry>
+    <entry key="Invalid_MaskInitialization">Cannot delete mask of block ''{0}'' in mask initialization</entry>
+    <entry key="Invalid_MaskDialogCallback">Cannot delete mask of block ''{0}'' in mask dialog callback</entry>
+    <entry key="InvalidStylePrmAssocIdxOutOfBound">Error in ''{0}'': The DataTypeStr parameter of index {1,number,integer}'' with style ''{2}'' has an invalid parameter index in its association mapper.</entry>
+    <entry key="InvalidStylePrmAssocUdt">Error in ''{0}'': The DataTypeStr parameter of index {1,number,integer} with style ''{2}'' must appear as the first element in its association mapper.</entry>
+    <entry key="InvalidStylePrmAssocWithUdt">Error in ''{0}'': The parameter of index {1,number,integer} with style ''{2}'' cannot be associated with DataTypeStr parameter of index {3,number,integer} as the specified type.</entry>
+    <entry key="InvalidStylePrmCompatAssocWithUdt">Error in ''{0}'': The DataTypeStr parameter of index {1,number,integer} with style ''{2}'' has an invalid association mapper.  If the mapper contains any old parameters related to data type, the following restrictions apply: 1. either the old data type mode parameter (slot {3,number,integer}) or the old data type parameter (slot {4,number,integer}) must exist; 2. If the old scaling parameter mode (slot {5,number,integer}) exists, then the old scaling parameter (slot {6,number,integer}) must exist.</entry>
+    <entry key="InvalidStylePrmMultiAssoc">Error in ''{0}'': The parameter of index {1,number,integer} cannot be associated with a unified data type parameter multiple times or with multiple DataTypeStr parameters</entry>
+    <entry key="InvalidStyleUdtBuiltin">Error in ''{0}'': Invalid built-in type options in the style for the DataTypeStr parameter of index {1,number,integer}.</entry>
+    <entry key="InvalidStyleUdtInherit">Error in ''{0}'': Invalid inherit rule options in the style for the DataTypeStr parameter of index {1,number,integer}.</entry>
+    <entry key="InvalidStyleUdtMissingScalingOrSignModes">Error in ''{0}'': Either the scaling modes or the sign modes is missing in the style for the DataTypeStr parameter of index {1,number,integer}.</entry>
+    <entry key="InvalidStyleUdtNoOption">Error in ''{0}'': There is no option provided for the DataTypeStr parameter of index {1,number,integer}</entry>
+    <entry key="InvalidStyleUdtScaling">Error in ''{0}'': Invalid scaling mode options in the style for the DataTypeStr parameter of index {1,number,integer}.</entry>
+    <entry key="InvalidStyleUdtSign">Error in ''{0}'': Invalid sign mode options in the style for the DataTypeStr parameter of index {1,number,integer}.</entry>
+    <entry key="InvalidStyleUdtUser">Error in ''{0}'': Invalid user-defined type options in the style for the DataTypeStr parameter of index {1,number,integer}.</entry>
+    <entry key="MustCloseBlockDialog">Mask parameters of ''{0}'' cannot be changed while the mask dialog is open</entry>
+    <entry key="NumMaskParametersChanged">The number of mask parameters of block ''{0}'' cannot be changed from within its mask initialization code</entry>
+    <entry key="OpenMaskEditor">Error opening the Mask editor</entry>
+    <entry key="OpenMaskDialog">Error opening the Mask dialog</entry>
+    <entry key="OpenEventBusy">Already Processing Open Event</entry>
+    <entry key="ParameterNameClash">Block ''{0}'' already has a built-in parameter ''{1}''. Hence a mask parameter of the same name cannot be added</entry>
+    <entry key="ParameterNameClashWarning">Block ''{0}'' already has a built-in parameter ''{1}''. Mask parameter names should not clash with built-in parameter names as it could result in unpredictable behavior. Please fix the mask parameter name to avoid this conflict</entry>
+    <entry key="Patch_InvalidArgs">Invalid arguments passed to ''patch'' drawing command in block ''{0}''. Arguments must be double.</entry>
+    <entry key="Patch_InvalidArgsDimensions">Invalid arguments passed to ''patch'' drawing command in block ''{0}''. Data may not have more than two dimensions</entry>
+    <entry key="Patch_InvalidArgsLengths">Invalid arguments passed to ''patch'' drawing command in block ''{0}''. Arguments must both be vectors of the same length</entry>
+    <entry key="Patch_InvalidColorSpec">Invalid RGB color specification for ''patch'' drawing command in block ''{0}''. RGB values must be in the range of 0.0 to 1.0</entry>
+    <entry key="Patch_InvalidColorTriplet">Invalid arguments passed to ''patch'' drawing command in block ''{0}''. Color must be specified as a RGB triplet</entry>
+    <entry key="Patch_InvalidLocation">Invalid arguments passed to ''patch'' drawing command in block ''{0}''. Location must be specified as a valid corner value</entry>
+    <entry key="Patch_InvalidLocationArg">Invalid arguments passed to ''patch'' drawing command in block ''{0}''. Location argument must be specified as a character vector.</entry>
+    <entry key="Patch_InvalidMatrixArgs">Invalid arguments passed to ''patch'' drawing command in block ''{0}''. Arguments must both be vectors of the same length</entry>
+    <entry key="Patch_InvalidScalarArgs">Invalid arguments passed to ''patch'' drawing command in block ''{0}''. Arguments must both be vectors of the same length</entry>
+    <entry key="Plot_InvalidArg">Invalid arguments passed to ''plot'' drawing command in block ''{0}''. Plot command accepts only numbers as valid arguments</entry>
+    <entry key="Plot_InvalidArgsDimensions">Invalid arguments passed to ''plot'' drawing command in block ''{0}''. Data may not have more than two dimensions</entry>
+    <entry key="Plot_InvalidArgsLengths">Invalid arguments passed to ''plot'' drawing command in block ''{0}''. Arguments must both be vectors of same length</entry>
+    <entry key="Plot_InvalidMatrixArgs">Invalid arguments passed to ''plot'' drawing command in block ''{0}''. Arguments must both be vectors of the same length</entry>
+    <entry key="Plot_InvalidNumArgs">Invalid number of arguments passed to ''plot'' drawing command in block ''{0}''. Arguments must be specified in pairs</entry>
+    <entry key="Plot_InvalidScalarArgs">Invalid arguments passed to ''plot'' drawing command in block ''{0}''. Arguments must both be vectors of the same length</entry>
+    <entry key="PopupUnmatchedParen">Missing or unmatched parenthesis in mask dialog-type popup specifier</entry>
+    <entry key="Port_Label_ControlPortArg">''{0}'' control port as specified by ''port_label'' drawing command in block ''{1}'' does not exist</entry>
+    <entry key="Port_Label_InputPortNumTooLarge">Port number {0,number,integer} specified in ''port_label'' drawing command exceeds the number of input ports of ''{1}''</entry>
+    <entry key="Port_Label_InvalidArgs">Invalid arguments passed to ''port_label'' drawing command in block ''{0}''</entry>
+    <entry key="Port_Label_InvalidParamEntry">''{0}'' is an invalid entry for ''port_label'' drawing command parameter ''{1}'' in block ''{2}''</entry>
+    <entry key="Port_Label_InvalidPort">Invalid port specified in ''port_label'' drawing command of block ''{0}''</entry>
+    <entry key="Port_Label_InvalidPortNumber">Invalid port number argument to ''port_label'' drawing command in block ''{0}''</entry>
+    <entry key="Port_Label_LConnPortNumTooLarge">Port number {0,number,integer} specified in ''port_label'' drawing command exceeds the number of left connection ports of ''{1}''</entry>
+    <entry key="Port_Label_OutputPortNumTooLarge">Port number {0,number,integer} specified in ''port_label'' drawing command exceeds the number of output ports of ''{1}''</entry>
+    <entry key="Port_Label_PropNotSupported">The ''port_label'' drawing command property ''{0}'' in block ''{1}'' is invalid</entry>
+    <entry key="Port_Label_RConnPortNumTooLarge">Port number {0,number,integer} specified in ''port_label'' drawing command exceeds the number of right connection ports of ''{1}''</entry>
+    <entry key="PropertyNameNotValidMATLABVariable">Invalid mask variable name specified.\n ''{0}'' is not a valid MATLAB variable name</entry>
+    <entry key="ReservedPropertyName">Invalid mask variable name specified.\n ''{0}'' is a reserved property name</entry>
+    <entry key="Simulate">A block cannot be masked or unmasked during  a simulation</entry>
+    <entry key="DisableSetMaskVarInInit">Attempt to modify mask parameter name of block ''{0}'' in its MaskInitialization. Changing mask parameter name as part of MaskInitialization is not allowed.</entry>
+    <entry key="DisableSetMaskVarInCallBk">Attempt to modify mask parameter name of block ''{0}'' in its MaskCallbacks. Changing mask parameter name as part of MaskCallbacks is not allowed.</entry>
+    <entry key="Text_InvalidArgs">Invalid arguments passed to ''text'' drawing command in block ''{0}''</entry>
+    <entry key="Text_InvalidParamEntry">''{0}'' is an invalid entry for ''text'' drawing command parameter ''{1}'' in block ''{2}''</entry>
+    <entry key="Text_PVPairs">Invalid specification of property name and value pairs of ''text'' drawing command in block ''{0}''</entry>
+    <entry key="Text_PropNotSupported">The ''text'' drawing command property ''{0}'' in block ''{1}'' is invalid</entry>
+    <entry key="UDTAssocMapperClearedWarning">The association mapper defined by the DataTypeStr parameter of index {0,number,integer} has been cleared. Reestablish the association by resetting the style for the parameter.</entry>
+    <entry key="Unevaluated_Parameter">Error in ''{0}'': Parameter ''{1}'' cannot be evaluated.  MATLAB error message: {2}</entry>
+    <entry key="UnrecognizedStyle">Error in ''{0}'': Unrecognized style ''{1}'' encountered.</entry>
+    <entry key="InputNotBlockHandle">Input must be a valid Simulink block handle</entry>
+    <entry key="UnsupportedParameterType">Parameter ''{0}'' is not of currently supported types (Edit, Popup, Checkbox, File, DesignMin, DesignMax, UnifiedDataType) in Masking</entry>
+    <entry key="ParameterValue_CannotBe_MaskVariable">Mask parameter ''{0}'' of block ''{1}'' has the value ''{2}'' which is same as another mask parameter</entry>
+    <entry key="Promote_Style_MultipleParameters">The promote style ''{0}'' for the block ''{1}'' should have only one parameter specified to be promoted.</entry>
+    <entry key="Promote_Parameter_Unresolved">The promoted parameter ''{0}'' specified in the mask parameter ''{1}'' could not be resolved for the block ''{2}''</entry>
+    <entry key="Promote_Parameter_AlreadyPromoted">Cannot promote parameter. The parameter ''{0}'' promoted to the mask parameter ''{1}'' of the block ''{2}'' is already promoted to parameter ''{3}'' in block ''{4}''. This mask parameter will default to a parameter of type edit</entry>
+    <entry key="Promote_Parameter_CannotBePromoted_InsideMaskedBlock">Cannot promote parameter. The parameter ''{0}'' promoted to the mask parameter ''{1}'' of the block ''{2}'' is a underlying parameter not belonging to immediate mask and cannot be promoted. This mask parameter will default to a parameter of type edit</entry>
+    <entry key="Promote_Parameter_CannotBePromoted_InsideMaskedSubsystem">Cannot promote parameter. The parameter ''{0}'' promoted to the mask parameter ''{1}'' of the block ''{2}'' is from a block inside a masked subsystem ''{3}'' and cannot be promoted. This mask parameter will default to a parameter of type edit</entry>
+    <entry key="Promote_Parameter_CannotBePromoted_InsideLinkedSubsystem">Cannot promote parameter. The parameter ''{0}'' promoted to the mask parameter ''{1}'' of the block ''{2}'' is from a block inside a linked subsystem ''{3}'' and cannot be promoted. This mask parameter will default to a parameter of type edit</entry>
+    <entry key="Promote_Parameter_CannotBePromoted_InvalidParameterType">Cannot promote parameter. The parameter ''{0}'' promoted to the mask parameter ''{1}'' of the block ''{2}'' is not of a valid parameter type supported for promotion and cannot be promoted. This mask parameter will default to a parameter of type edit</entry>
+    <entry key="Promote_Parameter_CannotBePromoted_InvalidParameterAttribute">Cannot promote parameter. The parameter ''{0}'' promoted to the mask parameter ''{1}'' of the block ''{2}'' does not have the qualified parameter attributes and cannot be promoted. This mask parameter will default to a parameter of type edit</entry>
+    <entry key="Promote_Parameter_NotOfSameType">Promoted parameters ''{0}'' and ''{1}'' specified in the mask parameter ''{2}'' for the block ''{3}'' must be of same type. This mask parameter will default to a parameter of type edit</entry>
+    <entry key="Promote_Parameter_EvaluateFlagMismatch">Promoted parameters ''{0}'' and ''{1}'' specified in the mask parameter ''{2}'' for the block ''{3}'' have a mismatch in their evaluate settings. This mask parameter will default to a parameter of type edit</entry>
+    <entry key="Promote_Parameter_EvaluateFlagClash">The evaluate setting of the mask parameter ''{0}'' in block ''{1}'' does not match with the inherited evaluate setting of its promoted parameters</entry>
+    <entry key="Promote_Parameter_AllUnresolved">Failed to resolve any promoted parameters specified in the mask parameter ''{0}'' for the block ''{1}''. This parameter will default to edit parameter</entry>
+    <entry key="Promote_Parameter_ValidToInvalid">Unable to resolve a previously resolved promoted parameter ''{0}'' specified in the mask parameter ''{1}'' for the block ''{2}''. This can happen if the block or parameter got renamed or deleted</entry>
+    <entry key="Promote_Parameter_InvalidToValid">A previously unresolved promoted parameter ''{0}'' specified in the mask parameter ''{1}'' for the block ''{2}'' got resolved</entry>
+    <entry key="Promote_Parameter_InvalidSet">Unable to set the value of mask parameter ''{0}'' for the block ''{1}'' because of following reasons:</entry>
+    <entry key="Promote_Parameter_InvalidVariableName">The mask parameter ''{0}'' for the block ''{1}'' should have the same name as that of the parameter promoted to it</entry>
+    <entry key="Invalid_Set_During_Simulation">Cannot change property ''{0}'' of ''{1}'' while simulation is running</entry>
+    <entry key="CannotExecuteMethodDuringSimulation">Cannot execute method ''{0}'' on ''{1}'' while simulation is running</entry>
+    <entry key="CannotExecuteMethodOnLinkBlk">Cannot execute method ''{0}'' because ''{1}'' is linked</entry>
+    <entry key="CannotExecuteMethodOnBaseMask">Cannot execute method ''{0}'' on base mask of block ''{1}''</entry>
+    <entry key="CannotExecutePropertyOnBaseMask">Cannot execute property ''{0}'' on base mask of block ''{1}''</entry>
+    <entry key="Invalid_Evaluate_Flag">The 'Evaluate' attribute specified for parameter ''{0}'' of block ''{1}'' is not valid</entry>
+    <entry key="Invalid_Tunable_Flag">The 'Tunable' attribute specified for parameter ''{0}'' of block ''{1}'' is not valid</entry>
+    <entry key="Invalid_NeverSave_Attribute">The 'NeverSave' attribute specified for parameter ''{0}'' of block ''{1}'' is not applicable for this parameter type</entry>
+    <entry key="Invalid_Internal_Attribute">The 'Internal' attribute specified for parameter ''{0}'' of block ''{1}'' is not applicable for this parameter type</entry>
+    <entry key="Invalid_ReadOnly_Attribute">The 'ReadOnly' attribute specified for parameter ''{0}'' of block ''{1}'' is not applicable for this parameter type</entry>
+    <entry key="Invalid_Attribute">The ''{0}'' attribute specified for parameter ''{1}'' of block ''{2}'' is not applicable</entry>
+    <entry key="Invalid_Enable_Flag">Ignoring setting of 'Enable' flag for 'ReadOnly' parameter ''{0}'' of block ''{1}''</entry>
+    <entry key="Invalid_Visible_Flag">Ignoring setting of 'Visible' flag for 'Internal' parameter ''{0}'' of block ''{1}''</entry>
+    <entry key="Invalid_Set_On_ReadOnly">Cannot set the value for 'ReadOnly' parameter ''{0}'' of block ''{1}''</entry>
+    <entry key="UnsupportedEnumType">Enum value {0,number,integer} for ''{1}'' is not a valid supported type. This can be because of a programmatic error</entry>
+    <entry key="UnsupportedIconTransparency">Unsupported Icon Transparency option specified in ''{0}''. 'Opaque with ports' is only supported for SubSystem Blocks.</entry>
+    <entry key="Methods_Invalid_NumInputs">Invalid number of inputs for method ''{0}''</entry>
+    <entry key="Methods_Invalid_InputTypes">Invalid inputs specified for method ''{0}''</entry>
+    <entry key="Methods_Invalid_PVPairs">Invalid specification of property name and value pairs for the method</entry>
+    <entry key="Methods_Invalid_InputPropertyType">The property argument specified as part of property name and value pair must be of type character vector.</entry>
+    <entry key="Methods_Invalid_PropertyName">The property name ''{0}'' specified as part of property name and value pair not found</entry>
+    <entry key="Methods_Invalid_Index">Invalid parameter index ''{0,number,integer}'' specified</entry>
+    <entry key="Invalid_MaskType">The parameter 'MaskType' cannot be set for block ''{0}'' as it is inherited from the child mask</entry>
+    <entry key="Invalid_MaskSelfModifiable_Flag">The parameter 'MaskSelfModifiable' cannot be set for block ''{0}'' as it is inherited from the child mask</entry>
+    <entry key="Duplicate_Workspace_Variables">The workspace variable ''{0}'' for block ''{1}'' already exist</entry>
+    <entry key="ParameterNameDiffersInCase">The mask parameters ''{0}'' and ''{1}'' differ only in case. Commands like 'get_param' and 'set_param' ignores case for parameter names and therefore will not function properly</entry>
+    <entry key="HierarchyLimitExceeded">Cannot create mask dialog that has more than 32 levels in the hierarchy.</entry>
+    <entry key="InvalidNameChange">Cannot change name of parameter through dialog control</entry>
+    <entry key="SameTagExists">Dialog control with name ''{0}'' already exists</entry>
+    <entry key="ParentDialogControlNotFound">Container ''{0}'' does not exist. Add the container and try again.</entry>
+    <entry key="CannotContainTab">A tab can be added only to a tab-container</entry>
+    <entry key="CanOnlyContainTab">A tab-container can contain only tabs</entry>
+    <entry key="CannotDeleteParam">Cannot delete a parameter type dialog control.Delete the parameter to delete parameter type dialog control</entry>
+    <entry key="DialogControlFromDifferentMask">Dialog controls cannot be moved to a different mask</entry>
+    <entry key="InvalidPropertySet">Cannot change property ''{0}'' because ''{1}'' is linked</entry>
+    <entry key="InvalidModelBlockMaskModification">Invalid to modify Model block ''{0}'' mask, modify referenced model's mask definition instead</entry>
+    <entry key="InvalidRangeSet">The Range property is valid only for Slider, Dial, and Spin-box parameters.</entry>
+    <entry key="InvalidRangeSetForPromoted">Specifying range for the 'Promote' parameter ''{0}'' on block ''{1}'' is not supported. Promote parameter inherits the range definition from its underneath parameter.</entry>
+    <entry key="InvalidStepSizeSet">The StepSize property is valid only for Slider, Dial, and Spin-box parameters.</entry>
+    <entry key="MovingAncestorToChild">Cannot move a parent dialog control to a child dialog control in the hierarchy</entry>
+    <entry key="NotValidMatlabName">''{0}'' is not a valid MATLAB name</entry>
+    <entry key="SetTabNameNotSupported">''{0}'' cannot be set for ''{1}'' as it will be removed in a future release. Use tab dialog controls to add parameters to tabs</entry>
+    <entry key="CannotExecuteMethodInMaskInitialization">Cannot execute method ''{0}'' in mask initialization</entry>
+    <entry key="ResetMaskParameterValueToDefault">The value ''{0}'' of the mask parameter ''{1}'' for the block ''{2}'' is no longer valid and has been set to the default value</entry>
+    <!--Resource entries for model mask related messages-->
+    <entry key="InvalidPropertySet_ModelMaskInitialization">Adding mask initialization code is not supported for model mask.</entry>      
+    <entry key="InvalidPropertySet_ModelMaskParameterName">Failed to change the name parameter ''{0}'' of model ''{1}''. Changing the model mask parameter name is not supported.</entry>
+    <entry key="InvalidPropertySet_ModelMaskNumParameters">Incorrect to change the number of mask parameters of model ''{0}''.</entry>
+    <entry key="ModelMaskParamMustBeTunable">Unable to set the tunable attributes of parameter ''{0}'' of model ''{1}'' to "off". Model mask parameter must be tunable.</entry>      
+    <entry key="ModelMaskParamMustBeEvaluate">Unable to set the evaluate attributes of parameter ''{0}'' in model ''{1}'' to "off". Model mask parameter must be marked for evaluation.</entry>      
+    <!--Resource entries for Add mask icon image menu-->
+    <entry key="AddIconImageDialogTitle">Add mask icon image</entry>
+    <entry key="EditIconImageDialogTitle">Edit mask icon image</entry>
+    <entry key="IconImageDialogLblDescription">Add and manage icon image to block.</entry>
+    <entry key="IconImageDialogGrpDescription">Description</entry>
+    <entry key="IconImagePath">Select mask icon image:</entry>
+    <entry key="BrowseButton">Browse...</entry>
+    <entry key="IconTransparencyCombobox">Icon transparency:</entry>
+    <entry key="IconTransparencyOpaque">Opaque</entry>
+    <entry key="IconTransparencyTransparent">Transparent</entry>
+    <entry key="IconTransparencyOpaqueWithPorts">Opaque with ports</entry>
+    <entry key="IconImageDialogApplyButton">Apply</entry>
+    <entry key="IconImageDialogCancelButton">Cancel</entry>
+    <entry key="IconImageDialogHelpButton">Help</entry>
+    <entry key="IconImageInvalid">Invalid image file path. Specify a valid path.</entry>
+      <!--Resource entries for toolbox/simulink-->
+    <entry key="SysWrongType">Wrong data type for SYS in HASMASK.</entry>
+    <entry key="LookUnderMaskObsolete">This function is obsolete, use open_system(''sys'',''force'') instead</entry>
+    <entry key="MoveMask_ObsoleteFunction">This function is obsolete and will be removed in a future release</entry>
+    <entry key="MethodCallOnInvalidHandle">Cannot call method ''{0}'' on a deleted handle</entry>
+    <entry key="InvalidTargetHandleForMove">Cannot move dialog control to a deleted handle</entry>
+    <entry key="UnsupportedExtensionForModelMask">Model Mask is not supported for MDL format. To add a Model Mask, you must first save the model in SLX format.</entry>
+    <entry key="TypeNotFound">Incorrect syntax. ''Type'' argument is missing.</entry>
+    <entry key="InvalidChildForTableWidget">The parameter ''{0}'' of ''{1}'' is not supported with the table widget. Only Edit, Popup and Check box parameters are supported with the table widget.</entry>
+    <entry key="InvalidContainerProperty">
+        ''Container'' property cannot be specified through ''addDialogControl'' method
+        available on a dialog control. Use the method on the mask object to specify
+        ''Container'' property.
+    </entry>
+    <entry key="NameMustBeAString">
+        Incorrect syntax. Property name must be a character vector.
+    </entry>
+    <entry key="MustProvideAName">
+        Incorrect syntax. ''Name'' argument is missing.
+    </entry>
+    <entry key="ContainerNameMustBeAString">
+        Incorrect syntax. Container name must be a character vector.
+    </entry>
+    <entry key="UnsupportedTypeOption"> 
+        Parameter class ''{0}'' is not in the supported parameter class list. For more
+        information on supported parameter classes, see "Masking a Model" in Simulink documentation. 
+    </entry>    
+    <entry key="CannotEvaluateExpression">
+        Cannot evaluate expression ''{0}''.
+    </entry>    
+    <entry key="CannotChangeTypeOptions">
+       Cannot change parameter ''{0}'' of block ''{1}''. Type of the promoted
+       parameter does not match the existing parameter type.
+    </entry>
+	<entry key="InvalidConstraintName">
+		Invalid constraint name, ''{0}''.       
+    </entry>
+	<entry key="ConstraintsNotSupportedType">
+       Constraints can be set to 'edit' parameters only.
+    </entry>
+  </message>
+</rsccat>
+<!-- LocalWords:  xml UTF dpoly droots
+-->

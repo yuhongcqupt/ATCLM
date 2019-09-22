@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsccat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" locale="en_US" product="sl_diagnostic" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="MainLabel">Main</entry>
+    <entry key="MainDescription">Expand/Collapse/Clear</entry>
+	
+	<entry key="ExpandAllLabel">Expand All</entry>
+    <entry key="ExpandAllDescription">Expand all diagnostics in current tab</entry>
+	
+    <entry key="CollapseAllLabel">Collapse All</entry>
+    <entry key="CollapseAllDescription">Collapse all diagnostics in current tab</entry>
+    <entry key="ClearAllLabel">Clear All</entry>
+    <entry key="ClearAllDescription">Clears all diagnostics in current tab</entry>
+    <entry key="ClearAllButLatestLabel">Clear All but Latest</entry>
+    <entry key="ClearAllButLatestDescription">Clears all except the latest event in current tab</entry>
+    <entry key="SaveLatestLabel">Save Latest</entry>
+    <entry key="SaveLatestDescription">Save the latest event in current tab</entry>
+    <entry key="SaveAllLabel">Save All</entry>
+    <entry key="SaveAllDescription">Save all diagnostics in current tab</entry>
+    <entry key="CopyLatestLabel">Copy Latest</entry>
+    <entry key="CopyLatestDescription">Copy the latest event in current tab to clipboard</entry>
+    <entry key="CopyAllLabel">Copy All</entry>
+    <entry key="CopyAllDescription">Copy all diagnostics in current tab</entry>
+    <entry key="CopyContextMenuLabel">Copy</entry>
+    <entry key="CopyContextMenuDescription">Copy selected text to clipboard</entry>
+    <entry key="ShowHideDiagnosticsLabel">Show/hide diagnostics</entry>
+    <entry key="ShowHideDiagnosticsDescription">Show/hide diagnostics</entry>
+    <entry key="ShowHideErrorLabel">Error</entry>
+    <entry key="ShowHideErrorDescription">Show/hide all errors</entry>
+    <entry key="ShowHideWarningLabel">Warning</entry>
+    <entry key="ShowHideWarningDescription">Show/hide all warnings</entry>
+    <entry key="ShowHideInfoLabel">Info</entry>
+    <entry key="ShowHideInfoDescription">Show/hide all infos</entry>
+    <entry key="FilteredLabel">filtered</entry>
+    <entry key="ShowUniqueLabel">Group</entry>
+    <entry key="ShowUniqueDescription">Group similar warnings</entry>
+    <entry key="ShowUniqueCounterLabel">similar</entry>
+    <entry key="PrevSearchDescription">Previous</entry>
+    <entry key="NextSearchDescription">Next</entry>	
+    <entry key="SearchDescription">search</entry>
+    <entry key="ClearSearchLabel">Clear</entry>
+    <entry key="SearchCompositionEnd">Finished searching</entry>
+    <entry key="SettingsLabel">Settings</entry>
+    <entry key="SettingsDescription">Settings</entry>
+    <entry key="MaxModelsLabel">Max number of models:</entry>
+    <entry key="MaxStagesPerModelLabel">Max number of events per model:</entry>
+    <entry key="MaxModelsInViewerOutOfRange">Enter a value in the range 1-10</entry>
+    <entry key="MaxStagesPerModelOutOfRange">Enter a value in the range 1-10</entry>
+    <entry key="MaxTotalDiagnosticsLabel">Max number of diagnostics:</entry>
+    <entry key="MaxTotalDiagnosticsOutOfRange">Enter a value in the range 500-10000</entry>
+    <entry key="LatestOnTopLabel">Show latest event on top:</entry>
+	<entry key="HelpLabel">Help</entry>
+    <entry key="HelpDescription">Help</entry>
+    <entry key="GenericMsgTabLabel">Diagnostics</entry>
+    <entry key="GenericStageLabel">Diagnostics</entry>
+    <entry key="ClearStageLabel">Clear</entry>
+    <entry key="ClearStageTitleLabel">Clear current event</entry>
+	<entry key="ElapsedTimeLabel">Elapsed:</entry>
+	<entry key="ElapsedTimeSecLabel">sec</entry>
+	<entry key="ElapsedTimeMinLabel">min</entry>
+	<entry key="ElapsedTimeHourLabel">hour</entry>
+	<entry key="FileBrowserTitle">Save as</entry>
+	<entry key="FileBrowserTextStyleLocalEncoding">Text file</entry>
+	<entry key="FileBrowserTextStyleUnicodeEncoding">Text file - Unicode</entry>
+	<entry key="CausedBy">Caused by:</entry>
+	<entry key="ErrorStringForSaving">Error: </entry>
+	<entry key="WarningStringForSaving">Warning: </entry>
+	<entry key="SuggestedActionLink">Suggested Actions</entry>
+	<entry key="SupressionLink">Suppressions</entry>
+	<entry key="FixFailed">Failed</entry>
+    <entry key="ActionFailed">Failed</entry>
+	<entry key="GroupFixFailed">Failed</entry>
+	<entry key="GroupFixFailureMsg">One or more fixes failed. Ungroup for more details</entry>
+	<entry key="FixedMessageSourceLabel">Fixed</entry>
+	<entry key="FixedMessageSourceLabelInfo">Applied</entry>
+	<entry key="FixedGroupMessageSourceLabel">Fixed All</entry>
+	<entry key="GroupFixSuccessMsg">Ungroup for more details</entry>
+	<entry key="ORKeyword">~OR~</entry>
+	<entry key="FixButtonDefault">Fix</entry>
+	<entry key="FixButtonInfo">Apply</entry>
+	<entry key="FixButtonGroup">Fix All</entry>
+	<entry key="SuppressButton">Suppress</entry>
+	<entry key="UnsuppressButton">Restore</entry>
+	<entry key="SuppressInfoText">Suppress this warning</entry>
+    <entry key="RestoreInfoText">Restore this warning</entry>
+    <entry key="Suppressed">Suppressed</entry>
+	<entry key="SuppressDesc">Suppress future instances of this diagnostic from this source.</entry>
+	<entry key="DocLink">Documentation</entry>
+	<entry key="ToolInvokeButton">Open</entry>
+	<entry key="DefaultComponent">Simulink</entry>
+	<entry key="ComponentLabel">Component:</entry>
+	<entry key="DefaultCategory">N.A.</entry>
+	<entry key="CategoryLabel">Category:</entry>
+	<entry key="ErrorCategoryAppender"> error</entry>
+    <entry key="WarnCategoryAppender"> warning</entry>
+	<entry key="OpenMessageSourceLabel">Open</entry>
+	<entry key="OpenMessageSourceTitleLabel">Open diagnostic source</entry>
+  </message>
+</rsccat>
+<!-- LocalWords:  xml
+-->

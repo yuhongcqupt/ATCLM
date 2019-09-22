@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="UnableGetMAObj">Could not retrieve Model Advisor object</entry>
+    <entry key="InvalidColumnWidths">Column widths must be of length 4 and all values greater than 0</entry>
+    <entry key="UnexpectedSampleTimeValue">Unexpected sample time value</entry>
+    <entry key="InvalidInputsUsedBy">Unexpected number of variables found while creating "Workspace" list</entry>
+    <entry key="InvalidInputsWorkspace">Unexpected number of variables found while creating "Workspace" list</entry>
+    <entry key="InvalidInput">Input must be a string or Model Loop Options object</entry>
+    <entry key="InvalidLoopList">LoopList must contain rptgen_sl.rpt_mdl_loop_options</entry>
+    <entry key="InvalidSimulinkObject">Invalid Simulink object</entry>
+    <entry key="UndefinedObjectType">Undefined object type</entry>
+    <entry key="UnexpectedObjectNames">Unexpected Object names</entry>
+  </message>
+</rsccat>

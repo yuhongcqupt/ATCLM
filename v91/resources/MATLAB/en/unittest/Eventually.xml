@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="ConstraintPassed">The constraint passed after {0} second(s) with a timeout of {1} second(s).</entry>
+    <entry key="ConstraintFailed">The constraint never passed with a timeout of {0} second(s).</entry>
+  </message>
+</rsccat>

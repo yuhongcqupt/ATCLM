@@ -1,0 +1,36 @@
+/* Copyright 2013 The MathWorks, Inc. */
+
+/*
+  There is a duplicate of this merged rule in the writeCSS.m file.  This is 
+  required for saving the HTML report.  When the report is saved the links 
+  are removed and so the knowledge of how to highlight merged sections is 
+  lost.
+
+.merged {
+    background-color: #C0C0C0;
+}
+*/
+
+.parentdelete {
+    border-bottom: solid 2px #C0C0C0;
+    line-height: 1.3em;
+}
+
+.icon {
+	position:absolute;
+    height: 16px;
+    width: 16px;
+    margin-left: 3px; /* Move away from line numbers */
+
+    /* Center the image */
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.icon.overwrite {
+    background-image: url("merged.png");
+}
+
+.icon.delete {
+    background-image: url("deleted.png");    
+}

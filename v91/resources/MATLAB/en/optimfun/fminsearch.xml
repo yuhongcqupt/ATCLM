@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rsccat locale="en_US" product="MATLAB" version="1.0">
+   <message>
+      <entry key="InputArg">FMINSEARCH requires at least two input arguments or a structure with valid fields.</entry>
+      <entry key="NotEnoughInputs">FMINSEARCH requires at least two input arguments.</entry>
+      <entry key="NonDoubleInput">FMINSEARCH accepts inputs only of data type double.</entry>
+      <entry key="OptMaxFunEvalsNotInteger">Option ''MaxFunEvals'' must be an integer value if not the default.</entry>
+      <entry key="OptMaxIterNotInteger">Option ''MaxIter'' must be an integer value if not the default.</entry>
+      <entry key="InvalidState">Unknown state in CALLOUTPUTANDPLOTFCNS.</entry>
+      <entry key="ExitingMaxFunctionEvals">Exiting: Maximum number of function evaluations has been exceeded\n         - increase MaxFunEvals option.\n         Current function value: {0} \n</entry>
+      <entry key="ExitingMaxIterations">Exiting: Maximum number of iterations has been exceeded\n         - increase MaxIter option.\n         Current function value: {0} \n</entry>
+      <entry key="OptimizationTerminatedXSatisfiesCriteria">Optimization terminated:\n the current x satisfies the termination criteria using OPTIONS.TolX of {0} \n and F(X) satisfies the convergence criteria using OPTIONS.TolFun of {1} \n</entry>
+      <entry key="OptimizationTerminatedPrematurelyByUser">Optimization terminated prematurely by user.</entry>
+      <entry key="NameNotPrintable">(name not printable)</entry>
+   </message>
+</rsccat>

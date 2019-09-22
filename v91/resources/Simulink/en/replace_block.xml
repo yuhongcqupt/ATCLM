@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<rsccat version="1.0" locale="en_US" product="Simulink">
+  <message>
+    <entry key="InputsProblem">Not enough input arguments.</entry>
+    <entry key="InvalidSystem">System must be a valid model or subsystem name.</entry>
+    <entry key="InvalidBlockHandle">Invalid NewBlock (&lt;{0}&gt;) passed to REPLACE_BLOCK. \nTry built-in/BLOCKTYPE or a valid block name.</entry>
+    <entry key="LockedLibrary">The model must be unlocked to make changes to it. To unlock the model, select "Unlock Library" from the Diagram menu. Otherwise enter the command: \nset_param(bdroot(System),'Lock','off'), \nwhere System is the name of the system passed to replace_block.</entry>
+  </message>
+</rsccat>

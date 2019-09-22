@@ -1,0 +1,14 @@
+/* Copyright 2013-2014 The MathWorks, Inc. */
+
+#diffstart {
+    display: inline-block;
+    float: left;
+}
+
+#bottom {
+    clear: both;
+}
+
+.selected {
+    border: 2px dashed blue;
+}

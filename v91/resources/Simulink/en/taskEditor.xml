@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2009-2016 The MathWorks, Inc. -->
+<rsccat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" locale="en_US" product="Simulink" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="Yes">Yes</entry>
+    <entry key="No">No</entry>
+    <entry key="Open">Open</entry>
+    <entry key="Delete">Delete</entry>
+    <entry key="Activate">Activate</entry>
+    <entry key="ActivateToolTip">Activate Configuration</entry>
+    <entry key="ActivateStatusTip">Activate</entry>
+    <entry key="SelectPrompt">Select...</entry>
+    <entry key="SelectTip">Click to change selection</entry>
+    <entry key="FatalException">An internal error occurred. Please close and reopen the configuration dialog.</entry>
+    <entry key="ErrorText">Error</entry>
+    <entry key="ActivateConfigSetPrompt">Configuration is not active. Activate?</entry>
+    <entry key="ActivateConfigSetTitle">Activate configuration</entry>
+    <entry key="AddAPeriodicTG">Add aperiodic trigger</entry>
+    <entry key="AddAPeriodicTGToolTip">Add aperiodic trigger</entry>
+    <entry key="AddAPeriodicTGStatusTip">Add aperiodic trigger </entry>
+    <entry key="AddPeriodicTG">Add periodic trigger</entry>
+    <entry key="AddPeriodicTGToolTip">Add periodic trigger</entry>
+    <entry key="AddPeriodicTGStatusTip">Add periodic trigger </entry>
+    <entry key="AddTask">Add task </entry>
+    <entry key="BuildText">Build </entry>
+    <entry key="BuildStatusTip">Build </entry>
+    <entry key="AddTaskToolTip">Add task </entry>
+    <entry key="AddMappedTask">Add new entry</entry>
+    <entry key="TargetArchPrompt">Target architecture:</entry>
+    <entry key="TargetArchTip">Specifies architecture of target. Click select to change target architecture.</entry>
+    <entry key="DeleteText">Delete</entry>
+    <entry key="DeleteStatusTip">Delete</entry>
+    <entry key="TaskConfigurationDesc">The configuration for concurrent execution enables definition of tasks and assignment of blocks to these tasks.</entry>
+    <entry key="ConfigurationNamePrompt">Configuration name:</entry>
+    <entry key="AssociatedModelPrompt">Associated model:</entry>
+    <entry key="AssociatedConfigurationPrompt">Associated configuration:</entry>
+    <entry key="IsConcurrentPrompt">Is concurrent:</entry>
+    <entry key="HelpToEnableConcurrency">How do I associate a configuration?</entry>
+    <entry key="NoneStr">(none)</entry>
+    <entry key="HelpToDisableConcurrency">How do I disable concurrent execution?</entry>
+    <entry key="EnableExplicitTaskMappingChkbox">Enable explicit model partitioning for concurrent behavior</entry>
+    <entry key="EnableExplicitTaskMappingToolTip">Enable explicit model partitioning for concurrent behavior</entry>
+<entry key="EnableExplicitTaskMappingGrp">Explicit task and mapping</entry>
+    <entry key="IsActivePrompt">Active:</entry>
+    <entry key="DataTransferOptionsDesc">Set the default data transfer modes between tasks. To overwrite these settings, change the data transfer settings for a specific signal on the signal properties dialog.</entry> 
+    <entry key="DataTransferOptionsTitle">Data Transfer Options</entry>
+    <entry key="DataTransferOptionsDefaults">Defaults</entry>
+    <entry key="DataTransferOptionsPeriodic">Periodic signals:</entry>
+    <entry key="DataTransferOptionsContinuous">Continuous signals:</entry>
+    <entry key="DataTransferOptionsExtrapolation">Extrapolation method:</entry>
+    <entry key="DataTransferOptionsNode">Data Transfer</entry>
+    <entry key="DataTransferOptionsAutoRateTrans">Automatically handle rate transition for data transfer</entry>
+    <entry key="BlockTaskMapNode">Map Blocks To Tasks</entry>
+    <entry key="TaskGroupErrorText">The current trigger source is not compatible with the selected target. Please select a compatible source.</entry>
+    <entry key="Incompatible">Incompatible</entry>
+    <entry key="PeriodicTaskGroupDeleteText">Periodic trigger cannot be deleted from configuration.</entry>
+    <entry key="MappingDeleteText">Selected node cannot be deleted from configuration.</entry>    
+    <entry key="NameText">Name:</entry>
+    <entry key="PropertiesGroupText">Properties</entry>
+    <entry key="CodegenPropertiesGroupText">Code generation properties</entry>
+    <entry key="DefaultTransitionBetweenSyncTasksLbl">Default transition between synchronous tasks:</entry>
+    <entry key="DefaultTransitionBetweenAsyncTasksLbl">Default transition between asynchronous tasks:</entry>
+    <entry key="PeriodicTaskGroupTitleText">Periodic Trigger:</entry>
+    <entry key="AperiodicTaskGroupTitleText">Aperiodic Trigger:</entry>
+    <entry key="PeriodText">Period:</entry>
+    <entry key="ColorText">Color:</entry>
+    <entry key="ColorPickerTitle">Choose Custom Color</entry>
+    <entry key="EventHandlerType">Aperiodic trigger source:</entry>
+    <entry key="PeriodicTriggerType">Periodic trigger source: </entry>
+    <entry key="InterruptNumberText">Interrupt number:</entry>
+    <entry key="InterruptVectorOffsetText">Interrupt vector offset:</entry>
+    <entry key="PreemptibleText">Is this ISR preemptible</entry>
+    <entry key="SignalNumberText">Signal number [2,SIGRTMAX-SIGRTMIN-1]:</entry>
+    <entry key="EventNameText">Event name:</entry>
+    <entry key="TaskTitleText">Task:</entry>
+    <entry key="ResetTaskConfigurationTxt">Reset configuration</entry>
+    <entry key="ResetTaskConfigurationStatusTip">Reset configuration using sample time analysis</entry>
+    <entry key="EventHandlerType_Posix">Posix Signal (Linux/VxWorks 6.x)</entry>
+    <entry key="EventHandlerType_Windows">Event (Windows)</entry>
+    <entry key="EventHandlerType_Hardware">Hardware Interrupt (VxWorks 5.x)</entry>
+    <entry key="TaskandTaskGroupDDGLink">Map blocks to tasks</entry>
+    <entry key="TaskEditorTreeTitle">Select:</entry>
+    <entry key="DefaultMappingButtonText">Click Get Default Configuration to populate with a default set of tasks and block to task map.</entry>
+    <entry key="DefaultMappingButtonLabel">Get Default Configuration</entry>
+    <entry key="InvokesUpdate">(*invokes update diagram)</entry>
+    <entry key="SystemTaskDesc_noTasksNeeded">No system tasks required for the task and mapping specification.</entry>
+    <entry key="SystemTaskDesc_moreInfo">More information</entry>
+    <entry key="ExplicitMappingGrp">Concurrency modeling options</entry>
+    <entry key="TaskConfigTitleText">Task Configuration:</entry>
+    <!--
+       Task editor model selection dialog
+      -->
+    <entry key="NoModelSelected">A model was not selected</entry>
+    <entry key="InvalidModelName">A valid model name was not entered</entry>
+    <entry key="ModelCannotBeLoaded">The model ''{0}'' cannot be loaded.</entry>
+    <entry key="ModelNamePrompt">Model name:</entry>
+    <entry key="BrowseButtonTxt">Browse...</entry>
+    <entry key="TaskEditorModelSelectDlgTitle">Open Task Editor</entry>
+    <entry key="ModelSelectorDesc">Open task editor for the specified model: </entry>
+    <entry key="selectedFileInvalidModel">The selected file ''{0}'' is not a valid Simulink model</entry>
+    
+    <!--
+        Distributed target dialogs
+    -->
+    <entry key="SoftwareNodeTitleText">Software Node:</entry>
+    <entry key="HardwareNodeTitleText">Hardware Node:</entry>
+    <entry key="ArchitectureTitleText">Distributed Architecture:</entry>
+    <entry key="ClockFrequencyText">Clock Frequency [MHz]:</entry>  
+    <entry key="ExecutionModeText">Execution Mode:</entry>
+    <entry key="TargetPropertiesGroupText">Target specific properties</entry>
+    <entry key="GetArchFromxPCTargetText">Simulink Real-Time - Read architecture from connected target computer</entry>
+    <entry key="GetMoreArchText">Get more ...</entry> 
+    <entry key="ArchSelectorDialogErrorTitleText">Error</entry>
+  
+    <!--
+        Target specific properties
+    -->
+    <entry key="TargetText">Template:</entry>
+    <!--
+        Partial mapping
+    -->
+    <entry key="RefreshMappingTableToolTip">Refresh mapping table</entry>
+    <entry key="RefreshMappingTableText">Refresh mapping table (*invokes update diagram)</entry>
+    <entry key="PerformUpdateDiagramToolTip">Autogenerate tasks</entry>
+    <entry key="PerformUpdateDiagramText">Autogenerate tasks and mapping (*invokes update diagram)</entry>
+    <entry key="SynthTasksGroup">Automatic analysis</entry>
+    <entry key="SystemTasksDialogTitle">System tasks</entry>
+    <entry key="CreateTaskFromSystem">Convert to editable periodic task </entry>
+    <entry key="CreateTaskFromSystemToolTip">Convert to editable periodic task</entry>
+    <entry key="CreateTriggerFromSystem">Convert to editable aperiodic trigger</entry>
+    <entry key="CreateTriggerFromSystemToolTip">Convert to editable aperiodic trigger</entry>
+    <entry key="CreateTaskForPartition">Create task for this partition</entry>
+    <entry key="CreateTaskForPartitionToolTip">Create a periodic task and map this partition</entry>
+    <entry key="CreateTriggerForPartition">Create aperiodic trigger for this partition</entry>
+    <entry key="CreateTriggerForPartitionToolTip">Create an aperiodic trigger and map this partition</entry>
+    <entry key="SystemTaskTableHeader_Name">Name</entry>
+    <entry key="SystemTaskTableHeader_Type">Type</entry>
+    <entry key="SystemTaskTableHeader_Period">Period</entry>
+    
+    <!--
+        Profile report
+    -->
+    <entry key="NoProfileReportFound">Cannot find an associated profile report in the current folder.</entry>
+    <entry key="UseExternalProfiler">Cannot generate a profile report for {0} system target file. The selected target has a dedicated profiler.</entry>
+    <entry key="ExternalProfilerHelp">How do I use this profiler?</entry>
+    <entry key="NoProfileReportFoundRegenerate">Cannot find an associated profile report in the current folder. Generate one using the button above. </entry>
+    <entry key="GenerateProfileButtonToolTip">Generate profile report</entry>
+    <entry key="GenerateProfileText">Generate task execution profile report (*invokes build and execution)</entry>
+    <entry key="GenerateProfileRunExec">Running executable</entry>       
+    <entry key="GenerateProfileNumSteps">Number of time steps:</entry>     
+    <entry key="GenerateProfileTitle">Profile Report</entry>     
+  </message>
+</rsccat>
+<!-- LocalWords:  ISR preemptible Posix SIGRTMAX SIGRTMIN Autogenerate
+  -->

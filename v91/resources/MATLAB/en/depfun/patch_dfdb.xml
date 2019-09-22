@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <rsccat version="1.0" locale="en_US" product="MATLAB">
+   <message>
+
+     <entry key="BeginEndMismatch">
+Error in requirements database patch file ''{0}''. 
+BEGIN_SQL_COMMAND block is not terminated by an END_SQL_COMMAND. 
+These tokens should appear by themselves in the patch file.
+     </entry>
+
+     <entry key="InvalidComandInPatchFile">
+Invalid SQL command, ''{0}'', specified in the patch file, ''{1}''.
+The following error was thrown by the sql connector: {2}
+      </entry>
+      
+   </message>
+ </rsccat>

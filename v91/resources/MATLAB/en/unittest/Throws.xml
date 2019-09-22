@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="NoExceptionThrown">The function did not throw any exception.</entry>
+    <entry key="ExpectedException">Expected Exception:</entry>
+    <entry key="WrongException">The function threw the wrong exception.</entry>
+    <entry key="ActualException">Actual Exception:</entry>
+    <entry key="ActualErrorReport">Actual Error Report:</entry>
+    <entry key="ActualErrorStructure">Actual Error Structure:</entry>
+    <entry key="MissingCauseException">The following causes were not found in the exception tree:</entry>
+    <entry key="UnexpectedCauseException">The following causes were unexpectedly found in the exception tree:</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  rsccat
+-->

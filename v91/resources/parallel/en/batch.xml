@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Copyright 2011-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+    <entry key="DiaryIncomplete">The diary of this batch job might be incomplete because the job is still running.</entry>
+    <entry key="InvalidBatchFunctionInput">The ''{0}'' option is not supported when the first argument is a function.</entry>
+    <entry key="MatlabpoolInvalidBatchInput">''{0}'' is not a valid option for batch. Use ''pool'' instead.</entry>
+    <entry key="StringFunctionNotOnPath">Function ''{0}'' must be on the MATLAB path.</entry>
+    <entry key="UnrecognizedBatchInput">''{0}'' is not a valid option for batch.</entry>
+  </message>
+</rsccat>

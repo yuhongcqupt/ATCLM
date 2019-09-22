@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- Copyright 2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="ValueHolder">&lt;Value&gt;</entry>
+    <entry key="ComparatorsDoNotSupportValue">None of the currently available comparators support the value.\n\nAvailable Comparators:\n{0}\n\nValue ({1}):\n{2}</entry>
+    <entry key="InvalidOutputType">Expected output of {0} to be of type:\n{1}\n\nInstead its type was {2}.\n\nArguments provided to the function:\n{3}</entry>
+  </message>
+</rsccat>

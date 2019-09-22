@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <rsccat version="1.0" locale="en_US" product="MATLAB">
+   <message>
+
+     <entry key="UnclearSourceOwnership">
+No component claims the source ownership of {0}.
+     </entry>
+   
+   </message>
+</rsccat>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="PaletteInterface">Interface</entry>
+    <entry key="PaletteSimpleDataElement">Simple Data Element</entry>
+    <entry key="PaletteCompositeDataElement">Composite Data Element</entry>
+    <entry key="Delete">Delete</entry>
+    <entry key="InterfaceBrowserTitle">Interface Browser</entry>
+    <entry key="InterfaceTypeEditorTabTitle">Interfaces</entry>
+    <entry key="RenameObject">Rename object</entry>
+    <entry key="PropertyBrowser_Title">Properties</entry>
+    <entry key="Table_Title">Table of Properties</entry>
+    <entry key="PaletteModelView">Model View</entry>
+    <entry key="PaletteInputPort">Input Port</entry>
+    <entry key="PaletteOutputPort">Output Port</entry>
+    <entry key="CreateInputPort">Create Input Port</entry>
+    <entry key="CreateOutputPort">Create Output Port</entry>
+    <entry key="LibBrowserDrop">You have attempted to add a block from the library browser onto the Interface View. Try &lt;a
+    href="matlab:SLM3I.SLDomain.switchFromInterfaceToModelView;"&gt;switching&lt;/a&gt;
+    to the model view and add the block there.</entry>
+    <entry key="RenamePort">Rename port</entry>
+    <entry key="DisplayMenu">Interface</entry>
+    <entry key="InterfaceStudioTitle">Interface:</entry>
+
+
+  </message>
+</rsccat>

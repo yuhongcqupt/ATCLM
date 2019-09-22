@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="InvalidExpressionBadType">Invalid data type. Expression must be string scalar or character vector.</entry>
+    <entry key="InvalidExpressionMissingElement">Missing string element not supported.</entry>
+    <entry key="InvalidExpressionEmptyText">Expression text must be nonempty.</entry>
+    <entry key="ActualMustBeASupportedType">Value must be a string scalar or a character vector.\nIt is of class "{0}" and of size {1}.</entry>
+    <entry key="ActualIsNotASupportedType">Value is not a string scalar or a character vector.\nIt is of class "{0}" and of size {1}.</entry>
+    <entry key="RegularExpression">Regular Expression:</entry>
+    <entry key="DoesMatchExpression">The value matches the regular expression.</entry>
+    <entry key="DoesMatchExpressionIgnoringCase">The value matches the regular expression (ignoring case).</entry>
+    <entry key="DoesNotMatchExpression">The value does not match the regular expression.</entry>
+    <entry key="DoesNotMatchExpressionIgnoringCase">The value does not match the regular expression (ignoring case).</entry>
+  </message>
+</rsccat>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!-- Copyright 2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+    <message>
+        <entry key="invalidTableOutput">Invalid output. {0} method must return a table output.</entry>
+    </message>
+</rsccat>

@@ -1,0 +1,2 @@
+# Java classpath entries for msscommon
+$matlabroot/java/jarext/connector_api/msscommon/msscommon.jar

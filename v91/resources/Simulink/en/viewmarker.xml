@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="copyButtonTooltip">Add viewmarks to model</entry>
+    <entry key="deleteButtonTooltip">Delete</entry>
+    <entry key="refreshButtonTooltip">Refresh</entry>
+    <entry key="descriptionButtonTooltip">Description</entry>
+    <entry key="VMTitle">VIEWMARKS</entry>
+    <entry key="deleteGrpConfirmationMsg">Do you want to delete all viewmarks in the group?</entry>
+    <entry key="deleteMultiSelConfirmationMsg">Do you want to delete all selected viewmarks?</entry>	
+    <entry key="deleteGrpConfirmationTitle">Confirmation</entry>
+    <entry key="OKButtonMsg">OK</entry>
+    <entry key="CancelButtonMsg">Cancel</entry>
+    <entry key="CloseButtonMsg">Close</entry>
+    <entry key="deleteGrpButtonMsg">Delete</entry>
+    <entry key="introductionTitle">To create a viewmark (graphical bookmark):</entry>
+    <entry key="introListItem1">Navigate to the part of the model that you want to capture.</entry>
+    <entry key="introListItem2">Use the editor window to frame the viewmark contents.</entry>
+    <entry key="introListItem3">Click the "Viewmark This View" button</entry>
+    <entry key="introListItem4">To display the viewmarks, click the "Viewmarks" button</entry>
+    <entry key="introductionTitle_model_1">Viewmarks in model</entry>
+    <entry key="intro_model">Viewmarks in this tab are stored in the Simulink model file. You can store viewmarks in a model by adding viewmarks from the Personal tab to the Model tab, as described below.</entry>
+    <entry key="introductionTitle_model_2">How to store viewmarks in your Simulink model</entry>
+    <entry key="introListItem1_model">Configure your model to obtain the view that you want to store as a viewmark.</entry>
+    <entry key="introListItem2_model_1">Click "Viewmark this View"</entry>
+	<entry key="introListItem2_model_2">to store this viewmark in the viewmark Personal tab.</entry>
+    <entry key="introListItem3_model_1">Click "Viewmarks"</entry> 
+	<entry key="introListItem3_model_2">to open the list of viewmarks.</entry>
+    <entry key="introListItem4_model">Click Manage.</entry>
+    <entry key="introListItem5_model">Select the viewmarks you want to store with the model, and click "Add viewmarks to model"</entry>
+    <entry key="introListItem6_model">Click Done.</entry>
+    <entry key="toDetailInDoc">For details, see the</entry>
+    <entry key="toDetailInDoc_2">Viewmarks documentation</entry>
+    <entry key="introductionButtonTip1">Capture a viewmark</entry>
+    <entry key="introductionButtonTip2">Display viewmarks</entry>
+    <entry key="svgClickedLoading">Loading...</entry>
+    <entry key="svgClickedWarningTitle">Warning</entry>
+    <entry key="svgClickedWarning">The subsystem is not available, do you want to delete this viewmark?</entry>
+    <entry key="warningMsgDescLen">Description is truncated ({0} characters maximum).</entry>
+	<entry key="personalTab">Personal</entry>
+	<entry key="modelTab">Model</entry>
+	<entry key="personalTabTooltip">Viewmarks saved in preference</entry>
+	<entry key="modelTabTooltip">Viewmarks saved with the model</entry>
+	<entry key="manageButton">Manage</entry>
+	<entry key="manageButton2">Done</entry>
+	<entry key="manageButtonTooltip">Manage the viewmarks</entry>
+    <entry key="manageButtonDisabledTooltip">Save your model in .slx format to manage viewmarks</entry>
+    <entry key="warningUnsavedMdl">Save the model before taking viewmarks</entry>
+   </message>
+</rsccat>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+      <entry key="DuplicatePlugin">
+        The "{0}" plugin instance has already been added to the TestRunner and cannot be added again.
+    </entry>
+    <entry key="MustCallSuperclassMethod">
+        All runner plugin methods must call the corresponding superclass method.
+    </entry>
+    <entry key="PluginDataMismatch">
+        All runner plugins calling the superclass ''{0}'' method must call it with the same PluginData as received.
+    </entry>
+    <entry key="QualificationUsingDifferentContext">
+        All plugin qualifications must be performed using the supplied context.
+    </entry>
+    <entry key="RunningGroupsOnWorkers">
+        Split tests into {0} groups and running them on {1} workers.
+    </entry>
+    <entry key="RunningGroupsOnWorker">
+        Split tests into {0} groups and running them on 1 worker.
+    </entry>
+    <entry key="RunningGroupOnWorker">
+        Running test using 1 group on 1 worker.
+    </entry>
+    <entry key="FinishedGroup">
+        Finished Group {0}
+    </entry>
+    <entry key="NoPool">
+        Using runInParallel requires an active parallel pool.
+    </entry>
+    <entry key="PluginDoesNotSupportParallel">
+        The {0} plugin does not support running in parallel.
+    </entry>
+    <entry key="VerificationFailureInPlugin">
+        A plugin produced a verification failure in method "{0}" but qualifications are not allowed in this context.
+    </entry>
+  </message>
+</rsccat>
+ <!-- LocalWords:  rsccat
+-->

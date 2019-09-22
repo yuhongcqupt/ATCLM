@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="MustBeSameSize">Sizes do not match.\n\tActual Value Size           : [{0}]\n\tExpected Handle Object Size : [{1}]</entry>
+    <entry key="MustBeSameHandle">Values do not refer to the same handle.</entry>
+    <entry key="MustBeSameHandleArray">Some elements in the handle array refer to the wrong handle.</entry>
+    <entry key="MustBeHandle">Value must be a handle object. It is of class "{0}".</entry>
+    <entry key="MustBeSameClass">Classes do not match.\n\tActual Value class           : [{0}]\n\tExpected Handle Object class : [{1}]</entry>
+    <entry key="ExpectedHandle">Expected Handle Object:</entry>
+    <entry key="MustNotBeSameHandle">The two handles must not refer to the same handle, or should have different sizes.</entry>
+    <entry key="UnexpectedHandle">Prohibited Handle Object:</entry>
+  </message>
+</rsccat>

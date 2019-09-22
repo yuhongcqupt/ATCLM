@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!-- Copyright 2013-2014 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+    <message>
+        <entry note="Example: Setting up MyTest" key="SettingUp">
+            Setting up {0}
+        </entry>
+        <entry note="Example: Done setting up MyTest" key="DoneSettingUp">
+            Done setting up {0}
+        </entry>
+        <entry note="Example: Done setting up MyTest in 0.046886 seconds" key="DoneSettingUpWithDuration">
+            Done setting up {0} in {1} seconds
+        </entry>
+        <entry note="Example: Running MyTest" key="Running">
+            Running {0}
+        </entry>
+        <entry note="Example: Done MyTest" key="Done">
+            Done {0}
+        </entry>
+        <entry note="Example: Done MyTest in 0.046886 seconds" key="DoneWithDuration">
+            Done {0} in {1} seconds
+        </entry>
+        <entry note="Example: Tearing down MyTest" key="TearingDown">
+            Tearing down {0}
+        </entry>
+        <entry note="Example: Done tearing down MyTest" key="DoneTearingDown">
+            Done tearing down {0}
+        </entry>
+        <entry note="Example: Done tearing down MyTest in 0.046886 seconds" key="DoneTearingDownWithDuration">
+            Done tearing down {0} in {1} seconds
+        </entry>
+        <entry note="Example: Evaluating setup"  key="Evaluating">
+            Evaluating {0}
+        </entry>
+        <entry note="Example: Evaluating addTeardown function: @()restoreState"  key="EvaluatingAddTeardown">
+            Evaluating addTeardown function: {0}
+        </entry>
+        <entry note="Example: Evaluating TestClassSetup: MyClassSetup"  key="EvaluatingWithType">
+            Evaluating {0}: {1}
+        </entry>
+    </message>
+</rsccat>
+
+<!-- LocalWords:  rsccat
+-->

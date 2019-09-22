@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+      <!-- 
+       Message catalog: Simulink:ICM_Constraints
+       Messages originating from Simulink Improved Component Modeling Constraints
+       Copyright 2016 The MathWorks, Inc.
+    -->
+
+    <entry key="TargetNotAllowed">The model ''{0}'' uses Improved Component Modeling semantics. Only ERT or MDX targets are supported.</entry>
+    <entry key="EncapsulatedCPP">The model ''{0}'' is using Improved Component Modeling semantics, so the setting ''Configuration Parameters > Code Generation > Interface > Code interface packaging'' may not be set to ''C++ class''.</entry>
+    <entry key="ExternalMode">The model ''{0}'' is using Improved Component Modeling semantics, so the setting ''Configuration Parameters > Code Generation > Interface > External mode'' may not be selected.</entry>
+    <entry key="SLCI">The model ''{0}'' is using Improved Component Modeling semantics, so the setting ''AdvancedOptControl'' may not be set to "-SLCI".</entry>
+    <entry key="NonFcnCallAtomicSubSys">Model ''{0}'' containing non-inlined Subsystem ''{1}'' is using Improved Component Modeling semantics, but the non-inlined Subsystem is neither a function-call subsystem, nor a Simulink Function. This is not allowed. </entry>
+    <entry key="ForEachSSInClassModel">Model ''{0}'' containing ForEach Subsystem ''{1}'' is using Improved Component Modeling semantics and it is a class model. This is not allowed. </entry>
+    <entry key="NonMultiInstanceRefModel">Referenced model ''{0}'' is using Improved Component Modeling semantics and it is a class model, but the setting for ''Total number of instances allowed per top model'' is not ''Multiple''. This is not allowed. </entry>
+    <entry key="NonSingInstanceRefNonClassModel">Referenced model ''{0}'' is using Improved Component Modeling semantics and it is not a class model, but the setting for ''Total number of instances allowed per top model'' is not ''One''. This is not allowed. </entry>
+    <entry key="ModelOrSubSysVariant">The model ''{0}'' is using Improved Component Modeling semantics, but Subsystem or Model block ''{1}'' is using variants. This is not allowed. </entry>
+    <entry key="NonClassModelInsideClassModel">The model ''{0}'' is using Improved Component Modeling semantics and it is a class model, but Model block ''{1}'' is not referring to a class model. This is not allowed. </entry>
+     <entry key="ClassModelInsideAtomicSystem">The model ''{0}'' is using Improved Component Modeling semantics and Model block ''{1}'' is referring to a class model, but the Model block is not inside the root system or a virtual subsystem. This is not allowed. </entry>
+    <entry key="ReusableTop">The model ''{0}'' is using Improved Component Modeling semantics, so the setting ''Configuration Parameters > Code Generation > Interface > Code interface packaging'' may not be set to ''Reusable function''.</entry>
+    <entry key="InvalidStateFlowCallToICM">Function ''{0}'' is public, and may not be invoked from Stateflow chart ''{1}''.</entry>
+    <entry key="NonExpFcnModelWithICM">Model ''{0}'' containing public Simulink Function ''{1}'' is using Improved Component Modeling semantics and must follow export function rules.</entry>
+    <entry key="SimulationModeNotAllowed">The model ''{0}'' uses Improved Component Modeling semantics. Only Normal simulation mode is supported.</entry>
+  </message>
+</rsccat>

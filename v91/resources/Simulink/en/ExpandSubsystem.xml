@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2009-2012 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="ModelReference">Expand subsystem cannot be applied to Model blocks.</entry>
+    <entry key="NotSubsystem">Expand subsystem can only be applied to Subsystem blocks.</entry>
+    <entry key="AtomicSubsystem">Expand subsystem cannot be applied to Atomic Subsystem blocks.</entry>
+    <entry key="EnabledSubsystem">Expand subsystem cannot be applied to Enabled Subsystem blocks.</entry>
+    <entry key="TriggeredSubsystem">Expand subsystem cannot be applied to Triggered Subsystem blocks.</entry>
+    <entry key="EnabledTriggeredSubsystem">Expand subsystem cannot be applied to Enabled and Triggered Subsystem blocks.</entry>
+    <entry key="FunctionCallSubsystem">Expand subsystem cannot be applied to Function Call Subsystem blocks.</entry>
+    <entry key="IfActionSubsystem">Expand subsystem cannot be applied to If Action Subsystem blocks.</entry>
+    <entry key="IteratorSubsystem">Expand subsystem cannot be applied to Iterator Subsystem blocks.</entry>
+    <entry key="VariantSubsystem">Expand subsystem cannot be applied to Variant Subsystem blocks.</entry>
+    <entry key="ConfigurableSubsystem">Expand subsystem cannot be applied to Configurable Subsystem blocks.</entry>
+    <entry key="WriteProtected">Expand subsystem cannot be applied to subsystems set to ReadOnly or NoReadOrWrite.</entry>
+    <entry key="HasHarness">Expand subsystem cannot be applied to subsystems that own harnesses.</entry>
+    <entry key="HasObserver">Expand subsystem cannot be applied to subsystems that own observers.</entry>
+    <entry key="HiddenContents">Expand subsystem cannot be applied to masked subsystems with hidden contents.</entry>
+    <entry key="Masked">Expand subsystem cannot be applied to masked subsystems.</entry>
+    <entry key="MaskedInteractive">Expand subsystem can not be applied to masked subsystems. You can
+      &lt;a href="matlab:set_param(sprintf(''{0}''), ''Mask'', ''off'');"&gt;remove the mask&lt;/a&gt;. (You cannot
+      undo this operation.)
+    </entry>
+    <entry key="LibraryLink">Expand subsystem cannot be applied to library links.</entry>
+    <entry key="LibraryLinkInteractive">Expand subsystem can not be applied to library links. You can
+      &lt;a href="matlab:set_param(sprintf(''{0}''), ''LinkStatus'', ''inactive'');"&gt;disable the link&lt;/a&gt;. (You cannot
+      undo this operation.)
+    </entry>
+    <entry key="Commented">Expand subsystem cannot be applied to commented subsystems.</entry>
+    <entry key="CommentedInteractive">Expand subsystem can not be applied to commented subsystems.  You can
+      &lt;a href="matlab:set_param(sprintf(''{0}''), ''Commented'', ''off'');"&gt;uncomment the block&lt;/a&gt;. (You cannot
+      undo this operation.)
+    </entry>
+    <entry key="Requirements">Expand subsystem cannot be applied to blocks with linked requirements.You can
+      &lt;a href="matlab:SLStudio.Utils.deleteBlockRequirements(sprintf(''{0}''));"&gt;delete the subsystem requirements&lt;/a&gt;. (You cannot
+      undo this operation.)</entry>
+    <entry key="RequirementsWithValidLicense">Expand subsystem cannot be applied to blocks with internally linked requirements. You can
+      &lt;a href="matlab:SLStudio.Utils.moveRequirementsToFile(sprintf(''{0}''));"&gt;move the requirements to an external file&lt;/a&gt;. (You cannot
+      undo this operation.)</entry>
+    <entry key="SimulationCallbacks">
+      Expand subsystem can not be applied to blocks with simulation callbacks (InitFcn, StartFcn, ContinueFcn,
+      PauseFcn, and StopFcn)
+    </entry>
+    <entry key="InsideVariant">Expand subsystem cannot be applied inside Variant Subsystem blocks.</entry>
+    <entry key="CompositePorts">Expand subsystem cannot be applied to subsystems with composite ports.</entry>
+  </message>
+</rsccat>

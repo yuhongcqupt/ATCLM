@@ -1,0 +1,4 @@
+# Java classpath entries for 3p/pdfbox
+$matlabroot/java/jarext/pdfbox.jar
+$matlabroot/java/jarext/fontbox.jar
+$matlabroot/java/jarext/jempbox.jar

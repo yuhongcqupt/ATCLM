@@ -1,0 +1,5 @@
+# Java classpath entries for comparisons
+$matlabroot/java/jar/comparisons.jar
+$matlabroot/java/jar/toolbox/difflink/util.jar
+$matlabroot/java/jar/toolbox/difflink/client.jar
+$matlabroot/java/jar/toolbox/difflink/server.jar

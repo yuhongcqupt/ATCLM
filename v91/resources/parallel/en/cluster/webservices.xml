@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- Copyright 2013-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+    <entry key="AuthenticationServiceName" translate="false">MATLAB Login</entry>
+    <entry key="AuthFailure">Authorization failed with {0}. There may be a temporary problem with the web service. If this is a recurring problem, contact MathWorks technical support.</entry>
+    <entry key="ClientError">Unable to contact {0}. There may be a problem with your internet connection, or the service may be temporarily unavailable. If the problem persists contact MathWorks technical support.</entry>
+    <entry key="CloudCenterServiceName" translate="false">MathWorks Cloud Center</entry>
+    <entry key="ClusterNotFound">Unable to find the specified cluster. Check that the cluster has been defined in MathWorks Cloud Center.</entry>
+    <entry key="LoginNotSupported">Desktop login is not currently supported in this environment. You can persist your login for use in this environment by using the full MATLAB desktop and checking the "Keep me logged on" box.</entry>
+    <entry key="MHLMServiceName" translate="false">MathWorks Hosted License Manager</entry>
+    <entry key="ProxyFailure">Unable to connect to {0} due to a problem with the web proxy. Please check your proxy configuration.</entry>
+    <entry key="ServiceError">The web service at mathworks.com reported the error: {0}</entry>
+    <entry key="ServiceNotFound">Unable to contact {0}. There may be a problem with your internet connection, or the service may be temporarily unavailable. If the problem persists contact MathWorks technical support.</entry>
+    <entry key="ServiceUnavailable">{0} is currently offline for planned maintenance. Please try again later.</entry>
+    <entry key="UnexpectedException">An unexpected exception occurred during a call to web services: {0}</entry>
+    <entry key="UnknownFailureType">Login validation failed with completion status {0} and failure type {1}.</entry>
+    <entry key="UnknownHost">Unable to connect to {0}. Check your internet connection and try again.</entry>
+    <entry key="ValidationDidNotComplete">The validation service failed to respond, please try again.</entry>
+  </message>
+</rsccat>

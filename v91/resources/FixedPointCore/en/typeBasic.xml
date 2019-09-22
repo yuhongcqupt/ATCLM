@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="FixedPointCore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="SlopeWasNotFinite">Slope was not finite.</entry>
+    <entry key="SlopeWasNotStrictlyPositive">Slope was not strictly positive.</entry>
+    <entry key="DifferentBestPrecisionScalingToAvoidOverflow">The value ({0}) being scaled is between RepMin-LSB ({1}) and RepMin ({2}), where RepMin is the representable minimum of the proposed data type. In order to avoid possible overflow, for the given WordLength ({3}) and Signedness ({4}) the best precision scaling algorithm proposes FractionLength as {5} instead of {6}.</entry>
+  </message>
+</rsccat>

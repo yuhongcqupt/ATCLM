@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="NaNFval">User function ''{0}'' returned NaN when evaluated at {1};\n FMINBND cannot continue.</entry>
+    <entry key="ComplexFval">User function ''{0}'' returned a complex value when evaluated at {1};\n FMINBND cannot continue.</entry>
+  </message>
+</rsccat>

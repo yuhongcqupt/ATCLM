@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!-- Copyright 2014-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="FirstToleranceHeader"> + [First Tolerance]:</entry>
+    <entry key="SecondToleranceHeader"> + [Second Tolerance]:</entry>
+    <entry translate="false" key="ToleranceFooter">-+---------------------:</entry>
+    <entry key="AbsoluteTolerancePassed">The error was within absolute tolerance.</entry>
+    <entry key="RelativeTolerancePassed">The error was within relative tolerance.</entry>
+    <entry key="AbsoluteToleranceFailed">The error was not within absolute tolerance.</entry>
+    <entry key="RelativeToleranceFailed">The error was not within relative tolerance.</entry>
+    <entry key="ToleranceValue">Tolerance Value:</entry>
+    <entry key="ToleranceNotUsed" note="Example: The tolerance was ignored for int8 values. The tolerance as specified only applies to: single, double." >
+        The tolerance was ignored for {0} values. The tolerance as specified only applies to: {1}.
+    </entry>
+    <entry key="SizeMismatch">The sizes of the tolerances being combined do not match for type {0}.</entry>
+    <entry key="ToleranceMustBeFloat">Relative tolerance value must be a floating point data type.</entry>
+    <entry key="DuplicateType">Only one tolerance value can be specified for each data type.</entry>
+    <entry key="InvalidToleranceType">Tolerance value must be a numeric array or a MATLAB object.</entry>
+    <entry key="InvalidToleranceValue">Tolerance value must be non-empty, real, non-negative, and finite.</entry>
+    <entry key="InvalidExpectedValueType">Expected value must be a numeric array or a MATLAB object.</entry>
+    <entry key="ActExpSizeMismatch">Sizes do not match.</entry>
+    <entry key="ActExpClassMismatch">Classes do not match.</entry>
+    <entry key="ActExpSparsityMismatch">Sparsity does not match.</entry>
+    <entry key="TolAndExpValSizeMismatch">When the tolerance value is non-scalar, it must have the same size as the expected value.</entry>
+  </message>
+</rsccat>

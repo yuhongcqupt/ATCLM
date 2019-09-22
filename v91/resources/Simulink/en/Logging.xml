@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+<!-- Copyright 2009-2016 The MathWorks, Inc. -->
+    
+  <message>
+    <entry key="ArrayFormatVariableDims">Simulink does not support array format for the logging of variable-size signals. Change the ''Format'' parameter in the ''Data Import/Export'' pane of the Configuration Parameters dialog to ''Structure'' or ''Structure with time''</entry>
+    <entry key="BadUtExpRes">Error result of ''u={0}'', t={1} is a vector of length {2,number,integer} when expecting a vector of length {3,number,integer}</entry>
+    <entry key="BadUtFcnRes">Error result of ''u={0}({1})'' is a vector of length {2,number,integer} when expecting a vector of length {3,number,integer}</entry>
+    <entry key="CannotDispActionSignal">The selected signal originating from output port {0,number,integer} on ''{1}'' cannot be displayed because it is an action signal.  The line will be unselected</entry>
+    <entry key="CannotDispComplexSignal">The selected signal originating from output port {0,number,integer} on ''{1}'' cannot be displayed because it is complex.  Selected signal line will be unselected</entry>
+    <entry key="CannotDispEliminatedSignal">The selected signal originating from ''{0}'' cannot be logged or displayed.\n\n
+ If the selected signal is configured for: \n
+      1) Signal logging, and signal logging is enabled, consider changing ''Configuration Parameters > All Parameters > Signal logging format'' to ''Dataset''.\n
+      2) Viewing, and the signal was eliminated due to an inactive variant, either disable the signal viewing option or make the variant active.\n
+      3) Viewing, and the block was commented out or inside commented out hierarchy, uncomment the commented block.\n
+      4) Viewing, and the block was optimized, use one of the following approaches:\n\t
+      a) Disable ''Configuration Parameters > All Parameters > Block reduction'' and use floating scopes and displays to access this and all other eliminated signals.\n\t
+      b) Use the ''Signal properties'' dialog box to configure this signal as ''Test Point''. </entry>
+    <entry key="CannotDispEliminatedSignal2">The selected signal originating from port {0,number,integer} of ''{1}'' cannot be displayed due to block reduction optimization. You can: 1) disable ''Configuration Parameters > All Parameters > Block reduction'' to access this and all other eliminated signals using floating scopes and displays, or 2) configure this signal as ''Test Point'' from the Signal properties dialog </entry>
+    <entry key="CannotDispMultiDimsSignal">Cannot display signals with more than 2 dimensions in a floating display. Selected signal line will be unselected</entry>
+    <entry key="CannotDispSignalInVariableSizeMode">Cannot display variable-size signals in a floating display. Selected signal line will be unselected</entry>
+    <entry key="CannotDispSignalWithMatrix">The selected signal originating from output port {0,number,integer} on ''{1}'' cannot be displayed in the floating display because it is a matrix. Note that all lines will be unselected</entry>
+    <entry key="CannotDispThriftedFCSignal">The selected signal originating from output port {0,number,integer} on ''{1}'' cannot be displayed because it contains only function-call elements.  The line will be unselected</entry>
+    <entry key="CannotDispMessage">The selected line originating from output port {0,number,integer} on ''{1}'' cannot be connected to a scope viewer because it is a message line. The scope viewer will be disconnected. To display values of a message, connect a Scope block to this line.</entry>
+    <entry key="CannotDispDESStats">The selected line originating from output port {0,number,integer} on ''{1}'' cannot be connected to a scope viewer because it is a statistics line. The scope viewer will be disconnected. To display values of a message, connect a Scope block to this line.</entry>
+    <entry key="CannotDispThriftedSignal">The selected signal originating from output port {0,number,integer} on ''{1}'' cannot be displayed due to signal storage optimization. You can: 1) disable ''Signal storage reuse'' on the All Parameters tab of the Configuration Parameters dialog to access this (and all other) signals using floating scopes and displays, or 2) configure this signal as ''Test Point'' from the Signal properties dialog </entry>
+   <entry key="CannotLogStatesAsMatrixMenu"><![CDATA[The states in model ''{0}'' cannot be logged as a matrix because the model has non-double or complex discrete states. To log real or complex states of type built-in, enum, fixed point, or bus, in Normal or Accelerator mode, set the <sldiag objui="configset" objparam="SaveFormat">Format</sldiag> parameter to ''Dataset'', ''Structure,'' or ''Structure with time'' format.  For other simulation modes or code generation targets, use either ''Structure'' or ''Structure with time''.]]></entry>
+   <entry key="CannotLogStatesAsMatrix"><![CDATA[The states in model ''{0}'' cannot be logged as a matrix because the model has non-double or complex discrete states. To log real or complex states of type built-in, enum, fixed point or bus, use the single-output format for the sim command as follows:\n\t
+       out = sim(model, ''ReturnWorkspaceOutputs'', ''on'', ''SaveFormat'', format)\n
+The acceptable values for format in Normal and Accelerator mode are ''Dataset'', ''Structure,'' or ''Structure with time''. For other simulation modes, use either ''Structure'' or ''Structure with time''.]]></entry>
+    <entry key="CannotLogStatesAsMatrixMenu1"><![CDATA[The states in model ''{0}'' cannot be logged as a matrix because the model has Model blocks. To log states in this model in Normal and Accelerator mode, set the <sldiag objui="configset" objparam="SaveFormat">Format</sldiag> parameter to ''Dataset'', ''Structure,'' or ''Structure with time'' format. For other simulation modes or code generation targets, use either ''Structure'' or ''Structure with time''.]]></entry>
+    <entry key="CannotLogStatesAsMatrix1"><![CDATA[The states in model ''{0}'' cannot be logged as a matrix because the model has Model blocks. To log states in this model, use the single-output format for the sim command as follows:\n\t
+       out = sim(model, ''ReturnWorkspaceOutputs'', ''on'', ''SaveFormat'', format)\n
+The acceptable values for format in Normal and Accelerator mode are ''Dataset'', ''Structure,'' or ''Structure with time''. For other simulation modes, use either ''Structure'' or ''Structure with time''.]]></entry>
+    <entry key="CannotLogStatesAsMatrixMenu2"><![CDATA[The states in model ''{0}'' cannot be logged as a matrix because the model has states inside one or more subsystems, which contain a For Each block. Simulink does not support the logging of such states. Set the <sldiag objui="configset" objparam="SaveFormat">Format</sldiag> to ''Dataset'', ''Structure'' or ''Structure with time'' to log other states in the model.]]></entry>
+    <entry key="CannotLogStatesAsMatrix2"><![CDATA[The states in model ''{0}'' cannot be logged as a matrix because the model has states inside one or more subsystems, which contain a For Each block. Simulink does not support the logging of such states. To log states in this model, use the single-output format for the sim command as follows:\n\t
+       out = sim(model, ''ReturnWorkspaceOutputs'', ''on'', ''SaveFormat'', format)\n
+The acceptable values for format in Normal and Accelerator mode are ''Dataset'', ''Structure,'' or ''Structure with time''. For other simulation modes, use either ''Structure'' or ''Structure with time''.]]></entry>
+    <entry key="CannotGetAllStateAsMatrix">Simulink only returns the discrete states of blocks that are outside of For Each subsystems in model ''{0}''</entry>
+    <entry key="CannotCountAllStateAsMatrix">Simulink counts the discrete states only for blocks that are outside For Each subsystems in model ''{0}''.</entry>
+    <entry key="DispCondExecSignal">The source of the selected signal originating from output port {0,number,integer} of ''{1}'' has changed its execution context. Mark the signal as a test point or turn off the global setting of the "Conditional Execution Optimization " optimization on the Optimization page of the Configuration Parameters Dialog if you want to always see the up-to-date signal values</entry>
+    <entry key="DupDataLogVarName2">Duplicate data logging variable name, ''{0}'' specified in both ''{1}'' and ''{2}''</entry>
+    <entry key="DupeLoggingNames">Duplicate logging name ''{0}'' found for:\n         {1}, and \n         {2}</entry>
+    <entry key="DuplicateDataLoggingMembers">More than one component of signal ''{0}'', originating from ''{1}'', port {2,number,integer}, is being logged with the name ''{3}''. Either change the name of the signals to make them unique or give them custom logging names via the component signal''s ''Signal Properties'' dialog</entry>
+    <entry key="DuplicateParentLogVarNames">Duplicate log name ''{0}'' specified for:\n {1} \n {2}</entry>
+    <entry key="DuplicateStateName">This model incorrectly assigns the same name ''{0}'' to the states of blocks {1}. State names must be unique in a model. You can disable this diagnostic by setting the ''State name clash'' diagnostic to ''none'' in the Diagnostics page of the Configuration Parameters</entry>
+    <entry key="EmptySigList">All signals selected for logging are unavailable</entry>
+    <entry key="ErrorDispingBusSig">Error displaying selected signal from port ''{0,number,integer}'' of ''{1}''</entry>
+    <entry key="ExtInpCommaSepListsNotSupported">Input specified in the Configuration Parameters dialog box on the Data Import/Export Page cannot be a comma separated list of time expressions.  Consider rewriting the list as a single array expression.</entry>
+    <entry key="ExtInpEmpty">External input specified in the Configuration Parameters dialog box on the Data Import/Export page (or as an option to SIM command) but the field is empty</entry>
+    <entry key="ExtInpEvalErr">Error evaluating external inputs specified in the Configuration Parameters dialog on the Data Import/Export Page. External inputs may be specified as either (a) a list of matrices, structures or timeseries or (b) a single MATLAB expression or function</entry>
+    <entry key="ExtInpParseErr">Invalid external input specified. A syntax error occurred while parsing ''{0}''</entry>
+    <entry key="ExtInpRequiredForVarDimsFrameData">Model ''{0}'' requires an external input because the Inport block ''{1}'' outputs a variable-size frame signal.</entry>
+    <entry key="ExtInpRequiredForBusWithVarDimsFrameElms">Model ''{0}'' requires an external input because the Inport block ''{1}'' outputs a bus signal, which contains a variable-size frame bus element.</entry>
+    <entry key="FrameInteger">''Limit data points to last'' specified in the ''Signal Properties'' dialog of signal ''{0}'' must be an integer multiple of ''Samples Per Frame'' specified in block ''{1}''</entry>
+    <entry key="FrameLimitData">''Samples Per Frame'' specified in block ''{0}'' is greater than ''Limit Data points to last'' specified in the ''Signal Properties'' dialog of signal ''{1}'' This is not allowed</entry>
+    <entry key="InvBlockNameInStateStruct" note="stringDatatypeUpdate">Error loading the state for model ''{0}''. The {1}({2,number,integer}).{3} field in the state structure must be a character vector specifying the path to the block</entry>
+    <entry key="InvDSMLogName">Invalid Data Store Memory logging name ''{0}'' specified in the Data Import/Export section of the Configuration Parameters dialog box.</entry>
+    <entry key="InvDataLogSaveName">Invalid {0} logging name specified in the Data Import/Export section of the Configuration Parameters dialog box.</entry>
+    <entry key="TimeLogVariable">Time</entry>
+    <entry key="StateLogVariable">State</entry>
+    <entry key="FinalStateLogVariable">Final state</entry>
+    <entry key="SignalLogVariable">Signal</entry>
+    <entry key="OutputLogVariable">Output</entry>
+    <entry key="DsmLogVariable">Data Store Memory</entry>
+    <entry key="InvDataLogOutputSaveName">Invalid name or format specified for the '''Configuration Parameters > Data Import/Export > Output''' parameter.</entry>
+    <entry key="InvDataLogOutputMultiSaveName">Multiple names specified for the '''Configuration Parameters > Data Import/Export > Output''' parameter for model ''{0}''. Logging outputs in 
+Dataset format do not support multiple names. Specify one output variable name. </entry>
+    <entry key="InvDecimation"><![CDATA[Invalid decimation value specified for the <sldiag objui="configset" objparam="Decimation">Decimation</sldiag> parameter for block diagram ''{0}''. The value must be a positive integer greater than zero.]]></entry>
+    <entry key="InvElementInStateStruct">Error loading the state for model ''{0}''. Unable to find a matching block state corresponding to element {1,number,integer} of {2} structure array</entry>
+    <entry key="InvFieldInStateStruct">Error loading the state for model ''{0}''. The state must be a structure containing a {1} structure array. The {2} structure should have the following fields: ''{3}'', ''{4}'', and ''{5}''</entry>
+    <entry key="InvFuncCallActionMerge">Unable to log output of ''{0}'', port ''{1,number,integer}'' :\n Signals that are function calls, output from an Action block or ones that feed into a Merge block cannot be logged</entry>
+    <entry key="CannotLogMessageInModelDataLogs">Unable to log output of ''{0}'', port ''{1,number,integer}'', because the signal logging format is set to ModelDataLogs. Messages can only be logged when the ''Signal logging format'' parameter is set to Dataset format.</entry>
+    <entry key="CannotLogFuncCallMergeActionStateSignals">Unable to log output of ''{0}'', port ''{1,number,integer}''.  You cannot log function-call signals, action signals, state signals, or signals that feed into a Merge block.</entry>
+    <entry key="CannotLogFuncCallLatch">Unable to log the output of ''{0}''.  The output of a Function-Call Feedback Latch block must be connected to exactly one data input port of a function-call subsystem or model and cannot be logged.</entry>
+    <entry key="InvAsyncIOLogging">The signal from output port {1,number,integer} of block ''{0}'' cannot be logged. Input and output signals of asynchronous function call subsystems cannot be logged.  Consider moving the logging point inside of the asynchronous subsystem.</entry>
+    <entry key="InvLogRateTrans">The output of block ''{0}'' cannot be logged because this block is acting as a rate transition.  To log the output of this block, insert a rate transition block after this block and log the signal after the transition.</entry>
+    <entry key="InvLogAutoRateTrans">The signal from output port {1,number,integer} of block ''{0}'' cannot be logged because this signal contains an unspecified rate transition.  To log the output of this block, insert a rate transition block after this block and log the signal after the transition.</entry>
+    <entry key="InvInputLoadNameList">The number of external inputs must be equal to the number of root-level input port blocks. Root-level input port blocks include Trigger and Enable blocks. The model contains {0,number,integer} root-level input port blocks, but {1,number,integer} external inputs were specified in Configuration Parameters -> Data Import/Export -> Input.</entry>
+    <entry key="InvLabelInStateStruct" note="stringDatatypeUpdate">Error loading the state for model ''{0}''. The {1}({2,number,integer}).{3} field in the state structure must be a character vector specifying a valid state label</entry>
+    <entry key="InvMaxPointsToSave"><![CDATA[Invalid <sldiag objui="configset" objparam="MaxDataPoints">maximum number of data points</sldiag> specified for block diagram ''{0}''.]]></entry>
+    <entry key="InvMdlRefFieldInStateStruct">Error loading the state for model ''{0}''. The {1}({2,number,integer}).{3} field in the state structure must be a logical scalar value</entry>
+    <entry key="InvNumSignalsInStructFormat">External input data specified in the Configuration Parameters dialog box on the Data Import/Export page (or as an option to SIM command) is inconsistent with the number of root level input port blocks in model ''{0}''. The data is specified in a structure with one signal, but the model has {1,number,integer} root level input port blocks. Please use a comma-separated list of structure variables, or update the data so that the number of signals matches the number of root level input port blocks</entry>
+    <entry key="InvOutputSaveNameList">Error in the Configuration Parameters > Data Import/Export of ''{0}''. When specifying that root-level outports are to be returned individually, the number of fields in the comma separated list must be equal to the number of root-level outports and the fields must be valid MATLAB variable names</entry>
+    <entry key="InvPosScalarIntPortPropVal">Invalid value specified for parameter ''{0}'' in \n ''{1}'', output port {2,number,integer}.\n A positive, integer, scalar value is required.</entry>
+    <entry key="InvSigLogName">Invalid Signal logging name ''{0}'' specified in the Data Import/Export section of the Configuration Parameters dialog box</entry>
+    <entry key="InvalidLoggingDTypeForMdlRef">Data type ''{0}'' for block ''{1}'', output port {2,number,integer} in model ''{3}'' is invalid. Custom data types are not supported when logging signals in referenced models; data types must be builtin, or fixed-point</entry>
+    <entry key="LoadFromWksOnlyDblFunctions">Invalid settings for data type and/or signal type of some inports in block diagram. When external inputs are specified as MATLAB expressions or functions, all inports must be set to be non-complex and to have double data type</entry>
+    <entry key="LogInvalidIdentifier">The name ''{0}'' cannot be used for logging. Logging identifiers must be less than {1,number,integer} characters. Please choose an alternative name for ''{2}''.</entry>
+    <entry key="LoggingDisallowedForAoB">Unable to log or view nonvirtual bus at output ''{0,number,integer}'' of block ''{1}''. An array of nonvirtual buses or a nonvirtual bus containing an array of sub-buses can neither be marked for viewing nor for signal logging using ModelDataLogs logging format. If a signal viewer is connected to this block output port, then disconnect it. If logging the signal, then change ''Configuration Parameters > All Parameters > Signal logging format'' to ''Dataset''.</entry>
+    <entry key="ToWksDisallowedForAoB">The To Workspace block ''{0}'' is connected to a signal that cannot be logged. An array of non-virtual buses or a non-virtual bus containing an array of sub-buses cannot be logged.</entry>
+    <entry key="LoggingOutportVarDimsSlowTS">The Outport block has a sample time that is slower than the fundamental sample time of the model. In this situation, variable-size signals cannot be logged in multitasking mode. To have the signal logged without delay, do one of the following: 1) Replace the Outport block with a To Workspace block running at the same sample time as the source; or 2) Switch the model to singletasking mode (see the Solver page of the Configuration Parameters dialog box).</entry>
+    <entry key="LoggingOutportWithSlowTs">Outport ''{0}'' has a sample time that is slower than the fundamental sample time of the model. When logging this outport in multitasking mode the results will appear to be delayed. This is due to the way models execute in multitasking mode. The inner-workings of multitasking mode, including why the data appears delayed, are described in the Simulink Coder User''s Guide. You can set '''Configuration Parameters > Data Import/Export > Format''' to '''Dataset''' and also set the Outport to run at the same sample time as the source to have the signal logged without a delay. You can also switch the model to singletasking mode (see the Solver page of the Configuration Parameters dialog box) to have the signal logged without delay</entry>
+    <entry key="LoggingOutportWithConstTs">Outport ''{0}'' has the constant sample time, yet its generated code executes at a sample time that is slower than the fundamental sample time of the model. When logging this outport in multitasking mode the results will appear to be delayed. This is due to the way models execute in multitasking mode. The inner-workings of multitasking mode, including why the data appears delayed, are described in the Simulink Coder User''s Guide. You can set '''Configuration Parameters > Data Import/Export > Format''' to '''Dataset''' and also set the source of the Outport to run at fundamental sample time of the model to have the signal logged without a delay. You can also switch the model to singletasking mode (see the Solver page of the Configuration Parameters dialog box) to have the signal logged without delay</entry>
+    <entry key="LoggingVirtualSignalTypeConversionBlock">Unable to log output signal at port {0,number,integer} of ''{1}''. For ModelDataLogs format logging, it is assumed that this signal or one of its components has the same attributes as the output signal at port {2,number,integer} of ''{3}''. This assumption may not be correct because one or more of the signal''s attributes (e.g. dimensions and sampling mode) may have been altered by the virtual block ''{4}''.  Consider one of the following solutions:\n1. Change ''Configuration Parameters > All Parameters > Signal logging format'' to ''Dataset''.\n2. Move the logging point (designated by the logged signal indicator) before the virtual block or insert a Signal Conversion block after the virtual block to ensure the signal is logged with the correct attributes</entry>
+    <entry key="LoggingDisContiguousSignalFromBusSource">Unable to log output signal at port {0,number,integer} of ''{1}''. One or more inputs to this virtual block is discontiguous and originates from a non-virtual bus source at port {2,number,integer} of ''{3}''. Consider one of the following solutions:\n1. Change the ''Configuration Parameters > All Parameters > Signal logging format'' parameter to ''Dataset''.\n2. Insert a Signal Conversion block (Output set to 'Signal copy') after this virtual block and move the logging point (designated by the logged signal indicator) after this inserted Signal Conversion block to ensure the signal is logged with the correct attributes.</entry>
+   <entry key="MdlRefLogRefSignalConfig">The block ''{0}'' was not found in ''{1}''.  To resolve this, update your signal selections for ''{2}'' in the Signal Logging Selector.</entry>
+    <entry key="MdlRefLogResVarName">''{0}'' is a reserved data logging keyword, specified for ''{1}'', port {2,number,integer}.\n Please choose an alternative logging name in the associated ''Signal Properties'' dialog</entry>
+    <entry key="MdlRefLogSignalNameNotFound">Child with path ''{0}'' and port index {1,number,integer} was not found for ''{2}''</entry>
+    <entry key="MdlRefSSMgrUnavailSignal"><![CDATA[The signal with block path ''{0}'' and Port Index {1,number,integer} was not found in ''{2}''.  This could be due to one of the following:\n 1) Attempting to use a Signal & Scope Manager configuration that is not up to date. To resolve this, open the Signal & Scope Manager and update your signal selections\n 2) Attempting to view a signal within a Stateflow block that is inside a referenced model configured in normal mode.  This is currently not supported]]></entry>
+    <entry key="MdlRefSignalNotAvailable">Signal with path ''{0}'' and port index {1,number,integer} specified on ''{2}'' is no longer available in the referenced model ''{3}''</entry>    
+    <entry key="NoMatlabExprInListExtInps">Invalid external inputs specified.  None of the elements in a list of external inputs can be a MATLAB expression or function</entry>
+    <entry key="PortLogDebugCreationErr">  Error creating port logging debug info for ''{0}'': {1}</entry>
+    <entry key="PortLogResVarName">''{0}'' is a reserved data logging keyword, specified for ''{1}'', port {2,number,integer}.\n Please choose an alternative logging name in the associated ''Signal Properties'' dialog</entry>
+    <entry key="ReservedIdentifier">''{0}'' is a reserved data logging keyword. Please choose an alternative name for ''{1}''</entry>
+    <entry key="ShadowInport">Data Logging is not supported for shadow Inport ''{0}''. Data will be logged for the corresponding Inport, ''{1}''</entry>
+    <entry key="SigLogIdentifier" note="stringDatatypeUpdate">''{0}'' could not be written into the workspace as it is not a valid MATLAB identifier. You can access this signal by using the ''get'' method or by using dot notation with the name specified as a parenthesized character vector.  For example, get(logsout,''{1}'') or logsout.(''{2}'')</entry>    
+    <entry key="SigLogNotSupportedInRTW">MAT-file logging does not support signal logging.  When your model code executes, the signal logging variable ''{0}{1}'' will not be saved to the MAT-file.  (To suppress this warning, disable signal logging for your model)</entry>
+    <entry key="SigLogPassThruBusCapableBlk">Unable to log virtual bus at output port ''{0,number,integer}'' of block ''{1}''. A virtual bus cannot be logged if it originated as a non-virtual bus signal and passed through a bus-capable block before being converted to a virtual bus. Consider inserting a Signal Conversion block with the ''Output'' parameter set to ''Signal copy'' and enabling logging for the output of the block</entry>
+    <entry key="SigLogTimingMismatch">Unable to log virtual bus at port ''{0,number,integer}'' of block ''{1}''.  A virtual bus cannot be logged if it was created within an upstream conditionally executed subsystem from a nonvirtual bus that was input to the subsystem</entry>
+    <entry key="SignalLoggingNotSupportedInRapidAcceleratorMode">Simulation in rapid accelerator mode does not support logging signals to the ''{0}'' Simulink.ModelDataLogs object.</entry>
+    <entry key="SubsetOfSiglogRaccelIsNotSupported">Simulation in Rapid Accelerator mode will not log one or more signals configured for signal logging. For details about signals that Simulink does not log in Rapid Accelerator mode, see "Signal Logging Limitations" in the documentation.</entry>
+    <entry key="SigLogPluginFailedLoading">Signal logging plugin library ''{0}'' could not be loaded. The standard Simulink signal logging will be used.</entry>
+    <entry key="SigLogPluginNoCreateInstanceSymbol">Signal logging plugin library ''{0}'' does not properly expose createInstance symbol of the following type:\n\nvoid *createInstance(const char *parameters)\n\nThe standard Simulink signal logging will be used.</entry>
+    <entry key="SigLogPluginNoReleaseInstanceSymbol">Signal logging plugin library ''{0}'' does not properly expose releaseInstance symbol of the following type:\n\nvoid releaseInstance(void *instance)\n\nThe standard Simulink signal logging will be used.</entry>
+    <entry key="InvalidLoggingIntervalsParam">Invalid LoggingIntervals specified in the ''Configuration Parameters > Data Import/Export > Logging intervals'' settings for block diagram ''{0}''. Interval logging value must be a real double matrix with two columns. The matrix elements cannot be NaN. Each row defines the start and end times for an interval. Intervals must be disjoint and ordered. For example: [0,4; 10,12] or [-inf, inf].</entry>
+    <entry key="StateflowSignalNotAvailable">Stateflow signal with path ''{0}{1}'' is no longer available</entry>
+    <entry key="StateflowSimulinkFcnLogging">The output of ''{0}'' cannot be logged because this block is a Simulink function within Stateflow.
+    To log this data, log the signal inside of the Simulink function.</entry>
+    <entry key="UTInvDim">Invalid external input specified. The specified input has {0,number,integer} element(s) for each sample while the sum of the port widths of all root level input port blocks in the model is {1,number,integer}</entry>
+    <entry key="UTNoInputs">External input specified in the Configuration Parameters dialog box on the Data Import/Export page (or as an option to SIM command) to a model containing no root level input ports</entry>
+    <entry key="UnableToCopyLogBuffer">Unable to copy data logging buffer for ''{0}''</entry>
+    <entry key="UnableToLogAPeriodicFrameSignal">Unable to log output of ''{0}'', port ''{1,number,integer}'':\n Cannot log frame signals with aperiodic rates, or frame signals whose source blocks have triggered sample time</entry>
+    <entry key="UtExpEvalErr">Error evaluating ''u={0}'' (result, u, must be a real vector)</entry>
+    <entry key="UtFcnEvalErr">Error evaluating ''u={0}(t)'' (result, u, must be a real vector)</entry>
+    <entry key="VarDimsLoggingNotSupported">Unable to view or log output of ''{0}'', port ''{1,number,integer}'' :\n Signals that have variable dimensions cannot be viewed or logged in timeseries format</entry>
+    <entry key="WarnOnOverwrite">Found the following occurrences of log name ''{0}''. Only the last occurrence appears in the workspace. To access the others, use their fully qualified names or unpack their container objects.\n{1}</entry>
+    <entry key="WarnScopeIsClosedInMdlRefNormalMode">The model ''{0}'' is referenced in Normal mode and contains the {1} scope ''{2}''. This scope can display signals only if the scope is already open when simulation begins.</entry>
+    <entry key="SigViewerScopeLogging"><![CDATA[The Scope Viewer ''{0}'' is set to save data in the ''ModelDataLogs'' format. Scope Viewers no longer support logging in ''ModelDataLogs'' format. 
+      To reactivate logging Scope Viewer data, mark the corresponding signals in the model for logging. See <a href="matlab:helpview(fullfile(docroot,'simulink','helptargets.map'),'logging_signals')">Mark a Signal for Signal Logging</a>. 
+      The <a href="matlab:sl(''upgradeadvisor'', ''{1}'')">Upgrade Advisor</a> check ''Check signal logging save format'' can assist in identifying and automatically updating all such blocks.]]></entry>
+    <entry key="MultipleWarningsSigViewerScopeLogging"><![CDATA[Multiple Scope Viewers are set to save data in the ''ModelDataLogs'' format. Scope Viewers no longer support logging in ''ModelDataLogs'' format. 
+      To reactivate logging Scope Viewer data, mark the corresponding signals in the model for logging. See <a href="matlab:helpview(fullfile(docroot,'simulink','helptargets.map'),'logging_signals')">Mark a Signal for Signal Logging</a>. 
+      The Upgrade Advisor check ''Check signal logging save format'' can assist in identifying and automatically updating all such blocks.]]></entry>
+    <entry key="InvalidLoggingDType">Data type ''{0}'' for output port {1,number,integer} of block ''{2}'' does not support logging.>]]</entry>
+    <entry key="AssignToWorkspaceErr">Cannot create variable ''{0}'' in workspace</entry>
+    <entry key="DupDataLogVarName1">Duplicate data logging variable name, ''{0}'' specified in ''{1}''</entry>
+    <entry key="FiNotSupported">Cannot convert logged data to a fi object. Converting the data to type double</entry>
+    <entry key="InvDataLogVarName">Invalid data logging variable, ''{0}'', specified in ''{1}''</entry>
+    <entry key="LoggingMallocError">Cannot allocate sufficient memory for logging. Consider disabling logging or reducing the length of the simulation</entry>
+    <entry key="LoggingMallocWarn">Running low on memory.  Simulation will terminate in approximately {0,number,integer} steps</entry>
+    <entry key="LoggingNonBuiltInSignalNotSupported">Cannot log non-builtin data type signals</entry>
+    <entry key="TransposingLoggingData">Cannot convert log variable ''{0}'' to MATLAB format</entry>
+      
+    <entry key="TimeLoggingLocation">model Time logging (see Configuration Parameters)</entry>
+    <entry key="StateLoggingLocation">model State logging (see Configuration Parameters)</entry>
+    <entry key="FinalStateLoggingLocation">model Final State logging (see Configuration Parameters)</entry>
+    <entry key="OutputLoggingLocation">model Output logging (see Configuration Parameters)</entry>
+    <entry key="DSMLoggingLocation">model Data Store logging (see Configuration Parameters)</entry>
+    <entry key="SignalLoggingLocation">model Signal logging (see Configuration Parameters)</entry>
+    <entry key="SolverProfilerLoggingLocation">solver profile information (see Configuration Parameters)</entry>
+    <entry key="SimulationMetadataLoggingLocation">simulation metadata</entry>
+      
+    <entry key="ModelDataLogConvertError_ModelBlockNotFound">The Model block
+      ''{0}'' could not be found.  This can happen if the model has changed since
+      the ModelDataLogs object was created.  Make sure that your models have not
+      changed since the ModelDataLogs object was created and that the active
+      variant is the same.</entry>
+    <entry key="ModelDataLogConvertError_UnexpectedObject">Found an unexpected
+      object of type ''{0}'' inside of the ModelDataLogs.</entry>
+    <entry key="ModelDataLogConvertError_StateflowNotSupported">Conversion of logged
+      signals inside of Stateflow is not currently supported.  The signal ''{0}'' 
+      inside the Stateflow block ''{1}'' is being ignored.</entry>
+      
+      <entry key="LogInsideGenerator">The block ''{0}'' is configured for signal logging but is within the signal generator ''{1}''.  Logging signals
+      inside of generators is not supported and no data will be logged for this signal.</entry>
+      
+      <!-- MCOS errors : Simulink.SimulationData.ModelLoggingInfo ================================ -->
+      <entry key="MdlLogInfoInvalidModelName" note="stringDatatypeUpdate">The ''Model'' property must be a character vector corresponding to the model name.</entry>
+      <entry key="MdlLogInfoInvalidLoggingMode">The LoggingMode property must be one of the following values:\n
+      ''LogAllAsSpecifiedInModel''\n
+      ''OverrideSignals''
+      </entry>
+      <entry key="MdlLogInfoInvalidOverrideMode">The OverrideMode property must be one of the following values:\n
+      ''LogAsSpecifiedInModel''\n
+      ''OverrideAll''\n
+      ''UseLocalSettings''
+      </entry>
+      <entry key="MdlLogInfoInvalidLogAsSpecified" note="stringDatatypeUpdate">The ''LogAsSpecifiedByModels'' property must be a row-vector cell array of character vectors.  Each character vector in this cell-array should correspond to a top-level model block or the name of the top model.</entry>
+      
+      <entry key="MdlLogInfoLogAsSpecifiedMustBeRowVec" note="stringDatatypeUpdate">The ''LogAsSpecifiedByModels'' property must be a row-vector cell array of character vectors. The specified value for ''LogAsSpecifiedByModels'' is converted to a row vector.</entry>
+      <entry key="MdlLogInfoInvalidSignals">The ''Signals'' property must be a vector of Simulink.SignalLoggingInfo objects.</entry>
+      <entry key="MdlLogInfoMethodNonScalar">The ''{0}'' method may only be used for scalar Simulink.SimulationData.ModelLoggingInfo objects.</entry>
+      <entry key="DefLogSSIDCacheFailed">Unable to cache Simulink.ID for a Simulink.SimulationData.ModelLoggingInfo containing path ''{0}'' used for the ''LogAsSpecifiedByModels'' property.</entry>
+      <entry key="MdlLogInfoIncorrectVerifyArg">The argument to the ''verifySignalAndModelPaths'' method must be ''error'', ''warnAndRemove'', or ''remove''.</entry>
+      <!-- DefLogSSIDCacheFailed: includes CAUSE -->
+      <entry key="DefLogSSIDRefreshFailed">Unable to refresh the ''LogAsSpecifiedByModels'' property block paths from Simulink.ID for a Simulink.SimulationData.ModelLoggingInfo containing a path ''{0}''.</entry>
+      <!-- DefLogSSIDRefreshFailed: includes CAUSE -->
+      <entry key="MdlLogInfoInvalidFindSignalPort">The second argument of the ''findSignal'' method must be a scalar numeric value corresponding to the ''OutputPortIndex'' of the Simulink.SimulationData.SignalLoggingInfo object(s) to find.</entry>
+      <entry key="MdlLogInfoInvalidRemoveSignalVal">The first argument of the ''removeSignal'' method must be a scalar numeric value between 1 and {0} corresponding to the index of the Simulink.SimulationData.SignalLoggingInfo to remove from the ''Signals'' vector.</entry>
+      <entry key="MdlLogInfoGetDefaultsOpenFailure">Unable to retrieve port-based logging settings from model ''{0}''.</entry>
+      <!-- MdlLogInfoGetDefaultsOpenFailure: includes CAUSE -->
+      <entry key="MdlLogInfoCreateFromModelInvalidOpts"><![CDATA[Incorrect options for Simulink.SimulationData.ModelLoggingInfo.createFromModel.  For available options, see <a href="matlab:help Simulink.SimulationData.ModelLoggingInfo.createFromModel">help Simulink.SimulationData.ModelLoggingInfo.createFromModel</a>.]]></entry>
+      <entry key="MdlLogInfoCreateFromModelSetValFailure">Simulink.SimulationData.ModelLoggingInfo.createFromModel was unable to get the value of the ''{0}'' parameter for block ''{1}''.
+
+Cause:
+{2}</entry>
+      <entry key="MdlLogInfoInvalidSetLogAsSpecArgs"><![CDATA[Incorrect arguments to ''setLogAsSpecified'' method. For usage, see <a href="matlab:help Simulink.SimulationData.ModelLoggingInfo.setLogAsSpecified">help Simulink.SimulationData.ModelLoggingInfo.setLogAsSpecified</a>.]]></entry>
+      <entry key="MdlLogInfoInvalidGetLogAsSpecArgs"><![CDATA[Incorrect arguments to ''getLogAsSpecified'' method. For usage, see <a href="matlab:help Simulink.SimulationData.ModelLoggingInfo.getLogAsSpecified">help Simulink.SimulationData.ModelLoggingInfo.getLogAsSpecified</a>.]]></entry>
+      <entry key="MdlLogInfoInvalidGetInstanceArgs"><![CDATA[Incorrect arguments to ''getSignalsForMdlBlockOrStateflow'' method. For usage, see <a href="matlab:help Simulink.SimulationData.ModelLoggingInfo.getSignalsForMdlBlockOrStateflow">help Simulink.SimulationData.ModelLoggingInfo.getSignalsForMdlBlockOrStateflow</a>.]]></entry>
+      <entry key="MdlLogInfoInvalidRemoveInstanceArgs"><![CDATA[Incorrect arguments to ''removeSignalsForMdlBlock'' method. For usage, see <a href="matlab:help Simulink.SimulationData.ModelLoggingInfo.removeSignalsForMdlBlock">help Simulink.SimulationData.ModelLoggingInfo.removeSignalsForMdlBlock</a>.]]></entry>
+      <entry key="MdlLogInfoInvalidUpdateModelArgs"><![CDATA[Incorrect arguments to ''updateModelName'' method. For usage, see <a href="matlab:help Simulink.SimulationData.ModelLoggingInfo.updateModelName">help Simulink.SimulationData.ModelLoggingInfo.updateModelName</a>.]]></entry>
+      <entry key="MdlLogInfoInvalidGetSettingsForSignalArgs"><![CDATA[Incorrect arguments to ''getSettingsForSignal'' method. For usage, see <a href="matlab:help Simulink.SimulationData.ModelLoggingInfo.getSettingsForSignal">help Simulink.SimulationData.ModelLoggingInfo.getSettingsForSignal</a>.]]></entry>
+      <entry key="MdlLogInfoInvalidTopModel">The ''Model'' property of the Simulink.SimulationData.ModelLoggingInfo object is set to ''{0}''.  This does not appear to be a valid model.</entry>
+      <!-- MdlLogInfoInvalidTopModel: includes CAUSE -->
+      <entry key="MdlLogInfoValidateLogAsSpecBlkPath" note="stringDatatypeUpdate">The Simulink.SimulationData.ModelLoggingInfo object for model ''{0}'' contains an invalid ''LogAsSpecifiedByModels'' block ''{1}''. This character vector must be a valid block path of a Model block in the top-level model or the name of the top model.  This setting will be ignored.</entry>
+      <!-- MdlLogInfoValidateLogAsSpecBlkPath: includes CAUSE sometimes -->
+      <entry key="MdlLogInfoDupSignal">The ''Signals'' property of this Simulink.SimulationData.ModelLoggingInfo object contains multiple Simulink.SimulationData.SignalLoggingInfo objects that resolve to the same signal.  The objects at indices {0,number,integer} and {1,number,integer} currently resolve to the same signal.  The first occurrence of this signal will be used and all others will be ignored.</entry>
+      <entry key="MdlLogInfoDupSignalInRapidAccel">The data logging override settings for the model ''{0}'' specify multiple Simulink.SimulationData.SignalLoggingInfo objects that resolve to the same signal. Simulink will use the first occurrence of each duplicate signal and ignore all others.\n\nIn Rapid Accelerator simulation mode, Simulink does not automatically remove duplicate signals that are set up to use data logging override settings. To avoid this warning in the future, inspect and remove the duplicate signals in the model:\n\n1. dataLoggingOverride = get_param(MyModel, 'DataLoggingOverride')\n2. newSignals = dataLoggingOverride.checkForDuplicates(dataLoggingOverride.Signals, 'warning')\n3. dataLoggingOverride.Signals = newSignals\n4. set_param(MyModel, 'DataLoggingOverride', dataLoggingOverride)\n\n</entry>
+      <entry key="MdlLogInfoGetInstanceBlkType">The method getSignalsForMdlBlockOrStateflow requires a Model or Stateflow block.  ''{0}'' is of type ''{1}''.</entry>
+      <entry key="OverrideSettingsForVariantMdl">The model block ''{0}'' is configured to use override settings for data logging.  Overriding logging settings is not supported for Variant Model blocks or Model blocks that contain any Variant Model blocks or subsystems.  To eliminate this error, launch the Signal Logging Selector.  On the left side of this dialog, check or uncheck this Model block in the hierarchy view.</entry>
+      
+      <!-- MCOS errors : Simulink.SimulationData.SignalLoggingInfo =============================== -->
+      <entry key="SigLogInfoInvalidPortIndex">The ''OutputPortIndex'' property must be a scalar integer value greater than zero.</entry>
+      <entry key="SigLogInfoInvalidLoggingInfo">The ''LoggingInfo'' property must be a scalar Simulink.SimulationData.LoggingInfo object.</entry>
+      <entry key="SigLogInfoSigNameEmptyPath">Unable to get the signal name for a Simulink.SimulationData.SignalLoggingInfo object because the ''BlockPath'' property for this object is empty.</entry>
+      <entry key="SigLogInfoSigNameInvalidModel">Unable to get the signal name for a Simulink.SimulationData.SignalLoggingInfo object because model ''{0}'' could not be opened.</entry>
+      <!-- SigLogInfoSigNameInvalidModel: includes CAUSE -->
+      <entry key="SigLogInfoSigNameInvalidBlk">Unable to get the signal name for a Simulink.SimulationData.SignalLoggingInfo object because ''{0}'' does not have port handles.</entry>
+      <!-- SigLogInfoSigNameInvalidBlk: includes CAUSE -->
+      <entry key="SigLogInfoSigNameInvalidPort">Unable to get the signal name for a Simulink.SimulationData.SignalLoggingInfo object because block ''{0}'' has only {1,number,integer} output ports but the Simulink.SimulationData.SignalLoggingInfo object refers to ''OutputPortIndex'' {2,number,integer}.</entry>
+      <entry key="SigLogInfoUpdateFromPortEmptyPath">Unable to update a Simulink.SimulationData.SignalLoggingInfo object from the associated port because the ''BlockPath'' property for this object is empty.</entry>
+      <entry key="SigLogInfoEmptyBlockPath">The Simulink.SimulationData.ModelLoggingInfo object for model ''{0}'' contains a signal with empty ''BlockPath'' at index {1,number,integer} of the ''Signals'' vector. This signal will be ignored.</entry>
+      <entry key="SigLogInfoValidateBlkPath">The Simulink.SimulationData.ModelLoggingInfo object for model ''{0}'' contains a signal with invalid ''BlockPath'' at index {1,number,integer} of the ''Signals'' vector.  This signal will be ignored.</entry>
+      <!-- SigLogInfoValidateBlkPath: includes CAUSE -->
+      <entry key="SigLogInfoValidateBlkPortIdx">The Simulink.SimulationData.ModelLoggingInfo object for model ''{0}'' contains a signal with invalid ''OutputPortIndex'' at index {1,number,integer} of the ''Signals'' vector. The block ''{2}'' has only {3,number,integer} output ports but the ''OutputPortIndex'' property specifies port {4,number,integer}.  This signal will be ignored.</entry>
+      <entry key="SigLogInfoValidateLoggingOff">The Simulink.SimulationData.ModelLoggingInfo object for model ''{0}'' contains an invalid signal at index {1,number,integer} of the ''Signals'' vector. To override logging settings for output port {2,number,integer} of block ''{3}'', this signal must be configured to log within the model.  To turn on logging for this signal, use the ''Signal Properties'' dialog and turn on ''Log signal data''.</entry>
+      <entry key="SigLogInfoValidateRefModel">The Simulink.SimulationData.ModelLoggingInfo object for model ''{0}'' contains a signal with an invalid ''BlockPath'' at index {1,number,integer} of the ''Signals'' vector. The block ''{2}'' does not exist in the model reference hierarchy of this model.  This signal will be ignored.</entry>
+
+
+      <!-- MCOS errors : Simulink.SimulationData.LoggingInfo =================================== -->
+      <entry key="LoggingInfoInvalidConstruct">To construct a Simulink.SimulationData.LoggingInfo object, the first argument must be of type Simulink.SimulationData.LoggingInfo or Simulink.LoggingInfo.</entry>
+      <entry key="LoggingInfoInvalidSetScalar">The ''{0}'' property must be a scalar integer value.</entry>
+      <entry key="LoggingInfoInvalidSetString" note="stringDatatypeUpdate">The ''{0}'' property must be a character vector.</entry>
+
+
+      <!-- 'DataLoggingOverride' BD Parameter Errors =========================================== -->
+      <entry key="NullDataLoggingOverrideNotAllowed">Setting ''DataLoggingOverride'' parameter to an empty array is not allowed.</entry>
+      <entry key="DataLoggingOverrideSetFailure">Unable to set the ''DataLoggingOverride'' parameter for the model ''{0}''.</entry>
+      <!-- DataLoggingOverrideSetFailure: includes CAUSE -->      
+      <entry key="MdlLogInfoSetParamNonScalar">The Simulink.SimulationData.ModelLoggingInfo specified for this model must be a scalar object.</entry>
+      <entry key="MdlLogInfoSetParamInvalidType">Only scalar objects of type Simulink.SimulationData.ModelLoggingInfo are supported for model logging specifications.</entry>
+      <entry key="MdlLogInfoMismatchModelName">The Simulink.SimulationData.ModelLoggingInfo object specified for model ''{0}'' has the ''Model'' property set to ''{1}''.</entry>
+      <entry key="DataLoggingOverrideInvalid">The data logging override settings for the model ''{0}'' contain settings that are not applicable to this model.</entry>
+      <!-- DataLoggingOverrideInvalid: includes CAUSE -->
+      <entry key="TopMdlOverrideUpdated">The data logging override settings for the model ''{0}'' have been automatically updated to remove logging settings for signals that are no longer available for logging or are duplicated.  The common cause of this is removing a signal from the model that was previously set up to use data logging override settings in the Signal Logging Selector dialog.  Save this model to avoid this warning when simulating the model in the future.</entry>
+      <entry key="RefMdlOverrideUpdated">The data logging override settings for the model ''{0}'' have been configured to log the following signals that are not available for logging because they have been removed from a reference model, are inside inactive variants, or come from a source that has been commented out.  These signals have been automatically removed from the data logging override settings.  Save this model to avoid this warning when simulating the model in the future.
+
+{1}
+</entry>
+      <entry key="RefMdlSignalNameChanged">The reference model ''{0}'' is configured to log the signal at output port {1,number,integer} of block ''{2}''.  The name of this signal was changed from ''{3}'' to ''{4}''.  Simulink will log the signal using the new name.  To avoid this warning in the future, save model ''{5}''.</entry>
+      <entry key="DataLoggingOverrideChangeDisallowed">The option of changing DataLoggingOverride is not supported when a model is simulating.</entry>
+      <entry key="DataLoggingOverrideChangeDisallowedInFastRestart">The option of changing DataLoggingOverride in Fast Restart is not supported.</entry>
+      <entry key="DataLoggingOverrideInvalidConfiguration">The option of changing DataLoggingOverride in Fast Restart is not supported for the model ''{0}'' because of one or more of the following: signal logging specified inside of accelerated mode referenced model, Stateflow logging.</entry>
+      
+      <!-- Signal Logging Selector Dlg =========================================================== -->
+      <entry key="SigLogDlgInitializing">Initializing Simulink Signal Logging Selector</entry>
+      <entry key="SigLogDlgInvalidAction">The action ''{0}'' is not valid for launching the Signal Logging Selector.  Available actions include ''Create'' and ''Close''.</entry>
+      <entry key="SigLogDlgJavaRequired">The Simulink Signal Logging Selector requires Java.</entry>
+      <entry key="SigLogDlgArgNotString" note="stringDatatypeUpdate">Input argument must be a character vector.</entry>
+      <entry key="SigLogDlgSysNotFound">The Simulink Signal Logging Selector cannot find the system ''{0}''.</entry>
+      <entry key="SigLogDlgLibOrLockedModel">The Simulink Signal Logging Selector can only work with unlocked block diagram models.\nOpen the Simulink Signal Logging Selector directly from a model or pass the model name to Simulink.SimulationData.signalLoggingSelector.</entry>
+      <entry key="SigLogDlgLockedModel">The Simulink Signal Logging Selector cannot be opened for a locked (read-only) model.</entry>
+      <entry key="SigLogDlgTitle">Simulink Signal Logging Selector</entry>
+      <entry key="SigLogDlgReadyStatusMsg">Ready</entry>
+      <entry key="SigLogDlgAbstractClass">{0} is an abstract class.</entry>
+
+      <entry key="SigLogDlgMenuFile"><![CDATA[&File]]></entry>
+      <entry key="SigLogDlgCloseStatusTip">Close Signal Logging Selector</entry>
+
+      <entry key="SigLogDlgMenuView"><![CDATA[&View]]></entry>
+      <entry key="SigLogDlgShowMasksText"><![CDATA[Show &Masked Subsystems]]></entry>
+      <entry key="SigLogDlgShowMasksStatusTip">Show logged signals inside of masked subsystems</entry>
+      <entry key="SigLogDlgShowLinksText"><![CDATA[Show &Library Links]]></entry>
+      <entry key="SigLogDlgShowLinksStatusTip">Show logged signals inside of linked subsystems</entry>
+      <entry key="SigLogDlgShowAllText"><![CDATA[Show Subsystems with &No Logged Signals]]></entry>
+      <entry key="SigLogDlgShowAllStatusTip">Show subsystems without any logged signals inside</entry>
+      <entry key="SigLogDlgLaunchConfigParams"><![CDATA[Data Import/Export &Configuration]]></entry>
+      <entry key="SigLogDlgLaunchConfigParamsStatusTip">Show Data Import/Export Configuration Parameters</entry>
+
+      <entry key="SigLogDlgMenuHelp"><![CDATA[&Help]]></entry>
+      <entry key="SigLogDlgHelpText"><![CDATA[&Help]]></entry>
+      <entry key="SigLogDlgHelpStatusTip">Help</entry>
+
+      <entry key="SigLogDlgLoggingDisabledText"><![CDATA[Signal logging is currently <b>DISABLED</b>]]></entry>
+      <entry key="SigLogDlgLoggingDisabledStatusTip">Use Data Import/Export Configuration Parameters to enable signal logging</entry>
+      
+      <entry key="SigLogDlgOverrideModeLabel">Logging Mode:</entry>
+      <entry key="SigLogDlgOverrideModeTip">Indicate whether to log settings as specified in the model or use override settings</entry>
+      <entry key="SigLogDlgOverrideNone">Log all signals as specified in model</entry>
+      <entry key="SigLogDlgOverrideSome">Override signals</entry>
+
+      <entry key="SigLogDlgModelHierarchyLabel">Model Hierarchy</entry>
+      <entry key="SigLogDlgMdlRefHelpTxtTitle">Help for Overriding Model Logging Settings</entry>
+      <entry key="SigLogDlgMdlRefHelpTxtContent">
+      <![CDATA[
+      To <b><u>override logging settings</u></b>, set <b>Logging Mode</b> to 
+      <i>"Override signals"</i> and:
+      <br/><br/>
+      To <b><u>enable (or disable) logging</u></b> for <b><u>all</u></b> logged 
+      signals in a model or Model block:<br/>
+      &bull; Check (or uncheck) the check box to the left of the model name in 
+      the Model Hierarchy.
+      <br/><br/>
+      To <b><u>override logging settings</u></b> for <b><u>specific</u></b> signals:
+      <li>&bull; Uncheck the check box to the left of the model name in the Model Hierarchy, if it is checked.</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&ndash; NOTE: Unchecking a system's Model Hierarchy checkbox turns off logging for all signals in the system hierarchy<./li>
+      <li>&bull; In the above table, update the logging settings.</li>
+      ]]></entry>
+      
+      <entry key="SigLogDlgNonMdlRefHelpTxtTitle">Help for Overriding Model Logging Settings</entry>
+      <entry key="SigLogDlgNonMdlRefHelpTxtContent">
+      <![CDATA[
+      To <u><b>override logging settings</b></u>, set <b>Logging Mode</b> to <i>"Override signals"</i>,
+      and in the table above, update the logging settings.
+      ]]></entry>
+      
+      <entry key="NoLogSigListItem">See below</entry>
+      <entry key="SigLogDlgEmptyHelpTxtTitle">No logged signals at this level of the system</entry>
+      <entry key="SigLogDlgEmptyHelpTxtContent"><![CDATA[
+      To log signals in the selected system:
+      <br/><br/>
+      <b><u>Select signals</u></b> to log. In the Simulink editor, right click 
+      on each signal line and select <b>Properties &gt; Log signal data</b>.
+      <br/><br/>
+      Use the table above to <b><u>override settings</u></b> for signals selected 
+      for logging.
+      ]]></entry>
+      
+      <entry key="SigLogDlgNameModeFalse">Signal name</entry>
+      <entry key="SigLogDlgNameModeTrue">Custom</entry>
+
+      <entry key="SigLogDlgWarningTitle">Warning: Signal Logging Selector</entry>
+      <entry key="SigLogDlgErrorTitle">Error: Signal Logging Selector</entry>
+
+      <entry key="SigLogDlgContextMenuOpen">Open</entry>
+      <entry key="SigLogDlgContextMenuHighlight">Highlight block in model</entry>
+      <entry key="SigLogDlgContextMenuUnhighlight">Remove highlighting</entry>
+      
+      <entry key="SigLogDlgEnableLoggingMenu">Enable Signal Logging</entry>
+      <entry key="SigLogDlgDisableLoggingMenu">Disable Signal Logging</entry>
+      
+      <entry key="SigLogDlgContextMenuProperties">Properties...</entry>
+      <entry key="SigLogDlgContextMenuSigProperties">Signal properties...</entry>
+
+      <entry key="SigLogDlgToggleAllInSystem">All signals in this system</entry>
+      <entry key="SigLogDlgToggleAllInAndBelow">All signals from here down</entry>
+      <entry key="SigLogDlgToggleBoundaries">Inports and outports in this system</entry>
+      <entry key="SigLogDlgToggleNamedInSystem">Named signals in this system</entry>
+      <entry key="SigLogDlgToggleNamedInAndBelow">Named signals from here down</entry>
+      <entry key="SigLogDlgToggleUnNamedInSystem">Unnamed signals in this system</entry>
+      <entry key="SigLogDlgToggleUnNamedInAndBelow">Unnamed signals from here down</entry>
+      
+      <entry key="RefModelUsingModelDatalLogsFormat"><![CDATA[
+      The top model ''{0}'' has been upgraded to use Dataset format for signal logging.
+      However, referenced model ''{1}'' or one of the models it directly or indirectly 
+      references is using ModelDataLogs format.  To eliminate this error, do one of the 
+      following:\n\n
+      - Use Simulink.SimulationData.updateDatasetFormatLogging to update all models referenced 
+      directly or indirectly by top model ''{2}'' to use Dataset format
+      (<a href="matlab:Simulink.SimulationData.updateDatasetFormatLogging(''{3}'')">run this command in MATLAB</a>).\n\n
+      - Use Simulink.SimulationData.updateDatasetFormatLogging to update ''{4}'' and any models it references directly or indirectly to use Dataset format
+      (<a href="matlab:Simulink.SimulationData.updateDatasetFormatLogging(''{5}'')">run this command in MATLAB</a>).\n\n
+      - Disable logging for all signals in the Model block ''{6}''. In the Signal Logging Selector dialog, 
+      uncheck this Model block in the Model Hierarchy
+      (<a href="matlab:SigLogSelector.launch(''Create'', ''{7}'')">open the dialog</a>).
+      ]]></entry>
+      
+      <entry key="RefModelUsingDatasetFormat"><![CDATA[
+      The top model ''{0}'' is using ModelDataLogs format for signal logging.  However,
+      referenced model ''{1}'' or one of the models it directly or indirectly references 
+      has been upgraded to use Dataset format.  To eliminate this error, do one of the 
+      following:\n\n
+      - Use Simulink.SimulationData.updateDatasetFormatLogging to update top model ''{2}'' and all models referenced 
+      directly or indirectly by this top model to use Dataset format
+      (<a href="matlab:Simulink.SimulationData.updateDatasetFormatLogging(''{3}'')">run this command in MATLAB</a>).\n\n
+      - Disable logging for all signals in the Model block ''{4}''. In the Signal Logging Selector dialog, 
+      uncheck this Model block in the Model Hierarchy
+      (<a href="matlab:SigLogSelector.launch(''Create'', ''{5}'')">open the dialog</a>).
+      ]]></entry>
+
+	  <entry key="RefModelSaveFormatMismatch"><![CDATA[
+      The top model ''{0}'' and the referenced model ''{1}'' or one of the models it directly or indirectly 
+      references have different <sldiag objui="configset" objparam="SaveFormat">Format</sldiag> parameter settings.  To eliminate this error, 
+      update top model ''{2}'' and all models 
+      referenced directly or indirectly by this top model to use Dataset format
+      (<a href="matlab:Simulink.SimulationData.updateDatasetFormatLogging(''{3}'',''ActiveVariants'',''off'',''OutputAndState'')">click here to update the models</a>).]]></entry>
+	  
+	  <entry key="RefModelSaveFormatMismatchRapidAccel"><![CDATA[
+      The top model ''{0}'' and the referenced model ''{1}'' or one of the models it directly or indirectly 
+      references have different <sldiag objui="configset" objparam="SaveFormat">Format</sldiag> parameter settings.  To eliminate this error, update the top model and all models referenced directly or indirectly by this top model to use '''Structure''' or '''Structure with time''' option for Format parameter. 
+      ]]></entry>
+
+      <entry key="LegacyModelDataLogsFormatError"><![CDATA[
+      The model ''{0}'' has the <sldiag objui="configset" objparam="SignalLoggingSaveFormat">Signal logging format</sldiag> parameter set to ''ModelDataLogs''.  The signal logging save format ''ModelDataLogs'' has been removed. Update models that use ''ModelDataLogs'' signal logging format to use the ''Dataset'' format.  For help with resolving this and other upgrade issues, use the Simulink Upgrade Advisor.
+      ]]></entry>
+
+      <entry key="LegacyModelDataLogsFormat"><![CDATA[
+      The model ''{0}'' has the <sldiag objui="configset" objparam="SignalLoggingSaveFormat">Signal logging format</sldiag> parameter set to ''ModelDataLogs''. The signal logging save format ''ModelDataLogs'' will be removed in a future release.  To take advantage of new functionality, update models that use ''ModelDataLogs'' signal logging format to use the ''Dataset'' format.  For help with resolving this and other upgrade issues, use the Simulink Upgrade Advisor.
+      ]]></entry>
+
+      <entry key="LegacyModelDataLogsFormatNotification"><![CDATA[
+      The model has ''Configuration Parameters > All Parameters > Signal logging format'' set to ''ModelDataLogs''. Upgrade the model to use the ''Dataset'' format.]]></entry>
+
+      <entry key="LegacyModelDataLogsFormatReplacementNotification"><![CDATA[
+      The signal logging save format setting of ModelDataLogs will be ignored and signals marked for logging will be logged in Dataset format.  When you save the model, Simulink will reconfigure the model use Dataset format for signal logging.]]></entry>
+
+      <entry key="frameBasedSignalLoggedUsingModelDataLogs"><![CDATA[
+      In future releases, you will no longer be able to log frame-based signals as a 2-D 
+      array if the signal logging format is 'ModelDataLogs'.\n\n
+      To continue logging signals as a 2-D array:\n
+      1.  In this model and all referenced models, change the signal logging format to 
+      'Dataset'. To do so, {0}run this command in MATLAB{1}.\n
+      2.  Simulate the model.\n
+      3.  Use the dsp.util.getLogsArray function to extract the logged signals as a 2-D array.]]></entry> 
+     
+      <entry key="SigLogSaveFormatOption">Invalid value ''{0}'' for the argument ''saveFormat''. It must be either ''SignalLogging'' or ''OutputAndState''. The default value is ''SignalLogging''.</entry>
+      <entry key="SigLogFormatUpdateMsg">Model ''{0}'' has been updated and saved.</entry>
+      <entry key="SigLogFormatUpdateNoSaveMsg">Model ''{0}'' has been updated but requires saving.</entry>
+      <entry key="SigLogFormatUpdateNotNeed">No changes are required.  All reference models are set to log using Dataset format.</entry>
+
+      <entry key="SigLogFormatUpdateConfigSet">The following configuration reference objects have been changed: ''{0}''.</entry>
+      
+      <entry key="InsufficientSnapshotContainerSize">Logging snapshot buffer has insufficient size to process the request</entry>
+
+      <!-- SDI v2: visualized or logged data is supported -->
+      <entry key="OpenRecordNoData">Model ''{0}'' has been configured to send logged workspace and MAT-file data to the Simulation Data Inspector. Based on the current model settings, there is no logged data in a format supported by the Simulation Data Inspector.  Consider updating the model to stream signals to the Simulation Data Inspector.</entry>
+      <entry key="OpenRecordNoDataDlgTitle"> No data to record</entry>
+      
+<!-- Simulink Timeseries -->  
+<entry key="SlTimeseriesCustomConstructorErr">Cannot call custom constructor</entry>
+<entry key="SlTimeseriesInvconst">Invalid constructor</entry>
+<entry key="SlTimeseriesSetInvprop" note="stringDatatypeUpdate">Specified property name must be identified with a character vector</entry>
+<entry key="SlTimeseriesNotframe">Time series object is not frame based</entry>
+<entry key="SlTimeseriesDataStorageArraySize">Time vector is not aligned to the Data and Quality values</entry>
+<entry key="SlTimeseriesDataStorageArrayMismatch">Size of data array does not match the length of the time series</entry>
+<entry key="SlTimeseriesDataStorageRedimensioned">Time series data has been re-dimensioned to remain synchronized with the time vector</entry>
+<entry key="SlTimeseriesDataStorageReadOnly">The Time property is read only for tscollection members.</entry>
+<!-- Dataset save format  -->
+<entry key="DatasetRapidAccelNoSupported">Simulation in rapid accelerator mode does not support logging state or final state to Simulink.SimulationData.Dataset object. The '''Configuration Parameters > Data Import/Export > Format''' parameter must be set to 'Array', 'Structure' or 'Structure with time'.</entry>  
+<entry key="DatasetRTWGenStateNotSupported">State and final state logging in 'Dataset' format is not supported in this simulation or code generation mode for model ''{0}''. No data will be logged. To log state and final state data, set '''Configuration Parameters > Data Import/Export > Format''' parameter to 'Array', 'Structure', or 'Structure with time'.</entry> 
+<entry key="DatasetRTWGenRootOutputNotSupported">Root level output logging in 'Dataset' format is not supported in this simulation or code generation mode for model ''{0}''. No data will be logged. To log root level output data, set '''Configuration Parameters > Data Import/Export > Format''' parameter to 'Array', 'Structure', or 'Structure with time'.</entry>   
+<entry key="GetStateInDatasetFormatNoSupported">Using S-Function API to get output or state in 'Dataset' format is currently not supported. The model must be recompiled with '''Configuration Parameters > Data Import/Export > Format''' parameter set to 'Array', 'Structure' or 'Structure with time'.</entry>    
+
+<entry key="SignalLoggingEvalParam"> Invalid parameter values specified in ''Signal Properties'' dialog for the Data logging options of block ''{0}'' output port {1, number, integer}. For more information about the parameter causing the problem see the next error.</entry>  
+
+<entry key="SignalLoggingTSLoggingUnavailableSignals"> Cannot honor data logging Sample time specified in 'Signal Properties'' dialog for block ''{0}'' output port {1, number, integer} because LoggingUnavailableSignals block diagram parameter is set to none or warning. Consider changing the Sample time to inherited, or set the LoggingUnavailableSignals parameter to error.</entry>
+ 
+<entry key="SignalLoggingTSLoggingZOHUDelayAsRTB"> Cannot honor data logging Sample time specified in 'Signal Properties'' dialog for block ''{0}'' output port {1, number, integer} because this block behaves as a rate transition. Consider changing the Sample time to inherited, or replace the block with a rate transition block.</entry> 
+
+<entry key="SignalLoggingDisallowContinuousTS"> Cannot honor continuous sample time specified in 'Signal Properties'' dialog for block ''{0}'' output port {1, number, integer} for data logging. Consider changing the Sample time to inherited.</entry>
+
+<entry key="InvDataLogOutputMask">Root-level output logging in 'Dataset' format is not supported in this model because Outport ''{0}'' is masked. Either unmask the Outport block or disable ''Configuration Parameters > Data Import/Export > Output'' logging.</entry>
+
+<!-- Logging to file  -->
+<entry key="FileWasTouchedWhileOnPause">Unable to continue logging into file ''{0}'' because it was modified or removed while simulation was on pause.</entry>
+
+<entry key="SlFileLoggingDescription"> Configuration Parameters dialog, Data Import/Export page</entry>   
+
+<entry key="ModelWideLoggingFileNameErr">Error encountered while processing file name ''{0}'' in 
+Configuration Parameters dialog, Data Import/Export page of model ''{1}''.</entry>
+
+<entry key="FileCreationError">Unable to create file ''{0}'' specified in  ''Configuration Parameters'' > ''Data Import/Export'' > ''Log Dataset data to file''. Possible causes for this include: the specified directory does not exist, the directory or the file are not writable, disk quota is exhausted, the file is used by another simulation, or the specified file is a softlink pointing to a non-existing directory.</entry>
+
+<entry key="FileNameHasNonLocalEncodingChars">File name ''{0}'' specified for ''Log Dataset data to file'' in
+Configuration Parameters dialog, Data Import/Export page of model ''{1}'' must contain only characters that are available in the current locale.</entry>
+
+<entry key="FileWriteError">Unable to write to file ''{0}'' specified in  ''Configuration Parameters'' > ''Data Import/Export'' > ''Log Dataset data to file''. Possible causes include that the disk quota is exhausted or the folder is no longer accessible for writing.</entry>
+
+<entry key="SlLoggingToFileLoggingError">''Log Dataset data to file'' is incompatible with SimState logging when save ''Format'' parameter is set to ''Dataset''. For model ''{0}'', change the settings of at least one of these Configuration Parameters > Data Import/Export pane options: clear ''Log Dataset data to file'', clear ''Final states'', clear ''Save complete SimState in final states'', or set ''Format'' to a value other than ''Dataset''. </entry>
+
+<entry key="SlLoggingToFileSimStateError">''Log Dataset data to file'' is incompatible with SimState when save ''Format'' parameter is set to ''Dataset''. For model ''{0}'', change the settings of at least one of these Configuration Parameters > Data Import/Export pane options: clear the option ''Log Dataset data to file'', or set ''Format'' to a value other than ''Dataset''. </entry>
+
+<entry key="SlLoggingToFileWithRecordToSdi">For model ''{0}'', ''Log Dataset data to file'' is ignored because ''Record logged workspace data in Simulation Data Inspector'' is enabled. To eliminate this warning, clear ''Log Dataset data to file'' or clear ''Record logged workspace data in Simulation Data Inspector'' in the Configuration Parameters > Data Import/Export pane.</entry>
+
+<entry key="SlLoggingToFileWithSilPil">For model ''{0}'', ''Log Dataset data to file'' is not supported when the simulation mode is SIL or PIL. To eliminate this error, clear ''Log Dataset data to file'' parameter in the Configuration Parameters > Data Import/Export pane or change the simulation mode to normal, accelerator, or rapid accelerator.</entry>
+
+<!-- m-api  -->
+<entry key="SlLoggingMAPIError"> sl_logging m-api has the following error: ''{0}''. </entry>   
+
+   </message>
+</rsccat>
+
+<!-- LocalWords:  singletasking logsout ndash Winfo
+-->

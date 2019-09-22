@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsccat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" locale="en_US" product="Simulink" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="SLMsgViewer_Dialog_Title">Diagnostic Viewer</entry>
+    <entry key="Cannot_Initialize_Dialog">Failed to initialize Simulink Message Viewer dialog</entry>
+    <entry key="INVALID_ARG_LENGTH">Invalid number of arguments found</entry>
+    <entry key="INVALID_ARG">Invalid argument ''{0}'' found</entry>
+    <entry key="BAD_IDENTIFIER">IDENTIFIER: ''{0}'' input must be a valid MATLAB message identifier.  For more information, search for "message identifier" in the MATLAB Help.</entry>
+    <entry key="INVALID_VAL_TYPE">Invalid value(argument no: {0,number,integer}) found for ''{1}''</entry>
+    <entry key="ERROR_KEYWORD">Error:</entry>
+    <entry key="WARNING_KEYWORD">Warning:</entry>
+    <entry key="CAUSED_BY_KEYWORD">Caused by:</entry>
+    <entry key="DUPLICATE_ARG">Duplicate argument ''{0}'' found</entry>
+    <entry key="INVALID_MESSAGE_CELL_ARGS" note="stringDatatypeUpdate">Invalid arguments in the message cell. They should be of type 'character vector', 'float' or 'integer'</entry>
+    <entry key="INVALID_MESSAGE_CELL_FORMAT">Invalid Message CellArray. It should be of single dimension.</entry>
+    <entry key="INVALID_MESSAGE_CELL_ID" note="stringDatatypeUpdate">Invalid id in message cell. It should be the first element and of 'character vector' type</entry>
+    <entry key="INVALID_MESSAGE_ID">Invalid MessageId: ''{0}'' found</entry>
+    <entry key="FILE_OPEN_FOR_WRITE_FAILED">Could not open the file: ''{0}'' for writing.</entry>
+    <entry key="ACTIVE_LOG_FILE">Logging to file: ''{0}'' is already active.</entry>
+    <entry key="INACTIVE_LOG_FILE">No active logging to file: ''{0}''.</entry>
+    <entry key="BUILD_COMPLETION_MSG">Build process completed successfully</entry>
+    <entry key="EXCEPTION_MSG">''{0}''</entry>
+    <entry key="GENERIC_MSG">{0}</entry>
+    <entry key="STAGE_EMPTY_MODEL_NAME">ModelName argument of Stage API cannot be empty</entry>
+    <entry key="STAGE_EMPTY_STAGE_NAME">StageName argument of Stage API cannot be empty</entry>
+    <entry key="Simulation_Stage_Name">Simulation</entry>
+    <entry key="Build_Stage_Name">Build</entry>
+    <entry key="Subsys_Build_Stage_Name">Subsystem Build</entry>
+    <entry key="Stateflow_Build_Stage_Name">Stateflow Build</entry>	
+    <entry key="Model_Load_Stage_Name">Model Load</entry>
+    <entry key="Model_Save_Stage_Name">Model Save</entry>
+    <entry key="Update_Diagram_Stage_Name">Update Diagram</entry>
+    <entry key="Post_Make_Action_Stage_Name">Post Make Actions</entry>
+    <entry key="Makefile_Processing_Stage_Name">Makefile Processing</entry>
+    <entry key="Compiling_Code_Stage_Name">Compiling Code</entry>
+    <entry key="Code_Generation_Stage_Name">Code Generation</entry>
+    <entry key="Build_Process_Init_Stage_Name">Build Process Initialization</entry>
+    <entry key="Update_Mdl_Ref_Tgts_Stage_Name">Update ModelReference Targets</entry>
+    <entry key="Top_Mdl_Build_Stage_Name">Top Model Build</entry>
+    <entry key="EnteringStage">Entering Stage: ''{0}'' for Model: ''{1}''</entry>
+    <entry key="ExitingStage">Exiting Stage: ''{0}'' for Model: ''{1}''</entry>
+    <entry key="STATUSBAR_VIEWDIAGNOSTICS">View diagnostics</entry>
+    <entry key="STATUSBAR_ONEERROR">View {0,number,integer} error</entry>
+    <entry key="STATUSBAR_ONEWARNING">View {0,number,integer} warning</entry>
+    <entry key="STATUSBAR_NERRORS">View {0,number,integer} errors</entry>
+    <entry key="STATUSBAR_NWARNINGS">View {0,number,integer} warnings</entry>
+    <entry key="DiaryInvalidEncoding">Invalid encoding specified. Valid value is 'UTF-8'. If encoding is not specified, local machine encoding is used.</entry>
+    <entry key="DiaryInvalidNumberArgs">Invalid number of arguments.</entry>
+  </message>
+</rsccat>
+<!-- LocalWords:  xml
+-->

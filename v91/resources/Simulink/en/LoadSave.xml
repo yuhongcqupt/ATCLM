@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="ArrayTypeNotSpecified">Array type not specified</entry>
+    <entry key="BadEscapeSequence">Invalid escape sequence</entry>
+    <entry key="BadMatrixFormat">Invalid format for numeric matrix</entry>
+    <entry key="BadMultiByteCharacter">Invalid multibyte character</entry>
+    <entry key="BadNumRecords">"NumRecords" parameter different from actual number of records</entry>
+    <entry key="BadPortNumber">Invalid port number specified</entry>
+    <entry key="BadPortType">Invalid port type specified</entry>
+    <entry key="BadExportRule">Invalid Export Rule token ''{0}'' in ''{1}'': {2,number,integer}</entry>
+    <entry key="BadExportRuleQuotes">''{0}'' must be in double-quotes</entry>
+    <entry key="BadExportRuleProcessing">Unrecoverable error ''{0}'' while processing the Export Rules in ''{1}'': {2,number,integer}</entry>
+    <entry key="BadExportRuleSyntax">Export Rule ''{0}' failed syntax checking with error: {1}</entry>
+    <entry key="BadExportFilterMDL">Can''t specify a parts filter when exporting an MDL file</entry>
+    <entry key="BadExportFilter" note="stringDatatypeUpdate">A parts filter must be a character vector or a function handle</entry>
+    <entry key="UnexpectedExportRuleInsert">Unexpected Export Rule "insert" action.  There is no "last removed node" to insert.</entry>
+    <entry key="IncompatibleExportFileFormat">The source and destination files must be in the same format when applying export rules.</entry>
+    <entry key="BlockDiagramNameIsKeyword">"{0}" is not a valid model name because it is a MATLAB keyword</entry>
+    <entry key="CannotMapFile">Unable to create memory map of file "{0}": {1}</entry>
+    <entry key="CannotSaveDynamicProperties">Serialization of dynamic properties is not supported. These dynamic properties of the class {0} will not be serialized: {1}.</entry>
+    <entry key="ConflictingContentType">A content type is already defined for extension ''{0}''</entry>
+    <entry key="ConflictingContentTypeOverride">A content type is already defined for part ''{0}''</entry>
+    <entry key="COSRecursionLimitReached">Maximum object depth ({0,number,integer}) reached while writing object of class {1}.</entry>
+    <entry key="DuplicateSLXPart">Part ''{0}'' is already defined</entry>
+    <entry key="EncodingMismatch">The character encoding {0} used by model ''{1}'' differs from the MATLAB session character encoding {2}. To check for problems which might corrupt the model use the "Simulink Model File Integrity" checks in the {3}.</entry>
+    <!-- This text is inserted into hole {3} above to create a hyperlink to
+         the model advisor-->
+    <entry key="EncodingMismatchHyperlink">Model Advisor</entry>
+    <entry key="FailedToAddField">Could not add field "{0}" to struct array</entry>
+    <entry key="FailedToCreateObject">This model contains objects of class "{0}" that can not be instantiated. If you save this model, the information associated with these objects will be lost</entry>
+    <entry key="FailedToCreateRelationshipPart">Failed to create relationship between parent part "{0}" and this part "{1}": "{2}".</entry>
+    <entry key="FailedToWritePartFromMxArray">Failed to write part "{0}".</entry>
+    <entry key="FailedToReadPartToString" note="stringDatatypeUpdate">Failed to read part "{0}".</entry>
+    <entry key="FailedToReadPartToFile">Failed to read part "{0}" to file "{1}".</entry>
+    <entry key="FailedToReadPartToMxArray">Failed to read part "{0}".</entry>
+    <entry key="FileIsRenamedMDL">Simulink cannot open the file because the file format does not match the file extension. File "{0}" has the extension .slx but appears to be in MDL format.  Change the file extension to .mdl and try loading again.</entry>
+    <entry key="FileMakeWritableError">Cannot make file "{0}" writable: {1}</entry>
+    <entry key="FileNotValidMDL">The file does not contain a valid model in MDL format: {0}</entry>
+    <entry key="FileNotWritable">The file "{0}" you are trying to save is not writable.</entry>
+    <entry key="FileReadError">Error reading file "{0}": {1}</entry>
+    <entry key="FileWriteError">Error writing file "{0}": {1}</entry>
+    <entry key="FileNotFound">File "{0}" not found.</entry>
+    <entry key="FolderNotFound">Folder "{0}" not found.</entry>
+    <entry key="ForwardingTableDestBecomeSrc"><![CDATA[Entry number ''{0,number,integer}'' specified in the ForwardingTable is invalid. Forwarding table pairs which perform a mapping of the form ''<{1}> --> <{2}>'' followed by ''<{3}> --> <{4}>'' are disallowed. Simplify this double mapping into a single entry in the table.]]></entry>
+ <entry key="ForwardingTableDestBecomesObsoleteSrc"><![CDATA[Entry number ''{0,number,integer}'' specified in the ForwardingTable is invalid. Forwarding table pairs which perform a mapping of the form ''<{1}> --> <{2}>''  followed by ''<{3}> --> <{4}>'' are disallowed. ''<{5}>'' is already being forwarded, ''<{6}>'' cannot point to already forwarded block]]></entry>
+    <entry key="ForwardingTableIdentityPair">Entry number ''{0,number,integer}'' specified in the ForwardingTable is invalid. The names of the old library link and the new library link within the pair are identical (''{1}''). Ensure that the old library link maps to a different new library link.</entry>
+    <entry key="ForwardingTableMultipleEntry">Entry number ''{0,number,integer}'' specified in the ForwardingTable is invalid. The name of the old library link (''{1}'') is already present in another pair within the forwarding table. Each old library link can map to only one new library link.</entry>
+    <entry key="ForwardingTableIncorrectDestBlock">Entry number ''{0,number,integer}'' specified in the ForwardingTable is invalid. The name of the new library link ''{1}'' is different from old library link ''{2}''. If version numbers are provided, both new library link and old library link should be same.</entry>
+    <entry key="ForwardingTableMissingBlockVersions"> Entry number ''{0,number,integer}'' specified in the ForwardingTable is invalid. Block Version numbers have to be specified when library link name ''{1}'' doesn't change.</entry>
+    <entry key="ForwardingTableInvalidVersionNumbers"> Entry number ''{0,number,integer}'' specified in the ForwardingTable is invalid. Block Version numbers specified for library link ''{1}'' are invalid. Older Version should always be less than new Version number.</entry>
+    <entry key="ForwardingTableVersionNumbersInvalidRange"> Entry number ''{0,number,integer}'' specified in the ForwardingTable is invalid. Block Version numbers range specified for library link ''{1}'' is invalid. Block versions between ''{2}'' and ''{3}'' are missing. The lower version should start from ''{4}''</entry>
+    <entry key="ForwardingTableEmptyTransformationFunction"> Entry number ''{0,number,integer}'' specified in the ForwardingTable is invalid. Transformation function for library link ''{1}'' cannot be left empty. It should specify a valid matlab function.</entry>
+    <entry key="IncompatibleCharactersInBlock">Parameter ''{0}'' of block ''{1}'' contains characters which cannot be represented in the current encoding</entry>
+    <entry key="IncompatibleCharactersInObject">Parameter ''{0}'' of the ''{2}'' object in ''{1}'' contains characters which cannot be represented in the current encoding</entry>
+    <entry key="IncompatibleContainerType">The specified container type is incompatible with the specified file extension</entry>
+    <entry key="IncompatibleEncoding">The file specifies an encoding which is not compatible with the current encoding: {0}.</entry>
+    <entry key="InputMustBeString" translate="false" note="stringDatatypeUpdate">Input argument {0,number,integer} must be a character vector</entry>
+    <entry key="InputMustBeScalar" translate="false">Input argument {0,number,integer} must have exactly one element</entry>
+    <entry key="InputMustBeStruct" translate="false">Input argument {0,number,integer} must be a struct</entry>
+    <entry key="InputMustBeStringOrDouble" translate="false" note="stringDatatypeUpdate">Input argument {0,number,integer} must be of type character vector or double</entry>
+    <entry key="InputMustBeStringOrReaderHandle" translate="false" note="stringDatatypeUpdate">Input argument 1 must be a character vector or a reader handle</entry>
+    <entry key="InputMustBeStringOrWriterHandle" translate="false" note="stringDatatypeUpdate">Input argument 1 must be a character vector or a writer handle</entry>
+    <entry key="InputMustBeLogicalScalar" translate="false">Input argument {0,number,integer} must be a numeric or logical scalar</entry>
+    <entry key="InvalidBlockDiagramName">''{0}'' is not a valid model name because it is not a valid MATLAB function name.</entry>
+    <entry key="InvalidBlockDiagramNameReserved">The name ''{0}'' is reserved and cannot be used as a model name.</entry>
+    <entry key="InvalidCorePropertiesCreatedDate" note="stringDatatypeUpdate">The current value of ''{0}'' for the block diagram parameter 'Created' is not compatible with the SLX file format and has been reset to the current time. To change the date format, run the command set_param(bdroot,'Created',new_value). Then save the model. You can use the 'datestr' function to create valid dates. For example to change to the current time run the command {1}. Then save the model.</entry>
+    <entry key="InvalidCorePropertiesModifiedDate"><![CDATA[The current value of ''{0}'' for the block diagram parameter 'LastModifiedDate' is not compatible with the SLX file format and has been reset to the current time. To avoid this warning, run the command {1}. Then save the model.]]></entry>
+    <entry key="InvalidCoreProperties">Error reading core properties from file ''{0}'': {1}</entry>
+    <entry key="InvalidParentPartName" translate="false">The parent part name ''{0}'' for part ''{1}'' was incorrect, so the part has not been deleted. The parent part name should be ''{2}''.</entry>
+    <entry key="UnexpectedContent">Unexpected content</entry>
+    <entry key="UnexpectedParameterValue">Unexpected value ''{1}'' for parameter ''{0}''</entry>
+    <entry key="InvalidFileFormat">The file does not contain a valid Simulink model</entry>
+    <entry key="InvalidModelVersionFormat">ModelVersionFormat specified for library ''{0}'' will not work with ForwardingTables. See documentation to know what ModelVersionFormat will work for ForwardingTables feature.</entry>
+    <entry key="ModelVersionFormatWithoutAutoIncrement">ModelVersionFormat property for library ''{0}'' has no 'AutoIncrement' specified, model version will not be incremented automatically on saving.</entry>
+    <entry key="InvalidFileNameExtension">The file name ''{0}'' is invalid
+    because it does not have the extension ".mdl" or ".slx".</entry>
+
+    <entry key="InvalidFileNameExtensionProtected">The file name ''{0}'' is
+    invalid because it does not have the extension ".mdlp" or ".slxp".</entry>
+
+    <entry key="InvalidFileNameExtensionAll">The file name ''{0}'' is invalid
+    because it does not have the extension ".mdl", ".slx", ".slxp", or
+    ".mdlp".</entry>
+
+    <entry key="InvalidForwardingTableFormat" note="stringDatatypeUpdate">Invalid library link forwarding table specified. The forwarding table should be a cell array of the form '''{''{'old-link1, new-link1'}', '{'old-link2, new-link2'}', ...'}''' where ''old-link1'', ''new-link1'', etc., are character vectors corresponding to the full path names of library links.</entry>
+    <entry key="InvalidForwardingTableString">Entry number ''{0,number,integer}'' specified in the ForwardingTableString is invalid. </entry>
+    <entry key="InvalidForwardingTableEntry">Entry number ''{0,number,integer}'' specified in the ForwardingTable is invalid. </entry>
+    <entry key="InvalidForwardingTableOldBlockEntry">Entry number ''{0,number,integer}'' has invalid value specified in "Old block path" column. </entry>
+ <entry key="InvalidForwardingTableOldBlockVerEntry">Entry number ''{0,number,integer}'' has invalid value specified in "Old block version" column. </entry>
+ <entry key="InvalidForwardingTableNewBlockEntry">Entry number ''{0,number,integer}'' has invalid value specified in "New block path" column. </entry>
+ <entry key="InvalidForwardingTableNewBlockVerEntry">Entry number ''{0,number,integer}'' has invalid value specified in "New block version" column. </entry>
+ <entry key="InvalidForwardingTableTransformationFcnEntry">Entry number ''{0,number,integer}'' has invalid value specified in "Transformation function" column. </entry>
+    <entry key="InvalidForwardingTableFile">The XML definition of the forwarding table in ''{0}'' is invalid: ''{1}''. </entry>
+    <entry key="InvalidPartHandler">Invalid handler supplied</entry>
+    <entry key="InvalidLineLength">Invalid maximum line length specified.  The MDL file line length must be 80 bytes or more.  Use -1 for unlimited line length.</entry>
+    <entry key="InvalidModelPackage">File ''{0}'' does not contain a valid Simulink model in SLX format: {1}</entry>
+    <entry key="InvalidParameterValue">Invalid value for parameter "{0}"</entry>
+    <entry key="InvalidPartProperty">''{0}'' is not a valid property name for an SLX part.  Allowed properties are "Name","Filter" and "ThumbnailFile".</entry>
+    <entry key="LoaderErrorMDL">{0}, line {1,number,integer}: {2}</entry>
+    <entry key="LoaderErrorSLX">{0} ({1}, line {2,number,integer}): {3}</entry>
+    <entry key="MissingContentType">No ContentType defined for part: {0}</entry>
+    <entry key="MissingPropertyType">No type specified for property {0}</entry>
+    <entry key="ModelSearchStringParseFailed" translate="false">Error in query:\n\n{0}\n{1}</entry>
+    <entry key="ModelSearchStringEmpty" translate="false">Search query is empty and will be ignored.</entry>
+    <entry key="ModelSearchIncorrectNumberOfOutputArguments">The number of input queries ({0, number, integer}) does not equal the number of output arguments.</entry>
+    <entry key="UnknownPropertyType">Unknown type specified for property {0}</entry>
+    <entry key="NameTooLong">The name ''{0}'' is not valid because it has more than {1,number,integer} characters.</entry>
+    <entry key="NonEmptyParameterRequired">The value of parameter "{0}" must not be empty</entry>
+    <entry key="NoErrorMessageFound">No error message found</entry>
+    <entry key="ObjectClassNotFound">No class found with the specified ObjectCls=''{0}''</entry>
+    <entry key="ObjectNotFound">No object found with the specified ObjectID</entry>
+    <entry key="PackageOpen">Package ''{0}'' is open</entry>
+    <entry key="PackageNotOpen">Package ''{0}'' is not open</entry>
+    <entry key="PackageMetadataNotWritable">Metadata parts are not writable. Write access to part "{1}" in package "{0}" denied.</entry>
+    <entry key="PackageModifiedSinceLastRead">SLX file ''{0}'' has been modified since it was opened for reading.  Cannot read part ''{1}''.</entry>
+    <entry key="ParameterAlreadySet">Parameter "{0}" has already been set</entry>
+    <entry key="ParameterNameTooLong">Length of parameter name ({0}) must be less than {1,number,integer} characters</entry>
+    <entry key="ParsingCompleted">Parsing completed</entry>
+    <entry key="PartNotFound">Part ''{0}'' not found: {1}</entry>
+    <entry key="PartNotFoundInPackage">File ''{0}'' does not contain the requested part: {1}</entry>
+    <entry key="PartDefinitionHasEmptyRelationship">Part ''{0}'' has not been created in the package ''{1}'': The relationship type must not be empty.</entry>
+    <entry key="PermissionDenied">Permission denied</entry>
+    <entry key="RemoveError">Error deleting "{0}": {1}</entry>
+    <entry key="RenameError">Error renaming "{0}" to "{1}": {2}</entry>
+    <entry key="ReservedParameter">Parameter name "{0}" is reserved for internal use and should not appear in a model file.  Its value will be ignored.</entry>
+    <entry key="RuleProcessorBadState">Cannot execute this method because the ExportRuleProcessor object has been closed.</entry>
+    <entry key="FieldRequiredString" note="stringDatatypeUpdate">Field ''{0}'' must be supplied and must be a character vector</entry>
+    <entry key="FieldRequiredLogical">Field ''{0}'' must be supplied and must be a logical scalar</entry>
+    <entry key="SetDateToValue">''The property {0} has been set to '', {1}, ''.''</entry>
+    <entry key="SLXFileMissing">File "{0}" is missing.  If the model was not fully loaded, the new file might be missing some parts from the old one.</entry>
+    <entry key="SLXReadError">Error reading SLX file "{0}": {1}\nIf the model was not fully loaded, the new file might be missing some parts from the old one.</entry>
+    <entry key="TooManyArrayElements">Too many elements supplied for array</entry>
+    <entry key="UDDObjectNotFound">No object found with the specified ID</entry>
+    <entry key="UnpackedLocationMissing">Folder "{0}" was being used by block diagram "{1}" but it has been deleted.  Simulink will recreate the folder now, but some changes made since the model was loaded may have been lost.  Consult the documentation for more information.</entry>
+    <entry key="UnpackedLocationCreationError">Failed to create unpacked location "{0}".  Please report this error to MathWorks.</entry>
+    <entry key="ObjectClassNameNotSpecified">Cannot create object because no "ClassName" property was specified</entry>
+    <entry key="UDDPropertyReadError">Cannot read property ''{0}'' of an object of class ''{1}'': {2}</entry>
+    <entry key="UDDPropertyWriteError">Error writing property ''{0}'' in object of class ''{1}'': {2}</entry>
+    <entry key="UDDRecursionLimitReached">Maximum object depth ({0,number,integer}) reached while writing object of class {1}.{2}.</entry>
+    <entry key="UnexpectedArrayType">Unexpected array type "{0}"</entry>
+    <entry key="UnexpectedCharacters">Unexpected characters at or before line {0,number,integer}, column {1,number,integer}</entry>
+    <entry key="UnexpectedEndOfSection">Unexpected end of section</entry>
+    <entry key="UnexpectedLoaderState">Unexpected loader state</entry>
+    <entry key="UnexpectedParameter">Parameter "{0}" was not expected here</entry>
+    <entry key="UnexpectedTag">Tag "{0}" was not expected here</entry>
+    <entry key="UnexpectedMathopRuleArgument">Encountered unexpected rule argument "{0}" while processing "mathop" Export Rule action</entry>
+    <entry key="UnsupportedEncoding">The encoding specified in the file, {0}, is not supported, and the current encoding will be used instead.</entry>
+    <entry key="UnknownVersion">&lt;unknown release&gt;</entry>
+    <entry key="UnknownExportToVersion">Cannot 'Export to' unknown release ''{0}''</entry>
+    <entry key="UnsupportedDataFormat">Cannot save the value of parameter "{0}" because it uses an unsupported data format</entry>
+    <entry key="UnsupportedExportRuleAction">Cannot perform Export Rule action "{0}" on "{1}" because this action is not supported. </entry>
+    <entry key="UnmatchedExportRuleStart">Unmatched start rule ''&lt;'' in Export Rule ''{0}''</entry>
+    <entry key="UnmatchedExportRuleEnd">Unmatched end rule ''&gt;'' in Export Rule ''{0}''</entry>
+    <entry key="UnterminatedString" note="stringDatatypeUpdate">The string is unterminated</entry>
+    <entry key="UserDataCorrupted">UU-encoded data in the file has an invalid format and cannot be loaded</entry>
+    <entry key="WrongParameter">Unexpected parameter "{0}".  "{1}" was expected</entry>
+    <entry key="XMLParsingError">{0}, line {1,number,integer}, column {2,number,integer}: XML parse error: {3}</entry>
+    <entry key="XMLWritingError" translate="false">Error writing XML</entry>
+  </message>
+</rsccat>

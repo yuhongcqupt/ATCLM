@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- Copyright 2013 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="SetupDescription">Created the temporary folder "{0}".</entry>
+    <entry key="TeardownDescription">Deleted the temporary folder "{0}" and all its contents.</entry>
+    <entry key="FolderPreserved">Because of a failure in the test using the TemporaryFolderFixture, the following folder will not be deleted:</entry>
+    <entry key="DeletionFailed">Deletion of "{0}" failed. Caused by:\n{1}</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  rsccat
+-->

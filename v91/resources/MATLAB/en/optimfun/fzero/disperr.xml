@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="InvalidArg">DISPERR (in FZERO) called with invalid argument.</entry>
+  </message>
+</rsccat>

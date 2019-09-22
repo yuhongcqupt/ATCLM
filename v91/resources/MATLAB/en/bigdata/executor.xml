@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- Copyright 2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+    <message>
+        <!-- Please keep in alphabetical order! -->
+        <entry key="EnvironmentDoesNotSupportTall">The current execution environment does not support evaluating tall expressions. Use MAPREDUCER to change the environment.</entry>
+        <entry key="InvalidKeyType">Tall arrays of type ''{0}'' are not supported for the group input argument.</entry>
+        <entry key="ProgressBegin">Evaluating tall expression using the {0}:\n</entry>
+        <entry key="ProgressOverallComplete">Evaluation completed in {0}\n</entry>
+        <entry key="ProgressOverallUpdate">Evaluation {0}% complete\n</entry>
+        <entry key="ProgressPassComplete"> - Pass {0}: Completed in {1}\n</entry>
+        <entry key="ProgressPassUpdate"> - Pass {0}: {1}% complete\n</entry>
+        <entry key="ProgressPassWithNumPassesComplete"> - Pass {0} of {1}: Completed in {2}\n</entry>
+        <entry key="ProgressPassWithNumPassesUpdate"> - Pass {0} of {1}: {2}% complete\n</entry>
+        <entry key="SerialExecutorName">Local MATLAB Session</entry>
+        <entry key="SparkExecutorName">Spark Cluster</entry>
+        <entry key="SparkUnsupportedDatastore">Datastore not supported by the Spark execution environment. Use MAPREDUCER to change the environment.</entry>
+        <entry key="SparkUnsupportedDatastoreOnHdfs">Datastore not supported by the Spark execution environment on HDFS. Use MAPREDUCER to change the environment.</entry>
+    </message>
+</rsccat>

@@ -1,0 +1,31 @@
+{
+"runtests":
+{
+        "inputs":
+        [
+                {"name":"test", "kind":"required", "type":[["identifier=function,package"], ["filepath=*.m,*.p"]]},
+                {"name":"BaseFolder", "kind":"namevalue"},
+                {"name":"IncludeSubfolders", "kind":"namevalue"},
+                {"name":"IncludeSubpackages", "kind":"namevalue"},
+                {"name":"Name", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.nameChoices(test)"]]},
+                {"name":"ParameterName", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.parameterNameChoices(test)"]]},
+                {"name":"ParameterProperty", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.parameterPropertyChoices(test)"]]},
+                {"name":"Tag", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.tagChoices(test)"]]},
+                {"name":"UseParallel", "kind":"namevalue"}
+        ]
+},
+"testsuite":
+{
+        "inputs":
+        [
+                {"name":"test", "kind":"required", "type":[["identifier=function,package"], ["filepath=*.m,*.p"]]},
+                {"name":"BaseFolder", "kind":"namevalue"},
+                {"name":"IncludeSubfolders", "kind":"namevalue"},
+                {"name":"IncludeSubpackages", "kind":"namevalue"},
+                {"name":"Name", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.nameChoices(test)"]]},
+                {"name":"ParameterName", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.parameterNameChoices(test)"]]},
+                {"name":"ParameterProperty", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.parameterPropertyChoices(test)"]]},
+                {"name":"Tag", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.tagChoices(test)"]]}
+        ]
+}
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- Copyright 2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="InvalidInterfaceClass" translate="false">Interface class must derive from the Service interface.</entry>
+  </message>
+</rsccat>
+

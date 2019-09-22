@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- Copyright 2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+    <message>
+        <entry key="invalidFilenameFromSplit">File ''{0}'' does not belong to the datastore.</entry>
+        <entry key="labelsNotCellstr" note="stringDatatypeUpdate">Labels must be a cell array of character vectors, or a vector of numeric, logical, or categorical type.</entry>
+
+        <!-- splitEachLabel messages -->
+        <entry key="numOutMoreThanNumProps">Number of output arguments exceeds {0} splits.</entry>
+        <entry key="nonPositiveProportions">Proportions must be positive numbers.</entry>
+        <entry key="optionsAfterIncExc">Invalid parameter order. ''Include'' or ''Exclude'' must be last.</entry>
+        <entry key="combineIncExcNVPair">''Include'' and ''Exclude'' must not be combined.</entry>
+        <entry key="splitWhenLabelsEmpty">splitEachLabel requires non-empty Labels property.</entry>
+        <entry key="sumFracMoreThanOne">Sum of fractional proportions must not exceed 1.</entry>
+        <entry key="fracMoreThanOne">Fractional proportions must be less than 1.</entry>
+        <entry key="sumPropMoreThanLabels">Sum of proportions ({0}) exceeds the minimum number of files ({1}) in all labels.\n\nUse countEachLabel to find the number of files in each label.</entry>
+        <entry key="neitherFracNorNum">Proportions must be either all fractions or all integers.</entry>
+        <entry key="nonScalarNumericalInput">Proportions must be scalar.</entry>
+        <entry key="emptyArguments">Not enough input arguments. Specify splitting proportions.</entry>
+        <entry key="noNumericalInput">Invalid parameter type. Splitting proportions must be numeric.</entry>
+        <entry key="includeNotInLabels">Unrecognized ''Include'' label: {0}.</entry>
+        <entry key="incExcInvalidType">''Include'' or ''Exclude'' labels must be the same type as the Labels property.</entry>
+        <entry key="labelsLabelSourceCombined">''Labels'' and ''LabelSource'' must not be combined.</entry>
+        <entry key="unableToReadFile">Unable to read file: ''{0}''.</entry>
+    </message>
+</rsccat>

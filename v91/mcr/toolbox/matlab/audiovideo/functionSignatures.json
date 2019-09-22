@@ -1,0 +1,28 @@
+{
+"VideoReader":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":[["filepath"], ["matlabpath=*.asf,*.asx,*.avi,*.m4v,*.mj2,*.mov,*.mp4,*.mpg,*.ogg,*.wmv"]]},
+		{"name":"Tag", "kind":"namevalue", "type":"char"},
+		{"name":"UserData", "kind":"namevalue"},
+        {"name":"CurrentTime", "kind":"namevalue", "type":"double"}
+	],
+	"outputs":
+	[
+		{"name":"obj", "type":"VideoReader"}
+	]
+},
+"VideoWriter":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":[["filepath"], ["char"]]},
+		{"name":"profile", "kind":"optional", "type":"choices={'Archival','Motion JPEG AVI','Motion JPEG 2000','MPEG-4','Uncompressed AVI','Indexed AVI','Grayscale AVI'}"}
+	],
+	"outputs":
+	[
+		{"name":"obj", "type":"VideoWriter"}
+	]
+}
+}

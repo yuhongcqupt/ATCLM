@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Copyright 2014 The MathWorks, Inc. -->
+<settings name="shared" visible="false" xmlns="urn:mathworks.matlab.settings"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <settings name="matlab" visible="false">
+        <settings name="desktop" visible="false">
+            <settings name="currentfolder" visible="false">
+                <settings name="sourcecontrol" visible="true">
+                    <key name="Enabled" visible="true">
+                        <bool>
+                            <value>1</value>
+                        </bool>
+                    </key>
+                </settings>
+            </settings>
+        </settings>
+    </settings>
+</settings>

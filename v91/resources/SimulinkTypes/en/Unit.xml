@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2013 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="SimulinkTypes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/.xsd">
+  <message>
+    <entry key="InvalidUnitName">Invalid unit name ''{0}''.</entry>
+    <entry key="InvalidUnitSystemName">Invalid unit system name ''{0}''. Unit system names cannot contain commas.</entry>
+    <entry key="AlphaNumericStringOnlyForName">Unit name ''{0}'' must be an alphanumeric string.</entry>
+    <entry key="InvalidUnitExpression">Invalid unit expression ''{0}''.</entry>
+    <entry key="UnitNameConfliction">Unit name ''{0}'' already exists in the unit database. Unit names must be unique.</entry>
+    <entry key="ParsingError">Encountered error while parsing unit expression ''{0}'' at position {1,number,integer}.</entry>
+    <entry key="UnitNotInDatabase">Unable to find unit ''{0}'' in unit database. </entry>
+    <entry key="UnitPrefixNotInDatabase">Unable to find unit prefix ''{0}'' in unit database.</entry>
+    <entry key="AbstractUnitNotInDatabase">Unable to find physical quantity ''{0}'' in unit database.</entry>
+    <entry key="UnitProvenanceNotInDatabase">Unable to find unit provenance ''{0}'' in unit database.</entry>
+    <entry key="EmptyUnitNameAndSymbol">Unit name and symbol are empty.</entry>
+    <entry key="EmptyUnitPrefixNameAndSymbol">Prefix name and symbol are empty.</entry>
+    <entry key="EmptyPhysicalQuantityName">Physical Quantity name is empty.</entry>
+    <entry key="UnsupportedUnitOperation">Operation not supported.</entry>
+    <entry key="UnitDatabaseFileOpenError">Unable to open unit database file ''{0}''.</entry>
+    <entry key="UnitDatabaseFileLoadMissingFieldError">Unit database file ''{0}'' is missing field ''{1}''.</entry>
+    <entry key="UnitDatabaseFileLoadFieldError">Unit database file ''{0}'' encountered error while loading field ''{1}''.</entry>
+    <entry key="SimilarInstanceThere">Unit name ''{0}'', symbol ''{1}'', or ASCII symbol ''{2}'' already exists in the unit database.</entry>
+    <entry key="SymbolNotDefined">Unit 'Symbol' property is empty.</entry>
+    <entry key="ASCIISymbolNotDefined">Unit 'ASCIISymbol' property is empty.</entry>
+    <entry key="NameNotDefined">Unit 'Name' property is empty.</entry>
+    <entry key="UnitAlreadyInDatabase">Unit ''{0}'' with symbol ''{1}'' already exists in the unit database. Units must be unique.</entry>
+    <entry key="UnitProvenanceAlreadyInDatabase">Unit provenance with identifier ''{0}'' already exists in the unit database.</entry>
+    <entry key="UnitAliasMappingExists">Unit ''{0}'' with alias ''{1}'' already exists in the unit database. Units must be unique.</entry>
+    <entry key="CannotConvertUnspecified">Unable to convert between ''{0}'' and ''{1}'' because an empty unit ('''') indicates that the unit is unspecified. Consider using a Signal Specification block to specify a unit.</entry>
+    <entry key="UnitsNotConvertible">Unable to convert unit ''{0}'' to ''{1}'' because ''{2}'' cannot be represented as an affine transform of ''{3}''.</entry>
+    <entry key="UnresolvedUnitsNotConvertible">Unable to convert unit ''{0}'' to ''{1}'' because ''{2}'' are not in the unit database.</entry>
+    <entry key="DimensionallyInconsistent">Physical quantity ''{1}'' assigned to unit ''{0}'' is dimensionally incompatible.</entry>
+    <entry key="UndefinedAbstractUnit">Unable to find physical quantity ''{0}'' in the unit database.</entry>
+    <entry key="DimensionallyInequivalent">Units are dimensionally incompatible.</entry>
+    <entry key="CanonicalScalingFactorDifference">Units are incompatible due to a difference in scaling factor. Add a Unit Conversion block.</entry>
+    <entry key="IncompatibleUnits">Units have different assigned physical quantities.</entry>
+    <entry key="DifferentOffsets">Units have different offsets.</entry>
+    <entry key="ReciprocalUnits">Units are related by a reciprocal. Add a Unit Conversion block.</entry>
+    <entry key="UnresolvedUnits">One or both signals have units that are not in the unit database.</entry>
+    <entry key="MixedUnits">One or both signals have multiple units that are incompatible.</entry>
+    <entry key="NonAsciiDisplayUnsupported">Unit 'Display' value ''{0}'' contains non-ASCII characters.</entry>
+    <entry key="NonAsciiSymbolUnsupported">Unit 'AsciiSymbol' value ''{0}'' contains non-ASCII characters.</entry>
+    <entry key="PhysModUnitIncompatible">Simscape unit ''{0}'' incompatible with Simulink units.</entry>
+    <entry key="UnitErrorFromBlock">Block ''{0}'' reports unit error.</entry>
+    <entry key="InvalidUnitId">Invalid unit ID {0,number,integer}.</entry>
+    <entry key="AbstractUnitWithoutUnit">Physical quantity ''{0}'' must be specified with a unit.</entry>
+    <entry key="AbstractUnitParsingError">Encountered error while parsing ''{0}'' for physical quantity specification.</entry>
+  </message>
+</rsccat>

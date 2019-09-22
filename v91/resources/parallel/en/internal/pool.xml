@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Copyright 2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+      <!-- Please keep entries in sorted order -->
+      <entry key="DataQueueNoAddress">You cannot send to the same instance as you were created on.</entry>
+      <entry key="DataQueueNoPool">To send and receive messages there must be a pool.</entry>
+      <entry key="DataQueueNoQueue">You cannot poll on a queue that has been serialized for sending.</entry>
+      <entry key="DataQueueWrongConstructorArgs">DataQueue construction requires no additional arguments. Use D = parallel.internal.pool.DataQueue.</entry>      
+  </message>
+</rsccat>

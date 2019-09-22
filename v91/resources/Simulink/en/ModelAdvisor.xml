@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="ModelAdvisorDummyMessage">Model Advisor</entry>    
+    <entry key="NoSupportRTW">The following constructs are not supported when generating code</entry>
+    <entry key="ConsiderReplacing">Consider replacing the blocks listed in the results. For details, see the Code Generation Support column of the table:</entry>
+    <entry key="BlockSupportTable">Simulink Block Support</entry>
+    <entry key="egReplaceBlocks">(e.g., a discrete-time equivalent, a combination of primitive blocks, or a custom S-Function.)</entry>
+    <entry key="CheckRTWBlocks">Check for blocks not supported by Simulink Coder: </entry>
+    <entry key="QuestionableBlocksSubCheck1Passed">Constructs that are not supported when generating code were not found in the model or subsystem</entry>
+    <entry key="QuestionableBlocksSubTitle2">Check for constructs in the model that are not recommended for production code generation </entry>
+    <entry key="QuestionableBlocksSubCheck2Info">Identify blocks that are not recommended to be used for code generation. </entry>
+    <entry key="QuestionableBlocksSubCheck2RecAction1">    Although Embedded Coder supports these blocks, they are not recommended for production code deployment. For details, see the Code Generation Support column of the table: </entry>
+    <entry key="QuestionableBlocksSubCheck2RecAction2">    Review the support notes for code generation for these blocks and follow the given advice.</entry>
+    <entry key="QuestionableBlocksSubCheck2Passed">Constructs that are not recommended for production code generation were not found in the model or subsystem</entry>
+    <entry key="NoSupportRTWEC">The following constructs are not recommended for production code generation</entry>
+    <entry key="CheckRTWECBlocks">Check for blocks not recommended by Embedded Coder: </entry>
+    <entry key="GainBlocksSubTitle">Check for usage of Gain blocks</entry>
+    <entry key="GainBlocksInformation">Identify Gain blocks whose value equals 1</entry>
+    <entry key="GainBlocksWarning">The model or subsystem contains Gain blocks whose value equals 1</entry>
+    <entry key="GainBlocksPassed">There are no Gain blocks whose value equals 1 in the model or subsystem</entry>
+    <entry key="CheckGainBlocks">If you are using these blocks as buffers, you should replace them with Signal Conversion blocks</entry>
+    <entry key="CheckGainRecAct">If you are using these blocks as buffers, you should replace them with Signal Conversion blocks.</entry>
+  </message>
+</rsccat>

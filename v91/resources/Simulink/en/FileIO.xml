@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="FromFileCorruptMatFile">Unable to read MAT-file {0}.\nFile may be corrupt.</entry>
+    <entry key="FromFileGeneralFileNameErr">Error encountered while reading file ''{0}''</entry>
+    <entry key="FromFileInvTimeVectorIncr">Time values must be monotonically non-decreasing</entry>
+    <entry key="FromFileInvTimeseries">Invalid timeseries object.  The most common cause for this is empty timeseries objects.  To correct this problem, add at least 1 sample to this timeseries.</entry>
+    <entry key="FromFileNonFiniteDataErr">Non-finite data, Nan, Inf, or -Inf, are encountered while reading from file ''{0}''</entry>
+    <entry key="FromFileReadingErr">Simulink does not support loading the input data in file ''{0}''. Simulink can only load two-dimensional arrays or timeseries objects. The array must consist of one-dimensional, double, noncomplex samples. To load data having a different type, complexity, or dimension, use a timeseries object. For either an array or a timeseries object, at least one sample point is necessary.</entry>
+    <entry key="FromFileReadingPre73Err">Simulink does not support loading the input data in file ''{0}''. For data saved using MAT file versions prior to 7.3, Simulink can only load two-dimensional arrays consisting of one-dimensional, double, noncomplex samples. To load data of any other type, complexity or dimension, use a timeseries object and save the file using MAT file version 7.3 or later.  For example, use: ''save file_name -v7.3 timeseries_object''.</entry>
+    <entry key="RTWFromFileInconsistentComplexity">The signal complexity in MAT-file ''{0}'' ({1}) differs from the expected signal complexity ({2}).</entry>
+    <entry key="RTWFromFileInconsistentDatatypesEnum">Data type ''{0}'' in MAT-file ''{1}'' is incompatible with the enumerated data type specified in MATLAB. Either the MAT-file data contain enumerated names that do not exist in the current class definition or at least one enumerated value does not match the corresponding value in the current class definition. Use the load(''{2}'') command, update the data to match the current class definition, and resave the MAT-file.</entry>
+    <entry key="RTWFromFileInconsistentDatatypesFi">The fixed-point data type in MAT-file ''{0}'' differs from the expected fixed-point data type.</entry>
+    <entry key="RTWFromFileInconsistentDatatypesGeneral">The signal data type in MAT-file ''{0}'' ''{1}'' differs from the expected signal data type ''{2}''.</entry>
+    <entry key="RTWFromFileInconsistentDims">The signal dimensions in MAT-file ''{0}'' {1} differs from the expected signal dimensions {2}.</entry>
+    <entry key="ToFromFileOpenCloseErr">Error opening or closing file ''{0}''</entry>
+    <entry key="ToFileWasTouchedWhileOnPause">Unable to continue logging into file ''{0}'' because it was modified or removed while simulation was on pause.</entry>
+    <entry key="ToFileFileNameIsTooLong">File name is too long. Specify a shorter file name.</entry>
+    <entry key="TooManyFilesError">Too many files are being accessed by the system. Consider the following approaches: reduce the number of To File blocks in your model or close other applications that may access files.</entry>
+  </message>
+
+</rsccat>
+
+<!-- LocalWords:  noncomplex resave
+-->

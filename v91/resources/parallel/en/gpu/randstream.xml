@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2013 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+    <!-- Please keep entries in sorted order -->
+    <entry key="BadStream">Must supply a ''parallel.gpu.RandStream'' not a ''{0}''.</entry>
+    <entry key="BadSyntax">Optional arguments must be supplied as parameter-value pairs.</entry>
+    <entry key="CreateUnknownRNGType">Unsupported RNG type: {0}.</entry>
+    <entry key="DispHeader">{0} random stream on the GPU</entry>
+    <entry key="DispHeaderGlobal">{0} random stream on the GPU (current global stream)</entry>
+    <entry key="InvalidNormalTransform">The requested normal transform ''{0}'' is incompatible with generator ''{1}''.</entry>
+    <entry key="Philox4x32InvalidState">Invalid state for a Philox4x32 generator.</entry>
+    <entry key="Philox4x32x10Description">Philox 4x32 generator with 10 rounds (supports parallel streams)</entry>
+    <entry key="RNGBadSettings">S must contain generator settings captured previously using S = PARALLEL.GPU.RNG.</entry>
+    <entry key="Threefry4x64InvalidState">Invalid state for a threefry4x64 generator.</entry>
+    <entry key="Threefry4x64x20Description">Threefry 4x64 generator with 20 rounds (supports parallel streams)</entry>
+  </message>
+</rsccat><!-- LocalWords:  RNG ThreeFry Philox
+-->

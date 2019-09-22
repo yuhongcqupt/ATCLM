@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="IllegalType">Parameters must be of type {0}</entry>
+    <entry key="WrongNumParams">The method {0}.{1} expects {2,number,integer} to {3,number,integer} parameters</entry>
+    <entry key="UnknownCapability">There is no capability called ''{0}'', capabilities must be registered before use</entry>
+    <entry key="IllegalSupportValue" note="stringDatatypeUpdate">Support value must be Yes, No, or Unknown. ''{0}'' is not allowed</entry>
+    <entry key="NotCapabilityObject">Block ''{0}'': The expression ''{1}'' did not return a Capabilities object</entry>
+    <entry key="NotCapabilityObject2">A Matlab object must be a Capabilities object</entry>
+    <entry key="ErrMaskEvalExpr">Block ''{0}'' could not evaluate ''{1}''.</entry>
+    <entry key="ErrMaskNotFound">This subsystem ({0}) is not supported by {1}.m</entry>
+    <entry key="ErrOnlyMasks">This function, {0}, only supports masked blocks</entry>
+    <entry key="ErrCannotParse" note="stringDatatypeUpdate">Block {0}: Cannot parse character vector ''{1}''</entry>
+    <entry key="ErrIllegalCapStr" note="stringDatatypeUpdate">Block {0}: Illegal cap character vector: ''{1}''</entry>
+    <entry key="FirstSetMustBeNameless">The first capability set added to a Capability must have an empty name</entry>
+    <entry key="OnlyFirstSetMayBeNameless">Only the first capability set added to a Capability may have an empty name</entry>
+    <entry key="UnknownModeName">The specified mode name (''{0}'') is not defined in this Capability</entry>
+    <entry key="NoDataFound">No capability data found for system ''{0}''</entry>
+    <entry key="ErrUnknownHtmlId">Internal error: Unknown HTML identifier: {0}</entry>
+    <entry key="ErrUnknownFootnoteId">Internal error: Unknown footnote identifier: {0}</entry>
+    <entry key="ErrRegistrationFcn">Could not register new capabilities because the error occurred during the registration process.</entry>
+    <entry key="ErrNoBrowser">Web browser not found</entry>
+    <entry key="ErrNoBrowserLaunch">Web browser cannot be launched</entry>
+    <entry key="UnrecognizedAction">Unrecognized action: {0}</entry>
+    <entry key="UseFromMenu"><![CDATA[Please use the model menu > Help > Simulink > Block Data Types & Code Generation Support > All Tables]]></entry>
+    <entry key="LoadingSL">Loading Simulink</entry>
+    <entry key="FnNotInsideTrig">Cannot be used inside a triggered subsystem hierarchy.</entry>
+    <entry key="FnAbsTime">These blocks do not reference absolute time when configured for sample-based operation. In time-based operation they depend on absolute time.</entry>
+    <entry key="FnAbsTimeInTrig">Depends on absolute time when placed inside a triggered subsystem hierarchy.</entry>
+    <entry key="FnFixed4Real"><![CDATA[Currently, <tt>reciprocal</tt> supports fixed-point data types only for real inputs.]]></entry>
+    <entry key="FnOnlyTrueFloat"><![CDATA[Supported only when a model''s <b>Fixed-Point Settings > Data type override</b> is set to <tt>Double</tt> or <tt>Single</tt>.]]></entry>
+    <entry key="FnSupportViaFI"><![CDATA[Supports input via <tt>fi</tt> objects created using Fixed-Point Designer.]]></entry>
+    <entry key="FnIgnoredCodeGen">Ignored for code generation.</entry>
+    <entry key="FnReliesOnMemOp"><![CDATA[Generated code relies on <tt>memcpy</tt> or <tt>memset</tt> functions (string.h) under certain conditions.]]></entry>
+    <entry key="FnUseRepSeqBlock">Consider using Repeating Sequence Stair or Repeating Sequence Interpolated blocks for code generation.</entry>
+    <entry key="FnConsiderMdlDiscr"><![CDATA[Consider using the Model Discretizer to map these continuous blocks into discrete equivalents that support code generation. From a model, select <b>Analysis > Control Design > Model Discretizer</b> to access the Model Discretizer.]]></entry>
+    <entry key="FnFixptSFun"><![CDATA[See <a href="matlab:helpview([docroot ''/toolbox/fixedpoint/fixedpoint.map''],''Writing_Fixed-Point_S-Functions'')">Writing Fixed-Point S-Functions</a> for details on using fixed-point data types in S-functions.]]></entry>
+    <entry key="FnNot4ProdCode">Not recommended for production code.</entry>
+    <entry key="FnSFunMLNotRT">Real-time code generation does not support S-functions that call MATLAB.</entry>
+    <entry key="FnConsiderEML">Consider using the MATLAB Function block instead.</entry>
+    <entry key="FnLev1MFileSFun"><![CDATA[Level-1 MATLAB S-functions support only the <tt>double</tt> data type. Level-2 MATLAB S-functions support all data types that Simulink supports.]]></entry>
+    <entry key="FnBitOpNotBool">Bit operations are not recommended for use with boolean signals.</entry>
+    <entry key="FnSuppDependsImpl">Actual data type or capability support depends on block implementation.</entry>
+    <entry key="FnFixed4Table">This block supports fixed-point data types for ''Table'' data only.</entry>
+    <entry key="FnFixed4CORDIC">This block supports fixed-point and base integer data types for ''Approximation method'' CORDIC.</entry>
+    <entry key="FnFixed4NewtonRaphson">This block supports fixed-point and base integer data types for ''Method'' Newton-Raphson.</entry>
+    <entry key="FnBoolNotRec">This block is not recommended for use with boolean signals.</entry>
+    <entry key="FnFixedOnlySupportSigned">This block only supports signed fixed-point data types.</entry>
+    <entry key="FnSupportsUpTo32FixedPointDataType">Supports up to 32-bit fixed-point data types.</entry>
+    <entry key="FnSupportsSubsetOfRTW">Code generation for RSim target provides identical support as Simulink; all other code generation targets support only double, one-dimensional, real signals in array with time format.</entry>
+    <entry key="FnVarStepSolverNotSupported">Not supported with variable-step solvers.</entry>
+    <entry key="HtTitleForModel">Simulink Block Data Type Support for {0}</entry>
+    <entry key="HtTitle">Simulink Block Data Type Support</entry>
+    <entry key="HtTitleForAll">Simulink Block Data Type Support for all libraries</entry>
+    <entry key="HtCharset" translate="false">utf-8</entry>
+    <entry key="HtFontFamily" translate="false">Arial, Helvetica, sans-serif</entry>
+    <entry key="HtFontSize" translate="false"></entry>
+    <entry key="HtTableDesc1SL">The following table describes the data types that the blocks\n in the main Simulink library support.</entry>
+    <entry key="HtTableDesc1Generic">The following table describes the data types that the blocks\n in this library support.</entry>
+    <entry key="HtTableDesc1All">The following table describes the data types that the blocks\n in these libraries support.</entry>
+    <entry key="HtTableDesc1B"><![CDATA[All blocks that can generate code contain an\n "X" in the column titled <b>Code Generation Support</b>.]]></entry>
+    <entry key="HtProdCode"><![CDATA[A subset of these blocks are not recommended for production code as flagged by <a href="#F{0,number,integer}">footnote {1,number,integer}</a>. <a href="#criteria">Guidelines</a> to determine when a block is recommended for production code are listed below the table.]]></entry>
+    <entry key="HtTableDesc2"><![CDATA[Some blocks have <a href="#footnotes">footnotes</a> that should be considered when using them.\n Footnotes are\n indicated in the table by numbers in parenthesis &quot;(#)&quot;, and \n are described below the table.]]></entry>
+    <entry key="HtTableLegendHead">Table legend: If a column has an:</entry>
+    <entry key="HtTableLegendStd">"X", the block supports that data type or capability.</entry>
+    <entry key="HtTableLegendHasSU">"s" or a "u", the block supports signed or unsigned varieties\n of that data type, respectively.</entry>
+    <entry key="HtTableLegendHasIO">"I" or an "O", the block supports that data type for input\n or output ports, respectively.</entry>
+    <entry key="HtTableDescUnknown">If a block does not know if it supports a\n capability, that is indicated with a ''{0}'' in the table.</entry>
+    <entry key="HtSimLib">Simulink Library</entry>
+    <entry key="HtLibrary">Library</entry>
+    <entry key="HtModel">Model</entry>
+    <entry key="HtAllLib">All libraries</entry>
+    <entry key="HtSublibrary">Sublibrary</entry>
+    <entry key="HtBlock">Block</entry>
+    <entry key="HtHeaddouble">Double</entry>
+    <entry key="HtHeadsingle">Single</entry>
+    <entry key="HtHeadboolean" translate="false">Boolean</entry>
+    <entry key="HtHeadinteger">Base Integer</entry>
+    <entry key="HtHeadfixedpt">Fixed-Point</entry>
+    <entry key="HtHeadenumerated">Enumerated</entry>
+    <entry key="HtHeadbus">Bus</entry>
+    <entry key="HtHeadcodegen">Code Generation Support</entry>
+    <entry key="HtHeadmultidimension">Multidimension Support</entry>
+    <entry key="HtHeadvariablesize">Variable-Size Support</entry>
+    <entry key="HtHeadforeach">For Each Subsystem Support</entry>
+    <entry key="HtHeadproduction">Production Quality</entry>
+    <entry key="HtBlockIsSupported" translate="false">X</entry>
+    <entry key="HtSupportUnknown" translate="false">.</entry>
+    <entry key="HtOpenParen" translate="false">(</entry>
+    <entry key="HtCloseParen" translate="false">)</entry>
+    <entry key="HtSeparator" translate="false">,</entry>
+    <entry key="HtCriteriaTitle">Criteria for Selecting Blocks Recommended for Production Code</entry>
+    <entry key="HtCritTop">Blocks in Simulink that are designed for plant modeling and/or rapid prototyping\n environments may not be suitable for production code deployment. A block is not\n suitable for production deployment when the generated code:\n</entry>
+    <entry key="HtCritList1">Depends on continuous time</entry>
+    <entry key="HtCritList2">References non-finite values (Inf, -Inf, and NaN)</entry>
+    <entry key="HtCritList3">Contains instrumentation code suitable only for rapid prototyping</entry>
+    <entry key="HtFootnotes">Footnotes</entry>
+    <entry key="HtColon" translate="false">:</entry>
+    <entry key="HtBlockSupportsIn" translate="false">I</entry>
+    <entry key="HtBlockSupportsOut" translate="false">O</entry>
+    <entry key="HtBlockSupportsIO" translate="false"><![CDATA[<span class="bullet">&bull;</span>]]></entry>
+    <entry key="HtBlockSupportsSgn" translate="false">s</entry>
+    <entry key="HtBlockSupportsUns" translate="false">u</entry>
+    <entry key="HtBlockSupportsSgUn" translate="false">s,u</entry>
+    <entry key="WksVarStructNonEmptyTime">If this block resides in a For Each Subsystem, it cannot import workspace variables that are Structures with Time having an empty time field.</entry>
+    <entry key="MLSysVarSize"><![CDATA[See <a href="matlab:helpview(fullfile(docroot,''simulink'',''helptargets.map''), ''matlabSystemVariable'')">Variable-Size Signals</a> for more information.]]></entry>
+    <entry key="MLSysForEach"><![CDATA[See <a href="matlab:helpview(fullfile(docroot,''simulink'',''helptargets.map''), ''matlabSystemforEachSupport'')">System Objects in For Each Subsystems</a> for more information.]]></entry>
+    <entry key="MLSysBus"><![CDATA[See <a href="matlab:helpview(fullfile(docroot,''simulink'',''helptargets.map''), ''MATLABSystemBus'')">Nonvirtual Buses and MATLAB System Block</a> for more information.]]></entry>
+  </message>
+</rsccat>

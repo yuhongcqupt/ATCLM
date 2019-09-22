@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="mcos_factory_extras">
+  <message>
+    <entry key="CannotConvert">Cannot convert argument to {0}</entry>
+   </message>
+</rsccat>

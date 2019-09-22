@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- Copyright 2011-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="InvalidSharedTestFixturesAttribute">SharedTestFixtures must be a cell array of matlab.unittest.fixtures.Fixture instances.</entry>
+    <entry key="InvalidMethodAttributes">The {0} method has been defined with conflicting method attributes. It is also defined as a {1} method.</entry>
+    <entry key="InvalidStaticMethodAttribute">The {0} method in the {1} class has been defined with conflicting method attributes. It cannot be both a Static method and a {2} method.</entry>
+    <entry key="InvalidMethodName">"{0}" is not a valid method name because it contains a dot.</entry>
+    <entry key="InteractiveUseOnly">Unable to create an interactive TestCase while running a test.</entry>
+    <entry key="InvalidPropertyAttributes">The {0} property in the {1} class has been defined with conflicting property attributes.</entry>
+    <entry key="InconsistentMethodOverride" note="Example: The test1 method in the MyTest class has a different Test attribute in a superclass.">The {0} method in the {1} class has a different {2} attribute in a superclass.</entry>
+    <entry key="NonpublicMethod">The {0} method in the {1} class must be defined with public access.</entry>
+    <entry key="NonpublicProperty">The {0} property in the {1} class must be defined with public GetAccess.</entry>
+    <entry key="NonconstantParameter">The {0} property in the {1} class has been defined as a {2} but it is not Constant. All {3} properties must be Constant.</entry>
+    <entry key="DependentParameter">The {0} property in the {1} class has been defined as both Dependent and a {2}. {3} properties cannot be Dependent.</entry>
+    <entry key="NoDefaultValueForParameter">The {0} property in the {1} class has been defined as a {2} but has no default value defined in the properties block.</entry>
+    <entry key="InvalidDefaultValueForParameter">Unexpected default value for the {0} property in the {1} class. {2} properties must define a default value that is either a non-empty cell array or a scalar structure with at least one field.</entry>
+    <entry key="InvalidParameterCombinationAttribute">ParameterCombination attribute cannot be specified for the {0} method in the {1} class. The ParameterCombination attribute only applies to Test, TestMethodSetup, and TestClassSetup methods.</entry>
+    <entry key="InconsistentParameterDefinition">The {0} property is defined as a {1} in a superclass but not in the {2} class.</entry>
+    <entry key="TagsMustBeCellArrayOfStrings" note="stringDatatypeUpdate">TestTags must be a cell array of non-empty character vectors.</entry>	
+    <entry key="TagMustBeRow" note="stringDatatypeUpdate">Tag must be a character vector.</entry>
+    <entry key="InvalidTagsScope">TestTags attribute cannot be specified for the {0} method in the {1} class. The TestTags attribute only applies to Test methods.</entry>
+    <entry key="AbstractTestMethodTags">Abstract Test method {0} cannot define TestTags.</entry>
+    <entry key="MustBeTestCase">The specified class must refer to a subclass of matlab.unittest.TestCase.</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  rsccat Nonconstant
+-->

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Copyright 2013-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="UnmatchedName">Unrecognized parameter name ''{0}''.</entry>
+    <entry key="NameMustBeChar" note="stringDatatypeUpdate">Parameter name must be a character vector.</entry>
+    <entry key="NameAlreadyExists">A parameter name equivalent to ''{0}'' already exists. Redefining a parameter is not supported.</entry>
+    <entry key="NameMissingValue">Incorrect number of input arguments. Each parameter name must be followed by a corresponding value.</entry>    
+    <entry key="OverdeterminedParameters" note="Example: Invalid parameter combination. Specify either 'IncludeSubfolders' or 'IncludingSubfolders', but not both.">Invalid parameter combination. Specify either ''{0}'' or ''{1}'', but not both.</entry>
+  </message>
+</rsccat>

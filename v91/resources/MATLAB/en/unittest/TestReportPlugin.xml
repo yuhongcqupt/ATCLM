@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Copyright 2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="MissingFileExtension">File extension missing.  Expected ''{0}''.</entry>
+    <entry key="WrongFileExtension">Invalid file extension.  Expected ''{0}''.</entry>
+    <entry key="WindowsWithWordRequired">Creating PDF reports is only supported on Windows platforms containing Microsoft Word 2007 or a later version of Microsoft Word.</entry>
+    <entry key="CouldNotWriteToFile">Could not write to file {0}.\n{1}</entry>
+    <entry key="CouldNotWriteToFileDueToBadDirectory">Could not write to file ''{0}''.\nThe folder ''{1}'' does not exist or is not readable.</entry>
+  </message>
+</rsccat>

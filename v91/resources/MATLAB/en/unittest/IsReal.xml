@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="MustBeReal">The value must be real.</entry>
+    <entry key="MustNotBeReal">The value must not be real.</entry>
+  </message>
+</rsccat>

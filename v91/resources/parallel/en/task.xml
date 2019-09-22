@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- Copyright 2011-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+    <entry key="AddAdditionalPathsToPath">Error encountered while adding AdditionalPaths to MATLAB path.</entry>
+    <entry key="AddAttachedFilesToPath">Error encountered while adding AttachedFiles to MATLAB path.</entry>
+    <entry key="AddAttachedFilesToPathZipError">Error encountered while unzipping AttachedFiles. This can happen when the AttachedFiles are larger than 4GB.</entry>
+    <entry key="AutoAttachedFiles" note="{0} - the task function name">Files that are automatically added for ''{0}'':\n{1}</entry>
+    <entry key="CannotLoadFromMatFile">Task objects cannot be loaded from a MAT file or directly created from a constructor.</entry>
+    <entry key="CodeLine" note="This is used to indicate which line of code caused the error or warning in the task. {0} is the name of the file, {1} is the line number">{0} (line {1,number,integer})</entry>
+    <entry key="DiaryIncomplete">The diary of this task might be incomplete because the task is still running.</entry>
+    <entry key="EvaluateTaskUnexpectedError">UNEXPECTED ERROR in dctEvaluateTask/nEvaluateTask.</entry>
+    <entry key="GetInputData">Error encountered while getting input data from the task.</entry>
+    <entry key="InvalidDeleteSyntax">Invalid syntax. Use "delete(task)" to delete a task.</entry>
+    <entry key="MJSDataStorageFailed">Failed to read/write task data to the database.</entry>
+    <entry key="MJSTaskNotFound">The task could not be found.</entry>
+    <entry key="MJSUnableToSubmitResult">Unable to return results to jobmanager. The reason is :\n{0}</entry>
+    <entry key="NoAutoAttachedFiles" note="{0} - the task function name">No files automatically added for ''{0}''.</entry>
+    <entry key="PostTaskUnexpectedError">UNEXPECTED ERROR in dctEvaluateTask/nPostTaskFinish.</entry>
+    <entry key="PropertySetVersionMismatch">Properties must be set on tasks in the same MATLAB release that created the task: {0}</entry>
+    <entry key="TaskCancellationFailed">The cluster failed to cancel task execution. The error was: {0}</entry>
+    <entry key="TaskDestructionFailed">The cluster failed to destroy the task correctly. The error was: {0}</entry>
+    <entry key="TaskFinishUserError">Error thrown in user-supplied taskFinish function ''{0}''.</entry>
+    <entry key="TaskResultTooLarge">The task result was too large to be stored.</entry>
+    <entry key="TaskStartupUserError">Error thrown in user-supplied taskStartup function ''{0}''.</entry>
+    <entry key="UserCancellation">The task was cancelled by user "{0}" on machine "{1}".</entry>
+    <entry key="UserCancellationWithMessage">The task was cancelled by user "{0}" on machine "{1}" with message: "{2}".</entry>
+  </message>
+</rsccat>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="MPTInvalidInputArg">Invalid input arguments for {0}.</entry>
+    <entry key="MPTDuplicateEntity">''{0}'' is already in the data type list.</entry>
+    <entry key="MPTDuplicatePkg">Package ''{0}'' is already in the package list.\n</entry>
+    <entry key="MPTSLInvalidPkg">Invalid package name ''{0}''.\n</entry>
+    <entry key="MPTSLGenMsg" translate="false">{0}</entry>
+    <entry key="MPTSLMovePackage">Package ''{0}'' is not in the package list.</entry>
+    <entry key="MPTDelimiterUnAllowed">Delimiters are not allowed in file name.</entry>
+    <entry key="ExportedMacroDeprecated">The custom attribute ''{0}'' will be removed in a future release.  Please use the csc_designer to resave the custom storage classes for this package.</entry>
+    <entry key="ExportedMacroObsolete">The custom attribute ''{0}'' is no longer supported.  Please remove all code related to this property from the csc_registration file for this package.</entry>
+    <entry key="MPTMiscAddHook">addMiscHook for ''MPFToolVersion'' requires Embedded Coder installed.</entry>
+    <entry key="MPTMiscAddInvalidHook">Invalid hook ''{0}'' for addMiscHook.</entry>
+    <entry key="MPTMiscAddSymbol">addSymbol requires Embedded Coder installed.</entry>
+    <entry key="MPTMiscRegSymbol">''{0}'' is not in custom registered symbol list.</entry>
+    <entry key="MPTRequireRTW">{0} requires Simulink Coder installed.</entry>
+    <entry key="MPTInvalidUserHook">Invalid hook ''{0}'' for {1}.</entry>
+    <entry key="MPTInvalidFileScopeForSharedData">Invalid data scope, ''File'', is set for data {1} when code is generated for model ''{0}''. Either multiple files or no files are accessing the data </entry>
+    <entry key="MPTInvalidOwnerSettingForInternalData">The specified owner models for the following internal signals/states used by model ''{0}'' must have access to the data: \n \n {1} \n</entry>
+    <entry key="MPTInvalidOwnerSettingForBoundaryData">The following data are specified with invalid owner models because these models are in the model hierarchy but do not use the data: \n \n {0} \n</entry>
+    <entry key="MPTInvalidOwnerSettingEntry">\t {0} ''{1}'' is set to an invalid owner ''{2}'' \n</entry>
+    <entry key="MPTInvalidModuleNamingOption">The setting ''{0}'' is no longer supported on parameter ''ModuleNamingRule'' and has been changed to ''{1}'' </entry>
+    <entry key="MPTTypeIdReplacementExceededMaxLength">Identifier exceeded maximum length ''{0}'': ''{1}''.</entry>
+    <entry key="MPTInvalidTypeIdReplacement">Invalid identifier syntax: ''{0}''.</entry>
+    <entry key="CannotAddUserPackageToDOW">The Data Object Wizard cannot support package ''{0}'' because it only supports packages with both parameter and signal classes, and they must be named "Parameter" and "Signal"</entry>
+    <entry key="DOWConvertSlCustomizationFile">Generating sl_customization.m. Please wait...</entry>
+    <entry key="DOWCreateDataTypeWarning">The following registered user data type or types are inconsistent with existing Simulink.AliasType or Simulink.NumericType objects:\n {0} \n The existing objects are preserved.</entry>
+    <entry key="DOWPropagateRootIOSigErr">The following name or names are invalid to label signal or signals:\n {0}</entry>
+    <entry key="DOWGetSlCustomizationParamWarning" translate="false">{0}</entry>
+    <entry key="DOWFigureTitle">Data Object Wizard</entry>
+    <entry key="DOWFigureHeader">Find model data that are not associated with data objects and create objects for these data.</entry>
+    <entry key="DOWFigureToolTipStringApplyPackage">Associates selected data objects with selected package.</entry>
+    <entry key="DOWFigureToolTipStringModelName">Specify desired model and press Enter to apply.</entry>
+    <entry key="DOWFigureToolTipStringBrowse">Navigates desired model.</entry>
+    <entry key="DOWFigureToolTipStringFind">Determines and lists all unresolved data objects and data types in specified model.</entry>
+    <entry key="DOWFigureToolTipStringCheckAll">Selects all data objects and data types.</entry>
+    <entry key="DOWFigureToolTipStringUncheckAll">Clears all selections of data objects and data types.</entry>
+    <entry key="DOWFigureToolTipStringCreate">Adds only selected data objects and data types to MATLAB workspace.</entry>
+    <entry key="DOWFigureToolTipStringCancel">Clears wizard without applying selections.</entry>
+    <entry key="DOWFigureWidgetObjectName">Object Name</entry>
+    <entry key="DOWFigureWidgetClass">Class</entry>
+    <entry key="DOWFigureWidgetPackage">Package</entry>
+    <entry key="DOWFigureWidgetSelectPackage">Choose package for selected data objects:</entry>
+    <entry key="DOWFigureWidgetApplyPackage">Apply Package</entry>
+    <entry key="DOWFigureWidgetChangeClass">Change Class</entry>
+    <entry key="DOWFigureWidgetModelName">Model name:</entry>
+    <entry key="DOWFigureWidgetBrowse">Browse</entry>
+    <entry key="DOWFigureWidgetRootInputs">Root inputs</entry>
+    <entry key="DOWFigureWidgetRootOutputs">Root outputs</entry>
+    <entry key="DOWFigureWidgetStates">States</entry>
+    <entry key="DOWFigureWidgetDataStores">Data stores</entry>
+    <entry key="DOWFigureWidgetBlockOutputs">Block outputs</entry>
+    <entry key="DOWFigureWidgetParameters">Parameters</entry>
+    <entry key="DOWFigureWidgetAliasTypes">Alias types</entry>
+    <entry key="DOWFigureWidgetFind">Find</entry>
+    <entry key="DOWFigureWidgetCheckAll">Select All</entry>
+    <entry key="DOWFigureWidgetUncheckAll">Deselect All</entry>
+    <entry key="DOWFigureWidgetCreate">Create</entry>
+    <entry key="DOWFigureWidgetCancel">Cancel</entry>
+    <entry key="DOWFigureWidgetHelp">Help</entry>
+    <entry key="DOWFigureWidgetFindOptions">Find options</entry>
+    <entry key="ChangeDefaultClassDialogTitle">Change default class</entry>
+    <entry key="MPTSLUserDataTypeSuppressDataTypeListCustomizer">You are currently registering user data types for mpt data objects through the mpt.SLDataObjectCustomizer but this mechanism will be removed in a future release.  Remove your data type registration code from sl_customization, restart MATLAB, and create data type objects to define your data types. These data types will automatically appear on the appropriate data type lists throughout Simulink and Stateflow.</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  Customizer
+-->

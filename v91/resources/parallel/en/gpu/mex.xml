@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- Copyright 2011-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+    <!-- Please keep entries in sorted order -->
+    <entry key="ComplexInputExpected">The input array must be complex.</entry>
+    <entry key="ComplexSizesMustMatch">The sizes of the real and imaginary arguments must match.</entry>
+    <entry key="ComplexTypesMustMatch">The types of the real and imaginary arguments must match.</entry>
+    <entry key="MEXCUDACompatibleArrayDimsNotSupported">Option ''-compatibleArrayDims'' is not supported. Use of ''-largeArrayDims'' is implicit for MEXCUDA and cannot be overridden.</entry>
+    <entry key="MEXCUDAVerboseFindOptsFailure">No supported host compiler found, or other problem with the environment.\nContinuing with selected compiler to provide detailed diagnosis.</entry>
+    <entry key="MEXCUDAVerboseOptsFailed">FAILED</entry>
+    <entry key="MEXCUDAVerboseOptsPreamble">Trying MEX options ''{0}''...</entry>
+    <entry key="MEXCUDAVerboseOptsSuccess">SUCCESS</entry>
+    <entry key="MEXCUDAWarnSelectedCompilerNotUsed">The selected C++ compiler is not supported for CUDA compilation. Searching for a supported compiler.</entry>
+    <entry key="IllegalComplex">All input arrays must be real. Argument {0,number,integer} is complex.</entry>
+    <entry key="NumericOrLogicalInputExpected">The input must contain numeric or logical data.</entry>
+    <entry key="RealScalarRequired">Argument {0,number,integer} must be a non-complex scalar.</entry>
+    <entry key="SparseNotSupported">The function {0} is not supported for sparse gpuArrays.</entry>
+  </message>
+</rsccat>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- Copyright 2015-2016 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="invalidNumHeaderLines">'NumHeaderLines' value must be an integer greater than or equal to 0.</entry>
+    <entry key="invalidSheetTypes" note="stringDatatypeUpdate">'Sheets' value must be a character vector, empty character vector, cell array of character vectors, or numeric row vector.</entry>
+    <entry key="invalidSheetNumbers">'Sheets' values must not exceed the number of sheets ({0}) in the file ''{1}''.</entry>
+    <entry key="uniqueSheets">'Sheets' values must be unique.</entry>
+    <entry key="invalidSheetNames">Sheet name ''{0}'' not found in file ''{1}''. Use the method 'sheetnames' for valid sheet names.</entry>
+    <entry key="inValidRange" note="stringDatatypeUpdate">'Range' value must be an empty character vector or a character vector of the form 'A1:B2' or 'A:B'.</entry>
+    <entry key="invalidLogical">''{0}'' value must be true or false.</entry>
+    <entry key="invalidReadSize">''ReadSize'' value must be 'file', 'sheet', or a positive integer.</entry>
+    <entry key="emptyVarLine">No data available to detect variable names from sheet ''{0}'' in file ''{1}''.</entry>
+    <entry key="emptyDataLine">No data available to detect variable types from sheet ''{0}'' in file ''{1}''.</entry>
+    <entry key="unequalVarnamesVarTypes">Number of variable names must equal the number of variable types.</entry>
+    <entry key="unSupportedType">''{0}'' values must be 'char', 'string', 'double', 'datetime', or 'categorical'.</entry>
+    <entry key="invalidSelectedVarTypes">Specify ''SelectedVariableNames'' when using ''SelectedVariableTypes''.</entry>
+    <entry key="conversionFail">Unable to convert variable ''{0}'' in sheet ''{1}'' in file ''{2}'' to type ''{3}''.</entry>
+    <entry key="invalidFileName">Datastore does not contain file ''{0}''.</entry>
+    <entry key="invalidFileIndex">File index must be between 1 and the number of files ({0}) in the datastore.</entry>
+    <entry key="sheetProperties">Sheet Format Properties:</entry>
+    <entry key="retrievalProperties">Properties that control the table returned by preview, read, readall:</entry>
+    <entry key="retrievalPropertiesWithLinks">Properties that control the table returned by {0}, {1}, {2}:</entry>
+    <entry key="rowsString">{0} rows</entry>
+  </message>
+</rsccat>

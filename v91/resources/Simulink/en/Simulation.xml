@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>  
+    <entry key="ModelIsNotPausedForSimState">Simulation of ''{0}'' must be paused in order to save its SimState</entry>
+    <entry key="SimMetadataReachedStopTime">Reached stop time of {0}</entry>
+    <entry key="SimMetadataKeyboardCtrlC">Simulation aborted due to keybord Control+C at time {0}</entry>
+    <entry key="SimMetadataStopCommand">Stop command issued at time {0}</entry>
+    <entry key="SimMetadataStepForward">Paused after forward step at time {0}</entry>
+    <entry key="SimMetadataStepBackward">Paused after backward step at time {0}</entry>
+    <entry key="SimMetadataPauseCommand">Pause command issued at time {0}</entry>
+    <entry key="SimMetadataPauseTime">Paused at time {0} after reaching or crossing pause time</entry>
+    <entry key="SimMetadataRapidAccelModelStop">Stop requested by rapid accel target at time {0}</entry>
+    <entry key="SimMetadataConditionalBreakpoint">Paused at conditional breakpoint at time {0}</entry>
+    <entry key="JITAcceleratingModel">JIT Accelerating Model</entry>
+    <entry key="PacingAtRateStatus">Running: pacing at {0}x wall time</entry>
+    <entry key="UnableToPaceAtRateStatus">Running: pacing at {0}x wall time. Unable to pace at requested rate</entry>
+    <entry key="PacingStatus">Running: pacing</entry>
+    <entry key="PacingText">Run the simulation at the specified pace. The pace is the ratio: simulation seconds / wall clock seconds. \n\t
+        For example, if the pace is set to 2, a simulation with a start time of 0 and stop time of 1 will take 0.5 wall clock seconds to complete. The same simulation will take 2 wall clock seconds to complete with a pace of 0.5.</entry>
+    <entry key="EnablePacing">Enable pacing</entry>
+    <entry key="PacingRateEditPrefix">Pace at </entry>
+    <entry key="PacingUnits">sim sec per clock sec</entry>
+ </message>
+</rsccat>

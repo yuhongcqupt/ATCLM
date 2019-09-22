@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="invalidSolver">{0} is not available; starting OPTIMTOOL with {1} solver</entry>
+    <entry key="UnrecognizedSolver">Unrecognized solver name.</entry>
+  </message>
+</rsccat>

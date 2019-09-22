@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<rsccat version="1.0" locale="en_US" product="Simulink">
+  <message>
+   <entry key="printStatus">Print status</entry>
+    <entry key="printingLogFileMsg">Printing log file...</entry>
+    <entry key="printingPageStatus">Printing page {0} of {1}.</entry>
+    <entry key="printingLegendMsg">Printing sample time legend.</entry>
+    <entry key="cannotPrintLegend">Simulink cannot print the Sample Time Legend. Perform an "Update diagram" before printing</entry>
+    <entry key="findSystemsToPrint">Looking for systems to print...</entry>
+    <entry key="sampleTimeLegend">Sample Time Legend</entry>
+    <entry key="notPrintingCurrentSystemWarning">The current system "{0}" may be masked and will not be printed.</entry>
+ </message>
+</rsccat>

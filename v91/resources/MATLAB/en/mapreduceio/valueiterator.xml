@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- Copyright 2014 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+    <message>
+        <entry key="useMethodsCustomDisp">Use {0} to check if more values are available. Use {1} to get the next value.</entry>
+        <entry key="valuesAvailable">One or more values are available.</entry>
+        <entry key="noMoreValues">No more values are available.</entry>
+        <entry key="getNextNoMoreValues">Error using getnext: no more values available. Use hasnext to confirm availability of values before using getnext.</entry>
+    </message>
+</rsccat>

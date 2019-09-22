@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2009-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/msgcat.xsd">
+  <message>
+    <entry key="UnsupportedSourceControlOperationOnUnix">The requested Source Control operation is not supported on UNIX platforms.</entry>
+    
+    <entry key="cmdispatchNoSourceControlSpecified">No source control system specified. Open the MATLAB Preferences dialog and go to General, Source Control to set up source control integration.</entry>
+    <entry key="cmdispatchUnknownInput">File input should be the full-path to a file, or a State Machine ID (deprecated).</entry>
+    <entry key="cmdispatchOldSyntax">Calling cmdispatch using a State Machine ID is deprecated and will not be supported in future releases. Use the file name instead.</entry>
+    <entry key="cmdispatchModelChangedQuestion">This model has changed.\nIf you proceed, you will lose your changes\nContinue?</entry>
+    <entry key="cmdispatchModelChangedTitle">Source Control</entry>
+    <entry key="cmdispatchYes">Yes</entry>
+    <entry key="cmdispatchNo">No</entry>   
+    <entry key="cmdispatchUnknownCommand">Unknown command: ''{0}''</entry>
+    <entry key="cmdispatchCheckOutError">Error trying to perform check-out:\n''{0}''</entry>
+    <entry key="cmdispatchUndoCheckOutError">Error trying to perform undo check-out:\n''{0}''</entry>
+    <entry key="cmdispatchCheckInError">Error trying to perform check-in:\n''{0}''</entry>
+    <entry key="cmdispatchErrorDialog">Source Control Error</entry>
+    
+    
+    <entry key="LoadSystemInvalidSystem">There is no system named ''{0}'' to open.</entry>
+    <entry key="DelayAndOrderEqualLength">DelayTime and Order vectors must be of equal length.</entry>
+    <entry key="NonZeroOtherEntries">Other entries are nonzero!</entry>
+    <entry key="WrongElementCount">Element count is wrong!</entry>
+    <entry key="InsufficientInputArguments">Function {0} requires {1} input arguments</entry>
+    <entry key="UnrecognizedOption">Unrecognized option name ''{0}''. Type ''help {1}''.</entry>
+    <entry key="AmbiguousOption">Ambiguous option named ''{0}''. Type ''help {1}''.</entry>
+    <entry key="NotExpectedSimSetArgument" note="stringDatatypeUpdate">Expected argument {0,number,integer} to be a character vector property name or an options structure\ncreated with SIMSET.</entry>
+    <entry key="NotNameValArguments">Arguments must occur in name-value pairs.</entry>
+    <entry key="ExpectedStringPropertyName" note="stringDatatypeUpdate">Expected argument {0,number,integer} to be a character vector property name.</entry>
+    <entry key="UnrecognizedPropertyName">Unrecognized property name ''{0}''.</entry>
+    <entry key="AmbiguousPropertyName">Ambiguous property name ''{0}'' ({1}).</entry>
+    <entry key="ExpectedAValue">Expected a value for property ''{0}''.</entry>
+    <entry key="ModelNameRequired">{0} must be the name of a Simulink model.</entry>
+    <entry key="UndefinedVarsInSimGet">All variables used in the Parameters dialog must exist in the workspace.\nThe following parameters have variables which are undefined:\n{0}</entry>
+    <entry key="SimsizesArrayMinSize">Length of sizes array must be at least 6</entry>
+    <entry key="InvalidFieldname">Invalid field name ''{0}''.</entry>
+    <entry key="NeedToRegenerateClasses">This class ({0}) was generated using an earlier version of MATLAB and is now obsolete.  You will need to use the Simulink data class designer in R2010b or earlier to regenerate the classes in this package.</entry>
+    <entry key="ObsoleteCSCInfrastructure">This class ({0}) uses obsolete infrastructure for defining custom storage classes.</entry>
+    <entry key="UpgradeCSCInfrastructure">This class ({0}) uses obsolete infrastructure for defining custom storage classes.</entry>
+    <entry key="UsingOldRTWInfoClass">This class ({0}) is obsolete.</entry>
+    <entry key="PackageNotFound">Could not find package: {0}</entry>
+    <entry key="ClassNotFound">Could not find class: {0}</entry>
+    <entry key="InvalidCallToDeleteHGFig">Invalid call to function DELETEHGFIG</entry>
+    <entry key="DataObjectWizardTitle">Data Object Wizard</entry>
+    <entry key="SpecifyModelNameEditField">Please specify model name in the edit field.</entry>
+    <entry key="SpecifiedModelDoesNotExistInMatlabPath">Specified model does not exist or is not on the MATLAB path.      </entry>
+    <entry key="UnresolvedObjectsDataTypesAnalyzedModel">The following model data are not associated with data objects.\nSelect data objects you want to create.</entry>
+    <entry key="ValidSignalsOrPotentialObjects">All possible objects have already been created.</entry>
+    <entry key="CreatingDataObjectsAndDataTypes">Creating Data Objects And Data Types     </entry>
+    <entry key="ObjectTypeUnsupportedClassType">{0} is a unsupported class type.     </entry>
+    <entry key="FollowingDataTypeInconsistentWithExistingObjects">The following registered user data type or types are inconsistent with existing {0} or {1} object or objects:\n    {2}\n The existing object or objects are preserved.</entry>
+    <entry key="DoesNotSupportRequestedClassType">''{0}'' does not support the requested class type for ''{1}''.</entry>
+    <entry key="ModelWithErrorDetails">Model: ''{0}''\n  {1}</entry>
+    <entry key="AnalyzingModelPleaseWait">Analyzing model. Please wait...</entry>
+    <entry key="FailedInGettingAdditionalPotentialObjects">Failed in getting additional potential objects.</entry>
+    <entry key="AnalyzingModelFails">Analyzing model fails</entry>
+    <entry key="StateStorageClassSpecifiedDialogAuto">State has storage class specified in dialog. Data object storage class specification requires the dialog entry to be set to "Auto".</entry>
+    <entry key="ConflictSignalConfiguration">Conflicting signal configuration. The state of ''{0}'' is configured as {1}. However, this state is also configured by the Simulink signal object ''{2}'' which has {3}.</entry>
+    <entry key="DataStoreStorageClassSpecifiedDialog">Data store has storage class specified in the dialog. Data object storage class specification requires the dialog entry to be set to "Auto".</entry>
+    <entry key="ListOfPotentialObjectsFails">Establishing list of potential objects fails.</entry>
+    <entry key="SignalFeedingMuxNotSupported">Signal feeding mux is not supported.</entry>
+    <entry key="SignalFromDemuxNotSupported">Signal coming from demux can not support storage class.</entry>
+    <entry key="SignalIsVirtualBusNotSupported">Signal is either a muxed signal or virtual bus that can not support storage class.</entry>
+    <entry key="SourceBlockCommentedOut">Signal is coming from a block that is commented out or commented through.</entry>
+    <entry key="SourceBlockDisabled">Signal is coming from a block that is disabled due to variant conditions</entry>
+    <entry key="SignalFeedingFunctionCallTriggerOrActionPort">Signal is a function call trigger or drives an action port, so it cannot support storage class. NOTE: Edge triggers can support storage class.</entry>
+    <entry key="SignalLabelInvalid">Signal label is not a valid variable name.</entry>
+    <entry key="SignalLabelNamePropagation">Signal label has name propagation symbol.</entry>
+    <entry key="SignalLabelNamePropagationForBusSelector">Signal label has name propagation symbol from the bus selector. The output of the bus selector cannot directly support storage class.</entry>
+    <entry key="SignalNoSrcBlkSignalOptimized">The signal does not have a source block. The signal will be optimized and cannot support storage class.</entry>
+    <entry key="SignalDataTypeDifferentFromSource">Signal data type does not match source data type.</entry>
+    <entry key="EngineInterfaceProblem">Engine Interface problem on {0}.</entry>
+    <entry key="SignalCannotBeUniquelyMapped">The Simulink signal object specified on the line originating from output port {0} of ''{1}'' is invalid because it cannot be uniquely mapped to a valid signal in the model.</entry>
+    <entry key="SignalFeedMergeBlockCannotSupportStorageClass">Signal feeds into a merge block. Signals feeding merge blocks cannot support storage class.</entry>
+    <entry key="SignalWithStorageClassDrivingMerge">The signal ''{0}'' with storage class ''{1}'', from output port 1 on ''{2}'' is driving a Merge. It is invalid to specify the storage attributes for signals being merged. Instead, these attributes should be specified on the output of the Merge.</entry>
+    <entry key="SignalResolutionDisabled">Signal object resolution is disabled.</entry>
+    <entry key="LastDiagnositcBadDiagStructType">Type field of the Simulink diagnostic structure array must be ''error'' or ''warning''.</entry>
+    <entry key="MDLFileNotFound">Could not find the specified model file: {0}</entry> 
+      
+    <entry key="NormalModeVisibilityMustBeModelBlock">The block ''{0}'' is not a
+      Model block, which is required for a Model block to have Normal Mode
+      Visibility set to on.</entry>
+    <entry key="NormalModeVisibilityMustBeNormalMode">The block ''{0}'' is not a
+      Model block with a ''SimulationMode'' of ''Normal'', which is required for
+      a Model block to have Normal Mode Visibility set to on.</entry>
+    <entry key="NormalModeVisibilityNotRootedAtTopModel">The Model block Normal
+      Mode Visibility setting is invalid because it starts at the model ''{0}''
+      and the model it has been applied to is ''{1}''.</entry>
+      
+    <entry key="MDLFileChangeWarning">Warning</entry>
+    <entry key="MDLFileChangeError">Error</entry>
+    <entry key="MDLFileChangeReload">Reload model (if unmodified)</entry>
+    <entry key="MDLFileChangePrompt">Show prompt dialog</entry>
+    <entry key="IncompatibleVersion">Incompatible version of mdl_file_change_settings</entry>
+    <entry key="InvalidOption">Invalid option supplied to mdl_file_changed_settings</entry>
+    <entry key="InvalidHandlingString" note="stringDatatypeUpdate">Invalid Handling character vector supplied to mdl_file_change_settings</entry>
+    <entry key="InvalidMDLFileChangedOnDiskHandlingValue">Invalid current value for MDLFileChangedOnDiskHandling: {0}</entry>
+    <entry key="WorkingSetSingular">Working set is singular; results may still be reliable.</entry>
+    <entry key="EqualityConstraintsOverlyStringent">The equality constraints are overly stringent - there is no feasible solution.</entry>
+    <entry key="EqualityConstraintsOverlyStringentMet">The equality constraints are overly stringent - there is no feasible solution.  Equality constraints have been met.</entry>
+    <entry key="ConstraintsOverlyStringent">The constraints are overly stringent - there is no feasible solution.</entry>
+    <entry key="ConstraintsNotRestrictive">The solution is unbounded and at infinity - the constraints are not restrictive enough.</entry>
+    <entry key="SearchDirCloseToZero">The search direction is close to zero - the problem is ill posed.  The gradient of the objective function may be zero or the problem may be badly conditioned.</entry>
+    <entry key="ProblemBadlyConditioned">The problem is badly conditioned - the solution is not reliable</entry>
+    <entry key="ProblemNegSemiDef">QP problem is -ve semi-definite.</entry>
+    <entry key="BoundsInfeasible">Bounds Infeasible</entry>
+    <entry key="FunReturnValEmptyObjFun">FUN must return a non-empty objective function.</entry>
+    <entry key="ObjectiveGradWrongSize">The objective gradient is the wrong size.</entry>
+    <entry key="ConstraintGradWrongNumRows">The constraint gradient has the wrong number of rows.</entry>
+    <entry key="ConstraintGradWrongNumCols">The constraint gradient has the wrong number of columns.</entry>
+    <entry key="HessianModifiedTwice">Hessian modified twice</entry>
+    <entry key="HessianModified">Hessian modified</entry>
+    <entry key="HessianNotUpdated">Hessian not updated</entry>
+    <entry key="FunctionDerivative">Function derivative</entry>
+    <entry key="ConstraintDerivative">Constraint derivative</entry>
+    <entry key="OptimizationConverged">Optimization Converged Successfully</entry>
+    <entry key="ActiveConstraints">Active Constraints:</entry>
+    <entry key="NoActiveConstraints">No Active Constraints</entry>
+    <entry key="NoFeasibleSolutionFound">Warning: No feasible solution found.</entry>
+    <entry key="MaxFunctionEvalsExceeded">Maximum number of function evaluations exceeded;</entry>
+    <entry key="IncreaseOPTIONS14">increase OPTIONS(14)</entry>
+    <entry key="OptimizationTerminatedPrematurelyByUser">Optimization terminated prematurely by user</entry>
+    <entry key="CallingFunctionNotKnown">Calling function not known.</entry>
+    <entry key="MaxDiscrepancyBetweenDerivatives">Maximum discrepancy between derivatives  = {0}</entry>
+    <entry key="DerivativesNotWithinTol">Warning: Derivatives do not match within tolerance</entry>
+    <entry key="DerivativeFromFiniteDiff">Derivative from finite difference calculation:</entry>
+    <entry key="UserSuppliedDerivative">User-supplied derivative, {0} : </entry>
+    <entry key="GraderrDifference">Difference:</entry>
+    <entry key="StrikeAnyKeyToContinue">Strike any key to continue or Ctrl-C to abort</entry> 
+    <entry key="ExpressionSyntaxNotSupportedForTrim">Expression syntax not supported for ncdtoolbox or trim.</entry>
+    <entry key="UnknownCallerInPrefcnchkCall">Unknown caller in prefcnchk call.</entry>
+    <entry key="InvalidDiagnosticType">Simulink diagnostic structure must be a MATLAB structure with the fieldnames Type, Message, MessageID, Handle. The Type field should be set to {0}.</entry>
+    <entry key="InvalidSizesVector">The sizes vector returned by Ada S-Function ''{0}'' is invalid.</entry>
+    <entry key="ErrorOfExecutingCommand">Error executing ''{0}''\n{1}.</entry>
+    <entry key="UnableOpenAdaSfcnSpec">Unable to open ''{0}''.</entry>
+    <entry key="UnableDetermineSfcnName">Unable to determine the S-Function Name.</entry>
+    <entry key="UnknownSfcnMethod">Unknown S-Function method ''{0}''.</entry>
+    <entry key="UnsavedBlockDiagram">Block diagram ''{0}'' has never been saved so there is no file to read.</entry>
+  </message>
+</rsccat>

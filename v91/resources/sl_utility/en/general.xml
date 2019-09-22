@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2014 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="sl_utility" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="TooFewInputArgs">Not enough input arguments</entry>
+    <entry key="TooManyInputArgs">Too many input arguments</entry>
+    <entry key="TooManyOutputArgs">Too many output arguments</entry>
+    <entry key="ErrorInParser">Syntax error: ''{0}''</entry>
+    <entry key="LoggingTransposeErr">Failed to transpose logging data before saving to MATLAB</entry>
+    <entry key="LoggingExceededMemoryLimitErr">Data logging exceeded available memory</entry>
+    <entry key="UparserHelper">{0} Position: {1, number, integer}. ''{2}''</entry>
+
+    <!-- Interpolation Values -->
+    <entry key="Timeseries_Interp_Unknown" translate="false">unknown</entry>
+    <entry key="Timeseries_Interp_zoh" translate="false">zoh</entry>
+    <entry key="Timeseries_Interp_linear" translate="false">linear</entry>
+  </message>
+</rsccat>

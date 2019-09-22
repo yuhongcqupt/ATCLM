@@ -1,0 +1,11 @@
+{
+"visdiff":
+{
+    "inputs":
+    [
+        {"name":"filename1", "kind":"required", "type":"filepath"},
+        {"name":"filename2", "kind":"required", "type":"filepath"},
+        {"name":"type", "kind":"positional", "type":"choices={'text', 'binary'}"}
+    ]
+}
+}

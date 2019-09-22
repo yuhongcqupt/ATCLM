@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<rsccat version="1.0" locale="en_US" product="Simulink">
+  <message>
+    <entry key="NoBlock">At least one block should be provided!</entry>
+    <entry key="InvalidAction">Invalid action</entry>
+    <entry key="ModelCannotBeFound">The model ''{0}'' cannot be found, you must open the model first. </entry>
+    <entry key="ChangesSavedIn">Changes are saved in {0}\n</entry>
+    <entry key="ReferenceBlockMayContainConutious">! {0} is a reference block and may contain continuous blocks\n</entry>
+    <entry key="DiscretizingMsg">discretizing ''{0}'' and putting results into a configurable subsystem</entry>
+    <entry key="DiscretizingUseMethod">discretizing ''{0}'' using method ''{1}''</entry>
+    <entry key="GraphicDiscretizerNotSupported">Simulink Graphical Discretizer is not supported in the current platform.</entry>
+    <entry key="NoRequiredControlLicenseMsg1">Transfer Function, State-Space, Zero-Pole, LTI Block cannot be discretized without Control System Toolbox!</entry>
+    <entry key="NoRequiredDSPLicenseMsg">Variable Transport Delay cannot be discretized without DSP System Toolbox.</entry>
+    <entry key="NoRequiredDSPAndControlLicenseMsg">No Control System Toolbox and DSP System Toolbox. \n{0}\n{1} </entry>
+    <entry key="NoRequiredControlLicenseMsg2">No Control System Toolbox. \n{0} </entry>
+    <entry key="InvalidModelNameMsg">''{0}'' is an invalid model name specification.</entry>
+  </message>
+</rsccat>

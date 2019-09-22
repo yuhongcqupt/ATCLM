@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2009-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="Simulink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="ErrorWritingWSData">Error writing variable ''{0}'' to workspace: {1}</entry>
+    <entry key="SkippingFiObjectUpload">Skipping upload of data for workspace variable ''{0}''</entry>
+
+    <entry key="ReturnWorkspaceOutputsNotSupportedInExtmode">Saving simulation output as a single object is not supported in External mode.  When your model code executes, the workspace variable ''{0}'' will not be created.  (To suppress this warning, disable "Single simulation output" option in the Configuration Parameters dialog, Data Import/Export page for your model)</entry>
+    
+	<entry key="CannotStartIfTargetNotConnected">Simulink cannot send a start packet to the model ''{0}'' running in external mode, as the target has lost its connection with the host.</entry>
+	
+    <entry key="OneClickExternalModeNotSupported">
+        External mode simulation is not supported for the ''{0}'' hardware. 
+        However, you can deploy the model on this hardware. From the model window, 
+        click the "Deploy to Hardware" button.
+    </entry>     
+    
+    <entry key="OneClickPrepareModel">Preparing the model to run on ''{0}''...</entry>   
+    
+    <entry key="OneClickDownloadToHardware">Downloading the model to ''{0}''...</entry> 
+    
+    <entry key="OneClickConnectingToHardware">Connecting to ''{0}''...</entry> 
+    
+    <entry key="OneClickRunningOnHardware">Running the model on ''{0}''...</entry>     
+    
+    <entry key="OneClickFailedToRunOnHardware">Failed to run the model on hardware.</entry>   
+        
+    <entry key="OneClickConnectFailed">Unable to connect to the ''{0}'' target for ''{1}''.</entry>
+    
+    <entry key="OneClickUnsupportedModelConfiguration" translate="false">Creating a one-click object for this model (SystemTargetFile parameter value is "{0}") is not supported.</entry> 
+    
+    <entry key="OneClickModelIsConfiguredNotificationMsg">
+    Model is prepared to run on ''{0}'' hardware. 
+    (Tools > Run on Target Hardware > Prepare to Run)</entry> 
+    
+    <entry key="OneClickDisconnectNotificationMsg"><![CDATA[To disconnect Simulink from the 
+    target without stopping it, open 
+    <a href="matlab:Simulink.ExtMode.CtrlPanel.createExtModeCtrlPanelForModel(''{0}'');">
+    Code > External Mode Control Panel</a>, then click Disconnect.]]></entry>
+    
+    <entry key="OneClickGenCodeOnly"><![CDATA[The model "{0}" is configured to generate code only. External mode simulation is not allowed if the model is configured to generate code only. To resolve this, select Configuration Parameters > Code Generation and clear the "Generate code only" check box.]]></entry>
+    
+    <entry key="OneClickModelConfiguringModelMsg">Preparing ''{0}'' to run on target hardware...</entry> 
+    
+    <entry key="OneClickModelConfiguringModelTitle">Model Configuration</entry>         
+    
+    <entry key="OneClickExtModeIsNotHonouredForDeploy">
+    The parameter ExtMode is enabled for model ''{0}''. However, a deployment 
+    build ignores this parameter. If you want to run an External mode 
+    simulation, in the model window, select External from the Simulation 
+    drop-down menu. Then click the "Play" button. Otherwise, to avoid 
+    this warning, disable this parameter by running the command
+    set_param(''{1}'', 'ExtMode', 'off').</entry>
+    
+    <entry key="ExtModeTransportNotAvailable">ExtModeTransport {0} is not available for this
+        system target file.
+    </entry>
+    
+  </message>
+</rsccat>

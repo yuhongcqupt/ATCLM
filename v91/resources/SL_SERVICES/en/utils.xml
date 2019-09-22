@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rsccat version="1.0" locale="en_US" product="SL_SERVICES">
+  <message>
+    <entry key="MemoryAllocationError">Memory allocation error.</entry>
+    <entry key="TooManyErrorsErr">Too many errors.</entry>
+    <entry key="UNKNOWN_DASTUDIO_ID">DAStudio ID ''{0}'' couldn't be found.</entry>
+    <entry key="UNKNOWN_COMPONENT_ID">MATLAB</entry>
+    <entry key="MULTIPLE_ERROR_ID">MultipleErrors</entry>
+    <entry key="CNTRL_C_INTERRUPTION">Program interruption (Ctrl-C) has been detected.</entry>
+    <entry key="PROGRAM_INTERRUPTION">Program interruption has been detected.</entry>
+    <entry key="UNEXPECTED_EXCEPTION">Unexpected exception ({0}) was caught.</entry>
+    <entry key="DEBUG_QUIT_EXCEPTION">debug session was interrupted.</entry>
+    <entry key="MultipleErrorsMessagePreamble">Error due to multiple causes.</entry>
+    <entry key="UNKNOWN_ID_ID" translate="false">UNDEFINED_ID</entry>
+    <entry key="InvalidArgument">Arguments provided to the function are not valid</entry>
+    <entry key="InvalidHookName">Unknown hook ''{0}''. Either no such hook is registered or the module registering the hook is currently not loaded.</entry>
+    <entry key="InvalidCallback">Callback function specified does not exist in slsvInternal</entry>
+    <entry key="InvNumberOfOutputArguments" translate="false">The number of output argument(s) specified are not valid.</entry>
+    <entry key="InvNumberOfInputArguments" translate="false">The number of input argument(s) specified are not valid.</entry>
+    <entry key="NullStackFromMSLException" translate="false">mxArray argument is NULL or doesn't contain MCOS object.</entry>
+    <entry key="EmptyStackFromMSLException" translate="false">mxArray argument specified is empty.</entry>
+    <entry key="NoMSLExceptionData" translate="false">There exists no MSLExceptionData pointer.</entry>
+    <entry key="MessageCreation">Message ''{0}'' can not be created: {1}. </entry>
+    <entry key="TestUnicode">{0}</entry>
+    <entry key="HotlinkTemplate"><![CDATA[<a href="{0}">{1}</a>]]></entry>
+    <entry key="HotlinkTemplateArg"><![CDATA[<a href="{0}({1});">{2}</a>]]></entry>
+    <entry key="TestSerializationArgs">First numeric argument ''{0,number,integer}'' second encoded argument ''{1}''</entry>
+    <entry key="InvRetForFeature">Invalid number of return values for call to ''slsvInternal'' with the ''slsvFeatureGateway'' option.</entry>
+    <entry key="InvCallForFeature">Invalid call to ''slsvInternal'' with the ''slsvFeatureGateway'' option. This option requires a valid string suboption.</entry>
+    <entry key="InvOptionForFeatureGetSet">Invalid call to get/set feature.</entry>
+    <entry key="InvCallForFeatureName">Invalid feature ''{0}''.</entry>
+    <entry key="InvValForFeatureSet">Integer scalar value must be used to turn on/off a feature.</entry>
+    <entry key="InvOptionForFeatureStats">Invalid additional input arguments provided for sub-option ''stats'' in call to ''slsvInternal'' with the ''slsvFeatureGateway'' option. No additional arguments are expected.</entry>
+    <entry key="ShutDown">{0}: {1}</entry>
+    <entry key="PRINTFWRAPPER">{0}</entry>
+    <entry key="CAUSED_BY"><![CDATA[&nbsp;Caused by:]]></entry>
+    <entry key="SECOND_ARGUMENT_SHOULD_BE_MESSAGE">Second argument should be a message</entry>
+    <!--Note to translator: space between holes should be preserved, unless language doesn't allow it (e.g. Chinese) -->
+    <entry key="Concatenate">{0} {1}</entry>
+
+    <entry key="TEST_FIXIT1" translate="false"><![CDATA[Here is a way to fix it: <a href="matlab:open_system(''{0}'')"></a>]]></entry>
+    <entry key="TEST_SUGGEST1"  translate="false"><![CDATA[We recommend to use the following one way to deal with that problem: <a href="matlab:open_system(''{0}'')"></a>]]></entry>
+    <entry key="TEST_FIXIT2" translate="false"><![CDATA[Here is a second way to fix it: <a href="matlab:load_system(''{0}'')"></a>]]></entry>
+    <entry key="TEST_SUGGEST2"  translate="false"><![CDATA[We recommend to use the following second way to deal with that problem: <a href="matlab:load_system(''{0}'')"></a>]]></entry>
+    <entry key="TEST_SUPPRESS" translate="false"><![CDATA[Suppress that diagnostic <a href="matlab:suppress(''{0}'')"></a>]]></entry>
+
+    <entry key="DEFAULT_SUPPRESS" translate="false"><![CDATA[<a href="matlab:suppress"></a>]]></entry>
+    <entry key="EMBEDDED____ACTION____WRAPPER" translate="false">{0}{1}</entry>
+    <entry key="TEST_ACTIONS" translate="false"><![CDATA[Variant block {0} has "Generate preprocessor conditionals" is set to "on" and one of its port has been overridden.<actions exclusiveFixIts="no"><action cmd="matlab:vsfixutil(''setGPC'',''{1}'',''{0}'')" type="fixit">You can set "Generate preprocessor conditionals" to "off" to eliminate the error</action><action cmd="matlab:vsfixutil(''disableOverride'',''{0}'')" type="suggestion">You can disable the override to eliminate the error</action><action type="fixit">Empty fixit</action><action cmd="matlab:vsfixutil('help','override')" type="help">For more information see override help</action></actions>]]></entry>    
+    <entry key="TEST_ACTIONS2" translate="false"><![CDATA[Variant block {0} has "Generate preprocessor conditionals" is set to "on" and one of its port has been overridden.<actions exclusiveFixIts="no"><action cmd="matlab:vsfixutil(''setGPC'',''{1}'',''{0}'')" type="fixit">You can set "Generate preprocessor conditionals" to "off" to eliminate the error</action><action cmd="matlab:vsfixutil(''disableOverride'',''{0}'', {2,number,integer})" type="fixit">You can disable the override to eliminate the error</action><action cmd="matlab:vsfixutil('help','override')" type="help">For more information see override help</action><action type="suppression"></action></actions>]]></entry>    
+    <entry key="TEST_ACTIONS_WITH_DOC" translate="false"><![CDATA[Variant block {0} has "Generate preprocessor conditionals" is set to "on" and one of its port has been overridden.<actions exclusiveFixIts="no"><action cmd="matlab:vsfixutil(''setGPC'',''{1}'',''{0}'')" type="fixit">You can set "Generate preprocessor conditionals" to "off" to eliminate the error</action><action cmd="matlab:vsfixutil(''disableOverride'',''{0}'', {2,number,integer})" type="fixit">You can disable the override to eliminate the error</action><action type="suggestion">If the destination block is a bus-capable block, ensure that the block configuration and its input signal(s) meet the requirements for bus support. Please see Simulink <sldiag objui="doc" objparam="{3}">documentation</sldiag> for further information on composite(i.e bus) signals and their proper usage.</action></actions>]]></entry>    
+
+    <entry key="GETREPORT_SUGGESTED_ACTIONS">Suggested Actions:</entry>
+    <entry key="GETREPORT_OPEN">Open</entry>
+    <entry key="GETREPORT_FIX" note="verb">Fix</entry>
+    <entry key="ParameterTestPoint" translate="false">Component data error: {0}</entry>
+    <entry key="ACTION_SUPPRESS">Suppress future instances of this diagnostic from this source.</entry>
+
+    <entry key="TEST_PARSE_ACTION1" translate="true">Action1 without arguments</entry>
+    <entry key="TEST_PARSE_ACTION2" translate="true">Action2 with two arguments ''{0}'' and ''{1}''</entry>
+    <entry key="TEST_PARSE_ACTION3" translate="true">Action3 with one argument: {0}</entry>
+
+    <entry key="TEST_PARSE_ACTIONS" translate="true" note="content in actions element shouldn't be translated">
+        <![CDATA[Test action parse, Arg1: {0}; Arg2: {1}; Arg3: {2}
+        <actions exclusiveFixIts="no">
+            <action cmd="matlab:load_system(''{0}'');configset.highlightParameter(''{0}'','SolverType');" type="suggestion">        
+                <msg id="SL_SERVICES:utils:TEST_PARSE_ACTION1"></msg>    
+            </action>
+            <action cmd="matlab:load_system(''{0}'');configset.highlightParameter(''{0}'',''SystemTargetFile'');" type="suggestion">
+                <msg id="SL_SERVICES:utils:TEST_PARSE_ACTION2"><arg>{0}</arg><arg>{1}</arg></msg>    
+            </action>
+            <action cmd="matlab:coder.internal.wizard.slcoderWizard(''{0}'', ''StartWithError'')" type="suggestion">
+                <msg id="SL_SERVICES:utils:TEST_PARSE_ACTION3"><arg>{2}</arg></msg>    
+            </action>
+            <action cmd="matlab:coder.internal.wizard.slcoderWizard(''{0}'', ''StartWithError'')" type="suggestion">
+                Good Old Action with 2 arguments: ''{0}'' and ''{2}''
+            </action>
+        </actions> 
+        ]]>
+    </entry>
+   </message>
+</rsccat>

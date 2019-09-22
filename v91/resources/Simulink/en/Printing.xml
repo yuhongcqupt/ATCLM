@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsccat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" locale="en_US" product="Simulink" xsi:noNamespaceSchemaLocation="../../../../matlab/resources/schema/msgcat.xsd">
+  <message>
+    <entry key="NoPrintingWithoutDisplay">Printing is not supported in -nodisplay mode.</entry>
+    <entry key="UnsupportedFormat">''{0}'' format is not supported with Simulink or Stateflow printing.</entry>
+    <entry key="SubstitutingForUnsupportedFormat">''{0}'' format is not supported with Simulink or Stateflow printing. Using ''{1}'' format instead.</entry>
+    <entry key="InvalidFormatForTiledPrinting">Tiled printing is supported only for printer and PDF formats.</entry> 
+    <entry key="InvalidFormatForFramePrinting">Frame printing is supported only for printer and PDF formats.</entry>
+    <entry key="InvalidExportMode">Invalid mode for export: ''{0}''.</entry>
+    <entry key="InvalidPrintMode">Invalid mode for printing: ''{0}''.</entry>
+    <entry key="InvalidFrameFigure">Invalid frame figure file specified: ''{0}''.</entry>
+    <entry key="StudentVersionNote">Student Version of MATLAB</entry>
+  <!--Resource entries for toolbox/simulink-->
+    <entry key="UnableToResolve">Cannot resolve: {0}</entry>
+    <entry key="MissingFrameFile">Frame file does not exist</entry>
+    <entry key="NoTarget">No target</entry>
+    <entry key="CanNotSetSize">Size can only be for set custom paper type</entry>
+    <entry key="InvalidSize">Invalid paper size</entry>
+    <entry key="InvalidUnitType">Invalid unit type: {0}.</entry>
+    <entry key="UnexpectedUnits">Unexpected Unit {0}!</entry>
+    <entry key="UnableToMatchUnits">Unable to match units</entry>
+  <!-- Print Frame Editor -->
+    <entry key="FrameEditTitle">PrintFrame Editor</entry>
+    <entry key="FrameEditFileMenu">File</entry>
+    <entry key="FrameEditHelpMenu">Help</entry>
+    <entry key="FrameEditOpenMenu">Open...</entry>
+    <entry key="FrameEditCloseMenu">Close</entry>
+    <entry key="FrameEditSaveAsMenu">Save As...</entry>
+    <entry key="FrameEditPageSetupMenu">Page Setup...</entry>
+    <entry key="FrameEditHelp">PrintFrame Editor Help</entry>
+    <entry key="FrameEditSplitCell">Split Cell</entry>
+    <entry key="FrameEditDeleteCell">Delete Cell</entry>
+    <entry key="FrameEditAddRow">Add Row</entry>
+    <entry key="FrameEditDeleteRow">Delete Row</entry>
+    <entry key="FrameEditAdd">Add</entry>
+    <entry key="FrameEditAlignTextRight">Align text right</entry>
+    <entry key="FrameEditAlignTextCenter">Align text center</entry>
+    <entry key="FrameEditAlignTextLeft">Align text left</entry>
+    <entry key="FrameEditZoomIn">Zoom in</entry>
+    <entry key="FrameEditZoomOut">Zoom out</entry>
+    <entry key="FrameEditPageSetupTitle">PrintFrame Page Setup</entry>
+    <entry key="FrameEditPaperType">Paper Type:</entry>
+    <entry key="FrameEditPaperOrientation">Paper Orientation:</entry>
+    <entry key="FrameEditPaperPortrait">Portrait</entry>
+    <entry key="FrameEditPaperLandscape">Landscape</entry>
+    <entry key="FrameEditMargins">Margins</entry>
+    <entry key="FrameEditMarginsTop">Top:</entry>
+    <entry key="FrameEditMarginsLeft">Left:</entry>
+    <entry key="FrameEditMarginsRight">Right:</entry>
+    <entry key="FrameEditMarginsBottom">Bottom:</entry>
+    <entry key="FrameEditMarginsUnits">Units:</entry>    
+    <entry key="FrameEditDialogCancel">Cancel</entry>    
+    <entry key="FrameEditDialogApply">Apply</entry>    
+    <entry key="FrameEditDialogOK">OK</entry>    
+    <entry key="FrameEditUnableToApply">Could not apply settings</entry>
+    <entry key="FrameEditPopChoiceText">Text</entry>
+    <entry key="FrameEditPopChoiceBlockDiagram">Block Diagram</entry>
+    <entry key="FrameEditPopChoiceDate">Date</entry>
+    <entry key="FrameEditPopChoiceTime">Time</entry>
+    <entry key="FrameEditPopChoicePageNumber">Page Number</entry>
+    <entry key="FrameEditPopChoiceTotalPages">Total Pages</entry>
+    <entry key="FrameEditPopChoiceSystemName">System Name</entry>
+    <entry key="FrameEditPopChoiceFullSystemName">Full System Name</entry>
+    <entry key="FrameEditPopChoiceFileName">File Name</entry>
+    <entry key="FrameEditPopChoiceFullFileName">Full File Name</entry>
+    <entry key="FrameEditCouldNotSaveFile">Could not save the frame file.</entry>
+    <entry key="FrameEditCouldNotSwitchPaperOrientation">Could not switch the Paper Orientation with the specified margins</entry>
+    <entry key="FrameEditCouldNotSwitchPaperType">Could not switch the Paper Type with the specified margins</entry>
+    <entry key="FrameEditInvalidMarginSetting">This is an invalid margin setting</entry>
+    <!-- Block Diagram is referring to FrameEditPopChoiceBlockDiagram -->
+    <entry key="FrameEditNoDiagramPrintArea">You must specify a position for the Simulink block diagram before saving. Select a cell and use the control panel to add "Block Diagram" </entry>
+    <entry key="invalidRenderFrameAction">Invalid action supplied to renderframe: {0}</entry>    
+    <entry key="invalidFrameFigure">Could not load the figure {0} as mat file</entry>    
+    <entry key="invalidPortalUnits">Portal units must be in pixels</entry>    
+    <entry key="InvalidOrientation">Invalid Orientation value: {0}</entry>    
+    <entry key="InvalidPaperType">Invalid PaperType value {0}</entry>    
+    <entry key="InvalidMargins">Invalid Margins value {0}</entry>    
+    <entry key="CannotSetSize">Size can only be for set custom paper type</entry>    
+    <entry key="InvalidBoundsQuery">Object is not viewable from target.</entry>    
+    <entry key="InvalidPadding">Invalid padding</entry>    
+    <entry key="InvalidFormat">Invalid Format value: {0}</entry>    
+    <entry key="InvalidFrameFigureFromMat">Could not load the figure {0} as mat file</entry>
+    <entry key="DeprecatedRotatedOrientation">Support for rotated paper orientation is deprecated. Setting paper orientation to landscape.</entry>
+    <entry key="SnapshotNoDisplayMode">Can not take a snapshot without a display</entry>
+    <entry key="UnexpectedHorizontalAlignment">Unexpected text horizontal alignment</entry>
+    <entry key="UnexpectedInterpretMode">Unexpected text interpret mode</entry>
+    <entry key="InvalidFramePadding">Invalid frame padding</entry>
+    <entry key="FailToCreateSnapshot">Failed to create snapshot: {0}.</entry>
+  </message>
+</rsccat>

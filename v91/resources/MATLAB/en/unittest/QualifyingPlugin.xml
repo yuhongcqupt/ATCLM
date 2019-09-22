@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Copyright 2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="InvalidContext">The supplied context must be a matlab.unittest.plugins.plugindata.QualificationContext. Refer to the documentation for QualifyingPlugin for more information on obtaining this context.</entry>
+    <entry key="VerifyUsingWithFixture">The verifyUsing method cannot be used with shared test fixtures. Use assertUsing, assumeUsing, or fatalAssertUsing instead.</entry>
+  </message>
+</rsccat>
+
+<!-- LocalWords:  rsccat plugindata
+-->

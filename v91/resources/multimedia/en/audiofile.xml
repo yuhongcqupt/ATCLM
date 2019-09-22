@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="multimedia">
+  <message>
+    <entry key="PluginNotLoaded">The audio plugin {0} failed to load properly.</entry>
+    <entry key="PluginRequirement">Audio file I/O requires {0}.\nInstall this on your system and restart MATLAB.</entry>
+    <entry key="PluginRequirementAndHigher">Audio file I/O requires {0} and higher.\nInstall this on your system and restart MATLAB.</entry>
+    <entry key="InitializationFailed">Failed to initialize internal resources.</entry>
+    <entry key="ReadCancelled">Read was canceled by the user.</entry>
+    <entry key="ReadFailed">Unable to read the file.</entry>
+    <entry key="Unexpected">File could not be read due to an unexpected error. Reason: {0}</entry>
+    <entry key="UnexpectedWarning">An unexpected warning was generated.  The message was:\n\n{0}</entry>
+    <entry key="FilePermissionDenied">Could not open the file.  Permission denied.</entry>
+    <entry key="FileCorrupt">Unable to read the file. The file appears to be corrupt.</entry>
+    <entry key="FileTypeNotSupported">The file type is not supported</entry>
+    <entry key="CodecNotFound">The file requires the following codec(s) to be installed on your system:\n\t{0}</entry>
+    <entry key="UnknownCodec">Unable to determine the codec required.</entry>
+    <entry key="NoAudio">File does not contain any audio.</entry>
+    <entry key="DurationNotSupported">The duration of this file cannot be determined. The file specified cannot be read if it has no duration.</entry>
+    <entry key="SeekFailed">Could not seek in file.  Sample accurate seeking is not supported for this file on the current platform.</entry>
+    <entry key="StreamFormatChanged">Audio file contains a mid-stream format change. This is currently unsupported in MATLAB.</entry>
+    <entry key="MetadataReadFailed">Unable to read ''{0}'' property from the file as it contains unsupported characters.</entry>
+    <entry key="MetadataWriteFailed">Failed to write ''{0}'' property to the file as it contains unsupported characters.</entry>
+    <entry key="NonAsciiMetadataForWav">Failed to write ''{0}'' property to the file. WAV files do not support non-ASCII characters for metadata.</entry>
+    <entry key="UnsupportedSampleRate">Unsupported SampleRate value.</entry>
+    <entry key="UnsupportedBitRate">Unsupported Bit Rate value.</entry>
+    <entry key="UnsupportedOutputChannels">Unsupported number of channels.</entry>
+    <entry key="ReadNotSupported" translate="false">Reading a file of this type is not supported.</entry>
+    <entry key="WriteNotSupported" translate="false">Writing a file of this type is not supported.</entry>
+    <entry key="Mpeg4MinNumberOfSamplesRequired">On Windows, writing MPEG-4 AAC files requires a minimum of 1025 samples.</entry>
+    <entry key="MissingPluginDependencies">No plugins available for audio file I/O. Ensure that LIBSNDFILE and platform specific libraries are installed correctly.</entry>
+    <entry key="WavSizeLimit">Exceeded the 4GB file size limit imposed by the WAV format. Try using a different audio format.</entry>
+    <entry key="AudioPropertyUnavailable">Unable to determine the {0} property of the audio file.</entry>
+	<entry key="MaxFlacSampleRate">Sample rate exceeded {0} Hz, the maximum sample rate supported by the FLAC format.</entry>
+    <entry key="MinOggSampleRate">Sample rate must be greater than {0} Hz for the OGG format.</entry>
+  </message>
+</rsccat>

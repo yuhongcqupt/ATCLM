@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2011 The MathWorks, Inc. -->
+<rsccat locale="en_US" product="MATLAB" version="1.0">
+   <message>
+      <entry key="DeprecatedRNGFields">The input structure uses the deprecated ''randstate'' and ''randnstate'' fields.\nConverting to use the ''rngstate'' field.</entry>
+      <entry key="InvalidRNGFields">The input structure contains invalid values for the ''randstate'' and ''randnstate'' fields.</entry>
+      <entry key="InvalidStructInput">\n The input structure is missing required field(s):{0}. \n Invalid value for field(s):{1}.</entry>
+      <entry key="InvalidValueField">\n Invalid value for field(s):{0}.</entry>
+      <entry key="MissingRequiredField">\n The input structure is missing required field(s):{0}.</entry>      
+   </message>
+</rsccat>

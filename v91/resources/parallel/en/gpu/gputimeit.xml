@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Copyright 2013 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="parallel">
+  <message>
+    <!-- Please keep entries in sorted order -->
+    <entry key="HighOverhead">The measured time for F may be inaccurate because it is running too fast. Try measuring something that takes longer.</entry>
+    <entry key="InvalidFunctionHandle">First argument must be a function handle that takes no input argument.</entry>
+    <entry key="InvalidNumberOfOutputs">Second argument must be a non-negative integer.</entry>
+    <entry key="NoDeviceSelected">No GPU device was selected after running the function. It appears the function is not using the GPU.</entry>
+  </message>
+</rsccat>

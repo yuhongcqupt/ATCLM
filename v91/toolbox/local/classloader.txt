@@ -1,0 +1,9 @@
+com.mathworks.mde.editor.EditorStartup
+com.mathworks.hg.util.HGUtils
+com.mathworks.mlwidgets.html.HtmlComponentFactory
+com.mathworks.mlwidgets.util.productinfo.ProductInfoUtils
+com.mathworks.page.plottool.StartupClasses
+com.mathworks.mde.functionhints.FunctionHints
+com.mathworks.mlwidgets.help.InstalledProductUtils
+com.mathworks.mde.appdesigner.AppDesignerStartup
+com.mathworks.toolbox.difflink.server.AutoStart

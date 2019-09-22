@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rsccat locale="en_US" product="Simulink" version="1.0">
+   <message>
+      <entry key="badInput">bad input to deeupdat...expected button or figure handle</entry>
+      <entry key="NotEnoughInputs">DEEFLAG must have at least one argument.</entry>
+      <entry key="dlgLengthOfUMustEqualNumSystemInputs">Length of u0 must equal the number of system inputs.</entry>
+      <entry key="dlgTitleLinearization">DEE Linearization ERROR</entry>
+      <entry key="StatusLinearizingModel">Status: Linearizing model...</entry>
+      <entry key="StatusSyntaxError">Status: Syntax error or undefined variable referenced.</entry>
+      <entry key="LabelRestore">Restore</entry>
+      <entry key="dlgDEESystemSyntaxError">DEE System has a syntax error or a variable does not exist.</entry>
+      <entry key="dlg_DEEError">DEE Error</entry>
+      <entry key="StatusWorking">Status: working...</entry>
+      <entry key="StatusREADY">Status:  READY</entry>
+      <entry key="StatusParentSystemIsMissing">Status: parent system, ''{0}'', is missing.</entry>
+      <entry key="StatusBlockIsMissing">Status: block, ''{0}'', is missing.</entry>
+      <entry key="DEEBlockRenamedOrClosed">The DEE block, "{0}" has been renamed, deleted, or closed.</entry>
+      <entry key="StatusNOTFOUND">Status: "{0}" NOT FOUND.</entry>
+      <entry key="NumberOfStates">Number of states = {0}</entry>
+      <entry key="StatusTotal">Total = {0}</entry>
+      <entry key="errorYouCan">You can:</entry>
+      <entry key="ChangeBlockNameBack">i) change the block name back (if only the name has changed)</entry>
+      <entry key="ReopenSystemifClosed">ii) reopen the system (if it''s closed)</entry>
+      <entry key="RebuildBlockFromScratch">iii) select the Rebuild button to rebuild the block from scratch</entry>
+      <entry key="StatusOfInitialConditionsOfStates">Status:  # of initial conditions &gt; # of states</entry>
+      <entry key="StatusOfInputsUndefined">Status:  # of inputs undefined</entry>
+      <entry key="SimulationRunningCannotAlterSystemStructure">Simulation running, cannot alter system structure.</entry>
+      <entry key="dialogFourArgsNeededForFevaldlg">Four args needed for fevaldlg()</entry>
+      <entry key="dialogAllArgsToFevaldlgMustBeStrings" note="stringDatatypeUpdate">All args to fevaldlg() must be character vectors</entry>
+      <entry key="FevaldlgError">Fevaldlg Error</entry>
+      <entry key="buttonCancel">Cancel</entry>
+      <entry key="buttonOK">OK</entry>
+      <entry key="NotAValidExpression">Not a valid expression.</entry>
+      <entry key="dialogMATLABError">MATLAB Error</entry>
+      <entry key="promptEnterExpression">Enter expression:</entry>
+      <entry key="CannotRebuildDuringSimulation">Cannot rebuild during simulation.</entry>
+      <entry key="StatusDEEBlockNotPresent">Status: DEE block is not present, building a new one...</entry>
+      <entry key="buttonHelp">Help</entry>
+      <entry key="buttonRebuild">Rebuild</entry>
+      <entry key="buttonUndo">Undo</entry>
+      <entry key="buttonDone">Done</entry>
+      <entry key="StatusInitializing">Status: Initializing...</entry>
+      <entry key="labelNumberOfStates">Number of States =</entry>
+      <entry key="labelTotal">Total =</entry>
+      <entry key="labelName">Name:</entry>
+      <entry key="labelFirstOrderEquationsFxu">First order equations, f(x,u):</entry>
+      <entry key="labelOutputEquationsFxu">Output Equations, f(x,u):</entry>
+      <entry key="labelDifferentialEquationEditorFcnBlockSyntax">Differential Equation Editor     (Fcn block syntax)</entry>
+      <entry key="labelNumOfInputs"># of inputs:</entry>
+   </message>
+</rsccat>

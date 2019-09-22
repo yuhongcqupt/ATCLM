@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="needFunctionOrCell">The field ''{0}'' must contain a function handle.</entry>
+  </message>
+</rsccat>

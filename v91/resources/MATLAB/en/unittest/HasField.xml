@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- Copyright 2012-2015 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+    <message>
+        <entry key="MustHaveExpectedField">The value did not have the expected field.</entry>
+        <entry key="ActualField">Actual Fieldnames:</entry>
+        <entry key="ExpectedField">Expected Fieldname:</entry>
+        <entry key="NoField">The structure has no fields.</entry>
+        <entry key="MustNotHaveField">The structure must not have the specified field.</entry>
+        <entry key="UnexpectedField">Prohibited Fieldname:</entry>
+        <entry key="NotAStruct">The value must be a structure. It is of type "{0}".</entry>
+    </message>
+</rsccat>

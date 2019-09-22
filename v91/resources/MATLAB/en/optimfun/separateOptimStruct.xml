@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- Copyright 2011 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="InvalidStructInput">Invalid problem structure: {0}</entry>
+    <entry key="InvalidSolver">Use {0} function for this problem structure.</entry>
+  </message>
+</rsccat>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="callback">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="dependency">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="dialogpref_registrar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="source" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="help_addon">
+    <xs:complexType mixed="true">
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute name="category" type="xs:NMTOKEN" use="optional" />
+      <xs:attribute name="productlevel" type="xs:NMTOKEN" use="required" />
+      <xs:attribute name="product_name_ends_with_type" type="xs:NMTOKEN" use="optional" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="help_location">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="help_contents_icon">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="icon">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="label">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="list">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="listitem" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="listitem">
+    <xs:complexType>
+      <xs:all>
+    <xs:element ref="dependency" minOccurs="0"/>
+        <xs:element ref="label" />
+        <xs:element ref="callback" />
+        <xs:element ref="unsupported-platform" minOccurs="0"/>
+        <xs:element ref="icon" />
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="matlabrelease">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="name">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+<xs:element name="MathWorksID" type="xs:integer"/>
+
+  <xs:element name="preference_panel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="label" />
+        <xs:element ref="source" />
+        <xs:element ref="preference_panel" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="product_name_ends_with_type">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="productinfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="matlabrelease" />
+        <xs:element ref="name" />
+        <xs:element ref="MathWorksID" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="type" />
+        <xs:element ref="icon" />
+        <xs:element ref="help_location" minOccurs="0"/>
+        <xs:element ref="help_contents_icon" minOccurs="0"/>
+        <xs:element ref="product_name_ends_with_type" minOccurs="0"/>
+        <xs:element ref="help_addon" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="preference_panel" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="dialogpref_registrar" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="list" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="source">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="type">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+  <xs:element name="unsupported-platform">
+    <xs:complexType mixed="true" />
+  </xs:element>
+
+</xs:schema>

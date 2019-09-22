@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- Copyright 2014 The MathWorks, Inc. -->
+<rsccat version="1.0" locale="en_US" product="MATLAB">
+  <message>
+    <entry key="invalidPartitionIndex">The index ''{0}'' is not a valid partition index for this partition index and datastore.</entry>
+    <entry key="invalidPartitionFile">The file ''{0}'' is not in the list of files contained by this datastore.</entry>
+    <entry key="invalidPartitionStrategy">The partitioning strategy ''{0}'' is not supported for this datastore.</entry>
+    <entry key="invalidPartitionStrategyType" note="stringDatatypeUpdate">The partitioning strategy must either be a character vector or the number of partitions.</entry>
+	<entry key="ambiguousPartitionFile">The file ''{0}'' appears multiple times in this datastore. Specify a file index instead of the file name.</entry>
+    <entry key="invalidSplitter">Invalid Splitter object.</entry>
+    <entry key="invalidSplitReader">Invalid SplitReader object.</entry>
+    <entry key="noMoreData">There is no more data to read.\nUse RESET to reset the datastore to the start of the data. Use HASDATA to check if there is data available to read before calling READ.</entry>
+  </message>
+</rsccat>
